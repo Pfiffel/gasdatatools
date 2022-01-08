@@ -1,5 +1,7 @@
 # Game Logs
 *.log
+*.account
+*.history
 
 # Misc
 *.lnk
