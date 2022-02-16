@@ -146,6 +146,10 @@ function MakeStatsTable(mainData, tier)
 		else if(mainTag == "TriggeredTriggerEffect" || mainTag == "TriggeredHealMineBurst")
 		{
 			if(prevCondition != undefined && prevCondition == data.when) prevRepeat = true; else prevRepeat = false;
+			if(TRIGGERED_TRIGGER_EFFECTS[data.when][2] == undefined) TRIGGERED_TRIGGER_EFFECTS[data.when][2] = 0;
+			TRIGGERED_TRIGGER_EFFECTS[data.when][2]++;
+			if(TRIGGERED_TRIGGER_EFFECTS[data.when][3] == undefined) TRIGGERED_TRIGGER_EFFECTS[data.when][3] = {};
+			TRIGGERED_TRIGGER_EFFECTS[data.when][3][mainData.name] = 1;
 			if(!prevRepeat) s += "On " + classWrap(TRIGGERED_TRIGGER_EFFECTS[data.when][1], "cKeyValue") + ":<br/>";
 			prevCondition = data.when;
 			if(mainTag == "TriggeredTriggerEffect")

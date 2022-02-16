@@ -50,6 +50,7 @@ function parseData()
 	tableOutput.appendChild(MakeSpecificTable(1,-1,1));
 	tableOutput.appendChild(MakeTextDiv("<h2>Usage Stats</h2>"));
 	tableOutput.appendChild(showUsage(STAT_TYPES));
+	tableOutput.appendChild(showUsage(TRIGGERED_TRIGGER_EFFECTS));
 	//tableOutput.appendChild(showUsage(ACTIVE_WHILE_NAMES));
 }
 function GetItemAmount(tier, statAmount, precursor)

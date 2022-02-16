@@ -45,6 +45,7 @@ function parseData()
 	tableOutput.appendChild(tbl);
 	tableOutput.appendChild(showUsage(STAT_TYPES));
 	tableOutput.appendChild(showUsage(ACTIVE_WHILE_NAMES));
+	tableOutput.appendChild(showUsage(TRIGGERED_TRIGGER_EFFECTS));
 }
 function GetSymbAmount(t)
 {
