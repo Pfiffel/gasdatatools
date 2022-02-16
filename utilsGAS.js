@@ -55,7 +55,7 @@ const TRIGGERED_TRIGGER_EFFECTS = {
 	"9": ["TRIGGER23", "trigger 2 or 3"],
 	"10": ["TRIGGER123", "trigger 1, 2 or 3"],
 };
-const PLAYER_PLOCIES = {
+const PLAYER_POLICIES = {
 	"0": ["IGNORE", "Ignore"],
 	"1": ["APPROACH", "Approach"],
 };

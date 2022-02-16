@@ -201,7 +201,7 @@ function monsterTable(monsters, amount){
             totalMaxSpawns += minions[j].maxCount;
             totalMaxHP += minions[j].hp*minions[j].maxCount;
             var max = "<b>" + minions[j].maxCount + "x</b> " + getPluralUnitOnly(minions[j].maxCount, "spawn");
-            var policy = minions[j].playerPolicy != undefined ? " - <b>" + PLAYER_PLOCIES[minions[j].playerPolicy][1] + "</b> players" : "";
+            var policy = minions[j].playerPolicy != undefined ? " - <b>" + PLAYER_POLICIES[minions[j].playerPolicy][1] + "</b> players" : "";
             var radius = minions[j].radius != undefined ? "- <b>" + minions[j].radius + "</b> radius" : "";
             if(radius != "" && policy != "") addLine(max + radius + policy, divMinion);
 			//addLine("+" + round(totalAmount*minions[j].maxCount,2) + " (max total minions)", divMinion);
