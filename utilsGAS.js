@@ -197,6 +197,14 @@ function MakeStatsTable(mainData, tier)
 					s += "For <b>" + params.data.duration + "</b> ms, gun shots apply:" + "<br/>";
 					s += ShowStatusEffect(params.data.statusEffect);
 				}
+				if(params.tag == "LeapTrigger"){
+					s += printKeyAndData("Leap Distance", params.data.range);
+				}
+				if(params.tag == "SharkletTrigger"){
+					s += printKeyAndData("Missile Count", params.data.count);
+					s += printKeyAndData("Damage", params.data.damage);
+					s += printKeyAndData("Range", params.data.range);
+				}
 			}
 			else if(mainTag == "TriggeredHealMineBurst")
 			{
