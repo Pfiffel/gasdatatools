@@ -158,6 +158,8 @@ function makeTriggerCell(container, player)
 		{
 			var params = trigger.params[p];
 			if(params.tag == "ShotgunTrigger") damage += params.data.damage*(params.data.mirror+1);
+			if(params.tag == "LeapTrigger") damage += params.data.collisionSettings.damage;
+			if(params.tag == "SharkletTrigger") damage += params.data.count * params.data.damage;
 			// TODO make this more correcterer for when a trigger has BOTH FireRateBoostTrigger and DamageBoostTrigger
 			if(params.tag == "FireRateBoostTrigger")
 			{
