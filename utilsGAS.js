@@ -40,7 +40,9 @@ const ACTIVE_WHILE_NAMES = {
 	"14": ["NOT_THRUSTING", "thrusters not engaged"],
 	"15": ["THRUSTING_FORWARD", "forward thrusters engaged"],
 	"16": ["THRUSTING_BACKWARD", "reverse thrusters engaged"],
-	"17": ["SHIELDS_FULL", "all shields full"]
+	"17": ["SHIELDS_FULL", "all shields full"],
+	"18": ["ROTATING", "rotating"],
+	"19": ["NOT_ROTATING", "not rotating"]
 };
 const TRIGGERED_TRIGGER_EFFECTS = {
 	"0": ["TRIGGER1234", "any trigger"],
@@ -54,6 +56,7 @@ const TRIGGERED_TRIGGER_EFFECTS = {
 	"8": ["TRIGGER3", "trigger 3"],
 	"9": ["TRIGGER23", "trigger 2 or 3"],
 	"10": ["TRIGGER123", "trigger 1, 2 or 3"],
+	"11": ["ON_DAMAGE", "damage taken"],
 };
 const PLAYER_POLICIES = {
 	"0": ["IGNORE", "Ignore"],
