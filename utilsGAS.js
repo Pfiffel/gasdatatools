@@ -2,7 +2,7 @@ const SCALE_STANDARD = 0.5;
 const SCALE_SMALL = 0.25;
 const monsterSkip = {"Iron Justiciar":true, "Test Event Boss 2":true, "Test Event Boss":true, "Test Event Minion":true};
 
-const TIER_COLORS = ["","#FF7777","#77CC77","#9999FF","#77DDDD","#FFFF77","#EB98CB","#F5A849","#C162F5","#FFFFFF","#FFFFFF"];
+const TIER_COLORS = ["","#FF7777","#77CC77","#9999FF","#77DDDD","#FFFF77","#EB98CB","#F5A849","#C162F5","#FFFFFF","#8EC726"];
 const TIER_NAMES = ["","Alpha","Beta","Gamma","Delta","Epsilon","Omega","","","","Precursor Tech"];
 const MAX_LEVEL = 20;
 const SHIELD_STRENGTH_PER_RADIUS = 20;
