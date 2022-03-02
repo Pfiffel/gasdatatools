@@ -1,4 +1,4 @@
-
+var FILE = "Build19.log";
 var tableOutput = document.getElementById("tableOutput");
 var timeStart = window.performance.now();
 var bench = document.createElement('div');
@@ -7,7 +7,7 @@ tableOutput.appendChild(bench);
 
 var logData = [];
 additionalFileLoaded = false;
-loadJsonFile("PfiffelLog.log", function(loadedData){
+loadJsonFile(FILE, function(loadedData){
 	additionalFileLoaded = true;
 	logData = JSON.parse(loadedData);
 	if(allLoaded()) parseData();
@@ -37,12 +37,13 @@ function parseData()
 {
 	var secs = Math.round(window.performance.now() - timeStart)/1000;
 	timeStart = window.performance.now();
-	bench.innerHTML = "data loaded in " + secs + " seconds";
+	bench.innerHTML = FILE + " loaded in " + secs + " seconds";
 	//if(window.performance != undefined) var t0 = window.performance.now();
 	var tbl = document.createElement('table');
 	let th = tbl.insertRow();
 	for (let i = 0; i < logData.length; i++)
 	{
+		var player = logData[i].message.data.name;
 		var unix = logData[i].unixTime;
 		var toInterval = parseInt(unix/GRAPH_INTERVAL);
 		if(graphIntervalDataPlayers[toInterval] == undefined) graphIntervalDataPlayers[toInterval] = 0;
@@ -54,15 +55,25 @@ function parseData()
 		if(currentTag == "RetirementLog")
 		{
 			var retiredChamp = logData[i].message.data.champion;
-			if(retirements[retiredChamp] == undefined) retirements[retiredChamp] = [0,0];
+			var c, m, a;
+			c = logData[i].message.data.credits;
+			m = logData[i].message.data.medal;
+			a = logData[i].message.data.accolade;
+			players[player].retirements++;
+			players[player].medals += m;
+			players[player].accolades += a;
+			if(retirements[retiredChamp] == undefined) retirements[retiredChamp] = [0,0,0,0];
 			retirements[retiredChamp][0]++;
 			retirements[retiredChamp][1] += logData[i].message.data.credits;
+			retirements[retiredChamp][2] += logData[i].message.data.medal;
+			retirements[retiredChamp][3] += logData[i].message.data.accolade;
 		}
 		else if(currentTag == "PlayerDeathLog")
 		{
 			var diedChamp = logData[i].message.data.champion;
+			players[player].deaths++;
 			if(deaths[diedChamp] == undefined) deaths[diedChamp] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-			var level = players[logData[i].message.data.name].currentLevel; //logData[i].message.data.level;
+			var level = logData[i].message.data.level; //players[logData[i].message.data.name].currentLevel; 
 			deaths[diedChamp][level]++;
 			deathPointsAll.push(MakePoint(logData[i].message.data.p));
 			if(level == 20) deathPoints20.push(MakePoint(logData[i].message.data.p));
@@ -70,21 +81,28 @@ function parseData()
 
 			if(graphIntervalDataDeaths[toInterval] == undefined) graphIntervalDataDeaths[toInterval] = 0;
 			graphIntervalDataDeaths[toInterval]++;
-			
+		}
+		else if(currentTag == "BossKillLog")
+		{
+			players[player].bossKills++;
 		}
 		else if(currentTag == "PlayerStatusLog")
 		{
 			for (var playerIter in logData[i].message.data.players)
 			{
-				var player = logData[i].message.data.players[playerIter];
-				var name = player.name;
-				InitPlayerIfNotSeenYet(name);
-				if(player.fps != 0) players[name].fpsLog.push(player.fps);
-				if(player.latency != 0) players[name].latLog.push(player.latency);
-				movePoints.push(MakePoint(player.p));
+				var currPlayer = logData[i].message.data.players[playerIter];
+				var currName = currPlayer.name;
+				InitPlayerIfNotSeenYet(currName);
+				if(currPlayer.fps != 0) players[currName].fpsLog.push(currPlayer.fps);
+				if(currPlayer.latency != 0) players[currName].latLog.push(currPlayer.latency);
+				movePoints.push(MakePoint(currPlayer.p));
 			}
 			var playerAmount = logData[i].message.data.players.length;
 			graphIntervalDataPlayers[toInterval] = Math.max(graphIntervalDataPlayers[toInterval], playerAmount);
+		}
+		else if(currentTag == "PlayerChatLog")
+		{
+			players[player].chats++;
 		}
 		else if(currentTag == "PlayerSpawnLog")
 		{
@@ -93,6 +111,7 @@ function parseData()
 		}
 		else if(currentTag == "LevelUpLog")
 		{
+			players[player].levelUps++;
 			players[logData[i].message.data.name].currentLevel = logData[i].message.data.level+1;
 		}
 		else if(currentTag == "PlayerLoginLog")
@@ -117,7 +136,7 @@ function parseData()
 			triggerStats[triggerChamp][logData[i].message.data.triggerIndex]++;
 			triggerPoints.push(MakePoint(logData[i].message.data.p));
 		}
-		if(tags[currentTag] == undefined) tags[currentTag] = 0; else tags[currentTag]++;
+		if(tags[currentTag] == undefined) tags[currentTag] = 1; else tags[currentTag]++;
 	}
 	//tableOutput.appendChild(DrawMap(0.01));
 	//MakeHeatmap(id, max, points)
@@ -139,7 +158,7 @@ function parseData()
 	tableOutput.appendChild(div);
 
 	var secs = Math.round(window.performance.now() - timeStart)/1000;
-	bench.innerHTML += "<br/>" + logData.length + " logs processed in " + secs + " seconds<br/><br/>";
+	bench.innerHTML += "<br/>" + logData.length + " logs processed in " + secs + " seconds<br/><br/>" + playerStatSummary + "<br/>";
 }
 
 function DrawPoly(ctx, scale, poly, offset, color)
@@ -294,16 +313,6 @@ function MakeHeatmapFromData(id, max, points)
 	};
 	heatmapInstance.setData(data);
 }
-function InitPlayerIfNotSeenYet(name)
-{
-	if(players[name] == undefined)
-	{
-		players[name] = {}; 
-		players[name].fpsLog = [];
-		players[name].latLog = [];
-		players[name].currentLevel = 0;
-	}
-}
 function UnixToInterval(unix)
 {
 	return parseInt(unix/GRAPH_INTERVAL);
@@ -323,6 +332,11 @@ function unixToString(unix)
 {
 	var date = new Date(unix * 1000);
 	return date.toDateString() + " " + date.toLocaleTimeString();
+}
+function unixToStringDay(unix)
+{
+	var date = new Date(unix * 1000);
+	return date.toDateString();
 }
 function MakePlayerActivityGraph(id)
 {
@@ -410,22 +424,70 @@ function MakeTriggerStats()
 	}
 	return tbl;
 }
+function InitPlayerIfNotSeenYet(name)
+{
+	if(players[name] == undefined)
+	{
+		players[name] = {}; 
+		players[name].fpsLog = [];
+		players[name].latLog = [];
+		players[name].deaths = 0;
+		players[name].levelUps = 0;
+		players[name].retirements = 0;
+		players[name].medals = 0;
+		players[name].accolades = 0;
+		players[name].bossKills = 0;
+		players[name].chats = 0;
+		players[name].currentLevel = 0;
+	}
+}
+var playerStatSummary = "";
 function MakePlayerStats()
 {
 	var tbl = document.createElement('table');
 	tbl.classList.add("inline");
 	let th = tbl.insertRow();
 	makeHeaderCell("Player", th);
+	makeHeaderCell("Deaths", th);
+	makeHeaderCell("Boss Kills", th);
+	makeHeaderCell("Retirements (M, A)", th);
+	makeHeaderCell("Chats", th);
 	makeHeaderCell("Avg FPS", th);
 	makeHeaderCell("Avg Latency", th);
 
+	var dT = 0, lT = 0, rT = 0, mT = 0, aT = 0, bT = 0, chatsT = 0;
+	var seenPlayers = 0, activePlayers = 0;
 	for (var player in players)
 	{
+		var d, l, r, m, a, b, chats;
+		dT += d = players[player].deaths;
+		lT += l = players[player].levelUps;
+		rT += r = players[player].retirements;
+		mT += m = players[player].medals;
+		aT += a = players[player].accolades;
+		bT += b = players[player].bossKills;
+		chatsT += chats = players[player].chats;
+		seenPlayers++;
+		var wasActive = (d + l + r + b + chats) > 0;
+		if(!wasActive) continue;
+		activePlayers++;
 		let tr = tbl.insertRow();
 		makeCell(player, tr);
+		makeCell(d != 0 ? d : "", tr);
+		makeCell(b != 0 ? b : "", tr);
+		makeCell(r != 0 ? r + ((m+a) > 0 ? " (" + m + ", " + a + ")" : "") : "", tr);
+		makeCell(chats != 0 ? chats : "", tr);
 		makeCell(round(GetAverage(players[player].fpsLog),2), tr);
 		makeCell(round(GetAverage(players[player].latLog),2), tr);
 	}
+	playerStatSummary = "<u>Totals</u> (" + unixToStringDay(dateStart) + " - " + unixToStringDay(dateEnd) + ")<br/>" + 
+		"Players Seen: " + seenPlayers + "<br/>" + 
+		"Players Active: " + activePlayers + " (at least one level up, death, retirement or chat)<br/>" + 
+		"Deaths: " + dT + "<br/>" + 
+		"Level Ups: " + lT + "<br/>" + 
+		"Retirements: " + rT + " (" + mT + " Medals, " + aT + " Accolades)<br/>" + 
+		"Boss Kills: " + bT + "<br/>" + 
+		"Chats: " + chatsT + "<br/>";
 	return tbl;
 }
 function GetAverage(array)
@@ -482,13 +544,19 @@ function MakeRetirementStats()
 	makeHeaderCell("Amount", th);
 	makeHeaderCell("% of Total", th);
 	makeHeaderCell("Credits", th);
+	makeHeaderCell("Medals", th);
+	makeHeaderCell("Accolades", th);
 	makeHeaderCell("% of Total", th);
 	var total = 0;
 	var totalC = 0;
+	var totalM = 0;
+	var totalA = 0;
 	for (var champ in retirements)
 	{
 		total += retirements[champ][0];
 		totalC += retirements[champ][1];
+		totalM += retirements[champ][2];
+		totalA += retirements[champ][3];
 	}
 	for (var champ in retirements)
 	{
@@ -497,6 +565,8 @@ function MakeRetirementStats()
 		makeCell(retirements[champ][0], tr);
 		makeCell(percToString(retirements[champ][0]/total), tr);
 		makeCell(retirements[champ][1], tr);
+		makeCell(retirements[champ][2], tr);
+		makeCell(retirements[champ][3], tr);
 		makeCell(percToString(retirements[champ][1]/totalC), tr);
 	}
 	return tbl;
