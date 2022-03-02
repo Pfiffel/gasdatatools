@@ -15,7 +15,8 @@ loadJsonFile(FILE, function(loadedData){
 var datatypes = ["map","lair","region","lane"]; // for utilGAS to load files, calls parseData once completed
 loadGasData();
 
-HEATMAP_SIZE = 600;
+const HEATMAP_SIZE = 600;
+const GRAPH_RESOLUTION_SECONDS = 600;
 
 var tags = {};
 var retirements = {};
@@ -32,6 +33,7 @@ var deathPoints20 = [];
 var deathPointsSub20 = [];
 var movePoints = [];
 var triggerPoints = [];
+var maxConcurrentPlayers = 0;
 //var activePlayers = {};
 function parseData()
 {
@@ -44,8 +46,9 @@ function parseData()
 	for (let i = 0; i < logData.length; i++)
 	{
 		var player = logData[i].message.data.name;
+		InitPlayerIfNotSeenYet(player);
 		var unix = logData[i].unixTime;
-		var toInterval = parseInt(unix/GRAPH_INTERVAL);
+		var toInterval = UnixToInterval(unix);
 		if(graphIntervalDataPlayers[toInterval] == undefined) graphIntervalDataPlayers[toInterval] = 0;
 		if(graphIntervalDataDeaths[toInterval] == undefined) graphIntervalDataDeaths[toInterval] = 0;
 
@@ -98,6 +101,7 @@ function parseData()
 				movePoints.push(MakePoint(currPlayer.p));
 			}
 			var playerAmount = logData[i].message.data.players.length;
+			maxConcurrentPlayers = Math.max(maxConcurrentPlayers, playerAmount);
 			graphIntervalDataPlayers[toInterval] = Math.max(graphIntervalDataPlayers[toInterval], playerAmount);
 		}
 		else if(currentTag == "PlayerChatLog")
@@ -106,7 +110,6 @@ function parseData()
 		}
 		else if(currentTag == "PlayerSpawnLog")
 		{
-			InitPlayerIfNotSeenYet(logData[i].message.data.name);
 			players[logData[i].message.data.name].currentLevel = logData[i].message.data.level;
 		}
 		else if(currentTag == "LevelUpLog")
@@ -116,12 +119,13 @@ function parseData()
 		}
 		else if(currentTag == "PlayerLoginLog")
 		{
-			InitPlayerIfNotSeenYet(logData[i].message.data.name);
 			graphIntervalDataPlayers[toInterval]++;
 		}
 		else if(currentTag == "PlayerDisconnectLog")
 		{
 			graphIntervalDataPlayers[toInterval]--;
+			// TODO figure out why this can become < 0 in the first place
+			graphIntervalDataPlayers[toInterval] = Math.max(graphIntervalDataPlayers[toInterval], 0);
 		}
 		else if(currentTag == "SymbioteRemoveLog")
 		{
@@ -315,9 +319,8 @@ function MakeHeatmapFromData(id, max, points)
 }
 function UnixToInterval(unix)
 {
-	return parseInt(unix/GRAPH_INTERVAL);
+	return parseInt(unix/GRAPH_RESOLUTION_SECONDS);
 }
-const GRAPH_INTERVAL = 600;
 function MakeGraphCanvas(id)
 {
 	var canvas = document.createElement('canvas');
@@ -346,7 +349,7 @@ function MakePlayerActivityGraph(id)
 	var deaths = [];
 	for (var tag in graphIntervalDataPlayers)
 	{
-		xValues.push(tag*GRAPH_INTERVAL*1000);
+		xValues.push(tag*GRAPH_RESOLUTION_SECONDS*1000);
 		currentPlayers.push(graphIntervalDataPlayers[tag]);
 		deaths.push(graphIntervalDataDeaths[tag]);
 	}
@@ -483,6 +486,7 @@ function MakePlayerStats()
 	playerStatSummary = "<u>Totals</u> (" + unixToStringDay(dateStart) + " - " + unixToStringDay(dateEnd) + ")<br/>" + 
 		"Players Seen: " + seenPlayers + "<br/>" + 
 		"Players Active: " + activePlayers + " (at least one level up, death, retirement or chat)<br/>" + 
+		"Max Concurrent Players: " + maxConcurrentPlayers + "<br/>" + 
 		"Deaths: " + dT + "<br/>" + 
 		"Level Ups: " + lT + "<br/>" + 
 		"Retirements: " + rT + " (" + mT + " Medals, " + aT + " Accolades)<br/>" + 
