@@ -80,7 +80,11 @@ function parseData()
 				players[currName].sinceLastStatus += diff;
 				players[currName].lastStatus = unix;
 				// TODO hacky, log player sessions (logins and logoffs) properly
-				if(diff < 10) players[currName].tanks[champ] += diff;
+				if(diff < 10)
+				{
+					players[currName].tanks[champ] += diff;
+					players[currName].totalPlaytime += diff;
+				}
 				if(currPlayer.fps != 0) players[currName].fpsLog.push(currPlayer.fps);
 				if(currPlayer.latency != 0) players[currName].latLog.push(currPlayer.latency);
 				movePoints.push(MakePoint(currPlayer.p));
@@ -462,6 +466,7 @@ function InitPlayerIfNotSeenYet(name)
 		players[name].chats = 0;
 		players[name].sinceLastStatus = 0;
 		players[name].lastStatus = 0;
+		players[name].totalPlaytime = 0;
 		players[name].tanks = {};
 	}
 }
@@ -482,6 +487,17 @@ function SortTanks()
 		{}
 	);
 }
+function PlayersAsSortedArray()
+{
+	var sortable = [];
+	for (var player in players) {
+    sortable.push([player, players[player].totalPlaytime]);
+	}
+	sortable.sort(function(a, b) {
+			return b[1] - a[1];
+	});
+	return sortable;
+}
 var playerStatSummary = "";
 function MakePlayerStats()
 {
@@ -501,12 +517,14 @@ function MakePlayerStats()
 	makeHeaderCell("Avg FPS", th);
 	makeHeaderCell("Avg Latency", th);
 
-
+	var playersAsSortedArray = PlayersAsSortedArray();
 	var dT = 0, lT = 0, rT = 0, mT = 0, aT = 0, bT = 0, chatsT = 0;
 	var seenPlayers = 0, activePlayers = 0;
 	var totalPlaytimeAll = {};
-	for (var player in players)
+	var totalPlaytimeGlobal = 0;
+	for (var i in playersAsSortedArray)
 	{
+		var player = playersAsSortedArray[i][0];
 		var d, l, r, m, a, b, chats;
 		dT += d = players[player].deaths;
 		lT += l = players[player].levelUps;
@@ -526,19 +544,18 @@ function MakePlayerStats()
 		makeCell(r != 0 ? r + ((m+a) > 0 ? " (" + m + ", " + a + ")" : "") : "", tr);
 		makeCell(chats != 0 ? chats : "", tr);
 
-		var totalPlaytimePlayer = 0;
 		for (var champ in seenTanks)
 		{
 			var playTime = players[player].tanks[champ];
 			if(totalPlaytimeAll[champ] == undefined) totalPlaytimeAll[champ] = 0;
 			totalPlaytimeAll[champ] += playTime != undefined ? playTime : 0;
-			totalPlaytimePlayer += playTime != undefined ? playTime : 0;
 		}
-		makeCell(secondsToClock(totalPlaytimePlayer), tr);
+		totalPlaytimeGlobal += players[player].totalPlaytime;
+		makeCell(secondsToClock(players[player].totalPlaytime), tr);
 		for (var champ in seenTanks)
 		{
 			var playTime = players[player].tanks[champ];
-			var perc = playTime/totalPlaytimePlayer;
+			var perc = playTime/players[player].totalPlaytime;
 			//makeCell(playTime != undefined ? secondsToClock(playTime) + " - " + percToString(perc) : "", tr);
 			makeCell(playTime != undefined ? percToString(perc) : "", tr);
 		}
@@ -546,12 +563,7 @@ function MakePlayerStats()
 		makeCell(round(GetAverage(players[player].fpsLog),2), tr);
 		makeCell(round(GetAverage(players[player].latLog),2), tr);
 	}
-	var totalPlaytimeGlobal = 0;
 	var sTotalPlaytime = "<u>Total Playtimes</u>" + "<br/>";
-	for (var champ in totalPlaytimeAll)
-	{
-		totalPlaytimeGlobal += totalPlaytimeAll[champ];
-	}
 	for (var champ in totalPlaytimeAll)
 	{
 		var currChampPlay = totalPlaytimeAll[champ];
