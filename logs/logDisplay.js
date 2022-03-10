@@ -24,6 +24,7 @@ var deaths = {};
 var players = {};
 var removedSymbs = {};
 var triggerStats = {};
+var seenTanks = {};
 var dateStart = undefined;
 var dateEnd = undefined;
 var graphIntervalDataPlayers = {};
@@ -33,6 +34,7 @@ var deathPoints20 = [];
 var deathPointsSub20 = [];
 var movePoints = [];
 var triggerPoints = [];
+var bossKillPoints = [];
 var maxConcurrentPlayers = 0;
 //var activePlayers = {};
 function parseData()
@@ -49,6 +51,9 @@ function parseData()
 	{
 		var player = logData[i].message.data.name;
 		InitPlayerIfNotSeenYet(player);
+		// seen tanks, is this really necessary to check for each message? no... but at least i won't have to worry about adding new tanks manually myself
+		var tank = logData[i].message.data.champion;
+		if(tank != undefined) InitTankIfNotSeenYet(tank);
 		var unix = logData[i].unixTime;
 		var toInterval = UnixToInterval(unix);
 		if(graphIntervalDataPlayers[toInterval] == undefined) graphIntervalDataPlayers[toInterval] = 0;
@@ -71,7 +76,7 @@ function parseData()
 				InitPlayerIfNotSeenYet(currName);
 				if(players[currName].tanks[champ] == undefined) players[currName].tanks[champ] = 0;
 				if(players[currName].lastStatus == 0) players[currName].lastStatus = unix;
-				var diff = unix - players[currName].lastStatus;;
+				var diff = unix - players[currName].lastStatus;
 				players[currName].sinceLastStatus += diff;
 				players[currName].lastStatus = unix;
 				// TODO hacky, log player sessions (logins and logoffs) properly
@@ -102,20 +107,18 @@ function parseData()
 		}
 		else if(currentTag == "PlayerDeathLog")
 		{
-			var diedChamp = logData[i].message.data.champion;
 			players[player].deaths++;
-			if(deaths[diedChamp] == undefined) deaths[diedChamp] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+			if(deaths[tank] == undefined) deaths[tank] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 			var level = logData[i].message.data.level; //players[logData[i].message.data.name].currentLevel; 
-			deaths[diedChamp][level]++;
+			deaths[tank][level]++;
 			deathPointsAll.push(MakePoint(logData[i].message.data.p));
 			if(level == 20) deathPoints20.push(MakePoint(logData[i].message.data.p));
 			if(level < 20) deathPointsSub20.push(MakePoint(logData[i].message.data.p));
-
-			if(graphIntervalDataDeaths[toInterval] == undefined) graphIntervalDataDeaths[toInterval] = 0;
 			graphIntervalDataDeaths[toInterval]++;
 		}
 		else if(currentTag == "BossKillLog")
 		{
+			bossKillPoints.push(MakePoint(logData[i].message.data.p));
 			players[player].bossKills++;
 		}
 		else if(currentTag == "PlayerChatLog")
@@ -156,6 +159,7 @@ function parseData()
 		}
 		if(tags[currentTag] == undefined) tags[currentTag] = 1; else tags[currentTag]++;
 	}
+	SortTanks();
 	//tableOutput.appendChild(DrawMap(0.01));
 	//MakeHeatmap(id, max, points)
 	MakeHeatmap("All Deaths", 2, deathPointsAll);
@@ -163,6 +167,7 @@ function parseData()
 	MakeHeatmap("Sub 20 Deaths", 2, deathPointsSub20);
 	MakeHeatmap("Activity (Status)", 200, movePoints);
 	MakeHeatmap("Activity (Trigger)", 50, triggerPoints);
+	MakeHeatmap("Boss Kills", 3, bossKillPoints);
 	tableOutput.appendChild(MakeGraphCanvas("player_graph"));
 	MakePlayerActivityGraph("player_graph");
 	tableOutput.appendChild(MakeSimpleCountList("Tag", tags));
@@ -179,7 +184,6 @@ function parseData()
 
 	//console.log(sinceLastStatus)
 }
-
 function DrawPoly(ctx, scale, poly, offset, color)
 {
 	ctx.beginPath();
@@ -461,6 +465,23 @@ function InitPlayerIfNotSeenYet(name)
 		players[name].tanks = {};
 	}
 }
+function InitTankIfNotSeenYet(name)
+{
+	if(seenTanks[name] == undefined)
+	{
+		seenTanks[name] = name;
+	}
+}
+function SortTanks()
+{
+	seenTanks = Object.keys(seenTanks).sort().reduce(
+		(obj, key) => { 
+			obj[key] = seenTanks[key]; 
+			return obj;
+		}, 
+		{}
+	);
+}
 var playerStatSummary = "";
 function MakePlayerStats()
 {
@@ -473,7 +494,7 @@ function MakePlayerStats()
 	makeHeaderCell("Retirements (M, A)", th);
 	makeHeaderCell("Chats", th);
 	makeHeaderCell("Playtime", th);
-	for (var champ in deaths)
+	for (var champ in seenTanks)
 	{
 		makeHeaderCell(champ, th);
 	}
@@ -506,7 +527,7 @@ function MakePlayerStats()
 		makeCell(chats != 0 ? chats : "", tr);
 
 		var totalPlaytimePlayer = 0;
-		for (var champ in deaths)
+		for (var champ in seenTanks)
 		{
 			var playTime = players[player].tanks[champ];
 			if(totalPlaytimeAll[champ] == undefined) totalPlaytimeAll[champ] = 0;
@@ -514,7 +535,7 @@ function MakePlayerStats()
 			totalPlaytimePlayer += playTime != undefined ? playTime : 0;
 		}
 		makeCell(secondsToClock(totalPlaytimePlayer), tr);
-		for (var champ in deaths)
+		for (var champ in seenTanks)
 		{
 			var playTime = players[player].tanks[champ];
 			var perc = playTime/totalPlaytimePlayer;
