@@ -159,3 +159,18 @@ function secondsToDhms(seconds) {
 	var sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
 	return dDisplay + hDisplay + mDisplay + sDisplay;
 }
+function capitalize(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+function isLastKey(string, object) {
+  var keyList = Object.keys(object);
+	if(keyList[keyList.length-1] == string)
+	{
+		return true;
+	}
+	return false;
+}
+function getCurrentPage(){
+	var pathArray = location.href.replace(/[^/]*$/, '').split('/');
+	return pathArray[pathArray.length-2];
+}
