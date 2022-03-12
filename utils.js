@@ -111,6 +111,13 @@ function makeCell(innerHTML, container, className)
 	cell.innerHTML = innerHTML;
 	return cell;
 }
+function makeCleanCell(innerHTML, container, className)
+{
+	let cell = container.insertCell();
+	if(className != undefined) cell.classList.add(className);
+	cell.innerHTML = innerHTML != undefined && innerHTML != NaN ? innerHTML : "";
+	return cell;
+}
 function makeCellE(innerElement, container, className)
 {
 	let cell = container.insertCell();

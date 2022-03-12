@@ -13,65 +13,8 @@ function parseIDs() // make super duper recursive id checker?
 
 }
 
-
-function makeCompactMonsterTable()
-{
-    var tbl = document.createElement('table');
-    let th = tbl.insertRow();
-	makeHeaderCell("Tier", th);
-	makeHeaderCell("Monster", th);
-	makeHeaderCell("HP", th);
-    makeHeaderCell("speed", th);
-    makeHeaderCell("pause", th);
-    makeHeaderCell("1st compound cd", th);
-	var totalWeight = 0;
-    var sortedMonsters = gasData["monster"];
-	sortedMonsters.sort((a, b) => monsterSort(a, b));
-	for (let i = 0; i < sortedMonsters.length; i++)
-	{
-        var monsterData = sortedMonsters[i];
-        if(monsterSkip[monsterData.name] == true) continue;
-        var monster = new Monster(monsterData);
-        var dM = document.createElement('div');
-        let tr = tbl.insertRow();
-        makeCell(monster.getTier(), tr);
-        makeCell(monster.data.name, tr);
-        makeCell(monster.data.hp, tr);
-        makeCell(monster.data.runSpeed, tr);
-        makeCell(monster.data.pauseBetweenMovements, tr);
-        let firstCompound = "";
-        if(monster.data.weapons.length == 1 && monster.data.weapons[0].params.tag == "CompoundParams")
-        {
-            firstCompound = monster.data.weapons[0].cooldown;
-        }
-        makeCell(firstCompound, tr);
-	}
-    return tbl;
-}
 function parseData()
 {
-	let divList = document.createElement('div');
-	//divList.classList.add("inline");
-	var h1List = document.createElement("h1");
-	h1List.textContent = "Enemy List";
-	divList.appendChild(h1List);
-	var sortedMonsters = gasData["monster"];
-	sortedMonsters.sort((a, b) => monsterSort(a, b));
-	for (let i = 0; i < sortedMonsters.length; i++)
-	{
-		var monsterData = sortedMonsters[i];
-		if(monsterSkip[monsterData.name] == true) continue;
-        //if(!monsterData.name.includes("Xenofrog") || monsterData.name.includes("Nest")) continue;
-		var monster = new Monster(monsterData);
-        let monsterDiv = document.createElement('div');
-        monsterDiv.classList.add("monsterBlock");
-        monsterDiv.appendChild(monster.output(false));
-		divList.appendChild(monsterDiv);
-		//linebreak = document.createElement("br");
-		//divList.appendChild(linebreak);
-        
-	}
-	divList.appendChild(makeCompactMonsterTable());
 	let divMaps = document.createElement('div');
 	divMaps.classList.add("inline");
 	var h1Maps = document.createElement("h1");
@@ -144,7 +87,6 @@ function parseData()
 		divMaps.appendChild(tbl);
 	}
 	tableOutput.appendChild(divMaps);
-	tableOutput.appendChild(divList);
 }
 function mil(value)
 {
