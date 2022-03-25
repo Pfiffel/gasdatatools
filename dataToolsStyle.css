@@ -96,6 +96,26 @@ span.heal
 {
 	color: #d6bf3d;
 }
+.chat_default
+{
+	color: #ffffff;
+}
+.chat_system
+{
+	color: #ddddaa;
+}
+.chat_death
+{
+	color: #ddaaaa;
+}
+.chat_admin
+{
+	color: #aadddd;
+}
+.chat_dev
+{
+	color: #aaaadd;
+}
 span.cKey
 {
 	font-weight: normal;

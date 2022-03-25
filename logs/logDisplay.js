@@ -1,4 +1,4 @@
-var FILE = "Build19.log";
+var FILE = "Build20.log";
 var tableOutput = document.getElementById("tableOutput");
 var timeStart = window.performance.now();
 var bench = document.createElement('div');
@@ -36,6 +36,7 @@ var movePoints = [];
 var triggerPoints = [];
 var bossKillPoints = [];
 var maxConcurrentPlayers = 0;
+var chatLog = [];
 //var activePlayers = {};
 function parseData()
 {
@@ -49,10 +50,11 @@ function parseData()
 	var lastStatus = 0;
 	for (let i = 0; i < logData.length; i++)
 	{
-		var player = logData[i].message.data.name;
+		var data = logData[i].message.data;
+		var player = data.name;
 		InitPlayerIfNotSeenYet(player);
 		// seen tanks, is this really necessary to check for each message? no... but at least i won't have to worry about adding new tanks manually myself
-		var tank = logData[i].message.data.champion;
+		var tank = data.champion;
 		if(tank != undefined) InitTankIfNotSeenYet(tank);
 		var unix = logData[i].unixTime;
 		var toInterval = UnixToInterval(unix);
@@ -68,9 +70,9 @@ function parseData()
 			if(lastStatus == 0) lastStatus = unix;
 			sinceLastStatus += unix - lastStatus;
 			lastStatus = unix;
-			for (var playerIter in logData[i].message.data.players)
+			for (var playerIter in data.players)
 			{
-				var currPlayer = logData[i].message.data.players[playerIter];
+				var currPlayer = data.players[playerIter];
 				var currName = currPlayer.name;
 				var champ = currPlayer.champion;
 				InitPlayerIfNotSeenYet(currName);
@@ -89,77 +91,93 @@ function parseData()
 				if(currPlayer.latency != 0) players[currName].latLog.push(currPlayer.latency);
 				movePoints.push(MakePoint(currPlayer.p));
 			}
-			var playerAmount = logData[i].message.data.players.length;
+			var playerAmount = data.players.length;
 			maxConcurrentPlayers = Math.max(maxConcurrentPlayers, playerAmount);
 			graphIntervalDataPlayers[toInterval] = Math.max(graphIntervalDataPlayers[toInterval], playerAmount);
 		}
 		else if(currentTag == "RetirementLog")
 		{
-			var retiredChamp = logData[i].message.data.champion;
+			var retiredChamp = data.champion;
 			var c, m, a;
-			c = logData[i].message.data.credits;
-			m = logData[i].message.data.medal;
-			a = logData[i].message.data.accolade;
+			c = data.credits;
+			m = data.medal;
+			a = data.accolade;
 			players[player].retirements++;
 			players[player].medals += m;
 			players[player].accolades += a;
 			if(retirements[retiredChamp] == undefined) retirements[retiredChamp] = [0,0,0,0];
 			retirements[retiredChamp][0]++;
-			retirements[retiredChamp][1] += logData[i].message.data.credits;
-			retirements[retiredChamp][2] += logData[i].message.data.medal;
-			retirements[retiredChamp][3] += logData[i].message.data.accolade;
+			retirements[retiredChamp][1] += c;
+			retirements[retiredChamp][2] += m;
+			retirements[retiredChamp][3] += a;
+			AddChatLog(unix, data, currentTag);
 		}
 		else if(currentTag == "PlayerDeathLog")
 		{
 			players[player].deaths++;
 			if(deaths[tank] == undefined) deaths[tank] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-			var level = logData[i].message.data.level; //players[logData[i].message.data.name].currentLevel; 
+			var level = data.level; //players[data.name].currentLevel; 
 			deaths[tank][level]++;
-			deathPointsAll.push(MakePoint(logData[i].message.data.p));
-			if(level == 20) deathPoints20.push(MakePoint(logData[i].message.data.p));
-			if(level < 20) deathPointsSub20.push(MakePoint(logData[i].message.data.p));
+			deathPointsAll.push(MakePoint(data.p));
+			if(level == 20) deathPoints20.push(MakePoint(data.p));
+			if(level < 20) deathPointsSub20.push(MakePoint(data.p));
 			graphIntervalDataDeaths[toInterval]++;
+			AddChatLog(unix, data, currentTag);
 		}
 		else if(currentTag == "BossKillLog")
 		{
 			bossKillPoints.push(MakePoint(logData[i].message.data.p));
 			players[player].bossKills++;
-		}
+			AddChatLog(unix, data, currentTag);
+		}/*
+		else if(currentTag == "BossDeathLog")
+		{
+			bossKillPoints.push(MakePoint(logData[i].message.data.p));
+			AddChatLog(unix, data, currentTag);
+		}*/
 		else if(currentTag == "PlayerChatLog")
 		{
 			players[player].chats++;
+			AddChatLog(unix, data, currentTag);
 		}
 		else if(currentTag == "PlayerSpawnLog")
 		{
-			players[logData[i].message.data.name].currentLevel = logData[i].message.data.level;
+			players[data.name].currentLevel = data.level;
 		}
 		else if(currentTag == "LevelUpLog")
 		{
 			players[player].levelUps++;
-			players[logData[i].message.data.name].currentLevel = logData[i].message.data.level+1;
+			players[data.name].currentLevel = data.level+1;
+			if(players[data.name].currentLevel == 20) AddChatLog(unix, data, currentTag);
 		}
 		else if(currentTag == "PlayerLoginLog")
 		{
+			AddChatLog(unix, data, currentTag);
 			graphIntervalDataPlayers[toInterval]++;
 		}
 		else if(currentTag == "PlayerDisconnectLog")
 		{
+			AddChatLog(unix, data, currentTag);
 			graphIntervalDataPlayers[toInterval]--;
 			// TODO figure out why this can become < 0 in the first place
 			graphIntervalDataPlayers[toInterval] = Math.max(graphIntervalDataPlayers[toInterval], 0);
 		}
+		else if(currentTag == "LootPickupLog")
+		{
+			AddChatLog(unix, data, currentTag);
+		}
 		else if(currentTag == "SymbioteRemoveLog")
 		{
-			var removedSymb = logData[i].message.data.symbiote;
+			var removedSymb = data.symbiote;
 			if(removedSymbs[removedSymb] == undefined) removedSymbs[removedSymb] = 0;
 			removedSymbs[removedSymb]++;
 		}
 		else if(currentTag == "TriggerLog")
 		{
-			var triggerChamp = logData[i].message.data.champion;
+			var triggerChamp = data.champion;
 			if(triggerStats[triggerChamp] == undefined) triggerStats[triggerChamp] = [0,0,0,0];
-			triggerStats[triggerChamp][logData[i].message.data.triggerIndex]++;
-			triggerPoints.push(MakePoint(logData[i].message.data.p));
+			triggerStats[triggerChamp][data.triggerIndex]++;
+			triggerPoints.push(MakePoint(data.p));
 		}
 		if(tags[currentTag] == undefined) tags[currentTag] = 1; else tags[currentTag]++;
 	}
@@ -177,6 +195,7 @@ function parseData()
 	tableOutput.appendChild(MakeSimpleCountList("Tag", tags));
 	tableOutput.appendChild(MakePlayerStats());
 	tableOutput.appendChild(MakeSimpleCountList("Removed Symbiote", removedSymbs));
+	tableOutput.appendChild(MakeChatLog());
 	var div = document.createElement('div');
 	div.classList.add("inline");
 	div.appendChild(MakeRetirementStats());
@@ -185,8 +204,117 @@ function parseData()
 	tableOutput.appendChild(div);
 	var secs = Math.round(window.performance.now() - timeStart)/1000;
 	bench.innerHTML += "<br/>" + logData.length + " logs processed in " + secs + " seconds<br/><br/>" + playerStatSummary + "<br/>";
+}
+// http://www.jeffreythompson.org/collision-detection/poly-point.php
+function PointIsInPoly(vertices, p) {
+  var collision = false;
+  var next = 0;
+  for (let current = 0; current < vertices.length; current++)
+	{
+    next = current+1;
+    if (next == vertices.length) next = 0;
+    var vc = vertices[current];    // c for "current"
+    var vn = vertices[next];       // n for "next"
+    if (((vc.y >= p.y && vn.y < p.y) || (vc.y < p.y && vn.y >= p.y)) &&
+         (p.x < (vn.x-vc.x)*(p.y-vc.y) / (vn.y-vc.y)+vc.x)) {
+            collision = !collision;
+    }
+  }
+  return collision;
+}
+function GetZoneFromPoint(p)
+{
+	if(p == undefined ) return null;
+	for (let i = 0; i < gasData["map"].length; i++)
+	{
+		var map = gasData["map"][i];
+		if(map.name != "Quagmire") continue;
+	
+		var mf = map.monsterFields;
+		for (let m = 0; m < mf.length; m++)
+		{
+			var monsterField = mf[m];
 
-	//console.log(sinceLastStatus)
+			if(PointIsInPoly(monsterField.poly, p))
+			{
+				var color = getLair(monsterField.lairType).color;
+				// TODO parse and cache these at the start
+				var zoneInfo = {};
+				zoneInfo.color = color;
+				zoneInfo.name = monsterField.sectorName;
+				return zoneInfo;
+			}
+		}
+	}
+	return null;
+}
+function AddChatLog(unix, data, type)
+{
+	if(type == "BossKillLog") data.message = "(defeated " + data.monsterName + ")";
+	if(type == "PlayerLoginLog") data.message = "(connected)";
+	else if(type == "PlayerDisconnectLog") data.message = "(disconnected)";
+	if(type == "PlayerDeathLog") data.message = "(died)";
+	if(type == "RetirementLog") data.message = "(retired)";
+	if(type == "LootPickupLog") data.message = "(picked up " + MakeItemList(data.items) + ")";
+	if(type == "LevelUpLog") data.message = "(reached level " + (data.level+1) + ")";
+	data.unix = unix;
+	data.type = type;
+	chatLog.push(data);
+}
+function MakeItemList(list)
+{
+	var s = "";
+	for (let i = 0; i < list.length; i++)
+	{
+		if(i != 0) 	s += ", ";
+		var item = list[i];
+		s += item;
+	}
+	return s;
+}
+function MakeChatLog()
+{
+	var chatLogOutput = document.createElement('table');
+	let th = chatLogOutput.insertRow();
+	makeHeaderCell("Timestamp", th);
+	makeHeaderCell("Type", th);
+	makeHeaderCell("Name", th);
+	makeHeaderCell("Tank", th);
+	makeHeaderCell("Level", th);
+	makeHeaderCell("Location", th);
+	makeHeaderCell("Message", th);
+	for (var i in chatLog)
+	{
+		var name = chatLog[i].name;
+		var messageType = GetMessageColorClass(chatLog[i].type, name);
+		//if(messageType == "chat_system") continue;
+		let tr = chatLogOutput.insertRow();
+		var champion = chatLog[i].champion == undefined ? "" : chatLog[i].champion;
+		var message = chatLog[i].message == undefined ? "" : chatLog[i].message;
+		var level = chatLog[i].level == undefined ? "" : chatLog[i].level;
+		makeCell(unixToStringYMDHMS(chatLog[i].unix), tr, messageType);
+		makeCell(chatLog[i].type, tr, messageType);
+		makeCell(name, tr, messageType);
+		makeCell(champion, tr, messageType);
+		makeCell(level, tr, messageType);
+		var zoneInfo = GetZoneFromPoint(chatLog[i].p);
+		var zoneCell = makeCell(zoneInfo != null ? zoneInfo.name : "", tr, messageType);
+		if(zoneInfo != null) zoneCell.style.color = numberToHex(zoneInfo.color);
+		makeCell(message, tr, messageType);
+	}
+	return chatLogOutput;
+}
+function GetMessageColorClass(type, name)
+{
+	if(type == "PlayerChatLog")
+	{
+		/*var lc = name.toLowerCase();
+		if(lc == "rob") return "chat_admin";
+		if(lc == "amitp" || lc == "pfiffel") return "chat_dev";*/
+		return "chat_chat";
+	}
+	if(type == "PlayerDeathLog") return "chat_death";
+	return "chat_system";
 }
 function DrawPoly(ctx, scale, poly, offset, color)
 {
@@ -274,16 +402,6 @@ function MakeMap(ctx, scale, mapName)
 			var color = GetLane(lane.laneType).color;
 			DrawLane(ctx, scale, lane.waypoints, map.mapRadius, "#553333");//numberToHex(color));
 		}
-		/*
-		var mf = map.monsterFields;
-		for (let m = 0; m < mf.length; m++)
-		{
-			var monsterField = mf[m];
-			let tr = tbl.insertRow();
-			var type = monsterField.lairType;
-			var fieldSize = getPolyArea(monsterField.poly);
-		}
-		*/
 	}
 }
 function MakePoint(point)
@@ -353,6 +471,12 @@ function MakeGraphCanvas(id)
 	canvas.style.height = "400px";
 	//canvas.style.maxHeight = "25%";
 	return canvas;
+}
+function unixToStringYMDHMS(unix)
+{
+	var date = new Date(unix * 1000);
+	return date.getFullYear() + "-" + (date.getMonth()+1).toString().padStart(2, '0') + "-" + date.getDate().toString().padStart(2, '0')  + " " +
+	date.getHours().toString().padStart(2, '0') + ":" + date.getMinutes().toString().padStart(2, '0') + ":" + date.getSeconds().toString().padStart(2, '0');
 }
 function unixToString(unix)
 {
