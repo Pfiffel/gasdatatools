@@ -311,7 +311,7 @@ function GetMessageColorClass(type, name)
 		/*var lc = name.toLowerCase();
 		if(lc == "rob") return "chat_admin";
 		if(lc == "amitp" || lc == "pfiffel") return "chat_dev";*/
-		return "chat_chat";
+		return "chat_default";
 	}
 	if(type == "PlayerDeathLog") return "chat_death";
 	return "chat_system";
