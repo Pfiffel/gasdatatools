@@ -149,71 +149,34 @@ function MakeStatsTable(mainData, tier)
 		else if(mainTag == "TriggeredTriggerEffect" || mainTag == "TriggeredHealMineBurst")
 		{
 			if(prevCondition != undefined && prevCondition == data.when) prevRepeat = true; else prevRepeat = false;
+			if(!prevRepeat) s += "On " + classWrap(TRIGGERED_TRIGGER_EFFECTS[data.when][1], "cKeyValue") + ":<br/>";
+			prevCondition = data.when;
+
 			if(TRIGGERED_TRIGGER_EFFECTS[data.when][2] == undefined) TRIGGERED_TRIGGER_EFFECTS[data.when][2] = 0;
 			TRIGGERED_TRIGGER_EFFECTS[data.when][2]++;
 			if(TRIGGERED_TRIGGER_EFFECTS[data.when][3] == undefined) TRIGGERED_TRIGGER_EFFECTS[data.when][3] = {};
 			TRIGGERED_TRIGGER_EFFECTS[data.when][3][mainData.name] = 1;
-			if(!prevRepeat) s += "On " + classWrap(TRIGGERED_TRIGGER_EFFECTS[data.when][1], "cKeyValue") + ":<br/>";
-			prevCondition = data.when;
+			
 			if(mainTag == "TriggeredTriggerEffect")
 			{
-				var params = data.params;
-				if(params.tag == "FireRateBoostTrigger"){
-					s += printKeyAndData("Rate of Fire Boost", params.data.amount + "%");
-					s += printKeyAndData("Duration", params.data.duration);
-				}
-				if(params.tag == "ShotgunTrigger"){
-					s += printKeyAndData("AoE Damage", params.data.damage);
-					s += printKeyAndData("Range", params.data.range);
-					s += printKeyAndData("Arc", (params.data.halfArc * 0.2) + "°");
-				}
-				if(params.tag == "HealOverTimeTrigger"){
-					s += printKeyAndData("Heal Amount", params.data.amount + (params.data.asPercentage == 1 ? "%" : ""), params.data.applyToMana == 1 ? "energy" : "heal");
-					s += printKeyAndData("Duration", params.data.duration);
-				}
-				if(params.tag == "ShieldRefillTrigger"){
-					s += printKeyAndData("Shield Refill", params.data.refillPercentage + "%");
-				}
-				if(params.tag == "HealTrigger"){
-					s += printKeyAndData("Repair Amount", params.data.healAmount + (params.data.asPercentage == 1 ? "%" : ""), params.data.applyToMana == 1 ? "energy" : "heal");
-				}
-				if(params.tag == "StatBoostTrigger"){
-					s += printKeyAndData(GetStat(params.data.statType, 1), params.data.amount + "%");
-					s += printKeyAndData("Duration", params.data.duration);
-				}
-				if(params.tag == "DematerializeTrigger"){
-					if(params.data.percentChance != undefined && params.data.percentChance != 1)
-						s += printKeyAndData("Dematerialize Chance", params.data.percentChance + "%");
-					s += printKeyAndData("Dematerialize Duration", params.data.duration);
-				}
-				if(params.tag == "ExtraGunTrigger"){
-					let dps = round(1000*params.data.stats.damage/params.data.stats.cooldown,2);
-					s += printKeyAndData("Gun", dps + " DPS");
-					s += printKeyAndData("Duration", params.data.duration);
-				}
-				if(params.tag == "ExtraShieldTrigger"){
-					var hex = numberToHex(params.data.stats.color);
-					s += printKeyAndData("Shield", "Strength " + params.data.stats.maxStrength);
-					s += printKeyAndData("Shield", colorWrap("Arc "+GetArc(params.data.stats), hex));
-				}
-				if(params.tag == "GunProcTrigger"){
-					s += "For <b>" + params.data.duration + "</b> ms, gun shots apply:" + "<br/>";
-					s += ShowStatusEffect(params.data.statusEffect);
-				}
-				if(params.tag == "LeapTrigger"){
-					s += printKeyAndData("Leap Distance", params.data.range);
-				}
-				if(params.tag == "SharkletTrigger"){
-					s += printKeyAndData("Missile Count", params.data.count);
-					s += printKeyAndData("Damage", params.data.damage);
-					s += printKeyAndData("Range", params.data.range);
-				}
+				s += GetTriggeredEffectString(data.params.tag, data.params.data);
 			}
 			else if(mainTag == "TriggeredHealMineBurst")
 			{
 				s += "Create <b>" + data.mineCount + "</b> repair packs" + "<br/>";
 				s += printKeyAndData("Repair Amount", data.healing, "heal");
 				s += printKeyAndData("Duration", data.duration);
+			}
+		}
+		else if(mainTag == "PeriodicTriggerEffect")
+		{
+			var chanceTo = "";
+			if(data.percentChance != undefined && data.percentChance != 100)
+				chanceTo = " " + data.percentChance + "% to";
+			s += "Every " + classWrap(data.cooldown, "cKeyValue") + " ms" + chanceTo + ":<br/>";
+			for (var p in data.params){
+				var effect = data.params[p];
+				s += GetTriggeredEffectString(effect.tag, effect.data);
 			}
 		}
 		else if(mainTag == "RandomTargetEffect" || mainTag == "TriggeredRandomTargetEffect")
@@ -257,6 +220,61 @@ function MakeStatsTable(mainData, tier)
 			prevCell = makeCell(s, tr);
 	}
 	return tbl;
+}
+function GetTriggeredEffectString(tag, data)
+{
+	var s = "";
+	if(tag == "FireRateBoostTrigger"){
+		s += printKeyAndData("Rate of Fire Boost", data.amount + "%");
+		s += printKeyAndData("Duration", data.duration);
+	}
+	else if(tag == "ShotgunTrigger"){
+		s += printKeyAndData("AoE Damage", data.damage);
+		s += printKeyAndData("Range", data.range);
+		s += printKeyAndData("Arc", (data.halfArc * 0.2) + "°");
+	}
+	else if(tag == "HealOverTimeTrigger"){
+		s += printKeyAndData("Heal Amount", data.amount + (data.asPercentage == 1 ? "%" : ""), data.applyToMana == 1 ? "energy" : "heal");
+		s += printKeyAndData("Duration", data.duration);
+	}
+	else if(tag == "ShieldRefillTrigger"){
+		s += printKeyAndData("Shield Refill", data.refillPercentage + "%");
+	}
+	else if(tag == "HealTrigger"){
+		s += printKeyAndData("Repair Amount", data.healAmount + (data.asPercentage == 1 ? "%" : ""), data.applyToMana == 1 ? "energy" : "heal");
+	}
+	else if(tag == "StatBoostTrigger"){
+		s += printKeyAndData(GetStat(data.statType, 1), data.amount + "%");
+		s += printKeyAndData("Duration", data.duration);
+	}
+	else if(tag == "DematerializeTrigger"){
+		if(data.percentChance != undefined && data.percentChance != 100)
+			s += printKeyAndData("Dematerialize Chance", data.percentChance + "%");
+		s += printKeyAndData("Dematerialize Duration", data.duration);
+	}
+	else if(tag == "ExtraGunTrigger"){
+		let dps = round(1000*data.stats.damage/data.stats.cooldown,2);
+		s += printKeyAndData("Create Gun", dps + " DPS");
+		s += printKeyAndData("Duration", data.duration);
+	}
+	else if(tag == "ExtraShieldTrigger"){
+		var hex = numberToHex(data.stats.color);
+		s += printKeyAndData("Shield", "Strength " + data.stats.maxStrength);
+		s += printKeyAndData("Shield", colorWrap("Arc "+GetArc(data.stats), hex));
+	}
+	else if(tag == "GunProcTrigger"){
+		s += "For <b>" + data.duration + "</b> ms, gun shots apply:" + "<br/>";
+		s += ShowStatusEffect(data.statusEffect);
+	}
+	else if(tag == "LeapTrigger"){
+		s += printKeyAndData("Leap Distance", data.range);
+	}
+	else if(tag == "SharkletTrigger"){
+		s += printKeyAndData("Missile Count", data.count);
+		s += printKeyAndData("Damage", data.damage);
+		s += printKeyAndData("Range", data.range);
+	}
+	return s;
 }
 function ShowStatusEffect(effect)
 {
