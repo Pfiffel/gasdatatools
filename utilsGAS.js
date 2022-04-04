@@ -172,7 +172,7 @@ function MakeStatsTable(mainData, tier)
 		{
 			var chanceTo = "";
 			if(data.percentChance != undefined && data.percentChance != 100)
-				chanceTo = " " + data.percentChance + "% to";
+				chanceTo = ", " + classWrap(data.percentChance + "%", "cKeyValue") + " to";
 			s += "Every " + classWrap(data.cooldown, "cKeyValue") + " ms" + chanceTo + ":<br/>";
 			for (var p in data.params){
 				var effect = data.params[p];
