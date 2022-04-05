@@ -1,0 +1,16 @@
+{
+  "gap": 50,
+  "groundColor": 5320808,
+  "mapColor": 5320808,
+  "name": "Swamp Purple",
+  "polyDecorations": [
+    {
+      "gap": 100,
+      "objectType": "Swamp Mangrove Purple"
+    }
+  ],
+  "segmentObjects": [
+    "Swamp Mangrove Purple"
+  ]
+}
+

@@ -1,0 +1,8 @@
+{
+  "name": "Iron Lance Death Cries",
+  "sounds": [
+    "Enemy_IronLance_DeathCry_01"
+  ],
+  "volume": 150
+}
+

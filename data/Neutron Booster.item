@@ -1,0 +1,17 @@
+{
+  "credits": 3,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 7,
+        "statType": 0
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Neutron Booster",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

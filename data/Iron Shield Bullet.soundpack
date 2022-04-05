@@ -1,0 +1,10 @@
+{
+  "name": "Iron Shield Bullet",
+  "sounds": [
+    "Enemy_BasicGun_01",
+    "Enemy_BasicGun_02",
+    "Enemy_BasicGun_03"
+  ],
+  "volume": 25
+}
+

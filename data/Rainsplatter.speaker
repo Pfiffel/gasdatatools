@@ -1,0 +1,36 @@
+{
+  "name": "Rainsplatter",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I give freely of the waters of life!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "To all who come, I give the waters!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I share the waters with all!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "The life-giving waters, they belong to us all!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

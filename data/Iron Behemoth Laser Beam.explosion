@@ -1,0 +1,29 @@
+{
+  "layers": [
+    {
+      "angularDensity": 1440,
+      "maxDistPercent": 100,
+      "minDistPercent": 92,
+      "particleType": "Iron Behemoth",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 1440,
+      "maxDistPercent": 97,
+      "minDistPercent": 60,
+      "particleType": "Iron Behemoth Laser",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 1440,
+      "maxDistPercent": 90,
+      "minDistPercent": 30,
+      "particleType": "Iron Behemoth",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Iron Behemoth Laser Beam",
+  "sound": "Enemy_BiggerGun_B_08",
+  "volume": 150
+}
+

@@ -1,0 +1,16 @@
+{
+  "gap": 50,
+  "groundColor": 15627026,
+  "mapColor": 8730379,
+  "name": "Swamp Orange",
+  "polyDecorations": [
+    {
+      "gap": 100,
+      "objectType": "Swamp Acid Plant"
+    }
+  ],
+  "segmentObjects": [
+    "Swamp Acid Plant"
+  ]
+}
+

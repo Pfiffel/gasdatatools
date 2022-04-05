@@ -1,0 +1,8 @@
+{
+  "name": "Iron Purifier Death Cries",
+  "sounds": [
+    "Enemy_Purifier_DeathCry_01"
+  ],
+  "volume": 200
+}
+

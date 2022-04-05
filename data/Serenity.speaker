@@ -1,0 +1,36 @@
+{
+  "name": "Serenity",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Peace be with you.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "In stillness, peace.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "In silence, peace.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "In equanimity, peace.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

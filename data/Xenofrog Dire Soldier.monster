@@ -1,0 +1,54 @@
+{
+  "boss": 0,
+  "collisionRadius": 22,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Enemy Hits",
+  "drops": [],
+  "healRate": 0,
+  "hp": 800,
+  "idleAnimation": "Xenofrog Idle",
+  "maxMoveDistance": 200,
+  "name": "Xenofrog Dire Soldier",
+  "objectType": "Xenofrog Dire Soldier",
+  "pauseBetweenMovements": 700,
+  "runAnimation": "Xenofrog Leap",
+  "runSpeed": 280,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Mouth",
+      "cooldown": 1800,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "damage": 250,
+                "delay": 1000,
+                "explosionType": "",
+                "halfArc": 180,
+                "powers": [],
+                "range": 320,
+                "triggerSound": "",
+                "triggerVolume": 50
+              },
+              "tag": "ShotgunParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 36,
+  "xpLevelCap": 19
+}
+

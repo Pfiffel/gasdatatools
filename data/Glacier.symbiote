@@ -1,0 +1,42 @@
+{
+  "description": "Glacier is cool and calm.",
+  "effects": [
+    {
+      "data": {
+        "cooldown": 5000,
+        "range": 300,
+        "statusEffects": [
+          {
+            "data": {
+              "duration": 4000
+            },
+            "tag": "FreezeEffect"
+          },
+          {
+            "data": {
+              "arcOffset": 0,
+              "halfArc": 1800,
+              "maxDist": 10,
+              "minDist": 0,
+              "particleType": "Glacier Effect Line",
+              "spacing": 15
+            },
+            "tag": "ParticleLineEffect"
+          },
+          {
+            "data": {
+              "sound": "Wasp Dematerialize",
+              "volume": 75
+            },
+            "tag": "PlaySoundEffect"
+          }
+        ]
+      },
+      "tag": "RandomTargetEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Glacier",
+  "tier": 1
+}
+

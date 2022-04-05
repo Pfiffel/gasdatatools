@@ -1,0 +1,45 @@
+{
+  "boss": 1,
+  "collisionRadius": 115,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Iron Colossus Enrage 2",
+  "drops": [],
+  "healRate": 0,
+  "hp": 4000,
+  "idleAnimation": "BaseArcher Idle",
+  "name": "Iron Colossus",
+  "objectType": "Iron Colossus",
+  "runAnimation": "Iron Colossus Run",
+  "runSpeed": 100,
+  "successorMonster": "Iron Colossus 2",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret Left",
+      "cooldown": 500,
+      "objectType": "Iron Colossus Turret",
+      "params": {
+        "data": {
+          "gunBulletType": "Iron Colossus",
+          "range": 800
+        },
+        "tag": "MultiBarrelGunParams"
+      }
+    },
+    {
+      "attachmentPoint": "Turret Right",
+      "cooldown": 500,
+      "objectType": "Iron Colossus Turret",
+      "params": {
+        "data": {
+          "gunBulletType": "Iron Colossus",
+          "range": 800
+        },
+        "tag": "MultiBarrelGunParams"
+      }
+    }
+  ],
+  "xp": 100,
+  "xpLevelCap": 19
+}
+

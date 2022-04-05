@@ -1,0 +1,36 @@
+{
+  "name": "Shining Sword",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Attack!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Forward!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Charge!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Into the breach!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

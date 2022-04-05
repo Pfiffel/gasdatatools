@@ -1,0 +1,17 @@
+{
+  "credits": 4,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 16,
+        "statType": 6
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Recursive Cycler",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

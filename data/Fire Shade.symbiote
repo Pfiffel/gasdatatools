@@ -1,0 +1,24 @@
+{
+  "description": "Fire Shade brings flaming vengeance from beyond the grave.",
+  "effects": [
+    {
+      "data": {
+        "percentChance": 25,
+        "statusEffects": [
+          {
+            "data": {
+              "dps": 50,
+              "duration": 1000
+            },
+            "tag": "BurningEffect"
+          }
+        ]
+      },
+      "tag": "GunProcs"
+    }
+  ],
+  "enemies": [],
+  "name": "Fire Shade",
+  "tier": 4
+}
+

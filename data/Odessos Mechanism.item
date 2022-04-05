@@ -1,0 +1,59 @@
+{
+  "credits": 10,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "damage": 120,
+            "delay": 3000,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Odessos Mine Blast",
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 280,
+            "statusEffects": [],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "Timed Bomb Drop"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 3
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "delay": 0,
+            "duration": 3000,
+            "emitterType": "Odessos Mine",
+            "mirror": 0,
+            "objectType": "Odessos Mine",
+            "sound": "",
+            "tag": "",
+            "target": {
+              "x": 0,
+              "y": 0
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        },
+        "when": 3
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Odessos Mechanism",
+  "overworldDrop": 0,
+  "precursorTech": 1
+}
+

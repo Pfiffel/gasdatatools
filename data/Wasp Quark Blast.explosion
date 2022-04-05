@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 75,
+      "maxDistPercent": 100,
+      "minDistPercent": 90,
+      "particleType": "Wasp Grenade Burst",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Wasp Quark Blast",
+  "sound": "Player_Wasp_QuarkBlast",
+  "volume": 50
+}
+

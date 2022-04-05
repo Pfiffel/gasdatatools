@@ -1,0 +1,8 @@
+{
+  "name": "Iron Centurian Death Cries",
+  "sounds": [
+    "Enemy_Centurian_DeathCry_01"
+  ],
+  "volume": 75
+}
+

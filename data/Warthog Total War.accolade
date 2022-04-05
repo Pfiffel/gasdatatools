@@ -1,0 +1,38 @@
+{
+  "champion": "Warthog",
+  "displayName": "Total War",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "amount": 0,
+            "duration": 2000
+          },
+          "tag": "StatBoostTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Warthog 4 StatBoost",
+        "tooltip": "On War Boar:"
+      },
+      "tag": "TaggedTriggerBonus"
+    },
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "amount": 400,
+            "duration": 2000
+          },
+          "tag": "HealOverTimeTriggerBonus"
+        },
+        "showTooltipStats": 0,
+        "tag": "Warthog 4 HealOverTime",
+        "tooltip": ""
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Warthog Total War"
+}
+

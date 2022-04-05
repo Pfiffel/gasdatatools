@@ -1,0 +1,17 @@
+{
+  "credits": 2,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 12,
+        "statType": 2
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Induction Charger",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

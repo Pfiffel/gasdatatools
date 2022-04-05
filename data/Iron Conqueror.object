@@ -1,0 +1,134 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 30,
+      "name": "Turret",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [
+    {
+      "name": "Hand",
+      "p": {
+        "x": -9,
+        "y": 55
+      }
+    },
+    {
+      "name": "Foot",
+      "p": {
+        "x": -10,
+        "y": 39
+      }
+    }
+  ],
+  "floppiness": 0,
+  "name": "Iron Conqueror",
+  "shapes": [
+    {
+      "bone": "Foot",
+      "clones": [],
+      "closed": 1,
+      "color": 3751250,
+      "height": 0,
+      "mirror": 1,
+      "name": "Foot",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 14,
+          "y": 55
+        },
+        {
+          "x": 9,
+          "y": 75
+        },
+        {
+          "x": -9,
+          "y": 75
+        },
+        {
+          "x": -14,
+          "y": 55
+        },
+        {
+          "x": -31,
+          "y": 51
+        },
+        {
+          "x": -31,
+          "y": 33
+        },
+        {
+          "x": -13,
+          "y": 27
+        },
+        {
+          "x": -8,
+          "y": 9
+        },
+        {
+          "x": 8,
+          "y": 9
+        },
+        {
+          "x": 13,
+          "y": 27
+        },
+        {
+          "x": 31,
+          "y": 33
+        },
+        {
+          "x": 31,
+          "y": 51
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hips",
+      "clones": [],
+      "closed": 0,
+      "color": 4080215,
+      "height": 30,
+      "mirror": 1,
+      "name": "Hips",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 28,
+          "y": 13
+        },
+        {
+          "x": 21,
+          "y": 32
+        },
+        {
+          "x": 9,
+          "y": 40
+        },
+        {
+          "x": -12,
+          "y": 40
+        },
+        {
+          "x": -25,
+          "y": 30
+        },
+        {
+          "x": -30,
+          "y": 12
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

@@ -1,0 +1,16 @@
+{
+  "champion": "Wasp",
+  "displayName": "Venom Gland",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 30,
+        "statType": 12
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Wasp Venom Gland"
+}
+

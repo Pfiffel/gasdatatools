@@ -1,0 +1,99 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Zakros Grenade",
+  "shapes": [
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "color": 5716134,
+      "height": 12,
+      "mirror": 1,
+      "name": "Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 41,
+          "y": 5
+        },
+        {
+          "x": 33,
+          "y": 17
+        },
+        {
+          "x": 21,
+          "y": 25
+        },
+        {
+          "x": 1,
+          "y": 28
+        },
+        {
+          "x": -10,
+          "y": 25
+        },
+        {
+          "x": -29,
+          "y": 14
+        },
+        {
+          "x": -53,
+          "y": 5
+        },
+        {
+          "x": -82,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "color": 10316507,
+      "height": 15,
+      "mirror": 1,
+      "name": "Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 24,
+          "y": 3
+        },
+        {
+          "x": 19,
+          "y": 9
+        },
+        {
+          "x": 12,
+          "y": 14
+        },
+        {
+          "x": 2,
+          "y": 16
+        },
+        {
+          "x": -5,
+          "y": 14
+        },
+        {
+          "x": -17,
+          "y": 8
+        },
+        {
+          "x": -31,
+          "y": 3
+        },
+        {
+          "x": -47,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

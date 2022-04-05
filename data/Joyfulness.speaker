@@ -1,0 +1,36 @@
+{
+  "name": "Joyfulness",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Why, hello!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Hi there!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "It's a great day!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "So nice to see you!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

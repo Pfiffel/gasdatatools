@@ -1,0 +1,36 @@
+{
+  "name": "Red Wizard",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "None shall pass me!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "You pathetic creatures! Bow down!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "My power is unequalled!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Who dares enter my presence?",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

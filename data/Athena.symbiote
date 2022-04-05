@@ -1,0 +1,22 @@
+{
+  "description": "Athena holds fast against all dangers, a bulwark in the storm.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 19,
+        "shield": {
+          "color": 16237886,
+          "left": -1200,
+          "level": 0,
+          "maxStrength": 400,
+          "right": 1200
+        }
+      },
+      "tag": "ItemShield"
+    }
+  ],
+  "enemies": [],
+  "name": "Athena",
+  "tier": 3
+}
+

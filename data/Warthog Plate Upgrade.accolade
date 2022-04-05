@@ -1,0 +1,16 @@
+{
+  "champion": "Warthog",
+  "displayName": "Plate Upgrade",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 1,
+        "statType": 3
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Warthog Plate Upgrade"
+}
+

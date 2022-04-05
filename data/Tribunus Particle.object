@@ -1,0 +1,46 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Tribunus Particle",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 16711423,
+      "height": 20,
+      "mirror": 1,
+      "name": "Spear",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -93,
+          "y": 0
+        },
+        {
+          "x": -79,
+          "y": 4
+        },
+        {
+          "x": -25,
+          "y": 6
+        },
+        {
+          "x": -18,
+          "y": 16
+        },
+        {
+          "x": -7,
+          "y": 5
+        },
+        {
+          "x": 34,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

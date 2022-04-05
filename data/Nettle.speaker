@@ -1,0 +1,36 @@
+{
+  "name": "Nettle",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Who can we annoy today?",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Let's get under somebody's skin!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I want to irritate somebody!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Wait'll they get a load of me!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

@@ -1,0 +1,46 @@
+{
+  "champion": "Hercules",
+  "displayName": "Aegis Extension",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "duration": 2000,
+            "maxStrength": 0
+          },
+          "tag": "ExtraShieldTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Hercules 4 ExtraShield",
+        "tooltip": "On Battle Aegis:"
+      },
+      "tag": "TaggedTriggerBonus"
+    },
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "damage": 0,
+            "delay": 0,
+            "halfArc": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 0,
+            "statusEffects": [],
+            "targetingDelay": 2000
+          },
+          "tag": "ShotgunTriggerBonus"
+        },
+        "showTooltipStats": 0,
+        "tag": "Hercules 4 Shotgun",
+        "tooltip": ""
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Hercules Aegis Extension"
+}
+

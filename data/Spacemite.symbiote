@@ -1,0 +1,25 @@
+{
+  "description": "Spacemite punches above his weight.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": -20,
+        "statType": 10
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 10,
+        "statType": 4
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "Spacemite",
+  "tier": 1
+}
+

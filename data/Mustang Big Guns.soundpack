@@ -1,0 +1,17 @@
+{
+  "name": "Mustang Big Guns",
+  "sounds": [
+    "Player_Mustang_BigGun_01",
+    "Player_Mustang_BigGun_02",
+    "Player_Mustang_BigGun_03",
+    "Player_Mustang_BigGun_04",
+    "Player_Mustang_BigGun_05",
+    "Player_Mustang_BigGun_06",
+    "Player_Mustang_BigGun_07",
+    "Player_Mustang_BigGun_08",
+    "Player_Mustang_BigGun_09",
+    "Player_Mustang_BigGun_10"
+  ],
+  "volume": 75
+}
+

@@ -1,0 +1,40 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 15011644
+    },
+    {
+      "frac": 900,
+      "value": 15011644
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 500,
+  "minLifetime": 300,
+  "name": "Dagger Blast",
+  "objectType": "Small Six Star",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 50,
+      "value": 500
+    },
+    {
+      "frac": 500,
+      "value": 500
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 16776958,
+  "startScale": 10,
+  "stayLow": 0
+}
+

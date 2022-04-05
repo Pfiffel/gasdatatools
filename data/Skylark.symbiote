@@ -1,0 +1,23 @@
+{
+  "description": "Skylark follows the lesser trodden path, wherever it may lead.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "duration": 750,
+            "emitterType": "",
+            "percentChance": 75
+          },
+          "tag": "DematerializeTrigger"
+        },
+        "when": 0
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Skylark",
+  "tier": 3
+}
+

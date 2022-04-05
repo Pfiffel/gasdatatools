@@ -1,0 +1,59 @@
+{
+  "credits": 10,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "damage": 75,
+            "delay": 500,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Zakros Burst",
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 220,
+              "y": 0
+            },
+            "range": 100,
+            "statusEffects": [],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "Grenade Launch"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 6
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "delay": 0,
+            "duration": 500,
+            "emitterType": "",
+            "mirror": 0,
+            "objectType": "Zakros Grenade",
+            "sound": "",
+            "tag": "",
+            "target": {
+              "x": 220,
+              "y": 0
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        },
+        "when": 6
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Zakros Mechanism",
+  "overworldDrop": 0,
+  "precursorTech": 1
+}
+

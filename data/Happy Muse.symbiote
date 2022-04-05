@@ -1,0 +1,17 @@
+{
+  "description": "Happy Muse inspires her friends to action.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 1,
+        "amount": 25,
+        "statType": 2
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "Happy Muse",
+  "tier": 6
+}
+

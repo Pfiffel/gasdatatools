@@ -1,0 +1,36 @@
+{
+  "name": "Tumbleweed",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "What's that? It looks dangerous!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Look out!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Duck!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Watch it!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

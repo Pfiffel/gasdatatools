@@ -1,0 +1,36 @@
+{
+  "name": "Fairweather",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Be unhurried.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Calm yourself.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Slow down.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Be peaceful.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

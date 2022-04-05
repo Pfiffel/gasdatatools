@@ -1,0 +1,36 @@
+{
+  "name": "Elf-Tree",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Seek inside yourself.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Only inside, will you find what you seek.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Already have, that which you need.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Within yourself, true power lies.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

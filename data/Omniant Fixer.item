@@ -1,0 +1,17 @@
+{
+  "credits": 8,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 48,
+        "statType": 1
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Omniant Fixer",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

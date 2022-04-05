@@ -1,0 +1,16 @@
+{
+  "champion": "Hercules",
+  "displayName": "Plate Augment",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 2,
+        "statType": 3
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Hercules Plate Augment"
+}
+

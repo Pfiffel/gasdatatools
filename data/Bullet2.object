@@ -1,0 +1,34 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Bullet2",
+  "shapes": [
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 0,
+      "color": 11937525,
+      "height": 49,
+      "mirror": 1,
+      "name": "Bullet",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -16,
+          "y": 8
+        },
+        {
+          "x": 0,
+          "y": 19
+        },
+        {
+          "x": 16,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

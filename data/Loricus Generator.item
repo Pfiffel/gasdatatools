@@ -1,0 +1,17 @@
+{
+  "credits": 8,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 48,
+        "statType": 9
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Loricus Generator",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

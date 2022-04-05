@@ -1,0 +1,36 @@
+{
+  "name": "Winterdance",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Keep hope alive.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "There is nothing false about hope!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "We can do it!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Yes we can!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

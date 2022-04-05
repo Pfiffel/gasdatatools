@@ -1,0 +1,9 @@
+{
+  "damage": 200,
+  "emitterType": "Iron Bulwark",
+  "name": "Iron Bulwark",
+  "objectType": "Iron Bulwark Bullet",
+  "soundPack": "Iron Bulwark Bullet",
+  "speed": 150
+}
+

@@ -1,0 +1,36 @@
+{
+  "name": "Tentacle",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Who dares cross me?",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Do not try to betray me!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I demand loyalty!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "If you cross me, I'll make you pay!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

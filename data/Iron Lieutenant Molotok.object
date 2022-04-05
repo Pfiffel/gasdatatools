@@ -1,0 +1,580 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Hand R",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 78,
+          "y": 73
+        }
+      }
+    },
+    {
+      "height": 0,
+      "name": "Hand L",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 78,
+          "y": -73
+        }
+      }
+    },
+    {
+      "height": 0,
+      "name": "Turret",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": -11,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [
+    {
+      "name": "Leg",
+      "p": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "name": "Foot",
+      "p": {
+        "x": -30,
+        "y": 0
+      }
+    }
+  ],
+  "floppiness": 0,
+  "name": "Iron Lieutenant Molotok",
+  "shapes": [
+    {
+      "bone": "Foot",
+      "clones": [],
+      "closed": 1,
+      "color": 12940825,
+      "height": 0,
+      "mirror": 1,
+      "name": "Toe",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 120,
+          "y": 7
+        },
+        {
+          "x": 105,
+          "y": 16
+        },
+        {
+          "x": 107,
+          "y": 19
+        },
+        {
+          "x": 120,
+          "y": 28
+        },
+        {
+          "x": 125,
+          "y": 29
+        },
+        {
+          "x": 133,
+          "y": 16
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Foot",
+      "clones": [],
+      "closed": 1,
+      "color": 12940825,
+      "height": 0,
+      "mirror": 1,
+      "name": "Toe",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 120,
+          "y": 73
+        },
+        {
+          "x": 105,
+          "y": 64
+        },
+        {
+          "x": 107,
+          "y": 61
+        },
+        {
+          "x": 120,
+          "y": 52
+        },
+        {
+          "x": 125,
+          "y": 51
+        },
+        {
+          "x": 133,
+          "y": 64
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Foot",
+      "clones": [],
+      "closed": 1,
+      "color": 3092271,
+      "height": 1,
+      "mirror": 1,
+      "name": "Toe Connector",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 107,
+          "y": 62
+        },
+        {
+          "x": 104,
+          "y": 60
+        },
+        {
+          "x": 120,
+          "y": 46
+        },
+        {
+          "x": 121,
+          "y": 52
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Foot",
+      "clones": [],
+      "closed": 1,
+      "color": 3092271,
+      "height": 1,
+      "mirror": 1,
+      "name": "Toe Connector",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 107,
+          "y": 18
+        },
+        {
+          "x": 104,
+          "y": 20
+        },
+        {
+          "x": 120,
+          "y": 34
+        },
+        {
+          "x": 121,
+          "y": 28
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Foot",
+      "clones": [],
+      "closed": 1,
+      "color": 3092271,
+      "height": 2,
+      "mirror": 1,
+      "name": "Toe Connector",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 114,
+          "y": 15
+        },
+        {
+          "x": 108,
+          "y": 19
+        },
+        {
+          "x": 119,
+          "y": 27
+        },
+        {
+          "x": 121,
+          "y": 20
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Foot",
+      "clones": [],
+      "closed": 1,
+      "color": 3092271,
+      "height": 2,
+      "mirror": 1,
+      "name": "Toe Connector",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 114,
+          "y": 65
+        },
+        {
+          "x": 108,
+          "y": 61
+        },
+        {
+          "x": 119,
+          "y": 53
+        },
+        {
+          "x": 121,
+          "y": 60
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Foot",
+      "clones": [],
+      "closed": 1,
+      "color": 12940825,
+      "height": 3,
+      "mirror": 1,
+      "name": "Foot Base",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 50,
+          "y": 53
+        },
+        {
+          "x": 64,
+          "y": 63
+        },
+        {
+          "x": 102,
+          "y": 63
+        },
+        {
+          "x": 122,
+          "y": 49
+        },
+        {
+          "x": 122,
+          "y": 32
+        },
+        {
+          "x": 101,
+          "y": 17
+        },
+        {
+          "x": 63,
+          "y": 17
+        },
+        {
+          "x": 50,
+          "y": 28
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Foot",
+      "clones": [],
+      "closed": 1,
+      "color": 9838357,
+      "height": 4,
+      "mirror": 1,
+      "name": "Foot Center",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 122,
+          "y": 49
+        },
+        {
+          "x": 122,
+          "y": 32
+        },
+        {
+          "x": 50,
+          "y": 32
+        },
+        {
+          "x": 50,
+          "y": 49
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Foot",
+      "clones": [],
+      "closed": 1,
+      "color": 3092271,
+      "height": 5,
+      "mirror": 1,
+      "name": "Foot Connector",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 50,
+          "y": 28
+        },
+        {
+          "x": 50,
+          "y": 53
+        },
+        {
+          "x": 72,
+          "y": 53
+        },
+        {
+          "x": 75,
+          "y": 50
+        },
+        {
+          "x": 75,
+          "y": 31
+        },
+        {
+          "x": 72,
+          "y": 28
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Leg",
+      "clones": [],
+      "closed": 1,
+      "color": 12940825,
+      "height": 15,
+      "mirror": 1,
+      "name": "Leg Base",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 23,
+          "y": 10
+        },
+        {
+          "x": 17,
+          "y": 17
+        },
+        {
+          "x": 13,
+          "y": 26
+        },
+        {
+          "x": 15,
+          "y": 28
+        },
+        {
+          "x": 15,
+          "y": 53
+        },
+        {
+          "x": 13,
+          "y": 55
+        },
+        {
+          "x": 18,
+          "y": 63
+        },
+        {
+          "x": 24,
+          "y": 69
+        },
+        {
+          "x": 55,
+          "y": 68
+        },
+        {
+          "x": 64,
+          "y": 56
+        },
+        {
+          "x": 65,
+          "y": 53
+        },
+        {
+          "x": 63,
+          "y": 53
+        },
+        {
+          "x": 63,
+          "y": 28
+        },
+        {
+          "x": 65,
+          "y": 28
+        },
+        {
+          "x": 65,
+          "y": 24
+        },
+        {
+          "x": 54,
+          "y": 10
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Leg",
+      "clones": [],
+      "closed": 1,
+      "color": 3092271,
+      "height": 16,
+      "mirror": 1,
+      "name": "Leg Center",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 58,
+          "y": 53
+        },
+        {
+          "x": 58,
+          "y": 28
+        },
+        {
+          "x": 15,
+          "y": 28
+        },
+        {
+          "x": 15,
+          "y": 53
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Leg",
+      "clones": [],
+      "closed": 1,
+      "color": 3092271,
+      "height": 17,
+      "mirror": 1,
+      "name": "Leg Front",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 56,
+          "y": 28
+        },
+        {
+          "x": 54,
+          "y": 32
+        },
+        {
+          "x": 54,
+          "y": 49
+        },
+        {
+          "x": 56,
+          "y": 53
+        },
+        {
+          "x": 63,
+          "y": 53
+        },
+        {
+          "x": 65,
+          "y": 50
+        },
+        {
+          "x": 65,
+          "y": 31
+        },
+        {
+          "x": 63,
+          "y": 28
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Leg",
+      "clones": [],
+      "closed": 1,
+      "color": 9838357,
+      "height": 24,
+      "mirror": 1,
+      "name": "Upper Leg",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 42,
+          "y": 33
+        },
+        {
+          "x": 38,
+          "y": 29
+        },
+        {
+          "x": -6,
+          "y": 29
+        },
+        {
+          "x": -10,
+          "y": 37
+        },
+        {
+          "x": -6,
+          "y": 45
+        },
+        {
+          "x": 38,
+          "y": 45
+        },
+        {
+          "x": 42,
+          "y": 41
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 3092271,
+      "height": 30,
+      "mirror": 1,
+      "name": "Base",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -36,
+          "y": 27
+        },
+        {
+          "x": -22,
+          "y": 40
+        },
+        {
+          "x": 21,
+          "y": 40
+        },
+        {
+          "x": 38,
+          "y": 24
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

@@ -1,0 +1,36 @@
+{
+  "name": "Silverwitch",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Vengeance shall be mine!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I shall wreak my retribution!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I shall have justice!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I shall have my satisfaction!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

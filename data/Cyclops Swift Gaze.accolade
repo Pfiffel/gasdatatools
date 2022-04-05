@@ -1,0 +1,62 @@
+{
+  "champion": "Cyclops",
+  "displayName": "Swift Gaze",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "damage": 0,
+            "delay": 0,
+            "halfArc": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 0,
+            "statusEffects": [],
+            "targetingDelay": -200
+          },
+          "tag": "ShotgunTriggerBonus"
+        },
+        "tag": "Cyclops 3 Shotgun",
+        "tooltip": "On Transfixing Gaze:"
+      },
+      "tag": "TaggedTriggerBonus"
+    },
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "delay": -200,
+            "duration": 0,
+            "target": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "tag": "SlugTriggerBonus"
+        },
+        "tag": "Cyclops 3 Slug",
+        "tooltip": ""
+      },
+      "tag": "TaggedTriggerBonus"
+    },
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "delay": -200,
+            "distance": 0
+          },
+          "tag": "ParticleLineTriggerBonus"
+        },
+        "tag": "Cyclops 3 ParticleLine",
+        "tooltip": ""
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Cyclops Swift Gaze"
+}
+

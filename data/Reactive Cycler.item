@@ -1,0 +1,17 @@
+{
+  "credits": 7,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 22,
+        "statType": 6
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Reactive Cycler",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

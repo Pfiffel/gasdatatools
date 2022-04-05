@@ -1,0 +1,38 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Spike Three",
+  "shapes": [
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 0,
+      "color": 16776958,
+      "height": 100,
+      "mirror": 1,
+      "name": "Spike",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 22,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 4
+        },
+        {
+          "x": -13,
+          "y": 21
+        },
+        {
+          "x": -5,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

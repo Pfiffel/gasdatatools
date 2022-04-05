@@ -1,0 +1,54 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Mako Long Bullet",
+  "shapes": [
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "color": 6656181,
+      "height": 60,
+      "mirror": 1,
+      "name": "Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 32,
+          "y": 7
+        },
+        {
+          "x": 29,
+          "y": 14
+        },
+        {
+          "x": 19,
+          "y": 17
+        },
+        {
+          "x": 8,
+          "y": 21
+        },
+        {
+          "x": -3,
+          "y": 21
+        },
+        {
+          "x": -26,
+          "y": 17
+        },
+        {
+          "x": -49,
+          "y": 11
+        },
+        {
+          "x": -78,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

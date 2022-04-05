@@ -1,0 +1,46 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Recharge Indicator",
+  "shapes": [
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "color": 3378620,
+      "height": 100,
+      "mirror": 1,
+      "name": "Cross",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 27,
+          "y": 5
+        },
+        {
+          "x": 6,
+          "y": 5
+        },
+        {
+          "x": 6,
+          "y": 27
+        },
+        {
+          "x": -6,
+          "y": 27
+        },
+        {
+          "x": -6,
+          "y": 5
+        },
+        {
+          "x": -27,
+          "y": 5
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

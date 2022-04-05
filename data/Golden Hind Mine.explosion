@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 35,
+      "maxDistPercent": 100,
+      "minDistPercent": 90,
+      "particleType": "Golden Hind Mine",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Golden Hind Mine",
+  "sound": "Player_Wasp_PosTorpedo_Explosion",
+  "volume": 50
+}
+

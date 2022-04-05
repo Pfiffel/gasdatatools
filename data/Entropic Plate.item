@@ -1,0 +1,17 @@
+{
+  "credits": 5,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 18,
+        "statType": 3
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Entropic Plate",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

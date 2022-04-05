@@ -1,0 +1,16 @@
+{
+  "champion": "Warthog",
+  "displayName": "Charger Augment",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 3,
+        "statType": 2
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Warthog Charger Augment"
+}
+

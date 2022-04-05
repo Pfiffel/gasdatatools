@@ -1,0 +1,44 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 8658432
+    },
+    {
+      "frac": 500,
+      "value": 8388608
+    },
+    {
+      "frac": 750,
+      "value": 8388608
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 1200,
+  "minLifetime": 800,
+  "name": "Iron Triumph",
+  "objectType": "Small Hex",
+  "positionTweenType": "SINEINOUT",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 350
+    },
+    {
+      "frac": 900,
+      "value": 350
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 8618883,
+  "startScale": 10,
+  "stayLow": 1
+}
+

@@ -1,0 +1,36 @@
+{
+  "name": "Skylark",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "What a beautiful day!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I will make one hundred friends today!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I am so very happy!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Look at that sky! Hello sky!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

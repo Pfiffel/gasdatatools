@@ -1,0 +1,32 @@
+{
+  "damage": 20,
+  "emitterType": "Xenofrog Trail Acidic",
+  "name": "Xenofrog Acidic Spit",
+  "objectType": "Xenofrog Acidic Bullet",
+  "powers": [
+    {
+      "data": {
+        "caption": "Acid Damage",
+        "damage": 100,
+        "duration": 5000,
+        "emitterType": "Power DoT"
+      },
+      "tag": "DoTPower"
+    },
+    {
+      "data": {
+        "caption": "",
+        "duration": 5000,
+        "guns": 0,
+        "health": 1,
+        "mana": 0,
+        "shield": 0,
+        "triggers": 0
+      },
+      "tag": "DisablePower"
+    }
+  ],
+  "soundPack": "Iron Hammer Bullet",
+  "speed": 140
+}
+

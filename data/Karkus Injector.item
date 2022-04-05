@@ -1,0 +1,25 @@
+{
+  "credits": 8,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 8,
+        "statType": 0
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 14,
+        "statType": 4
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Karkus Injector",
+  "overworldDrop": 0,
+  "precursorTech": 0
+}
+

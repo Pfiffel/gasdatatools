@@ -1,0 +1,42 @@
+{
+  "color": 6787357,
+  "groundColors": [
+    4090427,
+    2123547,
+    864267,
+    1206029,
+    1582871
+  ],
+  "name": "Swamp",
+  "objects": [
+    {
+      "density": 50,
+      "objectType": "Swamp Mushroom"
+    },
+    {
+      "density": 397,
+      "objectType": "Swamp Tuft"
+    },
+    {
+      "density": 20,
+      "objectType": "RockSlimy"
+    },
+    {
+      "density": 20,
+      "objectType": "RockSlimy2"
+    },
+    {
+      "density": 20,
+      "objectType": "RockSlimy3"
+    },
+    {
+      "density": 3,
+      "objectType": "Swamp Log"
+    },
+    {
+      "density": 4,
+      "objectType": "Swamp Tree"
+    }
+  ]
+}
+

@@ -1,0 +1,36 @@
+{
+  "name": "Nightsong",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Rejuvenate.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Reinvigorate.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Revitalize.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Renew yourself.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

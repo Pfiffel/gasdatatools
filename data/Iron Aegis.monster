@@ -1,0 +1,57 @@
+{
+  "boss": 0,
+  "collisionRadius": 20,
+  "deathCrySoundPack": "Iron Aegis Death Cries",
+  "drops": [],
+  "healRate": 0,
+  "hp": 575,
+  "idleAnimation": "BaseArcher Idle",
+  "name": "Iron Aegis",
+  "objectType": "Iron Aegis",
+  "runAnimation": "",
+  "runSpeed": 75,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "",
+      "cooldown": 3000,
+      "objectType": "",
+      "params": {
+        "data": {
+          "bulletRange": 500,
+          "delay": 100,
+          "gunBulletType": "Iron Hammer",
+          "numBullets": 4,
+          "range": 750,
+          "salvoes": [
+            {
+              "angle": 0,
+              "mirror": 0
+            },
+            {
+              "angle": 125,
+              "mirror": 0
+            },
+            {
+              "angle": 250,
+              "mirror": 0
+            },
+            {
+              "angle": 375,
+              "mirror": 0
+            },
+            {
+              "angle": 500,
+              "mirror": 0
+            }
+          ]
+        },
+        "tag": "BarrageParams"
+      }
+    }
+  ],
+  "xp": 25,
+  "xpLevelCap": 19
+}
+

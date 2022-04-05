@@ -1,0 +1,36 @@
+{
+  "name": "Affirmer",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Rely on my power.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Depend on my ability.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Abide in my protection.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Lean on my strength.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

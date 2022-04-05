@@ -1,0 +1,103 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Odessos Mine",
+  "shapes": [
+    {
+      "bone": "Hand",
+      "clones": [
+        {
+          "pos": {
+            "f": 900,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 1800,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 2700,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 1,
+      "color": 8684676,
+      "height": 2,
+      "mirror": 0,
+      "name": "Legs",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -21,
+          "y": 0
+        },
+        {
+          "x": -30,
+          "y": 19
+        },
+        {
+          "x": -29,
+          "y": 28
+        },
+        {
+          "x": -20,
+          "y": 30
+        },
+        {
+          "x": 0,
+          "y": 21
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 0,
+      "color": 12027428,
+      "height": 10,
+      "mirror": 1,
+      "name": "Body",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -26,
+          "y": 0
+        },
+        {
+          "x": -18,
+          "y": 18
+        },
+        {
+          "x": 0,
+          "y": 27
+        },
+        {
+          "x": 17,
+          "y": 18
+        },
+        {
+          "x": 26,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

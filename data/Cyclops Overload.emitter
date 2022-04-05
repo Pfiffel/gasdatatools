@@ -1,0 +1,20 @@
+{
+  "arcOffset": 0,
+  "cooldown": 80,
+  "endSound": "Player_Cyclops_Overload_End",
+  "endVolume": 50,
+  "halfArc": 1800,
+  "loopSound": "Player_Cyclops_Overload_Loop",
+  "loopVolume": 150,
+  "maxDist": 125,
+  "minDist": 125,
+  "mirror": 0,
+  "name": "Cyclops Overload",
+  "particleCount": 1,
+  "particleTypes": [
+    "Cyclops Overload"
+  ],
+  "startSound": "Player_Cyclops_Overload_Start",
+  "startVolume": 125
+}
+

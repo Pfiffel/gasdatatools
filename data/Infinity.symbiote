@@ -1,0 +1,17 @@
+{
+  "description": "Infinity keeps rolling forward.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 10,
+        "amount": 35,
+        "statType": 2
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "Infinity",
+  "tier": 6
+}
+

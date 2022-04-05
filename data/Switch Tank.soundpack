@@ -1,0 +1,8 @@
+{
+  "name": "Switch Tank",
+  "sounds": [
+    "UI_LootPickup_01"
+  ],
+  "volume": 25
+}
+

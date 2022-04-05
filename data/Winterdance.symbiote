@@ -1,0 +1,23 @@
+{
+  "description": "Winterdance keeps hope in her heart that better days await.",
+  "effects": [
+    {
+      "data": {
+        "amount": 20,
+        "statType": 5
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "amount": 20,
+        "statType": 6
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "Winterdance",
+  "tier": 3
+}
+

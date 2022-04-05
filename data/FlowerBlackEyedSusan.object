@@ -1,0 +1,206 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "FlowerBlackEyedSusan",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 15591948,
+      "height": 0,
+      "mirror": 1,
+      "name": "New Shape",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 11,
+          "y": 8
+        },
+        {
+          "x": 14,
+          "y": 8
+        },
+        {
+          "x": 17,
+          "y": 5
+        },
+        {
+          "x": 15,
+          "y": 1
+        },
+        {
+          "x": 8,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 6,
+          "y": 5
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 15591948,
+      "height": 0,
+      "mirror": 1,
+      "name": "New Shape",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -11,
+          "y": 8
+        },
+        {
+          "x": -14,
+          "y": 8
+        },
+        {
+          "x": -17,
+          "y": 5
+        },
+        {
+          "x": -15,
+          "y": 1
+        },
+        {
+          "x": -8,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": -6,
+          "y": 5
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 15591948,
+      "height": 0,
+      "mirror": 1,
+      "name": "New Shape",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -8,
+          "y": 11
+        },
+        {
+          "x": -8,
+          "y": 14
+        },
+        {
+          "x": -5,
+          "y": 17
+        },
+        {
+          "x": -1,
+          "y": 15
+        },
+        {
+          "x": 0,
+          "y": 8
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": -5,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 15591948,
+      "height": 0,
+      "mirror": 1,
+      "name": "New Shape",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 8,
+          "y": 11
+        },
+        {
+          "x": 8,
+          "y": 14
+        },
+        {
+          "x": 5,
+          "y": 17
+        },
+        {
+          "x": 1,
+          "y": 15
+        },
+        {
+          "x": 0,
+          "y": 8
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 5,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 5850625,
+      "height": 10,
+      "mirror": 1,
+      "name": "Middle",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 5,
+          "y": 0
+        },
+        {
+          "x": 4,
+          "y": 4
+        },
+        {
+          "x": 0,
+          "y": 6
+        },
+        {
+          "x": -4,
+          "y": 4
+        },
+        {
+          "x": -5,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

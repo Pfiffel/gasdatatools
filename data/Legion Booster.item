@@ -1,0 +1,25 @@
+{
+  "credits": 7,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 7,
+        "statType": 0
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 28,
+        "statType": 1
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Legion Booster",
+  "overworldDrop": 0,
+  "precursorTech": 0
+}
+

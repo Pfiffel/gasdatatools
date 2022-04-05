@@ -1,0 +1,17 @@
+{
+  "description": "Tiger Lily won't back down from anyone.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 1,
+        "amount": 25,
+        "statType": 0
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "Tiger Lily",
+  "tier": 3
+}
+

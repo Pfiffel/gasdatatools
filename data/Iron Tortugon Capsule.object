@@ -1,0 +1,251 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Iron Tortugon Capsule",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 3684408,
+      "height": 42,
+      "mirror": 1,
+      "name": "Central Cover",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 59,
+          "y": 4
+        },
+        {
+          "x": 57,
+          "y": 15
+        },
+        {
+          "x": 54,
+          "y": 23
+        },
+        {
+          "x": 50,
+          "y": 28
+        },
+        {
+          "x": 45,
+          "y": 31
+        },
+        {
+          "x": 8,
+          "y": 30
+        },
+        {
+          "x": -1,
+          "y": 24
+        },
+        {
+          "x": 2,
+          "y": 19
+        },
+        {
+          "x": 6,
+          "y": 12
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 7872544,
+      "height": 43,
+      "mirror": 1,
+      "name": "Central Panel",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 51,
+          "y": 3
+        },
+        {
+          "x": 50,
+          "y": 15
+        },
+        {
+          "x": 49,
+          "y": 20
+        },
+        {
+          "x": 46,
+          "y": 24
+        },
+        {
+          "x": 40,
+          "y": 25
+        },
+        {
+          "x": 23,
+          "y": 24
+        },
+        {
+          "x": 18,
+          "y": 21
+        },
+        {
+          "x": 19,
+          "y": 17
+        },
+        {
+          "x": 20,
+          "y": 7
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 3092271,
+      "height": 43,
+      "mirror": 1,
+      "name": "Main Mount",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 14,
+          "y": 7
+        },
+        {
+          "x": 13,
+          "y": 19
+        },
+        {
+          "x": 12,
+          "y": 23
+        },
+        {
+          "x": 5,
+          "y": 27
+        },
+        {
+          "x": -1,
+          "y": 28
+        },
+        {
+          "x": -59,
+          "y": 26
+        },
+        {
+          "x": -64,
+          "y": 20
+        },
+        {
+          "x": -51,
+          "y": 18
+        },
+        {
+          "x": -46,
+          "y": 11
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 7872544,
+      "height": 43,
+      "mirror": 1,
+      "name": "Main Mount Detail",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -41,
+          "y": 8
+        },
+        {
+          "x": -42,
+          "y": 18
+        },
+        {
+          "x": -53,
+          "y": 21
+        },
+        {
+          "x": -61,
+          "y": 23
+        },
+        {
+          "x": -68,
+          "y": 20
+        },
+        {
+          "x": -68,
+          "y": 15
+        },
+        {
+          "x": -55,
+          "y": 12
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 1974309,
+      "height": 44,
+      "mirror": 1,
+      "name": "Main Cannon",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -52,
+          "y": 1
+        },
+        {
+          "x": -54,
+          "y": 11
+        },
+        {
+          "x": -64,
+          "y": 13
+        },
+        {
+          "x": -72,
+          "y": 14
+        },
+        {
+          "x": -93,
+          "y": 12
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 7872544,
+      "height": 45,
+      "mirror": 1,
+      "name": "Main Cannon Tip",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -93,
+          "y": 12
+        },
+        {
+          "x": -101,
+          "y": 11
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

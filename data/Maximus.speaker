@@ -1,0 +1,36 @@
+{
+  "name": "Maximus",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Big and beautiful!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Thick but dangerous!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Big and bad!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Large and in charge!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

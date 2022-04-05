@@ -1,0 +1,17 @@
+{
+  "description": "Nettle always strives to help her friends.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 10,
+        "amount": 30,
+        "statType": 6
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "Nettle",
+  "tier": 3
+}
+

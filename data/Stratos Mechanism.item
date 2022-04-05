@@ -1,0 +1,27 @@
+{
+  "credits": 10,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "applyToMana": 0,
+            "asPercentage": 1,
+            "glyphCount": 4,
+            "glyphDuration": 500,
+            "glyphRadius": 50,
+            "glyphType": "Heal Indicator",
+            "healAmount": 60
+          },
+          "tag": "HealTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Stratos Mechanism",
+  "overworldDrop": 0,
+  "precursorTech": 1
+}
+

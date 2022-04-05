@@ -1,0 +1,10 @@
+{
+  "damage": 150,
+  "emitterType": "Xenofrog Trail Worker",
+  "name": "Xenofrog Defender Spit",
+  "objectType": "Xenofrog Defender Bullet",
+  "powers": [],
+  "soundPack": "Iron Hammer Bullet",
+  "speed": 160
+}
+

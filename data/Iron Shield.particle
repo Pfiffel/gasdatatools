@@ -1,0 +1,44 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 8352768
+    },
+    {
+      "frac": 500,
+      "value": 8407808
+    },
+    {
+      "frac": 750,
+      "value": 8388608
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 600,
+  "minLifetime": 400,
+  "name": "Iron Shield",
+  "objectType": "Small Hex",
+  "positionTweenType": "EXPOIN",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 200
+    },
+    {
+      "frac": 500,
+      "value": 250
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 8355711,
+  "startScale": 10,
+  "stayLow": 0
+}
+

@@ -1,0 +1,8 @@
+{
+  "name": "Iron Gladiator Death Cries",
+  "sounds": [
+    "Enemy_IronGladiator_DeathCry_01"
+  ],
+  "volume": 150
+}
+

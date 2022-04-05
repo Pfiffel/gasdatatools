@@ -1,0 +1,191 @@
+{
+  "acceleration": 850,
+  "angularAccel": 84,
+  "blurb": "Close-in brawler tank",
+  "choosable": 1,
+  "equipment": [],
+  "forwardThrustEmitter": "Warthog Main Thruster",
+  "guns": [
+    {
+      "cooldown": 250,
+      "damage": 50,
+      "emitterType": "Mustang Guns",
+      "f": 0,
+      "halfArc": 1800,
+      "objectType": "Mustang Bullet",
+      "range": 160,
+      "soundPack": "Warthog Guns",
+      "speed": 1200,
+      "turretBone": "Turret"
+    }
+  ],
+  "healRate": 6,
+  "hp": 900,
+  "name": "Warthog",
+  "objectType": "Warthog",
+  "radius": 18,
+  "reverseThrustEmitter": "Warthog Reverse Thruster",
+  "rotationDecay": 32,
+  "shields": [
+    {
+      "color": 16771535,
+      "left": -1800,
+      "level": 0,
+      "maxStrength": 200,
+      "right": 1800
+    }
+  ],
+  "speedLimit": 240,
+  "triggers": [
+    {
+      "cooldown": 1000,
+      "description": "Sets off an intense polaric reaction, damaging nearby enemies",
+      "icon": "bright-explosion",
+      "mana": 20,
+      "name": "Goretusk Detonation",
+      "params": [
+        {
+          "data": {
+            "damage": 200,
+            "delay": 0,
+            "drawReticle": 0,
+            "drawTooltip": 1,
+            "explosionType": "Warthog Blast",
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 160,
+            "statusEffects": [],
+            "tag": "Warthog 1 Shotgun",
+            "targetingDelay": 0,
+            "tooltip": ""
+          },
+          "tag": "ShotgunTrigger"
+        }
+      ],
+      "sound": "Player_Mustang_Grenade_Launch",
+      "volume": 50
+    },
+    {
+      "cooldown": 5000,
+      "description": "Uses spacetime folding to teleport forward, temporarily disabling nearby enemies",
+      "icon": "fast-arrow",
+      "mana": 15,
+      "name": "Hog Charge",
+      "params": [
+        {
+          "data": {
+            "collisionSettings": {
+              "cooldownToRetain": 1000,
+              "damage": 0,
+              "explosion": "",
+              "explosionRange": 0,
+              "manaToRefund": 0,
+              "triggerIndexToResetCooldown": -1,
+              "vamp": 0
+            },
+            "drawTooltip": 0,
+            "emitterType": "Warthog Charge",
+            "range": 300,
+            "tag": ""
+          },
+          "tag": "LeapTrigger"
+        },
+        {
+          "data": {
+            "damage": 10,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Warthog Stun",
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 160,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 2500
+                },
+                "tag": "StunEffect"
+              }
+            ],
+            "tag": "Warthog 2 Shotgun",
+            "targetingDelay": 160,
+            "tooltip": ""
+          },
+          "tag": "ShotgunTrigger"
+        }
+      ],
+      "sound": "Player_Warthog_StunWarp_Warp",
+      "volume": 50
+    },
+    {
+      "cooldown": 10000,
+      "description": "Shunts power from a teracapacitor to instantly reform the shield",
+      "icon": "ice-shield",
+      "mana": 10,
+      "name": "Bristlehide Recharge",
+      "params": [
+        {
+          "data": {
+            "glyphCount": 16,
+            "glyphDuration": 700,
+            "glyphRadius": 100,
+            "glyphType": "Axeraider Unstoppable Glyph",
+            "refillPercentage": 100,
+            "shieldIndex": -1,
+            "tag": ""
+          },
+          "tag": "ShieldRefillTrigger"
+        }
+      ],
+      "sound": "Player_Warthog_TeraCapRecharge",
+      "volume": 150
+    },
+    {
+      "cooldown": 30000,
+      "description": "Activates war emergency protocols, initiating self-repair while greatly boosting damage output",
+      "icon": "boar-tusks",
+      "mana": 10,
+      "name": "War Boar",
+      "params": [
+        {
+          "data": {
+            "amount": 200,
+            "duration": 5000,
+            "emitterType": "",
+            "glyphCount": 0,
+            "glyphRadius": 0,
+            "glyphType": "",
+            "statType": 0,
+            "tag": "Warthog 4 StatBoost"
+          },
+          "tag": "StatBoostTrigger"
+        },
+        {
+          "data": {
+            "amount": 1000,
+            "applyToMana": 0,
+            "duration": 5000,
+            "emitterType": "Warthog War Boar",
+            "glyphCount": 20,
+            "glyphRadius": 70,
+            "glyphType": "Axeraider Rally Glyph",
+            "tag": "Warthog 4 HealOverTime"
+          },
+          "tag": "HealOverTimeTrigger"
+        }
+      ],
+      "sound": "",
+      "volume": 75
+    }
+  ]
+}
+

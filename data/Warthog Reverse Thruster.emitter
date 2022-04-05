@@ -1,0 +1,22 @@
+{
+  "arcOffset": 400,
+  "cooldown": 40,
+  "endSound": "Player_Warthog_Movement_End",
+  "endVolume": 50,
+  "halfArc": 50,
+  "loopSound": "Player_Warthog_Movement_Loop",
+  "loopVolume": 100,
+  "maxDist": 50,
+  "minDist": 25,
+  "mirror": 1,
+  "name": "Warthog Reverse Thruster",
+  "particleCount": 1,
+  "particleTypes": [
+    "Warthog Thruster",
+    "Warthog Thruster 2",
+    "Warthog Thruster 3"
+  ],
+  "startSound": "Player_Warthog_Movement_Start",
+  "startVolume": 100
+}
+

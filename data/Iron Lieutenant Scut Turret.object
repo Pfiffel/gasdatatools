@@ -1,0 +1,266 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Left Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 55,
+          "y": -17
+        }
+      }
+    },
+    {
+      "height": 0,
+      "name": "Right Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 55,
+          "y": 17
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Iron Lieutenant Scut Turret",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 2123396,
+      "height": 35,
+      "mirror": 1,
+      "name": "Ring",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -33,
+          "y": 15
+        },
+        {
+          "x": -24,
+          "y": 24
+        },
+        {
+          "x": -10,
+          "y": 33
+        },
+        {
+          "x": 21,
+          "y": 33
+        },
+        {
+          "x": 26,
+          "y": 27
+        },
+        {
+          "x": 27,
+          "y": 12
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 5066061,
+      "height": 35,
+      "mirror": 1,
+      "name": "Gun Muzzle",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 44,
+          "y": 4
+        },
+        {
+          "x": 46,
+          "y": 12
+        },
+        {
+          "x": 46,
+          "y": 20
+        },
+        {
+          "x": 44,
+          "y": 28
+        },
+        {
+          "x": 54,
+          "y": 28
+        },
+        {
+          "x": 56,
+          "y": 21
+        },
+        {
+          "x": 56,
+          "y": 11
+        },
+        {
+          "x": 54,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 5066061,
+      "height": 36,
+      "mirror": 1,
+      "name": "Gun Plate",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -21,
+          "y": 12
+        },
+        {
+          "x": -8,
+          "y": 21
+        },
+        {
+          "x": 18,
+          "y": 21
+        },
+        {
+          "x": 27,
+          "y": 11
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 956625,
+      "height": 37,
+      "mirror": 1,
+      "name": "Rear Panel",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -21,
+          "y": 7
+        },
+        {
+          "x": -19,
+          "y": 6
+        },
+        {
+          "x": -17,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 7500402,
+      "height": 38,
+      "mirror": 1,
+      "name": "Gun Barrel",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 10,
+          "y": 7
+        },
+        {
+          "x": 3,
+          "y": 12
+        },
+        {
+          "x": 3,
+          "y": 20
+        },
+        {
+          "x": 10,
+          "y": 25
+        },
+        {
+          "x": 18,
+          "y": 27
+        },
+        {
+          "x": 44,
+          "y": 28
+        },
+        {
+          "x": 46,
+          "y": 21
+        },
+        {
+          "x": 46,
+          "y": 12
+        },
+        {
+          "x": 44,
+          "y": 4
+        },
+        {
+          "x": 18,
+          "y": 5
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 13742905,
+      "height": 39,
+      "mirror": 1,
+      "name": "Gun Detail",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 14,
+          "y": 15
+        },
+        {
+          "x": 13,
+          "y": 16
+        },
+        {
+          "x": 13,
+          "y": 17
+        },
+        {
+          "x": 14,
+          "y": 18
+        },
+        {
+          "x": 28,
+          "y": 18
+        },
+        {
+          "x": 29,
+          "y": 17
+        },
+        {
+          "x": 29,
+          "y": 16
+        },
+        {
+          "x": 28,
+          "y": 15
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

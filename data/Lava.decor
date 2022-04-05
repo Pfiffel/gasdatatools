@@ -1,0 +1,27 @@
+{
+  "color": 16722432,
+  "name": "Lava",
+  "objects": [
+    {
+      "density": 90,
+      "objectType": "RockIgneous"
+    },
+    {
+      "density": 90,
+      "objectType": "RockIgneous2"
+    },
+    {
+      "density": 90,
+      "objectType": "RockIgneous3"
+    },
+    {
+      "density": 21,
+      "objectType": "FlowerFireStar"
+    },
+    {
+      "density": 2,
+      "objectType": "RockCircle"
+    }
+  ]
+}
+

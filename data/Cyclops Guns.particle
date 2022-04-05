@@ -1,0 +1,32 @@
+{
+  "colorPoints": [
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 1000,
+  "minLifetime": 1000,
+  "name": "Cyclops Guns",
+  "objectType": "Shard1",
+  "positionTweenType": "EXPOIN",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 500
+    },
+    {
+      "frac": 900,
+      "value": 200
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 10829117,
+  "startScale": 10,
+  "stayLow": 0
+}
+

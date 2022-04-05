@@ -1,0 +1,33 @@
+{
+  "description": "Sweetwater turns on the old country charm.",
+  "effects": [
+    {
+      "data": {
+        "cooldown": 15000,
+        "params": [
+          {
+            "data": {
+              "amount": -25,
+              "duration": 5000,
+              "emitterType": "",
+              "glyphCount": 2,
+              "glyphRadius": 80,
+              "glyphType": "Trigger Cost Glyph",
+              "noStack": 0,
+              "statType": 11,
+              "tag": ""
+            },
+            "tag": "StatBoostTrigger"
+          }
+        ],
+        "percentChance": 100,
+        "targetingRange": 0
+      },
+      "tag": "PeriodicTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Sweetwater",
+  "tier": 3
+}
+

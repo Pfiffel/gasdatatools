@@ -1,0 +1,62 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "RockSlimy",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 3161363,
+      "height": -25,
+      "mirror": 0,
+      "name": "New Shape",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -19,
+          "y": -14
+        },
+        {
+          "x": -10,
+          "y": -23
+        },
+        {
+          "x": 2,
+          "y": -19
+        },
+        {
+          "x": 12,
+          "y": -15
+        },
+        {
+          "x": 14,
+          "y": -5
+        },
+        {
+          "x": 18,
+          "y": 7
+        },
+        {
+          "x": 11,
+          "y": 18
+        },
+        {
+          "x": -3,
+          "y": 22
+        },
+        {
+          "x": -13,
+          "y": 13
+        },
+        {
+          "x": -22,
+          "y": 3
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

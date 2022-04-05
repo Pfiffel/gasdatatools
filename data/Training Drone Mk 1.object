@@ -1,0 +1,152 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 12,
+      "name": "Turret",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Training Drone Mk 1",
+  "shapes": [
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 1,
+      "color": 4013373,
+      "height": 5,
+      "mirror": 1,
+      "name": "Hoverpod",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 40,
+          "y": 32
+        },
+        {
+          "x": 40,
+          "y": 19
+        },
+        {
+          "x": -38,
+          "y": 18
+        },
+        {
+          "x": -38,
+          "y": 31
+        },
+        {
+          "x": -34,
+          "y": 35
+        },
+        {
+          "x": -13,
+          "y": 35
+        },
+        {
+          "x": -9,
+          "y": 30
+        },
+        {
+          "x": 10,
+          "y": 30
+        },
+        {
+          "x": 15,
+          "y": 35
+        },
+        {
+          "x": 36,
+          "y": 35
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "color": 11736102,
+      "height": 8,
+      "mirror": 1,
+      "name": "Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 26,
+          "y": 11
+        },
+        {
+          "x": 32,
+          "y": 12
+        },
+        {
+          "x": 37,
+          "y": 15
+        },
+        {
+          "x": 40,
+          "y": 19
+        },
+        {
+          "x": 40,
+          "y": 23
+        },
+        {
+          "x": -38,
+          "y": 23
+        },
+        {
+          "x": -38,
+          "y": 17
+        },
+        {
+          "x": -34,
+          "y": 13
+        },
+        {
+          "x": -30,
+          "y": 12
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "color": 12632256,
+      "height": 8,
+      "mirror": 1,
+      "name": "Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 17,
+          "y": 6
+        },
+        {
+          "x": 10,
+          "y": 13
+        },
+        {
+          "x": -13,
+          "y": 13
+        },
+        {
+          "x": -19,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

@@ -1,0 +1,27 @@
+{
+  "credits": 10,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 36,
+            "duration": 1000,
+            "emitterType": "",
+            "glyphCount": 6,
+            "glyphRadius": 60,
+            "glyphType": "Ephesus Glyph",
+            "statType": 9
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 6
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Ephesus Mechanism",
+  "overworldDrop": 0,
+  "precursorTech": 1
+}
+

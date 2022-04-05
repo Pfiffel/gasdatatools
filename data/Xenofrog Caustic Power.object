@@ -1,0 +1,58 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Xenofrog Caustic Power",
+  "shapes": [
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 0,
+      "color": 16776958,
+      "height": 100,
+      "mirror": 0,
+      "name": "Arrow Down",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 1,
+          "y": -12
+        },
+        {
+          "x": 3,
+          "y": -10
+        },
+        {
+          "x": 3,
+          "y": 5
+        },
+        {
+          "x": 7,
+          "y": 5
+        },
+        {
+          "x": 0,
+          "y": 14
+        },
+        {
+          "x": -7,
+          "y": 5
+        },
+        {
+          "x": -3,
+          "y": 5
+        },
+        {
+          "x": -3,
+          "y": -10
+        },
+        {
+          "x": -1,
+          "y": -12
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

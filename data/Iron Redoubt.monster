@@ -1,0 +1,44 @@
+{
+  "collisionRadius": 25,
+  "deathCrySoundPack": "Iron Redoubt Death Cries",
+  "drops": [],
+  "healRate": 0,
+  "hp": 400,
+  "idleAnimation": "BaseArcher Idle",
+  "name": "Iron Redoubt",
+  "objectType": "Iron Redoubt",
+  "runAnimation": "",
+  "runSpeed": 5,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "",
+      "cooldown": 3000,
+      "objectType": "",
+      "params": {
+        "data": {
+          "bulletRange": 350,
+          "delay": 100,
+          "gunBulletType": "Iron Bulwark",
+          "numBullets": 6,
+          "range": 600,
+          "salvoes": [
+            {
+              "angle": 0,
+              "mirror": 0
+            },
+            {
+              "angle": 60,
+              "mirror": 1
+            }
+          ]
+        },
+        "tag": "BarrageParams"
+      }
+    }
+  ],
+  "xp": 0,
+  "xpLevelCap": 19
+}
+

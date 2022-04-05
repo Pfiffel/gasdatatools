@@ -1,0 +1,25 @@
+{
+  "description": "Maximus crashes through.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 50,
+        "statType": 10
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 40,
+        "statType": 0
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "Maximus",
+  "tier": 1
+}
+

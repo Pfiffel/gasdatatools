@@ -1,0 +1,213 @@
+{
+  "acceleration": 850,
+  "angularAccel": 84,
+  "blurb": "Trainer tank",
+  "choosable": 0,
+  "equipment": [],
+  "forwardThrustEmitter": "Wasp Main Thruster",
+  "guns": [
+    {
+      "cooldown": 218,
+      "damage": 4,
+      "emitterType": "Wasp Guns",
+      "f": 0,
+      "halfArc": 1800,
+      "objectType": "Wasp Bullet",
+      "range": 250,
+      "soundPack": "Wasp Guns",
+      "speed": 1200,
+      "turretBone": "Turret"
+    }
+  ],
+  "healRate": 2,
+  "hp": 600,
+  "idleAnimation": "Flamebringer Idle",
+  "name": "Dagger",
+  "objectType": "Dagger",
+  "radius": 15,
+  "reverseThrustEmitter": "Wasp Reverse Thruster",
+  "rotationDecay": 32,
+  "runAnimation": "Flamebringer Run",
+  "shields": [
+    {
+      "color": 14663747,
+      "left": -1800,
+      "level": 0,
+      "maxStrength": 50,
+      "right": 1800
+    }
+  ],
+  "speedLimit": 230,
+  "triggers": [
+    {
+      "cooldown": 1000,
+      "description": "Creates a burst of high-energy neutrons",
+      "icon": "shatter",
+      "mana": 10,
+      "name": "Neutron Blast",
+      "params": [
+        {
+          "data": {
+            "damage": 15,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Dagger Blast",
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 250,
+            "statusEffects": [],
+            "targetingDelay": 0
+          },
+          "tag": "ShotgunTrigger"
+        }
+      ],
+      "sound": "",
+      "volume": 50
+    },
+    {
+      "cooldown": 5000,
+      "description": "Deploys an all-around pattern of bombs",
+      "icon": "striking-balls",
+      "mana": 12,
+      "name": "Omnifire Explosives",
+      "params": [
+        {
+          "data": {
+            "damage": 10,
+            "delay": 500,
+            "drawReticle": 0,
+            "drawTooltip": 0,
+            "explosionType": "Dagger Blast",
+            "halfArc": 1800,
+            "mirror": 1,
+            "offset": {
+              "x": 140,
+              "y": 130
+            },
+            "range": 115,
+            "statusEffects": [],
+            "targetingDelay": 0
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "damage": 10,
+            "delay": 500,
+            "drawReticle": 0,
+            "drawTooltip": 1,
+            "explosionType": "Dagger Blast",
+            "halfArc": 1800,
+            "mirror": 1,
+            "offset": {
+              "x": -140,
+              "y": 130
+            },
+            "range": 115,
+            "statusEffects": [],
+            "targetingDelay": 0
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "delay": 0,
+            "duration": 500,
+            "emitterType": "Wasp Mines",
+            "mirror": 1,
+            "objectType": "Wasp Mine",
+            "sound": "",
+            "target": {
+              "x": 140,
+              "y": 130
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        },
+        {
+          "data": {
+            "delay": 0,
+            "duration": 500,
+            "emitterType": "Wasp Mines",
+            "mirror": 1,
+            "objectType": "Wasp Mine",
+            "sound": "",
+            "target": {
+              "x": -140,
+              "y": 130
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        }
+      ],
+      "sound": "Player_Wasp_PosTorpedo_Gun",
+      "volume": 50
+    },
+    {
+      "cooldown": 10000,
+      "description": "Activates the auxiliary shield",
+      "icon": "barbed-sun",
+      "mana": 12,
+      "name": "Auxiliary Shield",
+      "params": [
+        {
+          "data": {
+            "duration": 5000,
+            "stats": {
+              "color": 13641757,
+              "left": -1800,
+              "level": 0,
+              "maxStrength": 300,
+              "right": 1800
+            }
+          },
+          "tag": "ExtraShieldTrigger"
+        },
+        {
+          "data": {
+            "glyphCount": 12,
+            "glyphDuration": 750,
+            "glyphRadius": 100,
+            "glyphType": "Axeraider Unstoppable Glyph",
+            "refillPercentage": 100,
+            "shieldIndex": -1
+          },
+          "tag": "ShieldRefillTrigger"
+        }
+      ],
+      "sound": "Player_Wasp_PosTorpedo_Gun",
+      "volume": 50
+    },
+    {
+      "cooldown": 30000,
+      "description": "Massively boosts main gun performance",
+      "icon": "gunshot",
+      "mana": 20,
+      "name": "Weapon Overcharge",
+      "params": [
+        {
+          "data": {
+            "amount": 100,
+            "duration": 6500,
+            "emitterType": "",
+            "glyphCount": 15,
+            "glyphRadius": 80,
+            "glyphType": "Axeraider Rally Glyph",
+            "statType": 5
+          },
+          "tag": "StatBoostTrigger"
+        }
+      ],
+      "sound": "",
+      "volume": 100
+    }
+  ]
+}
+

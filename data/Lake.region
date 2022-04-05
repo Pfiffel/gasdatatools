@@ -1,0 +1,18 @@
+{
+  "gap": 75,
+  "groundColor": 536162,
+  "mapColor": 1202610,
+  "name": "Lake",
+  "polyDecorations": [
+    {
+      "gap": 250,
+      "objectType": "Water Lily"
+    }
+  ],
+  "segmentObjects": [
+    "Jagged Rock 3",
+    "Jagged Rock 4",
+    "Jagged Rock 5"
+  ]
+}
+

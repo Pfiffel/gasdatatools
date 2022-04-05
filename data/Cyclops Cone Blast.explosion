@@ -1,0 +1,29 @@
+{
+  "layers": [
+    {
+      "angularDensity": 400,
+      "maxDistPercent": 100,
+      "minDistPercent": 97,
+      "particleType": "Cyclops Blast",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 400,
+      "maxDistPercent": 97,
+      "minDistPercent": 75,
+      "particleType": "Cyclops Blast",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 400,
+      "maxDistPercent": 80,
+      "minDistPercent": 15,
+      "particleType": "Cyclops Blast",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Cyclops Cone Blast",
+  "sound": "Player_Cyclops_ConeLaser",
+  "volume": 75
+}
+

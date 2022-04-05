@@ -1,0 +1,61 @@
+{
+  "boss": 0,
+  "collisionRadius": 25,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Enemy Hits",
+  "drops": [],
+  "healRate": 0,
+  "hp": 1000,
+  "idleAnimation": "Xenofrog Idle",
+  "maxMoveDistance": 200,
+  "name": "Xenofrog Dire Warrior",
+  "objectType": "Xenofrog Dire Warrior",
+  "pauseBetweenMovements": 1000,
+  "runAnimation": "Xenofrog Leap",
+  "runSpeed": 300,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Mouth",
+      "cooldown": 1800,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "angleBetweenProjectiles": 400,
+                "gunBulletType": "Xenofrog Dire Defender Spit",
+                "leading": 0,
+                "numProjectiles": 3,
+                "range": 500
+              },
+              "tag": "GunParams"
+            },
+            {
+              "data": {
+                "angleBetweenProjectiles": 400,
+                "gunBulletType": "Xenofrog Dire Worker Spit",
+                "leading": 0,
+                "numProjectiles": 2,
+                "range": 600
+              },
+              "tag": "GunParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 49,
+  "xpLevelCap": 19
+}
+

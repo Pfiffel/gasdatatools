@@ -1,0 +1,24 @@
+{
+  "gap": 150,
+  "groundColor": 1770284,
+  "mapColor": 5509254,
+  "name": "Mushroom",
+  "polyDecorations": [
+    {
+      "gap": 50,
+      "objectType": "Mushroom Center"
+    },
+    {
+      "gap": 150,
+      "objectType": "Mushroom Center Medium"
+    },
+    {
+      "gap": 300,
+      "objectType": "Mushroom Center Big"
+    }
+  ],
+  "segmentObjects": [
+    "Mushroom Edge"
+  ]
+}
+

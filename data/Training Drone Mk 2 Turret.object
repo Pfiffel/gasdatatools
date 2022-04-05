@@ -1,0 +1,71 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 51,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Training Drone Mk 2 Turret",
+  "shapes": [
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "color": 10329501,
+      "height": 10,
+      "mirror": 1,
+      "name": "Barrel",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 3,
+          "y": 7
+        },
+        {
+          "x": 4,
+          "y": 12
+        },
+        {
+          "x": 30,
+          "y": 5
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "color": 10901530,
+      "height": 11,
+      "mirror": 1,
+      "name": "Housing",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 9,
+          "y": 16
+        },
+        {
+          "x": -13,
+          "y": 16
+        },
+        {
+          "x": -21,
+          "y": 9
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

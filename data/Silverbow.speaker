@@ -1,0 +1,36 @@
+{
+  "name": "Silverbow",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Let us stalk our prey together.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Through the hunt we prove our worth.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "We hunt relentlessly.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "We shall hunt together.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

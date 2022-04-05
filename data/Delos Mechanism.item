@@ -1,0 +1,26 @@
+{
+  "credits": 10,
+  "effects": [
+    {
+      "data": {
+        "range": 280,
+        "statusEffects": [
+          {
+            "data": {
+              "dps": 12,
+              "duration": 5000,
+              "reducedDurationOnBoss": 1
+            },
+            "tag": "DoTEffect"
+          }
+        ],
+        "when": 5
+      },
+      "tag": "TriggeredRandomTargetEffect"
+    }
+  ],
+  "name": "Delos Mechanism",
+  "overworldDrop": 0,
+  "precursorTech": 1
+}
+

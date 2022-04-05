@@ -1,0 +1,75 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Falkonera Glyph",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 16776958,
+      "height": 0,
+      "mirror": 1,
+      "name": "Glyph",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -38,
+          "y": 0
+        },
+        {
+          "x": -28,
+          "y": 3
+        },
+        {
+          "x": 7,
+          "y": 5
+        },
+        {
+          "x": -7,
+          "y": 19
+        },
+        {
+          "x": 1,
+          "y": 19
+        },
+        {
+          "x": 33,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 3684246,
+      "height": 1,
+      "mirror": 1,
+      "name": "Glyph",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -7,
+          "y": 0
+        },
+        {
+          "x": 20,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 14
+        },
+        {
+          "x": 25,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

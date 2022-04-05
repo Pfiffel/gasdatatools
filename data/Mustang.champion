@@ -1,0 +1,204 @@
+{
+  "acceleration": 850,
+  "angularAccel": 84,
+  "blurb": "Versatile medium tank",
+  "choosable": 1,
+  "equipment": [],
+  "forwardThrustEmitter": "Mustang Main Thruster",
+  "guns": [
+    {
+      "cooldown": 600,
+      "damage": 50,
+      "emitterType": "Mustang Guns",
+      "f": 0,
+      "halfArc": 600,
+      "objectType": "Mustang Bullet",
+      "range": 300,
+      "soundPack": "Mustang Big Guns",
+      "speed": 1200,
+      "turretBone": "Turret"
+    },
+    {
+      "cooldown": 300,
+      "damage": 9,
+      "emitterType": "Mustang Guns",
+      "f": 0,
+      "halfArc": 1800,
+      "objectType": "Mustang Aux Bullet",
+      "range": 265,
+      "soundPack": "Mustang Small Guns",
+      "speed": 1200,
+      "turretBone": "Aux Turret"
+    }
+  ],
+  "healRate": 3,
+  "hp": 800,
+  "name": "Mustang",
+  "objectType": "Mustang",
+  "radius": 13,
+  "reverseThrustEmitter": "Mustang Reverse Thruster",
+  "rotationDecay": 32,
+  "shields": [
+    {
+      "color": 255,
+      "left": -600,
+      "level": 1,
+      "maxStrength": 200,
+      "right": 600
+    },
+    {
+      "color": 3355647,
+      "left": -1800,
+      "level": 0,
+      "maxStrength": 120,
+      "right": 1800
+    }
+  ],
+  "speedLimit": 240,
+  "triggers": [
+    {
+      "cooldown": 1000,
+      "description": "Launches a plasma-based grenade",
+      "icon": "burning-meteor",
+      "mana": 15,
+      "name": "Plasma Fragmentation Burst",
+      "params": [
+        {
+          "data": {
+            "delay": 0,
+            "duration": 350,
+            "emitterType": "Mustang Grenade",
+            "mirror": 0,
+            "objectType": "Mustang Grenade",
+            "sound": "",
+            "tag": "",
+            "target": {
+              "x": 250,
+              "y": 0
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        },
+        {
+          "data": {
+            "damage": 100,
+            "delay": 350,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Mustang Grenade",
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 250,
+              "y": 0
+            },
+            "range": 150,
+            "statusEffects": [],
+            "tag": "Mustang 1 Shotgun",
+            "targetingDelay": 0
+          },
+          "tag": "ShotgunTrigger"
+        }
+      ],
+      "sound": "Player_Mustang_Grenade_Launch",
+      "volume": 50
+    },
+    {
+      "cooldown": 5000,
+      "description": "Releases a structure-restorative nanobot cloud",
+      "icon": "lightning-spanner",
+      "mana": 20,
+      "name": "Nanorepair",
+      "params": [
+        {
+          "data": {
+            "applyToMana": 0,
+            "asPercentage": 0,
+            "glyphCount": 4,
+            "glyphDuration": 500,
+            "glyphRadius": 50,
+            "glyphType": "Heal Indicator",
+            "healAmount": 150,
+            "tag": "Mustang 2 Heal"
+          },
+          "tag": "HealTrigger"
+        }
+      ],
+      "sound": "Player_Mustang_SelfRepair",
+      "volume": 50
+    },
+    {
+      "cooldown": 10000,
+      "description": "Ignites quantum fires on nearby enemies",
+      "icon": "fireflake",
+      "mana": 10,
+      "name": "Quantum Fireburst",
+      "params": [
+        {
+          "data": {
+            "damage": 25,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Mustang Fireburst",
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 265,
+            "statusEffects": [
+              {
+                "data": {
+                  "dps": 50,
+                  "duration": 5000,
+                  "reducedDurationOnBoss": 0
+                },
+                "tag": "BurningEffect"
+              }
+            ],
+            "tag": "Mustang 3 Shotgun",
+            "targetingDelay": 0
+          },
+          "tag": "ShotgunTrigger"
+        }
+      ],
+      "sound": "",
+      "volume": 50
+    },
+    {
+      "cooldown": 30000,
+      "description": "Channels a cone of superheated ions",
+      "icon": "corner-explosion",
+      "mana": 20,
+      "name": "Directed Ion Burst",
+      "params": [
+        {
+          "data": {
+            "damage": 550,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "",
+            "halfArc": 600,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 300,
+            "statusEffects": [],
+            "tag": "Mustang 4 Shotgun",
+            "targetingDelay": 0
+          },
+          "tag": "ShotgunTrigger"
+        }
+      ],
+      "sound": "Player_Mustang_IonBurst",
+      "volume": 75
+    }
+  ]
+}
+

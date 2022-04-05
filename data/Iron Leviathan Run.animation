@@ -1,0 +1,74 @@
+{
+  "keyFrames": [
+    {
+      "bonePositions": [
+        {
+          "bone": "Back Foot Mirror",
+          "rot": 0,
+          "x": -53,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Back Foot",
+          "rot": 0,
+          "x": 34,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Front Foot Mirror",
+          "rot": 0,
+          "x": 46,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Front Foot",
+          "rot": 0,
+          "x": -39,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 0,
+      "tag": ""
+    },
+    {
+      "bonePositions": [
+        {
+          "bone": "Back Foot",
+          "rot": 0,
+          "x": -53,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Back Foot Mirror",
+          "rot": 0,
+          "x": 34,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Front Foot",
+          "rot": 0,
+          "x": 46,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Front Foot Mirror",
+          "rot": 0,
+          "x": -39,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 500,
+      "tag": ""
+    }
+  ],
+  "name": "Iron Leviathan Run"
+}
+

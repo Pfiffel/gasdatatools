@@ -1,0 +1,36 @@
+{
+  "name": "Cataract",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Now I grip your heart!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I grasp your soul!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Your heart is mine!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I seize your spirit!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

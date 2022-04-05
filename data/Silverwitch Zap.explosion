@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 15,
+      "maxDistPercent": 100,
+      "minDistPercent": 30,
+      "particleType": "Silverwitch Zap",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Silverwitch Zap",
+  "sound": "Shield Hit",
+  "volume": 100
+}
+

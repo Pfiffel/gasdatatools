@@ -1,0 +1,8 @@
+{
+  "name": "Iron Colossus Station Death Cries",
+  "sounds": [
+    "Enemy_IronGunstation_DeathCry"
+  ],
+  "volume": 100
+}
+

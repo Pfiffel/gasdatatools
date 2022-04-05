@@ -1,0 +1,10 @@
+{
+  "damage": 220,
+  "emitterType": "Xenofrog Trail Worker",
+  "name": "Xenofrog Dire Worker Spit",
+  "objectType": "Xenofrog Dire Worker Bullet",
+  "powers": [],
+  "soundPack": "Iron Bulwark Bullet",
+  "speed": 150
+}
+

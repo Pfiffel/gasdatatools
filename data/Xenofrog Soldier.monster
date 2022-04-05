@@ -1,0 +1,54 @@
+{
+  "boss": 0,
+  "collisionRadius": 17,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Enemy Hits",
+  "drops": [],
+  "healRate": 0,
+  "hp": 220,
+  "idleAnimation": "Xenofrog Idle",
+  "maxMoveDistance": 150,
+  "name": "Xenofrog Soldier",
+  "objectType": "Xenofrog Soldier",
+  "pauseBetweenMovements": 700,
+  "runAnimation": "Xenofrog Leap",
+  "runSpeed": 280,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Mouth",
+      "cooldown": 2000,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "damage": 100,
+                "delay": 1000,
+                "explosionType": "",
+                "halfArc": 180,
+                "powers": [],
+                "range": 250,
+                "triggerSound": "",
+                "triggerVolume": 50
+              },
+              "tag": "ShotgunParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 4,
+  "xpLevelCap": 19
+}
+

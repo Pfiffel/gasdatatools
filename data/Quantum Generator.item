@@ -1,0 +1,17 @@
+{
+  "credits": 6,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 40,
+        "statType": 9
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Quantum Generator",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

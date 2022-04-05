@@ -1,0 +1,39 @@
+{
+  "boss": 0,
+  "collisionRadius": 20,
+  "deathCrySoundPack": "Iron Protector Death Cries",
+  "drops": [],
+  "healRate": 0,
+  "hp": 300,
+  "idleAnimation": "",
+  "name": "Iron Protector",
+  "objectType": "Iron Protector",
+  "runAnimation": "",
+  "runSpeed": 100,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 5000,
+      "objectType": "Iron Protector Turret",
+      "params": {
+        "data": {
+          "damage": 100,
+          "emitterType": "Iron Protector",
+          "explosionType": "Iron Protector Grenade",
+          "objectType": "Fireball",
+          "radius": 175,
+          "range": 500,
+          "shootSound": "Enemy_Grenade_Large_Launch",
+          "shootVolume": 75,
+          "speed": 225
+        },
+        "tag": "MortarParams"
+      }
+    }
+  ],
+  "xp": 16,
+  "xpLevelCap": 19
+}
+

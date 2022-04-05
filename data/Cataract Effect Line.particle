@@ -1,0 +1,37 @@
+{
+  "colorPoints": [
+    {
+      "frac": 750,
+      "value": 4672588
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 1500,
+  "minLifetime": 600,
+  "name": "Cataract Effect Line",
+  "objectType": "Small Six Star",
+  "positionTweenType": "EXPOIN",
+  "randomFinalFacing": 0,
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 500
+    },
+    {
+      "frac": 900,
+      "value": 500
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 16776958,
+  "startScale": 10,
+  "stayLow": 1
+}
+

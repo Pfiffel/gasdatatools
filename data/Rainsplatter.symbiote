@@ -1,0 +1,27 @@
+{
+  "description": "Rainsplatter gives freely of the waters of life.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 60,
+            "applyToMana": 0,
+            "duration": 4000,
+            "emitterType": "Rainsplatter HoT",
+            "glyphCount": 4,
+            "glyphRadius": 65,
+            "glyphType": ""
+          },
+          "tag": "HealOverTimeTrigger"
+        },
+        "when": 5
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Rainsplatter",
+  "tier": 3
+}
+

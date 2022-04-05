@@ -1,0 +1,228 @@
+{
+  "acceleration": 950,
+  "angularAccel": 96,
+  "blurb": "Fast, nimble light tank",
+  "choosable": 1,
+  "equipment": [],
+  "forwardThrustEmitter": "Wasp Main Thruster",
+  "guns": [
+    {
+      "cooldown": 218,
+      "damage": 22,
+      "emitterType": "Wasp Guns",
+      "f": 0,
+      "halfArc": 1800,
+      "objectType": "Wasp Bullet",
+      "range": 250,
+      "soundPack": "Wasp Guns",
+      "speed": 1200,
+      "turretBone": "Turret"
+    }
+  ],
+  "healRate": 2,
+  "hp": 600,
+  "name": "Wasp",
+  "objectType": "Wasp",
+  "radius": 10,
+  "reverseThrustEmitter": "Wasp Reverse Thruster",
+  "rotationDecay": 32,
+  "shields": [
+    {
+      "color": 14663747,
+      "left": -1800,
+      "level": 0,
+      "maxStrength": 200,
+      "right": 1800
+    }
+  ],
+  "speedLimit": 250,
+  "triggers": [
+    {
+      "cooldown": 1000,
+      "description": "Deploys a spread of multi-phase positron torpedoes",
+      "icon": "striking-balls",
+      "mana": 12,
+      "name": "Stinger Torpedoes",
+      "params": [
+        {
+          "data": {
+            "damage": 50,
+            "delay": 500,
+            "drawReticle": 1,
+            "drawTooltip": 0,
+            "explosionType": "Wasp Grenade",
+            "halfArc": 1800,
+            "mirror": 1,
+            "offset": {
+              "x": 220,
+              "y": 130
+            },
+            "range": 115,
+            "statusEffects": [],
+            "tag": "Wasp 1 Shotgun 1",
+            "targetingDelay": 0
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "damage": 50,
+            "delay": 500,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Wasp Grenade",
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 250,
+              "y": 0
+            },
+            "range": 120,
+            "statusEffects": [],
+            "tag": "Wasp 1 Shotgun 2",
+            "targetingDelay": 0
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "delay": 0,
+            "duration": 500,
+            "emitterType": "Wasp Mines",
+            "mirror": 1,
+            "objectType": "Wasp Mine",
+            "sound": "",
+            "tag": "",
+            "target": {
+              "x": 220,
+              "y": 130
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        },
+        {
+          "data": {
+            "delay": 0,
+            "duration": 500,
+            "emitterType": "Wasp Mines",
+            "mirror": 0,
+            "objectType": "Wasp Mine",
+            "sound": "",
+            "tag": "",
+            "target": {
+              "x": 250,
+              "y": 0
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        }
+      ],
+      "sound": "Player_Wasp_PosTorpedo_Gun",
+      "volume": 50
+    },
+    {
+      "cooldown": 5000,
+      "description": "Creates a charm-strange quarkfield anomaly, expelling radiation in all directions",
+      "icon": "shatter",
+      "mana": 10,
+      "name": "Quark Blast",
+      "params": [
+        {
+          "data": {
+            "damage": 100,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Wasp Quark Blast",
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 250,
+            "statusEffects": [],
+            "tag": "Wasp 2 Shotgun",
+            "targetingDelay": 0
+          },
+          "tag": "ShotgunTrigger"
+        }
+      ],
+      "sound": "",
+      "volume": 50
+    },
+    {
+      "cooldown": 10000,
+      "description": "Negates the dimensional phase matrix, repairing hull damage and temporarily dematerializing the Wasp",
+      "icon": "spatter",
+      "mana": 15,
+      "name": "Phase Negation",
+      "params": [
+        {
+          "data": {
+            "duration": 2000,
+            "emitterType": "Wasp Phase Negation",
+            "percentChance": 100,
+            "tag": ""
+          },
+          "tag": "DematerializeTrigger"
+        },
+        {
+          "data": {
+            "applyToMana": 0,
+            "asPercentage": 0,
+            "glyphCount": 4,
+            "glyphDuration": 500,
+            "glyphRadius": 50,
+            "glyphType": "Heal Indicator",
+            "healAmount": 50,
+            "tag": "Wasp 3 Heal"
+          },
+          "tag": "HealTrigger"
+        }
+      ],
+      "sound": "",
+      "volume": 50
+    },
+    {
+      "cooldown": 30000,
+      "description": "Uses advanced repressurization techniques to greatly boost main gun performance",
+      "icon": "gunshot",
+      "mana": 20,
+      "name": "Venom Overload",
+      "params": [
+        {
+          "data": {
+            "amount": 250,
+            "duration": 6500,
+            "emitterType": "",
+            "glyphCount": 0,
+            "glyphRadius": 0,
+            "glyphType": "",
+            "statType": 0,
+            "tag": ""
+          },
+          "tag": "StatBoostTrigger"
+        },
+        {
+          "data": {
+            "amount": 25,
+            "duration": 6500,
+            "emitterType": "Wasp Overload",
+            "glyphCount": 0,
+            "glyphRadius": 0,
+            "glyphType": "",
+            "statType": 8,
+            "tag": ""
+          },
+          "tag": "StatBoostTrigger"
+        }
+      ],
+      "sound": "",
+      "volume": 100
+    }
+  ]
+}
+

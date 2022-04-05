@@ -1,0 +1,9 @@
+{
+  "damage": 150,
+  "emitterType": "Iron Protector",
+  "name": "Iron Colossus",
+  "objectType": "Iron Colossus Bullet",
+  "soundPack": "Iron Colossus Bullet",
+  "speed": 300
+}
+

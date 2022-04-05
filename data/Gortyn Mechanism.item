@@ -1,0 +1,27 @@
+{
+  "credits": 10,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 30,
+            "duration": 6000,
+            "emitterType": "",
+            "glyphCount": 16,
+            "glyphRadius": 80,
+            "glyphType": "Gortyn Glyph",
+            "statType": 3
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Gortyn Mechanism",
+  "overworldDrop": 0,
+  "precursorTech": 1
+}
+

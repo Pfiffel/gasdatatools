@@ -1,0 +1,16 @@
+{
+  "champion": "Hercules",
+  "displayName": "Generator Upgrade",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 4,
+        "statType": 9
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Hercules Generator Upgrade"
+}
+

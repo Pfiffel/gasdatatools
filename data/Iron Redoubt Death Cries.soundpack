@@ -1,0 +1,8 @@
+{
+  "name": "Iron Redoubt Death Cries",
+  "sounds": [
+    "Enemy_IronRedoubt_DeathCry_01"
+  ],
+  "volume": 200
+}
+

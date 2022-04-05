@@ -1,0 +1,38 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Beacon",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 5390806,
+      "height": -20,
+      "mirror": 1,
+      "name": "Nub",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -40,
+          "y": 0
+        },
+        {
+          "x": -20,
+          "y": 34
+        },
+        {
+          "x": 20,
+          "y": 34
+        },
+        {
+          "x": 40,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

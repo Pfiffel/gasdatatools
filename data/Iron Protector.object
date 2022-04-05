@@ -1,0 +1,123 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 12,
+      "name": "Turret",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Iron Protector",
+  "shapes": [
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 1,
+      "color": 8026746,
+      "height": 2,
+      "mirror": 1,
+      "name": "Hoverpod",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 2,
+          "y": 34
+        },
+        {
+          "x": 33,
+          "y": 39
+        },
+        {
+          "x": 52,
+          "y": 34
+        },
+        {
+          "x": 44,
+          "y": 22
+        },
+        {
+          "x": 35,
+          "y": 17
+        },
+        {
+          "x": 1,
+          "y": 16
+        },
+        {
+          "x": -42,
+          "y": 9
+        },
+        {
+          "x": -53,
+          "y": 19
+        },
+        {
+          "x": -53,
+          "y": 32
+        },
+        {
+          "x": -26,
+          "y": 40
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "color": 9120298,
+      "height": 12,
+      "mirror": 1,
+      "name": "Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 36,
+          "y": 5
+        },
+        {
+          "x": 41,
+          "y": 18
+        },
+        {
+          "x": 34,
+          "y": 29
+        },
+        {
+          "x": 18,
+          "y": 33
+        },
+        {
+          "x": -1,
+          "y": 36
+        },
+        {
+          "x": -28,
+          "y": 34
+        },
+        {
+          "x": -46,
+          "y": 27
+        },
+        {
+          "x": -46,
+          "y": 20
+        },
+        {
+          "x": -39,
+          "y": 11
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

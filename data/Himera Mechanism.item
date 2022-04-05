@@ -1,0 +1,25 @@
+{
+  "credits": 10,
+  "effects": [
+    {
+      "data": {
+        "angleOffset": -900,
+        "armingTime": 1000,
+        "duration": 15000,
+        "emitterType": "Heal Mine",
+        "explosionType": "Heal Mine",
+        "healing": 60,
+        "mineCount": 3,
+        "objectType": "Heal Mine",
+        "radius": 35,
+        "ringRadius": 70,
+        "when": 3
+      },
+      "tag": "TriggeredHealMineBurst"
+    }
+  ],
+  "name": "Himera Mechanism",
+  "overworldDrop": 0,
+  "precursorTech": 1
+}
+

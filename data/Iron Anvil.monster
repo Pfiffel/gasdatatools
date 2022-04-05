@@ -1,0 +1,51 @@
+{
+  "collisionRadius": 40,
+  "deathCrySoundPack": "Iron Anvil Death Cries",
+  "drops": [],
+  "healRate": 0,
+  "hp": 180,
+  "idleAnimation": "BaseArcher Idle",
+  "name": "Iron Anvil",
+  "objectType": "Iron Anvil",
+  "runAnimation": "Iron Anvil Run",
+  "runSpeed": 75,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 1500,
+      "objectType": "Iron Bulwark Aux Turret",
+      "params": {
+        "data": {
+          "aimed": 1,
+          "cooldown": 1500,
+          "gunBulletType": "Iron Protector",
+          "leading": 0,
+          "numProjectiles": 1,
+          "range": 500
+        },
+        "tag": "GunParams"
+      }
+    },
+    {
+      "attachmentPoint": "Aux Turret",
+      "cooldown": 1000,
+      "objectType": "Iron Shield Turret",
+      "params": {
+        "data": {
+          "aimed": 1,
+          "cooldown": 1500,
+          "gunBulletType": "Iron Shield",
+          "leading": 0,
+          "numProjectiles": 1,
+          "range": 600
+        },
+        "tag": "GunParams"
+      }
+    }
+  ],
+  "xp": 4,
+  "xpLevelCap": 19
+}
+

@@ -1,0 +1,17 @@
+{
+  "credits": 6,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 20,
+        "statType": 2
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Flux Charger",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

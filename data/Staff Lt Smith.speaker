@@ -1,0 +1,216 @@
+{
+  "name": "Staff Lt Smith",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Get in there, squaddie!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Today's ROE: blast everything!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Time to put some rounds downrange.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Take it to em, squaddie!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Shake and bake time, squaddie!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Atomic batteries to power, turbines to speed!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Kick the tires and light the fires!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Let's do it to it!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Go get em, squad!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Keep the pressure on!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Firewall those throttles! Go get em!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "You got this, squad!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Light em up, squad!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Pour it on, squad!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Go, squad, go!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Laze and blaze, squad!",
+          "volume": 50
+        }
+      ],
+      "tag": "Periodic"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Excellent! We'll put that to great use!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "That's going to make a junior tanker very happy!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Another battle-hardened unit for the arsenal. Fight on!",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Excellent work, tanker! A medal well deserved!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Outstanding work, squaddie! You earned it!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "A medal for meritorious conduct by an outstanding tanker! Congratulations!",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire With Medal"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Absolutely outstanding! A well-earned accolade for gallantry!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "An accolade for exceptional conduct, well-earned by an outstanding tanker!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "An absolutely inspired piece of work! You earned it, tanker!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Superb work, tanker! Absolutely off the charts!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Masterful, incredible, absolutely first-rate! Galactic Assault Squad!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "A magnificent, stellar job, absolutely deserving of an accolade!",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire With Accolade"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Oh no! It's an event boss!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Go get that event boss, squad!",
+          "volume": 50
+        }
+      ],
+      "tag": "Event Boss Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Ladies and gentlemen, I give you the Galactic Assault Squad!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Mess with the best, die like the rest!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Great shot squad! That was one in a million!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "That's a W! Galactic Assault Squad!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "For...the...win! Galactic Assault Squad!",
+          "volume": 50
+        }
+      ],
+      "tag": "Quest Boss Victory"
+    }
+  ]
+}
+

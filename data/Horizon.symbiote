@@ -1,0 +1,17 @@
+{
+  "description": "Horizon looks beyond the here and now.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 17,
+        "amount": 25,
+        "statType": 5
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "Horizon",
+  "tier": 2
+}
+

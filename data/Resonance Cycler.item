@@ -1,0 +1,17 @@
+{
+  "credits": 2,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 12,
+        "statType": 6
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Resonance Cycler",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

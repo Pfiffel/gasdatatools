@@ -1,0 +1,103 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 45,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Iron Guardsman Turret",
+  "shapes": [
+    {
+      "bone": "Turret",
+      "clones": [
+        {
+          "pos": {
+            "f": 201,
+            "p": {
+              "x": -13,
+              "y": 7
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": -201,
+            "p": {
+              "x": -13,
+              "y": -7
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 5,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "color": 9934741,
+      "height": 6,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 1,
+      "points": [
+        {
+          "x": 40,
+          "y": 5
+        },
+        {
+          "x": 0,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "color": 2894387,
+      "height": 9,
+      "mirror": 1,
+      "name": "Housing",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 14,
+          "y": 7
+        },
+        {
+          "x": 6,
+          "y": 23
+        },
+        {
+          "x": -14,
+          "y": 23
+        },
+        {
+          "x": -29,
+          "y": 14
+        },
+        {
+          "x": -34,
+          "y": 3
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

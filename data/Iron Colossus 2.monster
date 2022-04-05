@@ -1,0 +1,66 @@
+{
+  "boss": 1,
+  "collisionRadius": 115,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Iron Colossus Enrage 3",
+  "drops": [],
+  "healRate": 0,
+  "hp": 4000,
+  "idleAnimation": "BaseArcher Idle",
+  "name": "Iron Colossus 2",
+  "objectType": "Iron Colossus",
+  "runAnimation": "Iron Colossus Run",
+  "runSpeed": 100,
+  "successorMonster": "Iron Colossus 3",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret Left",
+      "cooldown": 500,
+      "objectType": "Iron Colossus Turret",
+      "params": {
+        "data": {
+          "gunBulletType": "Iron Colossus",
+          "range": 800
+        },
+        "tag": "MultiBarrelGunParams"
+      }
+    },
+    {
+      "attachmentPoint": "Turret Right",
+      "cooldown": 500,
+      "objectType": "Iron Colossus Turret",
+      "params": {
+        "data": {
+          "gunBulletType": "Iron Colossus",
+          "range": 800
+        },
+        "tag": "MultiBarrelGunParams"
+      }
+    },
+    {
+      "attachmentPoint": "",
+      "cooldown": 500,
+      "objectType": "",
+      "params": {
+        "data": {
+          "emitterType": "",
+          "explosionType": "",
+          "lifetime": 10000,
+          "maxCount": 3,
+          "monsterName": "Iron Colossus Station",
+          "noCollide": 0,
+          "projectileType": "Iron Tortugon Capsule",
+          "range": 800,
+          "sound": "Enemy_IronColossus_GunStation_Spawn_01",
+          "speed": 500,
+          "volume": 200
+        },
+        "tag": "MinionParams"
+      }
+    }
+  ],
+  "xp": 100,
+  "xpLevelCap": 19
+}
+

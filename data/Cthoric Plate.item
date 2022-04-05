@@ -1,0 +1,17 @@
+{
+  "credits": 8,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 24,
+        "statType": 3
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Cthoric Plate",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

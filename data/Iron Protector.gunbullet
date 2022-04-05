@@ -1,0 +1,9 @@
+{
+  "damage": 76,
+  "emitterType": "Iron Protector",
+  "name": "Iron Protector",
+  "objectType": "Iron Protector Bullet",
+  "soundPack": "Iron Protector Bullet",
+  "speed": 250
+}
+

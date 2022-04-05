@@ -1,0 +1,17 @@
+{
+  "credits": 5,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 9,
+        "statType": 5
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Multiphasic Loader",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

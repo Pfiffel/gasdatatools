@@ -1,0 +1,31 @@
+{
+  "description": "Starfire brings down celestial justice on those she perceives to be evildoers.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "count": 5,
+            "damage": 40,
+            "emitterType": "Starfire Trail",
+            "objectType": "Starfire",
+            "range": 250,
+            "sound": "Player_Hercules_ZeonRocket_Launch",
+            "speed": 350,
+            "tag": "",
+            "timeGap": 300,
+            "tweenType": "QUARTIN",
+            "volume": 50
+          },
+          "tag": "SharkletTrigger"
+        },
+        "when": 7
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Starfire",
+  "tier": 5
+}
+

@@ -1,0 +1,23 @@
+{
+  "color": 15726463,
+  "name": "Black-eyed Susan",
+  "objects": [
+    {
+      "density": 350,
+      "objectType": "FlowerBlackEyedSusan"
+    },
+    {
+      "density": 30,
+      "objectType": "Rock"
+    },
+    {
+      "density": 30,
+      "objectType": "Rock2"
+    },
+    {
+      "density": 30,
+      "objectType": "Rock3"
+    }
+  ]
+}
+

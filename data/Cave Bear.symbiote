@@ -1,0 +1,33 @@
+{
+  "description": "Cave Bear brawls with all comers.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": -10,
+        "statType": 8
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 30,
+        "statType": 0
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 20,
+        "statType": 9
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "Cave Bear",
+  "tier": 3
+}
+

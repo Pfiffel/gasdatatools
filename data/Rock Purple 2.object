@@ -1,0 +1,66 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Rock Purple 2",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 2757437,
+      "height": -25,
+      "mirror": 0,
+      "name": "New Shape",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -23,
+          "y": -17
+        },
+        {
+          "x": -12,
+          "y": -28
+        },
+        {
+          "x": 2,
+          "y": -23
+        },
+        {
+          "x": 11,
+          "y": -20
+        },
+        {
+          "x": 19,
+          "y": -7
+        },
+        {
+          "x": 22,
+          "y": 8
+        },
+        {
+          "x": 13,
+          "y": 22
+        },
+        {
+          "x": 2,
+          "y": 26
+        },
+        {
+          "x": -16,
+          "y": 26
+        },
+        {
+          "x": -22,
+          "y": 16
+        },
+        {
+          "x": -27,
+          "y": 3
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

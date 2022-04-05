@@ -1,0 +1,16 @@
+{
+  "champion": "Cyclops",
+  "displayName": "Generator Upgrade",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 4,
+        "statType": 9
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Cyclops Generator Upgrade"
+}
+

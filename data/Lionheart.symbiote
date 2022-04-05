@@ -1,0 +1,29 @@
+{
+  "description": "Lionheart stands firm, finding strength in adversity.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 20,
+            "duration": 1000,
+            "emitterType": "",
+            "glyphCount": 6,
+            "glyphRadius": 45,
+            "glyphType": "Lionheart Glyph",
+            "noStack": 0,
+            "statType": 5,
+            "tag": ""
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 11
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Lionheart",
+  "tier": 5
+}
+

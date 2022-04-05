@@ -1,0 +1,66 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "RockIgneousPath2",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 2761250,
+      "height": -10,
+      "mirror": 0,
+      "name": "New Shape",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 6,
+          "y": -28
+        },
+        {
+          "x": 15,
+          "y": -19
+        },
+        {
+          "x": 15,
+          "y": -3
+        },
+        {
+          "x": 18,
+          "y": 12
+        },
+        {
+          "x": 14,
+          "y": 22
+        },
+        {
+          "x": 5,
+          "y": 24
+        },
+        {
+          "x": -10,
+          "y": 24
+        },
+        {
+          "x": -12,
+          "y": 13
+        },
+        {
+          "x": -15,
+          "y": 0
+        },
+        {
+          "x": -15,
+          "y": -22
+        },
+        {
+          "x": -6,
+          "y": -29
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

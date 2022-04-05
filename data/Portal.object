@@ -1,0 +1,108 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Portal",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 6102199,
+      "height": -20,
+      "mirror": 1,
+      "name": "Bottom",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 41,
+          "y": -1
+        },
+        {
+          "x": 66,
+          "y": 66
+        },
+        {
+          "x": -1,
+          "y": 41
+        },
+        {
+          "x": -64,
+          "y": 64
+        },
+        {
+          "x": -41,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 6102199,
+      "height": -10,
+      "mirror": 1,
+      "name": "Middle",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 94,
+          "y": 0
+        },
+        {
+          "x": 28,
+          "y": 30
+        },
+        {
+          "x": 0,
+          "y": 90
+        },
+        {
+          "x": -28,
+          "y": 30
+        },
+        {
+          "x": -94,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 15324415,
+      "height": 0,
+      "mirror": 1,
+      "name": "Top",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 50,
+          "y": 0
+        },
+        {
+          "x": 15,
+          "y": 16
+        },
+        {
+          "x": 0,
+          "y": 48
+        },
+        {
+          "x": -15,
+          "y": 16
+        },
+        {
+          "x": -50,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

@@ -1,0 +1,26 @@
+{
+  "color": 9538333,
+  "groundColors": [
+    6973243,
+    8287764,
+    8091928,
+    8422925
+  ],
+  "name": "Swamp Yellow",
+  "objects": [
+    {
+      "density": 50,
+      "objectType": "Swamp Mushroom"
+    },
+    {
+      "density": 3,
+      "objectType": "Swamp Log Yellow"
+    },
+    {
+      "density": 397,
+      "objectType": "Swamp Flower Yellow"
+    }
+  ],
+  "regionType": "Swamp Yellow"
+}
+

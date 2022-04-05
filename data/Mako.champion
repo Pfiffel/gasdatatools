@@ -1,0 +1,194 @@
+{
+  "acceleration": 950,
+  "angularAccel": 96,
+  "blurb": "Hunter-killer tank",
+  "choosable": 1,
+  "equipment": [],
+  "forwardThrustEmitter": "Mako Main Thruster",
+  "guns": [
+    {
+      "cooldown": 227,
+      "damage": 12,
+      "emitterType": "Mako Guns",
+      "f": 0,
+      "halfArc": 450,
+      "objectType": "Mako Long Bullet",
+      "range": 290,
+      "soundPack": "Mako Long Guns",
+      "speed": 1200,
+      "turretBone": "Turret"
+    },
+    {
+      "cooldown": 250,
+      "damage": 50,
+      "emitterType": "Mustang Guns",
+      "f": 0,
+      "halfArc": 450,
+      "objectType": "Mako Short Bullet",
+      "range": 110,
+      "soundPack": "Mako Short Guns",
+      "speed": 600,
+      "turretBone": ""
+    }
+  ],
+  "healRate": 5,
+  "hp": 900,
+  "name": "Mako",
+  "objectType": "Mako",
+  "radius": 18,
+  "reverseThrustEmitter": "Mako Reverse Thruster",
+  "rotationDecay": 32,
+  "shields": [
+    {
+      "color": 6656181,
+      "left": -1200,
+      "level": 0,
+      "maxStrength": 250,
+      "right": 1200
+    }
+  ],
+  "speedLimit": 250,
+  "triggers": [
+    {
+      "cooldown": 1000,
+      "description": "Fires a forward-mounted laser array",
+      "icon": "sinusoidal-beam",
+      "mana": 20,
+      "name": "Laser Beams",
+      "params": [
+        {
+          "data": {
+            "damage": 180,
+            "delay": 0,
+            "drawReticle": 0,
+            "drawTooltip": 1,
+            "explosionType": "Mako Laser Beams Blast",
+            "halfArc": 450,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 300,
+            "statusEffects": [],
+            "tag": "Mako 1 Shotgun",
+            "targetingDelay": 0,
+            "tooltip": ""
+          },
+          "tag": "ShotgunTrigger"
+        }
+      ],
+      "sound": "Player_Mustang_BigGun_02",
+      "volume": 151
+    },
+    {
+      "cooldown": 5000,
+      "description": "Lunges forward to attack with plasma jaws, restoring hull, energy and cooldown on a hit.",
+      "icon": "shark-jaws",
+      "mana": 20,
+      "name": "Jaws",
+      "params": [
+        {
+          "data": {
+            "collisionSettings": {
+              "cooldownToRetain": 1000,
+              "damage": 250,
+              "explosion": "Mako Jaws",
+              "explosionRange": 50,
+              "manaToRefund": 10,
+              "triggerIndexToResetCooldown": 1,
+              "vamp": 1
+            },
+            "drawTooltip": 1,
+            "emitterType": "Mako Leap",
+            "range": 300,
+            "tag": ""
+          },
+          "tag": "LeapTrigger"
+        }
+      ],
+      "sound": "Player_Warthog_StunWarp_Warp",
+      "volume": 50
+    },
+    {
+      "cooldown": 10000,
+      "description": "Releases a salvo of homing missiles",
+      "icon": "missile-swarm",
+      "mana": 10,
+      "name": "Sharklets",
+      "params": [
+        {
+          "data": {
+            "count": 16,
+            "damage": 30,
+            "emitterType": "Mako Sharklets",
+            "objectType": "Sharklet",
+            "range": 290,
+            "sound": "Player_Hercules_ZeonRocket_Launch",
+            "speed": 250,
+            "tag": "Mako 3 Sharklet",
+            "timeGap": 200,
+            "tweenType": "QUARTIN",
+            "volume": 40
+          },
+          "tag": "SharkletTrigger"
+        }
+      ],
+      "sound": "Player_Warthog_TeraCapRecharge",
+      "volume": 50
+    },
+    {
+      "cooldown": 30000,
+      "description": "Boosts fire rate while damaging nearby enemies, increasing their susceptibility to further damage",
+      "icon": "blood",
+      "mana": 10,
+      "name": "Blood Frenzy",
+      "params": [
+        {
+          "data": {
+            "damage": 25,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Warthog Blast",
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 290,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 5000
+                },
+                "tag": "SusceptibleEffect"
+              }
+            ],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": ""
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "amount": 50,
+            "duration": 5000,
+            "emitterType": "",
+            "glyphCount": 16,
+            "glyphRadius": 50,
+            "glyphType": "Axeraider Rally Glyph",
+            "statType": 5,
+            "tag": ""
+          },
+          "tag": "StatBoostTrigger"
+        }
+      ],
+      "sound": "",
+      "volume": 75
+    }
+  ]
+}
+

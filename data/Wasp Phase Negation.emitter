@@ -1,0 +1,20 @@
+{
+  "arcOffset": 0,
+  "cooldown": 10000,
+  "endSound": "Player_Wasp_PhaseNeg_End",
+  "endVolume": 200,
+  "halfArc": 1800,
+  "loopSound": "",
+  "loopVolume": 50,
+  "maxDist": 125,
+  "minDist": 125,
+  "mirror": 0,
+  "name": "Wasp Phase Negation",
+  "particleCount": 0,
+  "particleTypes": [
+    "Wasp Overload"
+  ],
+  "startSound": "Player_Wasp_PhaseNeg_Start",
+  "startVolume": 50
+}
+

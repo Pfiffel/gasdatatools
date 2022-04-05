@@ -1,0 +1,36 @@
+{
+  "name": "Grey Ghost",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Felicitations.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Well met.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Salutations.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Greetings, stranger.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

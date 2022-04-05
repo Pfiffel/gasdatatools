@@ -1,0 +1,48 @@
+{
+  "boss": 0,
+  "collisionRadius": 27,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Iron Lance Death Cries",
+  "drops": [],
+  "healRate": 0,
+  "hp": 500,
+  "idleAnimation": "BaseArcher Idle",
+  "maxMoveDistance": 500,
+  "name": "Iron Lance",
+  "objectType": "Iron Lance",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "",
+  "runAnimationDuration": 700,
+  "runSpeed": 75,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 2500,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Iron Lance Turret",
+      "params": {
+        "data": {
+          "damage": 400,
+          "delay": 1000,
+          "explosionType": "Iron Lance Shotgun",
+          "halfArc": 50,
+          "powers": [],
+          "range": 600,
+          "triggerSound": "Enemy_IronLance_Shotgun_Long_Telegraph",
+          "triggerVolume": 75
+        },
+        "tag": "ShotgunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 49,
+  "xpLevelCap": 19
+}
+

@@ -1,0 +1,33 @@
+{
+  "credits": 10,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "duration": 3000,
+            "stats": {
+              "cooldown": 400,
+              "damage": 10,
+              "emitterType": "Mustang Guns",
+              "f": 0,
+              "halfArc": 1800,
+              "objectType": "Mustang Bullet",
+              "range": 300,
+              "soundPack": "Mustang Small Guns",
+              "speed": 900,
+              "turretBone": ""
+            }
+          },
+          "tag": "ExtraGunTrigger"
+        },
+        "when": 1
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Cythera Mechanism",
+  "overworldDrop": 0,
+  "precursorTech": 1
+}
+

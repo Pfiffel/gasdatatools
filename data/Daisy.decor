@@ -1,0 +1,23 @@
+{
+  "color": 11794109,
+  "name": "Daisy",
+  "objects": [
+    {
+      "density": 350,
+      "objectType": "FlowerDaisy"
+    },
+    {
+      "density": 30,
+      "objectType": "Rock"
+    },
+    {
+      "density": 30,
+      "objectType": "Rock2"
+    },
+    {
+      "density": 30,
+      "objectType": "Rock3"
+    }
+  ]
+}
+

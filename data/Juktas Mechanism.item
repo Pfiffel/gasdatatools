@@ -1,0 +1,33 @@
+{
+  "credits": 10,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "duration": 7500,
+            "stats": {
+              "cooldown": 750,
+              "damage": 25,
+              "emitterType": "Juktas Bullet Trail",
+              "f": 0,
+              "halfArc": 600,
+              "objectType": "Juktas Bullet",
+              "range": 400,
+              "soundPack": "Hercules Big Guns",
+              "speed": 700,
+              "turretBone": ""
+            }
+          },
+          "tag": "ExtraGunTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Juktas Mechanism",
+  "overworldDrop": 0,
+  "precursorTech": 1
+}
+

@@ -1,0 +1,36 @@
+{
+  "name": "Forest Mother",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Come, child, into my embrace.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "A mother's love knows no limits.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I care for all my children.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Family roots grow deep.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

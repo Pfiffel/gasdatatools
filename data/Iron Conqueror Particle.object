@@ -1,0 +1,42 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Iron Conqueror Particle",
+  "shapes": [
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "color": 16777215,
+      "height": 100,
+      "mirror": 1,
+      "name": "Shaft",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 28,
+          "y": 7
+        },
+        {
+          "x": 9,
+          "y": 28
+        },
+        {
+          "x": 15,
+          "y": 6
+        },
+        {
+          "x": -38,
+          "y": 3
+        },
+        {
+          "x": -41,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

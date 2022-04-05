@@ -1,0 +1,33 @@
+{
+  "boss": 0,
+  "collisionRadius": 38,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Iron Colossus Station Death Cries",
+  "drops": [],
+  "healRate": 0,
+  "hp": 400,
+  "idleAnimation": "BaseArcher Idle",
+  "name": "Iron Colossus Station",
+  "objectType": "Iron Colossus Station",
+  "runAnimation": "",
+  "runSpeed": 5,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 500,
+      "objectType": "Iron Colossus Turret",
+      "params": {
+        "data": {
+          "gunBulletType": "Iron Colossus",
+          "range": 700
+        },
+        "tag": "MultiBarrelGunParams"
+      }
+    }
+  ],
+  "xp": 0,
+  "xpLevelCap": 19
+}
+

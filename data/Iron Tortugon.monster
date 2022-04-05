@@ -1,0 +1,33 @@
+{
+  "boss": 0,
+  "collisionRadius": 55,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Iron Tortugon Death Cries",
+  "drops": [],
+  "healRate": 0,
+  "hp": 1000,
+  "idleAnimation": "",
+  "name": "Iron Tortugon",
+  "objectType": "Iron Tortugon",
+  "runAnimation": "Iron Tortugon Run",
+  "runSpeed": 125,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 1000,
+      "objectType": "Iron Tortugon Turret",
+      "params": {
+        "data": {
+          "gunBulletType": "Iron Bulwark",
+          "range": 800
+        },
+        "tag": "MultiBarrelGunParams"
+      }
+    }
+  ],
+  "xp": 4,
+  "xpLevelCap": 19
+}
+

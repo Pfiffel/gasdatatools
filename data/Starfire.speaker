@@ -1,0 +1,36 @@
+{
+  "name": "Starfire",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Justice is written in the stars.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "May the stars shine on you.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "The stars rain down vengeance on the unrighteous.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "The heavens guide our judgement.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

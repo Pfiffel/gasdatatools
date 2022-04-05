@@ -1,0 +1,36 @@
+{
+  "name": "Dandelion",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Life sprouts everywhere.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Let us plant the seeds of life.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Let us go forward and spread life.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Together we nurture all life.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

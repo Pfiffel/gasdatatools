@@ -1,0 +1,36 @@
+{
+  "name": "Sunset Rose",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Let me aid you.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I soothe your hurts.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I bind your wounds.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I comfort and assuage.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

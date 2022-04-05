@@ -1,0 +1,35 @@
+{
+  "collisionRadius": 15,
+  "deathCrySoundPack": "Iron Soldier Death Cries",
+  "drops": [],
+  "healRate": 0,
+  "hp": 45,
+  "idleAnimation": "BaseArcher Idle",
+  "name": "Iron Soldier",
+  "objectType": "Iron Soldier",
+  "runAnimation": "BaseArcher Run",
+  "runSpeed": 75,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 1000,
+      "objectType": "Iron Soldier Turret",
+      "params": {
+        "data": {
+          "aimed": 1,
+          "cooldown": 1500,
+          "gunBulletType": "Iron Shield",
+          "leading": 0,
+          "numProjectiles": 1,
+          "range": 600
+        },
+        "tag": "GunParams"
+      }
+    }
+  ],
+  "xp": 1,
+  "xpLevelCap": 19
+}
+

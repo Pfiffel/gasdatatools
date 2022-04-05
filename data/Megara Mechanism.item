@@ -1,0 +1,26 @@
+{
+  "credits": 10,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "glyphCount": 8,
+            "glyphDuration": 700,
+            "glyphRadius": 100,
+            "glyphType": "Axeraider Unstoppable Glyph",
+            "refillPercentage": 30,
+            "shieldIndex": -1
+          },
+          "tag": "ShieldRefillTrigger"
+        },
+        "when": 7
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Megara Mechanism",
+  "overworldDrop": 0,
+  "precursorTech": 1
+}
+

@@ -1,0 +1,241 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Turret Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 37,
+          "y": 0
+        }
+      }
+    },
+    {
+      "height": 0,
+      "name": "Aux Turret Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 18,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [
+    {
+      "name": "Turret",
+      "p": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "name": "Aux Turret",
+      "p": {
+        "x": -6,
+        "y": 0
+      }
+    }
+  ],
+  "floppiness": 0,
+  "name": "Mustang",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 2183112,
+      "height": 14,
+      "mirror": 1,
+      "name": "Lower Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 64,
+          "y": 1
+        },
+        {
+          "x": 56,
+          "y": 7
+        },
+        {
+          "x": 42,
+          "y": 11
+        },
+        {
+          "x": 30,
+          "y": 17
+        },
+        {
+          "x": 21,
+          "y": 28
+        },
+        {
+          "x": 14,
+          "y": 40
+        },
+        {
+          "x": -15,
+          "y": 40
+        },
+        {
+          "x": -35,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 14926123,
+      "height": 16,
+      "mirror": 1,
+      "name": "Upper Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 53,
+          "y": 0
+        },
+        {
+          "x": 48,
+          "y": 5
+        },
+        {
+          "x": 34,
+          "y": 8
+        },
+        {
+          "x": 25,
+          "y": 13
+        },
+        {
+          "x": 18,
+          "y": 21
+        },
+        {
+          "x": 12,
+          "y": 30
+        },
+        {
+          "x": -9,
+          "y": 30
+        },
+        {
+          "x": -25,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "color": 9868950,
+      "height": 25,
+      "mirror": 1,
+      "name": "Main Gun",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 40,
+          "y": 4
+        },
+        {
+          "x": 11,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "color": 2183112,
+      "height": 26,
+      "mirror": 1,
+      "name": "Main Turret",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 12,
+          "y": 3
+        },
+        {
+          "x": 18,
+          "y": 7
+        },
+        {
+          "x": 9,
+          "y": 19
+        },
+        {
+          "x": -11,
+          "y": 19
+        },
+        {
+          "x": -28,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Aux Turret",
+      "clones": [],
+      "closed": 0,
+      "color": 9868950,
+      "height": 28,
+      "mirror": 1,
+      "name": "Aux Gun",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 21,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 3
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Aux Turret",
+      "clones": [],
+      "closed": 0,
+      "color": 14926123,
+      "height": 29,
+      "mirror": 1,
+      "name": "Aux Turret",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 7,
+          "y": 4
+        },
+        {
+          "x": 3,
+          "y": 8
+        },
+        {
+          "x": -11,
+          "y": 8
+        },
+        {
+          "x": -21,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

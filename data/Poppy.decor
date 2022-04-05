@@ -1,0 +1,23 @@
+{
+  "color": 11017501,
+  "name": "Poppy",
+  "objects": [
+    {
+      "density": 350,
+      "objectType": "FlowerPoppy"
+    },
+    {
+      "density": 30,
+      "objectType": "Rock"
+    },
+    {
+      "density": 30,
+      "objectType": "Rock2"
+    },
+    {
+      "density": 30,
+      "objectType": "Rock3"
+    }
+  ]
+}
+

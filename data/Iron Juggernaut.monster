@@ -1,0 +1,169 @@
+{
+  "boss": 1,
+  "collisionRadius": 108,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Iron Leviathan Enrage 2",
+  "drops": [],
+  "healRate": 0,
+  "hp": 4000,
+  "idleAnimation": "BaseArcher Idle",
+  "maxMoveDistance": 500,
+  "name": "Iron Juggernaut",
+  "objectType": "Iron Juggernaut",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "Iron Behemoth Run",
+  "runAnimationDuration": 814,
+  "runSpeed": 86,
+  "successorMonster": "Iron Juggernaut 2",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "TurretRailL",
+      "cooldown": 1000,
+      "extraTargetingArc": 600,
+      "halfArc": 300,
+      "objectType": "Iron Juggernaut Turret Rail",
+      "params": {
+        "data": {
+          "gunBulletType": "Iron Juggernaut",
+          "range": 900
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "TurretRailR",
+      "cooldown": 1000,
+      "extraTargetingArc": 600,
+      "halfArc": 300,
+      "objectType": "Iron Juggernaut Turret Rail",
+      "params": {
+        "data": {
+          "gunBulletType": "Iron Juggernaut",
+          "range": 900
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "TurretFL",
+      "cooldown": 1500,
+      "extraTargetingArc": 0,
+      "halfArc": 1350,
+      "objectType": "Iron Juggernaut Turret Front",
+      "params": {
+        "data": {
+          "gunBulletType": "Iron Behemoth Mid",
+          "range": 900
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "TurretFR",
+      "cooldown": 1500,
+      "extraTargetingArc": 0,
+      "halfArc": 1350,
+      "objectType": "Iron Juggernaut Turret Front",
+      "params": {
+        "data": {
+          "gunBulletType": "Iron Behemoth Mid",
+          "range": 900
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "TurretMain",
+      "cooldown": 5000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Iron Juggernaut Turret Center",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "bulletRange": 900,
+                "delay": 500,
+                "gunBulletType": "Iron Leviathan",
+                "numBullets": 5,
+                "range": 1000,
+                "salvoes": [
+                  {
+                    "angle": 0,
+                    "mirror": 0
+                  },
+                  {
+                    "angle": 180,
+                    "mirror": 0
+                  },
+                  {
+                    "angle": 360,
+                    "mirror": 0
+                  },
+                  {
+                    "angle": 540,
+                    "mirror": 0
+                  },
+                  {
+                    "angle": 720,
+                    "mirror": 0
+                  }
+                ]
+              },
+              "tag": "BarrageParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "TurretB",
+      "cooldown": 1200,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Iron Juggernaut Turret Back",
+      "params": {
+        "data": {
+          "gunBulletType": "Iron Colossus",
+          "range": 900
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 100,
+  "xpLevelCap": 19
+}
+

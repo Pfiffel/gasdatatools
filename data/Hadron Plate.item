@@ -1,0 +1,17 @@
+{
+  "credits": 6,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 20,
+        "statType": 3
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Hadron Plate",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

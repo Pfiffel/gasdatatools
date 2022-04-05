@@ -1,0 +1,92 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Golden Hind Mine",
+  "shapes": [
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 1,
+      "color": 687514,
+      "height": 2,
+      "mirror": 1,
+      "name": "Legs",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 16,
+          "y": 9
+        },
+        {
+          "x": 26,
+          "y": 33
+        },
+        {
+          "x": 19,
+          "y": 36
+        },
+        {
+          "x": 6,
+          "y": 19
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 1,
+      "color": 687514,
+      "height": 2,
+      "mirror": 1,
+      "name": "Legs",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -16,
+          "y": 9
+        },
+        {
+          "x": -26,
+          "y": 33
+        },
+        {
+          "x": -19,
+          "y": 36
+        },
+        {
+          "x": -6,
+          "y": 19
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 0,
+      "color": 14857487,
+      "height": 10,
+      "mirror": 1,
+      "name": "Body",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -28,
+          "y": 13
+        },
+        {
+          "x": 0,
+          "y": 33
+        },
+        {
+          "x": 28,
+          "y": 13
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

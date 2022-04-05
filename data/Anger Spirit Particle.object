@@ -1,0 +1,42 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Anger Spirit Particle",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 16711423,
+      "height": 20,
+      "mirror": 1,
+      "name": "Spear",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -80,
+          "y": 6
+        },
+        {
+          "x": -20,
+          "y": 6
+        },
+        {
+          "x": -20,
+          "y": 9
+        },
+        {
+          "x": -5,
+          "y": 15
+        },
+        {
+          "x": 34,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

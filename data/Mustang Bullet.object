@@ -1,0 +1,58 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Mustang Bullet",
+  "shapes": [
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "color": 14388497,
+      "height": 60,
+      "mirror": 1,
+      "name": "Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 31,
+          "y": 2
+        },
+        {
+          "x": 27,
+          "y": 9
+        },
+        {
+          "x": 18,
+          "y": 13
+        },
+        {
+          "x": 7,
+          "y": 15
+        },
+        {
+          "x": -6,
+          "y": 15
+        },
+        {
+          "x": -22,
+          "y": 13
+        },
+        {
+          "x": -44,
+          "y": 10
+        },
+        {
+          "x": -66,
+          "y": 5
+        },
+        {
+          "x": -80,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

@@ -1,0 +1,40 @@
+{
+  "color": 2499846,
+  "groundColors": [
+    1907970,
+    1907987
+  ],
+  "name": "Swamp Black",
+  "objects": [
+    {
+      "density": 50,
+      "objectType": "Swamp Mushroom"
+    },
+    {
+      "density": 20,
+      "objectType": "RockSlimy"
+    },
+    {
+      "density": 20,
+      "objectType": "RockSlimy2"
+    },
+    {
+      "density": 20,
+      "objectType": "RockSlimy3"
+    },
+    {
+      "density": 3,
+      "objectType": "Swamp Log"
+    },
+    {
+      "density": 41,
+      "objectType": "Swamp Dead Tree"
+    },
+    {
+      "density": 41,
+      "objectType": "Swamp Dead Tree Small"
+    }
+  ],
+  "regionType": "Swamp Black"
+}
+

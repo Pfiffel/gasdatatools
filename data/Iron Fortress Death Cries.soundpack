@@ -1,0 +1,8 @@
+{
+  "name": "Iron Fortress Death Cries",
+  "sounds": [
+    "Enemy_IronFortress_DeathCry_01"
+  ],
+  "volume": 150
+}
+

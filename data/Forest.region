@@ -1,0 +1,16 @@
+{
+  "gap": 120,
+  "groundColor": 466952,
+  "mapColor": 225805,
+  "name": "Forest",
+  "polyDecorations": [
+    {
+      "gap": 40,
+      "objectType": "ForestCenter"
+    }
+  ],
+  "segmentObjects": [
+    "ForestEdge"
+  ]
+}
+

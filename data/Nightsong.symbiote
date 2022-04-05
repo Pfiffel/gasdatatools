@@ -1,0 +1,18 @@
+{
+  "description": "Nightsong sings her lullaby to soothe the wounded.",
+  "effects": [
+    {
+      "data": {
+        "amount": 150,
+        "cooldown": 7500,
+        "explosionType": "Nightsong Heal",
+        "radius": 200
+      },
+      "tag": "NightsongHeal"
+    }
+  ],
+  "enemies": [],
+  "name": "Nightsong",
+  "tier": 2
+}
+

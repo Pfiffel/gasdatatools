@@ -1,0 +1,191 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Hand",
+      "pos": {
+        "f": -120,
+        "p": {
+          "x": 0,
+          "y": 68
+        }
+      }
+    }
+  ],
+  "bonePivots": [
+    {
+      "name": "Hand",
+      "p": {
+        "x": -48,
+        "y": 100
+      }
+    },
+    {
+      "name": "Foot",
+      "p": {
+        "x": 21,
+        "y": 77
+      }
+    }
+  ],
+  "floppiness": 0,
+  "name": "Hercules Missile",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 13487769,
+      "height": 10,
+      "mirror": 1,
+      "name": "Front Fin",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 23,
+          "y": 9
+        },
+        {
+          "x": 1,
+          "y": 23
+        },
+        {
+          "x": -7,
+          "y": 9
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 13487769,
+      "height": 10,
+      "mirror": 1,
+      "name": "Rear Fin",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -30,
+          "y": 9
+        },
+        {
+          "x": -75,
+          "y": 37
+        },
+        {
+          "x": -90,
+          "y": 9
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hips",
+      "clones": [],
+      "closed": 0,
+      "color": 13487769,
+      "height": 11,
+      "mirror": 1,
+      "name": "Shaft",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 42,
+          "y": 9
+        },
+        {
+          "x": -98,
+          "y": 9
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 13487769,
+      "height": 12,
+      "mirror": 1,
+      "name": "Warhead Front",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 112,
+          "y": 11
+        },
+        {
+          "x": 79,
+          "y": 27
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 4013360,
+      "height": 12,
+      "mirror": 1,
+      "name": "Warhead Middle",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 79,
+          "y": 27
+        },
+        {
+          "x": 62,
+          "y": 27
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 13487769,
+      "height": 12,
+      "mirror": 1,
+      "name": "Warhead Rear",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 62,
+          "y": 27
+        },
+        {
+          "x": 42,
+          "y": 9
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 13487769,
+      "height": 12,
+      "mirror": 1,
+      "name": "Tip",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 123,
+          "y": 0
+        },
+        {
+          "x": 112,
+          "y": 11
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

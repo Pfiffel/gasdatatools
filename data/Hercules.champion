@@ -1,0 +1,409 @@
+{
+  "acceleration": 750,
+  "angularAccel": 78,
+  "blurb": "Heavy assault tank",
+  "choosable": 1,
+  "equipment": [],
+  "forwardThrustEmitter": "Hercules Main Thruster",
+  "guns": [
+    {
+      "cooldown": 350,
+      "damage": 8,
+      "emitterType": "Mustang Guns",
+      "f": 0,
+      "halfArc": 1800,
+      "objectType": "Hercules Aux Bullet",
+      "range": 265,
+      "soundPack": "Hercules Small Guns",
+      "speed": 1200,
+      "turretBone": "Aux Turret"
+    },
+    {
+      "cooldown": 425,
+      "damage": 15,
+      "emitterType": "Mustang Guns",
+      "f": 0,
+      "halfArc": 600,
+      "objectType": "Hercules Secondary Bullet",
+      "range": 300,
+      "soundPack": "Hercules Medium Guns",
+      "speed": 1200,
+      "turretBone": "Secondary Turret"
+    },
+    {
+      "cooldown": 650,
+      "damage": 50,
+      "emitterType": "Mustang Guns",
+      "f": 0,
+      "halfArc": 200,
+      "objectType": "Hercules Bullet",
+      "range": 335,
+      "soundPack": "Hercules Big Guns",
+      "speed": 1200,
+      "turretBone": "Turret"
+    }
+  ],
+  "healRate": 12,
+  "hp": 1000,
+  "name": "Hercules",
+  "objectType": "Hercules",
+  "radius": 24,
+  "reverseThrustEmitter": "Hercules Reverse Thruster",
+  "rotationDecay": 32,
+  "shields": [
+    {
+      "color": 3355647,
+      "left": -200,
+      "level": 1,
+      "maxStrength": 120,
+      "right": 200
+    },
+    {
+      "color": 3355647,
+      "left": -600,
+      "level": 1,
+      "maxStrength": 120,
+      "right": -200
+    },
+    {
+      "color": 3355647,
+      "left": 200,
+      "level": 1,
+      "maxStrength": 120,
+      "right": 600
+    },
+    {
+      "color": 3355647,
+      "left": 600,
+      "level": 1,
+      "maxStrength": 120,
+      "right": -600
+    },
+    {
+      "color": 3355647,
+      "left": -1800,
+      "level": 0,
+      "maxStrength": 120,
+      "right": 1800
+    }
+  ],
+  "speedLimit": 230,
+  "triggers": [
+    {
+      "cooldown": 1000,
+      "description": "Uses spacetime cracking to damage nearby enemies",
+      "icon": "spiky-explosion",
+      "mana": 20,
+      "name": "Shockwave",
+      "params": [
+        {
+          "data": {
+            "damage": 95,
+            "delay": 0,
+            "drawReticle": 0,
+            "drawTooltip": 1,
+            "explosionType": "Hercules Burst",
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 265,
+            "statusEffects": [],
+            "tag": "Hercules 1 Shotgun",
+            "targetingDelay": 0
+          },
+          "tag": "ShotgunTrigger"
+        }
+      ],
+      "sound": "",
+      "volume": 50
+    },
+    {
+      "cooldown": 5000,
+      "description": "Propels a spray of superheated neutrons",
+      "icon": "striking-splinter",
+      "mana": 15,
+      "name": "Neutron Haymaker",
+      "params": [
+        {
+          "data": {
+            "damage": 200,
+            "delay": 0,
+            "drawReticle": 0,
+            "drawTooltip": 1,
+            "explosionType": "Hercules Shotgun",
+            "halfArc": 200,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 335,
+            "statusEffects": [],
+            "tag": "Hercules 2 Shotgun",
+            "targetingDelay": 0
+          },
+          "tag": "ShotgunTrigger"
+        }
+      ],
+      "sound": "",
+      "volume": 0
+    },
+    {
+      "cooldown": 10000,
+      "description": "Launches a barrage of plasma rockets",
+      "icon": "missile-swarm",
+      "mana": 15,
+      "name": "Javelin Rockets",
+      "params": [
+        {
+          "data": {
+            "damage": 75,
+            "delay": 300,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Hercules Zeon Burst",
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 250,
+              "y": 0
+            },
+            "range": 160,
+            "statusEffects": [],
+            "tag": "Hercules 3 Shotgun 1",
+            "targetingDelay": 0
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "damage": 75,
+            "delay": 700,
+            "drawReticle": 0,
+            "drawTooltip": 0,
+            "explosionType": "Hercules Zeon Burst",
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 250,
+              "y": 0
+            },
+            "range": 160,
+            "statusEffects": [],
+            "tag": "Hercules 3 Shotgun 2",
+            "targetingDelay": 400
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "damage": 75,
+            "delay": 1100,
+            "drawReticle": 0,
+            "drawTooltip": 0,
+            "explosionType": "Hercules Zeon Burst",
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 250,
+              "y": 0
+            },
+            "range": 160,
+            "statusEffects": [],
+            "tag": "Hercules 3 Shotgun 3",
+            "targetingDelay": 800
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "damage": 75,
+            "delay": 1500,
+            "drawReticle": 0,
+            "drawTooltip": 0,
+            "explosionType": "Hercules Zeon Burst",
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 250,
+              "y": 0
+            },
+            "range": 160,
+            "statusEffects": [],
+            "tag": "Hercules 3 Shotgun 4",
+            "targetingDelay": 1200
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "damage": 75,
+            "delay": 1900,
+            "drawReticle": 0,
+            "drawTooltip": 0,
+            "explosionType": "Hercules Zeon Burst",
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 250,
+              "y": 0
+            },
+            "range": 160,
+            "statusEffects": [],
+            "tag": "Hercules 3 Shotgun 5",
+            "targetingDelay": 1600
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "delay": 0,
+            "duration": 300,
+            "emitterType": "Mustang Grenade",
+            "mirror": 0,
+            "objectType": "Hercules Missile",
+            "sound": "Player_Hercules_ZeonRocket_Launch",
+            "tag": "",
+            "target": {
+              "x": 250,
+              "y": 0
+            },
+            "volume": 20
+          },
+          "tag": "SlugTrigger"
+        },
+        {
+          "data": {
+            "delay": 400,
+            "duration": 300,
+            "emitterType": "Mustang Grenade",
+            "mirror": 0,
+            "objectType": "Hercules Missile",
+            "sound": "Player_Hercules_ZeonRocket_Launch",
+            "tag": "",
+            "target": {
+              "x": 250,
+              "y": 0
+            },
+            "volume": 20
+          },
+          "tag": "SlugTrigger"
+        },
+        {
+          "data": {
+            "delay": 800,
+            "duration": 300,
+            "emitterType": "Mustang Grenade",
+            "mirror": 0,
+            "objectType": "Hercules Missile",
+            "sound": "Player_Hercules_ZeonRocket_Launch",
+            "tag": "",
+            "target": {
+              "x": 250,
+              "y": 0
+            },
+            "volume": 20
+          },
+          "tag": "SlugTrigger"
+        },
+        {
+          "data": {
+            "delay": 1200,
+            "duration": 300,
+            "emitterType": "Mustang Grenade",
+            "mirror": 0,
+            "objectType": "Hercules Missile",
+            "sound": "Player_Hercules_ZeonRocket_Launch",
+            "tag": "",
+            "target": {
+              "x": 250,
+              "y": 0
+            },
+            "volume": 20
+          },
+          "tag": "SlugTrigger"
+        },
+        {
+          "data": {
+            "delay": 1600,
+            "duration": 300,
+            "emitterType": "Mustang Grenade",
+            "mirror": 0,
+            "objectType": "Hercules Missile",
+            "sound": "Player_Hercules_ZeonRocket_Launch",
+            "tag": "",
+            "target": {
+              "x": 250,
+              "y": 0
+            },
+            "volume": 20
+          },
+          "tag": "SlugTrigger"
+        }
+      ],
+      "sound": "",
+      "volume": 50
+    },
+    {
+      "cooldown": 30000,
+      "description": "Overloads defense systems to focus and release energy in a quantum shellburst",
+      "icon": "barbed-sun",
+      "mana": 15,
+      "name": "Battle Aegis",
+      "params": [
+        {
+          "data": {
+            "glyphCount": 0,
+            "glyphDuration": 0,
+            "glyphRadius": 0,
+            "glyphType": "Hercules Aux Bullet",
+            "refillPercentage": 100,
+            "shieldIndex": -1,
+            "tag": ""
+          },
+          "tag": "ShieldRefillTrigger"
+        },
+        {
+          "data": {
+            "duration": 5000,
+            "stats": {
+              "color": 15387922,
+              "left": -1800,
+              "level": 0,
+              "maxStrength": 1000,
+              "right": 1800
+            },
+            "tag": "Hercules 4 ExtraShield"
+          },
+          "tag": "ExtraShieldTrigger"
+        },
+        {
+          "data": {
+            "damage": 300,
+            "delay": 0,
+            "drawReticle": 0,
+            "drawTooltip": 1,
+            "explosionType": "Hercules Zeon Burst",
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 265,
+            "statusEffects": [],
+            "tag": "Hercules 4 Shotgun",
+            "targetingDelay": 5000
+          },
+          "tag": "ShotgunTrigger"
+        }
+      ],
+      "sound": "Player_Hercules_EmergencyShield",
+      "volume": 50
+    }
+  ]
+}
+

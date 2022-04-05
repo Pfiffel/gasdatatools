@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 900,
+      "value": 12303104
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 700,
+  "minLifetime": 500,
+  "name": "Xenofrog Trail Acidic",
+  "objectType": "Spike Three",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 400
+    },
+    {
+      "frac": 900,
+      "value": 400
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 12303104,
+  "startScale": 10,
+  "stayLow": 0
+}
+

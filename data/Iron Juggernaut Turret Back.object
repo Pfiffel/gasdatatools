@@ -1,0 +1,224 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Left Muzzle",
+      "pos": {
+        "f": -250,
+        "p": {
+          "x": 73,
+          "y": -66
+        }
+      }
+    },
+    {
+      "height": 0,
+      "name": "Right Muzzle",
+      "pos": {
+        "f": 250,
+        "p": {
+          "x": 73,
+          "y": 66
+        }
+      }
+    },
+    {
+      "height": 0,
+      "name": "Center Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 88,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Iron Juggernaut Turret Back",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 5066061,
+      "height": 0,
+      "mirror": 1,
+      "name": "Base",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -28,
+          "y": 11
+        },
+        {
+          "x": -37,
+          "y": 32
+        },
+        {
+          "x": -13,
+          "y": 49
+        },
+        {
+          "x": 12,
+          "y": 63
+        },
+        {
+          "x": 40,
+          "y": 49
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [
+        {
+          "pos": {
+            "f": 250,
+            "p": {
+              "x": -7,
+              "y": 29
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": -250,
+            "p": {
+              "x": -7,
+              "y": -29
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "color": 3092271,
+      "height": 22,
+      "mirror": 1,
+      "name": "Gun Barrel",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 28,
+          "y": 14
+        },
+        {
+          "x": 11,
+          "y": 12
+        },
+        {
+          "x": -4,
+          "y": 9
+        },
+        {
+          "x": -15,
+          "y": 5
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [
+        {
+          "pos": {
+            "f": 250,
+            "p": {
+              "x": -7,
+              "y": 29
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": -250,
+            "p": {
+              "x": -7,
+              "y": -29
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "color": 1974309,
+      "height": 23,
+      "mirror": 1,
+      "name": "Gun Middle",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 28,
+          "y": 14
+        },
+        {
+          "x": 36,
+          "y": 15
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [
+        {
+          "pos": {
+            "f": 250,
+            "p": {
+              "x": -7,
+              "y": 29
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": -250,
+            "p": {
+              "x": -7,
+              "y": -29
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "color": 5066061,
+      "height": 28,
+      "mirror": 1,
+      "name": "Gun Muzzle",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 36,
+          "y": 15
+        },
+        {
+          "x": 53,
+          "y": 14
+        },
+        {
+          "x": 68,
+          "y": 12
+        },
+        {
+          "x": 83,
+          "y": 9
+        },
+        {
+          "x": 89,
+          "y": 7
+        },
+        {
+          "x": 89,
+          "y": 2
+        },
+        {
+          "x": 53,
+          "y": 2
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

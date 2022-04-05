@@ -1,0 +1,21 @@
+{
+  "damage": 300,
+  "emitterType": "Xenofrog Trail Volatile",
+  "name": "Xenofrog Dire Volatile Spit",
+  "objectType": "Xenofrog Dire Volatile Bullet",
+  "powers": [
+    {
+      "data": {
+        "amount": -75,
+        "caption": "Trigger Rate of Fire -75%",
+        "duration": 6000,
+        "emitterType": "Power Energy Production Down",
+        "statType": 6
+      },
+      "tag": "StatPower"
+    }
+  ],
+  "soundPack": "Iron Leviathan Bullet",
+  "speed": 140
+}
+

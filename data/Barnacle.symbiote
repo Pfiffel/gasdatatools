@@ -1,0 +1,33 @@
+{
+  "description": "Barnacle demands, yet Barnacle gives.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 12,
+        "amount": 50,
+        "statType": 2
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 12,
+        "amount": 50,
+        "statType": 1
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 12,
+        "amount": 50,
+        "statType": 0
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "Barnacle",
+  "tier": 1
+}
+

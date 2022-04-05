@@ -1,0 +1,21 @@
+{
+  "damage": 250,
+  "emitterType": "Iron Shield",
+  "name": "Iron Juggernaut",
+  "objectType": "Iron Juggernaut Bullet",
+  "powers": [
+    {
+      "data": {
+        "amount": -20,
+        "caption": "Gun Rate of Fire -20%",
+        "duration": 3000,
+        "emitterType": "",
+        "statType": 5
+      },
+      "tag": "StatPower"
+    }
+  ],
+  "soundPack": "Iron Leviathan Bullet",
+  "speed": 200
+}
+

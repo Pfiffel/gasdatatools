@@ -1,0 +1,58 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Hercules Bullet",
+  "shapes": [
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "color": 12376851,
+      "height": 60,
+      "mirror": 1,
+      "name": "Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 38,
+          "y": 3
+        },
+        {
+          "x": 33,
+          "y": 11
+        },
+        {
+          "x": 22,
+          "y": 17
+        },
+        {
+          "x": 9,
+          "y": 19
+        },
+        {
+          "x": -8,
+          "y": 19
+        },
+        {
+          "x": -28,
+          "y": 16
+        },
+        {
+          "x": -52,
+          "y": 11
+        },
+        {
+          "x": -72,
+          "y": 6
+        },
+        {
+          "x": -84,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

@@ -1,0 +1,23 @@
+{
+  "boss": 0,
+  "collisionRadius": 20,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Iron Shield Death Cries",
+  "drops": [],
+  "healRate": 0,
+  "hp": 10,
+  "idleAnimation": "",
+  "maxMoveDistance": 500,
+  "name": "Training Drone Mk 1",
+  "objectType": "Training Drone Mk 1",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "",
+  "runAnimationDuration": 700,
+  "runSpeed": 75,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [],
+  "xp": 1,
+  "xpLevelCap": 19
+}
+

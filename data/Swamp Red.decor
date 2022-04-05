@@ -1,0 +1,27 @@
+{
+  "color": 6787357,
+  "groundColors": [
+    6966843,
+    6767898,
+    3152906,
+    6762252,
+    2563863
+  ],
+  "name": "Swamp Red",
+  "objects": [
+    {
+      "density": 397,
+      "objectType": "Swamp Tuft Red"
+    },
+    {
+      "density": 52,
+      "objectType": "Swamp Plant Red"
+    },
+    {
+      "density": 1,
+      "objectType": "Swamp Redflower Tree"
+    }
+  ],
+  "regionType": "Swamp Red"
+}
+

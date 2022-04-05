@@ -1,0 +1,36 @@
+{
+  "name": "Ember",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I like it hot!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Burning vengeance!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Conflagration!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "There will be flames.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

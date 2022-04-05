@@ -1,0 +1,36 @@
+{
+  "name": "Golden Hind",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Forward, together!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "We continue our journey.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "We forge ahead, together.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Our voyage continues.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

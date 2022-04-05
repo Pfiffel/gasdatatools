@@ -1,0 +1,35 @@
+{
+  "gap": 90,
+  "groundColor": 6971137,
+  "mapColor": 6122756,
+  "name": "Swamp",
+  "polyDecorations": [
+    {
+      "gap": 300,
+      "objectType": "Swamp Tree"
+    },
+    {
+      "gap": 200,
+      "objectType": "Big Hummock"
+    },
+    {
+      "gap": 150,
+      "objectType": "Hummock"
+    },
+    {
+      "gap": 150,
+      "objectType": "Swamp Lily"
+    },
+    {
+      "gap": 75,
+      "objectType": "Swamp Lily Pad"
+    }
+  ],
+  "segmentObjects": [
+    "Hummock",
+    "Hummock",
+    "Hummock",
+    "Big Hummock"
+  ]
+}
+

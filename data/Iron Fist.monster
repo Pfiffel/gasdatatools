@@ -1,0 +1,46 @@
+{
+  "boss": 0,
+  "collisionRadius": 20,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Iron Fist Death Cries",
+  "drops": [],
+  "healRate": 0,
+  "hp": 175,
+  "idleAnimation": "BaseArcher Idle",
+  "maxMoveDistance": 500,
+  "name": "Iron Fist",
+  "objectType": "Iron Fist",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "BaseArcher Run",
+  "runSpeed": 75,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 2000,
+      "halfArc": 1800,
+      "objectType": "Iron Fist Turret",
+      "params": {
+        "data": {
+          "damage": 200,
+          "delay": 1000,
+          "explosionType": "Iron Fist Shotgun",
+          "halfArc": 150,
+          "powers": [],
+          "range": 325,
+          "triggerSound": "Enemy_IronFist_Shotgun_Short_Telegraph",
+          "triggerVolume": 75
+        },
+        "tag": "ShotgunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 0,
+  "xpLevelCap": 19
+}
+

@@ -1,0 +1,19 @@
+{
+  "description": "Anger Spirit rages in frustration at the universe.",
+  "effects": [
+    {
+      "data": {
+        "cooldown": 350,
+        "damage": 200,
+        "explosionType": "Anger Spirit Blast",
+        "percentChance": 9,
+        "radius": 250
+      },
+      "tag": "AngerSpiritBlast"
+    }
+  ],
+  "enemies": [],
+  "name": "Anger Spirit",
+  "tier": 3
+}
+

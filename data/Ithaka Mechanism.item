@@ -1,0 +1,27 @@
+{
+  "credits": 10,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 5,
+            "applyToMana": 1,
+            "duration": 2000,
+            "emitterType": "",
+            "glyphCount": 2,
+            "glyphRadius": 75,
+            "glyphType": "Recharge Indicator"
+          },
+          "tag": "HealOverTimeTrigger"
+        },
+        "when": 0
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Ithaka Mechanism",
+  "overworldDrop": 0,
+  "precursorTech": 1
+}
+

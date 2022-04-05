@@ -1,0 +1,30 @@
+{
+  "champion": "Mustang",
+  "displayName": "Amplified Fireburst",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "damage": 75,
+            "delay": 0,
+            "halfArc": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 0,
+            "statusEffects": [],
+            "targetingDelay": 0
+          },
+          "tag": "ShotgunTriggerBonus"
+        },
+        "tag": "Mustang 3 Shotgun",
+        "tooltip": "On Quantum Fireburst:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Mustang Amplified Fireburst"
+}
+

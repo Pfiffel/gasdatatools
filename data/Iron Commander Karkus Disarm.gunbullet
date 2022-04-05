@@ -1,0 +1,23 @@
+{
+  "damage": 150,
+  "emitterType": "Iron Commander Karkus Disarm",
+  "name": "Iron Commander Karkus Disarm",
+  "objectType": "Iron Commander Karkus Bullet Disarm",
+  "powers": [
+    {
+      "data": {
+        "caption": "DISARMED",
+        "duration": 3000,
+        "guns": 1,
+        "health": 0,
+        "mana": 0,
+        "shield": 0,
+        "triggers": 0
+      },
+      "tag": "DisablePower"
+    }
+  ],
+  "soundPack": "Iron Protector Bullet",
+  "speed": 150
+}
+

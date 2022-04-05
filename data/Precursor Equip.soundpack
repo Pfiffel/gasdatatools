@@ -1,0 +1,8 @@
+{
+  "name": "Precursor Equip",
+  "sounds": [
+    "UI_InstallPrecursorTech"
+  ],
+  "volume": 25
+}
+

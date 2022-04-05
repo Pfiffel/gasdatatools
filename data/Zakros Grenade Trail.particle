@@ -1,0 +1,44 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 12097762
+    },
+    {
+      "frac": 500,
+      "value": 10316507
+    },
+    {
+      "frac": 750,
+      "value": 5716134
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 1000,
+  "minLifetime": 600,
+  "name": "Zakros Grenade Trail",
+  "objectType": "Spike Three",
+  "positionTweenType": "EXPOIN",
+  "scalePoints": [
+    {
+      "frac": 50,
+      "value": 500
+    },
+    {
+      "frac": 500,
+      "value": 500
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 10316507,
+  "startScale": 10,
+  "stayLow": 0
+}
+

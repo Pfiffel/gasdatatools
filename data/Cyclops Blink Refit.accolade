@@ -1,0 +1,22 @@
+{
+  "champion": "Cyclops",
+  "displayName": "Blink Refit",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "healAmount": 30,
+            "usePercentInTooltip": 1
+          },
+          "tag": "HealTriggerBonus"
+        },
+        "tag": "Cyclops 2 Heal",
+        "tooltip": "On Blink:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Cyclops Blink Refit"
+}
+

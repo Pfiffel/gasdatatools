@@ -1,0 +1,75 @@
+{
+  "boss": 0,
+  "collisionRadius": 29,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Enemy Hits",
+  "drops": [],
+  "healRate": 0,
+  "hp": 1600,
+  "idleAnimation": "Xenofrog Idle",
+  "maxMoveDistance": 200,
+  "name": "Xenofrog Dire Defender",
+  "objectType": "Xenofrog Dire Defender",
+  "pauseBetweenMovements": 900,
+  "runAnimation": "Xenofrog Leap",
+  "runSpeed": 280,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Mouth",
+      "cooldown": 2000,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "angleBetweenProjectiles": 450,
+                "gunBulletType": "Xenofrog Dire Defender Spit",
+                "leading": 0,
+                "numProjectiles": 5,
+                "range": 350
+              },
+              "tag": "GunParams"
+            },
+            {
+              "data": {
+                "damage": 300,
+                "delay": 1000,
+                "explosionType": "",
+                "halfArc": 250,
+                "powers": [
+                  {
+                    "data": {
+                      "amount": -75,
+                      "caption": "Shield Strength -75%",
+                      "duration": 0,
+                      "emitterType": "Power Energy Production Down",
+                      "statType": 9
+                    },
+                    "tag": "StatPower"
+                  }
+                ],
+                "range": 300,
+                "triggerSound": "",
+                "triggerVolume": 50
+              },
+              "tag": "ShotgunParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 81,
+  "xpLevelCap": 19
+}
+

@@ -1,0 +1,13 @@
+{
+  "name": "Iron Protector Bullet",
+  "sounds": [
+    "Enemy_BigGun_01",
+    "Enemy_BigGun_02",
+    "Enemy_BigGun_03",
+    "Enemy_BigGun_04",
+    "Enemy_BigGun_05",
+    "Enemy_BigGun_06"
+  ],
+  "volume": 74
+}
+

@@ -1,0 +1,229 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 25,
+      "name": "Turret Left",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 34,
+          "y": -40
+        }
+      }
+    },
+    {
+      "height": 25,
+      "name": "Turret Right",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 34,
+          "y": 40
+        }
+      }
+    },
+    {
+      "height": 28,
+      "name": "Turret Main",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Iron Hammer",
+  "shapes": [
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 1,
+      "color": 8026746,
+      "height": 4,
+      "mirror": 1,
+      "name": "Rear Hoverpod",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -81,
+          "y": 34
+        },
+        {
+          "x": -79,
+          "y": 52
+        },
+        {
+          "x": -35,
+          "y": 52
+        },
+        {
+          "x": -33,
+          "y": 34
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 1,
+      "color": 8026746,
+      "height": 4,
+      "mirror": 1,
+      "name": "Front Hoverpod",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 6,
+          "y": 54
+        },
+        {
+          "x": 13,
+          "y": 73
+        },
+        {
+          "x": 57,
+          "y": 73
+        },
+        {
+          "x": 62,
+          "y": 53
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "color": 9120298,
+      "height": 23,
+      "mirror": 1,
+      "name": "Rear Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -72,
+          "y": 12
+        },
+        {
+          "x": -69,
+          "y": 45
+        },
+        {
+          "x": -47,
+          "y": 45
+        },
+        {
+          "x": -32,
+          "y": 20
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "color": 2894387,
+      "height": 25,
+      "mirror": 1,
+      "name": "Forward Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 47,
+          "y": 13
+        },
+        {
+          "x": 60,
+          "y": 28
+        },
+        {
+          "x": 49,
+          "y": 65
+        },
+        {
+          "x": 21,
+          "y": 65
+        },
+        {
+          "x": 3,
+          "y": 31
+        },
+        {
+          "x": -37,
+          "y": 22
+        },
+        {
+          "x": -41,
+          "y": 14
+        },
+        {
+          "x": -41,
+          "y": 5
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 1,
+      "color": 9739291,
+      "height": 25,
+      "mirror": 1,
+      "name": "Rear Outboard Detail",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -65,
+          "y": 24
+        },
+        {
+          "x": -63,
+          "y": 39
+        },
+        {
+          "x": -53,
+          "y": 39
+        },
+        {
+          "x": -49,
+          "y": 24
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "color": 9739291,
+      "height": 25,
+      "mirror": 1,
+      "name": "Rear Center Detail",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -65,
+          "y": 9
+        },
+        {
+          "x": -53,
+          "y": 13
+        },
+        {
+          "x": -49,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

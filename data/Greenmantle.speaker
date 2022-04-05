@@ -1,0 +1,36 @@
+{
+  "name": "Greenmantle",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Mysterious powers await your command.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Tap into the mystery.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Seek, and ye shall find.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Discover what lurks in the shadows.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

@@ -1,0 +1,8 @@
+{
+  "name": "Iron Anvil Death Cries",
+  "sounds": [
+    "Enemy_Anvil_DeathCry_01"
+  ],
+  "volume": 75
+}
+

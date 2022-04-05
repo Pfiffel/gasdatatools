@@ -1,0 +1,17 @@
+{
+  "credits": 1,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 5,
+        "statType": 0
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Polarized Booster",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

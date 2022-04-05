@@ -1,0 +1,17 @@
+{
+  "credits": 7,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 20,
+        "statType": 4
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Muon Capacitor",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

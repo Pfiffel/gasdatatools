@@ -1,0 +1,46 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Small Cross",
+  "shapes": [
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "color": 16776958,
+      "height": 10,
+      "mirror": 1,
+      "name": "Cross",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 24,
+          "y": 4
+        },
+        {
+          "x": 6,
+          "y": 4
+        },
+        {
+          "x": 6,
+          "y": 24
+        },
+        {
+          "x": -5,
+          "y": 24
+        },
+        {
+          "x": -5,
+          "y": 4
+        },
+        {
+          "x": -24,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

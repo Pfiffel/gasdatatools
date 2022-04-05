@@ -1,0 +1,36 @@
+{
+  "name": "Elderberry",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "We shall grow together, you and I.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "What shall we discover today?",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Where shall we journey today?",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Whom shall we help today?",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

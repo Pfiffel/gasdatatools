@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 750,
+      "value": 10096391
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 1000,
+  "minLifetime": 150,
+  "name": "Iron Protector Grenade",
+  "objectType": "Shard1",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 650
+    },
+    {
+      "frac": 900,
+      "value": 650
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 10096391,
+  "startScale": 10,
+  "stayLow": 1
+}
+

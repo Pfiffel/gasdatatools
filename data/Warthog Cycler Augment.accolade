@@ -1,0 +1,16 @@
+{
+  "champion": "Warthog",
+  "displayName": "Cycler Augment",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 3,
+        "statType": 6
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Warthog Cycler Augment"
+}
+

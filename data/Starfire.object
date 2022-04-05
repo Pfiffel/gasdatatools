@@ -1,0 +1,46 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Starfire",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 14475549,
+      "height": 60,
+      "mirror": 1,
+      "name": "Star",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 34,
+          "y": 0
+        },
+        {
+          "x": 9,
+          "y": 7
+        },
+        {
+          "x": 9,
+          "y": 31
+        },
+        {
+          "x": -5,
+          "y": 12
+        },
+        {
+          "x": -28,
+          "y": 20
+        },
+        {
+          "x": -12,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

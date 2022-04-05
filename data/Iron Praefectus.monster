@@ -1,0 +1,54 @@
+{
+  "collisionRadius": 35,
+  "deathCrySoundPack": "Iron Praefectus Death Cries",
+  "drops": [],
+  "healRate": 0,
+  "hp": 1500,
+  "idleAnimation": "BaseArcher Idle",
+  "name": "Iron Praefectus",
+  "objectType": "Iron Praefectus",
+  "runAnimation": "BaseArcher Run",
+  "runSpeed": 100,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "",
+      "cooldown": 1500,
+      "objectType": "",
+      "params": {
+        "data": {
+          "damage": 300,
+          "emitterType": "Iron Protector",
+          "explosionType": "Iron Protector Grenade",
+          "objectType": "Fireball",
+          "radius": 165,
+          "range": 600,
+          "shootSound": "Enemy_Grenade_Large_Launch",
+          "shootVolume": 50,
+          "speed": 275
+        },
+        "tag": "MortarParams"
+      }
+    },
+    {
+      "attachmentPoint": "",
+      "cooldown": 750,
+      "objectType": "",
+      "params": {
+        "data": {
+          "aimed": 1,
+          "cooldown": 1500,
+          "gunBulletType": "Iron Triumph",
+          "leading": 0,
+          "numProjectiles": 5,
+          "range": 500
+        },
+        "tag": "GunParams"
+      }
+    }
+  ],
+  "xp": 81,
+  "xpLevelCap": 19
+}
+

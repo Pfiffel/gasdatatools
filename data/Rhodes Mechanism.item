@@ -1,0 +1,33 @@
+{
+  "credits": 10,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "collisionSettings": {
+              "cooldownToRetain": 1000,
+              "damage": 0,
+              "explosion": "",
+              "explosionRange": 0,
+              "manaToRefund": 0,
+              "triggerIndexToResetCooldown": -1,
+              "vamp": 0
+            },
+            "drawTooltip": 1,
+            "emitterType": "Cyclops Blink",
+            "range": 150,
+            "tag": ""
+          },
+          "tag": "LeapTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Rhodes Mechanism",
+  "overworldDrop": 0,
+  "precursorTech": 1
+}
+

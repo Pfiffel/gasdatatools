@@ -1,0 +1,8 @@
+{
+  "name": "Iron Shield Death Cries",
+  "sounds": [
+    "Enemy_Shield_DeathCry_01"
+  ],
+  "volume": 75
+}
+

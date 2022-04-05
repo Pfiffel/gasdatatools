@@ -1,0 +1,29 @@
+{
+  "description": "Forest Mother safeguards those she loves, entwining them in her protective branches.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 25,
+            "applyToMana": 0,
+            "duration": 5000,
+            "emitterType": "Rainsplatter HoT",
+            "glyphCount": 2,
+            "glyphRadius": 40,
+            "glyphType": "",
+            "noStack": 0,
+            "tag": "Forest Mother HoT"
+          },
+          "tag": "HealOverTimeTrigger"
+        },
+        "when": 11
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Forest Mother",
+  "tier": 1
+}
+

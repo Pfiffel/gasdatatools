@@ -1,0 +1,23 @@
+{
+  "name": "Mako Short Guns",
+  "sounds": [
+    "Player_Warthog_Gun_01",
+    "Player_Warthog_Gun_02",
+    "Player_Warthog_Gun_03",
+    "Player_Warthog_Gun_04",
+    "Player_Warthog_Gun_05",
+    "Player_Warthog_Gun_06",
+    "Player_Warthog_Gun_07",
+    "Player_Warthog_Gun_08",
+    "Player_Warthog_Gun_09",
+    "Player_Warthog_Gun_10",
+    "Player_Warthog_Gun_11",
+    "Player_Warthog_Gun_12",
+    "Player_Warthog_Gun_13",
+    "Player_Warthog_Gun_14",
+    "Player_Warthog_Gun_15",
+    "Player_Warthog_Gun_16"
+  ],
+  "volume": 175
+}
+

@@ -1,0 +1,22 @@
+{
+  "description": "Sunset Rose embraces all as a kind and peaceful mother.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 2,
+        "shield": {
+          "color": 10686769,
+          "left": -1800,
+          "level": 0,
+          "maxStrength": 200,
+          "right": 1800
+        }
+      },
+      "tag": "ItemShield"
+    }
+  ],
+  "enemies": [],
+  "name": "Sunset Rose",
+  "tier": 1
+}
+

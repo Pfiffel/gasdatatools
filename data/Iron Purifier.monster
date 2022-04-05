@@ -1,0 +1,63 @@
+{
+  "boss": 0,
+  "collisionRadius": 20,
+  "deathCrySoundPack": "Iron Purifier Death Cries",
+  "drops": [],
+  "healRate": 0,
+  "hp": 650,
+  "idleAnimation": "BaseArcher Idle",
+  "name": "Iron Purifier",
+  "objectType": "Iron Purifier",
+  "runAnimation": "",
+  "runSpeed": 75,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "",
+      "cooldown": 2500,
+      "objectType": "",
+      "params": {
+        "data": {
+          "damage": 250,
+          "duration": 6000,
+          "emitterType": "Iron Purifier",
+          "explosionType": "Iron Purifier Burst",
+          "objectType": "Iron Purifier Mine",
+          "radius": 70,
+          "range": 500,
+          "speed": 250
+        },
+        "tag": "MinelayerParams"
+      }
+    },
+    {
+      "attachmentPoint": "",
+      "cooldown": 3000,
+      "objectType": "",
+      "params": {
+        "data": {
+          "bulletRange": 500,
+          "delay": 300,
+          "gunBulletType": "Iron Bulwark",
+          "numBullets": 6,
+          "range": 500,
+          "salvoes": [
+            {
+              "angle": 0,
+              "mirror": 0
+            },
+            {
+              "angle": 80,
+              "mirror": 1
+            }
+          ]
+        },
+        "tag": "BarrageParams"
+      }
+    }
+  ],
+  "xp": 36,
+  "xpLevelCap": 19
+}
+

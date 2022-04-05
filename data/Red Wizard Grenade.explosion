@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 20,
+      "maxDistPercent": 100,
+      "minDistPercent": 100,
+      "particleType": "Red Wizard Grenade Burst",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 20,
+      "maxDistPercent": 80,
+      "minDistPercent": 30,
+      "particleType": "Red Wizard Grenade Burst",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Red Wizard Grenade",
+  "sound": "Player_Mustang_Grenade_Explosion",
+  "volume": 50
+}
+

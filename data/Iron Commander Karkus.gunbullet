@@ -1,0 +1,15 @@
+{
+  "damage": 350,
+  "emitterType": "Iron Commander Karkus",
+  "name": "Iron Commander Karkus",
+  "objectType": "Iron Commander Karkus Bullet",
+  "powers": [
+    {
+      "data": {},
+      "tag": "ShieldBreakPower"
+    }
+  ],
+  "soundPack": "Iron Triumph Bullet",
+  "speed": 180
+}
+

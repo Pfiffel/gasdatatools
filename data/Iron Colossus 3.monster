@@ -1,0 +1,226 @@
+{
+  "boss": 1,
+  "collisionRadius": 115,
+  "consolationPrizes": [
+    "Maser Booster",
+    "Dimagnetic Fixer",
+    "Bilateral Charger",
+    "Entropic Plate",
+    "Galvanic Capacitor",
+    "Multiphasic Loader",
+    "Subspace Cycler",
+    "Resonant Generator"
+  ],
+  "deathCrySoundPack": "Iron Colossus Death Cries",
+  "drops": [
+    {
+      "itemType": "Argos Mechanism",
+      "levelCap": 20,
+      "micros": 30000
+    },
+    {
+      "itemType": "Delos Mechanism",
+      "levelCap": 20,
+      "micros": 30000
+    },
+    {
+      "itemType": "Himera Mechanism",
+      "levelCap": 20,
+      "micros": 30000
+    },
+    {
+      "itemType": "Kios Mechanism",
+      "levelCap": 20,
+      "micros": 30000
+    },
+    {
+      "itemType": "Naxos Mechanism",
+      "levelCap": 20,
+      "micros": 30000
+    }
+  ],
+  "healRate": 0,
+  "hp": 4000,
+  "idleAnimation": "BaseArcher Idle",
+  "maxMoveDistance": 500,
+  "name": "Iron Colossus 3",
+  "objectType": "Iron Colossus",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "Iron Colossus Run",
+  "runAnimationDuration": 700,
+  "runSpeed": 100,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret Left",
+      "cooldown": 500,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Iron Colossus Turret",
+      "params": {
+        "data": {
+          "gunBulletType": "Iron Colossus",
+          "range": 800
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "Turret Right",
+      "cooldown": 500,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Iron Colossus Turret",
+      "params": {
+        "data": {
+          "gunBulletType": "Iron Colossus",
+          "range": 800
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "",
+      "cooldown": 500,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "emitterType": "",
+          "explosionType": "",
+          "guardian": 0,
+          "lifetime": 10000,
+          "maxCount": 3,
+          "monsterName": "Iron Colossus Station",
+          "movement": {
+            "data": {
+              "playerPolicy": 0,
+              "radius": 200
+            },
+            "tag": "RandomMovement"
+          },
+          "noCollide": 0,
+          "noRespawn": 0,
+          "projectileType": "Iron Tortugon Capsule",
+          "range": 800,
+          "sound": "Enemy_IronColossus_GunStation_Spawn_01",
+          "speed": 500,
+          "volume": 200
+        },
+        "tag": "MinionParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "",
+      "cooldown": 2000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "bombRadius": 75,
+                "damage": 100,
+                "delay": 300,
+                "emitterType": "",
+                "explosionType": "Iron Colossus Burst",
+                "flightTime": 1000,
+                "objectType": "Iron Colossus Bomb",
+                "powers": [],
+                "range": 700,
+                "salvoes": [
+                  {
+                    "angle": 0,
+                    "bombCount": 4,
+                    "radius": 150
+                  },
+                  {
+                    "angle": 0,
+                    "bombCount": 4,
+                    "radius": 250
+                  },
+                  {
+                    "angle": 0,
+                    "bombCount": 4,
+                    "radius": 350
+                  },
+                  {
+                    "angle": 0,
+                    "bombCount": 4,
+                    "radius": 450
+                  },
+                  {
+                    "angle": 0,
+                    "bombCount": 4,
+                    "radius": 550
+                  }
+                ],
+                "shootSound": "Enemy_IronColossus_Bomb_Launch_01",
+                "shootVolume": 100
+              },
+              "tag": "MortarBarrageParams"
+            },
+            {
+              "data": {
+                "bombRadius": 75,
+                "damage": 100,
+                "delay": 300,
+                "emitterType": "",
+                "explosionType": "Iron Colossus Burst",
+                "flightTime": 1000,
+                "objectType": "Iron Colossus Bomb",
+                "powers": [],
+                "range": 700,
+                "salvoes": [
+                  {
+                    "angle": 0,
+                    "bombCount": 8,
+                    "radius": 200
+                  },
+                  {
+                    "angle": 225,
+                    "bombCount": 8,
+                    "radius": 325
+                  },
+                  {
+                    "angle": 0,
+                    "bombCount": 8,
+                    "radius": 400
+                  }
+                ],
+                "shootSound": "Enemy_IronColossus_Bomb_Launch_01",
+                "shootVolume": 100
+              },
+              "tag": "MortarBarrageParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 100,
+  "xpLevelCap": 19
+}
+

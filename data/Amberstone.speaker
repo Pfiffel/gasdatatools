@@ -1,0 +1,36 @@
+{
+  "name": "Amberstone",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The old magicks are still strong.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The magicks are mighty.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "The mystical ways of old are best.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "The old ones knew best.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

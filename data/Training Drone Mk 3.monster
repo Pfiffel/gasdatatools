@@ -1,0 +1,45 @@
+{
+  "boss": 0,
+  "collisionRadius": 20,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Iron Shield Death Cries",
+  "drops": [],
+  "healRate": 0,
+  "hp": 20,
+  "idleAnimation": "",
+  "maxMoveDistance": 500,
+  "name": "Training Drone Mk 3",
+  "objectType": "Training Drone Mk 3",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "",
+  "runAnimationDuration": 700,
+  "runSpeed": 75,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 2000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Training Drone Mk 3 Turret",
+      "params": {
+        "data": {
+          "angleBetweenProjectiles": 150,
+          "gunBulletType": "Training Drone Mk 3",
+          "leading": 0,
+          "numProjectiles": 1,
+          "range": 600
+        },
+        "tag": "GunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 1,
+  "xpLevelCap": 19
+}
+

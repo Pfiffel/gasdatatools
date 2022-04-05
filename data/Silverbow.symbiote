@@ -1,0 +1,17 @@
+{
+  "description": "Silverbow grants precision and accuracy.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 5,
+        "amount": 25,
+        "statType": 0
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "Silverbow",
+  "tier": 5
+}
+

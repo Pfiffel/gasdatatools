@@ -1,0 +1,27 @@
+{
+  "description": "Moonglow pores over ancient texts in the night-time.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "applyToMana": 0,
+            "asPercentage": 0,
+            "glyphCount": 2,
+            "glyphDuration": 500,
+            "glyphRadius": 50,
+            "glyphType": "Heal Indicator Small",
+            "healAmount": 30
+          },
+          "tag": "HealTrigger"
+        },
+        "when": 0
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Moonglow",
+  "tier": 2
+}
+

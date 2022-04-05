@@ -1,0 +1,17 @@
+{
+  "description": "Whirlwind searches around frenetically, all of a tizzy.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 18,
+        "amount": 25,
+        "statType": 5
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "Whirlwind",
+  "tier": 4
+}
+

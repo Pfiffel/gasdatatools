@@ -1,0 +1,36 @@
+{
+  "name": "Roadrunner",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Faster!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Move it!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Get moving!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Go go go!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

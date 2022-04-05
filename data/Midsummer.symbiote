@@ -1,0 +1,26 @@
+{
+  "description": "Midsummer skips along happily.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "asPercentage": 0,
+            "glyphCount": 2,
+            "glyphDuration": 500,
+            "glyphRadius": 50,
+            "glyphType": "Heal Indicator Small",
+            "healAmount": 30
+          },
+          "tag": "HealTrigger"
+        },
+        "when": 6
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Midsummer",
+  "tier": 4
+}
+

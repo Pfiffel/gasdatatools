@@ -1,0 +1,116 @@
+{
+  "keyFrames": [
+    {
+      "bonePositions": [
+        {
+          "bone": "Foot",
+          "rot": 0,
+          "x": 37,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "bone": "Foot Mirror",
+          "rot": 0,
+          "x": -29,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "bone": "Hand",
+          "rot": -38,
+          "x": -9,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "bone": "Hand Mirror",
+          "rot": 89,
+          "x": 21,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "bone": "Head",
+          "rot": 0,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Hips",
+          "rot": -50,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Shoulders",
+          "rot": 50,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 0,
+      "tag": ""
+    },
+    {
+      "bonePositions": [
+        {
+          "bone": "Foot",
+          "rot": 0,
+          "x": -29,
+          "y": -2,
+          "z": 0
+        },
+        {
+          "bone": "Foot Mirror",
+          "rot": 0,
+          "x": 37,
+          "y": -5,
+          "z": 0
+        },
+        {
+          "bone": "Hand",
+          "rot": -89,
+          "x": 21,
+          "y": -3,
+          "z": 0
+        },
+        {
+          "bone": "Hand Mirror",
+          "rot": 38,
+          "x": -9,
+          "y": -3,
+          "z": 0
+        },
+        {
+          "bone": "Head",
+          "rot": 0,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Hips",
+          "rot": 50,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Shoulders",
+          "rot": -50,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 500,
+      "tag": ""
+    }
+  ],
+  "name": "BaseArcher Run"
+}
+

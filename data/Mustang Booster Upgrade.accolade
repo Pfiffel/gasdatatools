@@ -1,0 +1,16 @@
+{
+  "champion": "Mustang",
+  "displayName": "Booster Upgrade",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 1,
+        "statType": 0
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Mustang Booster Upgrade"
+}
+

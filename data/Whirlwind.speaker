@@ -1,0 +1,36 @@
+{
+  "name": "Whirlwind",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Oh, I'm all aflutter!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Here, there, everywhere!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "All around, everywhere!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Left, right, low, high, oh my!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

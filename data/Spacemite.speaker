@@ -1,0 +1,36 @@
+{
+  "name": "Spacemite",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I'll bite your shins off!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Call me a runt! I dare you!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "The bigger they are, the easier for me to kill!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I eat big galoots like you for breakfast!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

@@ -1,0 +1,35 @@
+{
+  "gap": 85,
+  "groundColor": 133632,
+  "mapColor": 2440451,
+  "name": "Swamp Dank",
+  "polyDecorations": [
+    {
+      "gap": 150,
+      "objectType": "Swamp Lily"
+    },
+    {
+      "gap": 75,
+      "objectType": "Swamp Lily Pad"
+    },
+    {
+      "gap": 250,
+      "objectType": "Swamp Oak Tree"
+    },
+    {
+      "gap": 200,
+      "objectType": "Swamp Oak Tree Small"
+    },
+    {
+      "gap": 200,
+      "objectType": "Swamp Oak Tree"
+    }
+  ],
+  "segmentObjects": [
+    "Swamp Dank Hummock Big",
+    "Swamp Dank Hummock",
+    "Swamp Dank Hummock",
+    "Swamp Dank Hummock"
+  ]
+}
+

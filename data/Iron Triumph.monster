@@ -1,0 +1,87 @@
+{
+  "boss": 0,
+  "collisionRadius": 55,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Iron Triumph Death Cries",
+  "drops": [],
+  "healRate": 0,
+  "hp": 1300,
+  "idleAnimation": "",
+  "name": "Iron Triumph",
+  "objectType": "Iron Triumph",
+  "runAnimation": "",
+  "runSpeed": 75,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret Left",
+      "cooldown": 1500,
+      "objectType": "Iron Fortress Turret",
+      "params": {
+        "data": {
+          "aimed": 1,
+          "cooldown": 1500,
+          "gunBulletType": "Iron Triumph",
+          "leading": 0,
+          "numProjectiles": 1,
+          "range": 600
+        },
+        "tag": "GunParams"
+      }
+    },
+    {
+      "attachmentPoint": "Turret Right",
+      "cooldown": 1500,
+      "objectType": "Iron Fortress Turret",
+      "params": {
+        "data": {
+          "aimed": 1,
+          "cooldown": 1500,
+          "gunBulletType": "Iron Triumph",
+          "leading": 0,
+          "numProjectiles": 1,
+          "range": 600
+        },
+        "tag": "GunParams"
+      }
+    },
+    {
+      "attachmentPoint": "Turret Main",
+      "cooldown": 1500,
+      "objectType": "Iron Fortress Turret",
+      "params": {
+        "data": {
+          "aimed": 1,
+          "cooldown": 1500,
+          "gunBulletType": "Iron Triumph",
+          "leading": 0,
+          "numProjectiles": 1,
+          "range": 600
+        },
+        "tag": "GunParams"
+      }
+    },
+    {
+      "attachmentPoint": "",
+      "cooldown": 750,
+      "objectType": "",
+      "params": {
+        "data": {
+          "damage": 100,
+          "duration": 5000,
+          "emitterType": "Iron Triumph",
+          "explosionType": "Iron Triumph Burst",
+          "objectType": "Iron Triumph Mine",
+          "radius": 50,
+          "range": 500,
+          "speed": 250
+        },
+        "tag": "MinelayerParams"
+      }
+    }
+  ],
+  "xp": 64,
+  "xpLevelCap": 19
+}
+

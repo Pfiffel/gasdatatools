@@ -1,0 +1,36 @@
+{
+  "name": "Evergreen",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Always, there is always a chance.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I don't believe in no-win scenarios.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Never give up! Never surrender!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "There is always a way.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

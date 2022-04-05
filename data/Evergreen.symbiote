@@ -1,0 +1,15 @@
+{
+  "description": "Evergreen always sees a chance of redemption, no matter the perils.",
+  "effects": [
+    {
+      "data": {
+        "percentChance": 75
+      },
+      "tag": "Lifesaver"
+    }
+  ],
+  "enemies": [],
+  "name": "Evergreen",
+  "tier": 6
+}
+

@@ -1,0 +1,17 @@
+{
+  "credits": 6,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 10,
+        "statType": 5
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Relativistic Loader",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

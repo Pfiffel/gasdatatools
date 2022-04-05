@@ -1,0 +1,17 @@
+{
+  "credits": 2,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 24,
+        "statType": 1
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Nanobot Fixer",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

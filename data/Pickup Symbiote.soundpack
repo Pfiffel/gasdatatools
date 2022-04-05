@@ -1,0 +1,8 @@
+{
+  "name": "Pickup Symbiote",
+  "sounds": [
+    "Player_Symbiote_Attach"
+  ],
+  "volume": 200
+}
+

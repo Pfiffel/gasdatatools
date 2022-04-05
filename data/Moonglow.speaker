@@ -1,0 +1,36 @@
+{
+  "name": "Moonglow",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Vincit lux tenebris!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Tenebrae obscurum rex!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Rex tenebras vincit omnia!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Sapientiam in tenebris!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

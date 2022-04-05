@@ -1,0 +1,35 @@
+{
+  "credits": 10,
+  "effects": [
+    {
+      "data": {
+        "range": 280,
+        "statusEffects": [
+          {
+            "data": {
+              "arcOffset": 0,
+              "halfArc": 1,
+              "maxDist": 10,
+              "minDist": 10,
+              "particleType": "Byllis Zap",
+              "spacing": 20
+            },
+            "tag": "ParticleLineEffect"
+          },
+          {
+            "data": {
+              "damage": 40
+            },
+            "tag": "DamageEffect"
+          }
+        ],
+        "when": 5
+      },
+      "tag": "TriggeredRandomTargetEffect"
+    }
+  ],
+  "name": "Byllis Mechanism",
+  "overworldDrop": 0,
+  "precursorTech": 1
+}
+

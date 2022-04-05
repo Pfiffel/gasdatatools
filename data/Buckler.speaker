@@ -1,0 +1,36 @@
+{
+  "name": "Buckler",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Here I come!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Ready or not, here I come!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Get ready!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "My head hurts, a little.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

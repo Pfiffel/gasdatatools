@@ -1,0 +1,10 @@
+{
+  "damage": 100,
+  "emitterType": "Iron Halberd",
+  "name": "Iron Lieutenant Scut",
+  "objectType": "Iron Halberd Bullet",
+  "powers": [],
+  "soundPack": "Iron Protector Bullet",
+  "speed": 250
+}
+

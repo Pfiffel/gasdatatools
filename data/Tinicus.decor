@@ -1,0 +1,23 @@
+{
+  "color": 11789046,
+  "name": "Tinicus",
+  "objects": [
+    {
+      "density": 350,
+      "objectType": "FlowerTinicus"
+    },
+    {
+      "density": 30,
+      "objectType": "Rock"
+    },
+    {
+      "density": 30,
+      "objectType": "Rock2"
+    },
+    {
+      "density": 30,
+      "objectType": "Rock3"
+    }
+  ]
+}
+

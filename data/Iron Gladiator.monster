@@ -1,0 +1,55 @@
+{
+  "boss": 0,
+  "collisionRadius": 35,
+  "deathCrySoundPack": "Iron Gladiator Death Cries",
+  "drops": [],
+  "healRate": 0,
+  "hp": 650,
+  "idleAnimation": "BaseArcher Idle",
+  "name": "Iron Gladiator",
+  "objectType": "Iron Gladiator",
+  "runAnimation": "BaseArcher Run",
+  "runSpeed": 100,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "",
+      "cooldown": 1500,
+      "objectType": "",
+      "params": {
+        "data": {
+          "damage": 100,
+          "emitterType": "Iron Protector",
+          "explosionType": "Iron Centurion Grenade",
+          "objectType": "Fireball",
+          "radius": 120,
+          "range": 600,
+          "shootSound": "Enemy_Grenade_Medium_Launch",
+          "shootVolume": 75,
+          "speed": 250
+        },
+        "tag": "MortarParams"
+      }
+    },
+    {
+      "attachmentPoint": "",
+      "cooldown": 1333,
+      "objectType": "",
+      "params": {
+        "data": {
+          "aimed": 1,
+          "cooldown": 1500,
+          "gunBulletType": "Iron Bulwark",
+          "leading": 0,
+          "numProjectiles": 3,
+          "range": 500
+        },
+        "tag": "GunParams"
+      }
+    }
+  ],
+  "xp": 25,
+  "xpLevelCap": 19
+}
+

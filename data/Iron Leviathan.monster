@@ -1,0 +1,58 @@
+{
+  "boss": 1,
+  "collisionRadius": 100,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Iron Leviathan Enrage 2",
+  "drops": [],
+  "healRate": 0,
+  "hp": 4000,
+  "idleAnimation": "BaseArcher Idle",
+  "name": "Iron Leviathan",
+  "objectType": "Iron Leviathan",
+  "runAnimation": "Iron Leviathan Run",
+  "runSpeed": 100,
+  "successorMonster": "Iron Leviathan 2",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 3000,
+      "objectType": "",
+      "params": {
+        "data": {
+          "emitterType": "Iron Protector",
+          "explosionType": "Iron Minion Spawn",
+          "lifetime": 60000,
+          "maxCount": 3,
+          "monsterName": "Iron Tortugon",
+          "noCollide": 1,
+          "projectileType": "Iron Tortugon Capsule",
+          "range": 800,
+          "sound": "Enemy_IronLeviathan_TortugonSpawn_03",
+          "speed": 300,
+          "volume": 400
+        },
+        "tag": "MinionParams"
+      }
+    },
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "aimed": 1,
+          "cooldown": 1500,
+          "gunBulletType": "Iron Leviathan",
+          "leading": 0,
+          "numProjectiles": 3,
+          "range": 800
+        },
+        "tag": "GunParams"
+      }
+    }
+  ],
+  "xp": 0,
+  "xpLevelCap": 19
+}
+

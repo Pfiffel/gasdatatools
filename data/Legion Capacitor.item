@@ -1,0 +1,25 @@
+{
+  "credits": 7,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 12,
+        "statType": 4
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 7,
+        "statType": 5
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Legion Capacitor",
+  "overworldDrop": 0,
+  "precursorTech": 0
+}
+

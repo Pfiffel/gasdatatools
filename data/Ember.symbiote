@@ -1,0 +1,17 @@
+{
+  "description": "Ember repays like for like.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 3,
+        "amount": 100,
+        "statType": 5
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "Ember",
+  "tier": 2
+}
+

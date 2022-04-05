@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 750,
+      "value": 14879778
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 300,
+  "minLifetime": 300,
+  "name": "Anger Spirit Blast",
+  "objectType": "Anger Spirit Particle",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 350
+    },
+    {
+      "frac": 900,
+      "value": 400
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 14879778,
+  "startScale": 10,
+  "stayLow": 1
+}
+

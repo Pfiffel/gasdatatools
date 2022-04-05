@@ -1,0 +1,13 @@
+{
+  "color": 3542790,
+  "facingJitter": 300,
+  "gap": 50,
+  "name": "Lava",
+  "objects": [
+    "RockIgneousPath",
+    "RockIgneousPath2",
+    "RockIgneousPath3"
+  ],
+  "positionJitter": 20
+}
+

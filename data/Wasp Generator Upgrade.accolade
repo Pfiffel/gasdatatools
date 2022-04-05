@@ -1,0 +1,16 @@
+{
+  "champion": "Wasp",
+  "displayName": "Generator Upgrade",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 4,
+        "statType": 9
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Wasp Generator Upgrade"
+}
+

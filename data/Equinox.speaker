@@ -1,0 +1,36 @@
+{
+  "name": "Equinox",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Perfectly balanced, as all things should be.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Balance and equity, the keys to a peaceful universe.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Justice in equilibrium.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I shall even the odds.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

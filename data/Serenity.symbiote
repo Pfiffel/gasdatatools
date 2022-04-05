@@ -1,0 +1,22 @@
+{
+  "description": "Serenity longs for stillness and peace.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 5,
+        "shield": {
+          "color": 5209258,
+          "left": -1800,
+          "level": 0,
+          "maxStrength": 300,
+          "right": 1800
+        }
+      },
+      "tag": "ItemShield"
+    }
+  ],
+  "enemies": [],
+  "name": "Serenity",
+  "tier": 2
+}
+

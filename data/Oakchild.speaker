@@ -1,0 +1,36 @@
+{
+  "name": "Oakchild",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The world is such an amazing place!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "So much to explore!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "So much to do!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "So many things to see!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

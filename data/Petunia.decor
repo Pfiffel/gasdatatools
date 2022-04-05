@@ -1,0 +1,23 @@
+{
+  "color": 1924052,
+  "name": "Petunia",
+  "objects": [
+    {
+      "density": 350,
+      "objectType": "FlowerPetunia"
+    },
+    {
+      "density": 30,
+      "objectType": "Rock"
+    },
+    {
+      "density": 30,
+      "objectType": "Rock2"
+    },
+    {
+      "density": 30,
+      "objectType": "Rock3"
+    }
+  ]
+}
+

@@ -1,0 +1,16 @@
+{
+  "name": "Death Cries",
+  "sounds": [
+    "Enemy_DeathCry_01",
+    "Enemy_DeathCry_02",
+    "Enemy_DeathCry_03",
+    "explosion1",
+    "explosion2",
+    "explosion3",
+    "explosion4",
+    "Enemy_BasicDeath_Explosion_01",
+    "Enemy_BasicDeath_Explosion_02"
+  ],
+  "volume": 25
+}
+

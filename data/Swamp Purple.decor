@@ -1,0 +1,42 @@
+{
+  "color": 5119377,
+  "groundColors": [
+    5192554,
+    3545703,
+    1641008,
+    3345511
+  ],
+  "name": "Swamp Purple",
+  "objects": [
+    {
+      "density": 155,
+      "objectType": "Swamp Mushroom Purple"
+    },
+    {
+      "density": 20,
+      "objectType": "Rock Purple"
+    },
+    {
+      "density": 20,
+      "objectType": "Rock Purple 2"
+    },
+    {
+      "density": 20,
+      "objectType": "Rock Purple 3"
+    },
+    {
+      "density": 186,
+      "objectType": "Swamp Plant Purple"
+    },
+    {
+      "density": 196,
+      "objectType": "Swamp Plant Purple 2"
+    },
+    {
+      "density": 232,
+      "objectType": "Swamp Flower Purple"
+    }
+  ],
+  "regionType": "Swamp Purple"
+}
+

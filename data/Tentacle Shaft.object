@@ -1,0 +1,30 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Tentacle Shaft",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 16579836,
+      "height": -1,
+      "mirror": 1,
+      "name": "Glyph",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 37,
+          "y": 15
+        },
+        {
+          "x": -37,
+          "y": 15
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

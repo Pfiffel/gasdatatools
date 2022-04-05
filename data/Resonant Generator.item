@@ -1,0 +1,17 @@
+{
+  "credits": 5,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 36,
+        "statType": 9
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Resonant Generator",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

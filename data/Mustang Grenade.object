@@ -1,0 +1,99 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Mustang Grenade",
+  "shapes": [
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "color": 1854915,
+      "height": 12,
+      "mirror": 1,
+      "name": "Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 51,
+          "y": 7
+        },
+        {
+          "x": 41,
+          "y": 21
+        },
+        {
+          "x": 26,
+          "y": 31
+        },
+        {
+          "x": 2,
+          "y": 35
+        },
+        {
+          "x": -13,
+          "y": 31
+        },
+        {
+          "x": -37,
+          "y": 18
+        },
+        {
+          "x": -66,
+          "y": 7
+        },
+        {
+          "x": -102,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "color": 9480418,
+      "height": 12,
+      "mirror": 1,
+      "name": "Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 30,
+          "y": 4
+        },
+        {
+          "x": 24,
+          "y": 12
+        },
+        {
+          "x": 15,
+          "y": 18
+        },
+        {
+          "x": 1,
+          "y": 21
+        },
+        {
+          "x": -7,
+          "y": 18
+        },
+        {
+          "x": -22,
+          "y": 10
+        },
+        {
+          "x": -39,
+          "y": 4
+        },
+        {
+          "x": -61,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

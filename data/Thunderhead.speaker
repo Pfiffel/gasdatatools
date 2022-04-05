@@ -1,0 +1,36 @@
+{
+  "name": "Thunderhead",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "None can escape the fury of the storm!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "The storm comes for you!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "The fury of the storm cannot be stopped!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Feel the power of the storm!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

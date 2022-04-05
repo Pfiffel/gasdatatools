@@ -1,0 +1,9 @@
+{
+  "damage": 250,
+  "emitterType": "Iron Shield",
+  "name": "Iron Leviathan",
+  "objectType": "Iron Triumph Bullet",
+  "soundPack": "Iron Leviathan Bullet",
+  "speed": 200
+}
+

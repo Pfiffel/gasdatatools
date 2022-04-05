@@ -1,0 +1,54 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 69,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Iron Lance Turret",
+  "shapes": [
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "color": 6052956,
+      "height": 3,
+      "mirror": 1,
+      "name": "Turret",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -41,
+          "y": 4
+        },
+        {
+          "x": -20,
+          "y": 14
+        },
+        {
+          "x": -6,
+          "y": 14
+        },
+        {
+          "x": 23,
+          "y": 7
+        },
+        {
+          "x": 69,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

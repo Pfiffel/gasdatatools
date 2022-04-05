@@ -1,0 +1,25 @@
+{
+  "description": "As You Like It frets not.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 2,
+        "amount": 10,
+        "statType": 8
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 2,
+        "amount": 25,
+        "statType": 5
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "As You Like It",
+  "tier": 1
+}
+

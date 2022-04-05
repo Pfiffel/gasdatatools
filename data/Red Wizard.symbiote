@@ -1,0 +1,95 @@
+{
+  "description": "Red Wizard brooks no argument.",
+  "effects": [
+    {
+      "data": {
+        "cooldown": 8000,
+        "params": [
+          {
+            "data": {
+              "damage": 150,
+              "delay": 500,
+              "drawReticle": 0,
+              "drawTooltip": 1,
+              "explosionType": "Red Wizard Grenade",
+              "halfArc": 1800,
+              "mirror": 1,
+              "offset": {
+                "x": 125,
+                "y": 125
+              },
+              "range": 125,
+              "statusEffects": [],
+              "tag": "",
+              "targetingDelay": 0,
+              "tooltip": "4 Grenades"
+            },
+            "tag": "ShotgunTrigger"
+          },
+          {
+            "data": {
+              "delay": 0,
+              "duration": 500,
+              "emitterType": "Red Wizard Grenade",
+              "mirror": 1,
+              "objectType": "Red Wizard Grenade",
+              "sound": "",
+              "tag": "",
+              "target": {
+                "x": 125,
+                "y": 125
+              },
+              "volume": 50
+            },
+            "tag": "SlugTrigger"
+          },
+          {
+            "data": {
+              "damage": 150,
+              "delay": 500,
+              "drawReticle": 0,
+              "drawTooltip": 0,
+              "explosionType": "Red Wizard Grenade",
+              "halfArc": 1800,
+              "mirror": 1,
+              "offset": {
+                "x": -125,
+                "y": -125
+              },
+              "range": 125,
+              "statusEffects": [],
+              "tag": "",
+              "targetingDelay": 0,
+              "tooltip": ""
+            },
+            "tag": "ShotgunTrigger"
+          },
+          {
+            "data": {
+              "delay": 0,
+              "duration": 500,
+              "emitterType": "Red Wizard Grenade",
+              "mirror": 1,
+              "objectType": "Red Wizard Grenade",
+              "sound": "",
+              "tag": "",
+              "target": {
+                "x": -125,
+                "y": -125
+              },
+              "volume": 50
+            },
+            "tag": "SlugTrigger"
+          }
+        ],
+        "percentChance": 100,
+        "targetingRange": 302
+      },
+      "tag": "PeriodicTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Red Wizard",
+  "tier": 5
+}
+

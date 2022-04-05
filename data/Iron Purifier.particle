@@ -1,0 +1,44 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 16515327
+    },
+    {
+      "frac": 500,
+      "value": 12321023
+    },
+    {
+      "frac": 750,
+      "value": 8061183
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 1200,
+  "minLifetime": 800,
+  "name": "Iron Purifier",
+  "objectType": "Small Six Star",
+  "positionTweenType": "SINEINOUT",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 350
+    },
+    {
+      "frac": 900,
+      "value": 350
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 16776958,
+  "startScale": 10,
+  "stayLow": 1
+}
+

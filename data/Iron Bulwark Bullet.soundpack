@@ -1,0 +1,17 @@
+{
+  "name": "Iron Bulwark Bullet",
+  "sounds": [
+    "Enemy_BiggerGun_B_01",
+    "Enemy_BiggerGun_B_02",
+    "Enemy_BiggerGun_B_03",
+    "Enemy_BiggerGun_B_04",
+    "Enemy_BiggerGun_B_05",
+    "Enemy_BiggerGun_B_06",
+    "Enemy_BiggerGun_B_07",
+    "Enemy_BiggerGun_B_08",
+    "Enemy_BiggerGun_B_09",
+    "Enemy_BiggerGun_B_10"
+  ],
+  "volume": 25
+}
+

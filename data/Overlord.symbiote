@@ -1,0 +1,33 @@
+{
+  "description": "Overlord seeks out trouble, or makes some of his own.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 20,
+        "statType": 3
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 20,
+        "statType": 4
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 10,
+        "statType": 6
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "Overlord",
+  "tier": 6
+}
+

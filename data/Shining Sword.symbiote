@@ -1,0 +1,17 @@
+{
+  "description": "Shining Sword rushes forward to battle.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 13,
+        "amount": 25,
+        "statType": 0
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "Shining Sword",
+  "tier": 2
+}
+

@@ -1,0 +1,45 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 63487
+    },
+    {
+      "frac": 800,
+      "value": 21503
+    },
+    {
+      "frac": 900,
+      "value": 5119
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 500,
+  "minLifetime": 300,
+  "name": "Mustang Grenade Burst",
+  "objectType": "Small Six Star",
+  "positionTweenType": "EXPOOUT",
+  "randomFinalFacing": 1,
+  "scalePoints": [
+    {
+      "frac": 50,
+      "value": 500
+    },
+    {
+      "frac": 500,
+      "value": 500
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 16776958,
+  "startScale": 10,
+  "stayLow": 0
+}
+

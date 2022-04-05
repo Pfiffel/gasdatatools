@@ -1,0 +1,16 @@
+{
+  "champion": "Wasp",
+  "displayName": "Cycler Augment",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 3,
+        "statType": 6
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Wasp Cycler Augment"
+}
+

@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 900,
+      "value": 10829117
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 1000,
+  "minLifetime": 1000,
+  "name": "Cyclops Overload",
+  "objectType": "Five Star",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 400
+    },
+    {
+      "frac": 900,
+      "value": 400
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 10829117,
+  "startScale": 10,
+  "stayLow": 0
+}
+

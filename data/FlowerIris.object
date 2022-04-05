@@ -1,0 +1,177 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "FlowerIris",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 8879324,
+      "height": 0,
+      "mirror": 1,
+      "name": "Right Petals",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 13,
+          "y": 7
+        },
+        {
+          "x": 14,
+          "y": 13
+        },
+        {
+          "x": 12,
+          "y": 19
+        },
+        {
+          "x": 5,
+          "y": 19
+        },
+        {
+          "x": -1,
+          "y": 16
+        },
+        {
+          "x": -2,
+          "y": 9
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 4,
+          "y": -1
+        },
+        {
+          "x": 8,
+          "y": 3
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 8879324,
+      "height": 0,
+      "mirror": 1,
+      "name": "Right Peta",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 3,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 3
+        },
+        {
+          "x": -3,
+          "y": 7
+        },
+        {
+          "x": -10,
+          "y": 9
+        },
+        {
+          "x": -17,
+          "y": 7
+        },
+        {
+          "x": -20,
+          "y": 2
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 15790972,
+      "height": 10,
+      "mirror": 1,
+      "name": "New Shape",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 9,
+          "y": 7
+        },
+        {
+          "x": 11,
+          "y": 10
+        },
+        {
+          "x": 11,
+          "y": 14
+        },
+        {
+          "x": 6,
+          "y": 14
+        },
+        {
+          "x": 3,
+          "y": 10
+        },
+        {
+          "x": 3,
+          "y": 7
+        },
+        {
+          "x": 3,
+          "y": 4
+        },
+        {
+          "x": 6,
+          "y": 5
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 15790972,
+      "height": 10,
+      "mirror": 1,
+      "name": "New Shape",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -3,
+          "y": 0
+        },
+        {
+          "x": -5,
+          "y": 2
+        },
+        {
+          "x": -7,
+          "y": 3
+        },
+        {
+          "x": -10,
+          "y": 4
+        },
+        {
+          "x": -13,
+          "y": 4
+        },
+        {
+          "x": -16,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

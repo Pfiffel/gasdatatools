@@ -1,0 +1,36 @@
+{
+  "name": "Octopus",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I like to be under the sea.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Bubbles, bubbles, I've got no troubles.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Floating and gliding, slipping and sliding!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "We shall be so happy, you and me.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

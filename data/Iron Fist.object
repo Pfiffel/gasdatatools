@@ -1,0 +1,127 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 20,
+      "name": "Turret",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [
+    {
+      "name": "Foot",
+      "p": {
+        "x": 0,
+        "y": 29
+      }
+    }
+  ],
+  "floppiness": 0,
+  "name": "Iron Fist",
+  "shapes": [
+    {
+      "bone": "Foot",
+      "clones": [],
+      "closed": 1,
+      "color": 3751250,
+      "height": 0,
+      "mirror": 1,
+      "name": "Foot",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 8,
+          "y": 35
+        },
+        {
+          "x": 5,
+          "y": 48
+        },
+        {
+          "x": -5,
+          "y": 48
+        },
+        {
+          "x": -8,
+          "y": 35
+        },
+        {
+          "x": -19,
+          "y": 32
+        },
+        {
+          "x": -19,
+          "y": 21
+        },
+        {
+          "x": -8,
+          "y": 17
+        },
+        {
+          "x": -5,
+          "y": 5
+        },
+        {
+          "x": 5,
+          "y": 5
+        },
+        {
+          "x": 8,
+          "y": 17
+        },
+        {
+          "x": 19,
+          "y": 21
+        },
+        {
+          "x": 19,
+          "y": 32
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hips",
+      "clones": [],
+      "closed": 0,
+      "color": 4080215,
+      "height": 20,
+      "mirror": 1,
+      "name": "Hips",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 17,
+          "y": 8
+        },
+        {
+          "x": 13,
+          "y": 20
+        },
+        {
+          "x": 5,
+          "y": 25
+        },
+        {
+          "x": -7,
+          "y": 25
+        },
+        {
+          "x": -16,
+          "y": 19
+        },
+        {
+          "x": -19,
+          "y": 7
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

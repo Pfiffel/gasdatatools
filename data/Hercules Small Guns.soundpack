@@ -1,0 +1,17 @@
+{
+  "name": "Hercules Small Guns",
+  "sounds": [
+    "Player_Hercules_SmallGun_01",
+    "Player_Hercules_SmallGun_02",
+    "Player_Hercules_SmallGun_03",
+    "Player_Hercules_SmallGun_04",
+    "Player_Hercules_SmallGun_05",
+    "Player_Hercules_SmallGun_06",
+    "Player_Hercules_SmallGun_07",
+    "Player_Hercules_SmallGun_08",
+    "Player_Hercules_SmallGun_09",
+    "Player_Hercules_SmallGun_10"
+  ],
+  "volume": 10
+}
+

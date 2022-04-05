@@ -1,0 +1,8 @@
+{
+  "name": "Iron Guardsman Death Cries",
+  "sounds": [
+    "Enemy_Guardsman_DeathCry_01"
+  ],
+  "volume": 75
+}
+

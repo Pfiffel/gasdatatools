@@ -1,0 +1,22 @@
+{
+  "description": "Turtleshell plods slowly through life, protected and safe from all harms.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "shield": {
+          "color": 4485482,
+          "left": -1800,
+          "level": 0,
+          "maxStrength": 250,
+          "right": 1800
+        }
+      },
+      "tag": "ItemShield"
+    }
+  ],
+  "enemies": [],
+  "name": "Turtleshell",
+  "tier": 5
+}
+

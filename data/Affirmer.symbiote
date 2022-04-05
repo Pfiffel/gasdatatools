@@ -1,0 +1,63 @@
+{
+  "description": "Affirmer casts his gaze upon all creation, and sees that it is good.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 25,
+        "statType": 12
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "applyToMana": 0,
+            "asPercentage": 0,
+            "glyphCount": 4,
+            "glyphDuration": 500,
+            "glyphRadius": 50,
+            "glyphType": "Heal Indicator",
+            "healAmount": 100,
+            "tag": ""
+          },
+          "tag": "HealTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "damage": 100,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Affirmer Blast",
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 270,
+            "statusEffects": [],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "Explosive Blast"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Affirmer",
+  "tier": 4
+}
+

@@ -1,0 +1,17 @@
+{
+  "credits": 4,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 16,
+        "statType": 2
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Grid Charger",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

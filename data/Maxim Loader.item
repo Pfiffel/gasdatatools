@@ -1,0 +1,17 @@
+{
+  "credits": 8,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 12,
+        "statType": 5
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Maxim Loader",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

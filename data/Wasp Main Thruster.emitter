@@ -1,0 +1,21 @@
+{
+  "arcOffset": 1800,
+  "cooldown": 10,
+  "endSound": "",
+  "endVolume": 50,
+  "halfArc": 50,
+  "loopSound": "Player_Wasp_Movement_Loop",
+  "loopVolume": 20,
+  "maxDist": 100,
+  "minDist": 50,
+  "mirror": 0,
+  "name": "Wasp Main Thruster",
+  "particleCount": 1,
+  "particleTypes": [
+    "Wasp Thruster",
+    "Wasp Thruster 2"
+  ],
+  "startSound": "Player_Wasp_Movement_Start",
+  "startVolume": 25
+}
+

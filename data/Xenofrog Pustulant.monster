@@ -1,0 +1,54 @@
+{
+  "boss": 0,
+  "collisionRadius": 20,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Enemy Hits",
+  "drops": [],
+  "healRate": 0,
+  "hp": 300,
+  "idleAnimation": "Xenofrog Idle",
+  "maxMoveDistance": 150,
+  "name": "Xenofrog Pustulant",
+  "objectType": "Xenofrog Pustulant",
+  "pauseBetweenMovements": 600,
+  "runAnimation": "Xenofrog Leap",
+  "runSpeed": 275,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Mouth",
+      "cooldown": 2000,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "damage": 150,
+                "delay": 1000,
+                "explosionType": "",
+                "halfArc": 1800,
+                "powers": [],
+                "range": 160,
+                "triggerSound": "",
+                "triggerVolume": 50
+              },
+              "tag": "ShotgunParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 9,
+  "xpLevelCap": 19
+}
+

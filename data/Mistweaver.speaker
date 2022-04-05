@@ -1,0 +1,31 @@
+{
+  "name": "Mistweaver",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "There is a higher power.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "There are hidden strengths in all of us.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Not all powers are easily seen.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

@@ -1,0 +1,113 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Locust Missile",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 2374944,
+      "height": 99,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 55,
+          "y": 6
+        },
+        {
+          "x": 2,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 13591580,
+      "height": 100,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 84,
+          "y": 4
+        },
+        {
+          "x": 72,
+          "y": 13
+        },
+        {
+          "x": 60,
+          "y": 13
+        },
+        {
+          "x": 50,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 3170088,
+      "height": 100,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 39,
+          "y": 6
+        },
+        {
+          "x": 36,
+          "y": 10
+        },
+        {
+          "x": 25,
+          "y": 10
+        },
+        {
+          "x": 22,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 3170088,
+      "height": 100,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 7,
+          "y": 6
+        },
+        {
+          "x": -2,
+          "y": 15
+        },
+        {
+          "x": -7,
+          "y": 15
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

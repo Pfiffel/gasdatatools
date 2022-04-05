@@ -1,0 +1,29 @@
+{
+  "description": "Zephyr is a bare whisper, a gossamer spirit of air.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 25,
+            "duration": 2000,
+            "emitterType": "",
+            "glyphCount": 2,
+            "glyphRadius": 40,
+            "glyphType": "Gun RoF Glyph",
+            "noStack": 0,
+            "statType": 5,
+            "tag": ""
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 0
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Zephyr",
+  "tier": 1
+}
+

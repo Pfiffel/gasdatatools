@@ -1,0 +1,42 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Ephesus Glyph",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 47031,
+      "height": 0,
+      "mirror": 1,
+      "name": "Glyph",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 20,
+          "y": 0
+        },
+        {
+          "x": 9,
+          "y": 11
+        },
+        {
+          "x": -4,
+          "y": 16
+        },
+        {
+          "x": -16,
+          "y": 16
+        },
+        {
+          "x": -11,
+          "y": 5
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

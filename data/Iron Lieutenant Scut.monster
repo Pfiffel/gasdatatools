@@ -1,0 +1,221 @@
+{
+  "boss": 1,
+  "collisionRadius": 70,
+  "consolationPrizes": [
+    "Dimagnetic Fixer",
+    "Entropic Plate"
+  ],
+  "deathCrySoundPack": "Iron Acropolis Death Cries",
+  "drops": [
+    {
+      "itemType": "Omniant Fixer",
+      "levelCap": 20,
+      "micros": 10000
+    },
+    {
+      "itemType": "Cthoric Plate",
+      "levelCap": 20,
+      "micros": 10000
+    },
+    {
+      "itemType": "Tripolar Fixer",
+      "levelCap": 20,
+      "micros": 50000
+    },
+    {
+      "itemType": "Boson Plate",
+      "levelCap": 20,
+      "micros": 50000
+    },
+    {
+      "itemType": "Picoscale Fixer",
+      "levelCap": 20,
+      "micros": 100000
+    },
+    {
+      "itemType": "Hadron Plate",
+      "levelCap": 20,
+      "micros": 100000
+    }
+  ],
+  "healRate": 12,
+  "hp": 12000,
+  "idleAnimation": "BaseArcher Idle",
+  "name": "Iron Lieutenant Scut",
+  "objectType": "Iron Lieutenant Scut",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "Iron Lieutenant Scut Run",
+  "runSpeed": 50,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "",
+      "cooldown": 4000,
+      "objectType": "",
+      "params": {
+        "data": {
+          "bulletRange": 800,
+          "delay": 500,
+          "gunBulletType": "Iron Lieutenant Scut",
+          "numBullets": 4,
+          "range": 700,
+          "salvoes": [
+            {
+              "angle": 0,
+              "mirror": 0
+            },
+            {
+              "angle": 112,
+              "mirror": 1
+            },
+            {
+              "angle": 225,
+              "mirror": 1
+            },
+            {
+              "angle": 338,
+              "mirror": 1
+            },
+            {
+              "angle": 450,
+              "mirror": 0
+            }
+          ]
+        },
+        "tag": "BarrageParams"
+      }
+    },
+    {
+      "attachmentPoint": "Turret 1",
+      "cooldown": 2000,
+      "objectType": "Iron Lieutenant Scut Turret",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "gunBulletType": "Iron Bulwark",
+                "range": 600
+              },
+              "tag": "MultiBarrelGunParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      }
+    },
+    {
+      "attachmentPoint": "Turret 2",
+      "cooldown": 2000,
+      "objectType": "Iron Lieutenant Scut Turret",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {},
+              "tag": "NullParams"
+            },
+            {
+              "data": {
+                "gunBulletType": "Iron Bulwark",
+                "range": 600
+              },
+              "tag": "MultiBarrelGunParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      }
+    },
+    {
+      "attachmentPoint": "Turret 3",
+      "cooldown": 2000,
+      "objectType": "Iron Lieutenant Scut Turret",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {},
+              "tag": "NullParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            },
+            {
+              "data": {
+                "gunBulletType": "Iron Bulwark",
+                "range": 600
+              },
+              "tag": "MultiBarrelGunParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      }
+    },
+    {
+      "attachmentPoint": "Turret 4",
+      "cooldown": 2000,
+      "objectType": "Iron Lieutenant Scut Turret",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {},
+              "tag": "NullParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            },
+            {
+              "data": {
+                "gunBulletType": "Iron Bulwark",
+                "range": 600
+              },
+              "tag": "MultiBarrelGunParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      }
+    }
+  ],
+  "xp": 50,
+  "xpLevelCap": 19
+}
+

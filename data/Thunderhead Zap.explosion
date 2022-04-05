@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 15,
+      "maxDistPercent": 100,
+      "minDistPercent": 90,
+      "particleType": "Thunderhead Zap",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Thunderhead Zap",
+  "sound": "Shield Hit",
+  "volume": 100
+}
+

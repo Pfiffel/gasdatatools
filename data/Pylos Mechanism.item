@@ -1,0 +1,23 @@
+{
+  "credits": 10,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "duration": 2000,
+            "emitterType": "",
+            "percentChance": 100
+          },
+          "tag": "DematerializeTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Pylos Mechanism",
+  "overworldDrop": 0,
+  "precursorTech": 1
+}
+

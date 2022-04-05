@@ -1,0 +1,17 @@
+{
+  "name": "Hercules Big Guns",
+  "sounds": [
+    "Player_Hercules_BigGun_01",
+    "Player_Hercules_BigGun_02",
+    "Player_Hercules_BigGun_03",
+    "Player_Hercules_BigGun_04",
+    "Player_Hercules_BigGun_05",
+    "Player_Hercules_BigGun_06",
+    "Player_Hercules_BigGun_07",
+    "Player_Hercules_BigGun_08",
+    "Player_Hercules_BigGun_09",
+    "Player_Hercules_BigGun_10"
+  ],
+  "volume": 50
+}
+

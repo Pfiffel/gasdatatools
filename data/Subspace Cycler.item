@@ -1,0 +1,17 @@
+{
+  "credits": 5,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 18,
+        "statType": 6
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Subspace Cycler",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

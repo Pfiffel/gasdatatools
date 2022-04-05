@@ -1,0 +1,8 @@
+{
+  "name": "Iron Colossus Enrage 2",
+  "sounds": [
+    "Enemy_IronColossus_EnrageCry_Phase2"
+  ],
+  "volume": 300
+}
+

@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 20,
+      "maxDistPercent": 100,
+      "minDistPercent": 90,
+      "particleType": "Nightsong Heal",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 20,
+      "maxDistPercent": 80,
+      "minDistPercent": 20,
+      "particleType": "Nightsong Heal",
+      "uniformAngles": 0
+    }
+  ],
+  "name": "Nightsong Heal",
+  "sound": "Wasp Dematerialize",
+  "volume": 25
+}
+

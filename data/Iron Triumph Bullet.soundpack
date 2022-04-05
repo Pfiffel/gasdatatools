@@ -1,0 +1,13 @@
+{
+  "name": "Iron Triumph Bullet",
+  "sounds": [
+    "Enemy_IronTriump_Gun_01",
+    "Enemy_IronTriump_Gun_02",
+    "Enemy_IronTriump_Gun_03",
+    "Enemy_IronTriump_Gun_04",
+    "Enemy_IronTriump_Gun_05",
+    "Enemy_IronTriump_Gun_06"
+  ],
+  "volume": 50
+}
+

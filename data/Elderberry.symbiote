@@ -1,0 +1,25 @@
+{
+  "description": "Elderberry delights in discovery and new growth.",
+  "effects": [
+    {
+      "data": {
+        "angleOffset": 0,
+        "armingTime": 750,
+        "duration": 15000,
+        "emitterType": "Heal Mine",
+        "explosionType": "Heal Mine",
+        "healing": 175,
+        "mineCount": 8,
+        "objectType": "Heal Mine",
+        "radius": 50,
+        "ringRadius": 200,
+        "when": 4
+      },
+      "tag": "TriggeredHealMineBurst"
+    }
+  ],
+  "enemies": [],
+  "name": "Elderberry",
+  "tier": 2
+}
+

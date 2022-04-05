@@ -1,0 +1,16 @@
+{
+  "gap": 120,
+  "groundColor": 12398849,
+  "mapColor": 12398849,
+  "name": "Lava",
+  "polyDecorations": [
+    {
+      "gap": 150,
+      "objectType": "Fire Lily"
+    }
+  ],
+  "segmentObjects": [
+    "Jagged Lava Rock"
+  ]
+}
+

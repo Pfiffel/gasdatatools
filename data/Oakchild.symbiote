@@ -1,0 +1,17 @@
+{
+  "description": "Oakchild sees wonderment and potential in all.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 60,
+        "statType": 3
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "Oakchild",
+  "tier": 2
+}
+

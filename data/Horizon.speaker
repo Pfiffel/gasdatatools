@@ -1,0 +1,36 @@
+{
+  "name": "Horizon",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I gaze.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I peer.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I look.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I see.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

@@ -1,0 +1,35 @@
+{
+  "description": "Locust swarms the battlespace.",
+  "effects": [
+    {
+      "data": {
+        "cooldown": 5000,
+        "params": [
+          {
+            "data": {
+              "count": 3,
+              "damage": 60,
+              "emitterType": "Locust Trail",
+              "objectType": "Locust Missile",
+              "range": 340,
+              "sound": "Player_Hercules_Shockwave",
+              "speed": 200,
+              "tag": "",
+              "timeGap": 600,
+              "tweenType": "EXPOIN",
+              "volume": 50
+            },
+            "tag": "SharkletTrigger"
+          }
+        ],
+        "percentChance": 100,
+        "targetingRange": 340
+      },
+      "tag": "PeriodicTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Locust",
+  "tier": 1
+}
+

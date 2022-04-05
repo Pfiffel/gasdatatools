@@ -1,0 +1,120 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Fire Bolt",
+  "shapes": [
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "color": 14820887,
+      "height": 57,
+      "mirror": 1,
+      "name": "Red",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 31,
+          "y": 3
+        },
+        {
+          "x": 28,
+          "y": 11
+        },
+        {
+          "x": 18,
+          "y": 17
+        },
+        {
+          "x": -7,
+          "y": 18
+        },
+        {
+          "x": -28,
+          "y": 15
+        },
+        {
+          "x": -72,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Orange",
+      "clones": [],
+      "closed": 0,
+      "color": 14844183,
+      "height": 58,
+      "mirror": 1,
+      "name": "Orange",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 26,
+          "y": 2
+        },
+        {
+          "x": 21,
+          "y": 8
+        },
+        {
+          "x": 10,
+          "y": 12
+        },
+        {
+          "x": -11,
+          "y": 12
+        },
+        {
+          "x": -41,
+          "y": 6
+        },
+        {
+          "x": -60,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Yellow",
+      "clones": [],
+      "closed": 0,
+      "color": 14867735,
+      "height": 59,
+      "mirror": 1,
+      "name": "Yellow",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 22,
+          "y": 2
+        },
+        {
+          "x": 18,
+          "y": 5
+        },
+        {
+          "x": 8,
+          "y": 6
+        },
+        {
+          "x": -7,
+          "y": 6
+        },
+        {
+          "x": -24,
+          "y": 5
+        },
+        {
+          "x": -53,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

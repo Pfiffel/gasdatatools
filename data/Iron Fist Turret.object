@@ -1,0 +1,242 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 40,
+          "y": 29
+        }
+      }
+    }
+  ],
+  "bonePivots": [
+    {
+      "name": "Hand",
+      "p": {
+        "x": -9,
+        "y": 55
+      }
+    },
+    {
+      "name": "Foot",
+      "p": {
+        "x": -10,
+        "y": 39
+      }
+    }
+  ],
+  "floppiness": 0,
+  "name": "Iron Fist Turret",
+  "shapes": [
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 1,
+      "color": 6975883,
+      "height": 0,
+      "mirror": 1,
+      "name": "Hand",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -33,
+          "y": 34
+        },
+        {
+          "x": -33,
+          "y": 46
+        },
+        {
+          "x": 44,
+          "y": 46
+        },
+        {
+          "x": 44,
+          "y": 34
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 1,
+      "color": 6975883,
+      "height": 1,
+      "mirror": 1,
+      "name": "Cuff",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 21,
+          "y": 32
+        },
+        {
+          "x": 21,
+          "y": 48
+        },
+        {
+          "x": 39,
+          "y": 48
+        },
+        {
+          "x": 39,
+          "y": 32
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Shoulders",
+      "clones": [],
+      "closed": 0,
+      "color": 1073814,
+      "height": 12,
+      "mirror": 1,
+      "name": "Shoulders",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 9,
+          "y": 37
+        },
+        {
+          "x": 2,
+          "y": 45
+        },
+        {
+          "x": -15,
+          "y": 45
+        },
+        {
+          "x": -22,
+          "y": 34
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Shoulders",
+      "clones": [],
+      "closed": 1,
+      "color": 7633812,
+      "height": 13,
+      "mirror": 1,
+      "name": "Pauldron",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 0,
+          "y": 29
+        },
+        {
+          "x": 9,
+          "y": 31
+        },
+        {
+          "x": 11,
+          "y": 37
+        },
+        {
+          "x": 11,
+          "y": 42
+        },
+        {
+          "x": 9,
+          "y": 47
+        },
+        {
+          "x": 3,
+          "y": 49
+        },
+        {
+          "x": -15,
+          "y": 49
+        },
+        {
+          "x": -22,
+          "y": 47
+        },
+        {
+          "x": -25,
+          "y": 41
+        },
+        {
+          "x": -25,
+          "y": 32
+        },
+        {
+          "x": -15,
+          "y": 29
+        }
+      ],
+      "useBoneMirror": 0
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 0,
+      "color": 8225688,
+      "height": 21,
+      "mirror": 1,
+      "name": "Head",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -30,
+          "y": 1
+        },
+        {
+          "x": -33,
+          "y": 5
+        },
+        {
+          "x": -26,
+          "y": 18
+        },
+        {
+          "x": -3,
+          "y": 13
+        },
+        {
+          "x": 22,
+          "y": 10
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 0,
+      "color": 2120320,
+      "height": 23,
+      "mirror": 1,
+      "name": "Crest",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -30,
+          "y": 0
+        },
+        {
+          "x": -21,
+          "y": 2
+        },
+        {
+          "x": 6,
+          "y": 2
+        },
+        {
+          "x": 22,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

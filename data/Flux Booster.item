@@ -1,0 +1,14 @@
+{
+  "credits": 2,
+  "effects": [
+    {
+      "data": {
+        "amount": 6,
+        "statType": 0
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Flux Booster"
+}
+

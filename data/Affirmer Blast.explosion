@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 12,
+      "maxDistPercent": 100,
+      "minDistPercent": 100,
+      "particleType": "Affirmer Blast",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Affirmer Blast",
+  "sound": "Player_Wasp_PosTorpedo_Explosion",
+  "volume": 50
+}
+

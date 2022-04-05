@@ -1,0 +1,50 @@
+{
+  "collisionRadius": 36,
+  "deathCrySoundPack": "Iron Fortress Death Cries",
+  "drops": [],
+  "healRate": 0,
+  "hp": 750,
+  "idleAnimation": "BaseArcher Idle",
+  "name": "Iron Fortress",
+  "objectType": "Iron Fortress",
+  "runAnimation": "Iron Bulwark Run",
+  "runSpeed": 75,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "",
+      "cooldown": 3000,
+      "objectType": "",
+      "params": {
+        "data": {
+          "lifetime": 15000,
+          "maxCount": 3,
+          "monsterName": "Iron Redoubt",
+          "sound": "Enemy_IronRedoubt_Conqueror_Spawn",
+          "volume": 150
+        },
+        "tag": "MinionParams"
+      }
+    },
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 2000,
+      "objectType": "Iron Fortress Turret",
+      "params": {
+        "data": {
+          "aimed": 1,
+          "cooldown": 1500,
+          "gunBulletType": "Iron Bulwark",
+          "leading": 0,
+          "numProjectiles": 1,
+          "range": 800
+        },
+        "tag": "GunParams"
+      }
+    }
+  ],
+  "xp": 49,
+  "xpLevelCap": 19
+}
+

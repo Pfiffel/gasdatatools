@@ -1,0 +1,36 @@
+{
+  "name": "Wisp",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Do not attach yourself to material things.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Become one with the dematerial.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "You are more than mere atoms.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Corporeality is vulnerability.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

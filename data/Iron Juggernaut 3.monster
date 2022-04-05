@@ -1,0 +1,335 @@
+{
+  "boss": 1,
+  "collisionRadius": 108,
+  "consolationPrizes": [
+    "Maser Booster",
+    "Dimagnetic Fixer",
+    "Bilateral Charger",
+    "Entropic Plate",
+    "Galvanic Capacitor",
+    "Multiphasic Loader",
+    "Subspace Cycler",
+    "Resonant Generator"
+  ],
+  "deathCrySoundPack": "Iron Leviathan Death Cries",
+  "drops": [
+    {
+      "itemType": "Falkonera Mechanism",
+      "levelCap": 20,
+      "micros": 30000
+    },
+    {
+      "itemType": "Rhodes Mechanism",
+      "levelCap": 20,
+      "micros": 30000
+    },
+    {
+      "itemType": "Stratos Mechanism",
+      "levelCap": 20,
+      "micros": 30000
+    },
+    {
+      "itemType": "Temnos Mechanism",
+      "levelCap": 20,
+      "micros": 30000
+    },
+    {
+      "itemType": "Zakros Mechanism",
+      "levelCap": 20,
+      "micros": 30000
+    }
+  ],
+  "healRate": 0,
+  "hp": 4000,
+  "idleAnimation": "BaseArcher Idle",
+  "maxMoveDistance": 500,
+  "name": "Iron Juggernaut 3",
+  "objectType": "Iron Juggernaut",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "Iron Behemoth Run",
+  "runAnimationDuration": 814,
+  "runSpeed": 86,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "TurretRailL",
+      "cooldown": 800,
+      "extraTargetingArc": 600,
+      "halfArc": 300,
+      "objectType": "Iron Juggernaut Turret Rail",
+      "params": {
+        "data": {
+          "gunBulletType": "Iron Juggernaut",
+          "range": 900
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "TurretRailR",
+      "cooldown": 800,
+      "extraTargetingArc": 600,
+      "halfArc": 300,
+      "objectType": "Iron Juggernaut Turret Rail",
+      "params": {
+        "data": {
+          "gunBulletType": "Iron Juggernaut",
+          "range": 900
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "",
+      "cooldown": 1800,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "damage": 250,
+          "duration": 5000,
+          "emitterType": "",
+          "explosionType": "Iron Juggernaut Mine Blast",
+          "objectType": "Iron Juggernaut Mine",
+          "powers": [],
+          "radius": 108,
+          "range": 400,
+          "speed": 250
+        },
+        "tag": "MinelayerParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "TurretFL",
+      "cooldown": 1000,
+      "extraTargetingArc": 0,
+      "halfArc": 1350,
+      "objectType": "Iron Juggernaut Turret Front",
+      "params": {
+        "data": {
+          "gunBulletType": "Iron Behemoth Mid",
+          "range": 900
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "TurretFR",
+      "cooldown": 1000,
+      "extraTargetingArc": 0,
+      "halfArc": 1350,
+      "objectType": "Iron Juggernaut Turret Front",
+      "params": {
+        "data": {
+          "gunBulletType": "Iron Behemoth Mid",
+          "range": 900
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "TurretMain",
+      "cooldown": 5000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Iron Juggernaut Turret Center",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "bulletRange": 900,
+                "delay": 500,
+                "gunBulletType": "Iron Leviathan",
+                "numBullets": 5,
+                "range": 1000,
+                "salvoes": [
+                  {
+                    "angle": 0,
+                    "mirror": 0
+                  },
+                  {
+                    "angle": 180,
+                    "mirror": 0
+                  },
+                  {
+                    "angle": 360,
+                    "mirror": 0
+                  },
+                  {
+                    "angle": 540,
+                    "mirror": 0
+                  },
+                  {
+                    "angle": 720,
+                    "mirror": 0
+                  },
+                  {
+                    "angle": 900,
+                    "mirror": 0
+                  },
+                  {
+                    "angle": 1080,
+                    "mirror": 0
+                  }
+                ]
+              },
+              "tag": "BarrageParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "TurretB",
+      "cooldown": 800,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Iron Juggernaut Turret Back",
+      "params": {
+        "data": {
+          "gunBulletType": "Iron Colossus",
+          "range": 900
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "TurretMain",
+      "cooldown": 3000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "damage": 400,
+                "delay": 1000,
+                "explosionType": "Iron Juggernaut Burst",
+                "halfArc": 280,
+                "powers": [
+                  {
+                    "data": {
+                      "amount": -30,
+                      "caption": "Trigger 4 Rate of Fire -30%",
+                      "duration": 4000,
+                      "emitterType": "",
+                      "statType": 12
+                    },
+                    "tag": "StatPower"
+                  }
+                ],
+                "range": 500,
+                "triggerSound": "Enemy_IronLeviathan_Shotgun_Telegraph",
+                "triggerVolume": 50
+              },
+              "tag": "ShotgunParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {
+          "plusAngle": 0
+        },
+        "tag": "FixedTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "TurretMain",
+      "cooldown": 3000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "damage": 400,
+                "delay": 1000,
+                "explosionType": "Iron Juggernaut Burst",
+                "halfArc": 280,
+                "powers": [
+                  {
+                    "data": {
+                      "amount": -30,
+                      "caption": "Trigger 4 Rate of Fire -30%",
+                      "duration": 4000,
+                      "emitterType": "",
+                      "statType": 12
+                    },
+                    "tag": "StatPower"
+                  }
+                ],
+                "range": 500,
+                "triggerSound": "Enemy_IronLeviathan_Shotgun_Telegraph",
+                "triggerVolume": 50
+              },
+              "tag": "ShotgunParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {
+          "plusAngle": 1800
+        },
+        "tag": "FixedTargeting"
+      }
+    }
+  ],
+  "xp": 100,
+  "xpLevelCap": 19
+}
+

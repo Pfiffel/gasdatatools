@@ -1,0 +1,16 @@
+{
+  "champion": "Wasp",
+  "displayName": "Charger Upgrade",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 2,
+        "statType": 2
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Wasp Charger Upgrade"
+}
+

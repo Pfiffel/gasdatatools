@@ -1,0 +1,75 @@
+{
+  "boss": 0,
+  "collisionRadius": 22,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Enemy Hits",
+  "drops": [],
+  "healRate": 0,
+  "hp": 700,
+  "idleAnimation": "Xenofrog Idle",
+  "maxMoveDistance": 150,
+  "name": "Xenofrog Defender",
+  "objectType": "Xenofrog Defender",
+  "pauseBetweenMovements": 900,
+  "runAnimation": "Xenofrog Leap",
+  "runSpeed": 280,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Mouth",
+      "cooldown": 2000,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "angleBetweenProjectiles": 450,
+                "gunBulletType": "Xenofrog Defender Spit",
+                "leading": 0,
+                "numProjectiles": 5,
+                "range": 300
+              },
+              "tag": "GunParams"
+            },
+            {
+              "data": {
+                "damage": 200,
+                "delay": 1000,
+                "explosionType": "",
+                "halfArc": 300,
+                "powers": [
+                  {
+                    "data": {
+                      "amount": -50,
+                      "caption": "Shield Strength -50%",
+                      "duration": 6000,
+                      "emitterType": "",
+                      "statType": 9
+                    },
+                    "tag": "StatPower"
+                  }
+                ],
+                "range": 250,
+                "triggerSound": "",
+                "triggerVolume": 50
+              },
+              "tag": "ShotgunParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 16,
+  "xpLevelCap": 19
+}
+

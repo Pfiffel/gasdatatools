@@ -1,0 +1,286 @@
+{
+  "boss": 1,
+  "collisionRadius": 108,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Iron Colossus Enrage 3",
+  "drops": [],
+  "healRate": 0,
+  "hp": 4000,
+  "idleAnimation": "BaseArcher Idle",
+  "maxMoveDistance": 500,
+  "name": "Iron Behemoth 2",
+  "objectType": "Iron Behemoth",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "Iron Behemoth Run",
+  "runAnimationDuration": 700,
+  "runSpeed": 100,
+  "successorMonster": "Iron Behemoth 3",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "TurretMain",
+      "cooldown": 4000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "damage": 300,
+          "emitterType": "",
+          "explosionType": "Iron Behemoth Mortar",
+          "objectType": "Iron Behemoth Mortar",
+          "powers": [],
+          "radius": 120,
+          "range": 400,
+          "shootSound": "Enemy_Grenade_Medium_Launch",
+          "shootVolume": 50,
+          "speed": 220
+        },
+        "tag": "MortarParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "TurretMain",
+      "cooldown": 750,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Iron Behemoth Turret Main",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "gunBulletType": "Iron Behemoth Mid",
+                "range": 800
+              },
+              "tag": "MultiBarrelGunParams"
+            },
+            {
+              "data": {
+                "gunBulletType": "Iron Behemoth Main",
+                "range": 800
+              },
+              "tag": "MultiBarrelGunParams"
+            },
+            {
+              "data": {
+                "gunBulletType": "Iron Behemoth Mid",
+                "range": 800
+              },
+              "tag": "MultiBarrelGunParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            },
+            {
+              "data": {
+                "damage": 500,
+                "delay": 750,
+                "explosionType": "Iron Behemoth Laser Beam",
+                "halfArc": 1,
+                "powers": [
+                  {
+                    "data": {
+                      "energyDamage": 50
+                    },
+                    "tag": "EnergyDamagePower"
+                  }
+                ],
+                "range": 800,
+                "triggerSound": "Enemy_IronLeviathan_Shotgun_Telegraph",
+                "triggerVolume": 150
+              },
+              "tag": "ShotgunParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            },
+            {
+              "data": {
+                "damage": 500,
+                "delay": 750,
+                "explosionType": "Iron Behemoth Laser Beam",
+                "halfArc": 1,
+                "powers": [
+                  {
+                    "data": {
+                      "energyDamage": 50
+                    },
+                    "tag": "EnergyDamagePower"
+                  }
+                ],
+                "range": 800,
+                "triggerSound": "Enemy_IronLeviathan_Shotgun_Telegraph",
+                "triggerVolume": 150
+              },
+              "tag": "ShotgunParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "TurretFL",
+      "cooldown": 1500,
+      "extraTargetingArc": 500,
+      "halfArc": 400,
+      "objectType": "Iron Behemoth Turret Triple",
+      "params": {
+        "data": {
+          "gunBulletType": "Iron Behemoth",
+          "range": 800
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "TurretBL",
+      "cooldown": 1500,
+      "extraTargetingArc": 500,
+      "halfArc": 400,
+      "objectType": "Iron Behemoth Turret Triple",
+      "params": {
+        "data": {
+          "gunBulletType": "Iron Behemoth",
+          "range": 800
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "TurretBR",
+      "cooldown": 1500,
+      "extraTargetingArc": 500,
+      "halfArc": 400,
+      "objectType": "Iron Behemoth Turret Triple",
+      "params": {
+        "data": {
+          "gunBulletType": "Iron Behemoth",
+          "range": 800
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "TurretFR",
+      "cooldown": 1500,
+      "extraTargetingArc": 500,
+      "halfArc": 400,
+      "objectType": "Iron Behemoth Turret Triple",
+      "params": {
+        "data": {
+          "gunBulletType": "Iron Behemoth",
+          "range": 800
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "TurretFL2",
+      "cooldown": 1100,
+      "extraTargetingArc": 500,
+      "halfArc": 400,
+      "objectType": "Iron Behemoth Turret Double",
+      "params": {
+        "data": {
+          "gunBulletType": "Iron Leviathan",
+          "range": 800
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "TurretBL2",
+      "cooldown": 1100,
+      "extraTargetingArc": 500,
+      "halfArc": 400,
+      "objectType": "Iron Behemoth Turret Double",
+      "params": {
+        "data": {
+          "gunBulletType": "Iron Leviathan",
+          "range": 800
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "TurretBR2",
+      "cooldown": 1100,
+      "extraTargetingArc": 500,
+      "halfArc": 400,
+      "objectType": "Iron Behemoth Turret Double",
+      "params": {
+        "data": {
+          "gunBulletType": "Iron Leviathan",
+          "range": 800
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "TurretFR2",
+      "cooldown": 1100,
+      "extraTargetingArc": 500,
+      "halfArc": 400,
+      "objectType": "Iron Behemoth Turret Double",
+      "params": {
+        "data": {
+          "gunBulletType": "Iron Leviathan",
+          "range": 800
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 100,
+  "xpLevelCap": 19
+}
+

@@ -1,0 +1,62 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Tentacle",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 16579836,
+      "height": 0,
+      "mirror": 0,
+      "name": "Glyph",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 6,
+          "y": 19
+        },
+        {
+          "x": 8,
+          "y": 34
+        },
+        {
+          "x": -5,
+          "y": 23
+        },
+        {
+          "x": -6,
+          "y": 4
+        },
+        {
+          "x": -4,
+          "y": -11
+        },
+        {
+          "x": -3,
+          "y": -26
+        },
+        {
+          "x": -6,
+          "y": -38
+        },
+        {
+          "x": 8,
+          "y": -23
+        },
+        {
+          "x": 7,
+          "y": -8
+        },
+        {
+          "x": 6,
+          "y": 9
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

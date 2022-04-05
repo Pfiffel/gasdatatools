@@ -1,0 +1,9 @@
+{
+  "damage": 20,
+  "emitterType": "Iron Shield",
+  "name": "Iron Shield",
+  "objectType": "Iron Shield Bullet",
+  "soundPack": "Iron Shield Bullet",
+  "speed": 150
+}
+

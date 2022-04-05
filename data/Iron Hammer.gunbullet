@@ -1,0 +1,9 @@
+{
+  "damage": 100,
+  "emitterType": "Iron Hammer",
+  "name": "Iron Hammer",
+  "objectType": "Iron Hammer Bullet",
+  "soundPack": "Iron Hammer Bullet",
+  "speed": 150
+}
+

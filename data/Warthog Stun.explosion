@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 100,
+      "maxDistPercent": 100,
+      "minDistPercent": 97,
+      "particleType": "Warthog Stun",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Warthog Stun",
+  "sound": "Player_Warthog_StunWarp_Stun",
+  "volume": 100
+}
+

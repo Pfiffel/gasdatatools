@@ -1,0 +1,21 @@
+{
+  "damage": 100,
+  "emitterType": "Xenofrog Trail Caustic",
+  "name": "Xenofrog Caustic Spit",
+  "objectType": "Xenofrog Caustic Bullet",
+  "powers": [
+    {
+      "data": {
+        "amount": -25,
+        "caption": "Gun Damage -25%",
+        "duration": 6000,
+        "emitterType": "Power Gun Damage Down",
+        "statType": 0
+      },
+      "tag": "StatPower"
+    }
+  ],
+  "soundPack": "Iron Hammer Bullet",
+  "speed": 140
+}
+

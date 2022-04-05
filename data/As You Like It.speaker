@@ -1,0 +1,36 @@
+{
+  "name": "As You Like It",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Nothing to worry about!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Not a care in the world!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Carefree and happy!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Don't worry about a thing.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

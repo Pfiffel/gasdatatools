@@ -1,0 +1,25 @@
+{
+  "description": "Grey Ghost manifests when needed.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 2,
+        "amount": 100,
+        "statType": 7
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 2,
+        "amount": 50,
+        "statType": 9
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "Grey Ghost",
+  "tier": 4
+}
+

@@ -1,0 +1,25 @@
+{
+  "name": "Mako Long Guns",
+  "sounds": [
+    "Player_Wasp_BasicGun_01",
+    "Player_Wasp_BasicGun_02",
+    "Player_Wasp_BasicGun_03",
+    "Player_Wasp_BasicGun_04",
+    "Player_Wasp_BasicGun_05",
+    "Player_Wasp_BasicGun_06",
+    "Player_Wasp_BasicGun_07",
+    "Player_Wasp_BasicGun_08",
+    "Player_Wasp_BasicGun_09",
+    "Player_Wasp_BasicGun_10",
+    "Player_Wasp_BasicGun_11",
+    "Player_Wasp_BasicGun_12",
+    "Player_Wasp_BasicGun_13",
+    "Player_Wasp_BasicGun_14",
+    "Player_Wasp_BasicGun_15",
+    "Player_Wasp_BasicGun_16",
+    "Player_Wasp_BasicGun_17",
+    "Player_Wasp_BasicGun_18"
+  ],
+  "volume": 35
+}
+

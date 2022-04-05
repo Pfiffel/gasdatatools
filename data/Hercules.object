@@ -1,0 +1,382 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Turret Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 58,
+          "y": 0
+        }
+      }
+    },
+    {
+      "height": 0,
+      "name": "Secondary Turret Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 30,
+          "y": 0
+        }
+      }
+    },
+    {
+      "height": 0,
+      "name": "Aux Turret Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 12,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [
+    {
+      "name": "Turret",
+      "p": {
+        "x": -7,
+        "y": 0
+      }
+    },
+    {
+      "name": "Secondary Turret",
+      "p": {
+        "x": -7,
+        "y": 0
+      }
+    },
+    {
+      "name": "Aux Turret",
+      "p": {
+        "x": -7,
+        "y": 0
+      }
+    }
+  ],
+  "floppiness": 0,
+  "name": "Hercules",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 10956080,
+      "height": 7,
+      "mirror": 1,
+      "name": "Front Pods",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 52,
+          "y": 13
+        },
+        {
+          "x": 60,
+          "y": 22
+        },
+        {
+          "x": 60,
+          "y": 36
+        },
+        {
+          "x": 52,
+          "y": 45
+        },
+        {
+          "x": 34,
+          "y": 45
+        },
+        {
+          "x": 26,
+          "y": 36
+        },
+        {
+          "x": 26,
+          "y": 22
+        },
+        {
+          "x": 34,
+          "y": 13
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 10956080,
+      "height": 7,
+      "mirror": 1,
+      "name": "Rear Pods",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -14,
+          "y": 13
+        },
+        {
+          "x": -6,
+          "y": 22
+        },
+        {
+          "x": -6,
+          "y": 36
+        },
+        {
+          "x": -14,
+          "y": 45
+        },
+        {
+          "x": -32,
+          "y": 45
+        },
+        {
+          "x": -40,
+          "y": 36
+        },
+        {
+          "x": -40,
+          "y": 22
+        },
+        {
+          "x": -32,
+          "y": 13
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 2314958,
+      "height": 14,
+      "mirror": 1,
+      "name": "Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 19,
+          "y": 12
+        },
+        {
+          "x": 24,
+          "y": 19
+        },
+        {
+          "x": 57,
+          "y": 19
+        },
+        {
+          "x": 60,
+          "y": 22
+        },
+        {
+          "x": 60,
+          "y": 36
+        },
+        {
+          "x": 58,
+          "y": 38
+        },
+        {
+          "x": 28,
+          "y": 38
+        },
+        {
+          "x": 26,
+          "y": 36
+        },
+        {
+          "x": -6,
+          "y": 36
+        },
+        {
+          "x": -8,
+          "y": 38
+        },
+        {
+          "x": -38,
+          "y": 38
+        },
+        {
+          "x": -40,
+          "y": 36
+        },
+        {
+          "x": -40,
+          "y": 22
+        },
+        {
+          "x": -37,
+          "y": 19
+        },
+        {
+          "x": -4,
+          "y": 19
+        },
+        {
+          "x": 1,
+          "y": 12
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "color": 3422556,
+      "height": 17,
+      "mirror": 1,
+      "name": "Main Barrel",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 58,
+          "y": 6
+        },
+        {
+          "x": 21,
+          "y": 11
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "color": 10956080,
+      "height": 18,
+      "mirror": 1,
+      "name": "Turret",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 23,
+          "y": 10
+        },
+        {
+          "x": 28,
+          "y": 10
+        },
+        {
+          "x": 2,
+          "y": 28
+        },
+        {
+          "x": -38,
+          "y": 14
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Secondary Turret",
+      "clones": [],
+      "closed": 0,
+      "color": 3422556,
+      "height": 23,
+      "mirror": 1,
+      "name": "Secondary Barrel",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 30,
+          "y": 5
+        },
+        {
+          "x": 7,
+          "y": 7
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Secondary Turret",
+      "clones": [],
+      "closed": 0,
+      "color": 9739704,
+      "height": 24,
+      "mirror": 1,
+      "name": "Secondary Turret",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 10,
+          "y": 6
+        },
+        {
+          "x": 17,
+          "y": 6
+        },
+        {
+          "x": 1,
+          "y": 18
+        },
+        {
+          "x": -32,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Aux Turret",
+      "clones": [],
+      "closed": 0,
+      "color": 3422556,
+      "height": 29,
+      "mirror": 1,
+      "name": "Aux Barrel",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 12,
+          "y": 3
+        },
+        {
+          "x": -3,
+          "y": 5
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Aux Turret",
+      "clones": [],
+      "closed": 0,
+      "color": 2377898,
+      "height": 30,
+      "mirror": 1,
+      "name": "Aux Turret",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -2,
+          "y": 4
+        },
+        {
+          "x": 3,
+          "y": 4
+        },
+        {
+          "x": -2,
+          "y": 11
+        },
+        {
+          "x": -19,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

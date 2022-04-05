@@ -1,0 +1,30 @@
+{
+  "champion": "Warthog",
+  "displayName": "Impelling Charge",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "damage": 90,
+            "delay": 0,
+            "halfArc": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 0,
+            "statusEffects": [],
+            "targetingDelay": 0
+          },
+          "tag": "ShotgunTriggerBonus"
+        },
+        "tag": "Warthog 2 Shotgun",
+        "tooltip": "On Hog Charge:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Warthog Impelling Charge"
+}
+

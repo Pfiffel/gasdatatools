@@ -1,0 +1,17 @@
+{
+  "credits": 7,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 44,
+        "statType": 9
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Tesla Generator",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

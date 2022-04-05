@@ -1,0 +1,38 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Mako Laser Beams Particle",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 16711423,
+      "height": 20,
+      "mirror": 1,
+      "name": "Beam",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -126,
+          "y": 1
+        },
+        {
+          "x": -80,
+          "y": 7
+        },
+        {
+          "x": -20,
+          "y": 7
+        },
+        {
+          "x": 34,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

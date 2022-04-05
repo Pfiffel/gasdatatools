@@ -1,0 +1,17 @@
+{
+  "credits": 4,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 32,
+        "statType": 9
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Harmonic Generator",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

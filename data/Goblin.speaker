@@ -1,0 +1,36 @@
+{
+  "name": "Goblin",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Here's a surprise!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Knife to the back!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Backstab!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Ha ha! Sneak attack!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

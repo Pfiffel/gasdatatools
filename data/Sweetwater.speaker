@@ -1,0 +1,36 @@
+{
+  "name": "Sweetwater",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Hey honey, nice to see ya!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "What's cookin', good lookin'?",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Well, butter my biscuits!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Well I'll be!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

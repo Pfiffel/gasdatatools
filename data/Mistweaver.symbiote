@@ -1,0 +1,27 @@
+{
+  "description": "Mistweaver conceals hidden reserves.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": -50,
+            "duration": 5000,
+            "emitterType": "",
+            "glyphCount": 0,
+            "glyphRadius": 0,
+            "glyphType": "",
+            "statType": 11
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Mistweaver",
+  "tier": 5
+}
+

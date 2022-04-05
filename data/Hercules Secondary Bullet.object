@@ -1,0 +1,54 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Hercules Secondary Bullet",
+  "shapes": [
+    {
+      "bone": "Orange",
+      "clones": [],
+      "closed": 0,
+      "color": 14388749,
+      "height": 58,
+      "mirror": 1,
+      "name": "Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 24,
+          "y": 3
+        },
+        {
+          "x": 21,
+          "y": 6
+        },
+        {
+          "x": 10,
+          "y": 9
+        },
+        {
+          "x": -2,
+          "y": 10
+        },
+        {
+          "x": -15,
+          "y": 10
+        },
+        {
+          "x": -34,
+          "y": 8
+        },
+        {
+          "x": -49,
+          "y": 5
+        },
+        {
+          "x": -68,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

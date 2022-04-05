@@ -1,0 +1,9 @@
+{
+  "name": "Pickup XP",
+  "sounds": [
+    "UI_XP_Pickup_C_01",
+    "UI_XP_Pickup_C_03"
+  ],
+  "volume": 14
+}
+

@@ -1,0 +1,36 @@
+{
+  "name": "Fire Shade",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Dead? Yes. Powerless? See for yourself!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "It is not so bad, being dead.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Life is overrated.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Death has not quenched my flames!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

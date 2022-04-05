@@ -1,0 +1,17 @@
+{
+  "description": "Amberstone finds merit in the old magicks.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": -10,
+        "statType": 11
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "Amberstone",
+  "tier": 4
+}
+

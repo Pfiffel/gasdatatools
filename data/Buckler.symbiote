@@ -1,0 +1,35 @@
+{
+  "description": "Buckler braces for impact.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 15,
+        "shield": {
+          "color": 5644983,
+          "left": -1050,
+          "level": 0,
+          "maxStrength": 175,
+          "right": 1050
+        }
+      },
+      "tag": "ItemShield"
+    },
+    {
+      "data": {
+        "activeWhile": 16,
+        "shield": {
+          "color": 5644983,
+          "left": 750,
+          "level": 0,
+          "maxStrength": 175,
+          "right": -750
+        }
+      },
+      "tag": "ItemShield"
+    }
+  ],
+  "enemies": [],
+  "name": "Buckler",
+  "tier": 6
+}
+

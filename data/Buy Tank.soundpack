@@ -1,0 +1,8 @@
+{
+  "name": "Buy Tank",
+  "sounds": [
+    "UI_LootPickup_02"
+  ],
+  "volume": 25
+}
+

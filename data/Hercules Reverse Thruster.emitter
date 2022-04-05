@@ -1,0 +1,22 @@
+{
+  "arcOffset": 400,
+  "cooldown": 40,
+  "endSound": "Player_Hercules_Movement_End",
+  "endVolume": 25,
+  "halfArc": 50,
+  "loopSound": "Player_Hercules_Movement_Loop",
+  "loopVolume": 25,
+  "maxDist": 50,
+  "minDist": 25,
+  "mirror": 1,
+  "name": "Hercules Reverse Thruster",
+  "particleCount": 1,
+  "particleTypes": [
+    "Hercules Thruster",
+    "Hercules Thruster 2",
+    "Hercules Thruster 3"
+  ],
+  "startSound": "Player_Hercules_Movement_Start",
+  "startVolume": 25
+}
+

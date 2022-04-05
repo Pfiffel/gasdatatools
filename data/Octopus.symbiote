@@ -1,0 +1,17 @@
+{
+  "description": "Octopus glides along.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 14,
+        "amount": 25,
+        "statType": 5
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "Octopus",
+  "tier": 5
+}
+

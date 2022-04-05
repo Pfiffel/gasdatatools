@@ -1,0 +1,36 @@
+{
+  "description": "Tribunus sits in judgment over all mortal beings.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "damage": 75,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Tribunus Blast",
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 200,
+            "statusEffects": [],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "Explosive Burst"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 2
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Tribunus",
+  "tier": 3
+}
+

@@ -1,0 +1,16 @@
+{
+  "champion": "Warthog",
+  "displayName": "Capacitor Upgrade",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 2,
+        "statType": 4
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Warthog Capacitor Upgrade"
+}
+

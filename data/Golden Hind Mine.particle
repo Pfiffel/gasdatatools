@@ -1,0 +1,41 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 14857487
+    },
+    {
+      "frac": 750,
+      "value": 14857487
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 400,
+  "minLifetime": 300,
+  "name": "Golden Hind Mine",
+  "objectType": "Small Six Star",
+  "positionTweenType": "EXPOOUT",
+  "randomFinalFacing": 0,
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 400
+    },
+    {
+      "frac": 750,
+      "value": 400
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 16776958,
+  "startScale": 10,
+  "stayLow": 1
+}
+

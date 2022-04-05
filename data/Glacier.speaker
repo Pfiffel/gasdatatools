@@ -1,0 +1,36 @@
+{
+  "name": "Glacier",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Embrace the cold!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Chill out!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Be cool!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Stay frosty!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

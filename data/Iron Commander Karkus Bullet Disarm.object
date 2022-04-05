@@ -1,0 +1,120 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Iron Commander Karkus Bullet Disarm",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 12553409,
+      "height": 76,
+      "mirror": 1,
+      "name": "Inner",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 2,
+          "y": 6
+        },
+        {
+          "x": -1,
+          "y": 12
+        },
+        {
+          "x": -4,
+          "y": 17
+        },
+        {
+          "x": -14,
+          "y": 12
+        },
+        {
+          "x": -21,
+          "y": 3
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 13261000,
+      "height": 78,
+      "mirror": 1,
+      "name": "Middle",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 11,
+          "y": 9
+        },
+        {
+          "x": 7,
+          "y": 17
+        },
+        {
+          "x": 0,
+          "y": 24
+        },
+        {
+          "x": -12,
+          "y": 24
+        },
+        {
+          "x": -5,
+          "y": 14
+        },
+        {
+          "x": -1,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 15204584,
+      "height": 79,
+      "mirror": 1,
+      "name": "Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 8,
+          "y": 8
+        },
+        {
+          "x": 3,
+          "y": 18
+        },
+        {
+          "x": -5,
+          "y": 29
+        },
+        {
+          "x": 4,
+          "y": 29
+        },
+        {
+          "x": 11,
+          "y": 22
+        },
+        {
+          "x": 16,
+          "y": 13
+        },
+        {
+          "x": 18,
+          "y": 2
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

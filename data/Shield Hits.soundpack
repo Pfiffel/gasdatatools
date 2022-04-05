@@ -1,0 +1,10 @@
+{
+  "name": "Shield Hits",
+  "sounds": [
+    "Player_ShieldHit_C_01",
+    "Player_ShieldHit_C_02",
+    "Player_ShieldHit_C_03"
+  ],
+  "volume": 100
+}
+

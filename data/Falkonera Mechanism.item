@@ -1,0 +1,63 @@
+{
+  "credits": 10,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 30,
+            "duration": 5000,
+            "emitterType": "",
+            "glyphCount": 6,
+            "glyphRadius": 80,
+            "glyphType": "Falkonera Glyph",
+            "statType": 10
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 15,
+            "duration": 5000,
+            "emitterType": "",
+            "glyphCount": 0,
+            "glyphRadius": 0,
+            "glyphType": "",
+            "statType": 8
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 15,
+            "duration": 5000,
+            "emitterType": "",
+            "glyphCount": 0,
+            "glyphRadius": 0,
+            "glyphType": "",
+            "statType": 5
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Falkonera Mechanism",
+  "overworldDrop": 0,
+  "precursorTech": 1
+}
+

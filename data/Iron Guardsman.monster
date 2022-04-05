@@ -1,0 +1,35 @@
+{
+  "collisionRadius": 20,
+  "deathCrySoundPack": "Iron Guardsman Death Cries",
+  "drops": [],
+  "healRate": 0,
+  "hp": 80,
+  "idleAnimation": "",
+  "name": "Iron Guardsman",
+  "objectType": "Iron Guardsman",
+  "runAnimation": "",
+  "runSpeed": 75,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 1500,
+      "objectType": "Iron Guardsman Turret",
+      "params": {
+        "data": {
+          "aimed": 1,
+          "cooldown": 1500,
+          "gunBulletType": "Iron Shield",
+          "leading": 0,
+          "numProjectiles": 3,
+          "range": 600
+        },
+        "tag": "GunParams"
+      }
+    }
+  ],
+  "xp": 4,
+  "xpLevelCap": 19
+}
+

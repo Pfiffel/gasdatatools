@@ -1,0 +1,346 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "FlowerDaisy",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 16777178,
+      "height": 0,
+      "mirror": 1,
+      "name": "New Shape",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 6,
+          "y": 14
+        },
+        {
+          "x": 5,
+          "y": 18
+        },
+        {
+          "x": 1,
+          "y": 17
+        },
+        {
+          "x": 0,
+          "y": 12
+        },
+        {
+          "x": 0,
+          "y": 5
+        },
+        {
+          "x": 4,
+          "y": 10
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 16777178,
+      "height": 0,
+      "mirror": 1,
+      "name": "Petal 1",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 12,
+          "y": 11
+        },
+        {
+          "x": 12,
+          "y": 15
+        },
+        {
+          "x": 8,
+          "y": 16
+        },
+        {
+          "x": 5,
+          "y": 12
+        },
+        {
+          "x": 3,
+          "y": 5
+        },
+        {
+          "x": 8,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 16777178,
+      "height": 0,
+      "mirror": 1,
+      "name": "Petal 2",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -12,
+          "y": 11
+        },
+        {
+          "x": -12,
+          "y": 15
+        },
+        {
+          "x": -8,
+          "y": 16
+        },
+        {
+          "x": -5,
+          "y": 12
+        },
+        {
+          "x": -3,
+          "y": 5
+        },
+        {
+          "x": -8,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 16777178,
+      "height": 0,
+      "mirror": 1,
+      "name": "New Shape",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -6,
+          "y": 14
+        },
+        {
+          "x": -5,
+          "y": 18
+        },
+        {
+          "x": -1,
+          "y": 17
+        },
+        {
+          "x": 0,
+          "y": 12
+        },
+        {
+          "x": 0,
+          "y": 5
+        },
+        {
+          "x": -4,
+          "y": 10
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 16777178,
+      "height": 0,
+      "mirror": 1,
+      "name": "New Shape",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 12,
+          "y": 10
+        },
+        {
+          "x": 16,
+          "y": 9
+        },
+        {
+          "x": 15,
+          "y": 5
+        },
+        {
+          "x": 10,
+          "y": 4
+        },
+        {
+          "x": 3,
+          "y": 4
+        },
+        {
+          "x": 8,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 16777178,
+      "height": 0,
+      "mirror": 1,
+      "name": "New Shape",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 14,
+          "y": 6
+        },
+        {
+          "x": 18,
+          "y": 5
+        },
+        {
+          "x": 17,
+          "y": 1
+        },
+        {
+          "x": 12,
+          "y": 0
+        },
+        {
+          "x": 5,
+          "y": 0
+        },
+        {
+          "x": 10,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 16777178,
+      "height": 0,
+      "mirror": 1,
+      "name": "New Shape",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -14,
+          "y": 6
+        },
+        {
+          "x": -18,
+          "y": 5
+        },
+        {
+          "x": -17,
+          "y": 1
+        },
+        {
+          "x": -12,
+          "y": 0
+        },
+        {
+          "x": -5,
+          "y": 0
+        },
+        {
+          "x": -10,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 16777178,
+      "height": 0,
+      "mirror": 1,
+      "name": "New Shape",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -13,
+          "y": 10
+        },
+        {
+          "x": -17,
+          "y": 9
+        },
+        {
+          "x": -16,
+          "y": 5
+        },
+        {
+          "x": -11,
+          "y": 4
+        },
+        {
+          "x": -4,
+          "y": 4
+        },
+        {
+          "x": -9,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 14277632,
+      "height": 10,
+      "mirror": 1,
+      "name": "Middle",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 10,
+          "y": 0
+        },
+        {
+          "x": 9,
+          "y": 5
+        },
+        {
+          "x": 4,
+          "y": 10
+        },
+        {
+          "x": 0,
+          "y": 11
+        },
+        {
+          "x": -4,
+          "y": 10
+        },
+        {
+          "x": -8,
+          "y": 6
+        },
+        {
+          "x": -10,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

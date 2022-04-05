@@ -1,0 +1,14 @@
+{
+  "credits": 3,
+  "effects": [
+    {
+      "data": {
+        "amount": 14,
+        "statType": 3
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Isolinear Plate"
+}
+

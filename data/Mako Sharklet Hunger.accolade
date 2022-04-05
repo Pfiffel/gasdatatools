@@ -1,0 +1,26 @@
+{
+  "champion": "Mako",
+  "displayName": "Sharklet Hunger",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "count": 0,
+            "damage": 6,
+            "range": 0,
+            "speed": 0,
+            "timeGap": 0
+          },
+          "tag": "SharkletTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Mako 3 Sharklet",
+        "tooltip": "On Sharklets:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Mako Sharklet Hunger"
+}
+

@@ -1,0 +1,120 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 12,
+      "name": "Turret",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Iron Guardsman",
+  "shapes": [
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 1,
+      "color": 8026746,
+      "height": 2,
+      "mirror": 1,
+      "name": "Hoverpod Front",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 33,
+          "y": 10
+        },
+        {
+          "x": 5,
+          "y": 23
+        },
+        {
+          "x": 26,
+          "y": 32
+        },
+        {
+          "x": 47,
+          "y": 25
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 1,
+      "color": 8026746,
+      "height": 2,
+      "mirror": 1,
+      "name": "Hoverpod Rear",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -9,
+          "y": 35
+        },
+        {
+          "x": 1,
+          "y": 23
+        },
+        {
+          "x": -45,
+          "y": 13
+        },
+        {
+          "x": -61,
+          "y": 26
+        },
+        {
+          "x": -29,
+          "y": 39
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "color": 7935502,
+      "height": 12,
+      "mirror": 1,
+      "name": "Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 43,
+          "y": 8
+        },
+        {
+          "x": 47,
+          "y": 13
+        },
+        {
+          "x": 13,
+          "y": 28
+        },
+        {
+          "x": -31,
+          "y": 33
+        },
+        {
+          "x": -51,
+          "y": 26
+        },
+        {
+          "x": -33,
+          "y": 16
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

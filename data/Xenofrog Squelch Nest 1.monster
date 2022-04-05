@@ -1,0 +1,96 @@
+{
+  "boss": 0,
+  "collisionRadius": 60,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Enemy Hits",
+  "drops": [],
+  "healRate": 8,
+  "hp": 600,
+  "idleAnimation": "BaseArcher Idle",
+  "maxMoveDistance": 500,
+  "name": "Xenofrog Squelch Nest 1",
+  "objectType": "Small Xenofrog Nest",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "",
+  "runAnimationDuration": 700,
+  "runSpeed": 0,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "",
+      "cooldown": 500,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "emitterType": "",
+          "explosionType": "",
+          "guardian": 0,
+          "lifetime": 0,
+          "maxCount": 8,
+          "monsterName": "Xenofrog Acidic Fusilier",
+          "movement": {
+            "data": {
+              "playerPolicy": 0,
+              "radius": 400
+            },
+            "tag": "RandomMovement"
+          },
+          "noCollide": 0,
+          "noRespawn": 1,
+          "projectileType": "",
+          "range": 0,
+          "sound": "",
+          "speed": 0,
+          "volume": 50
+        },
+        "tag": "MinionParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "",
+      "cooldown": 500,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "emitterType": "",
+          "explosionType": "",
+          "guardian": 0,
+          "lifetime": 0,
+          "maxCount": 4,
+          "monsterName": "Xenofrog Warrior",
+          "movement": {
+            "data": {
+              "playerPolicy": 1,
+              "radius": 500
+            },
+            "tag": "RandomMovement"
+          },
+          "noCollide": 0,
+          "noRespawn": 1,
+          "projectileType": "",
+          "range": 0,
+          "sound": "",
+          "speed": 0,
+          "volume": 50
+        },
+        "tag": "MinionParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 25,
+  "xpLevelCap": 19
+}
+

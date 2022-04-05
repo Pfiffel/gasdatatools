@@ -1,0 +1,36 @@
+{
+  "name": "Weeping Jester",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Embrace the paradox!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Six of one half, dozen of the other!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "More is less, none is all!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Never is forever, barely altogether!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

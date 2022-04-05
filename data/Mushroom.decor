@@ -1,0 +1,15 @@
+{
+  "color": 6502021,
+  "name": "Mushroom",
+  "objects": [
+    {
+      "density": 77,
+      "objectType": "Mushroom Clump"
+    },
+    {
+      "density": 46,
+      "objectType": "Mushroom Flower Spray"
+    }
+  ]
+}
+

@@ -1,0 +1,36 @@
+{
+  "credits": 10,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "damage": 90,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Hercules Burst",
+            "halfArc": 200,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 275,
+            "statusEffects": [],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "Forward Blast"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 2
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Temnos Mechanism",
+  "overworldDrop": 0,
+  "precursorTech": 1
+}
+

@@ -1,0 +1,367 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Iron Commander Karkus Mine",
+  "shapes": [
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 1,
+      "color": 2039845,
+      "height": 1,
+      "mirror": 1,
+      "name": "Legs",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 42,
+          "y": 42
+        },
+        {
+          "x": 46,
+          "y": 60
+        },
+        {
+          "x": 36,
+          "y": 66
+        },
+        {
+          "x": 20,
+          "y": 54
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 1,
+      "color": 3092271,
+      "height": 1,
+      "mirror": 1,
+      "name": "Legs",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 40,
+          "y": 44
+        },
+        {
+          "x": 24,
+          "y": 54
+        },
+        {
+          "x": 4,
+          "y": 28
+        },
+        {
+          "x": 30,
+          "y": 14
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 1,
+      "color": 3092271,
+      "height": 1,
+      "mirror": 1,
+      "name": "Legs",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -40,
+          "y": 44
+        },
+        {
+          "x": -24,
+          "y": 54
+        },
+        {
+          "x": -4,
+          "y": 28
+        },
+        {
+          "x": -30,
+          "y": 14
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 1,
+      "color": 2039845,
+      "height": 1,
+      "mirror": 1,
+      "name": "Legs",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -42,
+          "y": 42
+        },
+        {
+          "x": -46,
+          "y": 60
+        },
+        {
+          "x": -36,
+          "y": 66
+        },
+        {
+          "x": -20,
+          "y": 54
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 1,
+      "color": 7872544,
+      "height": 2,
+      "mirror": 1,
+      "name": "Knee",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 44,
+          "y": 42
+        },
+        {
+          "x": 40,
+          "y": 48
+        },
+        {
+          "x": 30,
+          "y": 54
+        },
+        {
+          "x": 20,
+          "y": 56
+        },
+        {
+          "x": 18,
+          "y": 50
+        },
+        {
+          "x": 26,
+          "y": 50
+        },
+        {
+          "x": 36,
+          "y": 44
+        },
+        {
+          "x": 40,
+          "y": 38
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 1,
+      "color": 7872544,
+      "height": 2,
+      "mirror": 1,
+      "name": "Knee",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -44,
+          "y": 42
+        },
+        {
+          "x": -40,
+          "y": 48
+        },
+        {
+          "x": -30,
+          "y": 54
+        },
+        {
+          "x": -20,
+          "y": 56
+        },
+        {
+          "x": -18,
+          "y": 50
+        },
+        {
+          "x": -26,
+          "y": 50
+        },
+        {
+          "x": -36,
+          "y": 44
+        },
+        {
+          "x": -40,
+          "y": 38
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 0,
+      "color": 3092271,
+      "height": 10,
+      "mirror": 1,
+      "name": "Body",
+      "noDraw": 1,
+      "points": [
+        {
+          "x": -52,
+          "y": 8
+        },
+        {
+          "x": -30,
+          "y": 34
+        },
+        {
+          "x": 0,
+          "y": 44
+        },
+        {
+          "x": 30,
+          "y": 34
+        },
+        {
+          "x": 52,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 0,
+      "color": 5066061,
+      "height": 10,
+      "mirror": 1,
+      "name": "Body",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -36,
+          "y": 6
+        },
+        {
+          "x": -30,
+          "y": 22
+        },
+        {
+          "x": -10,
+          "y": 32
+        },
+        {
+          "x": 10,
+          "y": 32
+        },
+        {
+          "x": 28,
+          "y": 22
+        },
+        {
+          "x": 34,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 0,
+      "color": 7872544,
+      "height": 11,
+      "mirror": 1,
+      "name": "Body",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -16,
+          "y": 4
+        },
+        {
+          "x": -14,
+          "y": 10
+        },
+        {
+          "x": -10,
+          "y": 14
+        },
+        {
+          "x": -4,
+          "y": 16
+        },
+        {
+          "x": 4,
+          "y": 16
+        },
+        {
+          "x": 10,
+          "y": 14
+        },
+        {
+          "x": 14,
+          "y": 10
+        },
+        {
+          "x": 16,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 0,
+      "color": 658189,
+      "height": 12,
+      "mirror": 1,
+      "name": "Body",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -10,
+          "y": 4
+        },
+        {
+          "x": -8,
+          "y": 8
+        },
+        {
+          "x": -4,
+          "y": 10
+        },
+        {
+          "x": 4,
+          "y": 10
+        },
+        {
+          "x": 8,
+          "y": 8
+        },
+        {
+          "x": 10,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

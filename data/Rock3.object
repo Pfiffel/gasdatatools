@@ -1,0 +1,62 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Rock3",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 10053439,
+      "height": 0,
+      "mirror": 0,
+      "name": "New Shape",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -19,
+          "y": -11
+        },
+        {
+          "x": -9,
+          "y": -20
+        },
+        {
+          "x": 3,
+          "y": -16
+        },
+        {
+          "x": 14,
+          "y": -20
+        },
+        {
+          "x": 21,
+          "y": -6
+        },
+        {
+          "x": 16,
+          "y": 7
+        },
+        {
+          "x": 4,
+          "y": 15
+        },
+        {
+          "x": -7,
+          "y": 11
+        },
+        {
+          "x": -18,
+          "y": 11
+        },
+        {
+          "x": -21,
+          "y": -1
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

@@ -1,0 +1,86 @@
+{
+  "keyFrames": [
+    {
+      "bonePositions": [
+        {
+          "bone": "Foot",
+          "rot": 0,
+          "x": 10,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Foot Mirror",
+          "rot": 0,
+          "x": -40,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 0,
+      "tag": ""
+    },
+    {
+      "bonePositions": [
+        {
+          "bone": "Foot",
+          "rot": 0,
+          "x": -25,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Foot Mirror",
+          "rot": 0,
+          "x": -25,
+          "y": 0,
+          "z": 10
+        }
+      ],
+      "frac": 250,
+      "tag": ""
+    },
+    {
+      "bonePositions": [
+        {
+          "bone": "Foot",
+          "rot": 0,
+          "x": -40,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Foot Mirror",
+          "rot": 0,
+          "x": 10,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 500,
+      "tag": ""
+    },
+    {
+      "bonePositions": [
+        {
+          "bone": "Foot",
+          "rot": 0,
+          "x": -5,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Foot Mirror",
+          "rot": 0,
+          "x": -5,
+          "y": 0,
+          "z": 10
+        }
+      ],
+      "frac": 750,
+      "tag": ""
+    }
+  ],
+  "name": "Iron Commander Karkus Run"
+}
+

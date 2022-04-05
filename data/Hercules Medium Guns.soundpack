@@ -1,0 +1,17 @@
+{
+  "name": "Hercules Medium Guns",
+  "sounds": [
+    "Player_Hercules_MedGun_01",
+    "Player_Hercules_MedGun_02",
+    "Player_Hercules_MedGun_03",
+    "Player_Hercules_MedGun_04",
+    "Player_Hercules_MedGun_05",
+    "Player_Hercules_MedGun_06",
+    "Player_Hercules_MedGun_07",
+    "Player_Hercules_MedGun_08",
+    "Player_Hercules_MedGun_09",
+    "Player_Hercules_MedGun_10"
+  ],
+  "volume": 30
+}
+

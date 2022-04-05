@@ -1,0 +1,47 @@
+{
+  "description": "Earth Devil revels in chaos and delights in mayhem.",
+  "effects": [
+    {
+      "data": {
+        "damageDamage": 20,
+        "dotDamage": 100,
+        "dotDuration": 2000,
+        "percentChance": 12,
+        "rootDuration": 2000,
+        "statusEffects": [
+          {
+            "data": {
+              "duration": 1000
+            },
+            "tag": "StunEffect"
+          },
+          {
+            "data": {
+              "dps": 50,
+              "duration": 2000
+            },
+            "tag": "DoTEffect"
+          },
+          {
+            "data": {
+              "duration": 2000
+            },
+            "tag": "RootEffect"
+          },
+          {
+            "data": {
+              "damage": 20
+            },
+            "tag": "DamageEffect"
+          }
+        ],
+        "stunDuration": 1000
+      },
+      "tag": "GunProcs"
+    }
+  ],
+  "enemies": [],
+  "name": "Earth Devil",
+  "tier": 2
+}
+

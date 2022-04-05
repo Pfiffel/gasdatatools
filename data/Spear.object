@@ -1,0 +1,55 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Spear",
+  "shapes": [
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 0,
+      "color": 8273946,
+      "height": 90,
+      "mirror": 1,
+      "name": "Shaft",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 183,
+          "y": 6
+        },
+        {
+          "x": -140,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 0,
+      "color": 13287883,
+      "height": 100,
+      "mirror": 1,
+      "name": "Head",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 172,
+          "y": 9
+        },
+        {
+          "x": 187,
+          "y": 15
+        },
+        {
+          "x": 226,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

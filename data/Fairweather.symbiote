@@ -1,0 +1,33 @@
+{
+  "description": "Fairweather seeks value in rest, recuperation and ease.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 14,
+        "amount": 20,
+        "statType": 2
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 14,
+        "amount": 20,
+        "statType": 1
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 14,
+        "amount": 20,
+        "statType": 7
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "Fairweather",
+  "tier": 3
+}
+

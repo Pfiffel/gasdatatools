@@ -1,0 +1,41 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 3465743
+    },
+    {
+      "frac": 750,
+      "value": 3465743
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 2,
+  "maxLifetime": 600,
+  "minLifetime": 400,
+  "name": "Nightsong Heal",
+  "objectType": "Small Cross",
+  "positionTweenType": "EXPOOUT",
+  "randomFinalFacing": 0,
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 450
+    },
+    {
+      "frac": 750,
+      "value": 450
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 16776958,
+  "startScale": 10,
+  "stayLow": 1
+}
+

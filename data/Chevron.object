@@ -1,0 +1,42 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Chevron",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 16777215,
+      "height": 0,
+      "mirror": 1,
+      "name": "Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": -12,
+          "y": 6
+        },
+        {
+          "x": -15,
+          "y": 12
+        },
+        {
+          "x": -9,
+          "y": 15
+        },
+        {
+          "x": 16,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

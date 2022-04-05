@@ -1,0 +1,276 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 25,
+      "name": "Turret Left",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 55,
+          "y": -66
+        }
+      }
+    },
+    {
+      "height": 25,
+      "name": "Turret Right",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 55,
+          "y": 66
+        }
+      }
+    },
+    {
+      "height": 28,
+      "name": "Turret Main",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": -89,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Iron Triumph",
+  "shapes": [
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 1,
+      "color": 8026746,
+      "height": 4,
+      "mirror": 1,
+      "name": "Rear Hoverpod",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -129,
+          "y": 56
+        },
+        {
+          "x": -136,
+          "y": 61
+        },
+        {
+          "x": -134,
+          "y": 80
+        },
+        {
+          "x": -126,
+          "y": 86
+        },
+        {
+          "x": -68,
+          "y": 86
+        },
+        {
+          "x": -58,
+          "y": 81
+        },
+        {
+          "x": -54,
+          "y": 61
+        },
+        {
+          "x": -59,
+          "y": 55
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 1,
+      "color": 8026746,
+      "height": 4,
+      "mirror": 1,
+      "name": "Front Hoverpod",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 15,
+          "y": 89
+        },
+        {
+          "x": 10,
+          "y": 96
+        },
+        {
+          "x": 17,
+          "y": 117
+        },
+        {
+          "x": 23,
+          "y": 122
+        },
+        {
+          "x": 89,
+          "y": 123
+        },
+        {
+          "x": 98,
+          "y": 119
+        },
+        {
+          "x": 104,
+          "y": 94
+        },
+        {
+          "x": 101,
+          "y": 88
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "color": 2894387,
+      "height": 25,
+      "mirror": 1,
+      "name": "Forward Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 78,
+          "y": 20
+        },
+        {
+          "x": 99,
+          "y": 44
+        },
+        {
+          "x": 100,
+          "y": 58
+        },
+        {
+          "x": 87,
+          "y": 100
+        },
+        {
+          "x": 79,
+          "y": 108
+        },
+        {
+          "x": 39,
+          "y": 108
+        },
+        {
+          "x": 30,
+          "y": 101
+        },
+        {
+          "x": 9,
+          "y": 61
+        },
+        {
+          "x": -6,
+          "y": 46
+        },
+        {
+          "x": -48,
+          "y": 36
+        },
+        {
+          "x": -62,
+          "y": 63
+        },
+        {
+          "x": -76,
+          "y": 70
+        },
+        {
+          "x": -118,
+          "y": 70
+        },
+        {
+          "x": -122,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "color": 7935502,
+      "height": 26,
+      "mirror": 1,
+      "name": "Rear Outboard Detail",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -26,
+          "y": 11
+        },
+        {
+          "x": -14,
+          "y": 15
+        },
+        {
+          "x": -25,
+          "y": 41
+        },
+        {
+          "x": -19,
+          "y": 43
+        },
+        {
+          "x": -5,
+          "y": 18
+        },
+        {
+          "x": 15,
+          "y": 13
+        },
+        {
+          "x": 28,
+          "y": 3
+        },
+        {
+          "x": 78,
+          "y": 2
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "color": 2894387,
+      "height": 27,
+      "mirror": 1,
+      "name": "Rear Outboard Detail",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -15,
+          "y": 7
+        },
+        {
+          "x": -2,
+          "y": 11
+        },
+        {
+          "x": 8,
+          "y": 8
+        },
+        {
+          "x": 16,
+          "y": 2
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

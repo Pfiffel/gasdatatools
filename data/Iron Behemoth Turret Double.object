@@ -1,0 +1,199 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "MuzzleR",
+      "pos": {
+        "f": 250,
+        "p": {
+          "x": 25,
+          "y": 30
+        }
+      }
+    },
+    {
+      "height": 0,
+      "name": "MuzzleL",
+      "pos": {
+        "f": -250,
+        "p": {
+          "x": 25,
+          "y": -30
+        }
+      }
+    }
+  ],
+  "bonePivots": [
+    {
+      "name": "Hand",
+      "p": {
+        "x": -9,
+        "y": 55
+      }
+    },
+    {
+      "name": "Foot",
+      "p": {
+        "x": -10,
+        "y": 39
+      }
+    }
+  ],
+  "floppiness": 0,
+  "name": "Iron Behemoth Turret Double",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 1974309,
+      "height": 0,
+      "mirror": 1,
+      "name": "Plate",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 0,
+          "y": 9
+        },
+        {
+          "x": -5,
+          "y": 23
+        },
+        {
+          "x": -16,
+          "y": 34
+        },
+        {
+          "x": -47,
+          "y": 34
+        },
+        {
+          "x": -63,
+          "y": 18
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 1974309,
+      "height": 1,
+      "mirror": 1,
+      "name": "Atttach",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -4,
+          "y": 36
+        },
+        {
+          "x": -14,
+          "y": 26
+        },
+        {
+          "x": -6,
+          "y": 11
+        },
+        {
+          "x": 7,
+          "y": 13
+        },
+        {
+          "x": 5,
+          "y": 22
+        },
+        {
+          "x": 1,
+          "y": 30
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 5066061,
+      "height": 2,
+      "mirror": 1,
+      "name": "Barrel",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -4,
+          "y": 36
+        },
+        {
+          "x": 32,
+          "y": 49
+        },
+        {
+          "x": 36,
+          "y": 46
+        },
+        {
+          "x": 39,
+          "y": 40
+        },
+        {
+          "x": 39,
+          "y": 35
+        },
+        {
+          "x": 7,
+          "y": 13
+        },
+        {
+          "x": 5,
+          "y": 22
+        },
+        {
+          "x": 1,
+          "y": 30
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 5066061,
+      "height": 4,
+      "mirror": 0,
+      "name": "Circle",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -37,
+          "y": -24
+        },
+        {
+          "x": -33,
+          "y": -16
+        },
+        {
+          "x": -37,
+          "y": -8
+        },
+        {
+          "x": -46,
+          "y": -9
+        },
+        {
+          "x": -50,
+          "y": -16
+        },
+        {
+          "x": -46,
+          "y": -23
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

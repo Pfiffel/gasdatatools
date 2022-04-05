@@ -1,0 +1,46 @@
+{
+  "color": 1937769,
+  "groundColors": [
+    3168331,
+    1398339,
+    1262389,
+    676152
+  ],
+  "name": "Swamp Blue",
+  "objects": [
+    {
+      "density": 50,
+      "objectType": "Swamp Mushroom"
+    },
+    {
+      "density": 320,
+      "objectType": "Swamp Minipalm"
+    },
+    {
+      "density": 20,
+      "objectType": "RockSlimy"
+    },
+    {
+      "density": 20,
+      "objectType": "RockSlimy2"
+    },
+    {
+      "density": 20,
+      "objectType": "RockSlimy3"
+    },
+    {
+      "density": 3,
+      "objectType": "Swamp Log"
+    },
+    {
+      "density": 155,
+      "objectType": "Swamp Palm Low"
+    },
+    {
+      "density": 46,
+      "objectType": "Swamp Palm Medium"
+    }
+  ],
+  "regionType": "Swamp Blue"
+}
+

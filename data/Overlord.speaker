@@ -1,0 +1,36 @@
+{
+  "name": "Overlord",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Are you looking for trouble?",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Fight me!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Want a piece of me?",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Think you could take me?",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

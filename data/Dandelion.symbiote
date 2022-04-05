@@ -1,0 +1,22 @@
+{
+  "description": "Dandelion nurtures life everywhere it sprouts.",
+  "effects": [
+    {
+      "data": {
+        "armingTime": 750,
+        "cooldown": 8000,
+        "duration": 15000,
+        "emitterType": "Heal Mine",
+        "explosionType": "Heal Mine",
+        "healing": 250,
+        "objectType": "Heal Mine",
+        "radius": 50
+      },
+      "tag": "PeriodicHealMine"
+    }
+  ],
+  "enemies": [],
+  "name": "Dandelion",
+  "tier": 5
+}
+

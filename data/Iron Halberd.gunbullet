@@ -1,0 +1,9 @@
+{
+  "damage": 100,
+  "emitterType": "Iron Halberd",
+  "name": "Iron Halberd",
+  "objectType": "Iron Halberd Bullet",
+  "soundPack": "Iron Protector Bullet",
+  "speed": 250
+}
+

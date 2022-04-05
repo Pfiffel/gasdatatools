@@ -1,0 +1,16 @@
+{
+  "champion": "Cyclops",
+  "displayName": "Fixer Augment",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 5,
+        "statType": 1
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Cyclops Fixer Augment"
+}
+

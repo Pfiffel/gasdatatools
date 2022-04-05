@@ -1,0 +1,59 @@
+{
+  "credits": 10,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "damage": 50,
+            "delay": 300,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Wasp Grenade",
+            "halfArc": 1800,
+            "mirror": 1,
+            "offset": {
+              "x": 200,
+              "y": 60
+            },
+            "range": 100,
+            "statusEffects": [],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "Twin Grenades"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 2
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "delay": 0,
+            "duration": 300,
+            "emitterType": "Wasp Mines",
+            "mirror": 1,
+            "objectType": "Wasp Mine",
+            "sound": "",
+            "tag": "",
+            "target": {
+              "x": 200,
+              "y": 60
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        },
+        "when": 2
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Naxos Mechanism",
+  "overworldDrop": 0,
+  "precursorTech": 1
+}
+

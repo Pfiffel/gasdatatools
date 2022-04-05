@@ -1,0 +1,36 @@
+{
+  "name": "Lifewillow",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Today we shelter together.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Let us shelter together.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Let me shelter you.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Shelter under my branches.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

@@ -1,0 +1,380 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Hand",
+      "pos": {
+        "f": -120,
+        "p": {
+          "x": 35,
+          "y": 53
+        }
+      }
+    }
+  ],
+  "bonePivots": [
+    {
+      "name": "Hand",
+      "p": {
+        "x": -9,
+        "y": 55
+      }
+    },
+    {
+      "name": "Foot",
+      "p": {
+        "x": -10,
+        "y": 39
+      }
+    }
+  ],
+  "floppiness": 0,
+  "name": "Iron Gladiator",
+  "shapes": [
+    {
+      "bone": "Foot",
+      "clones": [],
+      "closed": 1,
+      "color": 3751250,
+      "height": 0,
+      "mirror": 1,
+      "name": "Foot",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -24,
+          "y": 60
+        },
+        {
+          "x": -2,
+          "y": 59
+        },
+        {
+          "x": 6,
+          "y": 52
+        },
+        {
+          "x": 8,
+          "y": 39
+        },
+        {
+          "x": 0,
+          "y": 35
+        },
+        {
+          "x": -10,
+          "y": 35
+        },
+        {
+          "x": -21,
+          "y": 33
+        },
+        {
+          "x": -32,
+          "y": 39
+        },
+        {
+          "x": -32,
+          "y": 55
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hips",
+      "clones": [],
+      "closed": 0,
+      "color": 4080215,
+      "height": 30,
+      "mirror": 1,
+      "name": "Hips",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 14,
+          "y": 54
+        },
+        {
+          "x": 2,
+          "y": 67
+        },
+        {
+          "x": -24,
+          "y": 64
+        },
+        {
+          "x": -35,
+          "y": 48
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 1,
+      "color": 6975883,
+      "height": 51,
+      "mirror": 1,
+      "name": "Hand",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -33,
+          "y": 49
+        },
+        {
+          "x": -64,
+          "y": 56
+        },
+        {
+          "x": -64,
+          "y": 68
+        },
+        {
+          "x": -33,
+          "y": 76
+        },
+        {
+          "x": -13,
+          "y": 76
+        },
+        {
+          "x": 13,
+          "y": 85
+        },
+        {
+          "x": 56,
+          "y": 85
+        },
+        {
+          "x": 85,
+          "y": 72
+        },
+        {
+          "x": 85,
+          "y": 48
+        },
+        {
+          "x": 56,
+          "y": 41
+        },
+        {
+          "x": 12,
+          "y": 41
+        },
+        {
+          "x": -13,
+          "y": 49
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Shoulders",
+      "clones": [],
+      "closed": 0,
+      "color": 8399399,
+      "height": 80,
+      "mirror": 1,
+      "name": "Shoulders",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 14,
+          "y": 59
+        },
+        {
+          "x": 5,
+          "y": 72
+        },
+        {
+          "x": -25,
+          "y": 72
+        },
+        {
+          "x": -36,
+          "y": 56
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Shoulders",
+      "clones": [],
+      "closed": 1,
+      "color": 7633812,
+      "height": 81,
+      "mirror": 1,
+      "name": "Pauldron",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 5,
+          "y": 41
+        },
+        {
+          "x": 17,
+          "y": 44
+        },
+        {
+          "x": 20,
+          "y": 60
+        },
+        {
+          "x": 20,
+          "y": 68
+        },
+        {
+          "x": 16,
+          "y": 76
+        },
+        {
+          "x": 8,
+          "y": 78
+        },
+        {
+          "x": -27,
+          "y": 78
+        },
+        {
+          "x": -36,
+          "y": 76
+        },
+        {
+          "x": -40,
+          "y": 66
+        },
+        {
+          "x": -41,
+          "y": 47
+        },
+        {
+          "x": -27,
+          "y": 41
+        }
+      ],
+      "useBoneMirror": 0
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 0,
+      "color": 4934746,
+      "height": 95,
+      "mirror": 1,
+      "name": "Faceplate",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 35,
+          "y": 0
+        },
+        {
+          "x": 29,
+          "y": 8
+        },
+        {
+          "x": 20,
+          "y": 16
+        },
+        {
+          "x": 12,
+          "y": 21
+        },
+        {
+          "x": 0,
+          "y": 27
+        },
+        {
+          "x": -6,
+          "y": 25
+        },
+        {
+          "x": -8,
+          "y": 18
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 0,
+      "color": 8225688,
+      "height": 100,
+      "mirror": 1,
+      "name": "Head",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -49,
+          "y": 4
+        },
+        {
+          "x": -54,
+          "y": 9
+        },
+        {
+          "x": -45,
+          "y": 27
+        },
+        {
+          "x": -27,
+          "y": 31
+        },
+        {
+          "x": -9,
+          "y": 31
+        },
+        {
+          "x": 8,
+          "y": 25
+        },
+        {
+          "x": 36,
+          "y": 18
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 0,
+      "color": 8399399,
+      "height": 105,
+      "mirror": 1,
+      "name": "Crest",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -49,
+          "y": 1
+        },
+        {
+          "x": -33,
+          "y": 5
+        },
+        {
+          "x": 12,
+          "y": 5
+        },
+        {
+          "x": 36,
+          "y": 14
+        },
+        {
+          "x": 36,
+          "y": 7
+        },
+        {
+          "x": 21,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

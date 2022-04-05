@@ -1,0 +1,31 @@
+{
+  "name": "Tiger Lily",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "You don't scare me!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I'm not afraid!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I'm not afraid of anything!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

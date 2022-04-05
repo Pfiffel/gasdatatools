@@ -1,0 +1,10 @@
+{
+  "name": "Iron Bulwark Death Cries",
+  "sounds": [
+    "Enemy_BigDeathCry_01",
+    "Enemy_BigDeathCry_02",
+    "Enemy_Bulwark_DeathCry_01"
+  ],
+  "volume": 25
+}
+

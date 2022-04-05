@@ -1,0 +1,12 @@
+{
+  "color": 4743699,
+  "facingJitter": 300,
+  "gap": 90,
+  "name": "Swamp",
+  "objects": [
+    "Swamp Path",
+    "Swamp Path 2"
+  ],
+  "positionJitter": 5
+}
+

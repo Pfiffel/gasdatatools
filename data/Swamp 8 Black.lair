@@ -1,0 +1,35 @@
+{
+  "color": 2305095,
+  "convoyBosses": [
+    "Iron Leviathan",
+    "Iron Colossus",
+    "Iron Behemoth",
+    "Iron Juggernaut"
+  ],
+  "convoyPeriodSeconds": 250,
+  "eventBossPeriodSeconds": 600,
+  "eventBosses": [],
+  "maxEventBosses": 1,
+  "monsterSquareSide": 315,
+  "monsters": [
+    {
+      "count": 100,
+      "name": "Iron Conqueror"
+    },
+    {
+      "count": 100,
+      "name": "Iron Triumph"
+    },
+    {
+      "count": 25,
+      "name": "Iron Acropolis"
+    },
+    {
+      "count": 25,
+      "name": "Iron Praefectus"
+    }
+  ],
+  "name": "Swamp 8 Black",
+  "noRespawn": 0
+}
+

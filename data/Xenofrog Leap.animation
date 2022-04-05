@@ -1,0 +1,95 @@
+{
+  "keyFrames": [
+    {
+      "bonePositions": [
+        {
+          "bone": "Arm",
+          "rot": 0,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Arm Mirror",
+          "rot": 0,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Body",
+          "rot": 0,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Head",
+          "rot": 0,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Leg",
+          "rot": 0,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Leg Mirror",
+          "rot": 0,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 0,
+      "tag": ""
+    },
+    {
+      "bonePositions": [
+        {
+          "bone": "Arm",
+          "rot": -500,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Arm Mirror",
+          "rot": 500,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Head",
+          "rot": 0,
+          "x": 14,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Leg",
+          "rot": 700,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Leg Mirror",
+          "rot": -700,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 200,
+      "tag": ""
+    }
+  ],
+  "name": "Xenofrog Leap"
+}
+

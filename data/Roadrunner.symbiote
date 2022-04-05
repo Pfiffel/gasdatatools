@@ -1,0 +1,33 @@
+{
+  "description": "Roadrunner draws strength from haste.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 13,
+        "amount": 25,
+        "statType": 1
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 13,
+        "amount": 25,
+        "statType": 2
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 13,
+        "amount": 25,
+        "statType": 7
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "Roadrunner",
+  "tier": 1
+}
+

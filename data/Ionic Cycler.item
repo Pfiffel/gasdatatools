@@ -1,0 +1,17 @@
+{
+  "credits": 1,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 10,
+        "statType": 6
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Ionic Cycler",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

@@ -1,0 +1,17 @@
+{
+  "credits": 6,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 18,
+        "statType": 4
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Duality Capacitor",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

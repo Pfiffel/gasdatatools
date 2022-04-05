@@ -1,0 +1,71 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 69,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Iron Protector Turret",
+  "shapes": [
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "color": 9934741,
+      "height": 3,
+      "mirror": 1,
+      "name": "Turret",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 70,
+          "y": 8
+        },
+        {
+          "x": 10,
+          "y": 12
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "color": 2894387,
+      "height": 4,
+      "mirror": 1,
+      "name": "Housing",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 19,
+          "y": 14
+        },
+        {
+          "x": 10,
+          "y": 24
+        },
+        {
+          "x": -14,
+          "y": 21
+        },
+        {
+          "x": -24,
+          "y": 9
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

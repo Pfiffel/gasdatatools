@@ -1,0 +1,50 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Gun RoF Glyph",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 13029173,
+      "height": 0,
+      "mirror": 1,
+      "name": "Glyph",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 6,
+          "y": 4
+        },
+        {
+          "x": 12,
+          "y": 5
+        },
+        {
+          "x": 18,
+          "y": 9
+        },
+        {
+          "x": 12,
+          "y": 13
+        },
+        {
+          "x": 6,
+          "y": 14
+        },
+        {
+          "x": -15,
+          "y": 14
+        },
+        {
+          "x": -15,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

@@ -1,0 +1,46 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Trigger Cost Glyph",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 13403944,
+      "height": 0,
+      "mirror": 0,
+      "name": "Glyph",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 5,
+          "y": 0
+        },
+        {
+          "x": 5,
+          "y": 15
+        },
+        {
+          "x": -34,
+          "y": -5
+        },
+        {
+          "x": -5,
+          "y": 0
+        },
+        {
+          "x": -5,
+          "y": -15
+        },
+        {
+          "x": 34,
+          "y": 5
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

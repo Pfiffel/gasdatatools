@@ -1,0 +1,195 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Sharklet",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 5068637,
+      "height": 53,
+      "mirror": 1,
+      "name": "Sharklet",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 12,
+          "y": 25
+        },
+        {
+          "x": -1,
+          "y": 25
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 1456501,
+      "height": 53,
+      "mirror": 1,
+      "name": "Sharklet",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 16,
+          "y": 20
+        },
+        {
+          "x": 20,
+          "y": 23
+        },
+        {
+          "x": 15,
+          "y": 29
+        },
+        {
+          "x": 7,
+          "y": 37
+        },
+        {
+          "x": -5,
+          "y": 42
+        },
+        {
+          "x": -7,
+          "y": 20
+        },
+        {
+          "x": 5,
+          "y": 19
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 5068637,
+      "height": 53,
+      "mirror": 1,
+      "name": "Sharklet",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -30,
+          "y": 12
+        },
+        {
+          "x": -48,
+          "y": 14
+        },
+        {
+          "x": -44,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 1456501,
+      "height": 59,
+      "mirror": 1,
+      "name": "Sharklet",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 38,
+          "y": 1
+        },
+        {
+          "x": 31,
+          "y": 8
+        },
+        {
+          "x": 20,
+          "y": 14
+        },
+        {
+          "x": 3,
+          "y": 15
+        },
+        {
+          "x": -10,
+          "y": 13
+        },
+        {
+          "x": -26,
+          "y": 9
+        },
+        {
+          "x": -40,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 6656181,
+      "height": 61,
+      "mirror": 1,
+      "name": "Sharklet",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -23,
+          "y": 1
+        },
+        {
+          "x": -31,
+          "y": 3
+        },
+        {
+          "x": -37,
+          "y": 2
+        },
+        {
+          "x": -42,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 6656181,
+      "height": 61,
+      "mirror": 1,
+      "name": "Sharklet",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 19,
+          "y": 5
+        },
+        {
+          "x": 11,
+          "y": 7
+        },
+        {
+          "x": 5,
+          "y": 6
+        },
+        {
+          "x": 0,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

@@ -1,0 +1,8 @@
+{
+  "name": "Iron Leviathan Death Cries",
+  "sounds": [
+    "Enemy_IronLeviathan_DeathCry"
+  ],
+  "volume": 300
+}
+

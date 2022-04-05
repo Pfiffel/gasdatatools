@@ -1,0 +1,44 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 7962112
+    },
+    {
+      "frac": 500,
+      "value": 8404736
+    },
+    {
+      "frac": 750,
+      "value": 8388608
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 500,
+  "minLifetime": 400,
+  "name": "Iron Bulwark",
+  "objectType": "Small Hex",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 250
+    },
+    {
+      "frac": 500,
+      "value": 250
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 8355711,
+  "startScale": 10,
+  "stayLow": 0
+}
+

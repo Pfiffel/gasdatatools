@@ -1,0 +1,17 @@
+{
+  "name": "Iron Hammer Bullet",
+  "sounds": [
+    "Enemy_BiggerGun_A_01",
+    "Enemy_BiggerGun_A_02",
+    "Enemy_BiggerGun_A_03",
+    "Enemy_BiggerGun_A_04",
+    "Enemy_BiggerGun_A_05",
+    "Enemy_BiggerGun_A_06",
+    "Enemy_BiggerGun_A_07",
+    "Enemy_BiggerGun_A_08",
+    "Enemy_BiggerGun_A_09",
+    "Enemy_BiggerGun_A_10"
+  ],
+  "volume": 50
+}
+

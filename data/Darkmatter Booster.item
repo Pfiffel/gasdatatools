@@ -1,0 +1,17 @@
+{
+  "credits": 7,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 11,
+        "statType": 0
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Darkmatter Booster",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

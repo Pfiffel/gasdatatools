@@ -1,0 +1,23 @@
+{
+  "description": "Blind Shepherd protects his flock from all dangers.",
+  "effects": [
+    {
+      "data": {
+        "amount": 100,
+        "statType": 7
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "amount": 100,
+        "statType": 1
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "Blind Shepherd",
+  "tier": 1
+}
+

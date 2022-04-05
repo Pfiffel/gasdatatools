@@ -1,0 +1,46 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Heal Mine",
+  "shapes": [
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "color": 1097234,
+      "height": 10,
+      "mirror": 1,
+      "name": "Cross",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 41,
+          "y": 8
+        },
+        {
+          "x": 10,
+          "y": 8
+        },
+        {
+          "x": 10,
+          "y": 41
+        },
+        {
+          "x": -9,
+          "y": 41
+        },
+        {
+          "x": -9,
+          "y": 8
+        },
+        {
+          "x": -41,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

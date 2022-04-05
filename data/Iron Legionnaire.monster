@@ -1,0 +1,35 @@
+{
+  "collisionRadius": 25,
+  "deathCrySoundPack": "Iron Legionnaire Death Cries",
+  "drops": [],
+  "healRate": 0,
+  "hp": 240,
+  "idleAnimation": "BaseArcher Idle",
+  "name": "Iron Legionnaire",
+  "objectType": "Iron Legionnaire",
+  "runAnimation": "BaseArcher Run",
+  "runSpeed": 75,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 750,
+      "objectType": "Iron Legionnaire Turret",
+      "params": {
+        "data": {
+          "aimed": 1,
+          "cooldown": 1500,
+          "gunBulletType": "Iron Protector",
+          "leading": 0,
+          "numProjectiles": 1,
+          "range": 500
+        },
+        "tag": "GunParams"
+      }
+    }
+  ],
+  "xp": 9,
+  "xpLevelCap": 19
+}
+

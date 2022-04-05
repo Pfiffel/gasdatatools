@@ -1,0 +1,231 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "MuzzleR",
+      "pos": {
+        "f": 500,
+        "p": {
+          "x": 24,
+          "y": 69
+        }
+      }
+    },
+    {
+      "height": 0,
+      "name": "MuzzleL",
+      "pos": {
+        "f": -500,
+        "p": {
+          "x": 24,
+          "y": -69
+        }
+      }
+    },
+    {
+      "height": 0,
+      "name": "Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 58,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [
+    {
+      "name": "Hand",
+      "p": {
+        "x": -9,
+        "y": 55
+      }
+    },
+    {
+      "name": "Foot",
+      "p": {
+        "x": -10,
+        "y": 39
+      }
+    }
+  ],
+  "floppiness": 0,
+  "name": "Iron Behemoth Turret Triple",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 3092271,
+      "height": 0,
+      "mirror": 1,
+      "name": "Plate",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 17,
+          "y": 10
+        },
+        {
+          "x": 6,
+          "y": 35
+        },
+        {
+          "x": -7,
+          "y": 46
+        },
+        {
+          "x": -33,
+          "y": 46
+        },
+        {
+          "x": -49,
+          "y": 28
+        },
+        {
+          "x": -55,
+          "y": 11
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 1974309,
+      "height": 1,
+      "mirror": 1,
+      "name": "Atttach",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 27,
+          "y": 4
+        },
+        {
+          "x": 25,
+          "y": 13
+        },
+        {
+          "x": 11,
+          "y": 9
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 1974309,
+      "height": 1,
+      "mirror": 1,
+      "name": "Atttach",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -8,
+          "y": 51
+        },
+        {
+          "x": -13,
+          "y": 38
+        },
+        {
+          "x": 0,
+          "y": 27
+        },
+        {
+          "x": 12,
+          "y": 35
+        },
+        {
+          "x": 6,
+          "y": 42
+        },
+        {
+          "x": -1,
+          "y": 48
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 5066061,
+      "height": 2,
+      "mirror": 1,
+      "name": "Barrel",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 27,
+          "y": 4
+        },
+        {
+          "x": 25,
+          "y": 13
+        },
+        {
+          "x": 63,
+          "y": 7
+        },
+        {
+          "x": 65,
+          "y": 2
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 5066061,
+      "height": 2,
+      "mirror": 1,
+      "name": "Barrel",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -8,
+          "y": 51
+        },
+        {
+          "x": 20,
+          "y": 77
+        },
+        {
+          "x": 25,
+          "y": 76
+        },
+        {
+          "x": 30,
+          "y": 72
+        },
+        {
+          "x": 32,
+          "y": 67
+        },
+        {
+          "x": 12,
+          "y": 35
+        },
+        {
+          "x": 6,
+          "y": 42
+        },
+        {
+          "x": -1,
+          "y": 48
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

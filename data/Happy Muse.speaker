@@ -1,0 +1,36 @@
+{
+  "name": "Happy Muse",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Come with me!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Come on, let's go!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I can't wait to get started!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Come friend, let us take action.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

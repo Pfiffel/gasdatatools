@@ -1,0 +1,52 @@
+{
+  "description": "Tentacle exacts revenge for every slight.",
+  "effects": [
+    {
+      "data": {
+        "range": 280,
+        "statusEffects": [
+          {
+            "data": {
+              "damage": 30
+            },
+            "tag": "DamageEffect"
+          },
+          {
+            "data": {
+              "duration": 1000
+            },
+            "tag": "StunEffect"
+          },
+          {
+            "data": {
+              "arcOffset": 0,
+              "halfArc": 300,
+              "maxDist": 6,
+              "minDist": 3,
+              "particleType": "Tentacle Zap",
+              "spacing": 20
+            },
+            "tag": "ParticleLineEffect"
+          },
+          {
+            "data": {
+              "arcOffset": 0,
+              "halfArc": 100,
+              "maxDist": 6,
+              "minDist": 3,
+              "particleType": "Tentacle Zap 2",
+              "spacing": 50
+            },
+            "tag": "ParticleLineEffect"
+          }
+        ],
+        "when": 11
+      },
+      "tag": "TriggeredRandomTargetEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Tentacle",
+  "tier": 2
+}
+

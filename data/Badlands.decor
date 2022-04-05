@@ -1,0 +1,31 @@
+{
+  "color": 13610263,
+  "name": "Badlands",
+  "objects": [
+    {
+      "density": 1,
+      "objectType": "SkeletonLizard"
+    },
+    {
+      "density": 52,
+      "objectType": "RockDebris"
+    },
+    {
+      "density": 10,
+      "objectType": "Bone Shard"
+    },
+    {
+      "density": 10,
+      "objectType": "Bone Shard2"
+    },
+    {
+      "density": 67,
+      "objectType": "RockDebris2"
+    },
+    {
+      "density": 1,
+      "objectType": "Skull"
+    }
+  ]
+}
+

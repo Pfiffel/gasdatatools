@@ -1,0 +1,29 @@
+{
+  "layers": [
+    {
+      "angularDensity": 40,
+      "maxDistPercent": 100,
+      "minDistPercent": 97,
+      "particleType": "Mako Jaws",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 20,
+      "maxDistPercent": 75,
+      "minDistPercent": 67,
+      "particleType": "Mako Jaws",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 15,
+      "maxDistPercent": 45,
+      "minDistPercent": 40,
+      "particleType": "Mako Jaws",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Mako Jaws",
+  "sound": "Player_Warthog_StunWarp_Stun",
+  "volume": 100
+}
+

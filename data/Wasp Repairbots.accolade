@@ -1,0 +1,23 @@
+{
+  "champion": "Wasp",
+  "displayName": "Repairbots",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "healAmount": 50,
+            "usePercentInTooltip": 0
+          },
+          "tag": "HealTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Wasp 3 Heal",
+        "tooltip": "On Phase Negation:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Wasp Repairbots"
+}
+

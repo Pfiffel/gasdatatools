@@ -1,0 +1,29 @@
+{
+  "color": 13395752,
+  "groundColors": [
+    9457961,
+    6171136,
+    8738074
+  ],
+  "name": "Swamp Orange",
+  "objects": [
+    {
+      "density": 418,
+      "objectType": "Swamp Acid Tuft"
+    },
+    {
+      "density": 149,
+      "objectType": "Swamp Acid Tuft Small"
+    },
+    {
+      "density": 36,
+      "objectType": "Swamp Acid Rocks"
+    },
+    {
+      "density": 36,
+      "objectType": "Swamp Acid Rock"
+    }
+  ],
+  "regionType": "Swamp Orange"
+}
+

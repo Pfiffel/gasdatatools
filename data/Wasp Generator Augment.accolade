@@ -1,0 +1,16 @@
+{
+  "champion": "Wasp",
+  "displayName": "Generator Augment",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 5,
+        "statType": 9
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Wasp Generator Augment"
+}
+

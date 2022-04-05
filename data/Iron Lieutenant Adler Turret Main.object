@@ -1,0 +1,252 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 13,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Iron Lieutenant Adler Turret Main",
+  "shapes": [
+    {
+      "bone": "Turret",
+      "clones": [
+        {
+          "pos": {
+            "f": -300,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 300,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 600,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": -600,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "color": 4605510,
+      "height": 1,
+      "mirror": 1,
+      "name": "Muzzle",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 48,
+          "y": 4
+        },
+        {
+          "x": 44,
+          "y": 5
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [
+        {
+          "pos": {
+            "f": 600,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 300,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": -300,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": -600,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "color": 7763574,
+      "height": 1,
+      "mirror": 1,
+      "name": "Barrel",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 44,
+          "y": 5
+        },
+        {
+          "x": 24,
+          "y": 7
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "color": 14661632,
+      "height": 2,
+      "mirror": 1,
+      "name": "Base",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 29,
+          "y": 2
+        },
+        {
+          "x": 27,
+          "y": 11
+        },
+        {
+          "x": 22,
+          "y": 19
+        },
+        {
+          "x": 14,
+          "y": 25
+        },
+        {
+          "x": 5,
+          "y": 28
+        },
+        {
+          "x": -4,
+          "y": 28
+        },
+        {
+          "x": -16,
+          "y": 24
+        },
+        {
+          "x": -22,
+          "y": 18
+        },
+        {
+          "x": -25,
+          "y": 13
+        },
+        {
+          "x": -28,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "color": 4605510,
+      "height": 3,
+      "mirror": 1,
+      "name": "Housing",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 16,
+          "y": 0
+        },
+        {
+          "x": 14,
+          "y": 7
+        },
+        {
+          "x": 8,
+          "y": 13
+        },
+        {
+          "x": 0,
+          "y": 16
+        },
+        {
+          "x": -8,
+          "y": 13
+        },
+        {
+          "x": -14,
+          "y": 7
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "color": 7763574,
+      "height": 4,
+      "mirror": 1,
+      "name": "Counterweight",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -10,
+          "y": 8
+        },
+        {
+          "x": -25,
+          "y": 13
+        },
+        {
+          "x": -28,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

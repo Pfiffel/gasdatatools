@@ -1,0 +1,99 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Juktas Bullet",
+  "shapes": [
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "color": 12259767,
+      "height": 60,
+      "mirror": 1,
+      "name": "Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 29,
+          "y": 0
+        },
+        {
+          "x": 25,
+          "y": 7
+        },
+        {
+          "x": 11,
+          "y": 11
+        },
+        {
+          "x": 6,
+          "y": 23
+        },
+        {
+          "x": -3,
+          "y": 28
+        },
+        {
+          "x": -7,
+          "y": 21
+        },
+        {
+          "x": -9,
+          "y": 10
+        },
+        {
+          "x": -23,
+          "y": 7
+        },
+        {
+          "x": -37,
+          "y": 7
+        },
+        {
+          "x": -67,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "color": 16730359,
+      "height": 62,
+      "mirror": 1,
+      "name": "Inner",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 21,
+          "y": 0
+        },
+        {
+          "x": 7,
+          "y": 5
+        },
+        {
+          "x": 2,
+          "y": 17
+        },
+        {
+          "x": -1,
+          "y": 19
+        },
+        {
+          "x": -4,
+          "y": 4
+        },
+        {
+          "x": -25,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

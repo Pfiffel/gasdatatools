@@ -1,0 +1,215 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Turret Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 36,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [
+    {
+      "name": "Turret",
+      "p": {
+        "x": 3,
+        "y": 0
+      }
+    }
+  ],
+  "floppiness": 0,
+  "name": "Warthog",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 16771535,
+      "height": 7,
+      "mirror": 1,
+      "name": "Tusks",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -28,
+          "y": 27
+        },
+        {
+          "x": -24,
+          "y": 44
+        },
+        {
+          "x": -28,
+          "y": 61
+        },
+        {
+          "x": -14,
+          "y": 54
+        },
+        {
+          "x": -5,
+          "y": 45
+        },
+        {
+          "x": -5,
+          "y": 27
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 16771535,
+      "height": 7,
+      "mirror": 1,
+      "name": "Tusks",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 3,
+          "y": 19
+        },
+        {
+          "x": 8,
+          "y": 35
+        },
+        {
+          "x": 6,
+          "y": 52
+        },
+        {
+          "x": 26,
+          "y": 37
+        },
+        {
+          "x": 26,
+          "y": 19
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 7618581,
+      "height": 16,
+      "mirror": 1,
+      "name": "Mid Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 45,
+          "y": 12
+        },
+        {
+          "x": 35,
+          "y": 24
+        },
+        {
+          "x": -30,
+          "y": 38
+        },
+        {
+          "x": -37,
+          "y": 35
+        },
+        {
+          "x": -37,
+          "y": 15
+        },
+        {
+          "x": -30,
+          "y": 9
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "color": 16771535,
+      "height": 22,
+      "mirror": 1,
+      "name": "Main Gun",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 36,
+          "y": 8
+        },
+        {
+          "x": 15,
+          "y": 12
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "color": 11300931,
+      "height": 24,
+      "mirror": 1,
+      "name": "Turret",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -23,
+          "y": 13
+        },
+        {
+          "x": -17,
+          "y": 18
+        },
+        {
+          "x": -9,
+          "y": 18
+        },
+        {
+          "x": 18,
+          "y": 15
+        },
+        {
+          "x": 21,
+          "y": 11
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "color": 16771535,
+      "height": 26,
+      "mirror": 1,
+      "name": "Turret Detail",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 8,
+          "y": 4
+        },
+        {
+          "x": 2,
+          "y": 8
+        },
+        {
+          "x": -14,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

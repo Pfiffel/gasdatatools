@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 900,
+      "value": 6656181
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 300,
+  "minLifetime": 300,
+  "name": "Mako Laser Beams Blast",
+  "objectType": "Mako Laser Beams Particle",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 350
+    },
+    {
+      "frac": 800,
+      "value": 400
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 6656181,
+  "startScale": 10,
+  "stayLow": 1
+}
+

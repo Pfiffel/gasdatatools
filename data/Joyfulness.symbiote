@@ -1,0 +1,26 @@
+{
+  "description": "Joyfulness bolsters and protects.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "glyphCount": 6,
+            "glyphDuration": 700,
+            "glyphRadius": 55,
+            "glyphType": "Axeraider Unstoppable Glyph",
+            "refillPercentage": 40,
+            "shieldIndex": -1
+          },
+          "tag": "ShieldRefillTrigger"
+        },
+        "when": 3
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Joyfulness",
+  "tier": 4
+}
+

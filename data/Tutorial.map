@@ -1,0 +1,627 @@
+{
+  "beacons": [],
+  "brambles": [],
+  "groundPoints": [
+    {
+      "color": 10754586,
+      "p": {
+        "x": -6450,
+        "y": -6727
+      }
+    },
+    {
+      "color": 2000384,
+      "p": {
+        "x": 6750,
+        "y": -6529
+      }
+    },
+    {
+      "color": 12096002,
+      "p": {
+        "x": 6666,
+        "y": 6810
+      }
+    },
+    {
+      "color": 7481548,
+      "p": {
+        "x": -6675,
+        "y": 6445
+      }
+    }
+  ],
+  "lanes": [],
+  "mapObjects": [
+    {
+      "label": "Welcome to Galactic Assault Squad!",
+      "note": "",
+      "objectType": "Invisible Marker",
+      "p": {
+        "x": -168,
+        "y": 5396
+      }
+    },
+    {
+      "label": "Use W A S D to drive your hovertank",
+      "note": "",
+      "objectType": "Invisible Marker",
+      "p": {
+        "x": -176,
+        "y": 5221
+      }
+    },
+    {
+      "label": "Use R to instantly escape to safety",
+      "note": "",
+      "objectType": "Invisible Marker",
+      "p": {
+        "x": 14,
+        "y": 4337
+      }
+    },
+    {
+      "label": "Try it now!",
+      "note": "",
+      "objectType": "Invisible Marker",
+      "p": {
+        "x": -71,
+        "y": 4168
+      }
+    },
+    {
+      "label": "Come this way!",
+      "note": "",
+      "objectType": "Invisible Marker",
+      "p": {
+        "x": -253,
+        "y": 3801
+      }
+    },
+    {
+      "label": "Training drones ahead!",
+      "note": "",
+      "objectType": "Invisible Marker",
+      "p": {
+        "x": -164,
+        "y": 3277
+      }
+    },
+    {
+      "label": "Awesome job!",
+      "note": "",
+      "objectType": "Invisible Marker",
+      "p": {
+        "x": 14,
+        "y": 2250
+      }
+    },
+    {
+      "label": "",
+      "note": "Overworld Warp",
+      "objectType": "Portal",
+      "p": {
+        "x": 400,
+        "y": -3519
+      }
+    },
+    {
+      "label": "Use Q & E to scoot left or right",
+      "note": "",
+      "objectType": "Invisible Marker",
+      "p": {
+        "x": -143,
+        "y": 1067
+      }
+    },
+    {
+      "label": "Nice!",
+      "note": "",
+      "objectType": "Invisible Marker",
+      "p": {
+        "x": -382,
+        "y": -504
+      }
+    },
+    {
+      "label": "Autofire!",
+      "note": "",
+      "objectType": "Invisible Marker",
+      "p": {
+        "x": -59,
+        "y": 2883
+      }
+    },
+    {
+      "label": "Lots  of drones ahead!",
+      "note": "",
+      "objectType": "Invisible Marker",
+      "p": {
+        "x": -466,
+        "y": -883
+      }
+    },
+    {
+      "label": "",
+      "note": "Spawn: Training Drone Mk 1 Base",
+      "objectType": "Invisible Marker",
+      "p": {
+        "x": -37,
+        "y": 2776
+      }
+    },
+    {
+      "label": "",
+      "note": "Spawn: Training Drone Mk 2 Base",
+      "objectType": "Invisible Marker",
+      "p": {
+        "x": -71,
+        "y": 28
+      }
+    },
+    {
+      "label": "Drive over the teleporter ahead!",
+      "note": "",
+      "objectType": "Invisible Marker",
+      "p": {
+        "x": 249,
+        "y": -3061
+      }
+    },
+    {
+      "label": "Teleport to Planet Quagmire",
+      "note": "",
+      "objectType": "Invisible Marker",
+      "p": {
+        "x": 405,
+        "y": -3466
+      }
+    },
+    {
+      "label": "Come this way!",
+      "note": "",
+      "objectType": "Invisible Marker",
+      "p": {
+        "x": -79,
+        "y": 4687
+      }
+    },
+    {
+      "label": "These drones shoot!",
+      "note": "",
+      "objectType": "Invisible Marker",
+      "p": {
+        "x": 98,
+        "y": 354
+      }
+    },
+    {
+      "label": "Excellent work!",
+      "note": "",
+      "objectType": "Invisible Marker",
+      "p": {
+        "x": 53,
+        "y": -2696
+      }
+    },
+    {
+      "label": "Blast em!",
+      "note": "",
+      "objectType": "Invisible Marker",
+      "p": {
+        "x": -444,
+        "y": -1319
+      }
+    },
+    {
+      "label": "Hit F to pause anytime",
+      "note": "",
+      "objectType": "Invisible Marker",
+      "p": {
+        "x": -178,
+        "y": 1912
+      }
+    },
+    {
+      "label": "Try it now!",
+      "note": "",
+      "objectType": "Invisible Marker",
+      "p": {
+        "x": -250,
+        "y": 1816
+      }
+    },
+    {
+      "label": "",
+      "note": "Spawn: Training Drone Mk 3 Base",
+      "objectType": "Invisible Marker",
+      "p": {
+        "x": -246,
+        "y": -1893
+      }
+    },
+    {
+      "label": "Come this way!",
+      "note": "",
+      "objectType": "Invisible Marker",
+      "p": {
+        "x": -548,
+        "y": 1254
+      }
+    },
+    {
+      "label": "More drones ahead!",
+      "note": "",
+      "objectType": "Invisible Marker",
+      "p": {
+        "x": 210,
+        "y": 712
+      }
+    },
+    {
+      "label": "There is nothing up here!",
+      "note": "",
+      "objectType": "Invisible Marker",
+      "p": {
+        "x": 761,
+        "y": -5799
+      }
+    },
+    {
+      "label": "Wrong way!",
+      "note": "",
+      "objectType": "Invisible Marker",
+      "p": {
+        "x": 550,
+        "y": -4915
+      }
+    }
+  ],
+  "mapRadius": 6000,
+  "miniBosses": [],
+  "monsterFields": [],
+  "name": "Tutorial",
+  "patches": [],
+  "quest": {
+    "bossKillTime": 300000,
+    "bossMonsterName": "",
+    "postKillBaskTime": 60000,
+    "spawnAreaRadius": 800,
+    "spawnPoints": [],
+    "toKill": []
+  },
+  "regions": [
+    {
+      "poly": [
+        {
+          "x": -3715,
+          "y": 4379
+        },
+        {
+          "x": -3541,
+          "y": 4274
+        },
+        {
+          "x": -3350,
+          "y": 4296
+        },
+        {
+          "x": -3066,
+          "y": 4442
+        },
+        {
+          "x": -3215,
+          "y": 4526
+        },
+        {
+          "x": -3515,
+          "y": 4469
+        }
+      ],
+      "regionType": "Swamp"
+    },
+    {
+      "poly": [
+        {
+          "x": -6664,
+          "y": -6586
+        },
+        {
+          "x": 407,
+          "y": -6387
+        },
+        {
+          "x": 267,
+          "y": -5022
+        },
+        {
+          "x": 179,
+          "y": -3845
+        },
+        {
+          "x": -80,
+          "y": -2880
+        },
+        {
+          "x": -247,
+          "y": -2714
+        },
+        {
+          "x": -288,
+          "y": -2423
+        },
+        {
+          "x": -524,
+          "y": -2239
+        },
+        {
+          "x": -640,
+          "y": -1837
+        },
+        {
+          "x": -560,
+          "y": -1392
+        },
+        {
+          "x": -849,
+          "y": -1278
+        },
+        {
+          "x": -808,
+          "y": -871
+        },
+        {
+          "x": -671,
+          "y": -390
+        },
+        {
+          "x": -318,
+          "y": 232
+        },
+        {
+          "x": -76,
+          "y": 464
+        },
+        {
+          "x": -32,
+          "y": 713
+        },
+        {
+          "x": -564,
+          "y": 997
+        },
+        {
+          "x": -789,
+          "y": 1167
+        },
+        {
+          "x": -789,
+          "y": 1518
+        },
+        {
+          "x": -575,
+          "y": 1763
+        },
+        {
+          "x": -310,
+          "y": 2132
+        },
+        {
+          "x": -239,
+          "y": 2336
+        },
+        {
+          "x": -125,
+          "y": 2451
+        },
+        {
+          "x": -252,
+          "y": 2617
+        },
+        {
+          "x": -266,
+          "y": 2919
+        },
+        {
+          "x": -455,
+          "y": 3087
+        },
+        {
+          "x": -423,
+          "y": 3934
+        },
+        {
+          "x": -409,
+          "y": 4201
+        },
+        {
+          "x": -156,
+          "y": 4527
+        },
+        {
+          "x": -219,
+          "y": 4647
+        },
+        {
+          "x": -419,
+          "y": 4829
+        },
+        {
+          "x": -698,
+          "y": 5403
+        },
+        {
+          "x": -597,
+          "y": 8030
+        },
+        {
+          "x": -6854,
+          "y": 7820
+        }
+      ],
+      "regionType": "Swamp"
+    },
+    {
+      "poly": [
+        {
+          "x": 523,
+          "y": 776
+        },
+        {
+          "x": 365,
+          "y": 256
+        },
+        {
+          "x": 223,
+          "y": -58
+        },
+        {
+          "x": 16,
+          "y": -353
+        },
+        {
+          "x": -199,
+          "y": -768
+        },
+        {
+          "x": -141,
+          "y": -1139
+        },
+        {
+          "x": -297,
+          "y": -1352
+        },
+        {
+          "x": -54,
+          "y": -1475
+        },
+        {
+          "x": 68,
+          "y": -1661
+        },
+        {
+          "x": 144,
+          "y": -1913
+        },
+        {
+          "x": 74,
+          "y": -2411
+        },
+        {
+          "x": 331,
+          "y": -2706
+        },
+        {
+          "x": 742,
+          "y": -3578
+        },
+        {
+          "x": 719,
+          "y": -4682
+        },
+        {
+          "x": 1218,
+          "y": -6348
+        },
+        {
+          "x": 7488,
+          "y": -6886
+        },
+        {
+          "x": 7519,
+          "y": 7488
+        },
+        {
+          "x": 269,
+          "y": 7947
+        },
+        {
+          "x": 406,
+          "y": 5540
+        },
+        {
+          "x": 270,
+          "y": 5205
+        },
+        {
+          "x": 41,
+          "y": 4932
+        },
+        {
+          "x": 90,
+          "y": 4706
+        },
+        {
+          "x": 244,
+          "y": 4511
+        },
+        {
+          "x": 293,
+          "y": 4300
+        },
+        {
+          "x": 215,
+          "y": 4001
+        },
+        {
+          "x": -87,
+          "y": 3880
+        },
+        {
+          "x": -75,
+          "y": 3627
+        },
+        {
+          "x": 55,
+          "y": 3357
+        },
+        {
+          "x": 103,
+          "y": 3017
+        },
+        {
+          "x": 214,
+          "y": 2864
+        },
+        {
+          "x": 157,
+          "y": 2525
+        },
+        {
+          "x": 210,
+          "y": 2217
+        },
+        {
+          "x": 74,
+          "y": 1986
+        },
+        {
+          "x": -78,
+          "y": 1679
+        },
+        {
+          "x": -369,
+          "y": 1393
+        },
+        {
+          "x": -307,
+          "y": 1285
+        },
+        {
+          "x": 154,
+          "y": 1286
+        }
+      ],
+      "regionType": "Swamp"
+    }
+  ],
+  "rocks": [],
+  "spawnPoints": [
+    {
+      "x": -144,
+      "y": 5532
+    }
+  ],
+  "trees": []
+}
+

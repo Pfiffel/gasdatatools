@@ -1,0 +1,36 @@
+{
+  "name": "Athena",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Hold fast with me!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Hold course!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Forward!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Stay the course!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

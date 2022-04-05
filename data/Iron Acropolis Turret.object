@@ -1,0 +1,86 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 66,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [
+    {
+      "name": "Hand",
+      "p": {
+        "x": -9,
+        "y": 55
+      }
+    },
+    {
+      "name": "Foot",
+      "p": {
+        "x": -10,
+        "y": 39
+      }
+    }
+  ],
+  "floppiness": 0,
+  "name": "Iron Acropolis Turret",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 8026746,
+      "height": 5,
+      "mirror": 1,
+      "name": "Barrel",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 51,
+          "y": 10
+        },
+        {
+          "x": 11,
+          "y": 14
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 6229512,
+      "height": 7,
+      "mirror": 1,
+      "name": "Housing",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 22,
+          "y": 15
+        },
+        {
+          "x": 3,
+          "y": 26
+        },
+        {
+          "x": -19,
+          "y": 31
+        },
+        {
+          "x": -34,
+          "y": 15
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

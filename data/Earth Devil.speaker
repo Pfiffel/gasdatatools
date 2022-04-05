@@ -1,0 +1,36 @@
+{
+  "name": "Earth Devil",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "This is gonna be fun!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Now we're really going to cause some trouble!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Oh boy oh boy! Let's go!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "You've got a live one!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

@@ -1,0 +1,36 @@
+{
+  "name": "Blind Shepherd",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "True protection does not rely on mere sight.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "My sight is nothing, and everything.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I see nothing; I see all.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I see every flock on every world.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

@@ -1,0 +1,22 @@
+{
+  "champion": "Cyclops",
+  "displayName": "Prolonged Vision",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "amount": 0,
+            "duration": 2000
+          },
+          "tag": "StatBoostTriggerBonus"
+        },
+        "tag": "Cyclops 4 StatBoost",
+        "tooltip": "On All-Seeing Eye:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Cyclops Prolonged Vision"
+}
+

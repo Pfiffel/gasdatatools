@@ -1,0 +1,36 @@
+{
+  "name": "Turtleshell",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Well hello there!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Here we are!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Hi there!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Okay!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

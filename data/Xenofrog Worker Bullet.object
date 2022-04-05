@@ -1,0 +1,87 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Xenofrog Worker Bullet",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 12303291,
+      "height": 109,
+      "mirror": 1,
+      "name": "Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 25,
+          "y": 6
+        },
+        {
+          "x": 18,
+          "y": 15
+        },
+        {
+          "x": 6,
+          "y": 18
+        },
+        {
+          "x": -11,
+          "y": 17
+        },
+        {
+          "x": -31,
+          "y": 11
+        },
+        {
+          "x": -13,
+          "y": 4
+        },
+        {
+          "x": -8,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 16777215,
+      "height": 113,
+      "mirror": 1,
+      "name": "Inner",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 20,
+          "y": 2
+        },
+        {
+          "x": 14,
+          "y": 10
+        },
+        {
+          "x": 2,
+          "y": 13
+        },
+        {
+          "x": -15,
+          "y": 11
+        },
+        {
+          "x": -2,
+          "y": 6
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

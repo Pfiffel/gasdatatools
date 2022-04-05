@@ -1,0 +1,35 @@
+{
+  "color": 6561567,
+  "convoyBosses": [
+    "Iron Leviathan",
+    "Iron Colossus",
+    "Iron Behemoth",
+    "Iron Juggernaut"
+  ],
+  "convoyPeriodSeconds": 2000,
+  "eventBossPeriodSeconds": 600,
+  "eventBosses": [],
+  "maxEventBosses": 1,
+  "monsterSquareSide": 425,
+  "monsters": [
+    {
+      "count": 100,
+      "name": "Iron Hammer"
+    },
+    {
+      "count": 100,
+      "name": "Iron Legionnaire"
+    },
+    {
+      "count": 25,
+      "name": "Iron Bulwark"
+    },
+    {
+      "count": 25,
+      "name": "Iron Protector"
+    }
+  ],
+  "name": "Swamp 3 Red",
+  "noRespawn": 0
+}
+

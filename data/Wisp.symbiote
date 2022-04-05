@@ -1,0 +1,42 @@
+{
+  "description": "Wisp glides in space, a fleeting figment, an apparition.",
+  "effects": [
+    {
+      "data": {
+        "cooldown": 25000,
+        "params": [
+          {
+            "data": {
+              "duration": 2500,
+              "emitterType": "",
+              "percentChance": 100,
+              "tag": ""
+            },
+            "tag": "DematerializeTrigger"
+          },
+          {
+            "data": {
+              "amount": 80,
+              "applyToMana": 0,
+              "duration": 2500,
+              "emitterType": "",
+              "glyphCount": 2,
+              "glyphRadius": 50,
+              "glyphType": "Heal Indicator Small",
+              "noStack": 0,
+              "tag": ""
+            },
+            "tag": "HealOverTimeTrigger"
+          }
+        ],
+        "percentChance": 100,
+        "targetingRange": 0
+      },
+      "tag": "PeriodicTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Wisp",
+  "tier": 6
+}
+

@@ -1,0 +1,36 @@
+{
+  "name": "Infinity",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Onward, toward our destiny!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Together, we move forward!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Onward, we march together!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Never stop moving forward!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

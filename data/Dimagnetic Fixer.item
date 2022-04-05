@@ -1,0 +1,17 @@
+{
+  "credits": 5,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 36,
+        "statType": 1
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Dimagnetic Fixer",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

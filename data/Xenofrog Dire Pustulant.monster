@@ -1,0 +1,54 @@
+{
+  "boss": 0,
+  "collisionRadius": 23,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Enemy Hits",
+  "drops": [],
+  "healRate": 0,
+  "hp": 750,
+  "idleAnimation": "Xenofrog Idle",
+  "maxMoveDistance": 200,
+  "name": "Xenofrog Dire Pustulant",
+  "objectType": "Xenofrog Dire Pustulant",
+  "pauseBetweenMovements": 600,
+  "runAnimation": "Xenofrog Leap",
+  "runSpeed": 275,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Mouth",
+      "cooldown": 2000,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "damage": 400,
+                "delay": 1000,
+                "explosionType": "",
+                "halfArc": 1800,
+                "powers": [],
+                "range": 180,
+                "triggerSound": "",
+                "triggerVolume": 50
+              },
+              "tag": "ShotgunParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 49,
+  "xpLevelCap": 19
+}
+

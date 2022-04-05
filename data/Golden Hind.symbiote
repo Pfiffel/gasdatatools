@@ -1,0 +1,22 @@
+{
+  "description": "Golden Hind travels unceasingly, searching for new life and new lands.",
+  "effects": [
+    {
+      "data": {
+        "armingTime": 1000,
+        "burstRadius": 300,
+        "cooldown": 5000,
+        "damage": 200,
+        "duration": 5000,
+        "emitterType": "Golden Hind Mine",
+        "explosionType": "Golden Hind Mine",
+        "objectType": "Golden Hind Mine",
+        "sensitivityRadius": 250
+      },
+      "tag": "GoldenHindMine"
+    }
+  ],
+  "name": "Golden Hind",
+  "tier": 1
+}
+

@@ -1,0 +1,33 @@
+{
+  "description": "Equinox seeks to even the odds.",
+  "effects": [
+    {
+      "data": {
+        "cooldown": 20000,
+        "params": [
+          {
+            "data": {
+              "amount": 50,
+              "duration": 6000,
+              "emitterType": "",
+              "glyphCount": 2,
+              "glyphRadius": 60,
+              "glyphType": "Gun RoF Glyph",
+              "noStack": 0,
+              "statType": 5,
+              "tag": ""
+            },
+            "tag": "StatBoostTrigger"
+          }
+        ],
+        "percentChance": 100,
+        "targetingRange": 0
+      },
+      "tag": "PeriodicTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Equinox",
+  "tier": 4
+}
+

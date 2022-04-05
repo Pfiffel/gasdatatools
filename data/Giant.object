@@ -1,0 +1,356 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Hand",
+      "pos": {
+        "f": -120,
+        "p": {
+          "x": 62,
+          "y": 90
+        }
+      }
+    }
+  ],
+  "bonePivots": [
+    {
+      "name": "Hand",
+      "p": {
+        "x": -32,
+        "y": 96
+      }
+    },
+    {
+      "name": "Foot",
+      "p": {
+        "x": 2,
+        "y": 76
+      }
+    }
+  ],
+  "floppiness": 0,
+  "name": "Giant",
+  "shapes": [
+    {
+      "bone": "Foot",
+      "clones": [],
+      "closed": 1,
+      "color": 5072280,
+      "height": 0,
+      "mirror": 1,
+      "name": "Foot",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -12,
+          "y": 97
+        },
+        {
+          "x": 21,
+          "y": 94
+        },
+        {
+          "x": 39,
+          "y": 85
+        },
+        {
+          "x": 40,
+          "y": 63
+        },
+        {
+          "x": 27,
+          "y": 56
+        },
+        {
+          "x": 9,
+          "y": 57
+        },
+        {
+          "x": -9,
+          "y": 55
+        },
+        {
+          "x": -25,
+          "y": 62
+        },
+        {
+          "x": -25,
+          "y": 88
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hips",
+      "clones": [],
+      "closed": 0,
+      "color": 9912898,
+      "height": 80,
+      "mirror": 1,
+      "name": "Hips",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 38,
+          "y": 86
+        },
+        {
+          "x": 16,
+          "y": 108
+        },
+        {
+          "x": -26,
+          "y": 103
+        },
+        {
+          "x": -43,
+          "y": 78
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 1,
+      "color": 5135383,
+      "height": 100,
+      "mirror": 1,
+      "name": "Hand",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 40,
+          "y": 110
+        },
+        {
+          "x": 77,
+          "y": 110
+        },
+        {
+          "x": 88,
+          "y": 105
+        },
+        {
+          "x": 88,
+          "y": 82
+        },
+        {
+          "x": 76,
+          "y": 78
+        },
+        {
+          "x": 72,
+          "y": 71
+        },
+        {
+          "x": 45,
+          "y": 76
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 1,
+      "color": 10504264,
+      "height": 100,
+      "mirror": 1,
+      "name": "Arm",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -42,
+          "y": 93
+        },
+        {
+          "x": -34,
+          "y": 115
+        },
+        {
+          "x": 0,
+          "y": 121
+        },
+        {
+          "x": 26,
+          "y": 113
+        },
+        {
+          "x": 46,
+          "y": 107
+        },
+        {
+          "x": 51,
+          "y": 82
+        },
+        {
+          "x": 30,
+          "y": 80
+        },
+        {
+          "x": 13,
+          "y": 70
+        },
+        {
+          "x": -8,
+          "y": 67
+        },
+        {
+          "x": -34,
+          "y": 70
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Shoulders",
+      "clones": [],
+      "closed": 0,
+      "color": 11619918,
+      "height": 160,
+      "mirror": 1,
+      "name": "Arm\u0000lders",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 43,
+          "y": 23
+        },
+        {
+          "x": 42,
+          "y": 46
+        },
+        {
+          "x": 46,
+          "y": 75
+        },
+        {
+          "x": 37,
+          "y": 99
+        },
+        {
+          "x": 15,
+          "y": 121
+        },
+        {
+          "x": -27,
+          "y": 116
+        },
+        {
+          "x": -44,
+          "y": 91
+        },
+        {
+          "x": -49,
+          "y": 70
+        },
+        {
+          "x": -45,
+          "y": 42
+        },
+        {
+          "x": -42,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 0,
+      "color": 5991698,
+      "height": 180,
+      "mirror": 1,
+      "name": "Nose",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 34,
+          "y": 9
+        },
+        {
+          "x": 46,
+          "y": 7
+        },
+        {
+          "x": 50,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 0,
+      "color": 7505942,
+      "height": 190,
+      "mirror": 1,
+      "name": "Face",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 4,
+          "y": 14
+        },
+        {
+          "x": 23,
+          "y": 50
+        },
+        {
+          "x": 33,
+          "y": 39
+        },
+        {
+          "x": 38,
+          "y": 27
+        },
+        {
+          "x": 37,
+          "y": 15
+        },
+        {
+          "x": 39,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 0,
+      "color": 4920078,
+      "height": 200,
+      "mirror": 1,
+      "name": "Head",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -30,
+          "y": 27
+        },
+        {
+          "x": -4,
+          "y": 51
+        },
+        {
+          "x": 23,
+          "y": 50
+        },
+        {
+          "x": 16,
+          "y": 12
+        },
+        {
+          "x": 24,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

@@ -1,0 +1,25 @@
+{
+  "description": "Elf-tree pursues inner reserves of power and strength.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 7,
+        "amount": 20,
+        "statType": 2
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 7,
+        "amount": 25,
+        "statType": 8
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "Elf-Tree",
+  "tier": 2
+}
+

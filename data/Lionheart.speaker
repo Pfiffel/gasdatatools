@@ -1,0 +1,36 @@
+{
+  "name": "Lionheart",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Stand with me, friend!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Together! We stand together!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I am here, right by your side!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Loyalty and honor forever!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

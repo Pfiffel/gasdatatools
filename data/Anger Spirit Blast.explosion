@@ -1,0 +1,29 @@
+{
+  "layers": [
+    {
+      "angularDensity": 20,
+      "maxDistPercent": 100,
+      "minDistPercent": 100,
+      "particleType": "Anger Spirit Blast",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 10,
+      "maxDistPercent": 70,
+      "minDistPercent": 70,
+      "particleType": "Anger Spirit Blast",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 5,
+      "maxDistPercent": 40,
+      "minDistPercent": 40,
+      "particleType": "Anger Spirit Blast",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Anger Spirit Blast",
+  "sound": "Player_Wasp_PosTorpedo_Explosion",
+  "volume": 50
+}
+

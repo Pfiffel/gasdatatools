@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 15,
+      "maxDistPercent": 100,
+      "minDistPercent": 92,
+      "particleType": "Iron Juggernaut Blast",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 15,
+      "maxDistPercent": 90,
+      "minDistPercent": 50,
+      "particleType": "Iron Juggernaut Blast",
+      "uniformAngles": 0
+    }
+  ],
+  "name": "Iron Juggernaut Mine Blast",
+  "sound": "Enemy_IronColossus_Bomb_Explode_01",
+  "volume": 200
+}
+

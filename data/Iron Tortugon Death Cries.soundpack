@@ -1,0 +1,8 @@
+{
+  "name": "Iron Tortugon Death Cries",
+  "sounds": [
+    "Enemy_Tortogun_DeathCry"
+  ],
+  "volume": 100
+}
+

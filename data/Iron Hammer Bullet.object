@@ -1,0 +1,99 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Iron Hammer Bullet",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 14817155,
+      "height": 58,
+      "mirror": 1,
+      "name": "Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 18,
+          "y": 0
+        },
+        {
+          "x": 30,
+          "y": 9
+        },
+        {
+          "x": 14,
+          "y": 9
+        },
+        {
+          "x": 14,
+          "y": 22
+        },
+        {
+          "x": 4,
+          "y": 18
+        },
+        {
+          "x": 0,
+          "y": 30
+        },
+        {
+          "x": -4,
+          "y": 18
+        },
+        {
+          "x": -14,
+          "y": 22
+        },
+        {
+          "x": -14,
+          "y": 9
+        },
+        {
+          "x": -30,
+          "y": 9
+        },
+        {
+          "x": -18,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 16760860,
+      "height": 59,
+      "mirror": 1,
+      "name": "Inner",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 13,
+          "y": 2
+        },
+        {
+          "x": 8,
+          "y": 10
+        },
+        {
+          "x": 0,
+          "y": 13
+        },
+        {
+          "x": -8,
+          "y": 10
+        },
+        {
+          "x": -13,
+          "y": 2
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

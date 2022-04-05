@@ -1,0 +1,8 @@
+{
+  "name": "Iron Legionnaire Death Cries",
+  "sounds": [
+    "Enemy_Legionnaire_DeathCry_01"
+  ],
+  "volume": 75
+}
+

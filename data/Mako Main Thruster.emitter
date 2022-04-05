@@ -1,0 +1,21 @@
+{
+  "arcOffset": 1800,
+  "cooldown": 10,
+  "endSound": "Player_Warthog_Movement_End",
+  "endVolume": 50,
+  "halfArc": 50,
+  "loopSound": "Player_Warthog_Movement_Loop",
+  "loopVolume": 100,
+  "maxDist": 100,
+  "minDist": 50,
+  "mirror": 0,
+  "name": "Mako Main Thruster",
+  "particleCount": 1,
+  "particleTypes": [
+    "Mako Thruster",
+    "Mako Thruster 2"
+  ],
+  "startSound": "Player_Warthog_Movement_Start",
+  "startVolume": 100
+}
+

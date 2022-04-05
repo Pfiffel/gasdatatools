@@ -1,0 +1,10 @@
+{
+  "damage": 300,
+  "emitterType": "Iron Behemoth Trail",
+  "name": "Iron Behemoth Slow",
+  "objectType": "Iron Behemoth Bullet",
+  "powers": [],
+  "soundPack": "Iron Triumph Bullet",
+  "speed": 180
+}
+

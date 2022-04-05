@@ -1,0 +1,36 @@
+{
+  "name": "Barnacle",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Let's go on a ride.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Where are we going today?",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Where are we off to?",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Mind if I come along?",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

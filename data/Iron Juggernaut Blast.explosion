@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 60,
+      "maxDistPercent": 100,
+      "minDistPercent": 92,
+      "particleType": "Iron Juggernaut Blast",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 60,
+      "maxDistPercent": 90,
+      "minDistPercent": 50,
+      "particleType": "Iron Juggernaut Blast",
+      "uniformAngles": 0
+    }
+  ],
+  "name": "Iron Juggernaut Blast",
+  "sound": "Enemy_IronLeviathan_Shotgun_Blast",
+  "volume": 200
+}
+

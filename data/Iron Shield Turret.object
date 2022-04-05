@@ -1,0 +1,96 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 51,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Iron Shield Turret",
+  "shapes": [
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "color": 9934741,
+      "height": 3,
+      "mirror": 1,
+      "name": "Counterweight",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -14,
+          "y": 11
+        },
+        {
+          "x": -26,
+          "y": 11
+        },
+        {
+          "x": -30,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "color": 9934741,
+      "height": 4,
+      "mirror": 1,
+      "name": "Barrel",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 52,
+          "y": 5
+        },
+        {
+          "x": 6,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "color": 2894387,
+      "height": 4,
+      "mirror": 1,
+      "name": "Housing",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 15,
+          "y": 11
+        },
+        {
+          "x": 9,
+          "y": 21
+        },
+        {
+          "x": -11,
+          "y": 21
+        },
+        {
+          "x": -21,
+          "y": 12
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

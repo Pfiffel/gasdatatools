@@ -1,0 +1,36 @@
+{
+  "name": "Cave Bear",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Rrraaarrgh!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Grrrraaarrgh!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Nrrrrargh!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Raaaargh!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

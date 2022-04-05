@@ -1,0 +1,54 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Xenofrog Power Acidic",
+  "shapes": [
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 0,
+      "color": 16776958,
+      "height": 100,
+      "mirror": 0,
+      "name": "Droplet",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 7,
+          "y": -4
+        },
+        {
+          "x": 14,
+          "y": 10
+        },
+        {
+          "x": 10,
+          "y": 23
+        },
+        {
+          "x": 0,
+          "y": 28
+        },
+        {
+          "x": -10,
+          "y": 23
+        },
+        {
+          "x": -14,
+          "y": 10
+        },
+        {
+          "x": -7,
+          "y": -4
+        },
+        {
+          "x": 0,
+          "y": -29
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

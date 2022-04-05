@@ -1,0 +1,60 @@
+{
+  "description": "Cataract is a treacherous blackguard, loyal only to himself.",
+  "effects": [
+    {
+      "data": {
+        "cooldown": 3000,
+        "range": 300,
+        "statusEffects": [
+          {
+            "data": {
+              "duration": 2000
+            },
+            "tag": "StunEffect"
+          },
+          {
+            "data": {
+              "dps": 20,
+              "duration": 2000,
+              "reducedDurationOnBoss": 1
+            },
+            "tag": "DoTEffect"
+          },
+          {
+            "data": {
+              "duration": 2000,
+              "glyphCount": 5,
+              "glyphType": "Cataract Stun",
+              "radius": 30,
+              "reducedDurationOnBoss": 1
+            },
+            "tag": "GlyphCircleEffect"
+          },
+          {
+            "data": {
+              "arcOffset": 0,
+              "halfArc": 1800,
+              "maxDist": 10,
+              "minDist": 0,
+              "particleType": "Cataract Effect Line",
+              "spacing": 15
+            },
+            "tag": "ParticleLineEffect"
+          },
+          {
+            "data": {
+              "sound": "Wasp Dematerialize",
+              "volume": 75
+            },
+            "tag": "PlaySoundEffect"
+          }
+        ]
+      },
+      "tag": "RandomTargetEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Cataract",
+  "tier": 1
+}
+

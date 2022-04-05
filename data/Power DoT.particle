@@ -1,0 +1,40 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 14540032
+    },
+    {
+      "frac": 750,
+      "value": 12303104
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 2,
+  "maxLifetime": 600,
+  "minLifetime": 400,
+  "name": "Power DoT",
+  "objectType": "Xenofrog Power Acidic",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 450
+    },
+    {
+      "frac": 750,
+      "value": 450
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 12303104,
+  "startScale": 10,
+  "stayLow": 1
+}
+

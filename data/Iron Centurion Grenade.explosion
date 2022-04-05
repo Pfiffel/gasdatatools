@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 70,
+      "maxDistPercent": 100,
+      "minDistPercent": 20,
+      "particleType": "Iron Protector Grenade",
+      "uniformAngles": 0
+    },
+    {
+      "angularDensity": 40,
+      "maxDistPercent": 100,
+      "minDistPercent": 85,
+      "particleType": "Iron Protector Grenade",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Iron Centurion Grenade",
+  "sound": "Enemy_Grenade_Medium_Explosion",
+  "volume": 100
+}
+

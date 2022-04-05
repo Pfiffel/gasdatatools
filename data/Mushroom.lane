@@ -1,0 +1,11 @@
+{
+  "color": 6357929,
+  "facingJitter": 60,
+  "gap": 90,
+  "name": "Mushroom",
+  "objects": [
+    "Mushroom Path"
+  ],
+  "positionJitter": 5
+}
+

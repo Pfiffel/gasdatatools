@@ -1,0 +1,8 @@
+{
+  "name": "Iron Soldier Death Cries",
+  "sounds": [
+    "Enemy_Soldier_DeathCry_01"
+  ],
+  "volume": 75
+}
+

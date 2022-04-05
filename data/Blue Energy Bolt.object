@@ -1,0 +1,83 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Blue Energy Bolt",
+  "shapes": [
+    {
+      "bone": "Orange",
+      "clones": [],
+      "closed": 0,
+      "color": 2653644,
+      "height": 58,
+      "mirror": 1,
+      "name": "Orange",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 40,
+          "y": 3
+        },
+        {
+          "x": 32,
+          "y": 12
+        },
+        {
+          "x": 15,
+          "y": 18
+        },
+        {
+          "x": -16,
+          "y": 18
+        },
+        {
+          "x": -63,
+          "y": 9
+        },
+        {
+          "x": -92,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Yellow",
+      "clones": [],
+      "closed": 0,
+      "color": 2673852,
+      "height": 59,
+      "mirror": 1,
+      "name": "Yellow",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 33,
+          "y": 3
+        },
+        {
+          "x": 27,
+          "y": 7
+        },
+        {
+          "x": 12,
+          "y": 9
+        },
+        {
+          "x": -10,
+          "y": 9
+        },
+        {
+          "x": -36,
+          "y": 7
+        },
+        {
+          "x": -81,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

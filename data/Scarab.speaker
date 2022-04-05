@@ -1,0 +1,36 @@
+{
+  "name": "Scarab",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "So much to do! So little time!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I'm busy!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Don't distract me!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I'm trying to focus here!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

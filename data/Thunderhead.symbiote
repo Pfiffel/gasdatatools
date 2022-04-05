@@ -1,0 +1,43 @@
+{
+  "description": "Thunderhead lashes out in fury at his enemies.",
+  "effects": [
+    {
+      "data": {
+        "cooldown": 2500,
+        "range": 240,
+        "statusEffects": [
+          {
+            "data": {
+              "damage": 100
+            },
+            "tag": "DamageEffect"
+          },
+          {
+            "data": {
+              "arcOffset": 0,
+              "halfArc": 100,
+              "maxDist": 30,
+              "minDist": 10,
+              "particleType": "Thunderhead Zap",
+              "spacing": 20
+            },
+            "tag": "ParticleLineEffect"
+          },
+          {
+            "data": {
+              "damage": 50,
+              "explosionType": "Thunderhead Zap",
+              "radius": 250
+            },
+            "tag": "BlastEffect"
+          }
+        ]
+      },
+      "tag": "RandomTargetEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Thunderhead",
+  "tier": 4
+}
+

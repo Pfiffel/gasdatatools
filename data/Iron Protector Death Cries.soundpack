@@ -1,0 +1,8 @@
+{
+  "name": "Iron Protector Death Cries",
+  "sounds": [
+    "Enemy_Protector_DeathCry_01"
+  ],
+  "volume": 75
+}
+

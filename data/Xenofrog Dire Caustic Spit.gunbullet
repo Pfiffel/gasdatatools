@@ -1,0 +1,21 @@
+{
+  "damage": 300,
+  "emitterType": "Xenofrog Trail Caustic",
+  "name": "Xenofrog Dire Caustic Spit",
+  "objectType": "Xenofrog Dire Caustic Bullet",
+  "powers": [
+    {
+      "data": {
+        "amount": -75,
+        "caption": "Gun Damage -75%",
+        "duration": 6000,
+        "emitterType": "Power Gun Damage Down",
+        "statType": 0
+      },
+      "tag": "StatPower"
+    }
+  ],
+  "soundPack": "Iron Leviathan Bullet",
+  "speed": 140
+}
+

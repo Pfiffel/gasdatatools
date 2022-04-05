@@ -1,0 +1,10 @@
+{
+  "damage": 1,
+  "emitterType": "Iron Shield",
+  "name": "Training Drone Mk 2",
+  "objectType": "Training Drone Mk 2 Bullet",
+  "powers": [],
+  "soundPack": "Iron Shield Bullet",
+  "speed": 130
+}
+

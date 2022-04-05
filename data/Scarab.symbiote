@@ -1,0 +1,47 @@
+{
+  "description": "Scarab works busily, shutting out the world around him.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 20,
+            "duration": 3000,
+            "emitterType": "",
+            "glyphCount": 8,
+            "glyphRadius": 80,
+            "glyphType": "Ephesus Glyph",
+            "noStack": 1,
+            "statType": 9,
+            "tag": "Scarab Boost"
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 11
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "glyphCount": 0,
+            "glyphDuration": 0,
+            "glyphRadius": 0,
+            "glyphType": "Heal Indicator",
+            "refillPercentage": 4,
+            "shieldIndex": -1,
+            "tag": ""
+          },
+          "tag": "ShieldRefillTrigger"
+        },
+        "when": 11
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Scarab",
+  "tier": 6
+}
+

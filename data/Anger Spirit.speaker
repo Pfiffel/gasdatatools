@@ -1,0 +1,36 @@
+{
+  "name": "Anger Spirit",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I've been treated so unfairly!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Go away!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Leave me alone!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I hate everything!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

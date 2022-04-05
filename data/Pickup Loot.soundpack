@@ -1,0 +1,8 @@
+{
+  "name": "Pickup Loot",
+  "sounds": [
+    "UI_LootPickup_03"
+  ],
+  "volume": 100
+}
+

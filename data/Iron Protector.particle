@@ -1,0 +1,44 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 8061056
+    },
+    {
+      "frac": 500,
+      "value": 5636223
+    },
+    {
+      "frac": 750,
+      "value": 3014783
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 1200,
+  "minLifetime": 800,
+  "name": "Iron Protector",
+  "objectType": "Small Hex",
+  "positionTweenType": "EXPOIN",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 250
+    },
+    {
+      "frac": 500,
+      "value": 250
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 8421504,
+  "startScale": 10,
+  "stayLow": 0
+}
+

@@ -1,0 +1,50 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Small Crescent",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 16777215,
+      "height": 0,
+      "mirror": 1,
+      "name": "Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 0,
+          "y": 5
+        },
+        {
+          "x": -2,
+          "y": 18
+        },
+        {
+          "x": -11,
+          "y": 33
+        },
+        {
+          "x": 0,
+          "y": 29
+        },
+        {
+          "x": 6,
+          "y": 20
+        },
+        {
+          "x": 10,
+          "y": 10
+        },
+        {
+          "x": 11,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

@@ -1,0 +1,29 @@
+{
+  "layers": [
+    {
+      "angularDensity": 150,
+      "maxDistPercent": 100,
+      "minDistPercent": 80,
+      "particleType": "Mako Laser Beams Blast",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 75,
+      "maxDistPercent": 70,
+      "minDistPercent": 50,
+      "particleType": "Mako Laser Beams Blast",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 35,
+      "maxDistPercent": 40,
+      "minDistPercent": 25,
+      "particleType": "Mako Laser Beams Blast",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Mako Laser Beams Blast",
+  "sound": "Player_Wasp_PosTorpedo_Explosion",
+  "volume": 50
+}
+

@@ -1,0 +1,95 @@
+{
+  "boss": 1,
+  "collisionRadius": 100,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Iron Leviathan Enrage 3",
+  "drops": [],
+  "healRate": 0,
+  "hp": 4000,
+  "idleAnimation": "BaseArcher Idle",
+  "name": "Iron Leviathan 2",
+  "objectType": "Iron Leviathan",
+  "runAnimation": "Iron Leviathan Run",
+  "runSpeed": 100,
+  "successorMonster": "Iron Leviathan 3",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 3000,
+      "objectType": "",
+      "params": {
+        "data": {
+          "emitterType": "Iron Protector",
+          "explosionType": "Iron Minion Spawn",
+          "lifetime": 60000,
+          "maxCount": 3,
+          "monsterName": "Iron Tortugon",
+          "noCollide": 1,
+          "projectileType": "Iron Tortugon Capsule",
+          "range": 800,
+          "sound": "Enemy_IronLeviathan_TortugonSpawn_03",
+          "speed": 300,
+          "volume": 100
+        },
+        "tag": "MinionParams"
+      }
+    },
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 3000,
+      "objectType": "",
+      "params": {
+        "data": {
+          "bulletRange": 500,
+          "delay": 100,
+          "gunBulletType": "Iron Leviathan",
+          "numBullets": 5,
+          "range": 700,
+          "salvoes": [
+            {
+              "angle": 0,
+              "mirror": 0
+            },
+            {
+              "angle": 100,
+              "mirror": 0
+            },
+            {
+              "angle": 200,
+              "mirror": 0
+            },
+            {
+              "angle": 300,
+              "mirror": 0
+            },
+            {
+              "angle": 400,
+              "mirror": 0
+            }
+          ]
+        },
+        "tag": "BarrageParams"
+      }
+    },
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "aimed": 1,
+          "cooldown": 1500,
+          "gunBulletType": "Iron Leviathan",
+          "leading": 0,
+          "numProjectiles": 3,
+          "range": 800
+        },
+        "tag": "GunParams"
+      }
+    }
+  ],
+  "xp": 100,
+  "xpLevelCap": 19
+}
+

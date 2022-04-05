@@ -1,0 +1,46 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Iron Fist Particle",
+  "shapes": [
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "color": 16777215,
+      "height": 100,
+      "mirror": 1,
+      "name": "Shaft",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 39,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 22
+        },
+        {
+          "x": -21,
+          "y": 23
+        },
+        {
+          "x": 13,
+          "y": 5
+        },
+        {
+          "x": -22,
+          "y": 6
+        },
+        {
+          "x": -41,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

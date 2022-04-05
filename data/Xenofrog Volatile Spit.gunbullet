@@ -1,0 +1,21 @@
+{
+  "damage": 150,
+  "emitterType": "Xenofrog Trail Volatile",
+  "name": "Xenofrog Volatile Spit",
+  "objectType": "Xenofrog Volatile Bullet",
+  "powers": [
+    {
+      "data": {
+        "amount": -25,
+        "caption": "Trigger Rate of Fire -25%",
+        "duration": 6000,
+        "emitterType": "Power Energy Production Down",
+        "statType": 6
+      },
+      "tag": "StatPower"
+    }
+  ],
+  "soundPack": "Iron Hammer Bullet",
+  "speed": 140
+}
+

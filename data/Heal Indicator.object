@@ -1,0 +1,46 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Heal Indicator",
+  "shapes": [
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "color": 1097234,
+      "height": 100,
+      "mirror": 1,
+      "name": "Cross",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 51,
+          "y": 10
+        },
+        {
+          "x": 13,
+          "y": 10
+        },
+        {
+          "x": 13,
+          "y": 50
+        },
+        {
+          "x": -12,
+          "y": 50
+        },
+        {
+          "x": -12,
+          "y": 10
+        },
+        {
+          "x": -50,
+          "y": 10
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

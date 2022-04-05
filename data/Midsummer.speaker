@@ -1,0 +1,36 @@
+{
+  "name": "Midsummer",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "It's so nice here!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "It's nice to be nice.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Such a lovely place!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Let's enjoy the day together.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

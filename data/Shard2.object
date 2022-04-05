@@ -1,0 +1,38 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Shard2",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 16777215,
+      "height": 0,
+      "mirror": 0,
+      "name": "Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 14,
+          "y": -8
+        },
+        {
+          "x": 7,
+          "y": 16
+        },
+        {
+          "x": -23,
+          "y": 12
+        },
+        {
+          "x": -10,
+          "y": -17
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

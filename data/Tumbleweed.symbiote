@@ -1,0 +1,27 @@
+{
+  "description": "Tumbleweed lives to fight another day.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "glyphCount": 4,
+            "glyphDuration": 750,
+            "glyphRadius": 40,
+            "glyphType": "Tumbleweed Glyph",
+            "refillPercentage": 8,
+            "shieldIndex": -1,
+            "tag": ""
+          },
+          "tag": "ShieldRefillTrigger"
+        },
+        "when": 6
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Tumbleweed",
+  "tier": 2
+}
+

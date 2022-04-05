@@ -1,0 +1,46 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Five Star",
+  "shapes": [
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 0,
+      "color": 11118396,
+      "height": 100,
+      "mirror": 1,
+      "name": "Star",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 18,
+          "y": 0
+        },
+        {
+          "x": 4,
+          "y": 6
+        },
+        {
+          "x": 2,
+          "y": 20
+        },
+        {
+          "x": -4,
+          "y": 7
+        },
+        {
+          "x": -19,
+          "y": 11
+        },
+        {
+          "x": -8,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

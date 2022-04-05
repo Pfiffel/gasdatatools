@@ -1,0 +1,8 @@
+{
+  "name": "Iron Hammer Death Cries",
+  "sounds": [
+    "Enemy_Hammer_DeathCry_01"
+  ],
+  "volume": 75
+}
+

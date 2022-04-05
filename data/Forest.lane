@@ -1,0 +1,12 @@
+{
+  "color": 2794245,
+  "facingJitter": 75,
+  "gap": 50,
+  "name": "Forest",
+  "objects": [
+    "Forest Path",
+    "Forest Path 2"
+  ],
+  "positionJitter": 0
+}
+

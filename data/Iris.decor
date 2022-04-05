@@ -1,0 +1,23 @@
+{
+  "color": 10051781,
+  "name": "Iris",
+  "objects": [
+    {
+      "density": 350,
+      "objectType": "FlowerIris"
+    },
+    {
+      "density": 30,
+      "objectType": "Rock"
+    },
+    {
+      "density": 30,
+      "objectType": "Rock2"
+    },
+    {
+      "density": 30,
+      "objectType": "Rock3"
+    }
+  ]
+}
+

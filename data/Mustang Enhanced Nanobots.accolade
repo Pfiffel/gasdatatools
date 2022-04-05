@@ -1,0 +1,22 @@
+{
+  "champion": "Mustang",
+  "displayName": "Enhanced Nanobots",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "healAmount": 50,
+            "usePercentInTooltip": 0
+          },
+          "tag": "HealTriggerBonus"
+        },
+        "tag": "Mustang 2 Heal",
+        "tooltip": "On Nanorepair:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Mustang Enhanced Nanobots"
+}
+

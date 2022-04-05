@@ -1,0 +1,23 @@
+{
+  "color": 5035864,
+  "name": "TroutLily",
+  "objects": [
+    {
+      "density": 350,
+      "objectType": "FlowerTroutLily"
+    },
+    {
+      "density": 30,
+      "objectType": "Rock"
+    },
+    {
+      "density": 30,
+      "objectType": "Rock2"
+    },
+    {
+      "density": 30,
+      "objectType": "Rock3"
+    }
+  ]
+}
+

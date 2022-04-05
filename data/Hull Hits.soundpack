@@ -1,0 +1,10 @@
+{
+  "name": "Hull Hits",
+  "sounds": [
+    "Player_HullHit_C_01",
+    "Player_HullHit_C_02",
+    "Player_HullHit_C_03"
+  ],
+  "volume": 100
+}
+

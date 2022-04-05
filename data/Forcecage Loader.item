@@ -1,0 +1,17 @@
+{
+  "credits": 4,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 8,
+        "statType": 5
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Forcecage Loader",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

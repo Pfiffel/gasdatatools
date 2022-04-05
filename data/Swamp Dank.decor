@@ -1,0 +1,44 @@
+{
+  "color": 4281365,
+  "groundColors": [
+    3488768,
+    4281365
+  ],
+  "name": "Swamp Dank",
+  "objects": [
+    {
+      "density": 50,
+      "objectType": "Swamp Mushroom"
+    },
+    {
+      "density": 397,
+      "objectType": "Swamp Tuft"
+    },
+    {
+      "density": 20,
+      "objectType": "RockSlimy"
+    },
+    {
+      "density": 20,
+      "objectType": "RockSlimy2"
+    },
+    {
+      "density": 20,
+      "objectType": "RockSlimy3"
+    },
+    {
+      "density": 3,
+      "objectType": "Swamp Log"
+    },
+    {
+      "density": 1,
+      "objectType": "Swamp Oak Tree"
+    },
+    {
+      "density": 5,
+      "objectType": "Swamp Oak Tree Small"
+    }
+  ],
+  "regionType": "Swamp Dank"
+}
+

@@ -1,0 +1,182 @@
+{
+  "keyFrames": [
+    {
+      "bonePositions": [
+        {
+          "bone": "Arm",
+          "rot": 0,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Arm Mirror",
+          "rot": 0,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Body",
+          "rot": 0,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Head",
+          "rot": 0,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 0,
+      "tag": ""
+    },
+    {
+      "bonePositions": [
+        {
+          "bone": "Arm",
+          "rot": 0,
+          "x": 5,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Arm Mirror",
+          "rot": -23,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Body",
+          "rot": 0,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 150,
+      "tag": ""
+    },
+    {
+      "bonePositions": [
+        {
+          "bone": "Arm",
+          "rot": -50,
+          "x": 7,
+          "y": -1,
+          "z": 0
+        },
+        {
+          "bone": "Arm Mirror",
+          "rot": -200,
+          "x": -6,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Head",
+          "rot": -300,
+          "x": 0,
+          "y": -2,
+          "z": 0
+        },
+        {
+          "bone": "Body",
+          "rot": -50,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 300,
+      "tag": ""
+    },
+    {
+      "bonePositions": [
+        {
+          "bone": "Arm",
+          "rot": -23,
+          "x": 7,
+          "y": -1,
+          "z": 0
+        },
+        {
+          "bone": "Head",
+          "rot": -300,
+          "x": 1,
+          "y": -3,
+          "z": 0
+        },
+        {
+          "bone": "Body",
+          "rot": -50,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 450,
+      "tag": ""
+    },
+    {
+      "bonePositions": [
+        {
+          "bone": "Arm",
+          "rot": 0,
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "bone": "Head",
+          "rot": 150,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 700,
+      "tag": ""
+    },
+    {
+      "bonePositions": [
+        {
+          "bone": "Arm",
+          "rot": 0,
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "bone": "Arm Mirror",
+          "rot": -85,
+          "x": -5,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "bone": "Head",
+          "rot": 150,
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "bone": "Body",
+          "rot": -27,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 800,
+      "tag": ""
+    }
+  ],
+  "name": "Xenofrog Idle"
+}
+

@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 40,
+      "maxDistPercent": 100,
+      "minDistPercent": 97,
+      "particleType": "Odessos Mine Blast",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 40,
+      "maxDistPercent": 90,
+      "minDistPercent": 80,
+      "particleType": "Odessos Mine",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Odessos Mine Blast",
+  "sound": "Player_Wasp_PosTorpedo_Explosion",
+  "volume": 50
+}
+

@@ -1,0 +1,17 @@
+{
+  "credits": 4,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 14,
+        "statType": 4
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Well Capacitor",
+  "overworldDrop": 1,
+  "precursorTech": 0
+}
+

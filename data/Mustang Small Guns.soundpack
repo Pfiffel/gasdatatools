@@ -1,0 +1,17 @@
+{
+  "name": "Mustang Small Guns",
+  "sounds": [
+    "Player_Mustang_SmallGun_01",
+    "Player_Mustang_SmallGun_02",
+    "Player_Mustang_SmallGun_03",
+    "Player_Mustang_SmallGun_04",
+    "Player_Mustang_SmallGun_05",
+    "Player_Mustang_SmallGun_06",
+    "Player_Mustang_SmallGun_07",
+    "Player_Mustang_SmallGun_08",
+    "Player_Mustang_SmallGun_09",
+    "Player_Mustang_SmallGun_10"
+  ],
+  "volume": 35
+}
+

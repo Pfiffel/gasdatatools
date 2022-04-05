@@ -1,0 +1,28 @@
+{
+  "credits": 10,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "duration": 3000,
+            "percentChance": 100,
+            "statusEffect": {
+              "data": {
+                "duration": 1000
+              },
+              "tag": "StunEffect"
+            }
+          },
+          "tag": "GunProcTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Lycus Mechanism",
+  "overworldDrop": 0,
+  "precursorTech": 1
+}
+

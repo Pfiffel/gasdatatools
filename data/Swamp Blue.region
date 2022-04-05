@@ -1,0 +1,16 @@
+{
+  "gap": 40,
+  "groundColor": 3959297,
+  "mapColor": 290130,
+  "name": "Swamp Blue",
+  "polyDecorations": [
+    {
+      "gap": 80,
+      "objectType": "Swamp Palm"
+    }
+  ],
+  "segmentObjects": [
+    "Swamp Palm"
+  ]
+}
+

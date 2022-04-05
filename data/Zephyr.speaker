@@ -1,0 +1,36 @@
+{
+  "name": "Zephyr",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Listen to the voice of the wind.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Listen; I will guide you.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Attend on me, and I will give you guidance.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Hear me, and I shall counsel you.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

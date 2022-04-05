@@ -1,0 +1,43 @@
+{
+  "description": "Silverwitch burns with a spiteful passion for revenge.",
+  "effects": [
+    {
+      "data": {
+        "cooldown": 1250,
+        "range": 320,
+        "statusEffects": [
+          {
+            "data": {
+              "damage": 100
+            },
+            "tag": "DamageEffect"
+          },
+          {
+            "data": {
+              "arcOffset": 0,
+              "halfArc": 100,
+              "maxDist": 30,
+              "minDist": 10,
+              "particleType": "Silverwitch Zap",
+              "spacing": 20
+            },
+            "tag": "ParticleLineEffect"
+          },
+          {
+            "data": {
+              "damage": 0,
+              "explosionType": "Silverwitch Zap",
+              "radius": 55
+            },
+            "tag": "BlastEffect"
+          }
+        ]
+      },
+      "tag": "RandomTargetEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Silverwitch",
+  "tier": 1
+}
+

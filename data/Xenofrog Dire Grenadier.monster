@@ -1,0 +1,79 @@
+{
+  "boss": 0,
+  "collisionRadius": 22,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Enemy Hits",
+  "drops": [],
+  "healRate": 0,
+  "hp": 500,
+  "idleAnimation": "Xenofrog Idle",
+  "maxMoveDistance": 200,
+  "name": "Xenofrog Dire Grenadier",
+  "objectType": "Xenofrog Dire Grenadier",
+  "pauseBetweenMovements": 900,
+  "runAnimation": "Xenofrog Leap",
+  "runSpeed": 300,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Mouth",
+      "cooldown": 2000,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "damage": 300,
+                "emitterType": "",
+                "explosionType": "",
+                "objectType": "Xenofrog Grenadier Bullet",
+                "powers": [],
+                "radius": 100,
+                "range": 600,
+                "shootSound": "",
+                "shootVolume": 50,
+                "speed": 200
+              },
+              "tag": "MortarParams"
+            },
+            {
+              "data": {
+                "bombRadius": 100,
+                "damage": 300,
+                "delay": 600,
+                "emitterType": "",
+                "explosionType": "",
+                "flightTime": 1000,
+                "objectType": "Xenofrog Grenadier Bullet",
+                "powers": [],
+                "range": 700,
+                "salvoes": [
+                  {
+                    "angle": 0,
+                    "bombCount": 3,
+                    "radius": 180
+                  }
+                ],
+                "shootSound": "",
+                "shootVolume": 50
+              },
+              "tag": "MortarBarrageParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 36,
+  "xpLevelCap": 19
+}
+

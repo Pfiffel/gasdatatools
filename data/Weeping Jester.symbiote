@@ -1,0 +1,30 @@
+{
+  "description": "Weeping Jester accepts paradox as plain truth.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": -25,
+        "statType": 3
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "shield": {
+          "color": 5979296,
+          "left": -1800,
+          "level": 0,
+          "maxStrength": 500,
+          "right": 1800
+        }
+      },
+      "tag": "ItemShield"
+    }
+  ],
+  "enemies": [],
+  "name": "Weeping Jester",
+  "tier": 1
+}
+

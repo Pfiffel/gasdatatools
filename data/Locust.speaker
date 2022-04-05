@@ -1,0 +1,36 @@
+{
+  "name": "Locust",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Low cost swarm ready.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Swarm technology online.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Drone swarm operational.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Swarm operator online.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

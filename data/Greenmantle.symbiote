@@ -1,0 +1,27 @@
+{
+  "description": "Greenmantle shrouds a mystery, hidden from all eyes.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "applyToMana": 1,
+            "asPercentage": 1,
+            "glyphCount": 0,
+            "glyphDuration": 500,
+            "glyphRadius": 50,
+            "glyphType": "",
+            "healAmount": 60
+          },
+          "tag": "HealTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Greenmantle",
+  "tier": 1
+}
+

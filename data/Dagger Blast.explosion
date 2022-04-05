@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 50,
+      "maxDistPercent": 100,
+      "minDistPercent": 80,
+      "particleType": "Dagger Blast",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Dagger Blast",
+  "sound": "Player_Wasp_PosTorpedo_Explosion",
+  "volume": 50
+}
+

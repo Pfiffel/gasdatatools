@@ -1,0 +1,95 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 10,
+      "name": "Turret",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Iron Redoubt",
+  "shapes": [
+    {
+      "bone": "Foot",
+      "clones": [],
+      "closed": 0,
+      "color": 4802889,
+      "height": 0,
+      "mirror": 1,
+      "name": "Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -57,
+          "y": 16
+        },
+        {
+          "x": -24,
+          "y": 28
+        },
+        {
+          "x": -14,
+          "y": 61
+        },
+        {
+          "x": 14,
+          "y": 61
+        },
+        {
+          "x": 24,
+          "y": 28
+        },
+        {
+          "x": 57,
+          "y": 16
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Foot",
+      "clones": [],
+      "closed": 0,
+      "color": 6229512,
+      "height": 6,
+      "mirror": 1,
+      "name": "Inner",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -37,
+          "y": 9
+        },
+        {
+          "x": -16,
+          "y": 16
+        },
+        {
+          "x": -9,
+          "y": 39
+        },
+        {
+          "x": 9,
+          "y": 39
+        },
+        {
+          "x": 16,
+          "y": 16
+        },
+        {
+          "x": 37,
+          "y": 9
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

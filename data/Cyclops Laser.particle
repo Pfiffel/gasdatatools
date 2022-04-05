@@ -1,0 +1,40 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 16645629
+    },
+    {
+      "frac": 500,
+      "value": 10829117
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 3000,
+  "minLifetime": 2000,
+  "name": "Cyclops Laser",
+  "objectType": "Five Star",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 25,
+      "value": 500
+    },
+    {
+      "frac": 900,
+      "value": 200
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 16776958,
+  "startScale": 10,
+  "stayLow": 1
+}
+

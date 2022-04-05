@@ -1,0 +1,54 @@
+{
+  "champion": "Wasp",
+  "displayName": "Barbed Stingers",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "damage": 20,
+            "delay": 0,
+            "halfArc": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 0,
+            "statusEffects": [],
+            "targetingDelay": 0
+          },
+          "tag": "ShotgunTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Wasp 1 Shotgun 1",
+        "tooltip": "On Stinger Torpedoes:"
+      },
+      "tag": "TaggedTriggerBonus"
+    },
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "damage": 20,
+            "delay": 0,
+            "halfArc": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 0,
+            "statusEffects": [],
+            "targetingDelay": 0
+          },
+          "tag": "ShotgunTriggerBonus"
+        },
+        "showTooltipStats": 0,
+        "tag": "Wasp 1 Shotgun 2",
+        "tooltip": ""
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Wasp Barbed Stingers"
+}
+

@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 50,
+      "maxDistPercent": 100,
+      "minDistPercent": 100,
+      "particleType": "Mustang Grenade Burst",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 50,
+      "maxDistPercent": 80,
+      "minDistPercent": 30,
+      "particleType": "Mustang Grenade Burst",
+      "uniformAngles": 0
+    }
+  ],
+  "name": "Mustang Fireburst",
+  "sound": "Player_Mustang_QuantumFireBurst",
+  "volume": 50
+}
+

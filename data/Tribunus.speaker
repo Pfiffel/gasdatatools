@@ -1,0 +1,36 @@
+{
+  "name": "Tribunus",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "There is no mercy, only judgment.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "All will be summoned for judgment.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "The day of judgment is at hand.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Submit to my judgment.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

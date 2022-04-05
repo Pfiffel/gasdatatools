@@ -1,0 +1,8 @@
+{
+  "name": "Inventory Sell",
+  "sounds": [
+    "UI_Sell_Loot_03"
+  ],
+  "volume": 25
+}
+

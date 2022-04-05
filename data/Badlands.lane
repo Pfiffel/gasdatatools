@@ -1,0 +1,12 @@
+{
+  "color": 10712854,
+  "facingJitter": 300,
+  "gap": 50,
+  "name": "Badlands",
+  "objects": [
+    "RockDebrisTrail",
+    "RockDebrisTrail2"
+  ],
+  "positionJitter": 20
+}
+

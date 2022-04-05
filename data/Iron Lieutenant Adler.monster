@@ -1,0 +1,190 @@
+{
+  "boss": 0,
+  "collisionRadius": 35,
+  "consolationPrizes": [
+    "Bilateral Charger",
+    "Subspace Cycler"
+  ],
+  "deathCrySoundPack": "Iron Hammer Death Cries",
+  "drops": [
+    {
+      "itemType": "Starcore Charger",
+      "levelCap": 20,
+      "micros": 10000
+    },
+    {
+      "itemType": "Volutive Cycler",
+      "levelCap": 20,
+      "micros": 10000
+    },
+    {
+      "itemType": "Atomic Charger",
+      "levelCap": 20,
+      "micros": 50000
+    },
+    {
+      "itemType": "Reactive Cycler",
+      "levelCap": 20,
+      "micros": 50000
+    },
+    {
+      "itemType": "Flux Charger",
+      "levelCap": 20,
+      "micros": 100000
+    },
+    {
+      "itemType": "Wave Cycler",
+      "levelCap": 20,
+      "micros": 100000
+    }
+  ],
+  "healRate": 8,
+  "hp": 4000,
+  "idleAnimation": "",
+  "name": "Iron Lieutenant Adler",
+  "objectType": "Iron Lieutenant Adler",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "",
+  "runSpeed": 180,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret Left",
+      "cooldown": 500,
+      "objectType": "Iron Lieutenant Adler Turret Wing",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "aimed": 1,
+                "angleBetweenProjectiles": 150,
+                "gunBulletType": "Iron Protector",
+                "leading": 0,
+                "numProjectiles": 1,
+                "range": 700
+              },
+              "tag": "GunParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      }
+    },
+    {
+      "attachmentPoint": "Turret Right",
+      "cooldown": 500,
+      "objectType": "Iron Lieutenant Adler Turret Wing",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {},
+              "tag": "NullParams"
+            },
+            {
+              "data": {
+                "aimed": 1,
+                "angleBetweenProjectiles": 150,
+                "gunBulletType": "Iron Protector",
+                "leading": 0,
+                "numProjectiles": 1,
+                "range": 700
+              },
+              "tag": "GunParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      }
+    },
+    {
+      "attachmentPoint": "",
+      "cooldown": 4000,
+      "objectType": "",
+      "params": {
+        "data": {
+          "emitterType": "",
+          "explosionType": "",
+          "guardian": 0,
+          "lifetime": 5000,
+          "maxCount": 3,
+          "monsterName": "Iron Lieutenant Adler Mine",
+          "movement": {
+            "data": {
+              "playerPolicy": 0,
+              "radius": 200
+            },
+            "tag": "RandomMovement"
+          },
+          "noCollide": 1,
+          "noRespawn": 0,
+          "projectileType": "",
+          "range": 0,
+          "sound": "Enemy_IronRedoubt_Conqueror_Spawn",
+          "speed": 0,
+          "volume": 50
+        },
+        "tag": "MinionParams"
+      }
+    },
+    {
+      "attachmentPoint": "Turret Main",
+      "cooldown": 600,
+      "objectType": "Iron Lieutenant Adler Turret Main",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "extraRange": 0,
+                "range": 500,
+                "speed": 400
+              },
+              "tag": "ChargeParams"
+            },
+            {
+              "data": {
+                "aimed": 1,
+                "angleBetweenProjectiles": 300,
+                "gunBulletType": "Iron Bulwark",
+                "leading": 0,
+                "numProjectiles": 5,
+                "range": 850
+              },
+              "tag": "GunParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      }
+    }
+  ],
+  "xp": 50,
+  "xpLevelCap": 19
+}
+

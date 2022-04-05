@@ -1,0 +1,44 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 12259767
+    },
+    {
+      "frac": 500,
+      "value": 16730359
+    },
+    {
+      "frac": 750,
+      "value": 7143529
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 700,
+  "minLifetime": 500,
+  "name": "Juktas Bullet Trail",
+  "objectType": "Small Hex",
+  "positionTweenType": "EXPOIN",
+  "scalePoints": [
+    {
+      "frac": 50,
+      "value": 500
+    },
+    {
+      "frac": 500,
+      "value": 500
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 10316507,
+  "startScale": 10,
+  "stayLow": 0
+}
+
