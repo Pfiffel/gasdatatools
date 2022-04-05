@@ -18,7 +18,7 @@ function parseData()
 	for (let m = 0; m < gasData["monster"].length; m++)
 	{
 		var monster = gasData["monster"][m];
-		if(monsterSkip[monster.name] != true && isSymbioteDropper(monster))
+		if(monsterSkip[monster.name] != true && !monster.name.includes("Nest") && isSymbioteDropper(monster))
 			SYMBIOTE_DROPPERS[getTier(monster.xp)-2].push(monster);
 	}
 	var totalAmount = 0;
