@@ -22,9 +22,11 @@ function parseData()
 			SYMBIOTE_DROPPERS[getTier(monster.xp)-2].push(monster);
 	}
 	var totalAmount = 0;
+	var combinations = 1;
 	for (let t = 1; t < TIERS+1; t++)
 	{
 		var amount = GetSymbAmount(t);
+		combinations *= amount;
 		totalAmount += amount;
 		var headerCell = makeHeaderCell("Tier " + t + " - " + colorWrap(TIER_NAMES[t] + " Symbiotes", TIER_COLORS[t]) + " - " + amount + " total<br/>From: ", th);
 		for (let i = 0; i < SYMBIOTE_DROPPERS[t].length; i++)
@@ -41,6 +43,7 @@ function parseData()
 		var cell = makeCell("", tr);
 		cell.appendChild(parseTierList(t));
 	}
+	var combos = ", " + combinations + " total combinations";
 	tableOutput.appendChild(MakeTextDiv("<h1>Symbiotes (" + totalAmount + " total)</h1>"));
 	tableOutput.appendChild(tbl);
 	tableOutput.appendChild(showUsage(STAT_TYPES));
