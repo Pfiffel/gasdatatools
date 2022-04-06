@@ -28,7 +28,7 @@ const ACTIVE_WHILE_NAMES = {
 	"2": ["HEALTH_BELOW_100", "damaged"],
 	"3": ["HEALTH_BELOW_50", "hull below 50%"],
 	"4": ["MANA_FULL", "energy full"],
-	"5": ["MANA_ABOVE_75", "energy above 50%"],
+	"5": ["MANA_ABOVE_75", "energy above 75%"],
 	"6": ["MANA_BELOW_75", "energy below 75%"],
 	"7": ["MANA_BELOW_50", "energy below 50%"],
 	"8": ["SCOOTING", "scooting"],
