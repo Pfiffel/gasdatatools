@@ -1,4 +1,4 @@
-var FILE = "Build20.log";
+var FILE = "Build22.log";
 var tableOutput = document.getElementById("tableOutput");
 var timeStart = window.performance.now();
 var bench = document.createElement('div');
@@ -119,22 +119,25 @@ function parseData()
 			var level = data.level; //players[data.name].currentLevel; 
 			deaths[tank][level]++;
 			deathPointsAll.push(MakePoint(data.p));
-			if(level == 20) deathPoints20.push(MakePoint(data.p));
+			if(level == 20){
+				// TODO figure out why heatmap doesn't show for build 21 despite this being populated
+				deathPoints20.push(MakePoint(data.p));
+			}
 			if(level < 20) deathPointsSub20.push(MakePoint(data.p));
 			graphIntervalDataDeaths[toInterval]++;
 			AddChatLog(unix, data, currentTag);
 		}
 		else if(currentTag == "BossKillLog")
 		{
-			bossKillPoints.push(MakePoint(logData[i].message.data.p));
+			//bossKillPoints.push(MakePoint(logData[i].message.data.p));
 			players[player].bossKills++;
-			AddChatLog(unix, data, currentTag);
-		}/*
+			//AddChatLog(unix, data, currentTag);
+		}
 		else if(currentTag == "BossDeathLog")
 		{
 			bossKillPoints.push(MakePoint(logData[i].message.data.p));
 			AddChatLog(unix, data, currentTag);
-		}*/
+		}
 		else if(currentTag == "PlayerChatLog")
 		{
 			players[player].chats++;
@@ -185,7 +188,9 @@ function parseData()
 	//tableOutput.appendChild(DrawMap(0.01));
 	//MakeHeatmap(id, max, points)
 	MakeHeatmap("All Deaths", 2, deathPointsAll);
+	//console.group(deathPoints20);
 	MakeHeatmap("Level 20 Deaths", 2, deathPoints20);
+	//console.group(deathPointsSub20);
 	MakeHeatmap("Sub 20 Deaths", 2, deathPointsSub20);
 	MakeHeatmap("Activity (Status)", 200, movePoints);
 	MakeHeatmap("Activity (Trigger)", 50, triggerPoints);
@@ -250,7 +255,9 @@ function GetZoneFromPoint(p)
 }
 function AddChatLog(unix, data, type)
 {
+	// TODO switch
 	if(type == "BossKillLog") data.message = "(defeated " + data.monsterName + ")";
+	if(type == "BossDeathLog") data.message = "(" + data.monsterName + " was defeated)";
 	if(type == "PlayerLoginLog") data.message = "(connected)";
 	else if(type == "PlayerDisconnectLog") data.message = "(disconnected)";
 	if(type == "PlayerDeathLog") data.message = "(died)";
@@ -285,7 +292,7 @@ function MakeChatLog()
 	makeHeaderCell("Message", th);
 	for (var i in chatLog)
 	{
-		var name = chatLog[i].name;
+		var name = chatLog[i].name == undefined ? "" : chatLog[i].name;
 		var messageType = GetMessageColorClass(chatLog[i].type, name);
 		//if(messageType == "chat_system") continue;
 		let tr = chatLogOutput.insertRow();
