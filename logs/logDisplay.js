@@ -194,7 +194,7 @@ function parseData()
 	MakeHeatmap("Sub 20 Deaths", 2, deathPointsSub20);
 	MakeHeatmap("Activity (Status)", 200, movePoints);
 	MakeHeatmap("Activity (Trigger)", 50, triggerPoints);
-	MakeHeatmap("Boss Kills", 3, bossKillPoints);
+	MakeHeatmap("Boss Deaths", 3, bossKillPoints);
 	tableOutput.appendChild(MakeGraphCanvas("player_graph"));
 	MakePlayerActivityGraph("player_graph");
 	tableOutput.appendChild(MakeSimpleCountList("Tag", tags));
@@ -709,7 +709,7 @@ function MakePlayerStats()
 		"Deaths: " + dT + "<br/>" + 
 		"Level Ups: " + lT + "<br/>" + 
 		"Retirements: " + rT + " (" + mT + " Medals, " + aT + " Accolades)<br/>" + 
-		"Boss Kills: " + bossKillPoints.length + " (" + bT + " across players)<br/>" + 
+		"Boss deaths: " + bossKillPoints.length + " (" + bT + " kills)<br/>" + 
 		"Chats: " + chatsT + "<br/>" + "<br/>" + 
 		sTotalPlaytime;
 	return tbl;
