@@ -709,7 +709,7 @@ function MakePlayerStats()
 		"Deaths: " + dT + "<br/>" + 
 		"Level Ups: " + lT + "<br/>" + 
 		"Retirements: " + rT + " (" + mT + " Medals, " + aT + " Accolades)<br/>" + 
-		"Boss Kills: " + bT + "<br/>" + 
+		"Boss Kills: " + bossKillPoints.length + " (" + bT + " across players)<br/>" + 
 		"Chats: " + chatsT + "<br/>" + "<br/>" + 
 		sTotalPlaytime;
 	return tbl;
