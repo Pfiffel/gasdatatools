@@ -8,7 +8,7 @@ var skip = {"Testank":true,"Testank2":true,"Duality":true};
 const CHECKBOX_ACCOLADES = "Show Accolades";
 const NOTES_DPS = {
 	"Wasp":"Assumes you always hit all Trigger 1 projectiles",
-	"Mako":"Does not consider Trigger 2 cooldown and energy resets"
+	"Mako":"Does not consider Trigger 2 cooldown and energy resets\nDoes not consider extra output during Trigger 4 debuff"
 };
 
 var datatypes = ["champion","object","accolade"]; // for utilGAS to load files, calls parseData once completed
