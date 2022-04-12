@@ -244,6 +244,15 @@ function GetTriggeredEffectString(tag, data)
 		s += printKeyAndData("Heal Amount", data.amount + (data.asPercentage == 1 ? "%" : ""), data.applyToMana == 1 ? "energy" : "heal");
 		s += printKeyAndData("Duration", data.duration + " ms");
 	}
+	else if(tag == "HealMineTrigger"){
+		s += "Create <b>" + data.mineCount + "</b> repair pack" + (data.mineCount != 1 ? "s" : "") + "<br/>";
+		s += printKeyAndData("Repair Amount", data.healing, "heal");
+		s += printKeyAndData("Duration", data.duration + " ms");
+	}
+	else if(tag == "AreaHealTrigger"){
+		s += printKeyAndData("Repair Amount", data.amount, "heal");
+		s += printKeyAndData("Radius", data.radius);
+	}
 	else if(tag == "ShieldRefillTrigger"){
 		s += printKeyAndData("Shield Refill", data.refillPercentage + "%");
 	}
