@@ -1,6 +1,5 @@
 var tableOutput = document.getElementById("tableOutput");
 var datatypes = ["accolade","animation","champion","decor","emitter","explosion","gunbullet","item","lair","lane","map","monster","object","particle","region","soundpack","speaker","symbiote"]; // for utilGAS to load files, calls parseData once completed
-//var datatypes = ["symbiote"]; // for utilGAS to load files, calls parseData once completed
 var datatypesPrev = datatypes;
 loadGasData();
 var errorLogs = document.createElement('div');

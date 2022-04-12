@@ -437,7 +437,6 @@ function dataPrevLoaded(){
   if(datatypesPrev == undefined) return true;
 		for (let i = 0; i < datatypesPrev.length; i++)
 		{
-			console.log(gasDataPrev[datatypesPrev[i]]);
 			if(gasDataPrev[datatypesPrev[i]] == undefined) return false;
 		}
 	return true;
