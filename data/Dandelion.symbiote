@@ -3,16 +3,29 @@
   "effects": [
     {
       "data": {
-        "armingTime": 750,
         "cooldown": 8000,
-        "duration": 15000,
-        "emitterType": "Heal Mine",
-        "explosionType": "Heal Mine",
-        "healing": 250,
-        "objectType": "Heal Mine",
-        "radius": 50
+        "params": [
+          {
+            "data": {
+              "angleOffset": 0,
+              "armingTime": 750,
+              "duration": 15000,
+              "emitterType": "Heal Mine",
+              "explosionType": "Heal Mine",
+              "healing": 250,
+              "mineCount": 1,
+              "objectType": "Heal Mine",
+              "radius": 50,
+              "ringRadius": 10,
+              "tag": ""
+            },
+            "tag": "HealMineTrigger"
+          }
+        ],
+        "percentChance": 100,
+        "targetingRange": 0
       },
-      "tag": "PeriodicHealMine"
+      "tag": "PeriodicTriggerEffect"
     }
   ],
   "enemies": [],

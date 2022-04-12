@@ -39,7 +39,7 @@
   "triggers": [
     {
       "cooldown": 1000,
-      "description": "Sets off an intense polaric reaction, damaging nearby enemies",
+      "description": "Damages nearby enemies with an intense polaric reaction",
       "icon": "bright-explosion",
       "mana": 20,
       "name": "Goretusk Detonation",
@@ -71,7 +71,7 @@
     },
     {
       "cooldown": 5000,
-      "description": "Uses spacetime folding to teleport forward, temporarily disabling nearby enemies",
+      "description": "Teleports forward, temporarily disabling nearby enemies",
       "icon": "fast-arrow",
       "mana": 15,
       "name": "Hog Charge",
@@ -128,7 +128,7 @@
     },
     {
       "cooldown": 10000,
-      "description": "Shunts power from a teracapacitor to instantly reform the shield",
+      "description": "Instantly reforms the shield by shunting power from the reserve teracapacitor",
       "icon": "ice-shield",
       "mana": 10,
       "name": "Bristlehide Recharge",
@@ -151,7 +151,7 @@
     },
     {
       "cooldown": 30000,
-      "description": "Activates war emergency protocols, initiating self-repair while greatly boosting damage output",
+      "description": "Initiaties emergency self-repair while greatly boosting damage output",
       "icon": "boar-tusks",
       "mana": 10,
       "name": "War Boar",
@@ -164,6 +164,7 @@
             "glyphCount": 0,
             "glyphRadius": 0,
             "glyphType": "",
+            "noStack": 0,
             "statType": 0,
             "tag": "Warthog 4 StatBoost"
           },
@@ -178,6 +179,7 @@
             "glyphCount": 20,
             "glyphRadius": 70,
             "glyphType": "Axeraider Rally Glyph",
+            "noStack": 0,
             "tag": "Warthog 4 HealOverTime"
           },
           "tag": "HealOverTimeTrigger"

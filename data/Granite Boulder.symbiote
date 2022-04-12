@@ -1,0 +1,41 @@
+{
+  "description": "Granite Boulder persists stubbornly, solid as a rock.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 30,
+        "statType": 10
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 20,
+        "statType": 3
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 30,
+        "statType": 1
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 30,
+        "statType": 9
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "Granite Boulder",
+  "tier": 1
+}
+

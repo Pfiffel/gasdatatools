@@ -1,0 +1,36 @@
+{
+  "name": "Granite Boulder",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Solid!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Immovable!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Impregnable!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Solid as a rock!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

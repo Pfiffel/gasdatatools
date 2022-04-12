@@ -3,12 +3,22 @@
   "effects": [
     {
       "data": {
-        "amount": 150,
         "cooldown": 7500,
-        "explosionType": "Nightsong Heal",
-        "radius": 200
+        "params": [
+          {
+            "data": {
+              "amount": 150,
+              "explosionType": "Nightsong Heal",
+              "radius": 200,
+              "tag": ""
+            },
+            "tag": "AreaHealTrigger"
+          }
+        ],
+        "percentChance": 100,
+        "targetingRange": 0
       },
-      "tag": "NightsongHeal"
+      "tag": "PeriodicTriggerEffect"
     }
   ],
   "enemies": [],

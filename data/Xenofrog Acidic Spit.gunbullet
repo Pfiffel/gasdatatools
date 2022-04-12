@@ -6,7 +6,7 @@
   "powers": [
     {
       "data": {
-        "caption": "Acid Damage",
+        "caption": "Acid",
         "damage": 100,
         "duration": 5000,
         "emitterType": "Power DoT"

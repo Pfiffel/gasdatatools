@@ -60,7 +60,8 @@
             "range": 115,
             "statusEffects": [],
             "tag": "Wasp 1 Shotgun 1",
-            "targetingDelay": 0
+            "targetingDelay": 0,
+            "tooltip": ""
           },
           "tag": "ShotgunTrigger"
         },
@@ -80,7 +81,8 @@
             "range": 120,
             "statusEffects": [],
             "tag": "Wasp 1 Shotgun 2",
-            "targetingDelay": 0
+            "targetingDelay": 0,
+            "tooltip": ""
           },
           "tag": "ShotgunTrigger"
         },
@@ -124,7 +126,7 @@
     },
     {
       "cooldown": 5000,
-      "description": "Creates a charm-strange quarkfield anomaly, expelling radiation in all directions",
+      "description": "Expels radiation in all directions by creating a charm-strange quarkfield anomaly",
       "icon": "shatter",
       "mana": 10,
       "name": "Quark Blast",
@@ -145,7 +147,8 @@
             "range": 250,
             "statusEffects": [],
             "tag": "Wasp 2 Shotgun",
-            "targetingDelay": 0
+            "targetingDelay": 0,
+            "tooltip": ""
           },
           "tag": "ShotgunTrigger"
         }
@@ -155,7 +158,7 @@
     },
     {
       "cooldown": 10000,
-      "description": "Negates the dimensional phase matrix, repairing hull damage and temporarily dematerializing the Wasp",
+      "description": "Dematerializes the Wasp and repairs hull damage by negating the dimensional phase matrix",
       "icon": "spatter",
       "mana": 15,
       "name": "Phase Negation",
@@ -188,7 +191,7 @@
     },
     {
       "cooldown": 30000,
-      "description": "Uses advanced repressurization techniques to greatly boost main gun performance",
+      "description": "Boosts main gun range and damage using advanced repressurization techniques",
       "icon": "gunshot",
       "mana": 20,
       "name": "Venom Overload",
@@ -201,6 +204,7 @@
             "glyphCount": 0,
             "glyphRadius": 0,
             "glyphType": "",
+            "noStack": 0,
             "statType": 0,
             "tag": ""
           },
@@ -214,6 +218,7 @@
             "glyphCount": 0,
             "glyphRadius": 0,
             "glyphType": "",
+            "noStack": 0,
             "statType": 8,
             "tag": ""
           },

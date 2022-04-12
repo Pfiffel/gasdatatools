@@ -91,8 +91,9 @@
         {
           "data": {
             "collisionSettings": {
-              "cooldownToRetain": 1000,
+              "cooldownToRetain": 1500,
               "damage": 250,
+              "dematerialTime": 500,
               "explosion": "Mako Jaws",
               "explosionRange": 50,
               "manaToRefund": 10,
@@ -139,7 +140,7 @@
     },
     {
       "cooldown": 30000,
-      "description": "Boosts fire rate while damaging nearby enemies, increasing their susceptibility to further damage",
+      "description": "Boosts fire rate while damaging nearby enemies, doubling their susceptibility to further damage",
       "icon": "blood",
       "mana": 10,
       "name": "Blood Frenzy",
@@ -180,6 +181,7 @@
             "glyphCount": 16,
             "glyphRadius": 50,
             "glyphType": "Axeraider Rally Glyph",
+            "noStack": 0,
             "statType": 5,
             "tag": ""
           },

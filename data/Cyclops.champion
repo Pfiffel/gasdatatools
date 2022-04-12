@@ -19,7 +19,7 @@
       "turretBone": "Turret"
     }
   ],
-  "healRate": 3,
+  "healRate": 8,
   "hp": 700,
   "name": "Cyclops",
   "objectType": "Cyclops",
@@ -31,7 +31,7 @@
       "color": 16771535,
       "left": -1800,
       "level": 0,
-      "maxStrength": 175,
+      "maxStrength": 300,
       "right": 1800
     }
   ],
@@ -39,7 +39,7 @@
   "triggers": [
     {
       "cooldown": 1000,
-      "description": "Releases a burst of optical energy in a narrow cone",
+      "description": "Releases a searing cone of optical energy",
       "icon": "ringed-beam",
       "mana": 20,
       "name": "Radiant Flare",
@@ -190,7 +190,7 @@
     },
     {
       "cooldown": 30000,
-      "description": "Enhances targeting and fire control systems to greatly increase rate of fire",
+      "description": "Greatly increases rate of fire by enhancing targeting and fire control systems",
       "icon": "sinusoidal-beam",
       "mana": 10,
       "name": "All-Seeing Eye",
@@ -203,6 +203,7 @@
             "glyphCount": 0,
             "glyphRadius": 0,
             "glyphType": "",
+            "noStack": 0,
             "statType": 5,
             "tag": "Cyclops 4 StatBoost"
           },

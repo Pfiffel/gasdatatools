@@ -4,12 +4,33 @@
     {
       "data": {
         "cooldown": 350,
-        "damage": 200,
-        "explosionType": "Anger Spirit Blast",
+        "params": [
+          {
+            "data": {
+              "damage": 200,
+              "delay": 0,
+              "drawReticle": 1,
+              "drawTooltip": 1,
+              "explosionType": "Anger Spirit Blast",
+              "halfArc": 1800,
+              "mirror": 0,
+              "offset": {
+                "x": 0,
+                "y": 0
+              },
+              "range": 250,
+              "statusEffects": [],
+              "tag": "",
+              "targetingDelay": 0,
+              "tooltip": ""
+            },
+            "tag": "ShotgunTrigger"
+          }
+        ],
         "percentChance": 9,
-        "radius": 250
+        "targetingRange": 250
       },
-      "tag": "AngerSpiritBlast"
+      "tag": "PeriodicTriggerEffect"
     }
   ],
   "enemies": [],

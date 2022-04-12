@@ -91,7 +91,7 @@
   "triggers": [
     {
       "cooldown": 1000,
-      "description": "Uses spacetime cracking to damage nearby enemies",
+      "description": "Damages nearby enemies using spacetime cracking",
       "icon": "spiky-explosion",
       "mana": 20,
       "name": "Shockwave",
@@ -112,7 +112,8 @@
             "range": 265,
             "statusEffects": [],
             "tag": "Hercules 1 Shotgun",
-            "targetingDelay": 0
+            "targetingDelay": 0,
+            "tooltip": ""
           },
           "tag": "ShotgunTrigger"
         }
@@ -143,7 +144,8 @@
             "range": 335,
             "statusEffects": [],
             "tag": "Hercules 2 Shotgun",
-            "targetingDelay": 0
+            "targetingDelay": 0,
+            "tooltip": ""
           },
           "tag": "ShotgunTrigger"
         }
@@ -174,7 +176,8 @@
             "range": 160,
             "statusEffects": [],
             "tag": "Hercules 3 Shotgun 1",
-            "targetingDelay": 0
+            "targetingDelay": 0,
+            "tooltip": ""
           },
           "tag": "ShotgunTrigger"
         },
@@ -194,7 +197,8 @@
             "range": 160,
             "statusEffects": [],
             "tag": "Hercules 3 Shotgun 2",
-            "targetingDelay": 400
+            "targetingDelay": 400,
+            "tooltip": ""
           },
           "tag": "ShotgunTrigger"
         },
@@ -214,7 +218,8 @@
             "range": 160,
             "statusEffects": [],
             "tag": "Hercules 3 Shotgun 3",
-            "targetingDelay": 800
+            "targetingDelay": 800,
+            "tooltip": ""
           },
           "tag": "ShotgunTrigger"
         },
@@ -234,7 +239,8 @@
             "range": 160,
             "statusEffects": [],
             "tag": "Hercules 3 Shotgun 4",
-            "targetingDelay": 1200
+            "targetingDelay": 1200,
+            "tooltip": ""
           },
           "tag": "ShotgunTrigger"
         },
@@ -254,7 +260,8 @@
             "range": 160,
             "statusEffects": [],
             "tag": "Hercules 3 Shotgun 5",
-            "targetingDelay": 1600
+            "targetingDelay": 1600,
+            "tooltip": ""
           },
           "tag": "ShotgunTrigger"
         },
@@ -349,7 +356,7 @@
     },
     {
       "cooldown": 30000,
-      "description": "Overloads defense systems to focus and release energy in a quantum shellburst",
+      "description": "Generates a large emergency shield, producing a massive quantum shellburst as the shield expires",
       "icon": "barbed-sun",
       "mana": 15,
       "name": "Battle Aegis",
@@ -396,7 +403,8 @@
             "range": 265,
             "statusEffects": [],
             "tag": "Hercules 4 Shotgun",
-            "targetingDelay": 5000
+            "targetingDelay": 5000,
+            "tooltip": ""
           },
           "tag": "ShotgunTrigger"
         }

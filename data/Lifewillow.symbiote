@@ -3,19 +3,25 @@
   "effects": [
     {
       "data": {
-        "angleOffset": 0,
-        "armingTime": 750,
-        "duration": 10000,
-        "emitterType": "Heal Mine",
-        "explosionType": "Heal Mine",
-        "healing": 100,
-        "mineCount": 2,
-        "objectType": "Heal Mine",
-        "radius": 30,
-        "ringRadius": 50,
+        "params": {
+          "data": {
+            "angleOffset": 0,
+            "armingTime": 750,
+            "duration": 10000,
+            "emitterType": "Heal Mine",
+            "explosionType": "Heal Mine",
+            "healing": 100,
+            "mineCount": 2,
+            "objectType": "Heal Mine",
+            "radius": 30,
+            "ringRadius": 50,
+            "tag": ""
+          },
+          "tag": "HealMineTrigger"
+        },
         "when": 2
       },
-      "tag": "TriggeredHealMineBurst"
+      "tag": "TriggeredTriggerEffect"
     }
   ],
   "enemies": [],
