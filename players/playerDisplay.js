@@ -1,21 +1,26 @@
 var gunColors = ["#AAAAAA","#DDAADD","#DDDDAA","#AADDDD"];
+var header = document.getElementById("header");
+var options = document.getElementById("options");
 var tableOutput = document.getElementById("tableOutput");
 var GUN_SCALE = 0.2;
 var miniDPSTable = [];
 var skip = {"Testank":true,"Testank2":true,"Duality":true};
+const CHECKBOX_ACCOLADES = "Show Accolades";
+const NOTES_DPS = {
+	"Wasp":"Assumes you always hit all Trigger 1 projectiles",
+	"Mako":"Does not consider Trigger 2 cooldown and energy resets"
+};
 
-var datatypes = ["champion","object"]; // for utilGAS to load files, calls parseData once completed
+var datatypes = ["champion","object","accolade"]; // for utilGAS to load files, calls parseData once completed
 loadGasData();
-
-function parseData()
+function Refresh()
 {
-	tbl = document.createElement('table');
+	let tbl = document.createElement('table');
 	let th = tbl.insertRow();
 	makeHeaderCell("Name", th);
 	makeHeaderCell("Blurb", th);
 	makeHeaderCell("Hull & Repair", th);
 	makeHeaderCell("Radius", th);
-	makeHeaderCell("Size", th);
 	makeHeaderCell("Movement", th);
 	
 	makeHeaderCell("Guns <i>(graphic is scaled down to " + percToString(GUN_SCALE) + ")</i>", th);
@@ -33,19 +38,75 @@ function parseData()
 		makeCell(player.blurb, tr);
 		makeHullCell(tr.insertCell(), player);
 
-		makeCell(player.radius, tr);
-		var sizeCell = makeCell(round(Math.PI*(player.radius*player.radius), 2), tr);
+		var size = round(Math.PI*(player.radius*player.radius), 2);
+		var sizeCell = makeCell(player.radius, tr);
 		sizeCell.appendChild(drawHitbox(player.radius));
+		sizeCell.appendChild(document.createTextNode(size));
+		sizeCell.appendChild(document.createElement("br"));
+		sizeCell.appendChild(document.createTextNode("area size"));
 		makeMoveCell(tr.insertCell(), player);
 		makeGunCell(tr.insertCell(), player);
 		makeTriggerCell(tr.insertCell(), player);
 		makeShieldCell(tr.insertCell(), player);
+		if(document.getElementById(CHECKBOX_ACCOLADES).checked)
+		{
+			let tr2 = tbl.insertRow();
+			let accCell = tr2.insertCell();
+			accCell.colSpan = 9;
+			accCell.style.width = "10px"; // hack to make it not stretch past the actual table width
+			makeAccoladeCell(accCell, player);
+		}
 	}
-	var divTotal = document.createElement('div');
-	divTotal.innerHTML += "<h1>Player Tanks</h1>";
-	tableOutput.appendChild(divTotal);
+	tableOutput.innerHTML = "";
 	tableOutput.appendChild(tbl);
 	makeMiniDPSTable(tableOutput);
+}
+function parseData()
+{
+	header.innerHTML = "<h1>Player Tanks</h1>";
+	makeInputCheckbox(CHECKBOX_ACCOLADES, Refresh, options, true);
+	Refresh();
+}
+function makeAccoladeCell(container, player)
+{
+	var accHeader = document.createElement('div');
+	container.appendChild(accHeader);
+	var accolades = GetAccolades(player.name);
+	for (let i in accolades)
+	{
+		var accolade = accolades[i];
+		var divTable = document.createElement('div');
+		divTable.classList.add("inline");
+		divTable.appendChild(MakeStatsTable(accolade, 0));
+		container.appendChild(divTable);
+	}
+	var totalCost = CalculateAccoladeCost(accolades.length);
+	accHeader.innerHTML = "<b>" + player.name + " Accolade Bonuses" + "</b> (" + accolades.length + " total, " + totalCost + " total Accolade cost: " + totalCost*100 + " boss kills)";
+}
+function CalculateAccoladeCost(amount)
+{
+	const SAME_COST = 3;
+	var currentCost = 0;
+	var totalCost = 0;
+	for (let i = 0; i < amount; i++)
+	{
+		var mod = i % SAME_COST;
+		if(mod == 0) currentCost++;
+		totalCost += currentCost;
+	}
+	return totalCost;
+}
+function MakeAccoladeRow(container, accolade)
+{
+	let tr = container.insertRow();
+	makeCell(accolade.displayName, tr);
+	makeCellE(MakeStatsTable(accolade, 0), tr)
+}
+function MakeAccoladeCell(container, accolade)
+{
+	let tr = container.insertRow();
+	makeCell(accolade.displayName, tr);
+	makeCellE(MakeStatsTable(accolade, 0), tr)
 }
 function makeMiniDPSTable(container)
 {
@@ -135,6 +196,7 @@ function makeGunCell(container, player)
 function makeTriggerCell(container, player)
 {
 	var triggerTable = document.createElement('table');
+	//triggerTable.classList.add("inline");
 	let thT = triggerTable.insertRow();
 	makeHeaderCell("Trig", thT);
 	makeHeaderCell("Cost", thT);
@@ -249,10 +311,12 @@ function makeTriggerCell(container, player)
 			totalDPS += dpsCurrent;
 		}
 	}
-
+	var addAsterisk = NOTES_DPS[player.name] != undefined;
 	var divDPSInfo = document.createElement('div');
+	if(addAsterisk) divDPSInfo.title = NOTES_DPS[player.name];
+	//divDPSInfo.classList.add("inline");
 	divDPSInfo.innerHTML += dpsInfo;
-	divDPSInfo.innerHTML += "Maximum DPS: <b>" + round(totalDPS, 2) + "</b>";
+	divDPSInfo.innerHTML += "Maximum DPS: <b>" + round(totalDPS, 2) + (addAsterisk ? "*" : "") + "</b>";
 	miniDPSTable[player.name].trigDPS = totalDPS;
 	container.appendChild(triggerTable);
 	container.appendChild(divDPSInfo);

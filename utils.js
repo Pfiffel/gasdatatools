@@ -94,7 +94,10 @@ function unCaps(s){
 	return s.charAt(0) + s.substr(1).toLowerCase();
 }
 function amountToString(i){
-	return (i >= 0 ? "+" + i : i) + "% ";
+	return BonusPrefix(i) + "% ";
+}
+function BonusPrefix(i){
+	return (i >= 0 ? "+" + i : i);
 }
 function makeHeaderCell(innerHTML, container, className)
 {

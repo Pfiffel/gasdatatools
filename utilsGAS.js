@@ -102,7 +102,8 @@ function MakeStatsTable(mainData, tier)
 {
 	var tbl = document.createElement('table');
 	let th = tbl.insertRow();
-	makeHeaderCell(colorWrap(mainData.name, TIER_COLORS[tier]), th);
+	var name = mainData.displayName != undefined ? mainData.displayName : mainData.name;
+	makeHeaderCell(colorWrap(name, TIER_COLORS[tier]), th);
 	if(mainData.description != undefined && mainData.description != "")
 	{
 		let tr = tbl.insertRow();
@@ -197,6 +198,12 @@ function MakeStatsTable(mainData, tier)
 				s += ShowStatusEffect(effect);
 			}
 		}
+		else if(mainTag == "TaggedTriggerBonus")
+		{
+			if(data.tooltip == "") continue;
+			s += data.tooltip + "<br/>";
+			s += GetBonusEffectString(data.bonus.tag, data.bonus.data);
+		}
 		else
 		{
 			s += "<u>"+mainTag+"</u>";
@@ -226,7 +233,7 @@ function GetTriggeredEffectString(tag, data)
 	var s = "";
 	if(tag == "FireRateBoostTrigger"){
 		s += printKeyAndData("Rate of Fire Boost", data.amount + "%");
-		s += printKeyAndData("Duration", data.duration);
+		s += printKeyAndData("Duration", data.duration + " ms");
 	}
 	else if(tag == "ShotgunTrigger"){
 		s += printKeyAndData("AoE Damage", data.damage);
@@ -235,7 +242,7 @@ function GetTriggeredEffectString(tag, data)
 	}
 	else if(tag == "HealOverTimeTrigger"){
 		s += printKeyAndData("Heal Amount", data.amount + (data.asPercentage == 1 ? "%" : ""), data.applyToMana == 1 ? "energy" : "heal");
-		s += printKeyAndData("Duration", data.duration);
+		s += printKeyAndData("Duration", data.duration + " ms");
 	}
 	else if(tag == "ShieldRefillTrigger"){
 		s += printKeyAndData("Shield Refill", data.refillPercentage + "%");
@@ -245,17 +252,17 @@ function GetTriggeredEffectString(tag, data)
 	}
 	else if(tag == "StatBoostTrigger"){
 		s += printKeyAndData(GetStat(data.statType, 1), data.amount + "%");
-		s += printKeyAndData("Duration", data.duration);
+		s += printKeyAndData("Duration", data.duration + " ms");
 	}
 	else if(tag == "DematerializeTrigger"){
 		if(data.percentChance != undefined && data.percentChance != 100)
 			s += printKeyAndData("Dematerialize Chance", data.percentChance + "%");
-		s += printKeyAndData("Dematerialize Duration", data.duration);
+		s += printKeyAndData("Dematerialize Duration", data.duration + " ms");
 	}
 	else if(tag == "ExtraGunTrigger"){
 		let dps = round(1000*data.stats.damage/data.stats.cooldown,2);
 		s += printKeyAndData("Create Gun", dps + " DPS");
-		s += printKeyAndData("Duration", data.duration);
+		s += printKeyAndData("Duration", data.duration + " ms");
 	}
 	else if(tag == "ExtraShieldTrigger"){
 		var hex = numberToHex(data.stats.color);
@@ -273,6 +280,63 @@ function GetTriggeredEffectString(tag, data)
 		s += printKeyAndData("Missile Count", data.count);
 		s += printKeyAndData("Damage", data.damage);
 		s += printKeyAndData("Range", data.range);
+	}
+	return s;
+}
+function GetBonusEffectString(tag, data)
+{
+	var s = "";/*
+	if(tag == "FireRateBoostTrigger"){
+		s += printKeyAndData("Rate of Fire Boost", data.amount + "%");
+		s += printKeyAndData("Duration", data.duration);
+	}*/
+	if(tag == "ShotgunTriggerBonus"){
+		// TODO pass in raw data value to function, handle the prefix there, pass in category (amount, time, percentage)
+		if(data.damage != 0)					s += printKeyAndDataBonus("AoE Damage", BonusPrefix(data.damage));
+		if(data.range != 0)						s += printKeyAndDataBonus("Range", BonusPrefix(data.range));
+		if(data.halfArc != 0)					s += printKeyAndDataBonus("Arc", BonusPrefix(data.halfArc * 0.2) + "°");
+		if(data.targetingDelay != 0)	s += printKeyAndDataBonus("Targeting Delay", BonusPrefix(data.targetingDelay) + " ms");
+	}
+	/*
+	else if(tag == "HealOverTimeTrigger"){
+		s += printKeyAndData("Heal Amount", data.amount + (data.asPercentage == 1 ? "%" : ""), data.applyToMana == 1 ? "energy" : "heal");
+		s += printKeyAndData("Duration", data.duration);
+	}
+	else if(tag == "ShieldRefillTrigger"){
+		s += printKeyAndData("Shield Refill", data.refillPercentage + "%");
+	}*/
+	else if(tag == "HealTriggerBonus"){
+		if(data.healAmount != 0)			s += printKeyAndDataBonus("Repair Amount", BonusPrefix(data.healAmount) + (data.usePercentInTooltip == 1 ? "%" : ""), data.applyToMana == 1 ? "energy" : "heal");
+	}
+	else if(tag == "StatBoostTriggerBonus"){
+		if(data.amount != 0)					s += printKeyAndDataBonus(GetStat(data.statType, 1), BonusPrefix(data.amount) + "%");
+		if(data.duration != 0)				s += printKeyAndDataBonus("Duration", BonusPrefix(data.duration) + " ms");
+	}/*
+	else if(tag == "DematerializeTrigger"){
+		if(data.percentChance != undefined && data.percentChance != 100)
+			s += printKeyAndData("Dematerialize Chance", data.percentChance + "%");
+		s += printKeyAndData("Dematerialize Duration", data.duration);
+	}
+	else if(tag == "ExtraGunTrigger"){
+		let dps = round(1000*data.stats.damage/data.stats.cooldown,2);
+		s += printKeyAndData("Create Gun", dps + " DPS");
+		s += printKeyAndData("Duration", data.duration);
+	}*/
+	else if(tag == "ExtraShieldTriggerBonus"){
+		if(data.maxStrength != 0)			s += printKeyAndDataBonus("Shield Strength", BonusPrefix(data.maxStrength));
+		if(data.duration != 0)				s += printKeyAndDataBonus("Duration", BonusPrefix(data.duration) + " ms");
+	}/*
+	else if(tag == "GunProcTrigger"){
+		s += "For <b>" + data.duration + "</b> ms, gun shots apply:" + "<br/>";
+		s += ShowStatusEffect(data.statusEffect);
+	}
+	else if(tag == "LeapTrigger"){
+		s += printKeyAndData("Leap Distance", data.range);
+	}*/
+	else if(tag == "SharkletTriggerBonus"){
+		if(data.count != 0)						s += printKeyAndDataBonus("Missile Count", BonusPrefix(data.count));
+		if(data.damage != 0)					s += printKeyAndDataBonus("Damage", BonusPrefix(data.damage));
+		if(data.range != 0)						s += printKeyAndDataBonus("Range", BonusPrefix(data.range));
 	}
 	return s;
 }
@@ -318,6 +382,7 @@ function showUsage(data)
 	return tbl;
 }
 function printKeyAndData(key, data, cssClass){
+	//BonusPrefix(i)
 	cssClass = cssClass === undefined ? "" : cssClass;
 	var addText = classWrap(key, "cKey") + ": " + classWrap(data, cssClass == "" ? "cKeyValue" : cssClass);
 	if(key == "color")
@@ -325,6 +390,13 @@ function printKeyAndData(key, data, cssClass){
 		var hex = numberToHex(data);
 		addText += " (" + colorWrap(hex, hex) + ")";
 	}
+	addText += "<br/>";
+	return addText;
+}
+function printKeyAndDataBonus(key, data, cssClass){
+	//BonusPrefix(i)
+	cssClass = cssClass === undefined ? "" : cssClass;
+	var addText = classWrap(data, cssClass == "" ? "cKeyValue" : cssClass) + " " + classWrap(key, "cKey");
 	addText += "<br/>";
 	return addText;
 }
@@ -369,6 +441,15 @@ function dataFLoaded(){
 		if(gasDataF[datatypesF[i]] == undefined) return false;
 	}
 	return true;
+}
+function GetAccolades(champion){
+	var accolades = [];
+	for (let i = 0; i < gasData["accolade"].length; i++)
+	{
+		var accolade = gasData["accolade"][i];
+		if(champion == accolade.champion) accolades.push(accolade);
+	}
+	return accolades;
 }
 // TODO make objects with name key list instead of all this iteration?
 function getLair(type){
