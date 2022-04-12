@@ -81,7 +81,7 @@ function CompareJSON(entity, entityPrev, parent)
 {
 	for (let key in entity)
 	{
-		if(entityPrev[key] != undefined)
+		if(entityPrev != undefined && entity[key] != "")
 		{
 			if(typeof entity[key] == 'object')
 				CompareJSON(entity[key], entityPrev[key], parent + " " + (entity.name != undefined ? entity.name : "") + " " + key);
