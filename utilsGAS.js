@@ -402,8 +402,8 @@ function printKeyAndDataBonus(key, data, cssClass){
 }
 // Loading Stuff
 var gasData = {};
-var gasDataF = {};
-var datatypesF = undefined;
+var gasDataPrev = {};
+var datatypesPrev = undefined;
 var additionalFileLoaded = true;
 function loadGasData()
 {
@@ -414,17 +414,17 @@ function loadGasData()
 			if(allLoaded()) parseData();
 		});
 	}
-    if(datatypesF != undefined)
-    for (let i = 0; i < datatypesF.length; i++)
-	{
-		loadJsonFile("../jsonfactory/" + datatypesF[i] + ".json", function(loadedDataF){
-			gasDataF[datatypesF[i]] = JSON.parse(loadedDataF);
-			if(allLoaded()) parseData();
-		});
-	}
+  if(datatypesPrev != undefined)
+    for (let i = 0; i < datatypesPrev.length; i++)
+		{
+			loadJsonFile("../json_previous/" + datatypesPrev[i] + ".json", function(loadedDataPrev){
+				gasDataPrev[datatypesPrev[i]] = JSON.parse(loadedDataPrev);
+				if(allLoaded()) parseData();
+			});
+		}
 }
 function allLoaded(){
-	return dataLoaded() && dataFLoaded() && additionalFileLoaded;
+	return dataLoaded() && dataPrevLoaded() && additionalFileLoaded;
 }
 function dataLoaded(){
 	for (let i = 0; i < datatypes.length; i++)
@@ -433,13 +433,13 @@ function dataLoaded(){
 	}
 	return true;
 }
-function dataFLoaded(){
-    if(datatypesF == undefined) return true;
-	for (let i = 0; i < datatypesF.length; i++)
-	{
-        console.log(gasDataF[datatypesF[i]]);
-		if(gasDataF[datatypesF[i]] == undefined) return false;
-	}
+function dataPrevLoaded(){
+  if(datatypesPrev == undefined) return true;
+		for (let i = 0; i < datatypesPrev.length; i++)
+		{
+			console.log(gasDataPrev[datatypesPrev[i]]);
+			if(gasDataPrev[datatypesPrev[i]] == undefined) return false;
+		}
 	return true;
 }
 function GetAccolades(champion){

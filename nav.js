@@ -1,4 +1,5 @@
-const pages = {"enemies":true, "players":true, "symbiotes":true, "items":true, "maps":true};
+const BUILD = 22;
+const pages = {"enemies":true, "players":true, "symbiotes":true, "items":true, "maps":true, "diff":true};
 const here = getCurrentPage();
 const nav = document.getElementById("nav");
 
@@ -7,6 +8,7 @@ for (var page in pages)
 	if(pages[page] != true) continue;
 	MakeLink(page);
 }
+nav.appendChild(document.createTextNode(" - current data: Build " + BUILD));
 
 function MakeLink(page)
 {
