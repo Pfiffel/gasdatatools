@@ -494,6 +494,7 @@ function getItem(type){
 		var item = gasData["item"][i];
 		if(type == item.name) return item;
 	}
+	console.log(type + " not found");
 }
 function GetRegion(type){
 	for (let i = 0; i < gasData["region"].length; i++)

@@ -232,12 +232,14 @@ class Monster
 		for (let drop in this.data.drops){
 			var item = this.data.drops[drop];
 			let mainData = getItem(item.itemType);
+			if(mainData == undefined) continue;
 			var tier = mainData.credits;
 			listLoot += "<b>" + colorWrap(mainData.name, TIER_COLORS[tier])  + "</b> " + (item.micros/10000)+ "%, ";
 		}
 		var listConsolation = "";
 		for (let i in this.data.consolationPrizes){
 			let mainData = getItem(this.data.consolationPrizes[i]);
+			if(mainData == undefined) continue;
 			var tier = mainData.credits;
 			listConsolation += "<b>" + colorWrap(mainData.name, TIER_COLORS[tier])  + "</b>, ";
 		}
