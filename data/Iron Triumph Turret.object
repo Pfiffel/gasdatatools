@@ -29,7 +29,7 @@
     }
   ],
   "floppiness": 0,
-  "name": "Iron Fortress Turret",
+  "name": "Iron Triumph Turret",
   "shapes": [
     {
       "bone": "",
@@ -42,12 +42,12 @@
       "noDraw": 0,
       "points": [
         {
-          "x": 62,
+          "x": 59,
           "y": 7
         },
         {
-          "x": 23,
-          "y": 14
+          "x": 26,
+          "y": 16
         }
       ],
       "useBoneMirror": 1
@@ -62,6 +62,10 @@
       "name": "Housing",
       "noDraw": 0,
       "points": [
+        {
+          "x": 31,
+          "y": 5
+        },
         {
           "x": 34,
           "y": 14
@@ -83,16 +87,65 @@
           "y": 37
         },
         {
-          "x": -26,
-          "y": 30
+          "x": -25,
+          "y": 28
+        },
+        {
+          "x": -34,
+          "y": 14
         },
         {
           "x": -37,
-          "y": 15
+          "y": 3
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 2894387,
+      "height": 8,
+      "mirror": 1,
+      "name": "Housing",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 25,
+          "y": 3
         },
         {
-          "x": -38,
-          "y": 4
+          "x": 23,
+          "y": 9
+        },
+        {
+          "x": 19,
+          "y": 17
+        },
+        {
+          "x": 12,
+          "y": 21
+        },
+        {
+          "x": 4,
+          "y": 25
+        },
+        {
+          "x": -6,
+          "y": 25
+        },
+        {
+          "x": -17,
+          "y": 20
+        },
+        {
+          "x": -25,
+          "y": 10
+        },
+        {
+          "x": -25,
+          "y": 2
         }
       ],
       "useBoneMirror": 1

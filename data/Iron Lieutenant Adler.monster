@@ -1,10 +1,7 @@
 {
   "boss": 0,
   "collisionRadius": 35,
-  "consolationPrizes": [
-    "Bilateral Charger",
-    "Subspace Cycler"
-  ],
+  "consolationPrizes": [],
   "deathCrySoundPack": "Iron Hammer Death Cries",
   "drops": [
     {
@@ -31,20 +28,17 @@
       "itemType": "Flux Charger",
       "levelCap": 20,
       "micros": 100000
-    },
-    {
-      "itemType": "Wave Cycler",
-      "levelCap": 20,
-      "micros": 100000
     }
   ],
   "healRate": 8,
   "hp": 4000,
   "idleAnimation": "",
+  "maxMoveDistance": 500,
   "name": "Iron Lieutenant Adler",
   "objectType": "Iron Lieutenant Adler",
   "pauseBetweenMovements": 0,
   "runAnimation": "",
+  "runAnimationDuration": 700,
   "runSpeed": 180,
   "successorMonster": "",
   "weaponType": "",
@@ -52,6 +46,8 @@
     {
       "attachmentPoint": "Turret Left",
       "cooldown": 500,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "Iron Lieutenant Adler Turret Wing",
       "params": {
         "data": {
@@ -59,7 +55,6 @@
           "weapons": [
             {
               "data": {
-                "aimed": 1,
                 "angleBetweenProjectiles": 150,
                 "gunBulletType": "Iron Protector",
                 "leading": 0,
@@ -75,11 +70,17 @@
           ]
         },
         "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "Turret Right",
       "cooldown": 500,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "Iron Lieutenant Adler Turret Wing",
       "params": {
         "data": {
@@ -91,7 +92,6 @@
             },
             {
               "data": {
-                "aimed": 1,
                 "angleBetweenProjectiles": 150,
                 "gunBulletType": "Iron Protector",
                 "leading": 0,
@@ -103,11 +103,17 @@
           ]
         },
         "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "",
       "cooldown": 4000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "",
       "params": {
         "data": {
@@ -133,11 +139,17 @@
           "volume": 50
         },
         "tag": "MinionParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "Turret Main",
       "cooldown": 600,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "Iron Lieutenant Adler Turret Main",
       "params": {
         "data": {
@@ -153,7 +165,6 @@
             },
             {
               "data": {
-                "aimed": 1,
                 "angleBetweenProjectiles": 300,
                 "gunBulletType": "Iron Bulwark",
                 "leading": 0,
@@ -181,6 +192,10 @@
           ]
         },
         "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
       }
     }
   ],

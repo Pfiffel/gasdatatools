@@ -1,13 +1,18 @@
 {
+  "boss": 0,
   "collisionRadius": 35,
+  "consolationPrizes": [],
   "deathCrySoundPack": "Iron Hammer Death Cries",
   "drops": [],
   "healRate": 0,
   "hp": 300,
   "idleAnimation": "",
+  "maxMoveDistance": 500,
   "name": "Iron Hammer",
   "objectType": "Iron Hammer",
+  "pauseBetweenMovements": 0,
   "runAnimation": "",
+  "runAnimationDuration": 700,
   "runSpeed": 75,
   "successorMonster": "",
   "weaponType": "",
@@ -15,49 +20,64 @@
     {
       "attachmentPoint": "Turret Left",
       "cooldown": 1500,
-      "objectType": "Iron Bulwark Aux Turret",
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Iron Hammer Turret",
       "params": {
         "data": {
-          "aimed": 1,
-          "cooldown": 1500,
+          "angleBetweenProjectiles": 150,
           "gunBulletType": "Iron Hammer",
           "leading": 0,
           "numProjectiles": 1,
           "range": 600
         },
         "tag": "GunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "Turret Right",
       "cooldown": 1500,
-      "objectType": "Iron Bulwark Aux Turret",
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Iron Hammer Turret",
       "params": {
         "data": {
-          "aimed": 1,
-          "cooldown": 1500,
+          "angleBetweenProjectiles": 150,
           "gunBulletType": "Iron Hammer",
           "leading": 0,
           "numProjectiles": 1,
           "range": 600
         },
         "tag": "GunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "Turret Main",
       "cooldown": 1500,
-      "objectType": "Iron Bulwark Aux Turret",
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Iron Hammer Turret",
       "params": {
         "data": {
-          "aimed": 1,
-          "cooldown": 1500,
+          "angleBetweenProjectiles": 150,
           "gunBulletType": "Iron Hammer",
           "leading": 0,
           "numProjectiles": 1,
           "range": 600
         },
         "tag": "GunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
       }
     }
   ],

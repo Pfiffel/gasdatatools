@@ -3,16 +3,16 @@
     {
       "bonePositions": [
         {
-          "bone": "Foot Mirror",
+          "bone": "Foot",
           "rot": 0,
-          "x": -29,
+          "x": 29,
           "y": 0,
           "z": 0
         },
         {
-          "bone": "Foot",
+          "bone": "Foot Mirror",
           "rot": 0,
-          "x": 37,
+          "x": -21,
           "y": 0,
           "z": 0
         }
@@ -25,14 +25,14 @@
         {
           "bone": "Foot",
           "rot": 0,
-          "x": -29,
+          "x": -21,
           "y": 0,
           "z": 0
         },
         {
           "bone": "Foot Mirror",
           "rot": 0,
-          "x": 37,
+          "x": 29,
           "y": 0,
           "z": 0
         }

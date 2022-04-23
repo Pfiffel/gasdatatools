@@ -7,15 +7,15 @@
         "params": [
           {
             "data": {
-              "count": 3,
-              "damage": 60,
+              "count": 6,
+              "damage": 75,
               "emitterType": "Locust Trail",
               "objectType": "Locust Missile",
               "range": 340,
               "sound": "Player_Hercules_Shockwave",
               "speed": 200,
               "tag": "",
-              "timeGap": 600,
+              "timeGap": 400,
               "tweenType": "EXPOIN",
               "volume": 50
             },

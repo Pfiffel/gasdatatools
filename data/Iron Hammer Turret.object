@@ -6,7 +6,7 @@
       "pos": {
         "f": 0,
         "p": {
-          "x": 59,
+          "x": 40,
           "y": 0
         }
       }
@@ -29,25 +29,25 @@
     }
   ],
   "floppiness": 0,
-  "name": "Iron Bulwark Turret",
+  "name": "Iron Hammer Turret",
   "shapes": [
     {
       "bone": "",
       "clones": [],
       "closed": 0,
       "color": 8026746,
-      "height": 7,
+      "height": 4,
       "mirror": 1,
       "name": "Barrel",
       "noDraw": 0,
       "points": [
         {
-          "x": 60,
-          "y": 8
+          "x": 40,
+          "y": 4
         },
         {
-          "x": 21,
-          "y": 11
+          "x": 12,
+          "y": 6
         }
       ],
       "useBoneMirror": 1
@@ -57,34 +57,22 @@
       "clones": [],
       "closed": 0,
       "color": 7935502,
-      "height": 8,
+      "height": 6,
       "mirror": 1,
       "name": "Housing",
       "noDraw": 0,
       "points": [
         {
-          "x": 32,
-          "y": 15
+          "x": 19,
+          "y": 9
         },
         {
-          "x": 14,
-          "y": 24
+          "x": 0,
+          "y": 16
         },
         {
-          "x": -1,
-          "y": 30
-        },
-        {
-          "x": -14,
-          "y": 32
-        },
-        {
-          "x": -23,
-          "y": 21
-        },
-        {
-          "x": -30,
-          "y": 4
+          "x": -29,
+          "y": 6
         }
       ],
       "useBoneMirror": 1

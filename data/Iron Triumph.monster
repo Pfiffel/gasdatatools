@@ -7,9 +7,12 @@
   "healRate": 0,
   "hp": 1300,
   "idleAnimation": "",
+  "maxMoveDistance": 500,
   "name": "Iron Triumph",
   "objectType": "Iron Triumph",
+  "pauseBetweenMovements": 0,
   "runAnimation": "",
+  "runAnimationDuration": 700,
   "runSpeed": 75,
   "successorMonster": "",
   "weaponType": "",
@@ -17,54 +20,71 @@
     {
       "attachmentPoint": "Turret Left",
       "cooldown": 1500,
-      "objectType": "Iron Fortress Turret",
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Iron Triumph Turret",
       "params": {
         "data": {
-          "aimed": 1,
-          "cooldown": 1500,
+          "angleBetweenProjectiles": 150,
           "gunBulletType": "Iron Triumph",
           "leading": 0,
           "numProjectiles": 1,
           "range": 600
         },
         "tag": "GunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "Turret Right",
       "cooldown": 1500,
-      "objectType": "Iron Fortress Turret",
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Iron Triumph Turret",
       "params": {
         "data": {
-          "aimed": 1,
-          "cooldown": 1500,
+          "angleBetweenProjectiles": 150,
           "gunBulletType": "Iron Triumph",
           "leading": 0,
           "numProjectiles": 1,
           "range": 600
         },
         "tag": "GunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "Turret Main",
       "cooldown": 1500,
-      "objectType": "Iron Fortress Turret",
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Iron Triumph Turret",
       "params": {
         "data": {
-          "aimed": 1,
-          "cooldown": 1500,
+          "angleBetweenProjectiles": 150,
           "gunBulletType": "Iron Triumph",
           "leading": 0,
           "numProjectiles": 1,
           "range": 600
         },
         "tag": "GunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "",
       "cooldown": 750,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "",
       "params": {
         "data": {
@@ -73,11 +93,16 @@
           "emitterType": "Iron Triumph",
           "explosionType": "Iron Triumph Burst",
           "objectType": "Iron Triumph Mine",
+          "powers": [],
           "radius": 50,
           "range": 500,
           "speed": 250
         },
         "tag": "MinelayerParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
       }
     }
   ],
