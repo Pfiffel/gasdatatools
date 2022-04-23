@@ -13,6 +13,8 @@ function parseIDs() // make super duper recursive id checker?
 {
 
 }
+var changedObjects = {};
+var changedMaps = {};
 let divList = document.createElement('div');
 function parseData()
 {
@@ -38,12 +40,13 @@ function parseData()
 				else if (file == "object")
 				{
 					addLine("New " + file + ": <b>" + entity.name + "</b>", divList);
-					//divList.appendChild(draw(entity, 0.4));
+					// should do this, but in build 24 the only new objects are just for turrets that already exist (Anvil, Hammer)
+					//changedObjects[entity.name] = true;
+					// TODO make draw function for just objects
 				}
 				else
 					addLine("New " + file + ": <b>" + entity.name + "</b>", divList);
 			}
-				
 		}
 	}
 	var hChanged = document.createElement("h2");
@@ -57,9 +60,23 @@ function parseData()
 			let entity = gasData[file][i];
 			let entityPrev = GetPrevEntity(file, entity.name);
 			if(entityPrev != null) 
-				CompareJSON(entity, entityPrev, "");
+				CompareJSON(entity, entityPrev, entity.name, file, "");
 		}
 	}
+	var entitySpriteChanged = FindObjectUsage(changedObjects);
+	for (let entity in entitySpriteChanged)
+	{
+		var spritePrev = draw(GetPrevEntity("monster", entity), 0.4, true);
+		var spriteNew = draw(GetNewEntity("monster", entity), 0.4, false);
+		let compare = document.createElement('div');
+		compare.classList.add("diffBlock");
+		let header = document.createElement('div');
+		header.innerHTML = entity + " graphics";
+		compare.appendChild(header);
+		compare.appendChild(MakeCanvasCompare(spritePrev, spriteNew));
+		divList.appendChild(compare);
+	}
+
 	var hRemoved = document.createElement("h2");
 	hRemoved.textContent = "Removed";
 	divList.appendChild(hRemoved);
@@ -77,29 +94,95 @@ function parseData()
 	}
 	tableOutput.appendChild(divList);
 }
-function CompareJSON(entity, entityPrev, parent)
+function MakeCanvasCompare(c1, c2)
+{
+	let divSpriteCompare = document.createElement('div');
+	divSpriteCompare.style.display = "table";
+	let divSpritePrev = document.createElement('div');
+	let divSpriteNew = document.createElement('div');
+	divSpritePrev.style.display = "table-cell";
+	divSpritePrev.style.verticalAlign = "middle";
+	divSpriteNew.style.display = "table-cell";
+	divSpriteNew.style.verticalAlign = "middle";
+	divSpritePrev.appendChild(c1);
+	divSpriteNew.appendChild(c2);
+	
+	let divArrow = document.createElement('div');
+	divArrow.style.display = "table-cell";
+	divArrow.style.verticalAlign = "middle";
+	divArrow.innerHTML = "&#160;&#8594;&#160;";
+
+	divSpriteCompare.appendChild(divSpritePrev);
+	divSpriteCompare.appendChild(divArrow);
+	divSpriteCompare.appendChild(divSpriteNew);
+	return divSpriteCompare;
+}
+function FindObjectUsage(list)
+{
+	var found = {};
+	// cycle through all monsters for each changed object to find all usages, also check weapons because turrets
+	// TODO also do this for player tanks and check if it needs to be done for other graphics
+	for (let obj in list)
+	{
+		for (let i = 0; i < gasData["monster"].length; i++)
+		{
+			var monsterData = gasData["monster"][i];
+			if(monsterData.objectType == obj) found[monsterData.name] = true;
+			for (let w = 0; w < monsterData.weapons.length; w++)
+			{
+				var weapon = monsterData.weapons[w];
+				if(weapon.objectType == obj) found[monsterData.name] = true;
+			}
+		}
+	}
+	return found;
+}
+function CompareJSON(entity, entityPrev, superParent, fileType, parentStringList)
 {
 	for (let key in entity)
 	{
 		if(entityPrev != undefined && entity[key] != "")
 		{
-			if(typeof entity[key] == 'object')
-				CompareJSON(entity[key], entityPrev[key], parent + " " + (entity.name != undefined ? entity.name : "") + " " + key);
+			var name = entity.name != undefined ? entity.name : "";
+			var header = parentStringList + " " + name;
+			if(key == "consolationPrizes")
+			{
+				var a1 = entityPrev[key].toString();
+				var a2 = entity[key].toString();
+				if(a1 != a2) // lazy array compare
+					MakeChangeEntry(header, key, a1, a2, divList);
+			}
+			else if(typeof entity[key] == 'object')
+				CompareJSON(entity[key], entityPrev[key], superParent, fileType, header + " " + key);
 			else if(entity[key] != entityPrev[key])
 			{
-				var thing = entity.name != undefined ? entity.name : "";
-				addLine(parent + " " + thing + "<br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;" + key + ": <b>" + entityPrev[key] + " &#8594; " + entity[key] + "</b>", divList);
+				if(fileType == "object") {changedObjects[superParent] = true; continue;}
+				if(fileType == "map") {changedMaps[superParent] = true; continue;}
+				if(IsNewButDefaultValue(entityPrev, entity, key)) continue;
+				MakeChangeEntry(header, key, entityPrev[key], entity[key], divList);
 			}
 		}
 	}
 }
-function ExistsPrev(file, name)
+function IsNewButDefaultValue(entityPrev, entity, key)
 {
-	var entity = GetPrevEntity(file, name);
-	if(entity != null)
-		return true;
-	else
-		return false;
+	// somewhat hacky, this is to make it not show new entries when they are just the default value, entry added my maker due to other changes
+	if(entityPrev[key] == undefined)
+		if(key == "maxMoveDistance" && entity[key] == 500) return true;
+		else if(key == "runAnimationDuration" && entity[key] == 700) return true;
+		else if(key == "halfArc" && entity[key] == 1800) return true;
+		else if(key == "angleBetweenProjectiles" && entity[key] == 150) return true;
+	return false;
+}
+function MakeChangeEntry(header, key, prev, curr, container)
+{
+	var div = document.createElement('div');
+	div.classList.add("diffBlock");
+	div.innerHTML = header + 
+	"<div style='margin-left:8ch;display:grid;grid-template-columns:20ch 1fr'><span><u>" + key + "</u></span><b>" + prev + "</b>" + 
+	"<span style='justify-self:end'>&#8594;&#160;</span><b>" + curr + "</b></div>";
+	container.appendChild(div);
+	return div;
 }
 function GetPrevEntity(file, name)
 {

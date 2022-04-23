@@ -481,10 +481,11 @@ function getBullet(type){
 		if(type == bullet.name) return bullet;
 	}
 }
-function getObject(type){
-	for (let i = 0; i < gasData["object"].length; i++)
+function getObject(type, bPrev = false){
+	var data = bPrev ? gasDataPrev["object"] : gasData["object"];
+	for (let i = 0; i < data.length; i++)
 	{
-		var object = gasData["object"][i];
+		var object = data[i];
 		if(type == object.name) return object;
 	}
 }
@@ -600,9 +601,9 @@ function closeShape(ctx, scale, color){
 	ctx.fill();
 	ctx.closePath();
 }
-function draw(data, scale = 0.4)
+function draw(data, scale = 0.4, bPrev = false)
 {
-	var object = getObject(data.objectType);
+	var object = getObject(data.objectType, bPrev);
 	if(object == undefined) {
 		console.log("Can't find " + data.objectType);
 		return document.createElement('canvas');
@@ -628,7 +629,7 @@ function draw(data, scale = 0.4)
 				var offset = [0,0];
 				var attach = data.weapons[i].attachmentPoint;
 				if(attach != "") offset = getAttachmentPoint(object, attach);
-				drawShapes(ctx, scale, x+offset[0], y+offset[1], getObject(turret));
+				drawShapes(ctx, scale, x+offset[0], y+offset[1], getObject(turret, bPrev));
 			}
 		}
 	}
