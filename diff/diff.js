@@ -66,17 +66,16 @@ function parseData()
 	var entitySpriteChanged = FindObjectUsage(changedObjects);
 	for (let entity in entitySpriteChanged)
 	{
-		var spritePrev = draw(GetPrevEntity("monster", entity), 0.4, true);
-		var spriteNew = draw(GetNewEntity("monster", entity), 0.4, false);
-		let compare = document.createElement('div');
-		compare.classList.add("diffBlock");
-		let header = document.createElement('div');
-		header.innerHTML = entity + " graphics";
-		compare.appendChild(header);
-		compare.appendChild(MakeCanvasCompare(spritePrev, spriteNew));
-		divList.appendChild(compare);
+		divList.appendChild(MakeGraphicCompareBlock(entity + " graphics",
+			draw(GetPrevEntity("monster", entity), 0.4, true), 
+			draw(GetNewEntity("monster", entity), 0.4, false)));
 	}
-
+	for (let entity in changedMaps)
+	{
+		divList.appendChild(MakeGraphicCompareBlock(entity,
+			DrawMap(entity, 0.01, true), 
+			DrawMap(entity, 0.01, false)));
+	}
 	var hRemoved = document.createElement("h2");
 	hRemoved.textContent = "Removed";
 	divList.appendChild(hRemoved);
@@ -93,6 +92,16 @@ function parseData()
 		}
 	}
 	tableOutput.appendChild(divList);
+}
+function MakeGraphicCompareBlock(headerText, spritePrev, spriteNew)
+{
+	let div = document.createElement('div');
+	div.classList.add("diffBlock");
+	let header = document.createElement('div');
+	header.innerHTML = headerText;
+	div.appendChild(header);
+	div.appendChild(MakeCanvasCompare(spritePrev, spriteNew));
+	return div;
 }
 function MakeCanvasCompare(c1, c2)
 {
@@ -157,7 +166,7 @@ function CompareJSON(entity, entityPrev, superParent, fileType, parentStringList
 			else if(entity[key] != entityPrev[key])
 			{
 				if(fileType == "object") {changedObjects[superParent] = true; continue;}
-				if(fileType == "map") {changedMaps[superParent] = true; continue;}
+				if(fileType == "map" && (key == "x" || key == "y")) {changedMaps[superParent] = true; continue;}
 				if(IsNewButDefaultValue(entityPrev, entity, key)) continue;
 				MakeChangeEntry(header, key, entityPrev[key], entity[key], divList);
 			}

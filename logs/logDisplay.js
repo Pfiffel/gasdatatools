@@ -1,4 +1,4 @@
-var FILE = "Build22.log";
+var FILE = "Build23.log";
 var tableOutput = document.getElementById("tableOutput");
 var timeStart = window.performance.now();
 var bench = document.createElement('div');
@@ -15,7 +15,7 @@ loadJsonFile(FILE, function(loadedData){
 var datatypes = ["map","lair","region","lane"]; // for utilGAS to load files, calls parseData once completed
 loadGasData();
 
-const HEATMAP_SIZE = 600;
+//const HEATMAP_SIZE = 600;
 const GRAPH_RESOLUTION_SECONDS = 600;
 
 var tags = {};
@@ -185,7 +185,6 @@ function parseData()
 		if(tags[currentTag] == undefined) tags[currentTag] = 1; else tags[currentTag]++;
 	}
 	SortTanks();
-	//tableOutput.appendChild(DrawMap(0.01));
 	//MakeHeatmap(id, max, points)
 	MakeHeatmap("All Deaths", 2, deathPointsAll);
 	//console.group(deathPoints20);
@@ -323,94 +322,6 @@ function GetMessageColorClass(type, name)
 	if(type == "PlayerDeathLog") return "chat_death";
 	return "chat_system";
 }
-function DrawPoly(ctx, scale, poly, offset, color)
-{
-	ctx.beginPath();
-	ctx.moveTo(poly[0].x+offset, poly[0].y+offset);
-	for (let j = 0; j < poly.length; j++)
-	{
-		var point = poly[j];
-		ctx.lineTo(point.x+offset, point.y+offset);
-	}
-	ctx.lineTo(poly[0].x+offset, poly[0].y+offset);
-	ClosePoly(ctx, scale, color);
-}
-function ClosePoly(ctx, scale, color){
-	ctx.lineWidth = 1.5/scale;
-	ctx.strokeStyle = "#000000";
-	ctx.stroke();
-	ctx.fillStyle = color;
-	ctx.fill();
-	ctx.closePath();
-}
-function DrawMap(scale)
-{
-	var canvas = document.createElement('canvas');
-	canvas.width = HEATMAP_SIZE;
-	canvas.height = HEATMAP_SIZE;
-	if (canvas.getContext)
-	{
-		var ctx = canvas.getContext('2d');
-		ctx.scale(scale, scale);
-		MakeMap(ctx, scale, "Quagmire");
-	}
-	return canvas;
-}
-function DrawCircle(ctx, scale, point, offset, color)
-{
-	ctx.beginPath();
-	ctx.arc(point.x+offset, point.y+offset, 3/scale, 0, Math.PI*2);
-	ctx.fillStyle = color;
-	ctx.fill();
-	//ctx.lineWidth = 1.5/scale;
-	//ctx.strokeStyle = "#000000";
-	//ctx.stroke();
-	ctx.closePath();
-}
-function DrawLane(ctx, scale, points, offset, color)
-{
-	ctx.beginPath();
-	ctx.moveTo(points[0].x+offset, points[0].y+offset);
-	for (let j = 0; j < points.length; j++)
-	{
-		var point = points[j];
-		ctx.lineTo(point.x+offset, point.y+offset);
-	}
-	ctx.lineWidth = 2/scale;
-	ctx.strokeStyle = color;
-	ctx.stroke();
-}
-function MakeMap(ctx, scale, mapName)
-{
-	for (let i = 0; i < gasData["map"].length; i++)
-	{
-		var map = gasData["map"][i];
-		if(map.name != mapName) continue;
-	
-		for (let r = 0; r < map.regions.length; r++)
-		{
-			var region = map.regions[r];
-			var color = GetRegion(region.regionType).mapColor;
-			DrawPoly(ctx, scale, region.poly, map.mapRadius, numberToHex(color));
-		}
-		for (let b = 0; b < map.beacons.length; b++)
-		{
-			var beacon = map.beacons[b];
-			DrawCircle(ctx, scale, beacon, map.mapRadius, "#00FFFF");//66EEEE
-		}
-		for (let b = 0; b < map.spawnPoints.length; b++)
-		{
-			var spawnPoint = map.spawnPoints[b];
-			DrawCircle(ctx, scale, spawnPoint, map.mapRadius, "#00FF00");//78E810
-		}
-		for (let b = 0; b < map.lanes.length; b++)
-		{
-			var lane = map.lanes[b];
-			var color = GetLane(lane.laneType).color;
-			DrawLane(ctx, scale, lane.waypoints, map.mapRadius, "#553333");//numberToHex(color));
-		}
-	}
-}
 function MakePoint(point)
 {
 	var x = 300+point.x/100;
@@ -430,7 +341,7 @@ function MakeHeatmap(id, max, points)
 	tableOutput.appendChild(div);
 
 	var map = MakeHeatmapCont(id+"map");
-	map.appendChild(DrawMap(0.01));
+	map.appendChild(DrawMap("Quagmire", 0.01));
 	div.appendChild(map);
 
 	var title = MakeHeatmapCont(id+"title");
@@ -449,8 +360,8 @@ function MakeHeatmapCont(id)
 	//div.classList.add("inline");
 	div.id = id;
 	div.style.position = "absolute";
-	div.style.width = HEATMAP_SIZE + "px";
-	div.style.height = HEATMAP_SIZE + "px";
+	div.style.width = MAP_CANVAS_SIZE + "px";
+	div.style.height = MAP_CANVAS_SIZE + "px";
 	return div;
 }
 function MakeHeatmapFromData(id, max, points)

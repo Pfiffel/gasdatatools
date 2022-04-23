@@ -1,5 +1,6 @@
 const SCALE_STANDARD = 0.5;
 const SCALE_SMALL = 0.25;
+const MAP_CANVAS_SIZE = 600;
 const monsterSkip = {"Iron Justiciar":true, "Test Event Boss 2":true, "Test Event Boss":true, "Test Event Minion":true};
 
 const TIER_COLORS = ["","#FF7777","#77CC77","#9999FF","#77DDDD","#FFFF77","#EB98CB","#F5A849","#C162F5","#FFFFFF","#8EC726"];
@@ -634,4 +635,94 @@ function draw(data, scale = 0.4, bPrev = false)
 		}
 	}
 	return canvas;
+}
+function DrawPoly(ctx, scale, poly, offset, color)
+{
+	ctx.beginPath();
+	ctx.moveTo(poly[0].x+offset, poly[0].y+offset);
+	for (let j = 0; j < poly.length; j++)
+	{
+		var point = poly[j];
+		ctx.lineTo(point.x+offset, point.y+offset);
+	}
+	ctx.lineTo(poly[0].x+offset, poly[0].y+offset);
+	ClosePoly(ctx, scale, color);
+}
+function ClosePoly(ctx, scale, color){
+	ctx.lineWidth = 1.5/scale;
+	ctx.strokeStyle = "#000000";
+	ctx.stroke();
+	ctx.fillStyle = color;
+	ctx.fill();
+	ctx.closePath();
+}
+function DrawMap(name, scale, bPrev = false)
+{
+	var canvas = document.createElement('canvas');
+	canvas.width = MAP_CANVAS_SIZE;
+	canvas.height = MAP_CANVAS_SIZE;
+	if (canvas.getContext)
+	{
+		var ctx = canvas.getContext('2d');
+		ctx.scale(scale, scale);
+		MakeMap(ctx, scale, name, bPrev ? gasDataPrev["map"] : gasData["map"]);
+	}
+	return canvas;
+}
+function DrawCircle(ctx, scale, point, radius, offset, color)
+{
+	ctx.beginPath();
+	ctx.arc(point.x+offset, point.y+offset, radius/scale, 0, Math.PI*2);
+	ctx.fillStyle = color;
+	ctx.fill();
+	ctx.closePath();
+}
+function DrawLane(ctx, scale, points, offset, color)
+{
+	ctx.beginPath();
+	ctx.moveTo(points[0].x+offset, points[0].y+offset);
+	for (let j = 0; j < points.length; j++)
+	{
+		var point = points[j];
+		ctx.lineTo(point.x+offset, point.y+offset);
+	}
+	ctx.lineWidth = 2/scale;
+	ctx.strokeStyle = color;
+	ctx.stroke();
+}
+function MakeMap(ctx, scale, mapName, data)
+{
+	for (let m = 0; m < data.length; m++)
+	{
+		var map = data[m];
+		if(map.name != mapName) continue;
+	
+		for (let i = 0; i < map.regions.length; i++)
+		{
+			var region = map.regions[i];
+			var color = GetRegion(region.regionType).mapColor;
+			DrawPoly(ctx, scale, region.poly, map.mapRadius, numberToHex(color));
+		}
+		for (let i = 0; i < map.beacons.length; i++)
+		{
+			var beacon = map.beacons[i];
+			DrawCircle(ctx, scale, beacon, 3, map.mapRadius, "#00FFFF");//66EEEE
+		}
+		for (let i = 0; i < map.spawnPoints.length; i++)
+		{
+			var spawnPoint = map.spawnPoints[i];
+			DrawCircle(ctx, scale, spawnPoint, 3, map.mapRadius, "#00FF00");//78E810
+		}
+		for (let i = 0; i < map.miniBosses.length; i++)
+		{
+			var miniBoss = map.miniBosses[i];
+			DrawCircle(ctx, scale, miniBoss.p, 2, map.mapRadius, "#AA4400");
+		}
+		for (let i = 0; i < map.lanes.length; i++)
+		{
+			var lane = map.lanes[i];
+			var color = GetLane(lane.laneType).color;
+			DrawLane(ctx, scale, lane.waypoints, map.mapRadius, "#553333");
+		}
+	}
 }

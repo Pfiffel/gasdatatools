@@ -1,5 +1,5 @@
 var tableOutput = document.getElementById("tableOutput");
-var datatypes = ["map","lair","monster","gunbullet","object","item"]; // for utilGAS to load files, calls parseData once completed
+var datatypes = ["map","lair","region","lane","monster","gunbullet","object","item"]; // for utilGAS to load files, calls parseData once completed
 loadGasData();
 var errorLogs = document.createElement('div');
 tableOutput.appendChild(errorLogs);
@@ -28,6 +28,9 @@ function parseData()
 		var h2 = document.createElement("h2");
 		h2.textContent = map.name + " (" + mil(mapSize) + " total size)";
 		divMaps.appendChild(h2);
+		var drawn = DrawMap(map.name, 0.01);
+		drawn.style.display = "inline";
+		divMaps.appendChild(drawn);
 		var h3 = document.createElement("h3");
 		h3.textContent = "monsterFields";
 		divMaps.appendChild(h3);
