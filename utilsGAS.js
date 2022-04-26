@@ -113,6 +113,7 @@ function MakeStatsTable(mainData, tier)
 	let prevCondition = undefined;
 	let prevCell;
 	let prevRepeat = false;
+	let dps = 0;
 	for (var effect in mainData.effects){
 		let data = mainData.effects[effect].data;
 		let tr = tbl.insertRow();
@@ -161,7 +162,9 @@ function MakeStatsTable(mainData, tier)
 			
 			if(mainTag == "TriggeredTriggerEffect")
 			{
-				s += GetTriggeredEffectString(data.params.tag, data.params.data);
+				let o = GetTriggeredEffectString(data.params.tag, data.params.data);
+				s += o.s;
+				//dps += o.damage;
 			}
 			else if(mainTag == "TriggeredHealMineBurst")
 			{
@@ -176,9 +179,12 @@ function MakeStatsTable(mainData, tier)
 			if(data.percentChance != undefined && data.percentChance != 100)
 				chanceTo = ", " + classWrap(data.percentChance + "%", "cKeyValue") + " to";
 			s += "Every " + classWrap(data.cooldown, "cKeyValue") + " ms" + chanceTo + ":<br/>";
+			let cooldownAndChanceMult = (10/data.cooldown)*data.percentChance;
 			for (var p in data.params){
 				var effect = data.params[p];
-				s += GetTriggeredEffectString(effect.tag, effect.data);
+				let o = GetTriggeredEffectString(effect.tag, effect.data);
+				s += o.s;
+				dps += o.damage * cooldownAndChanceMult;
 			}
 		}
 		else if(mainTag == "RandomTargetEffect" || mainTag == "TriggeredRandomTargetEffect")
@@ -193,10 +199,13 @@ function MakeStatsTable(mainData, tier)
 			else
 				s += "Periodically targets enemies with these effects:<br/>";
 			if(data.cooldown != undefined) s += printKeyAndData("Cooldown", data.cooldown);
+			let cooldownMult = 1000/data.cooldown;
 			s += printKeyAndData("Range", data.range);
 			for (var effects in data.statusEffects){
 				var effect = data.statusEffects[effects];
-				s += ShowStatusEffect(effect);
+				let o = ShowStatusEffect(effect);
+				s += o.s;
+				dps += o.damage * cooldownMult;
 			}
 		}
 		else if(mainTag == "TaggedTriggerBonus")
@@ -204,6 +213,17 @@ function MakeStatsTable(mainData, tier)
 			if(data.tooltip == "") continue;
 			s += data.tooltip + "<br/>";
 			s += GetBonusEffectString(data.bonus.tag, data.bonus.data);
+		}
+		else if(mainTag == "GoldenHindMine")
+		{
+			var chanceTo = "";
+			if(data.percentChance != undefined && data.percentChance != 100)
+				chanceTo = ", " + classWrap(data.percentChance + "%", "cKeyValue") + " to";
+			s += "Every " + classWrap(data.cooldown, "cKeyValue") + " ms" + chanceTo + ":<br/>";
+			s += printKeyAndData("AoE Damage", data.damage);
+			s += printKeyAndData("Range", data.burstRadius);
+			let cooldownMult = 1000/data.cooldown;
+			dps += data.damage * cooldownMult;
 		}
 		else
 		{
@@ -222,16 +242,21 @@ function MakeStatsTable(mainData, tier)
 				s += printKeyAndData(key, iterEffect.data[key]);
 			}
 		}
+		
 		if(prevRepeat)
 			prevCell.innerHTML += s;
 		else
 			prevCell = makeCell(s, tr);
 	}
+	if(dps > 0) 
+	{
+		makeCell(printKeyAndData("DPS", round(dps,2)), tbl.insertRow());
+	}
 	return tbl;
 }
 function GetTriggeredEffectString(tag, data)
 {
-	var s = "";
+	var s = ""; var damage = 0;
 	if(tag == "FireRateBoostTrigger"){
 		s += printKeyAndData("Rate of Fire Boost", data.amount + "%");
 		s += printKeyAndData("Duration", data.duration + " ms");
@@ -240,6 +265,7 @@ function GetTriggeredEffectString(tag, data)
 		s += printKeyAndData("AoE Damage", data.damage);
 		s += printKeyAndData("Range", data.range);
 		s += printKeyAndData("Arc", (data.halfArc * 0.2) + "°");
+		damage += data.damage;
 	}
 	else if(tag == "HealOverTimeTrigger"){
 		s += printKeyAndData("Heal Amount", data.amount + (data.asPercentage == 1 ? "%" : ""), data.applyToMana == 1 ? "energy" : "heal");
@@ -273,6 +299,7 @@ function GetTriggeredEffectString(tag, data)
 		let dps = round(1000*data.stats.damage/data.stats.cooldown,2);
 		s += printKeyAndData("Create Gun", dps + " DPS");
 		s += printKeyAndData("Duration", data.duration + " ms");
+		damage += dps*(data.duration/1000);
 	}
 	else if(tag == "ExtraShieldTrigger"){
 		var hex = numberToHex(data.stats.color);
@@ -281,7 +308,9 @@ function GetTriggeredEffectString(tag, data)
 	}
 	else if(tag == "GunProcTrigger"){
 		s += "For <b>" + data.duration + "</b> ms, gun shots apply:" + "<br/>";
-		s += ShowStatusEffect(data.statusEffect);
+		let o = ShowStatusEffect(data.statusEffect);
+		s += o.s;
+		damage += o.damage;
 	}
 	else if(tag == "LeapTrigger"){
 		s += printKeyAndData("Leap Distance", data.range);
@@ -290,8 +319,12 @@ function GetTriggeredEffectString(tag, data)
 		s += printKeyAndData("Missile Count", data.count);
 		s += printKeyAndData("Damage", data.damage);
 		s += printKeyAndData("Range", data.range);
+		damage += data.damage * data.count;
 	}
-	return s;
+	var o = {};
+	o.s = s;
+	o.damage = damage;
+	return o;
 }
 function GetBonusEffectString(tag, data)
 {
@@ -352,13 +385,17 @@ function GetBonusEffectString(tag, data)
 }
 function ShowStatusEffect(effect)
 {
-	var s = "";
+
+	var s = ""; var damage = 0;
 	if(effect.tag == "FreezeEffect") s += printKeyAndData("Freeze Duration", effect.data.duration);
 	if(effect.tag == "StunEffect") s += printKeyAndData("Stun Duration", effect.data.duration);
-	if(effect.tag == "DoTEffect") s += printKeyAndData("DoT Total", effect.data.dps*effect.data.duration/1000);
-	if(effect.tag == "DamageEffect") s += printKeyAndData("Damage", effect.data.damage);
-	if(effect.tag == "BlastEffect") {s += printKeyAndData("AoE Damage", effect.data.damage);s += printKeyAndData("Radius", effect.data.radius);}
-	return s;
+	if(effect.tag == "DoTEffect") {dotTotal = effect.data.dps*effect.data.duration/1000; s += printKeyAndData("DoT Total", dotTotal); damage += dotTotal;}
+	if(effect.tag == "DamageEffect") {s += printKeyAndData("Damage", effect.data.damage); damage += effect.data.damage;}
+	if(effect.tag == "BlastEffect") {s += printKeyAndData("AoE Damage", effect.data.damage);s += printKeyAndData("Radius", effect.data.radius); damage += effect.data.damage;}
+	var o = {};
+	o.s = s;
+	o.damage = damage;
+	return o;
 }
 function showUsage(data)
 {
