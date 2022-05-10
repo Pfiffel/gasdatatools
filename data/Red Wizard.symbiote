@@ -7,7 +7,7 @@
         "params": [
           {
             "data": {
-              "damage": 150,
+              "damage": 200,
               "delay": 500,
               "drawReticle": 0,
               "drawTooltip": 1,
@@ -45,7 +45,7 @@
           },
           {
             "data": {
-              "damage": 150,
+              "damage": 200,
               "delay": 500,
               "drawReticle": 0,
               "drawTooltip": 0,

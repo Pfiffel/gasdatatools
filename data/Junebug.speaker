@@ -1,0 +1,36 @@
+{
+  "name": "Junebug",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "La dee dah!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Fiddle dee dee!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Tra la la!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Tee hee hee!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

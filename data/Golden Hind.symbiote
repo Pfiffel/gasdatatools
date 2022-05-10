@@ -6,7 +6,7 @@
         "armingTime": 1000,
         "burstRadius": 300,
         "cooldown": 5000,
-        "damage": 200,
+        "damage": 300,
         "duration": 5000,
         "emitterType": "Golden Hind Mine",
         "explosionType": "Golden Hind Mine",
@@ -16,6 +16,7 @@
       "tag": "GoldenHindMine"
     }
   ],
+  "enemies": [],
   "name": "Golden Hind",
   "tier": 1
 }

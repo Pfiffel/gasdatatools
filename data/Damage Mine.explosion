@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 12,
+      "maxDistPercent": 150,
+      "minDistPercent": 150,
+      "particleType": "Damange Mine",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Damage Mine",
+  "sound": "Wasp Dematerialize",
+  "volume": 25
+}
+

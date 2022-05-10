@@ -1,0 +1,96 @@
+{
+  "description": "Picnic helps happily, with gifts for all.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "angleOffset": 0,
+            "armingTime": 750,
+            "duration": 15000,
+            "emitterType": "Damage Mine",
+            "explosionType": "Damage Mine",
+            "healing": 0,
+            "mineCount": 2,
+            "objectType": "Damage Glyph",
+            "powers": [
+              {
+                "data": {
+                  "amount": 30,
+                  "caption": "",
+                  "duration": 5000,
+                  "emitterType": "",
+                  "statType": 0
+                },
+                "tag": "StatPower"
+              }
+            ],
+            "radius": 40,
+            "ringRadius": 150,
+            "tag": ""
+          },
+          "tag": "HealMineTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "angleOffset": 600,
+            "armingTime": 750,
+            "duration": 15000,
+            "emitterType": "Energy Mine",
+            "explosionType": "Energy Mine",
+            "healing": 0,
+            "mineCount": 2,
+            "objectType": "Energy Glyph",
+            "powers": [
+              {
+                "data": {
+                  "energyDamage": -40
+                },
+                "tag": "EnergyDamagePower"
+              }
+            ],
+            "radius": 40,
+            "ringRadius": 150,
+            "tag": ""
+          },
+          "tag": "HealMineTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "angleOffset": -600,
+            "armingTime": 750,
+            "duration": 15000,
+            "emitterType": "Heal Mine",
+            "explosionType": "Heal Mine",
+            "healing": 150,
+            "mineCount": 2,
+            "objectType": "Heal Mine",
+            "powers": [],
+            "radius": 40,
+            "ringRadius": 150,
+            "tag": ""
+          },
+          "tag": "HealMineTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Picnic",
+  "tier": 5
+}
+

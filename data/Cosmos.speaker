@@ -1,0 +1,36 @@
+{
+  "name": "Cosmos",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Do you feel the power?",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Unlimited cosmic power!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I am a being of pure energy.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "The power! It courses through me!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

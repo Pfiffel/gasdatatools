@@ -5,13 +5,15 @@
       "data": {
         "params": {
           "data": {
-            "amount": -50,
+            "amount": -40,
             "duration": 5000,
             "emitterType": "",
             "glyphCount": 0,
             "glyphRadius": 0,
             "glyphType": "",
-            "statType": 11
+            "noStack": 0,
+            "statType": 11,
+            "tag": ""
           },
           "tag": "StatBoostTrigger"
         },

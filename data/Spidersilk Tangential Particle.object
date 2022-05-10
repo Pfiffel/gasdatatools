@@ -1,0 +1,30 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Spidersilk Tangential Particle",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 16711423,
+      "height": 15,
+      "mirror": 1,
+      "name": "Bar",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -3,
+          "y": 59
+        },
+        {
+          "x": 3,
+          "y": 59
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

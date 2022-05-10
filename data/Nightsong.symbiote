@@ -9,7 +9,7 @@
             "data": {
               "amount": 150,
               "explosionType": "Nightsong Heal",
-              "radius": 200,
+              "radius": 300,
               "tag": ""
             },
             "tag": "AreaHealTrigger"

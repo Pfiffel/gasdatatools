@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 900,
+      "value": 16777215
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 600,
+  "minLifetime": 500,
+  "name": "Spidersilk Radial",
+  "objectType": "Spidersilk Radial Particle",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 50,
+      "value": 500
+    },
+    {
+      "frac": 500,
+      "value": 500
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 16776958,
+  "startScale": 10,
+  "stayLow": 0
+}
+

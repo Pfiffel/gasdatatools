@@ -27,6 +27,7 @@
         "data": {
           "bulletRange": 350,
           "delay": 300,
+          "glyphType": "Barrage Glyph",
           "gunBulletType": "Iron Bulwark",
           "numBullets": 3,
           "range": 600,

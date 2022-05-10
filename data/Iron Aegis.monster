@@ -1,14 +1,18 @@
 {
   "boss": 0,
-  "collisionRadius": 20,
+  "collisionRadius": 22,
+  "consolationPrizes": [],
   "deathCrySoundPack": "Iron Aegis Death Cries",
   "drops": [],
   "healRate": 0,
   "hp": 575,
   "idleAnimation": "BaseArcher Idle",
+  "maxMoveDistance": 500,
   "name": "Iron Aegis",
   "objectType": "Iron Aegis",
+  "pauseBetweenMovements": 0,
   "runAnimation": "",
+  "runAnimationDuration": 700,
   "runSpeed": 75,
   "successorMonster": "",
   "weaponType": "",
@@ -16,11 +20,14 @@
     {
       "attachmentPoint": "",
       "cooldown": 3000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "",
       "params": {
         "data": {
           "bulletRange": 500,
-          "delay": 100,
+          "delay": 200,
+          "glyphType": "Barrage Glyph",
           "gunBulletType": "Iron Hammer",
           "numBullets": 4,
           "range": 750,
@@ -48,6 +55,10 @@
           ]
         },
         "tag": "BarrageParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
       }
     }
   ],

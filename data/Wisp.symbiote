@@ -3,7 +3,7 @@
   "effects": [
     {
       "data": {
-        "cooldown": 25000,
+        "cooldown": 20000,
         "params": [
           {
             "data": {

@@ -3,22 +3,13 @@
   "effects": [
     {
       "data": {
-        "damageDamage": 20,
-        "dotDamage": 100,
-        "dotDuration": 2000,
-        "percentChance": 12,
-        "rootDuration": 2000,
+        "percentChance": 16,
         "statusEffects": [
           {
             "data": {
-              "duration": 1000
-            },
-            "tag": "StunEffect"
-          },
-          {
-            "data": {
               "dps": 50,
-              "duration": 2000
+              "duration": 2000,
+              "reducedDurationOnBoss": 0
             },
             "tag": "DoTEffect"
           },
@@ -34,8 +25,7 @@
             },
             "tag": "DamageEffect"
           }
-        ],
-        "stunDuration": 1000
+        ]
       },
       "tag": "GunProcs"
     }

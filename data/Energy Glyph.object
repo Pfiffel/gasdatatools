@@ -1,0 +1,46 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Energy Glyph",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 15986180,
+      "height": 15,
+      "mirror": 0,
+      "name": "Glyph",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 0,
+          "y": -6
+        },
+        {
+          "x": 20,
+          "y": -6
+        },
+        {
+          "x": -6,
+          "y": 47
+        },
+        {
+          "x": 0,
+          "y": 6
+        },
+        {
+          "x": -20,
+          "y": 6
+        },
+        {
+          "x": 6,
+          "y": -47
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

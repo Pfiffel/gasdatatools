@@ -1,0 +1,36 @@
+{
+  "name": "Picnic",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "What a spread we'll make!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I've got a veritable feast prepared!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Ready to eat?",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Who's hungry?",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

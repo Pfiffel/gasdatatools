@@ -1,0 +1,43 @@
+{
+  "description": "Spidersilk protects herself with diaphanous satin webs.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "damage": 0,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Spidersilk Blast",
+            "halfArc": 3600,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 300,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 2000
+                },
+                "tag": "StunEffect"
+              }
+            ],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "Stunning Blast"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Spidersilk",
+  "tier": 6
+}
+

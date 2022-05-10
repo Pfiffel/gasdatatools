@@ -16,6 +16,14 @@
         "statType": 5
       },
       "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 2,
+        "amount": 10,
+        "statType": 0
+      },
+      "tag": "ItemStat"
     }
   ],
   "enemies": [],

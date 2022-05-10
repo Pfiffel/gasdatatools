@@ -23,41 +23,16 @@
       "color": 9934741,
       "height": 3,
       "mirror": 1,
-      "name": "Counterweight",
-      "noDraw": 0,
-      "points": [
-        {
-          "x": -14,
-          "y": 11
-        },
-        {
-          "x": -26,
-          "y": 11
-        },
-        {
-          "x": -30,
-          "y": 0
-        }
-      ],
-      "useBoneMirror": 1
-    },
-    {
-      "bone": "Turret",
-      "clones": [],
-      "closed": 0,
-      "color": 9934741,
-      "height": 4,
-      "mirror": 1,
       "name": "Barrel",
       "noDraw": 0,
       "points": [
         {
-          "x": 52,
-          "y": 5
+          "x": 41,
+          "y": 4
         },
         {
-          "x": 6,
-          "y": 8
+          "x": 11,
+          "y": 10
         }
       ],
       "useBoneMirror": 1
@@ -73,20 +48,24 @@
       "noDraw": 0,
       "points": [
         {
-          "x": 15,
-          "y": 11
+          "x": 18,
+          "y": 9
         },
         {
-          "x": 9,
-          "y": 21
+          "x": 8,
+          "y": 20
         },
         {
-          "x": -11,
-          "y": 21
+          "x": -9,
+          "y": 19
         },
         {
-          "x": -21,
-          "y": 12
+          "x": -19,
+          "y": 6
+        },
+        {
+          "x": -14,
+          "y": 5
         }
       ],
       "useBoneMirror": 1

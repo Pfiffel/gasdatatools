@@ -1,0 +1,36 @@
+{
+  "name": "Little Mouse",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I'm just a little mouse!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Squeak, squeak! I'm a mouse!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I'm a friendly little mouse!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Squeak squeak!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

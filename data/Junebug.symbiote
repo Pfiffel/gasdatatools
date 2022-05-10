@@ -1,0 +1,43 @@
+{
+  "description": "Junebug radiates happiness, all smiles and giggles.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "angleOffset": 0,
+            "armingTime": 750,
+            "duration": 15000,
+            "emitterType": "Hull Mine",
+            "explosionType": "Hull Mine",
+            "healing": 0,
+            "mineCount": 1,
+            "objectType": "Hull Glyph",
+            "powers": [
+              {
+                "data": {
+                  "amount": 25,
+                  "caption": "",
+                  "duration": 5000,
+                  "emitterType": "",
+                  "statType": 3
+                },
+                "tag": "StatPower"
+              }
+            ],
+            "radius": 50,
+            "ringRadius": 0,
+            "tag": ""
+          },
+          "tag": "HealMineTrigger"
+        },
+        "when": 1
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Junebug",
+  "tier": 1
+}
+

@@ -10,14 +10,14 @@
               "duration": 15000,
               "stats": {
                 "cooldown": 800,
-                "damage": 24,
+                "damage": 48,
                 "emitterType": "Goblin Trail",
                 "f": 0,
                 "halfArc": 1100,
                 "objectType": "Goblin Bullet",
                 "range": 290,
                 "soundPack": "Wasp Guns",
-                "speed": 600,
+                "speed": 800,
                 "turretBone": ""
               },
               "tag": ""

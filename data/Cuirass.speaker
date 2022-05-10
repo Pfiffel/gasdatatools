@@ -1,0 +1,36 @@
+{
+  "name": "Cuirass",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Armored breastplate!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Protective armor!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Steel protection!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Solid protective plate!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

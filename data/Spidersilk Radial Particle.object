@@ -1,0 +1,30 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Spidersilk Radial Particle",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 16711423,
+      "height": 15,
+      "mirror": 1,
+      "name": "Bar",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -54,
+          "y": 3
+        },
+        {
+          "x": 53,
+          "y": 3
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

@@ -1,0 +1,50 @@
+{
+  "layers": [
+    {
+      "angularDensity": 20,
+      "maxDistPercent": 100,
+      "minDistPercent": 100,
+      "particleType": "Spidersilk Tangential",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 15,
+      "maxDistPercent": 70,
+      "minDistPercent": 70,
+      "particleType": "Spidersilk Tangential",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 10,
+      "maxDistPercent": 40,
+      "minDistPercent": 40,
+      "particleType": "Spidersilk Tangential",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 15,
+      "maxDistPercent": 85,
+      "minDistPercent": 85,
+      "particleType": "Spidersilk Radial",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 15,
+      "maxDistPercent": 55,
+      "minDistPercent": 55,
+      "particleType": "Spidersilk Radial",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 15,
+      "maxDistPercent": 25,
+      "minDistPercent": 25,
+      "particleType": "Spidersilk Radial",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Spidersilk Blast",
+  "sound": "Player_Wasp_PosTorpedo_Explosion",
+  "volume": 50
+}
+

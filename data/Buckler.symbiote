@@ -8,7 +8,7 @@
           "color": 5644983,
           "left": -1050,
           "level": 0,
-          "maxStrength": 175,
+          "maxStrength": 200,
           "right": 1050
         }
       },
@@ -21,7 +21,7 @@
           "color": 5644983,
           "left": 750,
           "level": 0,
-          "maxStrength": 175,
+          "maxStrength": 200,
           "right": -750
         }
       },

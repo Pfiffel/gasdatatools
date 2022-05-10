@@ -7,7 +7,8 @@
           "data": {
             "duration": 750,
             "emitterType": "",
-            "percentChance": 75
+            "percentChance": 67,
+            "tag": ""
           },
           "tag": "DematerializeTrigger"
         },

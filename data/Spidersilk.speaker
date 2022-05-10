@@ -1,0 +1,36 @@
+{
+  "name": "Spidersilk",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Stay. Away.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Do not come near.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Be gone from me.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Yes, I do bite.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

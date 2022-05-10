@@ -3,14 +3,16 @@
   "effects": [
     {
       "data": {
-        "amount": 20,
+        "activeWhile": 0,
+        "amount": 15,
         "statType": 5
       },
       "tag": "ItemStat"
     },
     {
       "data": {
-        "amount": 20,
+        "activeWhile": 0,
+        "amount": 15,
         "statType": 6
       },
       "tag": "ItemStat"

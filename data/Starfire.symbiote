@@ -6,7 +6,7 @@
         "params": {
           "data": {
             "count": 5,
-            "damage": 40,
+            "damage": 50,
             "emitterType": "Starfire Trail",
             "objectType": "Starfire",
             "range": 250,

@@ -9,8 +9,9 @@
             "glyphDuration": 700,
             "glyphRadius": 55,
             "glyphType": "Axeraider Unstoppable Glyph",
-            "refillPercentage": 40,
-            "shieldIndex": -1
+            "refillPercentage": 30,
+            "shieldIndex": -1,
+            "tag": ""
           },
           "tag": "ShieldRefillTrigger"
         },

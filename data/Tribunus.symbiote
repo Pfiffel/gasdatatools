@@ -5,7 +5,7 @@
       "data": {
         "params": {
           "data": {
-            "damage": 75,
+            "damage": 100,
             "delay": 0,
             "drawReticle": 1,
             "drawTooltip": 1,
@@ -16,7 +16,7 @@
               "x": 0,
               "y": 0
             },
-            "range": 200,
+            "range": 225,
             "statusEffects": [],
             "tag": "",
             "targetingDelay": 0,

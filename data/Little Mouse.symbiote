@@ -1,0 +1,39 @@
+{
+  "description": "Little Mouse always seems to find a way to dodge out of danger.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "angleOffset": 0,
+            "armingTime": 750,
+            "duration": 15000,
+            "emitterType": "Shield Mine",
+            "explosionType": "Shield Mine",
+            "healing": 0,
+            "mineCount": 0,
+            "objectType": "Shield Glyph",
+            "powers": [
+              {
+                "data": {
+                  "amount": 150
+                },
+                "tag": "ShieldRechargePower"
+              }
+            ],
+            "radius": 50,
+            "ringRadius": 0,
+            "tag": ""
+          },
+          "tag": "HealMineTrigger"
+        },
+        "when": 6
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Little Mouse",
+  "tier": 3
+}
+

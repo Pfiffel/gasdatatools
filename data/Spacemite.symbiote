@@ -8,14 +8,6 @@
         "statType": 10
       },
       "tag": "ItemStat"
-    },
-    {
-      "data": {
-        "activeWhile": 0,
-        "amount": 10,
-        "statType": 4
-      },
-      "tag": "ItemStat"
     }
   ],
   "enemies": [],

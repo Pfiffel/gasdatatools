@@ -1,0 +1,25 @@
+{
+  "description": "Cuirass sacrifices speed for protection.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 60,
+        "statType": 3
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": -40,
+        "statType": 5
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "Cuirass",
+  "tier": 2
+}
+

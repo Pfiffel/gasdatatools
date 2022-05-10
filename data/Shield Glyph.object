@@ -1,0 +1,46 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Shield Glyph",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "color": 97548,
+      "height": 15,
+      "mirror": 0,
+      "name": "Glyph",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 0,
+          "y": -30
+        },
+        {
+          "x": -30,
+          "y": -36
+        },
+        {
+          "x": -22,
+          "y": 21
+        },
+        {
+          "x": 0,
+          "y": 44
+        },
+        {
+          "x": 22,
+          "y": 21
+        },
+        {
+          "x": 30,
+          "y": -36
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

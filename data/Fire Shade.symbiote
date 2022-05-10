@@ -3,12 +3,13 @@
   "effects": [
     {
       "data": {
-        "percentChance": 25,
+        "percentChance": 20,
         "statusEffects": [
           {
             "data": {
               "dps": 50,
-              "duration": 1000
+              "duration": 1000,
+              "reducedDurationOnBoss": 0
             },
             "tag": "BurningEffect"
           }
