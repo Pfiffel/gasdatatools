@@ -168,9 +168,7 @@ function MakeStatsTable(mainData, tier)
 			}
 			else if(mainTag == "TriggeredHealMineBurst")
 			{
-				s += "Create <b>" + data.mineCount + "</b> repair packs" + "<br/>";
-				s += printKeyAndData("Repair Amount", data.healing, "heal");
-				s += printKeyAndData("Duration", data.duration);
+				s += MakePickupPackText(data);
 			}
 		}
 		else if(mainTag == "PeriodicTriggerEffect")
@@ -254,6 +252,32 @@ function MakeStatsTable(mainData, tier)
 	}
 	return tbl;
 }
+function MakePickupPackText(data)
+{
+	var s = "";
+	s += "Create <b>" + data.mineCount + "</b> pickup pack" + (data.mineCount != 1 ? "s" : "") + "<br/>";
+	if(data.healing > 0) s += printKeyAndData("Repair Amount", data.healing, "heal");
+	s += printKeyAndData("Duration", data.duration + " ms");
+	if(data.powers != undefined) for(let i = 0; i < data.powers.length; i++)
+	{
+		let powerData = data.powers[i].data;
+		let power = data.powers[i].tag;
+		if(power == "StatPower")
+		{
+			s += printKeyAndData(GetStat(powerData.statType, 1), BonusPrefix(powerData.amount) + "%");
+			s += printKeyAndData("Duration", powerData.duration + " ms");
+		}
+		else if(power == "ShieldRechargePower")
+		{
+			s += "Refill all shields <b>" + powerData.amount + "</b>" + "<br/>";
+		}
+		else if(power == "EnergyDamagePower")
+		{
+			s += "Recharge <b>" + -powerData.energyDamage + "</b> energy" + "<br/>";
+		}
+	}
+	return s;
+}
 function GetTriggeredEffectString(tag, data)
 {
 	var s = ""; var damage = 0;
@@ -262,9 +286,20 @@ function GetTriggeredEffectString(tag, data)
 		s += printKeyAndData("Duration", data.duration + " ms");
 	}
 	else if(tag == "ShotgunTrigger"){
-		s += printKeyAndData("AoE Damage", data.damage);
+		
+		if(data.tooltip != "") s += data.tooltip + "<br/>";
+		if(data.damage > 0) s += printKeyAndData("AoE Damage", data.damage);
 		s += printKeyAndData("Range", data.range);
 		s += printKeyAndData("Arc", (data.halfArc * 0.2) + "°");
+		if(data.statusEffects != undefined) for(let i = 0; i < data.statusEffects.length; i++)
+		{
+			let effectData = data.statusEffects[i].data;
+			let effect = data.statusEffects[i].tag;
+			if(effect == "StunEffect")
+			{
+				s += printKeyAndData("Stun Duration", effectData.duration + " ms");
+			}
+		}
 		damage += data.damage;
 	}
 	else if(tag == "HealOverTimeTrigger"){
@@ -272,9 +307,7 @@ function GetTriggeredEffectString(tag, data)
 		s += printKeyAndData("Duration", data.duration + " ms");
 	}
 	else if(tag == "HealMineTrigger"){
-		s += "Create <b>" + data.mineCount + "</b> repair pack" + (data.mineCount != 1 ? "s" : "") + "<br/>";
-		s += printKeyAndData("Repair Amount", data.healing, "heal");
-		s += printKeyAndData("Duration", data.duration + " ms");
+		s += MakePickupPackText(data);
 	}
 	else if(tag == "AreaHealTrigger"){
 		s += printKeyAndData("Repair Amount", data.amount, "heal");
