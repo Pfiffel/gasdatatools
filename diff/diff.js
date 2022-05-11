@@ -13,6 +13,7 @@ function parseIDs() // make super duper recursive id checker?
 {
 
 }
+var changedSymbs = {};
 var changedObjects = {};
 var changedMaps = {};
 let divList = document.createElement('div');
@@ -63,6 +64,12 @@ function parseData()
 				CompareJSON(entity, entityPrev, entity.name, file, "");
 		}
 	}
+	for (let entity in changedSymbs)
+	{
+		divList.appendChild(MakeGraphicCompareBlock(entity + " changes",
+		MakeStatsTable(GetPrevEntity("symbiote", entity), 0), 
+		MakeStatsTable(GetNewEntity("symbiote", entity), 0)));
+	}
 	var entitySpriteChanged = FindObjectUsage(changedObjects);
 	for (let entity in entitySpriteChanged)
 	{
@@ -96,8 +103,8 @@ function parseData()
 function MakeGraphicCompareBlock(headerText, spritePrev, spriteNew)
 {
 	let div = document.createElement('div');
-	div.classList.add("diffBlock");
 	let header = document.createElement('div');
+	header.style.fontFamily = "monospace";
 	header.innerHTML = headerText;
 	div.appendChild(header);
 	div.appendChild(MakeCanvasCompare(spritePrev, spriteNew));
@@ -117,6 +124,7 @@ function MakeCanvasCompare(c1, c2)
 	divSpriteNew.appendChild(c2);
 	
 	let divArrow = document.createElement('div');
+	divArrow.style.fontFamily = "monospace";
 	divArrow.style.display = "table-cell";
 	divArrow.style.verticalAlign = "middle";
 	divArrow.innerHTML = "&#160;&#8594;&#160;";
@@ -167,6 +175,7 @@ function CompareJSON(entity, entityPrev, superParent, fileType, parentStringList
 			{
 				if(fileType == "object") {changedObjects[superParent] = true; continue;}
 				if(fileType == "map" && (key == "x" || key == "y")) {changedMaps[superParent] = true; continue;}
+				if(fileType == "symbiote") {changedSymbs[superParent] = true; continue;}
 				if(IsNewButDefaultValue(entityPrev, entity, key)) continue;
 				MakeChangeEntry(header, key, entityPrev[key], entity[key], divList);
 			}

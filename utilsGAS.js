@@ -101,6 +101,7 @@ function isSymbioteDropper(monster)
 
 function MakeStatsTable(mainData, tier)
 {
+	if(tier == 0) tier = mainData.tier;
 	var tbl = document.createElement('table');
 	let th = tbl.insertRow();
 	var name = mainData.displayName != undefined ? mainData.displayName : mainData.name;
@@ -170,6 +171,11 @@ function MakeStatsTable(mainData, tier)
 			{
 				s += MakePickupPackText(data);
 			}
+		}
+		else if(mainTag == "GunProcs")
+		{
+			s += classWrap(data.percentChance + "%", "cKeyValue") + " to affect gun shots:<br/>";
+			s += AddEffectsText(data);
 		}
 		else if(mainTag == "PeriodicTriggerEffect")
 		{
@@ -278,6 +284,33 @@ function MakePickupPackText(data)
 	}
 	return s;
 }
+function AddEffectsText(data)
+{
+	var s = "";
+	if(data.statusEffects != undefined) for(let i = 0; i < data.statusEffects.length; i++)
+	{
+		let effectData = data.statusEffects[i].data;
+		let effect = data.statusEffects[i].tag;
+		if(effect == "StunEffect")
+		{
+			s += printKeyAndData("Stun Duration", effectData.duration + " ms");
+		}
+		else if(effect == "RootEffect")
+		{
+			s += printKeyAndData("Root Duration", effectData.duration + " ms");
+		}
+		else if(effect == "Damage Effect")
+		{
+			s += printKeyAndData("Damage", effectData.damage);
+		}
+		else if(effect == "DoTEffect" || effect == "BurningEffect")
+		{
+			s += printKeyAndData("DoT DPS", effectData.dps);
+			s += printKeyAndData("DoT Duration", effectData.duration + " ms");
+		}
+	}
+	return s;
+}
 function GetTriggeredEffectString(tag, data)
 {
 	var s = ""; var damage = 0;
@@ -291,15 +324,7 @@ function GetTriggeredEffectString(tag, data)
 		if(data.damage > 0) s += printKeyAndData("AoE Damage", data.damage);
 		s += printKeyAndData("Range", data.range);
 		s += printKeyAndData("Arc", (data.halfArc * 0.2) + "°");
-		if(data.statusEffects != undefined) for(let i = 0; i < data.statusEffects.length; i++)
-		{
-			let effectData = data.statusEffects[i].data;
-			let effect = data.statusEffects[i].tag;
-			if(effect == "StunEffect")
-			{
-				s += printKeyAndData("Stun Duration", effectData.duration + " ms");
-			}
-		}
+		s += AddEffectsText(data);
 		damage += data.damage;
 	}
 	else if(tag == "HealOverTimeTrigger"){
