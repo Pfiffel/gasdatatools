@@ -35,14 +35,14 @@ function parseData()
 			if(entityPrev == null){
 				if(file == "symbiote" || file == "item" || file == "accolade")
 				{
-					addLine("New " + file, divList);
+					var forChamp = (entity.champion != undefined) ? entity.champion + " " : "";
+					addLine("New " + forChamp + file, divList);
 					divList.appendChild(MakeStatsTable(entity, file == "accolade" ? 0 : entity.tier));
 				}
 				else if (file == "object")
 				{
 					addLine("New " + file + ": <b>" + entity.name + "</b>", divList);
-					// should do this, but in build 24 the only new objects are just for turrets that already exist (Anvil, Hammer)
-					//changedObjects[entity.name] = true;
+					changedObjects[entity.name] = true;
 					// TODO make draw function for just objects
 				}
 				else

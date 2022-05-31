@@ -327,6 +327,9 @@ function GetTriggeredEffectString(tag, data)
 		s += AddEffectsText(data);
 		damage += data.damage;
 	}
+	else if(tag == "CooldownResetTrigger"){
+		s += "Reset cooldown on <b>trigger " + (data.triggerIndex+1) + "</b>" + "<br/>";
+	}
 	else if(tag == "HealOverTimeTrigger"){
 		s += printKeyAndData("Heal Amount", data.amount + (data.asPercentage == 1 ? "%" : ""), data.applyToMana == 1 ? "energy" : "heal");
 		s += printKeyAndData("Duration", data.duration + " ms");
@@ -397,12 +400,12 @@ function GetBonusEffectString(tag, data)
 		if(data.range != 0)						s += printKeyAndDataBonus("Range", BonusPrefix(data.range));
 		if(data.halfArc != 0)					s += printKeyAndDataBonus("Arc", BonusPrefix(data.halfArc * 0.2) + "°");
 		if(data.targetingDelay != 0)	s += printKeyAndDataBonus("Targeting Delay", BonusPrefix(data.targetingDelay) + " ms");
+		s += AddEffectsText(data);
 	}
-	/*
-	else if(tag == "HealOverTimeTrigger"){
-		s += printKeyAndData("Heal Amount", data.amount + (data.asPercentage == 1 ? "%" : ""), data.applyToMana == 1 ? "energy" : "heal");
-		s += printKeyAndData("Duration", data.duration);
-	}
+	else if(tag == "HealOverTimeTriggerBonus"){
+		if(data.amount != 0)					s += printKeyAndDataBonus("Repair Amount", BonusPrefix(data.amount));
+		if(data.duration != 0)				s += printKeyAndDataBonus("Duration", BonusPrefix(data.duration));
+	}/*
 	else if(tag == "ShieldRefillTrigger"){
 		s += printKeyAndData("Shield Refill", data.refillPercentage + "%");
 	}*/
@@ -410,14 +413,13 @@ function GetBonusEffectString(tag, data)
 		if(data.healAmount != 0)			s += printKeyAndDataBonus("Repair Amount", BonusPrefix(data.healAmount) + (data.usePercentInTooltip == 1 ? "%" : ""), data.applyToMana == 1 ? "energy" : "heal");
 	}
 	else if(tag == "StatBoostTriggerBonus"){
-		if(data.amount != 0)					s += printKeyAndDataBonus(GetStat(data.statType, 1), BonusPrefix(data.amount) + "%");
+		if(data.amount != 0)					s += printKeyAndDataBonus((data.statType != undefined) ? GetStat(data.statType, 1) : "Boost Amount", BonusPrefix(data.amount) + "%");
 		if(data.duration != 0)				s += printKeyAndDataBonus("Duration", BonusPrefix(data.duration) + " ms");
-	}/*
-	else if(tag == "DematerializeTrigger"){
-		if(data.percentChance != undefined && data.percentChance != 100)
-			s += printKeyAndData("Dematerialize Chance", data.percentChance + "%");
-		s += printKeyAndData("Dematerialize Duration", data.duration);
 	}
+	else if(tag == "DematerializeTriggerBonus"){
+		if(data.percentChance != 0)		s += printKeyAndDataBonus("Dematerialize Chance", BonusPrefix(data.percentChance));
+		if(data.duration != 0)				s += printKeyAndDataBonus("Dematerialize Duration", BonusPrefix(data.duration));
+	}/*
 	else if(tag == "ExtraGunTrigger"){
 		let dps = round(1000*data.stats.damage/data.stats.cooldown,2);
 		s += printKeyAndData("Create Gun", dps + " DPS");
@@ -430,10 +432,13 @@ function GetBonusEffectString(tag, data)
 	else if(tag == "GunProcTrigger"){
 		s += "For <b>" + data.duration + "</b> ms, gun shots apply:" + "<br/>";
 		s += ShowStatusEffect(data.statusEffect);
-	}
-	else if(tag == "LeapTrigger"){
-		s += printKeyAndData("Leap Distance", data.range);
 	}*/
+	else if(tag == "LeapTriggerBonus"){
+		if(data.collisionDamage != 0)	s += printKeyAndDataBonus("Collision Damage", BonusPrefix(data.collisionDamage));
+		if(data.collisionDematerialTime != 0)	s += printKeyAndDataBonus("Collision Dematerialze Time", BonusPrefix(data.collisionDematerialTime));
+		if(data.collisionManaToRefund != 0)	s += printKeyAndDataBonus("Collision Energy Refund", BonusPrefix(data.collisionManaToRefund));
+		if(data.range != 0)	s += printKeyAndDataBonus("Leap Distance", BonusPrefix(data.range));
+	}
 	else if(tag == "SharkletTriggerBonus"){
 		if(data.count != 0)						s += printKeyAndDataBonus("Missile Count", BonusPrefix(data.count));
 		if(data.damage != 0)					s += printKeyAndDataBonus("Damage", BonusPrefix(data.damage));
