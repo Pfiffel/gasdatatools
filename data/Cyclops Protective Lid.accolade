@@ -1,0 +1,28 @@
+{
+  "champion": "Cyclops",
+  "displayName": "Protective Lid",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "duration": 5000,
+            "stats": {
+              "color": 10888979,
+              "left": -1800,
+              "level": 0,
+              "maxStrength": 200,
+              "right": 1800
+            },
+            "tag": ""
+          },
+          "tag": "ExtraShieldTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Cyclops Protective Lid"
+}
+

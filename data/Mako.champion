@@ -60,7 +60,7 @@
           "data": {
             "damage": 180,
             "delay": 0,
-            "drawReticle": 0,
+            "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Mako Laser Beams Blast",
             "halfArc": 450,
@@ -69,7 +69,7 @@
               "x": 0,
               "y": 0
             },
-            "range": 300,
+            "range": 290,
             "statusEffects": [],
             "tag": "Mako 1 Shotgun",
             "targetingDelay": 0,
@@ -103,7 +103,7 @@
             "drawTooltip": 1,
             "emitterType": "Mako Leap",
             "range": 300,
-            "tag": ""
+            "tag": "Mako 2 Leap"
           },
           "tag": "LeapTrigger"
         }
@@ -167,7 +167,7 @@
                 "tag": "SusceptibleEffect"
               }
             ],
-            "tag": "",
+            "tag": "Mako 4 Shotgun",
             "targetingDelay": 0,
             "tooltip": ""
           },
@@ -183,7 +183,7 @@
             "glyphType": "Axeraider Rally Glyph",
             "noStack": 0,
             "statType": 5,
-            "tag": ""
+            "tag": "Mako 4 StatBoost"
           },
           "tag": "StatBoostTrigger"
         }

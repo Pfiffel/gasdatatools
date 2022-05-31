@@ -168,7 +168,7 @@
             "duration": 2000,
             "emitterType": "Wasp Phase Negation",
             "percentChance": 100,
-            "tag": ""
+            "tag": "Wasp 3 Dematerialize"
           },
           "tag": "DematerializeTrigger"
         },
@@ -206,7 +206,7 @@
             "glyphType": "",
             "noStack": 0,
             "statType": 0,
-            "tag": ""
+            "tag": "Wasp 4 StatBoost 1"
           },
           "tag": "StatBoostTrigger"
         },
@@ -220,7 +220,7 @@
             "glyphType": "",
             "noStack": 0,
             "statType": 8,
-            "tag": ""
+            "tag": "Wasp 4 StatBoost 2"
           },
           "tag": "StatBoostTrigger"
         }

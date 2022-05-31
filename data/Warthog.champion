@@ -48,7 +48,7 @@
           "data": {
             "damage": 200,
             "delay": 0,
-            "drawReticle": 0,
+            "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Warthog Blast",
             "halfArc": 1800,
@@ -81,6 +81,7 @@
             "collisionSettings": {
               "cooldownToRetain": 1000,
               "damage": 0,
+              "dematerialTime": 0,
               "explosion": "",
               "explosionRange": 0,
               "manaToRefund": 0,

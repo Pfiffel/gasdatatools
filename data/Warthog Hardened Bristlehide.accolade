@@ -1,0 +1,28 @@
+{
+  "champion": "Warthog",
+  "displayName": "Hardened Bristlehide",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 50,
+            "duration": 4000,
+            "emitterType": "",
+            "glyphCount": 8,
+            "glyphRadius": 80,
+            "glyphType": "Axeraider Unstoppable Glyph",
+            "noStack": 0,
+            "statType": 9,
+            "tag": ""
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Warthog Hardened Bristlehide"
+}
+

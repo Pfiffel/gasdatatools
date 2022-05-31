@@ -1,0 +1,23 @@
+{
+  "champion": "Mako",
+  "displayName": "Blood Lust",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "amount": 0,
+            "duration": 2000
+          },
+          "tag": "StatBoostTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Mako 4 StatBoost",
+        "tooltip": "On Blood Frenzy:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Mako Blood Lust"
+}
+

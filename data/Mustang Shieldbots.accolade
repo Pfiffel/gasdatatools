@@ -1,0 +1,26 @@
+{
+  "champion": "Mustang",
+  "displayName": "Shieldbots",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "glyphCount": 4,
+            "glyphDuration": 300,
+            "glyphRadius": 100,
+            "glyphType": "Shield Glyph",
+            "refillPercentage": 30,
+            "shieldIndex": -1,
+            "tag": ""
+          },
+          "tag": "ShieldRefillTrigger"
+        },
+        "when": 7
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Mustang Shieldbots"
+}
+

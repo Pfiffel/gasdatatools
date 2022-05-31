@@ -1,0 +1,38 @@
+{
+  "champion": "Hercules",
+  "displayName": "Disrupting Haymaker",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "damage": 0,
+            "delay": 0,
+            "halfArc": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 0,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 750
+                },
+                "tag": "StunEffect"
+              }
+            ],
+            "targetingDelay": 0
+          },
+          "tag": "ShotgunTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Hercules 2 Shotgun",
+        "tooltip": "On Neutron Haymaker"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Hercules Disrupting Haymaker"
+}
+

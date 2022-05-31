@@ -1,0 +1,23 @@
+{
+  "champion": "Wasp",
+  "displayName": "Venom Intensity",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "amount": 50,
+            "duration": 0
+          },
+          "tag": "StatBoostTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Wasp 4 StatBoost 1",
+        "tooltip": "On Venom Overload:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Wasp Venom Intensity"
+}
+

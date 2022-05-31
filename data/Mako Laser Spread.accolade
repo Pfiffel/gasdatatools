@@ -1,0 +1,31 @@
+{
+  "champion": "Mako",
+  "displayName": "Laser Spread",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "damage": 0,
+            "delay": 0,
+            "halfArc": 100,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 0,
+            "statusEffects": [],
+            "targetingDelay": 0
+          },
+          "tag": "ShotgunTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Mako 1 Shotgun",
+        "tooltip": "On Laser Beams:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Mako Laser Spread"
+}
+

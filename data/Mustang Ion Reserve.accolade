@@ -1,0 +1,35 @@
+{
+  "champion": "Mustang",
+  "displayName": "Ion Reserve",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "damage": 400,
+            "delay": 0,
+            "drawReticle": 0,
+            "drawTooltip": 1,
+            "explosionType": "Mustang Ion Burst",
+            "halfArc": 600,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 300,
+            "statusEffects": [],
+            "tag": "",
+            "targetingDelay": 900,
+            "tooltip": "Secondary Blast"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Mustang Ion Reserve"
+}
+

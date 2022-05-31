@@ -1,0 +1,31 @@
+{
+  "champion": "Warthog",
+  "displayName": "Goretusk Expansion",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "damage": 0,
+            "delay": 0,
+            "halfArc": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 15,
+            "statusEffects": [],
+            "targetingDelay": 0
+          },
+          "tag": "ShotgunTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Warthog 1 Shotgun",
+        "tooltip": "On Goretusk Detonation:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Warthog Goretusk Expansion"
+}
+

@@ -11,7 +11,7 @@
             "emitterType": "Shield Mine",
             "explosionType": "Shield Mine",
             "healing": 0,
-            "mineCount": 0,
+            "mineCount": 1,
             "objectType": "Shield Glyph",
             "powers": [
               {

@@ -96,7 +96,8 @@
             "range": 150,
             "statusEffects": [],
             "tag": "Mustang 1 Shotgun",
-            "targetingDelay": 0
+            "targetingDelay": 0,
+            "tooltip": ""
           },
           "tag": "ShotgunTrigger"
         }
@@ -160,7 +161,8 @@
               }
             ],
             "tag": "Mustang 3 Shotgun",
-            "targetingDelay": 0
+            "targetingDelay": 0,
+            "tooltip": ""
           },
           "tag": "ShotgunTrigger"
         }
@@ -181,7 +183,7 @@
             "delay": 0,
             "drawReticle": 1,
             "drawTooltip": 1,
-            "explosionType": "",
+            "explosionType": "Mustang Ion Burst",
             "halfArc": 600,
             "mirror": 0,
             "offset": {
@@ -191,12 +193,13 @@
             "range": 300,
             "statusEffects": [],
             "tag": "Mustang 4 Shotgun",
-            "targetingDelay": 0
+            "targetingDelay": 0,
+            "tooltip": ""
           },
           "tag": "ShotgunTrigger"
         }
       ],
-      "sound": "Player_Mustang_IonBurst",
+      "sound": "",
       "volume": 75
     }
   ]

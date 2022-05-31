@@ -1,0 +1,25 @@
+{
+  "champion": "Mako",
+  "displayName": "Serrated Teeth",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "collisionDamage": 40,
+            "collisionDematerialTime": 0,
+            "collisionManaToRefund": 0,
+            "range": 0
+          },
+          "tag": "LeapTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Mako 2 Leap",
+        "tooltip": "On Jaws:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Mako Serrated Teeth"
+}
+

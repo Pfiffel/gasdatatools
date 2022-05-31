@@ -1,0 +1,23 @@
+{
+  "champion": "Warthog",
+  "displayName": "Mighty Boar",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "amount": 500,
+            "duration": 0
+          },
+          "tag": "HealOverTimeTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Warthog 4 HealOverTime",
+        "tooltip": "On War Boar:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Warthog Mighty Boar"
+}
+

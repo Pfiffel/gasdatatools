@@ -1,0 +1,20 @@
+{
+  "champion": "Hercules",
+  "displayName": "Javelin Reload",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "triggerIndex": 2
+          },
+          "tag": "CooldownResetTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Hercules Javelin Reload"
+}
+

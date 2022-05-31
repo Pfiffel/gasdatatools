@@ -1,0 +1,58 @@
+{
+  "champion": "Hercules",
+  "displayName": "Javelin Enhancement",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "damage": 75,
+            "delay": 2300,
+            "drawReticle": 0,
+            "drawTooltip": 1,
+            "explosionType": "Hercules Zeon Burst",
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 250,
+              "y": 0
+            },
+            "range": 160,
+            "statusEffects": [],
+            "tag": "",
+            "targetingDelay": 2000,
+            "tooltip": "+1 Extra Missile"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "delay": 2000,
+            "duration": 300,
+            "emitterType": "Mustang Grenade",
+            "mirror": 0,
+            "objectType": "Hercules Missile",
+            "sound": "Player_Hercules_ZeonRocket_Launch",
+            "tag": "",
+            "target": {
+              "x": 250,
+              "y": 0
+            },
+            "volume": 20
+          },
+          "tag": "SlugTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Hercules Javelin Enhancement"
+}
+

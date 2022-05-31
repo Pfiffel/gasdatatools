@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 50,
+      "maxDistPercent": 100,
+      "minDistPercent": 100,
+      "particleType": "Mustang Grenade Burst",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 200,
+      "maxDistPercent": 95,
+      "minDistPercent": 30,
+      "particleType": "Mustang Grenade Burst",
+      "uniformAngles": 0
+    }
+  ],
+  "name": "Mustang Ion Burst",
+  "sound": "Player_Mustang_IonBurst",
+  "volume": 75
+}
+

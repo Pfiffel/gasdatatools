@@ -1,0 +1,23 @@
+{
+  "champion": "Wasp",
+  "displayName": "Phase Modulation",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "duration": 400,
+            "percentChance": 0
+          },
+          "tag": "DematerializeTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Wasp 3 Dematerialize",
+        "tooltip": "On Phase Negation:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Wasp Phase Modulation"
+}
+
