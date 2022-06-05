@@ -1,17 +1,38 @@
-var FILE = "Build23.log";
-var tableOutput = document.getElementById("tableOutput");
-var timeStart = window.performance.now();
-var bench = document.createElement('div');
-bench.innerHTML = "Loading...";
-tableOutput.appendChild(bench);
+var startLogs = 22;
+var endLogs = 30;
 
-var logData = [];
+var logButtons = document.getElementById("logButtons");
+var bench = document.getElementById("loadInfo");
+var tableOutput = document.getElementById("tableOutput");
+
 additionalFileLoaded = false;
-loadJsonFile(FILE, function(loadedData){
-	additionalFileLoaded = true;
-	logData = JSON.parse(loadedData);
-	if(allLoaded()) parseData();
-});
+var currentFile;
+var timeStart;
+var logData = [];
+
+for (let i = startLogs; i < endLogs+1; i++)
+{
+	var logName = "Build"+i+".log";
+	makeButton(logName,OnLogButton,logButtons);
+}
+var lastBtnLog;
+function OnLogButton(e)
+{
+	timeStart = window.performance.now();
+	currentFile = e.target.id;
+	var btnLog = document.getElementById(currentFile);
+	btnLog.disabled = true;
+	if(lastBtnLog != undefined) lastBtnLog.disabled = false;
+	lastBtnLog = btnLog;
+	bench.innerHTML = "Loading...";
+	additionalFileLoaded = false;
+	loadJsonFile(currentFile, function(loadedData){
+		additionalFileLoaded = true;
+		logData = JSON.parse(loadedData);
+		if(allLoaded()) parseData();
+	}, bench);
+}
+
 var datatypes = ["map","lair","region","lane"]; // for utilGAS to load files, calls parseData once completed
 loadGasData();
 
@@ -37,31 +58,102 @@ var triggerPoints = [];
 var bossKillPoints = [];
 var maxConcurrentPlayers = 0;
 var chatLog = [];
+//var topDeaths = [];
 //var activePlayers = {};
+var lastBtn;
+function ResetStats()
+{
+	tags = {};
+	retirements = {};
+	deaths = {};
+	players = {};
+	removedSymbs = {};
+	triggerStats = {};
+	seenTanks = {};
+	dateStart = undefined;
+	dateEnd = undefined;
+	graphIntervalDataPlayers = {};
+	graphIntervalDataDeaths = {};
+	deathPointsAll = [];
+	deathPoints20 = [];
+	deathPointsSub20 = [];
+	movePoints = [];
+	triggerPoints = [];
+	bossKillPoints = [];
+	maxConcurrentPlayers = 0;
+	chatLog = [];
+}
+function OpenCategory(e, tab)
+{
+	timeStart = window.performance.now();
+	var btn = document.getElementById(tab);
+	btn.disabled = true;
+	if(lastBtn != undefined && lastBtn != btn) lastBtn.disabled = false;
+	lastBtn = btn;
+	tableOutput.innerHTML = "";
+	if(tab == "Heatmaps")
+	{
+		//MakeHeatmap(id, max, points)
+		MakeHeatmap("All Deaths", 2, deathPointsAll);
+		//console.group(deathPoints20);
+		MakeHeatmap("Level 20 Deaths", 2, deathPoints20);
+		//console.group(deathPointsSub20);
+		MakeHeatmap("Sub 20 Deaths", 2, deathPointsSub20);
+		MakeHeatmap("Activity (Status)", 200, movePoints);
+		MakeHeatmap("Activity (Trigger)", 50, triggerPoints);
+		MakeHeatmap("Boss Deaths", 3, bossKillPoints);
+	}
+	else if(tab == "General")
+	{
+		MakePlayerStats(); //bit of a hack to populate playerStatSummary
+		var div = document.createElement('div');
+		div.innerHTML = playerStatSummary;
+		tableOutput.appendChild(div);
+		tableOutput.appendChild(MakeSimpleCountList("Tag", tags));
+		tableOutput.appendChild(MakeSimpleCountList("Removed Symbiote", removedSymbs));
+	}
+	else if(tab == "Player Activity")
+	{
+		tableOutput.appendChild(MakeGraphCanvas("player_graph"));
+		MakePlayerActivityGraph("player_graph");
+		tableOutput.appendChild(MakePlayerStats());
+	}
+	else if(tab == "Chat Log")
+	{
+		tableOutput.appendChild(MakeChatLog());
+	}
+	else if(tab == "Tank Stats")
+	{
+		tableOutput.appendChild(MakeRetirementStats());
+		tableOutput.appendChild(MakeDeathStats());
+		tableOutput.appendChild(MakeTriggerStats());
+	}
+	var secs = Math.round(window.performance.now() - timeStart)/1000;
+	//bench.innerHTML += "<br/>" + tab + " tab display processed in " + secs + " seconds";
+}
 function parseData()
 {
+	ResetStats();
 	var secs = Math.round(window.performance.now() - timeStart)/1000;
+	bench.innerHTML = currentFile + " loaded in " + secs + " seconds";
 	timeStart = window.performance.now();
-	bench.innerHTML = FILE + " loaded in " + secs + " seconds";
-	//if(window.performance != undefined) var t0 = window.performance.now();
-	var tbl = document.createElement('table');
-	let th = tbl.insertRow();
 	var sinceLastStatus = 0;
 	var lastStatus = 0;
 	for (let i = 0; i < logData.length; i++)
 	{
-		var data = logData[i].message.data;
+		var log = logData[i];
+		var data = log.message.data;
 		var player = data.name;
 		InitPlayerIfNotSeenYet(player);
 		// seen tanks, is this really necessary to check for each message? no... but at least i won't have to worry about adding new tanks manually myself
 		var tank = data.champion;
 		if(tank != undefined) InitTankIfNotSeenYet(tank);
-		var unix = logData[i].unixTime;
+		var unix = log.unixTime;
 		var toInterval = UnixToInterval(unix);
 		if(graphIntervalDataPlayers[toInterval] == undefined) graphIntervalDataPlayers[toInterval] = 0;
 		if(graphIntervalDataDeaths[toInterval] == undefined) graphIntervalDataDeaths[toInterval] = 0;
 		
-		let currentTag = logData[i].message.tag;
+		let currentTag = log.message.tag;
 		if(dateStart == undefined) dateStart = unix;
 		if(i == logData.length-1) dateEnd = unix;
 
@@ -129,13 +221,13 @@ function parseData()
 		}
 		else if(currentTag == "BossKillLog")
 		{
-			//bossKillPoints.push(MakePoint(logData[i].message.data.p));
+			//bossKillPoints.push(MakePoint(log.message.data.p));
 			players[player].bossKills++;
 			//AddChatLog(unix, data, currentTag);
 		}
 		else if(currentTag == "BossDeathLog")
 		{
-			bossKillPoints.push(MakePoint(logData[i].message.data.p));
+			bossKillPoints.push(MakePoint(log.message.data.p));
 			AddChatLog(unix, data, currentTag);
 		}
 		else if(currentTag == "PlayerChatLog")
@@ -185,29 +277,9 @@ function parseData()
 		if(tags[currentTag] == undefined) tags[currentTag] = 1; else tags[currentTag]++;
 	}
 	SortTanks();
-	//MakeHeatmap(id, max, points)
-	MakeHeatmap("All Deaths", 2, deathPointsAll);
-	//console.group(deathPoints20);
-	MakeHeatmap("Level 20 Deaths", 2, deathPoints20);
-	//console.group(deathPointsSub20);
-	MakeHeatmap("Sub 20 Deaths", 2, deathPointsSub20);
-	MakeHeatmap("Activity (Status)", 200, movePoints);
-	MakeHeatmap("Activity (Trigger)", 50, triggerPoints);
-	MakeHeatmap("Boss Deaths", 3, bossKillPoints);
-	tableOutput.appendChild(MakeGraphCanvas("player_graph"));
-	MakePlayerActivityGraph("player_graph");
-	tableOutput.appendChild(MakeSimpleCountList("Tag", tags));
-	tableOutput.appendChild(MakePlayerStats());
-	tableOutput.appendChild(MakeSimpleCountList("Removed Symbiote", removedSymbs));
-	tableOutput.appendChild(MakeChatLog());
-	var div = document.createElement('div');
-	div.classList.add("inline");
-	div.appendChild(MakeRetirementStats());
-	div.appendChild(MakeDeathStats());
-	div.appendChild(MakeTriggerStats());
-	tableOutput.appendChild(div);
 	var secs = Math.round(window.performance.now() - timeStart)/1000;
-	bench.innerHTML += "<br/>" + logData.length + " logs processed in " + secs + " seconds<br/><br/>" + playerStatSummary + "<br/>";
+	bench.innerHTML += "<br/>" + logData.length + " logs processed in " + secs + " seconds";
+	OpenCategory(null, "General");
 }
 // http://www.jeffreythompson.org/collision-detection/poly-point.php
 function PointIsInPoly(vertices, p) {

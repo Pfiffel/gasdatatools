@@ -7,6 +7,16 @@
 	<link rel="shortcut icon" href="favicon.png" mce_href="favicon.png"/>
 </head>
 <body>
+<div id="logButtons"></div>
+<div id="loadInfo"></div>
+<div>
+	<button id="General" class="tablinks" onclick="OpenCategory(event, 'General')">General</button>
+	<button id="Heatmaps" class="tablinks" onclick="OpenCategory(event, 'Heatmaps')">Heatmaps</button>
+	<button id="Player Activity" class="tablinks" onclick="OpenCategory(event, 'Player Activity')">Player Activity</button>
+	<button id="Deaths" class="tablinks" onclick="OpenCategory(event, 'Deaths')">Deaths</button>
+	<button id="Chat Log" class="tablinks" onclick="OpenCategory(event, 'Chat Log')">Chat Log</button>
+	<button id="Tank Stats" class="tablinks" onclick="OpenCategory(event, 'Tank Stats')">Tank Stats</button>
+</div>
 <div id="tableOutput"></div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0"></script>
@@ -15,6 +25,7 @@
 <script type="text/javascript" src="../utils.js"></script>
 <script type="text/javascript" src="../utilsColor.js"></script>
 <script type="text/javascript" src="../utilsGAS.js"></script>
+<script type="text/javascript" src="../utilsUI.js"></script>
 <script type="text/javascript" src="logDisplay.js"></script>
 </body>
 </html>

@@ -1,10 +1,18 @@
 function degToRad(deg){
 	return deg * Math.PI/180;
 }
-function loadJsonFile(file, callback) {
+function loadJsonFile(file, callback, progressElement) {
     var rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");
     rawFile.open("GET", file, true);
+		if(progressElement != undefined) rawFile.onprogress = function(pe) {
+			if(pe.lengthComputable) {
+				let perc = pe.loaded/pe.total;
+				progressElement.innerHTML = "Loading... " + pad(round(perc*100,2),2,2) + "%";
+				//progressBar.max = pe.total
+				//progressBar.value = pe.loaded
+			}
+		}
     rawFile.onreadystatechange = function() {
         if (rawFile.readyState === 4 && rawFile.status == "200") {
             callback(rawFile.responseText);
