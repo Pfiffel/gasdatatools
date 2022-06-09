@@ -1,5 +1,5 @@
 var startLogs = 22;
-var endLogs = 30;
+var endLogs = 50;
 
 var logButtons = document.getElementById("logButtons");
 var bench = document.getElementById("loadInfo");
@@ -13,7 +13,7 @@ var logData = [];
 for (let i = startLogs; i < endLogs+1; i++)
 {
 	var logName = "Build"+i+".log";
-	makeButton(logName,OnLogButton,logButtons);
+	if(DoesFileExist(logName)) makeButton(logName, OnLogButton, logButtons);
 }
 var lastBtnLog;
 function OnLogButton(e)
@@ -31,6 +31,12 @@ function OnLogButton(e)
 		logData = JSON.parse(loadedData);
 		if(allLoaded()) parseData();
 	}, bench);
+}
+function DoesFileExist(urlToFile) {
+	var xhr = new XMLHttpRequest();
+	xhr.open('HEAD', urlToFile, false);
+	xhr.send();
+	return xhr.status !== 404;
 }
 
 var datatypes = ["map","lair","region","lane"]; // for utilGAS to load files, calls parseData once completed
@@ -58,7 +64,7 @@ var triggerPoints = [];
 var bossKillPoints = [];
 var maxConcurrentPlayers = 0;
 var chatLog = [];
-//var topDeaths = [];
+var topDeaths = [];
 //var activePlayers = {};
 var lastBtn;
 function ResetStats()
@@ -82,6 +88,7 @@ function ResetStats()
 	bossKillPoints = [];
 	maxConcurrentPlayers = 0;
 	chatLog = [];
+	topDeaths = [];
 }
 function OpenCategory(e, tab)
 {
@@ -127,6 +134,10 @@ function OpenCategory(e, tab)
 		tableOutput.appendChild(MakeRetirementStats());
 		tableOutput.appendChild(MakeDeathStats());
 		tableOutput.appendChild(MakeTriggerStats());
+	}
+	else if(tab == "Deaths")
+	{
+		tableOutput.appendChild(MakeTopDeathLog());
 	}
 	var secs = Math.round(window.performance.now() - timeStart)/1000;
 	//bench.innerHTML += "<br/>" + tab + " tab display processed in " + secs + " seconds";
@@ -212,6 +223,18 @@ function parseData()
 			deaths[tank][level]++;
 			deathPointsAll.push(MakePoint(data.p));
 			if(level == 20){
+				if(players[player].recentTopDeath != null)
+				{
+					topDeaths.push(players[player].recentTopDeath);
+				}
+				var topDeathData = {};
+				topDeathData.log = log;
+				topDeathData.kills = players[player].currentTotalBossKills;
+				topDeathData.level = level; // also in log.data.level
+				topDeathData.unix = unix; // also in log.unixTime
+				topDeathData.comments = [];
+				players[player].recentTopDeath = topDeathData;
+				
 				// TODO figure out why heatmap doesn't show for build 21 despite this being populated
 				deathPoints20.push(MakePoint(data.p));
 			}
@@ -222,6 +245,7 @@ function parseData()
 		else if(currentTag == "BossKillLog")
 		{
 			//bossKillPoints.push(MakePoint(log.message.data.p));
+			players[player].currentTotalBossKills = data.totalBossKills;
 			players[player].bossKills++;
 			//AddChatLog(unix, data, currentTag);
 		}
@@ -232,26 +256,48 @@ function parseData()
 		}
 		else if(currentTag == "PlayerChatLog")
 		{
+			var cTD = players[player].recentTopDeath;
+			if(cTD != null && ((unix-cTD.unix) < 60))
+			{
+				players[player].recentTopDeath.comments.push(data.message);
+			}
 			players[player].chats++;
 			AddChatLog(unix, data, currentTag);
 		}
 		else if(currentTag == "PlayerSpawnLog")
 		{
-			players[data.name].currentLevel = data.level;
+			players[player].currentLevel = data.level;
+			players[player].currentTotalBossKills = 0;
 		}
 		else if(currentTag == "LevelUpLog")
 		{
 			players[player].levelUps++;
-			players[data.name].currentLevel = data.level+1;
-			if(players[data.name].currentLevel == 20) AddChatLog(unix, data, currentTag);
+			players[player].currentLevel = data.level+1;
+			if(players[player].currentLevel == 20) AddChatLog(unix, data, currentTag);
 		}
 		else if(currentTag == "PlayerLoginLog")
 		{
+			var cTD = players[player].recentTopDeath;
+			if(cTD != null)
+			{
+				if(cTD.nextLogin == undefined)
+					cTD.nextLogin = unix-cTD.unix;
+				if((unix-cTD.unix) < 120)
+					cTD.ragequit = false;
+			}
 			AddChatLog(unix, data, currentTag);
 			graphIntervalDataPlayers[toInterval]++;
 		}
 		else if(currentTag == "PlayerDisconnectLog")
 		{
+			var cTD = players[player].recentTopDeath;
+			if(cTD != null)
+			{
+				if(cTD.nextLogoff == undefined)
+					cTD.nextLogoff = unix-cTD.unix;
+				if((unix-cTD.unix) < 120)
+					cTD.ragequit = true;
+			}
 			AddChatLog(unix, data, currentTag);
 			graphIntervalDataPlayers[toInterval]--;
 			// TODO figure out why this can become < 0 in the first place
@@ -399,6 +445,55 @@ function MakePoint(point)
 	var x = 300+point.x/100;
 	var y = 300+point.y/100;
 	return { x: x, y: y, value: 1 };
+}
+function MakeTopDeathLog()
+{
+	var tbl = document.createElement('table');
+	let th = tbl.insertRow();
+	makeHeaderCell("Timestamp", th);
+	makeHeaderCell("Name", th);
+	makeHeaderCell("Level", th);
+	makeHeaderCell("Kills", th);
+	makeHeaderCell("Tank", th);
+	makeHeaderCell("Location", th);
+	makeHeaderCell("Ragequit", th);
+	makeHeaderCell("Next Logoff", th);
+	makeHeaderCell("Next Login", th);
+	makeHeaderCell("Comments", th);
+	for (var player in players) {
+		if(players[player].recentTopDeath != null)
+		{
+			topDeaths.push(players[player].recentTopDeath);
+		}
+	}
+	let totalQuits = 0;
+	for (var i in topDeaths)
+	{
+		var death = topDeaths[i];
+		var data = death.log.message.data;
+		let tr = tbl.insertRow();
+		makeCell(unixToStringYMDHMS(death.unix), tr);
+		makeCell(data.name, tr);
+		makeCell(data.level, tr);
+		makeCell(death.kills, tr);
+		makeCell(data.champion, tr);
+		var zoneInfo = GetZoneFromPoint(data.p);
+		var zoneCell = makeCell(zoneInfo != null ? zoneInfo.name : "", tr);
+		if(zoneInfo != null) zoneCell.style.color = numberToHex(zoneInfo.color);
+		if(death.ragequit == true) totalQuits++;
+		makeCell(death.ragequit != undefined ? death.ragequit : "", tr);
+		makeCell(death.nextLogoff != undefined ? secondsToClock(death.nextLogoff) : "", tr);
+		makeCell(death.nextLogin != undefined ? secondsToClock(death.nextLogin) : "", tr);
+		makeCell(death.comments.toString(), tr);
+	}
+
+	var div = document.createElement('div');
+	var divStats = document.createElement('div');
+	var quitperc = totalQuits/topDeaths.length;
+	divStats.innerHTML = "Ragequits (logoff within 2 minutes): " + totalQuits + " of " + topDeaths.length + " level 20 deaths (" + round(quitperc*100,2) + "%)";
+	div.appendChild(divStats);
+	div.appendChild(tbl);
+	return div;
 }
 function MakeHeatmap(id, max, points)
 {
@@ -577,6 +672,8 @@ function InitPlayerIfNotSeenYet(name)
 		players[name].medals = 0;
 		players[name].accolades = 0;
 		players[name].bossKills = 0;
+		players[name].currentTotalBossKills = 0;
+		players[name].recentTopDeath = null;
 		players[name].chats = 0;
 		players[name].sinceLastStatus = 0;
 		players[name].lastStatus = 0;

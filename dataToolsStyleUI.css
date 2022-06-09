@@ -10,6 +10,9 @@ input, select
 	-1px    1px		0   #000,
 	1px     1px		0   #000;
 }
+input:disabled {
+  background: #ccc;
+}
 .tab_button {
 	width: 160px;
 	height: 40px;
@@ -48,5 +51,12 @@ input[type=text] {
 }
 input[type="button"]
 {
+	padding: 2px 2px;
+	cursor: pointer;
+}
+button
+{
+	margin: 4px 2px 4px 0;
+	padding: 2px 2px;
 	cursor: pointer;
 }
