@@ -218,17 +218,6 @@ function MakeStatsTable(mainData, tier)
 			s += data.tooltip + "<br/>";
 			s += GetBonusEffectString(data.bonus.tag, data.bonus.data);
 		}
-		else if(mainTag == "GoldenHindMine")
-		{
-			var chanceTo = "";
-			if(data.percentChance != undefined && data.percentChance != 100)
-				chanceTo = ", " + classWrap(data.percentChance + "%", "cKeyValue") + " to";
-			s += "Every " + classWrap(data.cooldown, "cKeyValue") + " ms" + chanceTo + ":<br/>";
-			s += printKeyAndData("AoE Damage", data.damage);
-			s += printKeyAndData("Range", data.burstRadius);
-			let cooldownMult = 1000/data.cooldown;
-			dps += data.damage * cooldownMult;
-		}
 		else
 		{
 			s += "<u>"+mainTag+"</u>";
@@ -334,8 +323,15 @@ function GetTriggeredEffectString(tag, data)
 		s += printKeyAndData("Heal Amount", data.amount + (data.asPercentage == 1 ? "%" : ""), data.applyToMana == 1 ? "energy" : "heal");
 		s += printKeyAndData("Duration", data.duration + " ms");
 	}
-	else if(tag == "HealMineTrigger"){
+	else if(tag == "PickupPackTrigger"){
 		s += MakePickupPackText(data);
+	}
+	else if(tag == "MineTrigger")
+	{
+		s += printKeyAndData("AoE Damage", data.damage);
+		s += printKeyAndData("Range", data.burstRadius);
+		s += printKeyAndData("Duration", data.duration + " ms");
+		damage += data.damage;
 	}
 	else if(tag == "AreaHealTrigger"){
 		s += printKeyAndData("Repair Amount", data.amount, "heal");
@@ -803,20 +799,20 @@ function MakeMap(ctx, scale, mapName, data)
 			var color = GetRegion(region.regionType).mapColor;
 			DrawPoly(ctx, scale, region.poly, map.mapRadius, numberToHex(color));
 		}
-		for (let i = 0; i < map.beacons.length; i++)
+		/*for (let i = 0; i < map.beacons.length; i++)
 		{
 			var beacon = map.beacons[i];
 			DrawCircle(ctx, scale, beacon, 3, map.mapRadius, "#00FFFF");//66EEEE
-		}
+		}*/
 		for (let i = 0; i < map.spawnPoints.length; i++)
 		{
 			var spawnPoint = map.spawnPoints[i];
 			DrawCircle(ctx, scale, spawnPoint, 3, map.mapRadius, "#00FF00");//78E810
 		}
-		for (let i = 0; i < map.miniBosses.length; i++)
+		if(map.miniBossSpawns != undefined) for (let i = 0; i < map.miniBossSpawns.length; i++)
 		{
-			var miniBoss = map.miniBosses[i];
-			DrawCircle(ctx, scale, miniBoss.p, 2, map.mapRadius, "#AA4400");
+			var miniBoss = map.miniBossSpawns[i];
+			DrawCircle(ctx, scale, miniBoss, 2, map.mapRadius, "#AA4400");
 		}
 		for (let i = 0; i < map.lanes.length; i++)
 		{
