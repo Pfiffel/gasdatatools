@@ -17,7 +17,7 @@
               {
                 "data": {
                   "amount": 30,
-                  "caption": "",
+                  "caption": "Gun Damage +30%",
                   "duration": 5000,
                   "emitterType": "",
                   "statType": 0
@@ -29,7 +29,7 @@
             "ringRadius": 150,
             "tag": ""
           },
-          "tag": "HealMineTrigger"
+          "tag": "PickupPackTrigger"
         },
         "when": 4
       },
@@ -59,7 +59,7 @@
             "ringRadius": 150,
             "tag": ""
           },
-          "tag": "HealMineTrigger"
+          "tag": "PickupPackTrigger"
         },
         "when": 4
       },
@@ -82,7 +82,7 @@
             "ringRadius": 150,
             "tag": ""
           },
-          "tag": "HealMineTrigger"
+          "tag": "PickupPackTrigger"
         },
         "when": 4
       },

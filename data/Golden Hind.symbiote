@@ -3,17 +3,26 @@
   "effects": [
     {
       "data": {
-        "armingTime": 1000,
-        "burstRadius": 300,
         "cooldown": 5000,
-        "damage": 300,
-        "duration": 5000,
-        "emitterType": "Golden Hind Mine",
-        "explosionType": "Golden Hind Mine",
-        "objectType": "Golden Hind Mine",
-        "sensitivityRadius": 250
+        "params": [
+          {
+            "data": {
+              "armingTime": 1000,
+              "burstRadius": 300,
+              "damage": 300,
+              "duration": 5000,
+              "emitterType": "Golden Hind Mine",
+              "explosionType": "Golden Hind Mine",
+              "objectType": "Golden Hind Mine",
+              "sensitivityRadius": 250
+            },
+            "tag": "MineTrigger"
+          }
+        ],
+        "percentChance": 100,
+        "targetingRange": 0
       },
-      "tag": "GoldenHindMine"
+      "tag": "PeriodicTriggerEffect"
     }
   ],
   "enemies": [],

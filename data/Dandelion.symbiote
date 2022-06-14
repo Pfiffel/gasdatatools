@@ -19,7 +19,7 @@
               "ringRadius": 10,
               "tag": ""
             },
-            "tag": "HealMineTrigger"
+            "tag": "PickupPackTrigger"
           }
         ],
         "percentChance": 100,

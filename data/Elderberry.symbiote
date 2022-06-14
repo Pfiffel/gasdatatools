@@ -17,7 +17,7 @@
             "ringRadius": 200,
             "tag": ""
           },
-          "tag": "HealMineTrigger"
+          "tag": "PickupPackTrigger"
         },
         "when": 4
       },
