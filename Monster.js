@@ -175,7 +175,8 @@ class Monster
             if(power.data.duration != undefined){
                 var damage = (power.data.damage != undefined) ? " <b>" + power.data.damage + "</b>" : "";
                 var duration = " " + round(power.data.duration/1000, 2) + "s";
-                s += power.data.caption + damage + duration;
+                var cap = power.data.caption != undefined ? power.data.caption : power.tag;
+                s += cap + damage + duration;
             }
             else 
                 s += power.tag;
@@ -223,6 +224,12 @@ class Monster
 			let attackDiv = document.createElement('div');
 			attackDiv.innerHTML = "Mine: <b>" + this._mines[mine].damage + "</b> damage, <b>" + this._mines[mine].radius + "</b> radius";
 			div.appendChild(attackDiv);
+		}
+		if(this.data.burrowDetectRange > 0)
+		{
+			let extraDiv = document.createElement('div');
+			extraDiv.innerHTML = "Burrows: <b>" + this.data.burrowDetectRange + "</b> detection range";
+			div.appendChild(extraDiv);
 		}
 		return div;
 	}

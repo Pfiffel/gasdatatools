@@ -77,7 +77,7 @@ function parseData()
 			densityDiv.innerHTML += "<br/>Avg Monster Amount: " + round(monsterAmount, 2);*/
 			
 			var monsterAmount = fieldSize / Math.pow(lair.monsterSquareSide, 2);
-			var mTable = monsterTable(lair.monsters, monsterAmount);
+			var mTable = monsterTable(lair.monsters, monsterField.localFauna, monsterAmount);
 			mTable.classList.add("inline");
 			monsterDiv.appendChild(mTable);
 			//monsterDiv.appendChild(densityDiv);
@@ -110,7 +110,7 @@ function wrapInCell(content, container){
 	cell.appendChild(content);
 	return cell;
 }
-function monsterTable(monsters, amount){
+function monsterTable(monsters, fauna, amount){
 	let tbl = document.createElement('table');
 	let th = tbl.insertRow();
 	makeHeaderCell("count", th);
@@ -120,44 +120,58 @@ function monsterTable(monsters, amount){
     
 	for (let i = 0; i < monsters.length; i++)
 	{
-        totalWeight += monsters[i].count;
+    totalWeight += monsters[i].count;
+	}
+	for (let i = 0; i < fauna.length; i++)
+	{
+    totalWeight += fauna[i].count;
 	}
 	for (let i = 0; i < monsters.length; i++)
 	{
 		var m = monsters[i];
-		var percentage = m.count/totalWeight;
-		var monster = getMonster(m.name);
-        if(monster == undefined)
-        {
-            LogError("Can't find monster <code><b>"+m.name+"</b></code> used in zone");
-            continue;
-        }
 		let tr = tbl.insertRow();
-		makeCell(m.count + "<br/>(" + round(percentage*100,2) + "%)", tr);
-		makeCellE(monster.output(true, SCALE_SMALL), tr);
-		var minions = monster.getMinions();
-		var divMinion = document.createElement('div');
-		var totalAmount = percentage*amount;
-		addLine(round(totalAmount,2), divMinion);
-        var totalMaxSpawns = 0;
-        var totalMaxHP = 0;
-		for (let j = 0; j < minions.length; j++)
-		{
-            totalMaxSpawns += minions[j].maxCount;
-            totalMaxHP += minions[j].hp*minions[j].maxCount;
-            var max = "<b>" + minions[j].maxCount + "x</b> " + getPluralUnitOnly(minions[j].maxCount, "spawn");
-            var policy = minions[j].playerPolicy != undefined ? " - <b>" + PLAYER_POLICIES[minions[j].playerPolicy][1] + "</b> players" : "";
-            var radius = minions[j].radius != undefined ? "- <b>" + minions[j].radius + "</b> radius" : "";
-            if(radius != "" && policy != "") addLine(max + radius + policy, divMinion);
-			//addLine("+" + round(totalAmount*minions[j].maxCount,2) + " (max total minions)", divMinion);
-			var minion = getMonster(minions[j].monsterName);
-			divMinion.appendChild(minion.output(true, SCALE_SMALL));
-		}
-        if(totalMaxSpawns) addLine("<b>" + totalMaxSpawns + "x</b> total max " + getPluralUnitOnly(totalMaxSpawns, "spawn"), divMinion);
-        if(totalMaxHP) addLine("<span class=\"hull\"><b>" + totalMaxHP + "</b> total max hp</b>", divMinion);
-		makeCellE(divMinion, tr);
+		MakeMonsterDiv(m, totalWeight, amount, tr);
+	}
+	for (let i = 0; i < fauna.length; i++)
+	{
+		var m = fauna[i];
+		let tr = tbl.insertRow();
+		MakeMonsterDiv(m, totalWeight, amount, tr);
 	}
 	return tbl;
+}
+function MakeMonsterDiv(m, totalWeight, amount, tr)
+{
+	var percentage = m.count/totalWeight;
+	var monster = getMonster(m.name);
+	if(monster == undefined)
+	{
+			LogError("Can't find monster <code><b>"+m.name+"</b></code> used in zone");
+			return;
+	}
+	makeCell(m.count + "<br/>(" + round(percentage*100,2) + "%)", tr);
+	makeCellE(monster.output(true, SCALE_SMALL), tr);
+	var minions = monster.getMinions();
+	var divMinion = document.createElement('div');
+	var totalAmount = percentage*amount;
+	addLine(round(totalAmount,2), divMinion);
+	var totalMaxSpawns = 0;
+	var totalMaxHP = 0;
+	for (let j = 0; j < minions.length; j++)
+	{
+		totalMaxSpawns += minions[j].maxCount;
+		totalMaxHP += minions[j].hp*minions[j].maxCount;
+		var max = "<b>" + minions[j].maxCount + "x</b> " + getPluralUnitOnly(minions[j].maxCount, "spawn");
+		var policy = minions[j].playerPolicy != undefined ? " - <b>" + PLAYER_POLICIES[minions[j].playerPolicy][1] + "</b> players" : "";
+		var radius = minions[j].radius != undefined ? "- <b>" + minions[j].radius + "</b> radius" : "";
+		if(radius != "" && policy != "") addLine(max + radius + policy, divMinion);
+		//addLine("+" + round(totalAmount*minions[j].maxCount,2) + " (max total minions)", divMinion);
+		var minion = getMonster(minions[j].monsterName);
+		divMinion.appendChild(minion.output(true, SCALE_SMALL));
+	}
+	if(totalMaxSpawns) addLine("<b>" + totalMaxSpawns + "x</b> total max " + getPluralUnitOnly(totalMaxSpawns, "spawn"), divMinion);
+	if(totalMaxHP) addLine("<span class=\"hull\"><b>" + totalMaxHP + "</b> total max hp</b>", divMinion);
+	makeCellE(divMinion, tr);
 }
 function convoyBossesTable(lair){
 	let div = document.createElement('div');
