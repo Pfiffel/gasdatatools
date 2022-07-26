@@ -617,12 +617,28 @@ function getMaxFromShapes(object, x, y, max)
 		for (let j = 0; j < shape.points.length; j++)
 		{
 			var point = shape.points[j];
-			max[0] = Math.min(point.x+x, max[0]);
-			max[1] = Math.min(point.y+y, max[1]);
-			max[2] = Math.max(point.x+x, max[2]);
-			max[3] = Math.max(point.y+y, max[3]);
+			if(!shape.noDraw)
+			{
+				max[0] = Math.min(point.x+x, max[0]);
+				max[1] = Math.min(point.y+y, max[1]);
+				max[2] = Math.max(point.x+x, max[2]);
+				max[3] = Math.max(point.y+y, max[3]);
+			}
 			if(shape.mirror) max[1] = Math.min(-point.y+y, max[1]);
 			if(shape.mirror) max[3] = Math.max(-point.y+y, max[3]);
+			for (var iC in shape.clones){
+				// TODO fix rotated clones making canvas bigger than needed
+				var clone = shape.clones[iC];
+				var angle = degToRad(clone.pos.f/10);
+				var xRotated = point.x * Math.cos(angle) - point.y * Math.sin(angle);
+				var yRotated = point.x * Math.sin(angle) + point.y * Math.cos(angle);
+				max[0] = Math.min(xRotated+x+clone.pos.p.x, max[0]);
+				max[1] = Math.min(yRotated+y+clone.pos.p.y, max[1]);
+				max[2] = Math.max(xRotated+x+clone.pos.p.x, max[2]);
+				max[3] = Math.max(yRotated+y+clone.pos.p.y, max[3]);
+				if(shape.mirror) max[1] = Math.min(-yRotated+y+clone.pos.p.y, max[1]);
+				if(shape.mirror) max[3] = Math.max(-yRotated+y+clone.pos.p.y, max[3]);
+			}
 		}
 	}
 	return max;
@@ -657,38 +673,52 @@ function drawShapes(ctx, scale, x, y, object)
 	for (let i = 0; i < object.shapes.length; i++)
 	{
 		var shape = object.shapes[i];
-		ctx.beginPath();
-		ctx.moveTo(shape.points[0].x+x, shape.points[0].y+y);
 		
-		for (let j = 0; j < shape.points.length; j++)
-		{
-			var point = shape.points[j];
-			ctx.lineTo(point.x+x, point.y+y);
+		if(!shape.noDraw) DrawShape(ctx, scale, x, y, shape);
+		for (var iC in shape.clones){
+			var clone = shape.clones[iC];
+			var angle = degToRad(clone.pos.f/10);
+			DrawShape(ctx, scale, x + clone.pos.p.x, y + clone.pos.p.y, shape, angle);
 		}
-		if(shape.mirror)
+	}
+}
+function DrawShape(ctx, scale, x, y, shape, angle){
+	ctx.save(); 
+	ctx.translate(x, y);
+	ctx.rotate(angle);
+	ctx.beginPath();
+	
+	ctx.moveTo(shape.points[0].x, shape.points[0].y);
+	
+	for (let j = 0; j < shape.points.length; j++)
+	{
+		var point = shape.points[j];
+		ctx.lineTo(point.x, point.y);
+	}
+	if(shape.mirror)
+	{
+		if(shape.closed)
 		{
-			if(shape.closed)
-			{
-				ctx.lineTo(shape.points[0].x+x, shape.points[0].y+y);
-				this.closeShape(ctx, scale, shape.color);
-				ctx.beginPath();
-			}
-			else
-				ctx.lineTo(shape.points[shape.points.length-1].x+x, -shape.points[shape.points.length-1].y+y);
-			for (let j = shape.points.length-1; j >= 0; j--)
-			{
-				var point = shape.points[j];
-				ctx.lineTo(point.x+x, -point.y+y);
-			}
-			if(shape.closed)
-				ctx.lineTo(shape.points[shape.points.length-1].x+x, -shape.points[shape.points.length-1].y+y);
-			else
-				ctx.lineTo(shape.points[0].x+x, shape.points[0].y+y);
+			ctx.lineTo(shape.points[0].x, shape.points[0].y);
+			this.closeShape(ctx, scale, shape.color);
+			ctx.beginPath();
 		}
 		else
-			ctx.lineTo(shape.points[0].x+x, shape.points[0].y+y);
-		this.closeShape(ctx, scale, shape.color);
+			ctx.lineTo(shape.points[shape.points.length-1].x, -shape.points[shape.points.length-1].y);
+		for (let j = shape.points.length-1; j >= 0; j--)
+		{
+			var point = shape.points[j];
+			ctx.lineTo(point.x, -point.y);
+		}
+		if(shape.closed)
+			ctx.lineTo(shape.points[shape.points.length-1].x, -shape.points[shape.points.length-1].y);
+		else
+			ctx.lineTo(shape.points[0].x, shape.points[0].y);
 	}
+	else
+		ctx.lineTo(shape.points[0].x, shape.points[0].y);
+	this.closeShape(ctx, scale, shape.color);
+	ctx.restore();
 }
 function closeShape(ctx, scale, color){
 	ctx.lineWidth = 1.5/scale;
@@ -696,6 +726,7 @@ function closeShape(ctx, scale, color){
 	ctx.stroke();
 	ctx.fillStyle = numberToHex(color);
 	ctx.fill();
+	
 	ctx.closePath();
 }
 function draw(data, scale = 0.4, bPrev = false)
