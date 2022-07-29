@@ -39,6 +39,15 @@ function parseData()
 					addLine("New " + forChamp + file, divList);
 					divList.appendChild(MakeStatsTable(entity, file == "accolade" ? 0 : entity.tier));
 				}
+				else if (file == "monster" || file == "gunbullet")
+				{
+					addLine("New " + file + ": <b>" + entity.name + "</b>", divList);
+					let divSprite = document.createElement('div');
+					divSprite.style.display = "table-cell";
+					divSprite.style.verticalAlign = "middle";
+					divSprite.appendChild(draw(entity, 0.4, false));
+					divList.appendChild(divSprite);
+				}
 				else if (file == "object")
 				{
 					addLine("New " + file + ": <b>" + entity.name + "</b>", divList);
@@ -73,8 +82,10 @@ function parseData()
 	var entitySpriteChanged = FindObjectUsage(changedObjects);
 	for (let entity in entitySpriteChanged)
 	{
+		var prevMonster = GetPrevEntity("monster", entity);
+		if(prevMonster == undefined) continue;
 		divList.appendChild(MakeGraphicCompareBlock(entity + " graphics",
-			draw(GetPrevEntity("monster", entity), 0.4, true), 
+			draw(prevMonster, 0.4, true), 
 			draw(GetNewEntity("monster", entity), 0.4, false)));
 	}
 	for (let entity in changedMaps)
@@ -174,7 +185,7 @@ function CompareJSON(entity, entityPrev, superParent, fileType, parentStringList
 			else if(entity[key] != entityPrev[key])
 			{
 				if(fileType == "object") {changedObjects[superParent] = true; continue;}
-				if(fileType == "map" && (key == "x" || key == "y")) {changedMaps[superParent] = true; continue;}
+				if(fileType == "map" && (key == "x" || key == "y" || key == "tag" || key == "regionType")) {changedMaps[superParent] = true; continue;}
 				if(fileType == "symbiote") {changedSymbs[superParent] = true; continue;}
 				if(IsNewButDefaultValue(entityPrev, entity, key)) continue;
 				MakeChangeEntry(header, key, entityPrev[key], entity[key], divList);
