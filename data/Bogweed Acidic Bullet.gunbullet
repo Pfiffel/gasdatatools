@@ -1,0 +1,20 @@
+{
+  "damage": 90,
+  "emitterType": "Bogweed Acidic Bullet",
+  "name": "Bogweed Acidic Bullet",
+  "objectType": "Bogweed Acidic Bullet",
+  "powers": [
+    {
+      "data": {
+        "caption": "Acid",
+        "damage": 300,
+        "duration": 2000,
+        "emitterType": "Power DoT"
+      },
+      "tag": "DoTPower"
+    }
+  ],
+  "soundPack": "Bogweed High Bullet",
+  "speed": 160
+}
+

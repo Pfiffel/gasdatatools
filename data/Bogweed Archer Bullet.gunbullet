@@ -1,0 +1,10 @@
+{
+  "damage": 75,
+  "emitterType": "Bogweed Archer Bullet",
+  "name": "Bogweed Archer Bullet",
+  "objectType": "Bogweed Archer Bullet",
+  "powers": [],
+  "soundPack": "Bogweed Low Bullet",
+  "speed": 160
+}
+

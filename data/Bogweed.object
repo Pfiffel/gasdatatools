@@ -1,0 +1,20 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Turret",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 400,
+  "name": "Bogweed",
+  "shapes": []
+}
+

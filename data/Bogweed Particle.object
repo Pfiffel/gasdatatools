@@ -1,0 +1,54 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 400,
+  "name": "Bogweed Particle",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "color": 6915370,
+      "height": 0,
+      "mirror": 1,
+      "name": "Middle Leaf",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 15,
+          "y": 0
+        },
+        {
+          "x": 12,
+          "y": 4
+        },
+        {
+          "x": 6,
+          "y": 8
+        },
+        {
+          "x": 0,
+          "y": 9
+        },
+        {
+          "x": -7,
+          "y": 8
+        },
+        {
+          "x": -11,
+          "y": 5
+        },
+        {
+          "x": -13,
+          "y": 1
+        },
+        {
+          "x": -3,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 750,
+      "value": 1907971
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 600,
+  "minLifetime": 400,
+  "name": "Bogweed Necrophant",
+  "objectType": "Bogweed Particle",
+  "positionTweenType": "EXPOIN",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 500
+    },
+    {
+      "frac": 500,
+      "value": 500
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 1907971,
+  "startScale": 10,
+  "stayLow": 0
+}
+

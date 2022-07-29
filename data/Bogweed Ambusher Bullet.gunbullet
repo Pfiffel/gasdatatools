@@ -1,0 +1,10 @@
+{
+  "damage": 180,
+  "emitterType": "Bogweed Ambusher Bullet",
+  "name": "Bogweed Ambusher Bullet",
+  "objectType": "Bogweed Ambusher Bullet",
+  "powers": [],
+  "soundPack": "Bogweed Mid Bullet",
+  "speed": 180
+}
+

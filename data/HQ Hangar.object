@@ -1,0 +1,261 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "HQ Hangar",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 5260114,
+      "height": 2,
+      "mirror": 1,
+      "name": "Post",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -103,
+          "y": 125
+        },
+        {
+          "x": -103,
+          "y": 166
+        },
+        {
+          "x": -62,
+          "y": 166
+        },
+        {
+          "x": -61,
+          "y": 125
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 5260114,
+      "height": 2,
+      "mirror": 1,
+      "name": "Post",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 103,
+          "y": 125
+        },
+        {
+          "x": 103,
+          "y": 166
+        },
+        {
+          "x": 62,
+          "y": 166
+        },
+        {
+          "x": 61,
+          "y": 125
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 1,
+      "color": 4211272,
+      "height": 44,
+      "mirror": 1,
+      "name": "Roof",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -87,
+          "y": 151
+        },
+        {
+          "x": 87,
+          "y": 151
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4211272,
+      "height": 45,
+      "mirror": 1,
+      "name": "Side Ridge",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 95,
+          "y": 151
+        },
+        {
+          "x": 84,
+          "y": 151
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4211272,
+      "height": 47,
+      "mirror": 1,
+      "name": "Side Ridge",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -95,
+          "y": 151
+        },
+        {
+          "x": -84,
+          "y": 151
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4211272,
+      "height": 47,
+      "mirror": 1,
+      "name": "Center Ridge",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -6,
+          "y": 151
+        },
+        {
+          "x": 5,
+          "y": 151
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 1,
+      "color": 4211272,
+      "height": 48,
+      "mirror": 1,
+      "name": "Roof",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -143,
+          "y": 60
+        },
+        {
+          "x": -79,
+          "y": 60
+        },
+        {
+          "x": -24,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4211272,
+      "height": 48,
+      "mirror": 1,
+      "name": "Roof Ridge",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -143,
+          "y": 5
+        },
+        {
+          "x": -29,
+          "y": 5
+        },
+        {
+          "x": -24,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 1,
+      "color": 4211272,
+      "height": 48,
+      "mirror": 1,
+      "name": "Roof",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 143,
+          "y": 60
+        },
+        {
+          "x": 79,
+          "y": 60
+        },
+        {
+          "x": 24,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4211272,
+      "height": 48,
+      "mirror": 1,
+      "name": "Roof Ridge",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 143,
+          "y": 5
+        },
+        {
+          "x": 29,
+          "y": 5
+        },
+        {
+          "x": 24,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

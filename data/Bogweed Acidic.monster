@@ -1,0 +1,86 @@
+{
+  "boss": 0,
+  "burrowDetectRange": 0,
+  "collisionRadius": 30,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Bogweed High Death Cries",
+  "drops": [],
+  "healRate": 0,
+  "hp": 750,
+  "idleAnimation": "BaseArcher Idle",
+  "maxMoveDistance": 0,
+  "name": "Bogweed Acidic",
+  "objectType": "Bogweed",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "",
+  "runAnimationDuration": 700,
+  "runSpeed": 0,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 600,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Bogweed Acidic Turret",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "angleBetweenProjectiles": 500,
+                "gunBulletType": "Bogweed Acidic Bullet",
+                "leading": 0,
+                "numProjectiles": 3,
+                "range": 500
+              },
+              "tag": "GunParams"
+            },
+            {
+              "data": {
+                "angleBetweenProjectiles": 500,
+                "gunBulletType": "Bogweed Acidic Bullet",
+                "leading": 0,
+                "numProjectiles": 3,
+                "range": 500
+              },
+              "tag": "GunParams"
+            },
+            {
+              "data": {
+                "angleBetweenProjectiles": 500,
+                "gunBulletType": "Bogweed Acidic Bullet",
+                "leading": 0,
+                "numProjectiles": 3,
+                "range": 500
+              },
+              "tag": "GunParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 49,
+  "xpLevelCap": 19
+}
+

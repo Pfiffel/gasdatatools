@@ -1,0 +1,207 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "HQ Crate",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 1,
+      "color": 4211272,
+      "height": 44,
+      "mirror": 1,
+      "name": "Roof",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -41,
+          "y": 85
+        },
+        {
+          "x": -26,
+          "y": 94
+        },
+        {
+          "x": 26,
+          "y": 94
+        },
+        {
+          "x": 41,
+          "y": 85
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 1,
+      "color": 6777726,
+      "height": 44,
+      "mirror": 1,
+      "name": "Roof",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -70,
+          "y": 70
+        },
+        {
+          "x": -53,
+          "y": 83
+        },
+        {
+          "x": -5,
+          "y": 83
+        },
+        {
+          "x": 5,
+          "y": 83
+        },
+        {
+          "x": 53,
+          "y": 83
+        },
+        {
+          "x": 70,
+          "y": 70
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 4211272,
+      "height": 45,
+      "mirror": 1,
+      "name": "Top Detail",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -24,
+          "y": 22
+        },
+        {
+          "x": -15,
+          "y": 36
+        },
+        {
+          "x": -15,
+          "y": 49
+        },
+        {
+          "x": -25,
+          "y": 65
+        },
+        {
+          "x": -51,
+          "y": 65
+        },
+        {
+          "x": -61,
+          "y": 49
+        },
+        {
+          "x": -61,
+          "y": 36
+        },
+        {
+          "x": -52,
+          "y": 22
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 4211272,
+      "height": 45,
+      "mirror": 1,
+      "name": "Top Detail",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 24,
+          "y": 22
+        },
+        {
+          "x": 15,
+          "y": 36
+        },
+        {
+          "x": 15,
+          "y": 49
+        },
+        {
+          "x": 25,
+          "y": 65
+        },
+        {
+          "x": 51,
+          "y": 65
+        },
+        {
+          "x": 61,
+          "y": 49
+        },
+        {
+          "x": 61,
+          "y": 36
+        },
+        {
+          "x": 52,
+          "y": 22
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4211272,
+      "height": 47,
+      "mirror": 1,
+      "name": "Top Cross",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -74,
+          "y": 7
+        },
+        {
+          "x": -6,
+          "y": 6
+        },
+        {
+          "x": -6,
+          "y": 84
+        },
+        {
+          "x": 6,
+          "y": 84
+        },
+        {
+          "x": 6,
+          "y": 6
+        },
+        {
+          "x": 74,
+          "y": 7
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

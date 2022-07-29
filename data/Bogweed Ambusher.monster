@@ -1,0 +1,72 @@
+{
+  "boss": 0,
+  "burrowDetectRange": 400,
+  "collisionRadius": 36,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Bogweed Mid Death Cries",
+  "drops": [],
+  "healRate": 0,
+  "hp": 600,
+  "idleAnimation": "BaseArcher Idle",
+  "maxMoveDistance": 0,
+  "name": "Bogweed Ambusher",
+  "objectType": "Bogweed",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "",
+  "runAnimationDuration": 700,
+  "runSpeed": 0,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 800,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Bogweed Ambusher Turret",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "angleBetweenProjectiles": 250,
+                "gunBulletType": "Bogweed Ambusher Bullet",
+                "leading": 0,
+                "numProjectiles": 4,
+                "range": 500
+              },
+              "tag": "GunParams"
+            },
+            {
+              "data": {
+                "angleBetweenProjectiles": 250,
+                "gunBulletType": "Bogweed Ambusher Bullet",
+                "leading": 0,
+                "numProjectiles": 4,
+                "range": 500
+              },
+              "tag": "GunParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 25,
+  "xpLevelCap": 19
+}
+

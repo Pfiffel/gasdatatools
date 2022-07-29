@@ -1,0 +1,20 @@
+{
+  "damage": 50,
+  "emitterType": "Bogweed Mephitic Bullet",
+  "name": "Bogweed Mephitic Bullet",
+  "objectType": "Bogweed Mephitic Bullet",
+  "powers": [
+    {
+      "data": {
+        "caption": "Acid",
+        "damage": 125,
+        "duration": 3000,
+        "emitterType": "Power DoT"
+      },
+      "tag": "DoTPower"
+    }
+  ],
+  "soundPack": "Bogweed Low Bullet",
+  "speed": 180
+}
+

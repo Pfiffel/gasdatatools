@@ -1,0 +1,46 @@
+{
+  "boss": 0,
+  "burrowDetectRange": 0,
+  "collisionRadius": 45,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Bogweed Mid Death Cries",
+  "drops": [],
+  "healRate": 0,
+  "hp": 650,
+  "idleAnimation": "BaseArcher Idle",
+  "maxMoveDistance": 0,
+  "name": "Bogweed Noxiant",
+  "objectType": "Bogweed",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "",
+  "runAnimationDuration": 700,
+  "runSpeed": 0,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 800,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Bogweed Noxiant Turret",
+      "params": {
+        "data": {
+          "angleBetweenProjectiles": 500,
+          "gunBulletType": "Bogweed Noxiant Bullet",
+          "leading": 0,
+          "numProjectiles": 3,
+          "range": 500
+        },
+        "tag": "GunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 36,
+  "xpLevelCap": 19
+}
+

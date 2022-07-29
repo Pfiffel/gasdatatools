@@ -1,0 +1,46 @@
+{
+  "boss": 0,
+  "burrowDetectRange": 0,
+  "collisionRadius": 36,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Bogweed Low Death Cries",
+  "drops": [],
+  "healRate": 0,
+  "hp": 50,
+  "idleAnimation": "BaseArcher Idle",
+  "maxMoveDistance": 0,
+  "name": "Bogweed",
+  "objectType": "Bogweed",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "",
+  "runAnimationDuration": 700,
+  "runSpeed": 0,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 800,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Bogweed Turret",
+      "params": {
+        "data": {
+          "angleBetweenProjectiles": 150,
+          "gunBulletType": "Bogweed Bullet",
+          "leading": 0,
+          "numProjectiles": 1,
+          "range": 500
+        },
+        "tag": "GunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 1,
+  "xpLevelCap": 19
+}
+

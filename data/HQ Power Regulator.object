@@ -1,0 +1,195 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "HQ Power Regulator",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 5260114,
+      "height": 2,
+      "mirror": 1,
+      "name": "Post",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -66,
+          "y": 56
+        },
+        {
+          "x": -66,
+          "y": 97
+        },
+        {
+          "x": -25,
+          "y": 97
+        },
+        {
+          "x": -24,
+          "y": 56
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 5260114,
+      "height": 2,
+      "mirror": 1,
+      "name": "Post",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -66,
+          "y": 56
+        },
+        {
+          "x": -66,
+          "y": 97
+        },
+        {
+          "x": -25,
+          "y": 97
+        },
+        {
+          "x": -24,
+          "y": 56
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 5260114,
+      "height": 2,
+      "mirror": 1,
+      "name": "Post",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 66,
+          "y": 56
+        },
+        {
+          "x": 66,
+          "y": 97
+        },
+        {
+          "x": 25,
+          "y": 97
+        },
+        {
+          "x": 24,
+          "y": 56
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 1,
+      "color": 4211272,
+      "height": 44,
+      "mirror": 1,
+      "name": "Roof",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -87,
+          "y": 70
+        },
+        {
+          "x": 0,
+          "y": 97
+        },
+        {
+          "x": 87,
+          "y": 70
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4211272,
+      "height": 47,
+      "mirror": 1,
+      "name": "Side Ridge",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 76,
+          "y": 51
+        },
+        {
+          "x": 65,
+          "y": 51
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4211272,
+      "height": 47,
+      "mirror": 1,
+      "name": "Side Ridge",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -76,
+          "y": 51
+        },
+        {
+          "x": -65,
+          "y": 51
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4211272,
+      "height": 47,
+      "mirror": 1,
+      "name": "Center Ridge",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 7,
+          "y": 95
+        },
+        {
+          "x": 0,
+          "y": 97
+        },
+        {
+          "x": -7,
+          "y": 95
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

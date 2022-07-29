@@ -1,0 +1,25 @@
+{
+  "damage": 200,
+  "emitterType": "Bogweed Necrophant Bullet",
+  "name": "Bogweed Necrophant Bullet",
+  "objectType": "Bogweed Necrophant Bullet",
+  "powers": [
+    {
+      "data": {
+        "caption": "Engines Disabled",
+        "duration": 3500,
+        "engines": 1,
+        "guns": 0,
+        "health": 0,
+        "mana": 0,
+        "rotation": 0,
+        "shield": 0,
+        "triggers": 0
+      },
+      "tag": "DisablePower"
+    }
+  ],
+  "soundPack": "Bogweed High Bullet",
+  "speed": 180
+}
+

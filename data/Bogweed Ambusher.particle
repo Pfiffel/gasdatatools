@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 750,
+      "value": 5257068
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 600,
+  "minLifetime": 400,
+  "name": "Bogweed Ambusher",
+  "objectType": "Bogweed Particle",
+  "positionTweenType": "EXPOIN",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 500
+    },
+    {
+      "frac": 500,
+      "value": 500
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 5257068,
+  "startScale": 10,
+  "stayLow": 0
+}
+
