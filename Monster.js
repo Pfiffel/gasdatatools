@@ -8,6 +8,7 @@ class Monster
 		this._xp = json.xp;
 		this._bullets = {};
 		this._shotguns = {};
+		this._flamethrowers = {};
 		this._mortars = {};
 		this._mines = {};
 	}
@@ -87,6 +88,12 @@ class Monster
 				damageST = wD.damage;
 				damageMT = damageST;
 				this._shotguns[tag+wD.damage+wD.range] = {"damage": wD.damage, "range": wD.range, "powers": wD.powers};
+				break;
+			case "FlamethrowerParams":
+				// TODO flamethrower damage and stuff
+				damageST = wD.damage;
+				damageMT = damageST;
+				this._flamethrowers[tag+wD.damage+wD.range] = {"damage": wD.damage, "range": wD.range, "powers": wD.powers};
 				break;
 			case "MinionParams":
 			case "ChargeParams":
@@ -212,6 +219,12 @@ class Monster
 			let attackDiv = document.createElement('div');
             var powers = this.convertPowersToString(this._shotguns[shotgun].powers);
 			attackDiv.innerHTML = "Shotgun: <b>" + this._shotguns[shotgun].damage + "</b> damage, <b>" + this._shotguns[shotgun].range + "</b> range" + powers;
+			div.appendChild(attackDiv);
+		}
+		for (let flamethrower in this._flamethrowers){
+			let attackDiv = document.createElement('div');
+            var powers = this.convertPowersToString(this._flamethrowers[flamethrower].powers);
+			attackDiv.innerHTML = "Flamethrower: <b>" + this._flamethrowers[flamethrower].damage + "</b> damage, <b>" + this._flamethrowers[flamethrower].range + "</b> range" + powers;
 			div.appendChild(attackDiv);
 		}
 		for (let mortar in this._mortars){
