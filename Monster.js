@@ -44,7 +44,9 @@ class Monster
 				}
 				break;
 			case "MultiBarrelGunParams":
-				damageST = getBullet(wD.gunBulletType).damage;
+				let bullet = getBullet(wD.gunBulletType);
+				if(bullet == null) console.log("something went wrong with " + this._name + " " + tag);
+				damageST = bullet.damage;
 				damageMT = getObject(weaponRoot.objectType).attachmentPoints.length * damageST;
 				bulletHash = wD.gunBulletType+wD.range;
 				this._bullets[bulletHash] = {"bullet": wD.gunBulletType, "range": wD.range};
@@ -128,13 +130,13 @@ class Monster
 		return minions;
 	}
 	
-	output(bRow, scale = SCALE_STANDARD) {
+	output(bRow, scale = SCALE_STANDARD, bDrawRadius = false) {
 		let div = document.createElement('div');
 		div.classList.add("inline");
 		let divInfo = document.createElement('div');
 		divInfo.classList.add("inline");
 		var divSprite = document.createElement('div');
-		divSprite.appendChild(draw(this.data, scale));
+		divSprite.appendChild(draw(this.data, scale, false, bDrawRadius));
 		if(bRow) {
 			divSprite.classList.add("infoBlockRow");
 			divSprite.style.width = "75px";

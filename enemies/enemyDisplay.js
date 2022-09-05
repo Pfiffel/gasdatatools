@@ -6,6 +6,8 @@ var header = document.getElementById("header");
 var filters = document.getElementById("filters");
 var sortedMonsters;
 
+var drawRadius = makeInputCheckbox("Show Collision Radius", RefreshLists, filters, false);
+
 const FILTER_NAME = "Name";
 makeInputRadios(FILTER_NAME, ["All","Iron","Royal","Xenofrog","Nest","Bogweed","Training"], RefreshLists, filters);
 const FILTER_BOSS = "Boss";
@@ -57,7 +59,7 @@ function MakeMonsterList()
 
 		let monsterDiv = document.createElement('div');
 		monsterDiv.classList.add("monsterBlock");
-		monsterDiv.appendChild(monster.output(false));
+		monsterDiv.appendChild(monster.output(false, SCALE_STANDARD, drawRadius.checked));
 		divList.appendChild(monsterDiv);
 	}
 	return divList;

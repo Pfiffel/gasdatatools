@@ -577,6 +577,8 @@ function getBullet(type){
 		var bullet = gasData["gunbullet"][i];
 		if(type == bullet.name) return bullet;
 	}
+	console.log("bullet not found: " + type);
+	return null;
 }
 function getObject(type, bPrev = false){
 	var data = bPrev ? gasDataPrev["object"] : gasData["object"];
@@ -643,10 +645,9 @@ function getMaxFromShapes(object, x, y, max)
 	}
 	return max;
 }
-function getObjectResolution(object, weapons){
-	var max = [0,0,0,0];
+function getObjectResolution(object, weapons, radius){
+	var max = [-radius,-radius,radius,radius];
 	max = this.getMaxFromShapes(object, 0, 0, max);
-
 	if(weapons != undefined)
 	for (let i = 0; i < weapons.length; i++)
 	{
@@ -729,14 +730,15 @@ function closeShape(ctx, scale, color){
 	
 	ctx.closePath();
 }
-function draw(data, scale = 0.4, bPrev = false)
+function draw(data, scale = 0.4, bPrev = false, bDrawRadius = false)
 {
 	var object = getObject(data.objectType, bPrev);
 	if(object == undefined) {
 		console.log("Can't find " + data.objectType);
 		return document.createElement('canvas');
 	}
-	var res = getObjectResolution(object, data.weapons);
+	var radius = bDrawRadius ? (data.collisionRadius == undefined ? 0 : data.collisionRadius / scale) : 0;
+	var res = getObjectResolution(object, data.weapons, radius);
 	var canvas = document.createElement('canvas');
 	canvas.title = data.name;
 	canvas.width = res[0] * scale + 4;
@@ -760,8 +762,19 @@ function draw(data, scale = 0.4, bPrev = false)
 				drawShapes(ctx, scale, x+offset[0], y+offset[1], getObject(turret, bPrev));
 			}
 		}
+		DrawCollisionRadius(radius, ctx, scale, x, y);
 	}
 	return canvas;
+}
+function DrawCollisionRadius(radius, ctx, scale, x, y)
+{
+	if(!radius) return;
+	ctx.beginPath();
+	ctx.lineWidth = 1/scale;
+	ctx.strokeStyle = "#FFFFFFAA";
+	ctx.arc(x, y, radius, 0, Math.PI*2);
+	ctx.stroke();
+	ctx.closePath();
 }
 function DrawPoly(ctx, scale, poly, offset, color)
 {
