@@ -128,7 +128,6 @@ function MakeStatsTable(mainData, tier, bPortrait = false, bDescription = true)
 	let dps = 0;
 	for (var effect in mainData.effects){
 		let data = mainData.effects[effect].data;
-		let tr = tbl.insertRow();
 		let mainTag = mainData.effects[effect].tag;
 		s = "";
 		if(mainTag == "ItemStat" || mainTag == "ItemShield")
@@ -193,7 +192,7 @@ function MakeStatsTable(mainData, tier, bPortrait = false, bDescription = true)
 			var chanceTo = "";
 			if(data.percentChance != undefined && data.percentChance != 100)
 				chanceTo = ", " + classWrap(data.percentChance + "%", "cKeyValue") + " to";
-			s += "Every " + classWrap(data.cooldown, "cKeyValue") + " ms" + chanceTo + ":<br/>";
+			s += "Every " + classWrap(ToTime(data.cooldown), "cKeyValue") + chanceTo + ":<br/>";
 			let cooldownAndChanceMult = (10/data.cooldown)*data.percentChance;
 			for (var p in data.params){
 				var effect = data.params[p];
@@ -213,7 +212,7 @@ function MakeStatsTable(mainData, tier, bPortrait = false, bDescription = true)
 			}
 			else
 				s += "Periodically targets enemies with these effects:<br/>";
-			if(data.cooldown != undefined) s += printKeyAndData("Cooldown", data.cooldown);
+			if(data.cooldown != undefined) s += printKeyAndData("Cooldown", ToTime(data.cooldown));
 			let cooldownMult = 1000/data.cooldown;
 			s += printKeyAndData("Range", data.range);
 			for (var effects in data.statusEffects){
@@ -251,7 +250,7 @@ function MakeStatsTable(mainData, tier, bPortrait = false, bDescription = true)
 			prevCell.innerHTML += s;
 		else
 		{
-			prevCell = makeCell(s, tr);
+			prevCell = makeCell(s, tbl.insertRow());
 			prevCell.colSpan = 2;
 		}
 	}
@@ -267,7 +266,7 @@ function MakePickupPackText(data)
 	var s = "";
 	s += "Create <b>" + data.mineCount + "</b> pickup pack" + (data.mineCount != 1 ? "s" : "") + "<br/>";
 	if(data.healing > 0) s += printKeyAndData("Repair Amount", data.healing, "heal");
-	s += printKeyAndData("Duration", data.duration + " ms");
+	s += printKeyAndData("Duration", ToTime(data.duration));
 	if(data.powers != undefined) for(let i = 0; i < data.powers.length; i++)
 	{
 		let powerData = data.powers[i].data;
@@ -275,7 +274,7 @@ function MakePickupPackText(data)
 		if(power == "StatPower")
 		{
 			s += printKeyAndData(GetStat(powerData.statType, 1), BonusPrefix(powerData.amount) + "%");
-			s += printKeyAndData("Duration", powerData.duration + " ms");
+			s += printKeyAndData("Duration", ToTime(powerData.duration));
 		}
 		else if(power == "ShieldRechargePower")
 		{
@@ -297,11 +296,11 @@ function AddEffectsText(data)
 		let effect = data.statusEffects[i].tag;
 		if(effect == "StunEffect")
 		{
-			s += printKeyAndData("Stun Duration", effectData.duration + " ms");
+			s += printKeyAndData("Stun Duration", ToTime(effectData.duration));
 		}
 		else if(effect == "RootEffect")
 		{
-			s += printKeyAndData("Root Duration", effectData.duration + " ms");
+			s += printKeyAndData("Root Duration", ToTime(effectData.duration));
 		}
 		else if(effect == "Damage Effect")
 		{
@@ -310,7 +309,7 @@ function AddEffectsText(data)
 		else if(effect == "DoTEffect" || effect == "BurningEffect")
 		{
 			s += printKeyAndData("DoT DPS", effectData.dps);
-			s += printKeyAndData("DoT Duration", effectData.duration + " ms");
+			s += printKeyAndData("DoT Duration", ToTime(effectData.duration));
 		}
 	}
 	return s;
@@ -320,7 +319,7 @@ function GetTriggeredEffectString(tag, data)
 	var s = ""; var damage = 0;
 	if(tag == "FireRateBoostTrigger"){
 		s += printKeyAndData("Rate of Fire Boost", data.amount + "%");
-		s += printKeyAndData("Duration", data.duration + " ms");
+		s += printKeyAndData("Duration", ToTime(data.duration));
 	}
 	else if(tag == "ShotgunTrigger"){
 		
@@ -336,7 +335,7 @@ function GetTriggeredEffectString(tag, data)
 	}
 	else if(tag == "HealOverTimeTrigger"){
 		s += printKeyAndData("Heal Amount", data.amount + (data.asPercentage == 1 ? "%" : ""), data.applyToMana == 1 ? "energy" : "heal");
-		s += printKeyAndData("Duration", data.duration + " ms");
+		s += printKeyAndData("Duration", ToTime(data.duration));
 	}
 	else if(tag == "PickupPackTrigger"){
 		s += MakePickupPackText(data);
@@ -345,7 +344,7 @@ function GetTriggeredEffectString(tag, data)
 	{
 		s += printKeyAndData("AoE Damage", data.damage);
 		s += printKeyAndData("Range", data.burstRadius);
-		s += printKeyAndData("Duration", data.duration + " ms");
+		s += printKeyAndData("Duration", ToTime(data.duration));
 		damage += data.damage;
 	}
 	else if(tag == "AreaHealTrigger"){
@@ -360,17 +359,17 @@ function GetTriggeredEffectString(tag, data)
 	}
 	else if(tag == "StatBoostTrigger"){
 		s += printKeyAndData(GetStat(data.statType, 1), data.amount + "%");
-		s += printKeyAndData("Duration", data.duration + " ms");
+		s += printKeyAndData("Duration", ToTime(data.duration));
 	}
 	else if(tag == "DematerializeTrigger"){
 		if(data.percentChance != undefined && data.percentChance != 100)
 			s += printKeyAndData("Dematerialize Chance", data.percentChance + "%");
-		s += printKeyAndData("Dematerialize Duration", data.duration + " ms");
+		s += printKeyAndData("Dematerialize Duration", ToTime(data.duration));
 	}
 	else if(tag == "ExtraGunTrigger"){
 		let dps = round(1000*data.stats.damage/data.stats.cooldown,2);
 		s += printKeyAndData("Create Gun", dps + " DPS");
-		s += printKeyAndData("Duration", data.duration + " ms");
+		s += printKeyAndData("Duration", ToTime(data.duration));
 		damage += dps*(data.duration/1000);
 	}
 	else if(tag == "ExtraShieldTrigger"){
@@ -379,7 +378,7 @@ function GetTriggeredEffectString(tag, data)
 		s += printKeyAndData("Shield", colorWrap("Arc "+GetArc(data.stats), hex));
 	}
 	else if(tag == "GunProcTrigger"){
-		s += "For <b>" + data.duration + "</b> ms, gun shots apply:" + "<br/>";
+		s += "For <b>" + ToTime(data.duration) + "</b>, gun shots apply:" + "<br/>";
 		let o = ShowStatusEffect(data.statusEffect);
 		s += o.s;
 		damage += o.damage;
@@ -410,12 +409,12 @@ function GetBonusEffectString(tag, data)
 		if(data.damage != 0)					s += printKeyAndDataBonus("AoE Damage", BonusPrefix(data.damage));
 		if(data.range != 0)						s += printKeyAndDataBonus("Range", BonusPrefix(data.range));
 		if(data.halfArc != 0)					s += printKeyAndDataBonus("Arc", BonusPrefix(data.halfArc * 0.2) + "°");
-		if(data.targetingDelay != 0)	s += printKeyAndDataBonus("Targeting Delay", BonusPrefix(data.targetingDelay) + " ms");
+		if(data.targetingDelay != 0)	s += printKeyAndDataBonus("Targeting Delay", BonusPrefixToTime(data.targetingDelay));
 		s += AddEffectsText(data);
 	}
 	else if(tag == "HealOverTimeTriggerBonus"){
 		if(data.amount != 0)					s += printKeyAndDataBonus("Repair Amount", BonusPrefix(data.amount));
-		if(data.duration != 0)				s += printKeyAndDataBonus("Duration", BonusPrefix(data.duration));
+		if(data.duration != 0)				s += printKeyAndDataBonus("Duration", BonusPrefixToTime(data.duration));
 	}/*
 	else if(tag == "ShieldRefillTrigger"){
 		s += printKeyAndData("Shield Refill", data.refillPercentage + "%");
@@ -425,11 +424,11 @@ function GetBonusEffectString(tag, data)
 	}
 	else if(tag == "StatBoostTriggerBonus"){
 		if(data.amount != 0)					s += printKeyAndDataBonus((data.statType != undefined) ? GetStat(data.statType, 1) : "Boost Amount", BonusPrefix(data.amount) + "%");
-		if(data.duration != 0)				s += printKeyAndDataBonus("Duration", BonusPrefix(data.duration) + " ms");
+		if(data.duration != 0)				s += printKeyAndDataBonus("Duration", BonusPrefixToTime(data.duration));
 	}
 	else if(tag == "DematerializeTriggerBonus"){
 		if(data.percentChance != 0)		s += printKeyAndDataBonus("Dematerialize Chance", BonusPrefix(data.percentChance));
-		if(data.duration != 0)				s += printKeyAndDataBonus("Dematerialize Duration", BonusPrefix(data.duration));
+		if(data.duration != 0)				s += printKeyAndDataBonus("Dematerialize Duration", BonusPrefixToTime(data.duration));
 	}/*
 	else if(tag == "ExtraGunTrigger"){
 		let dps = round(1000*data.stats.damage/data.stats.cooldown,2);
@@ -438,7 +437,7 @@ function GetBonusEffectString(tag, data)
 	}*/
 	else if(tag == "ExtraShieldTriggerBonus"){
 		if(data.maxStrength != 0)			s += printKeyAndDataBonus("Shield Strength", BonusPrefix(data.maxStrength));
-		if(data.duration != 0)				s += printKeyAndDataBonus("Duration", BonusPrefix(data.duration) + " ms");
+		if(data.duration != 0)				s += printKeyAndDataBonus("Duration", BonusPrefixToTime(data.duration));
 	}/*
 	else if(tag == "GunProcTrigger"){
 		s += "For <b>" + data.duration + "</b> ms, gun shots apply:" + "<br/>";
@@ -446,7 +445,7 @@ function GetBonusEffectString(tag, data)
 	}*/
 	else if(tag == "LeapTriggerBonus"){
 		if(data.collisionDamage != 0)	s += printKeyAndDataBonus("Collision Damage", BonusPrefix(data.collisionDamage));
-		if(data.collisionDematerialTime != 0)	s += printKeyAndDataBonus("Collision Dematerialze Time", BonusPrefix(data.collisionDematerialTime));
+		if(data.collisionDematerialTime != 0)	s += printKeyAndDataBonus("Collision Dematerialze Time", BonusPrefixToTime(data.collisionDematerialTime));
 		if(data.collisionManaToRefund != 0)	s += printKeyAndDataBonus("Collision Energy Refund", BonusPrefix(data.collisionManaToRefund));
 		if(data.range != 0)	s += printKeyAndDataBonus("Leap Distance", BonusPrefix(data.range));
 	}
@@ -461,11 +460,13 @@ function ShowStatusEffect(effect)
 {
 
 	var s = ""; var damage = 0;
-	if(effect.tag == "FreezeEffect") s += printKeyAndData("Freeze Duration", effect.data.duration);
-	if(effect.tag == "StunEffect") s += printKeyAndData("Stun Duration", effect.data.duration);
+	if(effect.tag == "FreezeEffect") s += printKeyAndData("Freeze Duration", ToTime(effect.data.duration));
+	if(effect.tag == "StunEffect") s += printKeyAndData("Stun Duration", ToTime(effect.data.duration));
 	if(effect.tag == "DoTEffect") {dotTotal = effect.data.dps*effect.data.duration/1000; s += printKeyAndData("DoT Total", dotTotal); damage += dotTotal;}
 	if(effect.tag == "DamageEffect") {s += printKeyAndData("Damage", effect.data.damage); damage += effect.data.damage;}
 	if(effect.tag == "BlastEffect") {s += printKeyAndData("AoE Damage", effect.data.damage);s += printKeyAndData("Radius", effect.data.radius); damage += effect.data.damage;}
+	if(effect.tag == "SusceptibleEffect") s += printKeyAndData("Susceptibility Duration", ToTime(effect.data.duration));
+	
 	var o = {};
 	o.s = s;
 	o.damage = damage;
@@ -502,9 +503,7 @@ function showUsage(data)
 	}
 	return tbl;
 }
-function printKeyAndData(key, data, cssClass){
-	//BonusPrefix(i)
-	cssClass = cssClass === undefined ? "" : cssClass;
+function printKeyAndData(key, data, cssClass = ""){
 	var addText = classWrap(key, "cKey") + ": " + classWrap(data, cssClass == "" ? "cKeyValue" : cssClass);
 	if(key == "color")
 	{
@@ -514,9 +513,7 @@ function printKeyAndData(key, data, cssClass){
 	addText += "<br/>";
 	return addText;
 }
-function printKeyAndDataBonus(key, data, cssClass){
-	//BonusPrefix(i)
-	cssClass = cssClass === undefined ? "" : cssClass;
+function printKeyAndDataBonus(key, data, cssClass = ""){
 	var addText = classWrap(data, cssClass == "" ? "cKeyValue" : cssClass) + " " + classWrap(key, "cKey");
 	addText += "<br/>";
 	return addText;

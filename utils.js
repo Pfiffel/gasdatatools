@@ -107,6 +107,13 @@ function amountToString(i){
 function BonusPrefix(i){
 	return (i >= 0 ? "+" + i : i);
 }
+function BonusPrefixToTime(i){
+	var t = i/1000;
+	return (t >= 0 ? "+" + t : t) + "s";
+}
+function ToTime(i){
+	return (i/1000) + "s";
+}
 function makeHeaderCell(innerHTML, container, className)
 {
 	let headerCell = document.createElement("th");
