@@ -37,6 +37,8 @@ function makeInputRadios(name, buttons, callback, container){
 	cbcont.classList.add("checkbox_container");
 	for (var btn in buttons)
 	{
+		var radioCont = document.createElement('div');
+		radioCont.classList.add("radioCont");
 		var input = document.createElement('input');
 		var id = buttons[btn]
 		input.id = id;
@@ -45,14 +47,15 @@ function makeInputRadios(name, buttons, callback, container){
 		input.type = "radio";
 		input.name = name;
 		input.addEventListener('change', callback);
-		cbcont.appendChild(input);
+		radioCont.appendChild(input);
 		var newlabel = document.createElement("Label");
 		newlabel.setAttribute("for", id);
 		newlabel.setAttribute("id", id + " Label");
 		newlabel.innerHTML = id;
-		cbcont.appendChild(newlabel);
-		container.appendChild(cbcont);
+		radioCont.appendChild(newlabel);
+		cbcont.appendChild(radioCont);
 	}
+	container.appendChild(cbcont);
 	return cbcont;
 }
 

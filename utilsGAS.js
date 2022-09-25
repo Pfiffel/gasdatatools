@@ -99,17 +99,28 @@ function isSymbioteDropper(monster)
 }
 // ITEMS and SYMBS
 
-function MakeStatsTable(mainData, tier)
+function MakeStatsTable(mainData, tier, bPortrait = false, bDescription = true)
 {
 	if(tier == 0) tier = mainData.tier;
 	var tbl = document.createElement('table');
 	let th = tbl.insertRow();
+
+	if(bPortrait)
+	{
+		var image = new Image();
+		image.src = "https://gasgame.net/portrait/"+mainData.name+".png";
+		//image.height = "64";
+		var img = makeCellE(image, th);
+		img.rowSpan = 10;
+	}
+
 	var name = mainData.displayName != undefined ? mainData.displayName : mainData.name;
 	makeHeaderCell(colorWrap(name, TIER_COLORS[tier]), th);
-	if(mainData.description != undefined && mainData.description != "")
+
+	if(bDescription && mainData.description != undefined && mainData.description != "")
 	{
 		let tr = tbl.insertRow();
-		makeCell(mainData.description, tr);
+		var desc = makeCell(mainData.description, tr);
 	}
 	let prevCondition = undefined;
 	let prevCell;
@@ -239,11 +250,15 @@ function MakeStatsTable(mainData, tier)
 		if(prevRepeat)
 			prevCell.innerHTML += s;
 		else
+		{
 			prevCell = makeCell(s, tr);
+			prevCell.colSpan = 2;
+		}
 	}
 	if(dps > 0) 
 	{
-		makeCell(printKeyAndData("DPS", round(dps,2)), tbl.insertRow());
+		var dpsCell = makeCell(printKeyAndData("DPS", round(dps,2)), tbl.insertRow());
+		dpsCell.colSpan = 2;
 	}
 	return tbl;
 }

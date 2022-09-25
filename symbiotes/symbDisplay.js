@@ -6,8 +6,21 @@ var tableOutput = document.getElementById("tableOutput");
 var datatypes = ["symbiote","monster","object"]; // for utilGAS to load files, calls parseData once completed
 loadGasData();
 
+var header = document.getElementById("header");
+var filters = document.getElementById("filters");
+
+var showDroppers = makeInputCheckbox("Show Source Enemies", RefreshLists, filters, true);
+var showPortraits = makeInputCheckbox("Show Portraits", RefreshLists, filters, true);
+var showDescriptions = makeInputCheckbox("Show Descriptions", RefreshLists, filters, true);
+
 function parseData()
 {
+	RefreshLists();
+}
+function RefreshLists()
+{
+	tableOutput.innerHTML = "";
+	header.innerHTML = "";
 	var tbl = document.createElement('table');
 	let th = tbl.insertRow();
 	
@@ -28,13 +41,18 @@ function parseData()
 		var amount = GetSymbAmount(t);
 		combinations *= amount;
 		totalAmount += amount;
-		var headerCell = makeHeaderCell("Tier " + t + " - " + colorWrap(TIER_NAMES[t] + " Symbiotes", TIER_COLORS[t]) + " - " + amount + " total<br/>From: ", th);
-		for (let i = 0; i < SYMBIOTE_DROPPERS[t].length; i++)
+		var headerCell = makeHeaderCell("Tier " + t + " - " + colorWrap(TIER_NAMES[t] + " Symbiotes", TIER_COLORS[t]) + " - " + amount + " total", th);
+		
+		if(showDroppers.checked)
 		{
-			var divSprite = document.createElement('div');
-			divSprite.classList.add("inline");
-			divSprite.appendChild(draw(SYMBIOTE_DROPPERS[t][i],0.25));
-			headerCell.appendChild(divSprite);
+			headerCell.innerHTML += "<br/>From: ";
+			for (let i = 0; i < SYMBIOTE_DROPPERS[t].length; i++)
+			{
+				var divSprite = document.createElement('div');
+				divSprite.classList.add("inline");
+				divSprite.appendChild(draw(SYMBIOTE_DROPPERS[t][i],0.25));
+				headerCell.appendChild(divSprite);
+			}
 		}
 	}
 	let tr = tbl.insertRow();
@@ -44,7 +62,7 @@ function parseData()
 		cell.appendChild(parseTierList(t));
 	}
 	var combos = ", " + combinations + " total combinations";
-	tableOutput.appendChild(MakeTextDiv("<h1>Symbiotes (" + totalAmount + " total)</h1>"));
+	header.appendChild(MakeTextDiv("<h1>Symbiotes (" + totalAmount + " total)</h1>"));
 	tableOutput.appendChild(tbl);
 	tableOutput.appendChild(showUsage(STAT_TYPES));
 	tableOutput.appendChild(showUsage(ACTIVE_WHILE_NAMES));
@@ -68,8 +86,16 @@ function parseTierList(t)
 	{
 		var symb = gasData["symbiote"][i];
 		if(symb.tier != t) continue;
-		var tbl = MakeStatsTable(symb, symb.tier);
-		div.appendChild(tbl);
+		var cont = document.createElement('div');
+		var tbl = MakeStatsTable(symb, symb.tier, showPortraits.checked, showDescriptions.checked);
+		/*
+		tbl.classList.add("inline");
+		var image = new Image();
+		image.src = "https://gasgame.net/portrait/"+symb.name+".png";
+		image.height = "64";
+		cont.appendChild(image);*/
+		cont.appendChild(tbl);
+		div.appendChild(cont);
 	}
 	return div;
 }

@@ -22,9 +22,14 @@ input:disabled {
 select
 {
 	background-color: #272830;
-	padding: 3px 0 3px 0px;
+	padding: 2px 0 2px 0px;
 	cursor: pointer;
 	font-weight: bold;
+}
+.radioCont
+{
+	display: inline-block;
+	padding: 0 6px 0 0;
 }
 option
 {
@@ -36,16 +41,12 @@ input[type="number"]
 	padding: 1px 0 1px 4px;
 	width: 30px;
 }
-input[type="checkbox"]
+input[type="checkbox"], input[type="radio"]
 {
-	margin: 2px 4px 2px 0px;
+	margin: 0px 3px 0px 0px;
 	vertical-align: text-bottom;
 }
-.checkbox_container
-{
-	display: inline-block;
-	margin: 3px 0px 3px 0px;
-}
+
 input[type=text] {
 	padding: 1px 0 1px 4px;
 }
