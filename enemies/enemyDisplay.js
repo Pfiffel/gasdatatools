@@ -9,7 +9,8 @@ var sortedMonsters;
 var drawRadius = makeInputCheckbox("Show Collision Radius", RefreshLists, filters, false);
 
 const FILTER_NAME = "Name";
-makeInputRadios(FILTER_NAME, ["All","Iron","Royal","Xenofrog","Nest","Bogweed","Training"], RefreshLists, filters);
+makeInputRadios(FILTER_NAME, ["All","Iron","Xenofrog","Nest","Bogweed","Training"], RefreshLists, filters);
+//makeInputRadios(FILTER_NAME, ["All","Iron","Royal","Xenofrog","Nest","Bogweed","Training"], RefreshLists, filters);
 const FILTER_BOSS = "Boss";
 makeInputRadios(FILTER_BOSS, ["Any","Is Boss","Is not Boss"], RefreshLists, filters);
 var dropsLoot = makeInputCheckbox("Drops Specific Loot", RefreshLists, filters, false);
