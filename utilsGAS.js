@@ -98,14 +98,26 @@ function isSymbioteDropper(monster)
 	return(t > 0 && t <= 6) && hasGlobalDrops;
 }
 // ITEMS and SYMBS
-
-function MakeStatsTable(mainData, tier, bPortrait = false, bDescription = true)
+function SpeakerToText(data)
+{
+	s = "";
+	for (var ql in data.quoteLists){
+		var quoteList = data.quoteLists[ql];
+		s += "<b>"+quoteList.tag+"</b>"+"<br/>";
+		for (var quote in quoteList.quotes)
+		{
+			s += quoteList.quotes[quote].text+"<br/>";
+		}
+	}
+	return s;
+}
+function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bDescription = true, bSpeaker = false)
 {
 	if(tier == 0) tier = mainData.tier;
 	var tbl = document.createElement('table');
 	let th = tbl.insertRow();
 
-	if(bPortrait)
+	if(bSymbiote && bPortrait)
 	{
 		var image = new Image();
 		image.src = "https://gasgame.net/portrait/"+mainData.name+".png";
@@ -119,8 +131,11 @@ function MakeStatsTable(mainData, tier, bPortrait = false, bDescription = true)
 
 	if(bDescription && mainData.description != undefined && mainData.description != "")
 	{
-		let tr = tbl.insertRow();
-		var desc = makeCell(mainData.description, tr);
+		makeCell(mainData.description, tbl.insertRow());
+	}
+	if(bSymbiote && bSpeaker)
+	{
+		makeCell(SpeakerToText(GetSpeaker(mainData.name)), tbl.insertRow());
 	}
 	let prevCondition = undefined;
 	let prevCell;
@@ -606,7 +621,15 @@ function getItem(type){
 		var item = gasData["item"][i];
 		if(type == item.name) return item;
 	}
-	console.log(type + " not found");
+	console.log(type + " Item not found");
+}
+function GetSpeaker(type){
+	for (let i = 0; i < gasData["speaker"].length; i++)
+	{
+		var speaker = gasData["speaker"][i];
+		if(type == speaker.name) return speaker;
+	}
+	console.log(type + " Speaker not found");
 }
 function GetRegion(type){
 	for (let i = 0; i < gasData["region"].length; i++)

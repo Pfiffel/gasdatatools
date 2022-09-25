@@ -3,7 +3,7 @@ var TIERS = 6;
 var SYMBIOTE_DROPPERS = [];
 var tableOutput = document.getElementById("tableOutput");
 
-var datatypes = ["symbiote","monster","object"]; // for utilGAS to load files, calls parseData once completed
+var datatypes = ["symbiote","monster","object","speaker"]; // for utilGAS to load files, calls parseData once completed
 loadGasData();
 
 var header = document.getElementById("header");
@@ -12,6 +12,7 @@ var filters = document.getElementById("filters");
 var showDroppers = makeInputCheckbox("Show Source Enemies", RefreshLists, filters, true);
 var showPortraits = makeInputCheckbox("Show Portraits", RefreshLists, filters, true);
 var showDescriptions = makeInputCheckbox("Show Descriptions", RefreshLists, filters, true);
+var showQuotes = makeInputCheckbox("Show Quotes", RefreshLists, filters, false);
 
 function parseData()
 {
@@ -87,7 +88,7 @@ function parseTierList(t)
 		var symb = gasData["symbiote"][i];
 		if(symb.tier != t) continue;
 		var cont = document.createElement('div');
-		var tbl = MakeStatsTable(symb, symb.tier, showPortraits.checked, showDescriptions.checked);
+		var tbl = MakeStatsTable(symb, symb.tier, true, showPortraits.checked, showDescriptions.checked, showQuotes.checked);
 		/*
 		tbl.classList.add("inline");
 		var image = new Image();
