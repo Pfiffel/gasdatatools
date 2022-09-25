@@ -308,12 +308,12 @@
       }
     },
     {
-      "label": "These drones shoot!",
+      "label": "Pick up XP packs!",
       "note": "",
       "objectType": "Invisible Marker",
       "p": {
-        "x": 98,
-        "y": 354
+        "x": 113,
+        "y": 399
       }
     },
     {
@@ -405,11 +405,9 @@
   "patches": [],
   "quest": {
     "bossKillTime": 300000,
-    "bossMonsterName": "",
     "postKillBaskTime": 60000,
     "spawnAreaRadius": 800,
-    "spawnPoints": [],
-    "toKill": []
+    "spawnPoints": []
   },
   "regions": [
     {

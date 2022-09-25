@@ -1,0 +1,37 @@
+{
+  "name": "Flamebringer",
+  "portrait": "Flamebringer",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Feel the heat of my flames!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Blazing fires, consume my enemies!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "May the firestorm wreak justice!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The fires shall consume you all!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

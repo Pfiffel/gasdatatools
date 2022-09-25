@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 50,
+      "maxDistPercent": 100,
+      "minDistPercent": 80,
+      "particleType": "Flamebringer Grenade Burst",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Flamebringer Grenade",
+  "sound": "Player_Wasp_PosTorpedo_Explosion",
+  "volume": 50
+}
+

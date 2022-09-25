@@ -1,0 +1,30 @@
+{
+  "color": 1346676,
+  "convoyBosses": [],
+  "convoyPeriodSeconds": 600,
+  "eventBossPeriodSeconds": 600,
+  "eventBosses": [],
+  "maxEventBosses": 1,
+  "monsterSquareSide": 400,
+  "monsters": [
+    {
+      "count": 100,
+      "name": "Iron Anvil"
+    },
+    {
+      "count": 100,
+      "name": "Iron Guardsman"
+    },
+    {
+      "count": 25,
+      "name": "Iron Hammer"
+    },
+    {
+      "count": 25,
+      "name": "Iron Legionnaire"
+    }
+  ],
+  "name": "Cromwell 2 Blue",
+  "noRespawn": 0
+}
+

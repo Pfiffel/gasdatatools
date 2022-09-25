@@ -1,0 +1,37 @@
+{
+  "name": "Grave",
+  "portrait": "Grave",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Surrender to me.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "No one gets out alive.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "There is no escape.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The end comes for us all.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

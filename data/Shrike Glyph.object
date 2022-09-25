@@ -1,0 +1,73 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Shrike Glyph",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4275460,
+      "height": 0,
+      "mirror": 1,
+      "name": "Glyph",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -1,
+          "y": 4
+        },
+        {
+          "x": 2,
+          "y": 6
+        },
+        {
+          "x": 14,
+          "y": 5
+        },
+        {
+          "x": 28,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 10325550,
+      "height": 0,
+      "mirror": 1,
+      "name": "Glyph",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -24,
+          "y": 0
+        },
+        {
+          "x": -20,
+          "y": 7
+        },
+        {
+          "x": -10,
+          "y": 10
+        },
+        {
+          "x": -1,
+          "y": 9
+        },
+        {
+          "x": 2,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

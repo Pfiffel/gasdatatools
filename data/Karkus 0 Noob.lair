@@ -1,0 +1,22 @@
+{
+  "color": 5815121,
+  "convoyBosses": [],
+  "convoyPeriodSeconds": 600,
+  "eventBossPeriodSeconds": 600,
+  "eventBosses": [],
+  "maxEventBosses": 8,
+  "monsterSquareSide": 500,
+  "monsters": [
+    {
+      "count": 100,
+      "name": "Iron Shield"
+    },
+    {
+      "count": 100,
+      "name": "Iron Soldier"
+    }
+  ],
+  "name": "Karkus 0 Noob",
+  "noRespawn": 0
+}
+

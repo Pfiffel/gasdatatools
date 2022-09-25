@@ -1,0 +1,245 @@
+{
+  "description": "Flamebringer channels fire from above.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "damage": 25,
+            "delay": 200,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Flamebringer Grenade",
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 150,
+              "y": 0
+            },
+            "range": 60,
+            "statusEffects": [
+              {
+                "data": {
+                  "dps": 50,
+                  "duration": 4000,
+                  "reducedDurationOnBoss": 0
+                },
+                "tag": "BurningEffect"
+              }
+            ],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": ""
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "damage": 25,
+            "delay": 350,
+            "drawReticle": 1,
+            "drawTooltip": 0,
+            "explosionType": "Flamebringer Grenade",
+            "halfArc": 1800,
+            "mirror": 1,
+            "offset": {
+              "x": 210,
+              "y": 110
+            },
+            "range": 60,
+            "statusEffects": [
+              {
+                "data": {
+                  "dps": 50,
+                  "duration": 4000,
+                  "reducedDurationOnBoss": 0
+                },
+                "tag": "BurningEffect"
+              }
+            ],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": ""
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "damage": 25,
+            "delay": 500,
+            "drawReticle": 1,
+            "drawTooltip": 0,
+            "explosionType": "Flamebringer Grenade",
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 270,
+              "y": 0
+            },
+            "range": 60,
+            "statusEffects": [
+              {
+                "data": {
+                  "dps": 50,
+                  "duration": 4000,
+                  "reducedDurationOnBoss": 0
+                },
+                "tag": "BurningEffect"
+              }
+            ],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": ""
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "damage": 25,
+            "delay": 650,
+            "drawReticle": 1,
+            "drawTooltip": 0,
+            "explosionType": "Flamebringer Grenade",
+            "halfArc": 1800,
+            "mirror": 1,
+            "offset": {
+              "x": 330,
+              "y": 105
+            },
+            "range": 60,
+            "statusEffects": [
+              {
+                "data": {
+                  "dps": 50,
+                  "duration": 4000,
+                  "reducedDurationOnBoss": 0
+                },
+                "tag": "BurningEffect"
+              }
+            ],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": ""
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "delay": 0,
+            "duration": 200,
+            "emitterType": "Flamebringer Mines",
+            "mirror": 0,
+            "objectType": "Flamebringer Mine",
+            "sound": "",
+            "tag": "",
+            "target": {
+              "x": 150,
+              "y": 0
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "delay": 0,
+            "duration": 350,
+            "emitterType": "Flamebringer Mines",
+            "mirror": 1,
+            "objectType": "Flamebringer Mine",
+            "sound": "",
+            "tag": "",
+            "target": {
+              "x": 210,
+              "y": 110
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "delay": 0,
+            "duration": 500,
+            "emitterType": "Flamebringer Mines",
+            "mirror": 0,
+            "objectType": "Flamebringer Mine",
+            "sound": "",
+            "tag": "",
+            "target": {
+              "x": 270,
+              "y": 0
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "delay": 0,
+            "duration": 650,
+            "emitterType": "Flamebringer Mines",
+            "mirror": 1,
+            "objectType": "Flamebringer Mine",
+            "sound": "",
+            "tag": "",
+            "target": {
+              "x": 330,
+              "y": 105
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Flamebringer",
+  "tier": 6
+}
+

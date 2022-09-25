@@ -1,0 +1,35 @@
+{
+  "color": 1459981,
+  "convoyBosses": [
+    "Iron Leviathan",
+    "Iron Colossus",
+    "Iron Behemoth",
+    "Iron Juggernaut"
+  ],
+  "convoyPeriodSeconds": 1000,
+  "eventBossPeriodSeconds": 600,
+  "eventBosses": [],
+  "maxEventBosses": 1,
+  "monsterSquareSide": 400,
+  "monsters": [
+    {
+      "count": 100,
+      "name": "Iron Bulwark"
+    },
+    {
+      "count": 100,
+      "name": "Iron Protector"
+    },
+    {
+      "count": 25,
+      "name": "Iron Aegis"
+    },
+    {
+      "count": 25,
+      "name": "Iron Gladiator"
+    }
+  ],
+  "name": "Karkus 4 Dank",
+  "noRespawn": 0
+}
+

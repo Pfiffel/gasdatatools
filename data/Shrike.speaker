@@ -1,0 +1,37 @@
+{
+  "name": "Shrike",
+  "portrait": "Shrike",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Time to feed.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "We're on the hunt.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "They're all prey.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I am the butcherbird.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

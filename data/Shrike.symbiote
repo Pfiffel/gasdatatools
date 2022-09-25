@@ -1,0 +1,49 @@
+{
+  "description": "Shrike hunts ruthlessly.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 75,
+            "duration": 1500,
+            "emitterType": "",
+            "glyphCount": 12,
+            "glyphRadius": 90,
+            "glyphType": "Shrike Glyph",
+            "noStack": 0,
+            "statType": 5,
+            "tag": ""
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 7
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 25,
+            "duration": 1500,
+            "emitterType": "",
+            "glyphCount": 0,
+            "glyphRadius": 0,
+            "glyphType": "",
+            "noStack": 0,
+            "statType": 0,
+            "tag": ""
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 7
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Shrike",
+  "tier": 5
+}
+

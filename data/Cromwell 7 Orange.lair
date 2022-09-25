@@ -1,0 +1,35 @@
+{
+  "color": 13273091,
+  "convoyBosses": [
+    "Iron Leviathan",
+    "Iron Colossus",
+    "Iron Behemoth",
+    "Iron Juggernaut"
+  ],
+  "convoyPeriodSeconds": 350,
+  "eventBossPeriodSeconds": 600,
+  "eventBosses": [],
+  "maxEventBosses": 1,
+  "monsterSquareSide": 325,
+  "monsters": [
+    {
+      "count": 100,
+      "name": "Iron Fortress"
+    },
+    {
+      "count": 100,
+      "name": "Iron Lance"
+    },
+    {
+      "count": 25,
+      "name": "Iron Conqueror"
+    },
+    {
+      "count": 25,
+      "name": "Iron Triumph"
+    }
+  ],
+  "name": "Cromwell 7 Orange",
+  "noRespawn": 0
+}
+
