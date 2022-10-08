@@ -692,10 +692,11 @@ function getObjectResolution(object, weapons, radius){
 		var turret = weapons[i].objectType;
 		if(turret != "")
 		{
-			var offset = [0,0];
+			var offset = [0,0,0];
 			var attach = weapons[i].attachmentPoint;
+			// TODO offset[0] which is facing
 			if(attach != "") offset = this.getAttachmentPoint(object, attach);
-			max = this.getMaxFromShapes(getObject(turret), offset[0], offset[1], max);
+			max = this.getMaxFromShapes(getObject(turret), offset[1], offset[2], max);
 		}
 	}
 	return [max[2]-max[0],max[3]-max[1],-(max[0]+(max[2]-max[0])/2),-(max[1]+(max[3]-max[1])/2)];
@@ -704,20 +705,24 @@ function getAttachmentPoint(object, name){
 	for (let i = 0; i < object.attachmentPoints.length; i++)
 	{
 		var point = object.attachmentPoints[i];
-		if(point.name == name) return [point.pos.p.x, point.pos.p.y];
+		if(point.name == name) return [degToRad(point.pos.f/10), point.pos.p.x, point.pos.p.y];
 	}
 }
-function drawShapes(ctx, scale, x, y, object)
+function drawShapes(ctx, scale, x, y, object, angle = 0)
 {
 	for (let i = 0; i < object.shapes.length; i++)
 	{
 		var shape = object.shapes[i];
 		
-		if(!shape.noDraw) DrawShape(ctx, scale, x, y, shape);
+		if(!shape.noDraw) DrawShape(ctx, scale, x, y, shape, angle);
 		for (var iC in shape.clones){
 			var clone = shape.clones[iC];
-			var angle = degToRad(clone.pos.f/10);
-			DrawShape(ctx, scale, x + clone.pos.p.x, y + clone.pos.p.y, shape, angle);
+			var angleClone = degToRad(clone.pos.f/10);
+			var xClone = clone.pos.p.x;
+			var yClone = clone.pos.p.y;
+			var xRotated = xClone * Math.cos(angle) - yClone * Math.sin(angle);
+			var yRotated = xClone * Math.sin(angle) + yClone * Math.cos(angle);
+			DrawShape(ctx, scale, x + xRotated, y + yRotated, shape, angle + angleClone);
 		}
 	}
 }
@@ -794,10 +799,10 @@ function draw(data, scale = 0.4, bPrev = false, bDrawRadius = false)
 			var turret = data.weapons[i].objectType;
 			if(turret != "")
 			{
-				var offset = [0,0];
+				var offset = [0,0,0];
 				var attach = data.weapons[i].attachmentPoint;
 				if(attach != "") offset = getAttachmentPoint(object, attach);
-				drawShapes(ctx, scale, x+offset[0], y+offset[1], getObject(turret, bPrev));
+				drawShapes(ctx, scale, x+offset[1], y+offset[2], getObject(turret, bPrev), offset[0]);
 			}
 		}
 		DrawCollisionRadius(radius, ctx, scale, x, y);
