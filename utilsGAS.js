@@ -229,7 +229,7 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 				s += "Periodically targets enemies with these effects:<br/>";
 			if(data.cooldown != undefined) s += printKeyAndData("Cooldown", ToTime(data.cooldown));
 			let cooldownMult = 1000/data.cooldown;
-			s += printKeyAndData("Range", data.range);
+			s += printKeyAndData("Range", data.range, "", AddReticle(data.reticleColor));
 			for (var effects in data.statusEffects){
 				var effect = data.statusEffects[effects];
 				let o = ShowStatusEffect(effect);
@@ -337,10 +337,9 @@ function GetTriggeredEffectString(tag, data)
 		s += printKeyAndData("Duration", ToTime(data.duration));
 	}
 	else if(tag == "ShotgunTrigger"){
-		
 		if(data.tooltip != "") s += data.tooltip + "<br/>";
 		if(data.damage > 0) s += printKeyAndData("AoE Damage", data.damage);
-		s += printKeyAndData("Range", data.range);
+		s += printKeyAndData("Range", data.range, "", AddReticle(data.reticleColor));
 		s += printKeyAndData("Arc", (data.halfArc * 0.2) + "°");
 		s += AddEffectsText(data);
 		damage += data.damage;
@@ -518,8 +517,8 @@ function showUsage(data)
 	}
 	return tbl;
 }
-function printKeyAndData(key, data, cssClass = ""){
-	var addText = classWrap(key, "cKey") + ": " + classWrap(data, cssClass == "" ? "cKeyValue" : cssClass);
+function printKeyAndData(key, data, cssClass = "", extraText = ""){
+	var addText = classWrap(key, "cKey") + ": " + classWrap(data, cssClass == "" ? "cKeyValue" : cssClass) + extraText;
 	if(key == "color")
 	{
 		var hex = numberToHex(data);
@@ -532,6 +531,10 @@ function printKeyAndDataBonus(key, data, cssClass = ""){
 	var addText = classWrap(data, cssClass == "" ? "cKeyValue" : cssClass) + " " + classWrap(key, "cKey");
 	addText += "<br/>";
 	return addText;
+}
+function AddReticle(color)
+{
+	return colorWrap(" &#9711;", numberToHex(color));
 }
 // Loading Stuff
 var gasData = {};
