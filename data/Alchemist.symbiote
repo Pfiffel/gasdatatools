@@ -1,37 +1,37 @@
 {
-  "description": "Tribunus sits in judgment over all mortal beings.",
+  "description": "Alchemist",
   "effects": [
     {
       "data": {
         "params": {
           "data": {
-            "damage": 100,
+            "damage": 50,
             "delay": 0,
             "drawReticle": 1,
             "drawTooltip": 1,
-            "explosionType": "Tribunus Blast",
+            "explosionType": "Alchemist Blast",
             "halfArc": 1800,
             "mirror": 0,
             "offset": {
               "x": 0,
               "y": 0
             },
-            "range": 225,
-            "reticleColor": 8863965,
+            "range": 175,
+            "reticleColor": 1398737,
             "statusEffects": [],
             "tag": "",
             "targetingDelay": 0,
-            "tooltip": "Explosive Burst"
+            "tooltip": "Explosive Blast"
           },
           "tag": "ShotgunTrigger"
         },
-        "when": 2
+        "when": 11
       },
       "tag": "TriggeredTriggerEffect"
     }
   ],
   "enemies": [],
-  "name": "Tribunus",
+  "name": "Alchemist",
   "tier": 3
 }
 

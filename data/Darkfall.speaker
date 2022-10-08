@@ -1,0 +1,37 @@
+{
+  "name": "Darkfall",
+  "portrait": "Darkfall",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Unerring accuracy.\n",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Sudden death.\n",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "No mercy, no quarter.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I strike.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

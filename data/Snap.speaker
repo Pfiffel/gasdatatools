@@ -1,0 +1,37 @@
+{
+  "name": "Snap",
+  "portrait": "Snap",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Hee hee! I'll show 'em!\n",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Can't catch me!\n",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "They're after me lucky charms!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Don't take me pot o' cold!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

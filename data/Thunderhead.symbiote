@@ -5,6 +5,7 @@
       "data": {
         "cooldown": 2500,
         "range": 240,
+        "reticleColor": 10001405,
         "statusEffects": [
           {
             "data": {

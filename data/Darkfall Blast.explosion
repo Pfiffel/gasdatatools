@@ -1,0 +1,29 @@
+{
+  "layers": [
+    {
+      "angularDensity": 600,
+      "maxDistPercent": 100,
+      "minDistPercent": 97,
+      "particleType": "Darkfall Blast",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 600,
+      "maxDistPercent": 97,
+      "minDistPercent": 75,
+      "particleType": "Darkfall Blast",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 600,
+      "maxDistPercent": 80,
+      "minDistPercent": 15,
+      "particleType": "Darkfall Blast",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Darkfall Blast",
+  "sound": "Player_Cyclops_ConeLaser",
+  "volume": 75
+}
+

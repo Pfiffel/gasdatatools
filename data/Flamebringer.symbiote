@@ -17,6 +17,7 @@
               "y": 0
             },
             "range": 60,
+            "reticleColor": 14292267,
             "statusEffects": [
               {
                 "data": {
@@ -53,6 +54,7 @@
               "y": 110
             },
             "range": 60,
+            "reticleColor": 14292267,
             "statusEffects": [
               {
                 "data": {
@@ -89,6 +91,7 @@
               "y": 0
             },
             "range": 60,
+            "reticleColor": 14292267,
             "statusEffects": [
               {
                 "data": {
@@ -125,6 +128,7 @@
               "y": 105
             },
             "range": 60,
+            "reticleColor": 14292267,
             "statusEffects": [
               {
                 "data": {

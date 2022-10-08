@@ -1,7 +1,7 @@
 {
   "layers": [
     {
-      "angularDensity": 20,
+      "angularDensity": 40,
       "maxDistPercent": 100,
       "minDistPercent": 100,
       "particleType": "Tribunus Blast",

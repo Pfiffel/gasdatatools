@@ -4,6 +4,7 @@
     {
       "data": {
         "range": 295,
+        "reticleColor": 4276545,
         "statusEffects": [
           {
             "data": {
@@ -23,6 +24,7 @@
             "tag": "ParticleLineEffect"
           }
         ],
+        "targets": 1,
         "when": 7
       },
       "tag": "TriggeredRandomTargetEffect"

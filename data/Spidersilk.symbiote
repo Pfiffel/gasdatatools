@@ -17,6 +17,7 @@
               "y": 0
             },
             "range": 300,
+            "reticleColor": 16777215,
             "statusEffects": [
               {
                 "data": {

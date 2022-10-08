@@ -1,0 +1,22 @@
+{
+  "description": "Radiance",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 10,
+        "shield": {
+          "color": 13938487,
+          "left": -1800,
+          "level": 0,
+          "maxStrength": 225,
+          "right": 1800
+        }
+      },
+      "tag": "ItemShield"
+    }
+  ],
+  "enemies": [],
+  "name": "Radiance",
+  "tier": 5
+}
+

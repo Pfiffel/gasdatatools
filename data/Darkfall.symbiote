@@ -1,37 +1,37 @@
 {
-  "description": "Tribunus sits in judgment over all mortal beings.",
+  "description": "Darkfall",
   "effects": [
     {
       "data": {
         "params": {
           "data": {
-            "damage": 100,
+            "damage": 150,
             "delay": 0,
             "drawReticle": 1,
             "drawTooltip": 1,
-            "explosionType": "Tribunus Blast",
-            "halfArc": 1800,
+            "explosionType": "Darkfall Blast",
+            "halfArc": 50,
             "mirror": 0,
             "offset": {
               "x": 0,
               "y": 0
             },
-            "range": 225,
-            "reticleColor": 8863965,
+            "range": 380,
+            "reticleColor": 3420979,
             "statusEffects": [],
             "tag": "",
             "targetingDelay": 0,
-            "tooltip": "Explosive Burst"
+            "tooltip": "Plasma Jet"
           },
           "tag": "ShotgunTrigger"
         },
-        "when": 2
+        "when": 7
       },
       "tag": "TriggeredTriggerEffect"
     }
   ],
   "enemies": [],
-  "name": "Tribunus",
-  "tier": 3
+  "name": "Darkfall",
+  "tier": 6
 }
 

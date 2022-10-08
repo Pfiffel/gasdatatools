@@ -1,0 +1,31 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Triangle",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16777215,
+      "height": 0,
+      "mirror": 1,
+      "name": "Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -11,
+          "y": 15
+        },
+        {
+          "x": 16,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

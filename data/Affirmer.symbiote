@@ -44,6 +44,7 @@
               "y": 0
             },
             "range": 270,
+            "reticleColor": 2063819,
             "statusEffects": [],
             "tag": "",
             "targetingDelay": 0,

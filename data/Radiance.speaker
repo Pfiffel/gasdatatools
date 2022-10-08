@@ -1,0 +1,37 @@
+{
+  "name": "Radiance",
+  "portrait": "Radiance",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Nothing ventured, nothing gained.\n",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Strive forward, and I will safeguard you.\n",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Fortune favors the brave.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I help those who help themselves.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

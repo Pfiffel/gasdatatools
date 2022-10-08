@@ -1,0 +1,63 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Snap Particle",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16777215,
+      "height": 0,
+      "mirror": 1,
+      "name": "Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -30,
+          "y": 0
+        },
+        {
+          "x": -12,
+          "y": 3
+        },
+        {
+          "x": -35,
+          "y": 24
+        },
+        {
+          "x": -1,
+          "y": 3
+        },
+        {
+          "x": -18,
+          "y": 22
+        },
+        {
+          "x": 10,
+          "y": 2
+        },
+        {
+          "x": -2,
+          "y": 18
+        },
+        {
+          "x": 21,
+          "y": 2
+        },
+        {
+          "x": 13,
+          "y": 14
+        },
+        {
+          "x": 32,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

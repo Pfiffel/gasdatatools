@@ -9,7 +9,7 @@
             "data": {
               "damage": 200,
               "delay": 500,
-              "drawReticle": 0,
+              "drawReticle": 1,
               "drawTooltip": 1,
               "explosionType": "Red Wizard Grenade",
               "halfArc": 1800,
@@ -19,6 +19,7 @@
                 "y": 125
               },
               "range": 125,
+              "reticleColor": 13379624,
               "statusEffects": [],
               "tag": "",
               "targetingDelay": 0,
@@ -47,7 +48,7 @@
             "data": {
               "damage": 200,
               "delay": 500,
-              "drawReticle": 0,
+              "drawReticle": 1,
               "drawTooltip": 0,
               "explosionType": "Red Wizard Grenade",
               "halfArc": 1800,
@@ -57,6 +58,7 @@
                 "y": -125
               },
               "range": 125,
+              "reticleColor": 13379624,
               "statusEffects": [],
               "tag": "",
               "targetingDelay": 0,

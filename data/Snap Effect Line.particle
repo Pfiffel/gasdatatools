@@ -1,0 +1,40 @@
+{
+  "colorPoints": [
+    {
+      "frac": 400,
+      "value": 1350354
+    },
+    {
+      "frac": 750,
+      "value": 1350354
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 1200,
+  "minLifetime": 800,
+  "name": "Snap Effect Line",
+  "objectType": "Snap Particle",
+  "positionTweenType": "QUADIN",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 500
+    },
+    {
+      "frac": 500,
+      "value": 500
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 16776958,
+  "startScale": 10,
+  "stayLow": 1
+}
+

@@ -1,0 +1,37 @@
+{
+  "name": "Alchemist",
+  "portrait": "Alchemist",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "This concoction is perfect!\n",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "The ideal combination of elements!\n",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "What could possibly go wrong?",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The chemistry is undeniable!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

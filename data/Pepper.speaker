@@ -1,0 +1,37 @@
+{
+  "name": "Pepper",
+  "portrait": "Pepper",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "They'll have to catch me first!\n",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Not today, sailor!\n",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "'Tis a fine day for sail, or a fight!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Ahoy, me hearty!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    }
+  ]
+}
+

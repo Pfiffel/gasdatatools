@@ -1,26 +1,31 @@
 {
-  "description": "Glacier is cool and calm.",
+  "description": "Snap",
   "effects": [
     {
       "data": {
-        "cooldown": 5000,
-        "range": 300,
-        "reticleColor": 1350354,
+        "range": 375,
+        "reticleColor": 4117716,
         "statusEffects": [
           {
             "data": {
-              "duration": 4000
+              "duration": 1500
             },
             "tag": "FreezeEffect"
           },
           {
             "data": {
+              "damage": 25
+            },
+            "tag": "DamageEffect"
+          },
+          {
+            "data": {
               "arcOffset": 0,
               "halfArc": 1800,
-              "maxDist": 10,
+              "maxDist": 100,
               "minDist": 0,
-              "particleType": "Glacier Effect Line",
-              "spacing": 15
+              "particleType": "Snap Effect Line",
+              "spacing": 25
             },
             "tag": "ParticleLineEffect"
           },
@@ -31,13 +36,15 @@
             },
             "tag": "PlaySoundEffect"
           }
-        ]
+        ],
+        "targets": 5,
+        "when": 8
       },
-      "tag": "RandomTargetEffect"
+      "tag": "TriggeredRandomTargetEffect"
     }
   ],
   "enemies": [],
-  "name": "Glacier",
-  "tier": 1
+  "name": "Snap",
+  "tier": 6
 }
 

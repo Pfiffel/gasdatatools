@@ -4,6 +4,7 @@
     {
       "data": {
         "range": 280,
+        "reticleColor": 9054102,
         "statusEffects": [
           {
             "data": {
@@ -14,6 +15,7 @@
             "tag": "DoTEffect"
           }
         ],
+        "targets": 1,
         "when": 5
       },
       "tag": "TriggeredRandomTargetEffect"
