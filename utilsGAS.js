@@ -601,6 +601,15 @@ function getMonster(type){
 		if(type == monster.name) return new Monster(monster);
 	}
 }
+function getAnimation(type){
+	for (let i = 0; i < gasData["animation"].length; i++)
+	{
+		var animation = gasData["animation"][i];
+		if(type == animation.name) return animation;
+	}
+	console.log("animation not found: " + type);
+	return null;
+}
 function getBullet(type){
 	for (let i = 0; i < gasData["gunbullet"].length; i++)
 	{
