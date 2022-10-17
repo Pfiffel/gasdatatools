@@ -47,6 +47,7 @@ class Monster
 				let bullet = getBullet(wD.gunBulletType);
 				if(bullet == null) console.log("something went wrong with " + this._name + " " + tag);
 				damageST = bullet.damage;
+				if(weaponRoot.objectType == "") console.log(this._name + ": MultiBarrelGunParams expects valid object with attachment points");
 				damageMT = getObject(weaponRoot.objectType).attachmentPoints.length * damageST;
 				bulletHash = wD.gunBulletType+wD.range;
 				this._bullets[bulletHash] = {"bullet": wD.gunBulletType, "range": wD.range};
@@ -95,7 +96,7 @@ class Monster
 				// TODO flamethrower damage and stuff
 				damageST = wD.damage;
 				damageMT = damageST;
-				this._flamethrowers[tag+wD.damage+wD.range] = {"damage": wD.damage, "range": wD.range, "powers": wD.powers};
+				this._flamethrowers[tag+wD.range+wD.halfArc] = {"range": wD.range, "powers": wD.powers, "delay": wD.delay, "halfArc": wD.halfArc};
 				break;
 			case "MinionParams":
 			case "ChargeParams":
@@ -181,7 +182,10 @@ class Monster
         for (let p in powers){
 			var power = powers[p];
             s += " | ";
-            if(power.data.duration != undefined){
+						if(power.tag == "SizzlePower"){
+							s += power.data.dps + " dps";
+						}
+            else if(power.data.duration != undefined){
                 var damage = (power.data.damage != undefined) ? " <b>" + power.data.damage + "</b>" : "";
                 var duration = " " + round(power.data.duration/1000, 2) + "s";
                 var cap = power.data.caption != undefined ? power.data.caption : power.tag;
@@ -226,7 +230,9 @@ class Monster
 		for (let flamethrower in this._flamethrowers){
 			let attackDiv = document.createElement('div');
             var powers = this.convertPowersToString(this._flamethrowers[flamethrower].powers);
-			attackDiv.innerHTML = "Flamethrower: <b>" + this._flamethrowers[flamethrower].damage + "</b> damage, <b>" + this._flamethrowers[flamethrower].range + "</b> range" + powers;
+			attackDiv.innerHTML = "Flamethrower: <b>" + this._flamethrowers[flamethrower].delay + "</b> delay, " + 
+			"<b>" + this._flamethrowers[flamethrower].halfArc + "</b> halfArc, " + "<br/>" + 
+			"<b>" + this._flamethrowers[flamethrower].range + "</b> range" + powers;
 			div.appendChild(attackDiv);
 		}
 		for (let mortar in this._mortars){
