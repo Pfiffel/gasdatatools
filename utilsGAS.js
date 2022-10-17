@@ -626,6 +626,8 @@ function getObject(type, bPrev = false){
 		var object = data[i];
 		if(type == object.name) return object;
 	}
+	console.log("object not found: " + type);
+	return null;
 }
 function getItem(type){
 	for (let i = 0; i < gasData["item"].length; i++)
