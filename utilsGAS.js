@@ -199,8 +199,15 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 		}
 		else if(mainTag == "GunProcs")
 		{
-			s += classWrap(data.percentChance + "%", "cKeyValue") + " to affect gun shots:<br/>";
+			s += data.percentChance != 100 ? (classWrap(data.percentChance + "%", "cKeyValue") + " to affect gun shots:<br/>") : "Affects gun shots:<br/>";
 			s += AddEffectsText(data);
+		}
+		else if(mainTag == "PlayerGunStats")
+		{
+			let gundps = round(1000*data.damage/data.cooldown,2);
+			s += printKeyAndData("Gun", gundps + " DPS");
+			s += printKeyAndData("Range", data.range);
+			dps += gundps;
 		}
 		else if(mainTag == "PeriodicTriggerEffect")
 		{
@@ -325,6 +332,10 @@ function AddEffectsText(data)
 		{
 			s += printKeyAndData("DoT DPS", effectData.dps);
 			s += printKeyAndData("DoT Duration", ToTime(effectData.duration));
+		}
+		else if(effect == "VampEffect")
+		{
+			s += printKeyAndData("Vampiric Repair per hit", effectData.healing);
 		}
 	}
 	return s;
