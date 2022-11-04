@@ -276,6 +276,9 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 			prevCell.colSpan = 2;
 		}
 	}
+	if(countAoE > 1) prevCell.innerHTML += "<b>x"+countAoE+"</b>";
+	hashAoE = "";
+	countAoE = 0;
 	if(dps > 0) 
 	{
 		var dpsCell = makeCell(printKeyAndData("DPS", round(dps,2)), tbl.insertRow());
@@ -340,6 +343,8 @@ function AddEffectsText(data)
 	}
 	return s;
 }
+var hashAoE = "";
+var countAoE = 0;
 function GetTriggeredEffectString(tag, data)
 {
 	var s = ""; var damage = 0;
@@ -348,12 +353,18 @@ function GetTriggeredEffectString(tag, data)
 		s += printKeyAndData("Duration", ToTime(data.duration));
 	}
 	else if(tag == "ShotgunTrigger"){
-		if(data.tooltip != "") s += data.tooltip + "<br/>";
-		if(data.damage > 0) s += printKeyAndData("AoE Damage", data.damage);
-		s += printKeyAndData("Range", data.range, "", AddReticle(data.reticleColor));
-		s += printKeyAndData("Arc", (data.halfArc * 0.2) + "°");
-		s += AddEffectsText(data);
+		var newHashAoE = data.damage + data.range + data.halfArc;
+		countAoE += 1 + data.mirror;
+		if(hashAoE != newHashAoE)
+		{
+			if(data.tooltip != "") s += data.tooltip + "<br/>";
+			if(data.damage > 0) s += printKeyAndData("AoE Damage", data.damage);
+			s += printKeyAndData("Range", data.range, "", AddReticle(data.reticleColor));
+			s += printKeyAndData("Arc", (data.halfArc * 0.2) + "°");
+			s += AddEffectsText(data);
+		}
 		damage += data.damage;
+		hashAoE = newHashAoE;
 	}
 	else if(tag == "CooldownResetTrigger"){
 		s += "Reset cooldown on <b>trigger " + (data.triggerIndex+1) + "</b>" + "<br/>";
