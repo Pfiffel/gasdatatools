@@ -1,0 +1,37 @@
+{
+  "name": "Blood Imp",
+  "portrait": "Blood Imp",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Blast you all!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "A pox on your house!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Pestilence rain down!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Plague!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

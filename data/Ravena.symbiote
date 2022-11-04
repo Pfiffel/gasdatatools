@@ -1,0 +1,23 @@
+{
+  "description": "Ravena takes life essence where she can find it.",
+  "effects": [
+    {
+      "data": {
+        "percentChance": 100,
+        "statusEffects": [
+          {
+            "data": {
+              "healing": 10
+            },
+            "tag": "VampEffect"
+          }
+        ]
+      },
+      "tag": "GunProcs"
+    }
+  ],
+  "enemies": [],
+  "name": "Ravena",
+  "tier": 5
+}
+

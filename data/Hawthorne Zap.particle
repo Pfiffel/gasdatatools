@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 850,
+      "value": 8672770
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 1500,
+  "minLifetime": 1200,
+  "name": "Hawthorne Zap",
+  "objectType": "Hawthorne Thorn",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 500
+    },
+    {
+      "frac": 900,
+      "value": 500
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 8672770,
+  "startScale": 10,
+  "stayLow": 1
+}
+

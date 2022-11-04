@@ -23,6 +23,7 @@
           }
         ],
         "percentChance": 100,
+        "reticleColor": 11393912,
         "targetingRange": 340
       },
       "tag": "PeriodicTriggerEffect"

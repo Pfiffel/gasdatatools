@@ -1,0 +1,181 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Brood Maggot",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 13290433,
+      "height": 60,
+      "mirror": 1,
+      "name": "Body",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 56,
+          "y": 0
+        },
+        {
+          "x": 50,
+          "y": 8
+        },
+        {
+          "x": 40,
+          "y": 15
+        },
+        {
+          "x": 29,
+          "y": 18
+        },
+        {
+          "x": 18,
+          "y": 25
+        },
+        {
+          "x": 3,
+          "y": 25
+        },
+        {
+          "x": -8,
+          "y": 30
+        },
+        {
+          "x": -19,
+          "y": 25
+        },
+        {
+          "x": -32,
+          "y": 23
+        },
+        {
+          "x": -41,
+          "y": 14
+        },
+        {
+          "x": -57,
+          "y": 10
+        },
+        {
+          "x": -66,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 13290433,
+      "height": 60,
+      "mirror": 1,
+      "name": "Stripe",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -41,
+          "y": 14
+        },
+        {
+          "x": -57,
+          "y": 10
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 13290433,
+      "height": 60,
+      "mirror": 1,
+      "name": "Stripe",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -19,
+          "y": 25
+        },
+        {
+          "x": -32,
+          "y": 23
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 13290433,
+      "height": 60,
+      "mirror": 1,
+      "name": "Stripe",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 3,
+          "y": 25
+        },
+        {
+          "x": -8,
+          "y": 30
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 13290433,
+      "height": 60,
+      "mirror": 1,
+      "name": "Stripe",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 29,
+          "y": 18
+        },
+        {
+          "x": 18,
+          "y": 25
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 13290433,
+      "height": 60,
+      "mirror": 1,
+      "name": "Stripe",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 50,
+          "y": 8
+        },
+        {
+          "x": 41,
+          "y": 15
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 40,
+      "maxDistPercent": 100,
+      "minDistPercent": 90,
+      "particleType": "Wrack",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Wrack",
+  "sound": "",
+  "volume": 100
+}
+

@@ -1,0 +1,157 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Storm Crow",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 16745485,
+      "height": 59,
+      "mirror": 1,
+      "name": "Feet",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -52,
+          "y": 9
+        },
+        {
+          "x": -45,
+          "y": 15
+        },
+        {
+          "x": -65,
+          "y": 36
+        },
+        {
+          "x": -66,
+          "y": 24
+        },
+        {
+          "x": -74,
+          "y": 14
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4342604,
+      "height": 60,
+      "mirror": 1,
+      "name": "Body",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 45,
+          "y": 11
+        },
+        {
+          "x": 40,
+          "y": 15
+        },
+        {
+          "x": 29,
+          "y": 18
+        },
+        {
+          "x": 18,
+          "y": 25
+        },
+        {
+          "x": 31,
+          "y": 97
+        },
+        {
+          "x": -1,
+          "y": 66
+        },
+        {
+          "x": -19,
+          "y": 25
+        },
+        {
+          "x": -32,
+          "y": 23
+        },
+        {
+          "x": -41,
+          "y": 14
+        },
+        {
+          "x": -59,
+          "y": 19
+        },
+        {
+          "x": -66,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16745485,
+      "height": 60,
+      "mirror": 1,
+      "name": "Beak",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 69,
+          "y": 0
+        },
+        {
+          "x": 45,
+          "y": 11
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 16711680,
+      "height": 61,
+      "mirror": 1,
+      "name": "Feet",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 37,
+          "y": 7
+        },
+        {
+          "x": 31,
+          "y": 12
+        },
+        {
+          "x": 22,
+          "y": 18
+        },
+        {
+          "x": 20,
+          "y": 9
+        },
+        {
+          "x": 26,
+          "y": 7
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

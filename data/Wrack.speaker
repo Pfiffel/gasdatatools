@@ -1,0 +1,37 @@
+{
+  "name": "Wrack",
+  "portrait": "Wrack",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Writhe in pain!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Twist in agony!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Weep and gnash your teeth!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Suffer in anguish!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

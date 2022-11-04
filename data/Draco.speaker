@@ -1,0 +1,37 @@
+{
+  "name": "Draco",
+  "portrait": "Draco",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I am one with the flames.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Dragon claw, dragon fire, dragon heart.\n",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "The dragon fire consumes all.\n",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Do not meddle with my affairs!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

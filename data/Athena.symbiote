@@ -3,12 +3,12 @@
   "effects": [
     {
       "data": {
-        "activeWhile": 19,
+        "activeWhile": 0,
         "shield": {
           "color": 16237886,
           "left": -1200,
           "level": 0,
-          "maxStrength": 400,
+          "maxStrength": 180,
           "right": 1200
         }
       },

@@ -7,9 +7,10 @@
         "params": [
           {
             "data": {
+              "autoAim": 0,
               "damage": 200,
               "delay": 500,
-              "drawReticle": 1,
+              "drawReticle": 0,
               "drawTooltip": 1,
               "explosionType": "Red Wizard Grenade",
               "halfArc": 1800,
@@ -46,9 +47,10 @@
           },
           {
             "data": {
+              "autoAim": 0,
               "damage": 200,
               "delay": 500,
-              "drawReticle": 1,
+              "drawReticle": 0,
               "drawTooltip": 0,
               "explosionType": "Red Wizard Grenade",
               "halfArc": 1800,
@@ -85,6 +87,7 @@
           }
         ],
         "percentChance": 100,
+        "reticleColor": 13379624,
         "targetingRange": 302
       },
       "tag": "PeriodicTriggerEffect"

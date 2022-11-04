@@ -1,0 +1,24 @@
+{
+  "description": "Gnaw chews the bones of his defeated foes.",
+  "effects": [
+    {
+      "data": {
+        "cooldown": 500,
+        "damage": 50,
+        "emitterType": "Gnaw Trail",
+        "f": 0,
+        "halfArc": 1800,
+        "objectType": "Gnaw Bullet",
+        "range": 150,
+        "soundPack": "Hercules Small Guns",
+        "speed": 800,
+        "turretBone": ""
+      },
+      "tag": "PlayerGunStats"
+    }
+  ],
+  "enemies": [],
+  "name": "Gnaw",
+  "tier": 3
+}
+

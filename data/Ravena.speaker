@@ -1,0 +1,37 @@
+{
+  "name": "Ravena",
+  "portrait": "Ravena",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I take that which I need to survive.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I'm thirsty. For blood.\n",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I give. But I take.\n",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "My thirst must be slaked!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

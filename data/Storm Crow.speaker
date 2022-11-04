@@ -1,0 +1,37 @@
+{
+  "name": "Storm Crow",
+  "portrait": "Storm Crow",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The portents are ill.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The omens augur doom.\n",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Bad news arrives.\n",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Only gloom can come today.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

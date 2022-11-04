@@ -1,0 +1,31 @@
+{
+  "description": "Brood Queen protects her children.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "count": 1,
+            "damage": 100,
+            "emitterType": "",
+            "objectType": "Brood Maggot",
+            "range": 310,
+            "sound": "Player_Hercules_ZeonRocket_Launch",
+            "speed": 400,
+            "tag": "",
+            "timeGap": 300,
+            "tweenType": "QUADIN",
+            "volume": 50
+          },
+          "tag": "SharkletTrigger"
+        },
+        "when": 11
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Brood Queen",
+  "tier": 6
+}
+

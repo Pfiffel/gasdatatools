@@ -1,0 +1,37 @@
+{
+  "name": "Hawthorne",
+  "portrait": "Hawthorne",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Pierced by thorns!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Enter my barbed embrace.\n",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Beware my spiked branches.\n",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "My spines will rend flesh.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

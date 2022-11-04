@@ -1,0 +1,29 @@
+{
+  "description": "Atomica fights for truth and justice.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": -50,
+            "duration": 5000,
+            "emitterType": "",
+            "glyphCount": 0,
+            "glyphRadius": 0,
+            "glyphType": "",
+            "noStack": 1,
+            "statType": 10,
+            "tag": "Atomica Shrinkage"
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 11
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Atomica",
+  "tier": 6
+}
+

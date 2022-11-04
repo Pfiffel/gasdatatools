@@ -1,0 +1,48 @@
+{
+  "description": "Hawthorne entwines his enemies in dangerous brambles.",
+  "effects": [
+    {
+      "data": {
+        "range": 300,
+        "reticleColor": 9723392,
+        "statusEffects": [
+          {
+            "data": {
+              "duration": 1500
+            },
+            "tag": "StunEffect"
+          },
+          {
+            "data": {
+              "arcOffset": 0,
+              "halfArc": 300,
+              "maxDist": 6,
+              "minDist": 3,
+              "particleType": "Hawthorne Zap",
+              "spacing": 20
+            },
+            "tag": "ParticleLineEffect"
+          },
+          {
+            "data": {
+              "arcOffset": 0,
+              "halfArc": 100,
+              "maxDist": 6,
+              "minDist": 3,
+              "particleType": "Hawthorne Zap 2",
+              "spacing": 50
+            },
+            "tag": "ParticleLineEffect"
+          }
+        ],
+        "targets": 1,
+        "when": 1
+      },
+      "tag": "TriggeredRandomTargetEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Hawthorne",
+  "tier": 5
+}
+

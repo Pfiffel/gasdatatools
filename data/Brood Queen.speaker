@@ -1,0 +1,37 @@
+{
+  "name": "Brood Queen",
+  "portrait": "Brood Queen",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Do not harm my brood.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Oh, my slimy, wriggling babies!\n",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Oh my lovely little maggots!\n",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Oh my wormlings, come to mother!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

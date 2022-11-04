@@ -1,0 +1,31 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Hawthorne Shaft",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16579836,
+      "height": -1,
+      "mirror": 1,
+      "name": "Glyph",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 37,
+          "y": 11
+        },
+        {
+          "x": -37,
+          "y": 11
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

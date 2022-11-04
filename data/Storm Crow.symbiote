@@ -1,0 +1,31 @@
+{
+  "description": "Storm Crow heralds ill tidings.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "count": 1,
+            "damage": 100,
+            "emitterType": "Storm Crow",
+            "objectType": "Storm Crow",
+            "range": 320,
+            "sound": "",
+            "speed": 200,
+            "tag": "",
+            "timeGap": 10,
+            "tweenType": "QUARTIN",
+            "volume": 50
+          },
+          "tag": "SharkletTrigger"
+        },
+        "when": 1
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Storm Crow",
+  "tier": 6
+}
+

@@ -1,43 +1,43 @@
 {
-  "description": "Anger Spirit rages in frustration at the universe.",
+  "description": "Draco burns with power.",
   "effects": [
     {
       "data": {
-        "cooldown": 350,
+        "cooldown": 2500,
         "params": [
           {
             "data": {
-              "autoAim": 0,
-              "damage": 200,
+              "autoAim": 1,
+              "damage": 120,
               "delay": 0,
               "drawReticle": 0,
               "drawTooltip": 1,
-              "explosionType": "Anger Spirit Blast",
-              "halfArc": 1800,
+              "explosionType": "Draco Blast",
+              "halfArc": 150,
               "mirror": 0,
               "offset": {
                 "x": 0,
                 "y": 0
               },
-              "range": 250,
-              "reticleColor": 14879778,
+              "range": 325,
+              "reticleColor": 12530441,
               "statusEffects": [],
               "tag": "",
               "targetingDelay": 0,
-              "tooltip": ""
+              "tooltip": "Fire Blast"
             },
             "tag": "ShotgunTrigger"
           }
         ],
-        "percentChance": 9,
-        "reticleColor": 14879778,
-        "targetingRange": 250
+        "percentChance": 100,
+        "reticleColor": 12530441,
+        "targetingRange": 325
       },
       "tag": "PeriodicTriggerEffect"
     }
   ],
   "enemies": [],
-  "name": "Anger Spirit",
-  "tier": 3
+  "name": "Draco",
+  "tier": 4
 }
 

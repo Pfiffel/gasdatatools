@@ -1,0 +1,40 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 13395752
+    },
+    {
+      "frac": 750,
+      "value": 13395752
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 1000,
+  "minLifetime": 150,
+  "name": "Wrack",
+  "objectType": "Wrack",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 500
+    },
+    {
+      "frac": 900,
+      "value": 500
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 13395752,
+  "startScale": 10,
+  "stayLow": 1
+}
+

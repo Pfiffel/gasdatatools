@@ -1,0 +1,47 @@
+{
+  "description": "Wrack holds grievance in his heart.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 0,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Wrack",
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 305,
+            "reticleColor": 13793802,
+            "statusEffects": [
+              {
+                "data": {
+                  "dps": 50,
+                  "duration": 3000,
+                  "reducedDurationOnBoss": 0
+                },
+                "tag": "DoTEffect"
+              }
+            ],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "Necrotic Burst"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 7
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Wrack",
+  "tier": 5
+}
+
