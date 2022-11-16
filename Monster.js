@@ -11,6 +11,7 @@ class Monster
 		this._flamethrowers = {};
 		this._mortars = {};
 		this._mines = {};
+		this._charges = {};
 	}
 	getTier(){
 		return parseInt(Math.sqrt(this._xp));
@@ -80,12 +81,12 @@ class Monster
 			case "MortarParams":
 				damageST = wD.damage;
 				damageMT = damageST;
-				this._mortars[tag+wD.damage+wD.radius] = {"damage": wD.damage, "radius": wD.radius};
+				this._mortars[tag+wD.damage+wD.radius] = {"damage": wD.damage, "radius": wD.radius, "powers": wD.powers};
 				break;
 			case "MinelayerParams":
 				damageST = wD.damage;
 				damageMT = damageST;
-				this._mines[tag+wD.damage+wD.radius] = {"damage": wD.damage, "radius": wD.radius};
+				this._mines[tag+wD.damage+wD.radius] = {"damage": wD.damage, "radius": wD.radius, "powers": wD.powers};
 				break;
 			case "ShotgunParams":
 				damageST = wD.damage;
@@ -98,8 +99,9 @@ class Monster
 				damageMT = damageST;
 				this._flamethrowers[tag+wD.range+wD.halfArc] = {"range": wD.range, "powers": wD.powers, "delay": wD.delay, "halfArc": wD.halfArc};
 				break;
-			case "MinionParams":
 			case "ChargeParams":
+				this._charges[tag+wD.range+wD.extraRange+wD.speed] = {"range": wD.range, "extraRange": wD.extraRange, "speed": wD.speed};
+			case "MinionParams":
 			case "NullParams":
 				break;
 			default:
@@ -238,12 +240,18 @@ class Monster
 		for (let mortar in this._mortars){
 			let attackDiv = document.createElement('div');
             var num = this._mortars[mortar].salvoes;
-			attackDiv.innerHTML = (num != undefined ? num + " Mortars" : "Mortar") + ": <b>" + this._mortars[mortar].damage + "</b> damage, <b>" + this._mortars[mortar].radius + "</b> radius";
+			attackDiv.innerHTML = (num != undefined ? num + " Mortars" : "Mortar") + ": <b>" + this._mortars[mortar].damage + "</b> damage, <b>" + this._mortars[mortar].radius + "</b> radius" + this.convertPowersToString(this._mortars[mortar].powers);
 			div.appendChild(attackDiv);
 		}
 		for (let mine in this._mines){
 			let attackDiv = document.createElement('div');
-			attackDiv.innerHTML = "Mine: <b>" + this._mines[mine].damage + "</b> damage, <b>" + this._mines[mine].radius + "</b> radius";
+			let dmg = this._mines[mine].damage;
+			attackDiv.innerHTML = "Mine: " + (dmg != 0 ? "<b>" + dmg + "</b> damage, " : "") + "<b>" + this._mines[mine].radius + "</b> radius" + this.convertPowersToString(this._mines[mine].powers);
+			div.appendChild(attackDiv);
+		}
+		for (let charge in this._charges){
+			let attackDiv = document.createElement('div');
+			attackDiv.innerHTML = "Charge: <b>" + this._charges[charge].range + "</b> range (+" + this._charges[charge].extraRange + "), <b>" + this._charges[charge].speed + "</b> speed";
 			div.appendChild(attackDiv);
 		}
 		if(this.data.burrowDetectRange > 0)
