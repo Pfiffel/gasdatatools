@@ -39,7 +39,7 @@ function parseData()
 					addLine("New " + forChamp + file, divList);
 					divList.appendChild(MakeStatsTable(entity, file == "accolade" ? 0 : entity.tier));
 				}
-				else if (file == "monster" || file == "gunbullet")
+				else if (file == "monster" || file == "gunbullet" || file == "champion")
 				{
 					addLine("New " + file + ": <b>" + entity.name + "</b>", divList);
 					let divSprite = document.createElement('div');

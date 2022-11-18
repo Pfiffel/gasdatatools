@@ -21,7 +21,9 @@ const STAT_TYPES = {
 	"9": ["SHIELD_STRENGTH", "Shield Strengh"],
 	"10": ["RADIUS", "Hull Radius"],
 	"11": ["TRIGGER_COST", "Trigger Energy Cost"],
-	"12": ["ULT_FIRE_RATE", "Trigger 4 Rate of Fire"]
+	"12": ["ULT_FIRE_RATE", "Trigger 4 Rate of Fire"],
+	"13": ["TOP_SPEED", "Top Speed"],
+	"14": ["GUN_ARC", "Gun Arc"]
 };
 const ACTIVE_WHILE_NAMES = {
 	"0": ["ALWAYS", "always"],
