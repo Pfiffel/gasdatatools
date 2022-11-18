@@ -1,0 +1,54 @@
+{
+  "champion": "Peacemaker",
+  "displayName": "Bomblet Spread",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "damage": 0,
+            "delay": 0,
+            "halfArc": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 10,
+            "statusEffects": [],
+            "targetingDelay": 0
+          },
+          "tag": "ShotgunTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Peacemaker 1 Shotgun 1",
+        "tooltip": "On Bomblet Dispenser:"
+      },
+      "tag": "TaggedTriggerBonus"
+    },
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "damage": 0,
+            "delay": 0,
+            "halfArc": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 10,
+            "statusEffects": [],
+            "targetingDelay": 0
+          },
+          "tag": "ShotgunTriggerBonus"
+        },
+        "showTooltipStats": 0,
+        "tag": "Peacemaker 1 Shotgun 2",
+        "tooltip": ""
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Peacemaker Bomblet Spread"
+}
+

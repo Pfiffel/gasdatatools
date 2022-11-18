@@ -1,0 +1,37 @@
+{
+  "champion": "Peacemaker",
+  "displayName": "Enhanced Reload",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "healAmount": 20,
+            "usePercentInTooltip": 1
+          },
+          "tag": "HealTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Peacemaker 3 Heal",
+        "tooltip": "On Reload:"
+      },
+      "tag": "TaggedTriggerBonus"
+    },
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "refillPercentage": 20
+          },
+          "tag": "ShieldRefillTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Peacemaker 3 ShieldRefill",
+        "tooltip": ""
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Peacemaker Enhanced Reload"
+}
+

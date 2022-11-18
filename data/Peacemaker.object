@@ -1,0 +1,293 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Turret Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 82,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [
+    {
+      "name": "Turret",
+      "p": {
+        "x": -20,
+        "y": 0
+      }
+    }
+  ],
+  "floppiness": 0,
+  "name": "Peacemaker",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 12107206,
+      "height": 21,
+      "mirror": 1,
+      "name": "Trigger",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -24,
+          "y": 23
+        },
+        {
+          "x": -24,
+          "y": 41
+        },
+        {
+          "x": -29,
+          "y": 41
+        },
+        {
+          "x": -32,
+          "y": 25
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 12107206,
+      "height": 22,
+      "mirror": 1,
+      "name": "Grip",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -39,
+          "y": 11
+        },
+        {
+          "x": -57,
+          "y": 19
+        },
+        {
+          "x": -53,
+          "y": 28
+        },
+        {
+          "x": -39,
+          "y": 30
+        },
+        {
+          "x": -10,
+          "y": 30
+        },
+        {
+          "x": 2,
+          "y": 37
+        },
+        {
+          "x": 40,
+          "y": 31
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 12107206,
+      "height": 24,
+      "mirror": 1,
+      "name": "Main Barrel",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 11,
+          "y": 24
+        },
+        {
+          "x": 27,
+          "y": 24
+        },
+        {
+          "x": 46,
+          "y": 21
+        },
+        {
+          "x": 59,
+          "y": 18
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 12107206,
+      "height": 26,
+      "mirror": 1,
+      "name": "Forward Projection",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 27,
+          "y": 9
+        },
+        {
+          "x": 44,
+          "y": 9
+        },
+        {
+          "x": 68,
+          "y": 8
+        },
+        {
+          "x": 83,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4286540,
+      "height": 28,
+      "mirror": 1,
+      "name": "Cylinder Rear",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -47,
+          "y": 7
+        },
+        {
+          "x": -44,
+          "y": 15
+        },
+        {
+          "x": -37,
+          "y": 23
+        },
+        {
+          "x": -30,
+          "y": 25
+        },
+        {
+          "x": -21,
+          "y": 26
+        },
+        {
+          "x": -16,
+          "y": 26
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4286540,
+      "height": 28,
+      "mirror": 1,
+      "name": "Cylinder",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -14,
+          "y": 26
+        },
+        {
+          "x": 27,
+          "y": 26
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 12107206,
+      "height": 34,
+      "mirror": 1,
+      "name": "Cylinder Upper Detail",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -19,
+          "y": 26
+        },
+        {
+          "x": -10,
+          "y": 26
+        },
+        {
+          "x": -6,
+          "y": 21
+        },
+        {
+          "x": 11,
+          "y": 20
+        },
+        {
+          "x": 27,
+          "y": 20
+        },
+        {
+          "x": 27,
+          "y": 9
+        },
+        {
+          "x": 2,
+          "y": 7
+        },
+        {
+          "x": -5,
+          "y": 4
+        },
+        {
+          "x": -9,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 12107206,
+      "height": 36,
+      "mirror": 1,
+      "name": "Main Hammer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -58,
+          "y": 6
+        },
+        {
+          "x": -37,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

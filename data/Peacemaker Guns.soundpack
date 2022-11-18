@@ -1,0 +1,10 @@
+{
+  "name": "Peacemaker Guns",
+  "sounds": [
+    "Player_Peacemaker_MainGun_01",
+    "Player_Peacemaker_MainGun_02",
+    "Player_Peacemaker_MainGun_03"
+  ],
+  "volume": 130
+}
+

@@ -1,0 +1,16 @@
+{
+  "champion": "Peacemaker",
+  "displayName": "Scattergun",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 90,
+        "statType": 14
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Peacemaker Scattergun"
+}
+

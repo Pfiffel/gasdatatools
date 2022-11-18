@@ -3,32 +3,18 @@
   "effects": [
     {
       "data": {
-        "cooldown": 30000,
-        "params": [
-          {
-            "data": {
-              "duration": 15000,
-              "stats": {
-                "cooldown": 800,
-                "damage": 48,
-                "emitterType": "Goblin Trail",
-                "f": 0,
-                "halfArc": 1100,
-                "objectType": "Goblin Bullet",
-                "range": 290,
-                "soundPack": "Wasp Guns",
-                "speed": 800,
-                "turretBone": ""
-              },
-              "tag": ""
-            },
-            "tag": "ExtraGunTrigger"
-          }
-        ],
-        "percentChance": 100,
-        "targetingRange": 0
+        "cooldown": 800,
+        "damage": 24,
+        "emitterType": "Goblin Trail",
+        "f": 0,
+        "halfArc": 1100,
+        "objectType": "Goblin Bullet",
+        "range": 290,
+        "soundPack": "Wasp Guns",
+        "speed": 800,
+        "turretBone": ""
       },
-      "tag": "PeriodicTriggerEffect"
+      "tag": "PlayerGunStats"
     }
   ],
   "enemies": [],

@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 100,
+      "maxDistPercent": 100,
+      "minDistPercent": 70,
+      "particleType": "Peacemaker Cylinder Blast",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Peacemaker Cylinder Blast",
+  "sound": "Player_Wasp_PosTorpedo_Explosion",
+  "volume": 125
+}
+

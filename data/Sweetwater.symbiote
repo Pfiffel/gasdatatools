@@ -3,27 +3,27 @@
   "effects": [
     {
       "data": {
-        "cooldown": 15000,
-        "params": [
-          {
-            "data": {
-              "amount": -25,
-              "duration": 5000,
-              "emitterType": "",
-              "glyphCount": 2,
-              "glyphRadius": 80,
-              "glyphType": "Trigger Cost Glyph",
-              "noStack": 0,
-              "statType": 11,
-              "tag": ""
-            },
-            "tag": "StatBoostTrigger"
-          }
-        ],
-        "percentChance": 100,
-        "targetingRange": 0
+        "activeWhile": 0,
+        "amount": -5,
+        "statType": 11
       },
-      "tag": "PeriodicTriggerEffect"
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 15,
+        "statType": 1
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 15,
+        "statType": 7
+      },
+      "tag": "ItemStat"
     }
   ],
   "enemies": [],

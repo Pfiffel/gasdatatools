@@ -1,0 +1,16 @@
+{
+  "champion": "Peacemaker",
+  "displayName": "Quickdraw",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 15,
+        "statType": 13
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Peacemaker Quickdraw"
+}
+

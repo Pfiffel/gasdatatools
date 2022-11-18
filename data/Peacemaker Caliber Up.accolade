@@ -1,0 +1,31 @@
+{
+  "champion": "Peacemaker",
+  "displayName": "Caliber Up",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "damage": 100,
+            "delay": 0,
+            "halfArc": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 0,
+            "statusEffects": [],
+            "targetingDelay": 0
+          },
+          "tag": "ShotgunTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Peacemaker 4 Shotgun",
+        "tooltip": "On Hand Cannon:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Peacemaker Caliber Up"
+}
+

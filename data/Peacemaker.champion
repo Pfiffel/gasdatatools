@@ -1,0 +1,366 @@
+{
+  "acceleration": 850,
+  "angularAccel": 80,
+  "blurb": "Heavy blaster tank",
+  "choosable": 1,
+  "equipment": [],
+  "forwardThrustEmitter": "Peacemaker Main Thruster",
+  "guns": [
+    {
+      "cooldown": 400,
+      "damage": 75,
+      "emitterType": "Peacemaker Guns",
+      "f": 0,
+      "halfArc": 150,
+      "objectType": "Peacemaker Bullet",
+      "range": 300,
+      "soundPack": "Peacemaker Guns",
+      "speed": 1500,
+      "turretBone": "Turret"
+    }
+  ],
+  "healRate": 4,
+  "hp": 800,
+  "name": "Peacemaker",
+  "objectType": "Peacemaker",
+  "radius": 20,
+  "reverseThrustEmitter": "Peacemaker Reverse Thruster",
+  "rotationDecay": 32,
+  "shields": [
+    {
+      "color": 5012828,
+      "left": -1800,
+      "level": 0,
+      "maxStrength": 300,
+      "right": 1800
+    }
+  ],
+  "speedLimit": 240,
+  "triggers": [
+    {
+      "cooldown": 1000,
+      "description": "Fires three explosive canister charges.",
+      "icon": "triorb",
+      "mana": 12,
+      "name": "Bomblet Dispenser",
+      "params": [
+        {
+          "data": {
+            "autoAim": 0,
+            "damage": 75,
+            "delay": 350,
+            "drawReticle": 1,
+            "drawTooltip": 0,
+            "explosionType": "Peacemaker Bomblet",
+            "halfArc": 1800,
+            "mirror": 1,
+            "offset": {
+              "x": 295,
+              "y": 69
+            },
+            "range": 80,
+            "reticleColor": 11184810,
+            "statusEffects": [],
+            "tag": "Peacemaker 1 Shotgun 1",
+            "targetingDelay": 0,
+            "tooltip": ""
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "autoAim": 0,
+            "damage": 75,
+            "delay": 225,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Peacemaker Bomblet",
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 174,
+              "y": 0
+            },
+            "range": 80,
+            "reticleColor": 11184810,
+            "statusEffects": [],
+            "tag": "Peacemaker 1 Shotgun 2",
+            "targetingDelay": 0,
+            "tooltip": ""
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "delay": 0,
+            "duration": 350,
+            "emitterType": "Wasp Mines",
+            "mirror": 1,
+            "objectType": "Wasp Mine",
+            "sound": "",
+            "tag": "",
+            "target": {
+              "x": 295,
+              "y": 69
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        },
+        {
+          "data": {
+            "delay": 0,
+            "duration": 225,
+            "emitterType": "Wasp Mines",
+            "mirror": 0,
+            "objectType": "Wasp Mine",
+            "sound": "",
+            "tag": "",
+            "target": {
+              "x": 190,
+              "y": 0
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        }
+      ],
+      "sound": "Player_Warthog_PolaricDetonation",
+      "volume": 50
+    },
+    {
+      "cooldown": 5000,
+      "description": "Fires six blasts in quick succession.",
+      "icon": "chaingun",
+      "mana": 15,
+      "name": "Cylinder Dump",
+      "params": [
+        {
+          "data": {
+            "autoAim": 0,
+            "damage": 75,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Peacemaker Cylinder Blast",
+            "halfArc": 150,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 300,
+            "reticleColor": 11184810,
+            "statusEffects": [],
+            "tag": "Peacemaker 2 Shotgun 1",
+            "targetingDelay": 0,
+            "tooltip": ""
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "autoAim": 0,
+            "damage": 75,
+            "delay": 0,
+            "drawReticle": 0,
+            "drawTooltip": 0,
+            "explosionType": "Peacemaker Cylinder Blast",
+            "halfArc": 150,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 300,
+            "reticleColor": 11184810,
+            "statusEffects": [],
+            "tag": "Peacemaker 2 Shotgun 2",
+            "targetingDelay": 150,
+            "tooltip": ""
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "autoAim": 0,
+            "damage": 75,
+            "delay": 0,
+            "drawReticle": 0,
+            "drawTooltip": 0,
+            "explosionType": "Peacemaker Cylinder Blast",
+            "halfArc": 150,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 300,
+            "reticleColor": 11184810,
+            "statusEffects": [],
+            "tag": "Peacemaker 2 Shotgun 3",
+            "targetingDelay": 300,
+            "tooltip": ""
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "autoAim": 0,
+            "damage": 75,
+            "delay": 0,
+            "drawReticle": 0,
+            "drawTooltip": 0,
+            "explosionType": "Peacemaker Cylinder Blast",
+            "halfArc": 150,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 300,
+            "reticleColor": 11184810,
+            "statusEffects": [],
+            "tag": "Peacemaker 2 Shotgun 4",
+            "targetingDelay": 450,
+            "tooltip": ""
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "autoAim": 0,
+            "damage": 75,
+            "delay": 0,
+            "drawReticle": 0,
+            "drawTooltip": 0,
+            "explosionType": "Peacemaker Cylinder Blast",
+            "halfArc": 150,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 300,
+            "reticleColor": 11184810,
+            "statusEffects": [],
+            "tag": "Peacemaker 2 Shotgun 5",
+            "targetingDelay": 600,
+            "tooltip": ""
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "autoAim": 0,
+            "damage": 75,
+            "delay": 0,
+            "drawReticle": 0,
+            "drawTooltip": 0,
+            "explosionType": "Peacemaker Cylinder Blast",
+            "halfArc": 150,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 300,
+            "reticleColor": 11184810,
+            "statusEffects": [],
+            "tag": "Peacemaker 2 Shotgun 6",
+            "targetingDelay": 750,
+            "tooltip": ""
+          },
+          "tag": "ShotgunTrigger"
+        }
+      ],
+      "sound": "",
+      "volume": 100
+    },
+    {
+      "cooldown": 10000,
+      "description": "Repairs hull and recharges shields.",
+      "icon": "armor-upgrade",
+      "mana": 10,
+      "name": "Reload",
+      "params": [
+        {
+          "data": {
+            "applyToMana": 0,
+            "asPercentage": 1,
+            "glyphCount": 4,
+            "glyphDuration": 500,
+            "glyphRadius": 50,
+            "glyphType": "Heal Indicator",
+            "healAmount": 50,
+            "tag": "Peacemaker 3 Heal"
+          },
+          "tag": "HealTrigger"
+        },
+        {
+          "data": {
+            "glyphCount": 0,
+            "glyphDuration": 0,
+            "glyphRadius": 0,
+            "glyphType": "Heal Indicator",
+            "refillPercentage": 50,
+            "shieldIndex": -1,
+            "tag": "Peacemaker 3 ShieldRefill"
+          },
+          "tag": "ShieldRefillTrigger"
+        }
+      ],
+      "sound": "Player_Peacemaker_Reload",
+      "volume": 125
+    },
+    {
+      "cooldown": 30000,
+      "description": "Fires a devastating blast and enhances firing speed.",
+      "icon": "icicles-fence",
+      "mana": 10,
+      "name": "Hand Cannon",
+      "params": [
+        {
+          "data": {
+            "autoAim": 0,
+            "damage": 500,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Peacemaker Hand Cannon Blast",
+            "halfArc": 150,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 300,
+            "reticleColor": 11184810,
+            "statusEffects": [],
+            "tag": "Peacemaker 4 Shotgun",
+            "targetingDelay": 0,
+            "tooltip": ""
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "amount": 100,
+            "duration": 6000,
+            "emitterType": "",
+            "glyphCount": 8,
+            "glyphRadius": 70,
+            "glyphType": "Hand Cannon Glyph",
+            "noStack": 0,
+            "statType": 5,
+            "tag": "Peacemaker 4 StatBoost"
+          },
+          "tag": "StatBoostTrigger"
+        }
+      ],
+      "sound": "",
+      "volume": 75
+    }
+  ]
+}
+

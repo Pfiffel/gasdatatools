@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 200,
+      "maxDistPercent": 100,
+      "minDistPercent": 85,
+      "particleType": "Peacemaker Cylinder Blast",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 200,
+      "maxDistPercent": 80,
+      "minDistPercent": 40,
+      "particleType": "Peacemaker Cylinder Blast",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Peacemaker Hand Cannon Blast",
+  "sound": "Player_Peacemaker_HandCannon",
+  "volume": 100
+}
+

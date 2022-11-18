@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 20,
+      "maxDistPercent": 100,
+      "minDistPercent": 80,
+      "particleType": "Peacemaker Bomblet 2",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 15,
+      "maxDistPercent": 75,
+      "minDistPercent": 30,
+      "particleType": "Peacemaker Bomblet",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Peacemaker Bomblet",
+  "sound": "Enemy_IronPurifier_Med_Mine_Explode",
+  "volume": 50
+}
+

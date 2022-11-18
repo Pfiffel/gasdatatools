@@ -1,0 +1,23 @@
+{
+  "champion": "Peacemaker",
+  "displayName": "Autocannon",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "amount": 25,
+            "duration": 0
+          },
+          "tag": "StatBoostTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Peacemaker 4 StatBoost",
+        "tooltip": "On Hand Cannon:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Peacemaker Autocannon"
+}
+
