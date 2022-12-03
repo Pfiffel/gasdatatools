@@ -1,0 +1,287 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 34,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Royal Spitfire Turret",
+  "shapes": [
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 1513239,
+      "height": 3,
+      "mirror": 0,
+      "name": "Spark",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 18,
+          "y": 5
+        },
+        {
+          "x": 20,
+          "y": 0
+        },
+        {
+          "x": 23,
+          "y": 9
+        },
+        {
+          "x": 4,
+          "y": 23
+        },
+        {
+          "x": 0,
+          "y": 18
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11842740,
+      "height": 3,
+      "mirror": 1,
+      "name": "Turret",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 18,
+          "y": 7
+        },
+        {
+          "x": 17,
+          "y": 10
+        },
+        {
+          "x": 12,
+          "y": 17
+        },
+        {
+          "x": 3,
+          "y": 22
+        },
+        {
+          "x": -17,
+          "y": 22
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11506944,
+      "height": 4,
+      "mirror": 1,
+      "name": "Hose",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -18,
+          "y": 22
+        },
+        {
+          "x": -24,
+          "y": 32
+        },
+        {
+          "x": 8,
+          "y": 32
+        },
+        {
+          "x": 20,
+          "y": 24
+        },
+        {
+          "x": 29,
+          "y": 13
+        },
+        {
+          "x": 31,
+          "y": 5
+        },
+        {
+          "x": 18,
+          "y": 7
+        },
+        {
+          "x": 17,
+          "y": 10
+        },
+        {
+          "x": 12,
+          "y": 17
+        },
+        {
+          "x": 3,
+          "y": 22
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 5,
+      "mirror": 1,
+      "name": "Turret",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 34,
+          "y": 5
+        },
+        {
+          "x": 14,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 6961157,
+      "height": 5,
+      "mirror": 1,
+      "name": "Tank",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -17,
+          "y": 25
+        },
+        {
+          "x": -25,
+          "y": 33
+        },
+        {
+          "x": -45,
+          "y": 33
+        },
+        {
+          "x": -53,
+          "y": 27
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -13,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 5,
+      "mirror": 1,
+      "name": "Rivet",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 7,
+          "y": 1
+        },
+        {
+          "x": 5,
+          "y": 3
+        },
+        {
+          "x": 3,
+          "y": 3
+        },
+        {
+          "x": 1,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 6,
+      "mirror": 1,
+      "name": "Tank Detail",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -36,
+          "y": 8
+        },
+        {
+          "x": -40,
+          "y": 9
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 6,
+      "mirror": 1,
+      "name": "Tank Detail",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -7,
+          "y": 12
+        },
+        {
+          "x": -7,
+          "y": 18
+        },
+        {
+          "x": -26,
+          "y": 18
+        },
+        {
+          "x": -26,
+          "y": 12
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

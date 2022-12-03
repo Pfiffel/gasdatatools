@@ -1,0 +1,8 @@
+{
+  "name": "Royal Comet Death Cries",
+  "sounds": [
+    "Enemy_RoyalComet_DeathCry_01"
+  ],
+  "volume": 180
+}
+

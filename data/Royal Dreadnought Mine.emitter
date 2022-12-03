@@ -1,0 +1,22 @@
+{
+  "arcOffset": 0,
+  "cooldown": 15,
+  "endSound": "Enemy_RoyalDragoon_Flamethrower_End",
+  "endVolume": 10,
+  "halfArc": 1800,
+  "loopSound": "Enemy_RoyalDragoon_Flamethrower_Loop",
+  "loopVolume": 10,
+  "maxDist": 80,
+  "minDist": 65,
+  "mirror": 1,
+  "name": "Royal Dreadnought Mine",
+  "particleCount": 1,
+  "particleTypes": [
+    "Flamethrower1",
+    "Flamethrower2",
+    "Flamethrower3"
+  ],
+  "startSound": "Enemy_IronTriump_Mine_Small_Launch",
+  "startVolume": 50
+}
+

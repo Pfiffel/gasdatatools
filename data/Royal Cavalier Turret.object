@@ -1,0 +1,715 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 89,
+          "y": 48
+        }
+      }
+    }
+  ],
+  "bonePivots": [
+    {
+      "name": "Hand",
+      "p": {
+        "x": 2,
+        "y": 44
+      }
+    },
+    {
+      "name": "Foot",
+      "p": {
+        "x": 1,
+        "y": 31
+      }
+    }
+  ],
+  "floppiness": 0,
+  "name": "Royal Cavalier Turret",
+  "shapes": [
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 4802889,
+      "height": 8,
+      "mirror": 1,
+      "name": "Cannon Center",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 16,
+          "y": 36
+        },
+        {
+          "x": 11,
+          "y": 40
+        },
+        {
+          "x": 11,
+          "y": 53
+        },
+        {
+          "x": 12,
+          "y": 56
+        },
+        {
+          "x": 18,
+          "y": 60
+        },
+        {
+          "x": 53,
+          "y": 60
+        },
+        {
+          "x": 56,
+          "y": 59
+        },
+        {
+          "x": 60,
+          "y": 56
+        },
+        {
+          "x": 60,
+          "y": 40
+        },
+        {
+          "x": 56,
+          "y": 37
+        },
+        {
+          "x": 53,
+          "y": 36
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 4802889,
+      "height": 10,
+      "mirror": 1,
+      "name": "Cannon Back",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 5,
+          "y": 40
+        },
+        {
+          "x": 0,
+          "y": 45
+        },
+        {
+          "x": 0,
+          "y": 49
+        },
+        {
+          "x": 0,
+          "y": 52
+        },
+        {
+          "x": 4,
+          "y": 54
+        },
+        {
+          "x": 24,
+          "y": 54
+        },
+        {
+          "x": 28,
+          "y": 53
+        },
+        {
+          "x": 30,
+          "y": 50
+        },
+        {
+          "x": 30,
+          "y": 45
+        },
+        {
+          "x": 28,
+          "y": 42
+        },
+        {
+          "x": 24,
+          "y": 40
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 10,
+      "mirror": 1,
+      "name": "Cannon Front",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 48,
+          "y": 40
+        },
+        {
+          "x": 44,
+          "y": 43
+        },
+        {
+          "x": 44,
+          "y": 53
+        },
+        {
+          "x": 48,
+          "y": 55
+        },
+        {
+          "x": 94,
+          "y": 55
+        },
+        {
+          "x": 102,
+          "y": 58
+        },
+        {
+          "x": 102,
+          "y": 37
+        },
+        {
+          "x": 94,
+          "y": 40
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 12,
+      "mirror": 1,
+      "name": "Cannon Sight",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 87,
+          "y": 47
+        },
+        {
+          "x": 87,
+          "y": 49
+        },
+        {
+          "x": 97,
+          "y": 49
+        },
+        {
+          "x": 97,
+          "y": 47
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Shoulders",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 25,
+      "mirror": 1,
+      "name": "Shoulder",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 18,
+          "y": 32
+        },
+        {
+          "x": 18,
+          "y": 43
+        },
+        {
+          "x": 15,
+          "y": 47
+        },
+        {
+          "x": 12,
+          "y": 48
+        },
+        {
+          "x": -7,
+          "y": 48
+        },
+        {
+          "x": -11,
+          "y": 47
+        },
+        {
+          "x": -14,
+          "y": 43
+        },
+        {
+          "x": -14,
+          "y": 32
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Shoulders",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 12538707,
+      "height": 30,
+      "mirror": 1,
+      "name": "Torso",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 32,
+          "y": 24
+        },
+        {
+          "x": 31,
+          "y": 27
+        },
+        {
+          "x": 25,
+          "y": 32
+        },
+        {
+          "x": 20,
+          "y": 34
+        },
+        {
+          "x": -19,
+          "y": 34
+        },
+        {
+          "x": -22,
+          "y": 33
+        },
+        {
+          "x": -26,
+          "y": 31
+        },
+        {
+          "x": -31,
+          "y": 25
+        },
+        {
+          "x": -35,
+          "y": 17
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 14079702,
+      "height": 32,
+      "mirror": 1,
+      "name": "Torso Cross Back",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -35,
+          "y": 17
+        },
+        {
+          "x": -31,
+          "y": 25
+        },
+        {
+          "x": -26,
+          "y": 31
+        },
+        {
+          "x": -11,
+          "y": 17
+        },
+        {
+          "x": -18,
+          "y": 4
+        },
+        {
+          "x": -20,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 14079702,
+      "height": 32,
+      "mirror": 1,
+      "name": "Torso Cross Front",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 5,
+          "y": 20
+        },
+        {
+          "x": 20,
+          "y": 34
+        },
+        {
+          "x": 25,
+          "y": 32
+        },
+        {
+          "x": 31,
+          "y": 27
+        },
+        {
+          "x": 32,
+          "y": 24
+        },
+        {
+          "x": 17,
+          "y": 10
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": 14
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": -14
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 42,
+              "y": 23
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 42,
+              "y": -23
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 33,
+      "mirror": 1,
+      "name": "Torso Rivet",
+      "noDraw": 1,
+      "points": [
+        {
+          "x": -24,
+          "y": 1
+        },
+        {
+          "x": -22,
+          "y": 3
+        },
+        {
+          "x": -20,
+          "y": 3
+        },
+        {
+          "x": -18,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6961157,
+      "height": 34,
+      "mirror": 1,
+      "name": "Exhaust",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -55,
+          "y": 23
+        },
+        {
+          "x": -57,
+          "y": 28
+        },
+        {
+          "x": -56,
+          "y": 30
+        },
+        {
+          "x": -32,
+          "y": 30
+        },
+        {
+          "x": -23,
+          "y": 24
+        },
+        {
+          "x": -24,
+          "y": 20
+        },
+        {
+          "x": -26,
+          "y": 17
+        },
+        {
+          "x": -30,
+          "y": 16
+        },
+        {
+          "x": -35,
+          "y": 19
+        },
+        {
+          "x": -48,
+          "y": 19
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 34,
+      "mirror": 1,
+      "name": "Torso Core Ring",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 28,
+          "y": 7
+        },
+        {
+          "x": 29,
+          "y": 12
+        },
+        {
+          "x": 32,
+          "y": 17
+        },
+        {
+          "x": 35,
+          "y": 17
+        },
+        {
+          "x": 36,
+          "y": 15
+        },
+        {
+          "x": 33,
+          "y": 10
+        },
+        {
+          "x": 32,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 35,
+      "mirror": 1,
+      "name": "Torso Core",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 32,
+          "y": 4
+        },
+        {
+          "x": 33,
+          "y": 10
+        },
+        {
+          "x": 36,
+          "y": 15
+        },
+        {
+          "x": 39,
+          "y": 12
+        },
+        {
+          "x": 41,
+          "y": 8
+        },
+        {
+          "x": 42,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4802889,
+      "height": 36,
+      "mirror": 1,
+      "name": "Head",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -18,
+          "y": 6
+        },
+        {
+          "x": -16,
+          "y": 12
+        },
+        {
+          "x": -12,
+          "y": 17
+        },
+        {
+          "x": -5,
+          "y": 20
+        },
+        {
+          "x": 5,
+          "y": 20
+        },
+        {
+          "x": 11,
+          "y": 19
+        },
+        {
+          "x": 17,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 37,
+      "mirror": 1,
+      "name": "Visor",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 14,
+          "y": 7
+        },
+        {
+          "x": 11,
+          "y": 11
+        },
+        {
+          "x": 6,
+          "y": 14
+        },
+        {
+          "x": 10,
+          "y": 20
+        },
+        {
+          "x": 16,
+          "y": 15
+        },
+        {
+          "x": 19,
+          "y": 12
+        },
+        {
+          "x": 20,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 38,
+      "mirror": 1,
+      "name": "Crest",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -20,
+          "y": 4
+        },
+        {
+          "x": -19,
+          "y": 6
+        },
+        {
+          "x": 3,
+          "y": 6
+        },
+        {
+          "x": 6,
+          "y": 3
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

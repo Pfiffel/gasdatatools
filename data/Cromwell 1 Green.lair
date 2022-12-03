@@ -9,19 +9,19 @@
   "monsters": [
     {
       "count": 100,
-      "name": "Iron Shield"
+      "name": "Royal Spitfire"
     },
     {
       "count": 100,
-      "name": "Iron Soldier"
+      "name": "Royal Redcoat"
     },
     {
       "count": 25,
-      "name": "Iron Guardsman"
+      "name": "Royal Musketeer"
     },
     {
       "count": 25,
-      "name": "Iron Anvil"
+      "name": "Royal Challenger"
     }
   ],
   "name": "Cromwell 1 Green",

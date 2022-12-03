@@ -1,0 +1,81 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Royal Cavalier Bullet",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 14817155,
+      "height": 58,
+      "mirror": 1,
+      "name": "Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 19,
+          "y": 0
+        },
+        {
+          "x": 15,
+          "y": 12
+        },
+        {
+          "x": 5,
+          "y": 19
+        },
+        {
+          "x": -5,
+          "y": 19
+        },
+        {
+          "x": -15,
+          "y": 12
+        },
+        {
+          "x": -19,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16760860,
+      "height": 59,
+      "mirror": 1,
+      "name": "Inner",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 11,
+          "y": 2
+        },
+        {
+          "x": 8,
+          "y": 9
+        },
+        {
+          "x": 0,
+          "y": 12
+        },
+        {
+          "x": -8,
+          "y": 9
+        },
+        {
+          "x": -11,
+          "y": 2
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

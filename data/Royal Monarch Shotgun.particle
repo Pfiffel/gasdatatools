@@ -1,0 +1,40 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 2440162
+    },
+    {
+      "frac": 750,
+      "value": 4405220
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 350,
+  "minLifetime": 300,
+  "name": "Royal Monarch Shotgun",
+  "objectType": "Royal Monarch Particle",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 50,
+      "value": 750
+    },
+    {
+      "frac": 500,
+      "value": 750
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 2517221,
+  "startScale": 10,
+  "stayLow": 1
+}
+

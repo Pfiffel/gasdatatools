@@ -1,0 +1,43 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Royal Challenger Particle",
+  "shapes": [
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16777215,
+      "height": 100,
+      "mirror": 1,
+      "name": "Shaft",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 39,
+          "y": 0
+        },
+        {
+          "x": 33,
+          "y": 15
+        },
+        {
+          "x": -3,
+          "y": 7
+        },
+        {
+          "x": -22,
+          "y": 6
+        },
+        {
+          "x": -41,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

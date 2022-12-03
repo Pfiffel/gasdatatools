@@ -1,0 +1,97 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 12,
+      "name": "Turret",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Royal Hotspur",
+  "shapes": [
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 2,
+      "mirror": 1,
+      "name": "Track",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 52,
+          "y": 62
+        },
+        {
+          "x": 70,
+          "y": 51
+        },
+        {
+          "x": 70,
+          "y": 27
+        },
+        {
+          "x": 52,
+          "y": 18
+        },
+        {
+          "x": -45,
+          "y": 18
+        },
+        {
+          "x": -57,
+          "y": 31
+        },
+        {
+          "x": -57,
+          "y": 46
+        },
+        {
+          "x": -42,
+          "y": 62
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4286945,
+      "height": 12,
+      "mirror": 1,
+      "name": "Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 52,
+          "y": 20
+        },
+        {
+          "x": 34,
+          "y": 36
+        },
+        {
+          "x": -32,
+          "y": 36
+        },
+        {
+          "x": -46,
+          "y": 20
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

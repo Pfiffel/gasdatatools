@@ -1,0 +1,236 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 30,
+      "name": "Turret Main",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 152,
+          "y": 0
+        }
+      }
+    },
+    {
+      "height": 30,
+      "name": "Turret FC",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 284,
+          "y": 0
+        }
+      }
+    },
+    {
+      "height": 30,
+      "name": "Turret BL",
+      "pos": {
+        "f": -1200,
+        "p": {
+          "x": 43,
+          "y": -139
+        }
+      }
+    },
+    {
+      "height": 30,
+      "name": "Turret BR",
+      "pos": {
+        "f": 1200,
+        "p": {
+          "x": 42,
+          "y": 140
+        }
+      }
+    },
+    {
+      "height": 30,
+      "name": "Turret BC",
+      "pos": {
+        "f": 1800,
+        "p": {
+          "x": -23,
+          "y": 0
+        }
+      }
+    },
+    {
+      "height": 30,
+      "name": "Turret FR",
+      "pos": {
+        "f": 600,
+        "p": {
+          "x": 262,
+          "y": 140
+        }
+      }
+    },
+    {
+      "height": 30,
+      "name": "Turret FL",
+      "pos": {
+        "f": -600,
+        "p": {
+          "x": 262,
+          "y": -140
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Royal Dynasty Mine",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [
+        {
+          "pos": {
+            "f": 1800,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 1,
+      "mirror": 1,
+      "name": "Arary Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 12,
+          "y": 14
+        },
+        {
+          "x": 23,
+          "y": 5
+        },
+        {
+          "x": 44,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [
+        {
+          "pos": {
+            "f": 900,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 2700,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 1,
+      "mirror": 1,
+      "name": "Arary Main",
+      "noDraw": 1,
+      "points": [
+        {
+          "x": 14,
+          "y": 12
+        },
+        {
+          "x": 24,
+          "y": 5
+        },
+        {
+          "x": 44,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4802889,
+      "height": 2,
+      "mirror": 1,
+      "name": "Arary Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -16,
+          "y": 7
+        },
+        {
+          "x": -12,
+          "y": 14
+        },
+        {
+          "x": -5,
+          "y": 19
+        },
+        {
+          "x": 5,
+          "y": 19
+        },
+        {
+          "x": 12,
+          "y": 14
+        },
+        {
+          "x": 16,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11506944,
+      "height": 4,
+      "mirror": 1,
+      "name": "Arary Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -8,
+          "y": 2
+        },
+        {
+          "x": -4,
+          "y": 6
+        },
+        {
+          "x": 4,
+          "y": 6
+        },
+        {
+          "x": 8,
+          "y": 2
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

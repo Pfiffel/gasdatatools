@@ -1,0 +1,44 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 2440162
+    },
+    {
+      "frac": 500,
+      "value": 4405220
+    },
+    {
+      "frac": 750,
+      "value": 4405220
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 500,
+  "minLifetime": 400,
+  "name": "Royal Emperor",
+  "objectType": "Small Hex",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 250
+    },
+    {
+      "frac": 500,
+      "value": 250
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 2517221,
+  "startScale": 10,
+  "stayLow": 0
+}
+

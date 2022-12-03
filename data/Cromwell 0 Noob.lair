@@ -9,11 +9,11 @@
   "monsters": [
     {
       "count": 100,
-      "name": "Iron Shield"
+      "name": "Royal Spitfire"
     },
     {
       "count": 100,
-      "name": "Iron Soldier"
+      "name": "Royal Redcoat"
     }
   ],
   "name": "Cromwell 0 Noob",

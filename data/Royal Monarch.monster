@@ -1,0 +1,107 @@
+{
+  "boss": 1,
+  "burrowDetectRange": 0,
+  "collisionRadius": 100,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Royal Monarch Enrage 2",
+  "drops": [],
+  "fixedFacing": 0,
+  "healRate": 0,
+  "hp": 4000,
+  "idleAnimation": "Royal Monarch",
+  "maxMoveDistance": 500,
+  "name": "Royal Monarch",
+  "objectType": "Royal Monarch",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "Royal Monarch",
+  "runAnimationDuration": 200,
+  "runSpeed": 90,
+  "shields": [],
+  "successorInvulnerability": 1,
+  "successorMonster": "Royal Monarch 2",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "TurretMain",
+      "cooldown": 4000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "damage": 200,
+          "emitterType": "Royal Grenadier Grenade Trail",
+          "explosionType": "Royal Grenadier Grenade",
+          "objectType": "Royal Monarch Bomb",
+          "powers": [],
+          "radius": 120,
+          "range": 500,
+          "shootSound": "Enemy_Grenade_Medium_Launch",
+          "shootVolume": 50,
+          "speed": 220
+        },
+        "tag": "MortarParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "",
+      "cooldown": 3000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "emitterType": "",
+          "explosionType": "",
+          "guardian": 0,
+          "lifetime": 30000,
+          "maxCount": 3,
+          "monsterName": "Royal Sentinel",
+          "movement": {
+            "data": {
+              "radius": 200
+            },
+            "tag": "OrbitMovement"
+          },
+          "noCollide": 1,
+          "noRespawn": 0,
+          "projectileType": "",
+          "range": 100,
+          "sound": "",
+          "speed": 300,
+          "volume": 50
+        },
+        "tag": "MinionParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "Turret Main",
+      "cooldown": 1600,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Royal Monarch Turret",
+      "params": {
+        "data": {
+          "gunBulletType": "Royal Monarch",
+          "range": 700
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 100,
+  "xpLevelCap": 19
+}
+

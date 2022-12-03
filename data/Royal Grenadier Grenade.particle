@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 750,
+      "value": 14844183
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 1000,
+  "minLifetime": 150,
+  "name": "Royal Grenadier Grenade",
+  "objectType": "Shard1",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 650
+    },
+    {
+      "frac": 900,
+      "value": 650
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 14392138,
+  "startScale": 10,
+  "stayLow": 1
+}
+

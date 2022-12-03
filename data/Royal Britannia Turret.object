@@ -1,0 +1,177 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 32,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Royal Britannia Turret",
+  "shapes": [
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 3,
+      "mirror": 1,
+      "name": "Turret",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 9,
+          "y": 27
+        },
+        {
+          "x": 1,
+          "y": 33
+        },
+        {
+          "x": -4,
+          "y": 35
+        },
+        {
+          "x": -24,
+          "y": 35
+        },
+        {
+          "x": -28,
+          "y": 28
+        },
+        {
+          "x": -20,
+          "y": 20
+        },
+        {
+          "x": -16,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11506944,
+      "height": 4,
+      "mirror": 1,
+      "name": "Turret",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 17,
+          "y": 4
+        },
+        {
+          "x": 14,
+          "y": 16
+        },
+        {
+          "x": 9,
+          "y": 27
+        },
+        {
+          "x": -12,
+          "y": 19
+        },
+        {
+          "x": -9,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 6,
+      "mirror": 1,
+      "name": "Hose",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 36,
+          "y": 8
+        },
+        {
+          "x": 17,
+          "y": 11
+        },
+        {
+          "x": 9,
+          "y": 11
+        },
+        {
+          "x": 4,
+          "y": 6
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 14079702,
+      "height": 7,
+      "mirror": 1,
+      "name": "Rivet",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -5,
+          "y": 12
+        },
+        {
+          "x": -3,
+          "y": 12
+        },
+        {
+          "x": -1,
+          "y": 14
+        },
+        {
+          "x": -1,
+          "y": 16
+        },
+        {
+          "x": -3,
+          "y": 18
+        },
+        {
+          "x": -5,
+          "y": 18
+        },
+        {
+          "x": -7,
+          "y": 16
+        },
+        {
+          "x": -7,
+          "y": 14
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

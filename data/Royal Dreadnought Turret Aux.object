@@ -1,0 +1,137 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Muzzle1",
+      "pos": {
+        "f": -100,
+        "p": {
+          "x": 35,
+          "y": -9
+        }
+      }
+    },
+    {
+      "height": 0,
+      "name": "Muzzle2",
+      "pos": {
+        "f": 100,
+        "p": {
+          "x": 35,
+          "y": 9
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Royal Dreadnought Turret Aux",
+  "shapes": [
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 2,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 14,
+          "y": 16
+        },
+        {
+          "x": 11,
+          "y": 21
+        },
+        {
+          "x": -11,
+          "y": 21
+        },
+        {
+          "x": -19,
+          "y": 9
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 3,
+      "mirror": 1,
+      "name": "Mount",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 20,
+          "y": 5
+        },
+        {
+          "x": 14,
+          "y": 16
+        },
+        {
+          "x": 7,
+          "y": 11
+        },
+        {
+          "x": 3,
+          "y": 3
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [
+        {
+          "pos": {
+            "f": 100,
+            "p": {
+              "x": 0,
+              "y": 3
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": -100,
+            "p": {
+              "x": 0,
+              "y": -3
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 4,
+      "mirror": 1,
+      "name": "Barrel",
+      "noDraw": 1,
+      "points": [
+        {
+          "x": 38,
+          "y": 3
+        },
+        {
+          "x": 19,
+          "y": 5
+        },
+        {
+          "x": 11,
+          "y": 2
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

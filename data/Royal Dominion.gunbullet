@@ -1,0 +1,10 @@
+{
+  "damage": 100,
+  "emitterType": "Iron Hammer",
+  "name": "Royal Dominion",
+  "objectType": "Royal Cavalier Bullet",
+  "powers": [],
+  "soundPack": "Iron Hammer Bullet",
+  "speed": 150
+}
+

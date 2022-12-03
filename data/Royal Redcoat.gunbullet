@@ -1,0 +1,10 @@
+{
+  "damage": 20,
+  "emitterType": "Iron Shield",
+  "name": "Royal Redcoat",
+  "objectType": "Royal Redcoat Bullet",
+  "powers": [],
+  "soundPack": "Iron Shield Bullet",
+  "speed": 150
+}
+

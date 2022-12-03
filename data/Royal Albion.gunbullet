@@ -1,0 +1,10 @@
+{
+  "damage": 250,
+  "emitterType": "Iron Triumph",
+  "name": "Royal Albion",
+  "objectType": "Royal Albion Bullet",
+  "powers": [],
+  "soundPack": "Iron Triumph Bullet",
+  "speed": 160
+}
+

@@ -1,0 +1,71 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Flamethrower3",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16776958,
+      "height": 0,
+      "mirror": 0,
+      "name": "Flame",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -18,
+          "y": 0
+        },
+        {
+          "x": -12,
+          "y": 3
+        },
+        {
+          "x": -7,
+          "y": 6
+        },
+        {
+          "x": -1,
+          "y": 7
+        },
+        {
+          "x": 4,
+          "y": 7
+        },
+        {
+          "x": 10,
+          "y": 4
+        },
+        {
+          "x": 16,
+          "y": 0
+        },
+        {
+          "x": 12,
+          "y": -3
+        },
+        {
+          "x": 5,
+          "y": -7
+        },
+        {
+          "x": 0,
+          "y": -8
+        },
+        {
+          "x": -7,
+          "y": -7
+        },
+        {
+          "x": -12,
+          "y": -4
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

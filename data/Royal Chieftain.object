@@ -1,0 +1,333 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 12,
+      "name": "Turret",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": -13,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Royal Chieftain",
+  "shapes": [
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 2,
+      "mirror": 1,
+      "name": "Track",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 53,
+          "y": 64
+        },
+        {
+          "x": 68,
+          "y": 49
+        },
+        {
+          "x": 68,
+          "y": 27
+        },
+        {
+          "x": 56,
+          "y": 15
+        },
+        {
+          "x": -39,
+          "y": 15
+        },
+        {
+          "x": -57,
+          "y": 29
+        },
+        {
+          "x": -57,
+          "y": 51
+        },
+        {
+          "x": -42,
+          "y": 64
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11506944,
+      "height": 8,
+      "mirror": 1,
+      "name": "Front Plate",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 72,
+          "y": 23
+        },
+        {
+          "x": 72,
+          "y": 55
+        },
+        {
+          "x": 8,
+          "y": 55
+        },
+        {
+          "x": 3,
+          "y": 50
+        },
+        {
+          "x": 3,
+          "y": 28
+        },
+        {
+          "x": 8,
+          "y": 23
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11506944,
+      "height": 10,
+      "mirror": 1,
+      "name": "Back Plate",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -16,
+          "y": 30
+        },
+        {
+          "x": -28,
+          "y": 52
+        },
+        {
+          "x": -60,
+          "y": 52
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11842740,
+      "height": 12,
+      "mirror": 1,
+      "name": "Platform",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 52,
+          "y": 15
+        },
+        {
+          "x": 11,
+          "y": 15
+        },
+        {
+          "x": 2,
+          "y": 24
+        },
+        {
+          "x": -27,
+          "y": 24
+        },
+        {
+          "x": -37,
+          "y": 13
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": 7
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": -7
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 23,
+              "y": 7
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 23,
+              "y": -7
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 46,
+              "y": 7
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 46,
+              "y": -7
+            }
+          }
+        }
+      ],
+      "closed": 1,
+      "collider": 0,
+      "color": 14079702,
+      "height": 14,
+      "mirror": 1,
+      "name": "Front Rivet",
+      "noDraw": 1,
+      "points": [
+        {
+          "x": 12,
+          "y": 38
+        },
+        {
+          "x": 14,
+          "y": 36
+        },
+        {
+          "x": 16,
+          "y": 36
+        },
+        {
+          "x": 18,
+          "y": 38
+        },
+        {
+          "x": 18,
+          "y": 40
+        },
+        {
+          "x": 16,
+          "y": 42
+        },
+        {
+          "x": 14,
+          "y": 42
+        },
+        {
+          "x": 12,
+          "y": 40
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -52,
+              "y": 44
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -52,
+              "y": -44
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -34,
+              "y": 44
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -34,
+              "y": -44
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 14079702,
+      "height": 14,
+      "mirror": 1,
+      "name": "Back Rivet",
+      "noDraw": 1,
+      "points": [
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 1,
+          "y": 3
+        },
+        {
+          "x": -1,
+          "y": 3
+        },
+        {
+          "x": -3,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

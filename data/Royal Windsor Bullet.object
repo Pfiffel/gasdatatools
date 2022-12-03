@@ -1,0 +1,123 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Royal Windsor Bullet",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4405220,
+      "height": 56,
+      "mirror": 1,
+      "name": "Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -41,
+          "y": 0
+        },
+        {
+          "x": -30,
+          "y": 2
+        },
+        {
+          "x": -20,
+          "y": 9
+        },
+        {
+          "x": -28,
+          "y": 18
+        },
+        {
+          "x": -13,
+          "y": 12
+        },
+        {
+          "x": -4,
+          "y": 15
+        },
+        {
+          "x": -7,
+          "y": 27
+        },
+        {
+          "x": 2,
+          "y": 17
+        },
+        {
+          "x": 12,
+          "y": 20
+        },
+        {
+          "x": 18,
+          "y": 5
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 2440162,
+      "height": 57,
+      "mirror": 1,
+      "name": "Middle",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 14,
+          "y": 0
+        },
+        {
+          "x": 11,
+          "y": 13
+        },
+        {
+          "x": -11,
+          "y": 6
+        },
+        {
+          "x": -26,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 2517221,
+      "height": 58,
+      "mirror": 1,
+      "name": "Inner",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 10,
+          "y": 0
+        },
+        {
+          "x": 10,
+          "y": 8
+        },
+        {
+          "x": -2,
+          "y": 2
+        },
+        {
+          "x": -20,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

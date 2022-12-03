@@ -1,0 +1,195 @@
+{
+  "boss": 1,
+  "burrowDetectRange": 0,
+  "collisionRadius": 108,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Royal Sovereign Enrage 3",
+  "drops": [],
+  "fixedFacing": 0,
+  "healRate": 0,
+  "hp": 4000,
+  "idleAnimation": "Royal Monarch",
+  "maxMoveDistance": 500,
+  "name": "Royal Sovereign 2",
+  "objectType": "Royal Sovereign",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "Royal Monarch",
+  "runAnimationDuration": 200,
+  "runSpeed": 86,
+  "shields": [],
+  "successorInvulnerability": 1,
+  "successorMonster": "Royal Sovereign 3",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret BL",
+      "cooldown": 2600,
+      "extraTargetingArc": 600,
+      "halfArc": 900,
+      "objectType": "Royal Sovereign Turret Flame",
+      "params": {
+        "data": {
+          "delay": 600,
+          "duration": 1000,
+          "endSound": "Enemy_RoyalDragoon_Flamethrower_End",
+          "endVolume": 75,
+          "halfArc": 160,
+          "loopSound": "Enemy_RoyalDragoon_Flamethrower_Loop",
+          "loopVolume": 75,
+          "particles": [
+            {
+              "cooldown": 4,
+              "maxDistPercent": 100,
+              "minDistPercent": 100,
+              "particleType": "Flamethrower1"
+            },
+            {
+              "cooldown": 4,
+              "maxDistPercent": 100,
+              "minDistPercent": 75,
+              "particleType": "Flamethrower2"
+            },
+            {
+              "cooldown": 4,
+              "maxDistPercent": 100,
+              "minDistPercent": 50,
+              "particleType": "Flamethrower3"
+            }
+          ],
+          "powers": [
+            {
+              "data": {
+                "dps": 500
+              },
+              "tag": "SizzlePower"
+            }
+          ],
+          "range": 400,
+          "startSound": "Enemy_RoyalDragoon_Flamethrower_Start",
+          "startVolume": 75,
+          "telegraphSound": "Enemy_IronConqueror_Shotgun_Med_Telegraph",
+          "telegraphVolume": 50
+        },
+        "tag": "FlamethrowerParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "Turret BR",
+      "cooldown": 2600,
+      "extraTargetingArc": 600,
+      "halfArc": 900,
+      "objectType": "Royal Sovereign Turret Flame",
+      "params": {
+        "data": {
+          "delay": 600,
+          "duration": 1000,
+          "endSound": "Enemy_RoyalDragoon_Flamethrower_End",
+          "endVolume": 75,
+          "halfArc": 160,
+          "loopSound": "Enemy_RoyalDragoon_Flamethrower_Loop",
+          "loopVolume": 75,
+          "particles": [
+            {
+              "cooldown": 4,
+              "maxDistPercent": 100,
+              "minDistPercent": 100,
+              "particleType": "Flamethrower1"
+            },
+            {
+              "cooldown": 4,
+              "maxDistPercent": 100,
+              "minDistPercent": 75,
+              "particleType": "Flamethrower2"
+            },
+            {
+              "cooldown": 4,
+              "maxDistPercent": 100,
+              "minDistPercent": 50,
+              "particleType": "Flamethrower3"
+            }
+          ],
+          "powers": [
+            {
+              "data": {
+                "dps": 500
+              },
+              "tag": "SizzlePower"
+            }
+          ],
+          "range": 400,
+          "startSound": "Enemy_RoyalDragoon_Flamethrower_Start",
+          "startVolume": 75,
+          "telegraphSound": "Enemy_IronConqueror_Shotgun_Med_Telegraph",
+          "telegraphVolume": 50
+        },
+        "tag": "FlamethrowerParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "Turret Main",
+      "cooldown": 1000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Royal Sovereign Turret",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "gunBulletType": "Royal Crown",
+                "range": 700
+              },
+              "tag": "MultiBarrelGunParams"
+            },
+            {
+              "data": {
+                "gunBulletType": "Royal Crown",
+                "range": 700
+              },
+              "tag": "MultiBarrelGunParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "Turret BC",
+      "cooldown": 1050,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Royal Sovereign Turret Back",
+      "params": {
+        "data": {
+          "gunBulletType": "Royal Sentinel",
+          "range": 700
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 100,
+  "xpLevelCap": 19
+}
+

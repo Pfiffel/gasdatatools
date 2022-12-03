@@ -1,0 +1,22 @@
+{
+  "arcOffset": 1800,
+  "cooldown": 20,
+  "endSound": "",
+  "endVolume": 50,
+  "halfArc": 200,
+  "loopSound": "",
+  "loopVolume": 50,
+  "maxDist": 200,
+  "minDist": 100,
+  "mirror": 0,
+  "name": "Flamethrower",
+  "particleCount": 2,
+  "particleTypes": [
+    "Flame1",
+    "Flame2",
+    "Flame3"
+  ],
+  "startSound": "",
+  "startVolume": 50
+}
+

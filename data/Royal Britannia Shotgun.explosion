@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 100,
+      "maxDistPercent": 100,
+      "minDistPercent": 90,
+      "particleType": "Royal Britannia Shotgun",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 200,
+      "maxDistPercent": 95,
+      "minDistPercent": 20,
+      "particleType": "Royal Britannia Shotgun",
+      "uniformAngles": 0
+    }
+  ],
+  "name": "Royal Britannia Shotgun",
+  "sound": "Enemy_IronLance_Shotgun_Long_Blast",
+  "volume": 100
+}
+

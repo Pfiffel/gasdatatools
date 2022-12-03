@@ -1,0 +1,44 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 2105376
+    },
+    {
+      "frac": 500,
+      "value": 4210752
+    },
+    {
+      "frac": 750,
+      "value": 1052688
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 600,
+  "minLifetime": 400,
+  "name": "Royal Redcoat",
+  "objectType": "Small Hex",
+  "positionTweenType": "EXPOIN",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 200
+    },
+    {
+      "frac": 500,
+      "value": 250
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 4210752,
+  "startScale": 10,
+  "stayLow": 0
+}
+

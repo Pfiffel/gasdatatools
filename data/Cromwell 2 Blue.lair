@@ -9,19 +9,19 @@
   "monsters": [
     {
       "count": 100,
-      "name": "Iron Anvil"
+      "name": "Royal Challenger"
     },
     {
       "count": 100,
-      "name": "Iron Guardsman"
+      "name": "Royal Musketeer"
     },
     {
       "count": 25,
-      "name": "Iron Hammer"
+      "name": "Royal Hotspur"
     },
     {
       "count": 25,
-      "name": "Iron Legionnaire"
+      "name": "Royal Cavalier"
     }
   ],
   "name": "Cromwell 2 Blue",

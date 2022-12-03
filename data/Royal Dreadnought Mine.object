@@ -1,0 +1,231 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 12,
+      "name": "Turret",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 12,
+          "y": 0
+        }
+      }
+    },
+    {
+      "height": 12,
+      "name": "Turret Front",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 82,
+          "y": 0
+        }
+      }
+    },
+    {
+      "height": 12,
+      "name": "Turret Back",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": -58,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Royal Dreadnought Mine",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 0,
+      "mirror": 1,
+      "name": "Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 31,
+          "y": 10
+        },
+        {
+          "x": 24,
+          "y": 24
+        },
+        {
+          "x": 10,
+          "y": 32
+        },
+        {
+          "x": -10,
+          "y": 32
+        },
+        {
+          "x": -25,
+          "y": 24
+        },
+        {
+          "x": -32,
+          "y": 10
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4802889,
+      "height": 2,
+      "mirror": 1,
+      "name": "Mid",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 22,
+          "y": 7
+        },
+        {
+          "x": 16,
+          "y": 17
+        },
+        {
+          "x": 7,
+          "y": 22
+        },
+        {
+          "x": -7,
+          "y": 22
+        },
+        {
+          "x": -17,
+          "y": 17
+        },
+        {
+          "x": -22,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11842740,
+      "height": 6,
+      "mirror": 1,
+      "name": "Center",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -14,
+          "y": 5
+        },
+        {
+          "x": -22,
+          "y": 3
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11842740,
+      "height": 6,
+      "mirror": 1,
+      "name": "Center",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 22,
+          "y": 3
+        },
+        {
+          "x": 14,
+          "y": 5
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11842740,
+      "height": 6,
+      "mirror": 1,
+      "name": "Center",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 5,
+          "y": 14
+        },
+        {
+          "x": 3,
+          "y": 22
+        },
+        {
+          "x": -3,
+          "y": 22
+        },
+        {
+          "x": -5,
+          "y": 14
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 12,
+      "mirror": 1,
+      "name": "Inner",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 14,
+          "y": 5
+        },
+        {
+          "x": 11,
+          "y": 10
+        },
+        {
+          "x": 5,
+          "y": 14
+        },
+        {
+          "x": -5,
+          "y": 14
+        },
+        {
+          "x": -10,
+          "y": 11
+        },
+        {
+          "x": -14,
+          "y": 5
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

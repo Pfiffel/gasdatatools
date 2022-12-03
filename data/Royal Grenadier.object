@@ -1,0 +1,233 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 20,
+      "name": "Turret",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [
+    {
+      "name": "Foot",
+      "p": {
+        "x": 0,
+        "y": 26
+      }
+    }
+  ],
+  "floppiness": 0,
+  "name": "Royal Grenadier",
+  "shapes": [
+    {
+      "bone": "Foot",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 4802889,
+      "height": 0,
+      "mirror": 1,
+      "name": "Foot",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 39,
+          "y": 33
+        },
+        {
+          "x": 4,
+          "y": 33
+        },
+        {
+          "x": 0,
+          "y": 26
+        },
+        {
+          "x": 0,
+          "y": 15
+        },
+        {
+          "x": 4,
+          "y": 7
+        },
+        {
+          "x": 39,
+          "y": 7
+        },
+        {
+          "x": 45,
+          "y": 13
+        },
+        {
+          "x": 45,
+          "y": 27
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Foot",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 1,
+      "mirror": 1,
+      "name": "Foot Plate",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 48,
+          "y": 27
+        },
+        {
+          "x": 39,
+          "y": 27
+        },
+        {
+          "x": 39,
+          "y": 13
+        },
+        {
+          "x": 48,
+          "y": 13
+        },
+        {
+          "x": 50,
+          "y": 15
+        },
+        {
+          "x": 50,
+          "y": 25
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Leg",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 5,
+      "mirror": 1,
+      "name": "Leg",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 28,
+          "y": 31
+        },
+        {
+          "x": 14,
+          "y": 31
+        },
+        {
+          "x": 14,
+          "y": 9
+        },
+        {
+          "x": 28,
+          "y": 9
+        },
+        {
+          "x": 32,
+          "y": 12
+        },
+        {
+          "x": 32,
+          "y": 28
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Shoulder",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 10,
+      "mirror": 1,
+      "name": "Shoulder Out",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 9,
+          "y": 36
+        },
+        {
+          "x": -7,
+          "y": 36
+        },
+        {
+          "x": -10,
+          "y": 33
+        },
+        {
+          "x": 12,
+          "y": 33
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hips",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 20,
+      "mirror": 1,
+      "name": "Platform",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 26,
+          "y": 23
+        },
+        {
+          "x": 16,
+          "y": 33
+        },
+        {
+          "x": -17,
+          "y": 33
+        },
+        {
+          "x": -23,
+          "y": 25
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Leg",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 22,
+      "mirror": 1,
+      "name": "Plate",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 27,
+          "y": 19
+        },
+        {
+          "x": 18,
+          "y": 19
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

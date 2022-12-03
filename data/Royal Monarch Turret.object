@@ -1,0 +1,733 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Muzzle1",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 180,
+          "y": 0
+        }
+      }
+    },
+    {
+      "height": 0,
+      "name": "Muzzle2",
+      "pos": {
+        "f": -300,
+        "p": {
+          "x": 156,
+          "y": -89
+        }
+      }
+    },
+    {
+      "height": 0,
+      "name": "Muzzle3",
+      "pos": {
+        "f": 300,
+        "p": {
+          "x": 156,
+          "y": 89
+        }
+      }
+    },
+    {
+      "height": 0,
+      "name": "Muzzle4",
+      "pos": {
+        "f": 600,
+        "p": {
+          "x": 90,
+          "y": 155
+        }
+      }
+    },
+    {
+      "height": 0,
+      "name": "Muzzle5",
+      "pos": {
+        "f": -600,
+        "p": {
+          "x": 90,
+          "y": -155
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Royal Monarch Turret",
+  "shapes": [
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 2,
+      "mirror": 1,
+      "name": "Base",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 95,
+          "y": 26
+        },
+        {
+          "x": 83,
+          "y": 54
+        },
+        {
+          "x": 64,
+          "y": 76
+        },
+        {
+          "x": 40,
+          "y": 91
+        },
+        {
+          "x": 15,
+          "y": 99
+        },
+        {
+          "x": -13,
+          "y": 99
+        },
+        {
+          "x": -44,
+          "y": 90
+        },
+        {
+          "x": -67,
+          "y": 75
+        },
+        {
+          "x": -85,
+          "y": 51
+        },
+        {
+          "x": -95,
+          "y": 29
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 3,
+      "mirror": 1,
+      "name": "Ring",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 71,
+          "y": 16
+        },
+        {
+          "x": 59,
+          "y": 46
+        },
+        {
+          "x": 33,
+          "y": 65
+        },
+        {
+          "x": 3,
+          "y": 74
+        },
+        {
+          "x": -31,
+          "y": 68
+        },
+        {
+          "x": -58,
+          "y": 48
+        },
+        {
+          "x": -69,
+          "y": 23
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11506944,
+      "height": 4,
+      "mirror": 1,
+      "name": "Center",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 61,
+          "y": 16
+        },
+        {
+          "x": 49,
+          "y": 41
+        },
+        {
+          "x": 26,
+          "y": 58
+        },
+        {
+          "x": 0,
+          "y": 64
+        },
+        {
+          "x": -26,
+          "y": 58
+        },
+        {
+          "x": -48,
+          "y": 42
+        },
+        {
+          "x": -60,
+          "y": 21
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [
+        {
+          "pos": {
+            "f": -300,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": -600,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 300,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 600,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 4,
+      "mirror": 1,
+      "name": "Gun Muzzle",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 194,
+          "y": 16
+        },
+        {
+          "x": 180,
+          "y": 21
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [
+        {
+          "pos": {
+            "f": -300,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": -600,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 300,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 600,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 11506944,
+      "height": 5,
+      "mirror": 1,
+      "name": "Gun 2",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 102,
+          "y": 14
+        },
+        {
+          "x": 90,
+          "y": 23
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [
+        {
+          "pos": {
+            "f": -300,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": -600,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 300,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 600,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 5,
+      "mirror": 1,
+      "name": "Gun 3",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 128,
+          "y": 14
+        },
+        {
+          "x": 102,
+          "y": 14
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [
+        {
+          "pos": {
+            "f": -300,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": -600,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 300,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 600,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 5,
+      "mirror": 1,
+      "name": "Gun 1",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 90,
+          "y": 23
+        },
+        {
+          "x": 78,
+          "y": 23
+        },
+        {
+          "x": 65,
+          "y": 18
+        },
+        {
+          "x": 58,
+          "y": 7
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [
+        {
+          "pos": {
+            "f": -300,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": -600,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 300,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 600,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 11506944,
+      "height": 5,
+      "mirror": 1,
+      "name": "Gun 4",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 180,
+          "y": 21
+        },
+        {
+          "x": 132,
+          "y": 21
+        },
+        {
+          "x": 127,
+          "y": 16
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [
+        {
+          "pos": {
+            "f": -300,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": -600,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 300,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 600,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 14079702,
+      "height": 5,
+      "mirror": 1,
+      "name": "Gun Rivet",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 81,
+          "y": 3
+        },
+        {
+          "x": 77,
+          "y": 7
+        },
+        {
+          "x": 71,
+          "y": 7
+        },
+        {
+          "x": 67,
+          "y": 3
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [
+        {
+          "pos": {
+            "f": -300,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": -600,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 300,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 600,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 6961157,
+      "height": 5,
+      "mirror": 1,
+      "name": "Center Rivet",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 48,
+          "y": 7
+        },
+        {
+          "x": 25,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4802889,
+      "height": 5,
+      "mirror": 1,
+      "name": "Counterweight",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -42,
+          "y": 16
+        },
+        {
+          "x": -103,
+          "y": 31
+        },
+        {
+          "x": -106,
+          "y": 19
+        },
+        {
+          "x": -107,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": -48
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": 48
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 28,
+              "y": -69
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 28,
+              "y": 69
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 14079702,
+      "height": 5,
+      "mirror": 1,
+      "name": "Base Rivet",
+      "noDraw": 1,
+      "points": [
+        {
+          "x": -52,
+          "y": 3
+        },
+        {
+          "x": -56,
+          "y": 7
+        },
+        {
+          "x": -62,
+          "y": 7
+        },
+        {
+          "x": -66,
+          "y": 3
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

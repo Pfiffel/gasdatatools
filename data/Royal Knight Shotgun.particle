@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 750,
+      "value": 14079702
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 350,
+  "minLifetime": 300,
+  "name": "Royal Knight Shotgun",
+  "objectType": "Royal Knight Particle",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 50,
+      "value": 750
+    },
+    {
+      "frac": 500,
+      "value": 750
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 6961157,
+  "startScale": 10,
+  "stayLow": 1
+}
+

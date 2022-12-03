@@ -1,0 +1,10 @@
+{
+  "damage": 300,
+  "emitterType": "Iron Behemoth Trail",
+  "name": "Royal Crown",
+  "objectType": "Royal Crown Bullet",
+  "powers": [],
+  "soundPack": "Iron Triumph Bullet",
+  "speed": 260
+}
+

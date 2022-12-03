@@ -1,0 +1,451 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 12,
+      "name": "Turret",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": -12,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Royal Dominion",
+  "shapes": [
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 2,
+      "mirror": 1,
+      "name": "Track",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 44,
+          "y": 54
+        },
+        {
+          "x": 51,
+          "y": 48
+        },
+        {
+          "x": 52,
+          "y": 24
+        },
+        {
+          "x": 43,
+          "y": 19
+        },
+        {
+          "x": -33,
+          "y": 19
+        },
+        {
+          "x": -40,
+          "y": 26
+        },
+        {
+          "x": -40,
+          "y": 47
+        },
+        {
+          "x": -32,
+          "y": 54
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": 6
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": -6
+            }
+          }
+        }
+      ],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 8,
+      "mirror": 1,
+      "name": "Front Plate",
+      "noDraw": 1,
+      "points": [
+        {
+          "x": 59,
+          "y": 31
+        },
+        {
+          "x": 59,
+          "y": 40
+        },
+        {
+          "x": 41,
+          "y": 41
+        },
+        {
+          "x": 38,
+          "y": 39
+        },
+        {
+          "x": 38,
+          "y": 32
+        },
+        {
+          "x": 41,
+          "y": 30
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": 7
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": -7
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 16,
+              "y": 7
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 16,
+              "y": -7
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 32,
+              "y": 7
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 32,
+              "y": -7
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 48,
+              "y": -7
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 48,
+              "y": 7
+            }
+          }
+        }
+      ],
+      "closed": 1,
+      "collider": 0,
+      "color": 14079702,
+      "height": 8,
+      "mirror": 1,
+      "name": "Track Rivet",
+      "noDraw": 1,
+      "points": [
+        {
+          "x": -24,
+          "y": 35
+        },
+        {
+          "x": -22,
+          "y": 33
+        },
+        {
+          "x": -20,
+          "y": 33
+        },
+        {
+          "x": -18,
+          "y": 35
+        },
+        {
+          "x": -18,
+          "y": 37
+        },
+        {
+          "x": -20,
+          "y": 39
+        },
+        {
+          "x": -22,
+          "y": 39
+        },
+        {
+          "x": -24,
+          "y": 37
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11506944,
+      "height": 10,
+      "mirror": 1,
+      "name": "Back Plate In",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -33,
+          "y": 19
+        },
+        {
+          "x": -30,
+          "y": 22
+        },
+        {
+          "x": -30,
+          "y": 26
+        },
+        {
+          "x": -56,
+          "y": 26
+        },
+        {
+          "x": -56,
+          "y": 21
+        },
+        {
+          "x": -54,
+          "y": 19
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11506944,
+      "height": 10,
+      "mirror": 1,
+      "name": "Back Plate Out",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -30,
+          "y": 45
+        },
+        {
+          "x": -30,
+          "y": 50
+        },
+        {
+          "x": -33,
+          "y": 52
+        },
+        {
+          "x": -52,
+          "y": 52
+        },
+        {
+          "x": -56,
+          "y": 50
+        },
+        {
+          "x": -56,
+          "y": 45
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 10,
+      "mirror": 1,
+      "name": "Back Plate 2",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -30,
+          "y": 26
+        },
+        {
+          "x": -30,
+          "y": 45
+        },
+        {
+          "x": -43,
+          "y": 45
+        },
+        {
+          "x": -43,
+          "y": 26
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6961157,
+      "height": 10,
+      "mirror": 1,
+      "name": "Back Plate Out",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -49,
+          "y": 57
+        },
+        {
+          "x": -48,
+          "y": 52
+        },
+        {
+          "x": -39,
+          "y": 52
+        },
+        {
+          "x": -40,
+          "y": 59
+        },
+        {
+          "x": -43,
+          "y": 63
+        },
+        {
+          "x": -48,
+          "y": 66
+        },
+        {
+          "x": -58,
+          "y": 68
+        },
+        {
+          "x": -58,
+          "y": 60
+        },
+        {
+          "x": -53,
+          "y": 59
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 9620520,
+      "height": 10,
+      "mirror": 1,
+      "name": "Back Plate 1",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -43,
+          "y": 26
+        },
+        {
+          "x": -43,
+          "y": 45
+        },
+        {
+          "x": -56,
+          "y": 45
+        },
+        {
+          "x": -56,
+          "y": 26
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11842740,
+      "height": 12,
+      "mirror": 1,
+      "name": "Platform",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 34,
+          "y": 19
+        },
+        {
+          "x": -47,
+          "y": 19
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

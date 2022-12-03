@@ -1,0 +1,15 @@
+{
+  "damage": 100,
+  "emitterType": "Royal Emperor",
+  "name": "Royal Empire",
+  "objectType": "Royal Empire Bullet",
+  "powers": [
+    {
+      "data": {},
+      "tag": "KnockbackPower"
+    }
+  ],
+  "soundPack": "Iron Hammer Bullet",
+  "speed": 150
+}
+

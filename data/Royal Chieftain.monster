@@ -1,0 +1,84 @@
+{
+  "boss": 0,
+  "burrowDetectRange": 0,
+  "collisionRadius": 38,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Royal Chieftain Death Cries",
+  "drops": [],
+  "fixedFacing": 0,
+  "healRate": 0,
+  "hp": 380,
+  "idleAnimation": "Royal Windsor",
+  "maxMoveDistance": 500,
+  "name": "Royal Chieftain",
+  "objectType": "Royal Chieftain",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "Royal Windsor",
+  "runAnimationDuration": 200,
+  "runSpeed": 60,
+  "shields": [],
+  "successorInvulnerability": 1,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 800,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Royal Chieftain Turret",
+      "params": {
+        "data": {
+          "angleBetweenProjectiles": 150,
+          "gunBulletType": "Royal Britannia",
+          "leading": 0,
+          "numProjectiles": 1,
+          "range": 600
+        },
+        "tag": "GunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 2000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Royal Chieftain Turret",
+      "params": {
+        "data": {
+          "emitterType": "",
+          "explosionType": "",
+          "guardian": 0,
+          "lifetime": 60000,
+          "maxCount": 3,
+          "monsterName": "Royal Comet",
+          "movement": {
+            "data": {
+              "radius": 100
+            },
+            "tag": "OrbitMovement"
+          },
+          "noCollide": 0,
+          "noRespawn": 0,
+          "projectileType": "",
+          "range": 0,
+          "sound": "",
+          "speed": 0,
+          "volume": 50
+        },
+        "tag": "MinionParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 16,
+  "xpLevelCap": 19
+}
+

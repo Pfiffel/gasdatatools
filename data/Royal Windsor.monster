@@ -1,0 +1,67 @@
+{
+  "boss": 0,
+  "burrowDetectRange": 0,
+  "collisionRadius": 48,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Royal Windsor Death Cries",
+  "drops": [],
+  "fixedFacing": 0,
+  "healRate": 0,
+  "hp": 1600,
+  "idleAnimation": "Royal Windsor",
+  "maxMoveDistance": 500,
+  "name": "Royal Windsor",
+  "objectType": "Royal Windsor",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "Royal Windsor",
+  "runAnimationDuration": 200,
+  "runSpeed": 75,
+  "shields": [],
+  "successorInvulnerability": 1,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 750,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Royal Windsor Turret",
+      "params": {
+        "data": {
+          "gunBulletType": "Royal Windsor",
+          "range": 700
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "Aux Turret",
+      "cooldown": 600,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Royal Windsor Turret Aux",
+      "params": {
+        "data": {
+          "angleBetweenProjectiles": 150,
+          "gunBulletType": "Royal Albion",
+          "leading": 0,
+          "numProjectiles": 1,
+          "range": 600
+        },
+        "tag": "GunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 81,
+  "xpLevelCap": 19
+}
+

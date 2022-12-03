@@ -1,0 +1,55 @@
+{
+  "boss": 0,
+  "burrowDetectRange": 0,
+  "collisionRadius": 26,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Royal Dominion Death Cries",
+  "drops": [],
+  "fixedFacing": 0,
+  "healRate": 0,
+  "hp": 350,
+  "idleAnimation": "Royal Windsor",
+  "maxMoveDistance": 500,
+  "name": "Royal Dominion",
+  "objectType": "Royal Dominion",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "Royal Windsor",
+  "runAnimationDuration": 200,
+  "runSpeed": 75,
+  "shields": [
+    {
+      "additionalRadius": 10,
+      "angle": 1800,
+      "color": 9620520,
+      "halfArc": 1200,
+      "percentProtection": 80,
+      "thickness": 15
+    }
+  ],
+  "successorInvulnerability": 1,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 1800,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Royal Dominion Turret",
+      "params": {
+        "data": {
+          "gunBulletType": "Royal Dominion",
+          "range": 700
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 25,
+  "xpLevelCap": 19
+}
+

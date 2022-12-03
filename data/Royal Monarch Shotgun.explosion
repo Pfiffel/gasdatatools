@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 140,
+      "maxDistPercent": 100,
+      "minDistPercent": 90,
+      "particleType": "Royal Monarch Shotgun",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 220,
+      "maxDistPercent": 95,
+      "minDistPercent": 20,
+      "particleType": "Royal Monarch Shotgun",
+      "uniformAngles": 0
+    }
+  ],
+  "name": "Royal Monarch Shotgun",
+  "sound": "Enemy_RoyalKnight_Shotgun_Blast",
+  "volume": 100
+}
+

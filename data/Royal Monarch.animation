@@ -1,0 +1,142 @@
+{
+  "keyFrames": [
+    {
+      "bonePositions": [
+        {
+          "bone": "Track",
+          "rot": 0,
+          "x": 2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Track 2",
+          "rot": 0,
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Track 2 Mirror",
+          "rot": 0,
+          "x": 0,
+          "y": -2,
+          "z": 0
+        },
+        {
+          "bone": "Track Mirror",
+          "rot": 0,
+          "x": 0,
+          "y": 2,
+          "z": 0
+        }
+      ],
+      "frac": 0,
+      "tag": ""
+    },
+    {
+      "bonePositions": [
+        {
+          "bone": "Track",
+          "rot": 0,
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Track 2",
+          "rot": 0,
+          "x": 0,
+          "y": -2,
+          "z": 0
+        },
+        {
+          "bone": "Track 2 Mirror",
+          "rot": 0,
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Track Mirror",
+          "rot": 0,
+          "x": 0,
+          "y": -2,
+          "z": 0
+        }
+      ],
+      "frac": 250,
+      "tag": ""
+    },
+    {
+      "bonePositions": [
+        {
+          "bone": "Track",
+          "rot": 0,
+          "x": 0,
+          "y": -2,
+          "z": 0
+        },
+        {
+          "bone": "Track 2",
+          "rot": 0,
+          "x": 2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Track 2 Mirror",
+          "rot": 0,
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "bone": "Track Mirror",
+          "rot": 0,
+          "x": -2,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 500,
+      "tag": ""
+    },
+    {
+      "bonePositions": [
+        {
+          "bone": "Track",
+          "rot": 0,
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "bone": "Track 2",
+          "rot": 0,
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "bone": "Track 2 Mirror",
+          "rot": 0,
+          "x": 2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Track Mirror",
+          "rot": 0,
+          "x": 2,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 750,
+      "tag": ""
+    }
+  ],
+  "name": "Royal Monarch"
+}
+

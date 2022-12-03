@@ -1,0 +1,8 @@
+{
+  "name": "Royal Sentinel Death Cries",
+  "sounds": [
+    "Enemy_RoyalSentinel_DeathCry_01"
+  ],
+  "volume": 200
+}
+

@@ -1,0 +1,101 @@
+{
+  "boss": 0,
+  "burrowDetectRange": 0,
+  "collisionRadius": 42,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Royal Pendragon Death Cries",
+  "drops": [],
+  "fixedFacing": 0,
+  "healRate": 0,
+  "hp": 1200,
+  "idleAnimation": "BaseArcher Idle",
+  "maxMoveDistance": 500,
+  "name": "Royal Pendragon",
+  "objectType": "Royal Pendragon",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "Iron Bulwark Run",
+  "runAnimationDuration": 700,
+  "runSpeed": 100,
+  "shields": [
+    {
+      "additionalRadius": 20,
+      "angle": 900,
+      "color": 4286945,
+      "halfArc": 500,
+      "percentProtection": 80,
+      "thickness": 15
+    },
+    {
+      "additionalRadius": 20,
+      "angle": -900,
+      "color": 4286945,
+      "halfArc": 500,
+      "percentProtection": 80,
+      "thickness": 15
+    }
+  ],
+  "successorInvulnerability": 1,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 2500,
+      "extraTargetingArc": 300,
+      "halfArc": 900,
+      "objectType": "Royal Pendragon Turret",
+      "params": {
+        "data": {
+          "delay": 600,
+          "duration": 1000,
+          "endSound": "Enemy_RoyalDragoon_Flamethrower_End",
+          "endVolume": 75,
+          "halfArc": 300,
+          "loopSound": "Enemy_RoyalDragoon_Flamethrower_Loop",
+          "loopVolume": 75,
+          "particles": [
+            {
+              "cooldown": 3,
+              "maxDistPercent": 100,
+              "minDistPercent": 100,
+              "particleType": "Flamethrower1"
+            },
+            {
+              "cooldown": 3,
+              "maxDistPercent": 100,
+              "minDistPercent": 75,
+              "particleType": "Flamethrower2"
+            },
+            {
+              "cooldown": 3,
+              "maxDistPercent": 100,
+              "minDistPercent": 50,
+              "particleType": "Flamethrower3"
+            }
+          ],
+          "powers": [
+            {
+              "data": {
+                "dps": 550
+              },
+              "tag": "SizzlePower"
+            }
+          ],
+          "range": 350,
+          "startSound": "Enemy_RoyalDragoon_Flamethrower_Start",
+          "startVolume": 75,
+          "telegraphSound": "Enemy_IronConqueror_Shotgun_Med_Telegraph",
+          "telegraphVolume": 50
+        },
+        "tag": "FlamethrowerParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 81,
+  "xpLevelCap": 19
+}
+

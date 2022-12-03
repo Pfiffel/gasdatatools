@@ -1,0 +1,86 @@
+{
+  "keyFrames": [
+    {
+      "bonePositions": [
+        {
+          "bone": "Cog1",
+          "rot": 0,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Cog2",
+          "rot": 0,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 0,
+      "tag": ""
+    },
+    {
+      "bonePositions": [
+        {
+          "bone": "Cog1",
+          "rot": 900,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Cog2",
+          "rot": -1800,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 250,
+      "tag": ""
+    },
+    {
+      "bonePositions": [
+        {
+          "bone": "Cog1",
+          "rot": 1800,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Cog2",
+          "rot": -3600,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 500,
+      "tag": ""
+    },
+    {
+      "bonePositions": [
+        {
+          "bone": "Cog1",
+          "rot": 2700,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Cog2",
+          "rot": -5400,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 750,
+      "tag": ""
+    }
+  ],
+  "name": "Royal Sentinel"
+}
+

@@ -1,0 +1,86 @@
+{
+  "keyFrames": [
+    {
+      "bonePositions": [
+        {
+          "bone": "Track",
+          "rot": 0,
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Track Mirror",
+          "rot": 0,
+          "x": 0,
+          "y": 1,
+          "z": 0
+        }
+      ],
+      "frac": 0,
+      "tag": ""
+    },
+    {
+      "bonePositions": [
+        {
+          "bone": "Track",
+          "rot": 0,
+          "x": -1,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Track Mirror",
+          "rot": 0,
+          "x": 0,
+          "y": -1,
+          "z": 0
+        }
+      ],
+      "frac": 250,
+      "tag": ""
+    },
+    {
+      "bonePositions": [
+        {
+          "bone": "Track",
+          "rot": 0,
+          "x": 0,
+          "y": -1,
+          "z": 0
+        },
+        {
+          "bone": "Track Mirror",
+          "rot": 0,
+          "x": -1,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 500,
+      "tag": ""
+    },
+    {
+      "bonePositions": [
+        {
+          "bone": "Track",
+          "rot": 0,
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "bone": "Track Mirror",
+          "rot": 0,
+          "x": 1,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 750,
+      "tag": ""
+    }
+  ],
+  "name": "Royal Windsor"
+}
+

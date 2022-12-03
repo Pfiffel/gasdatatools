@@ -1,0 +1,44 @@
+{
+  "colorPoints": [
+    {
+      "frac": 200,
+      "value": 16775680
+    },
+    {
+      "frac": 400,
+      "value": 16746240
+    },
+    {
+      "frac": 900,
+      "value": 12451840
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 300,
+  "minLifetime": 200,
+  "name": "Flamethrower1",
+  "objectType": "Flamethrower1",
+  "positionTweenType": "EXPOINOUT",
+  "scalePoints": [
+    {
+      "frac": 400,
+      "value": 200
+    },
+    {
+      "frac": 900,
+      "value": 500
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 16777215,
+  "startScale": 10,
+  "stayLow": 1
+}
+

@@ -1,0 +1,8 @@
+{
+  "name": "Royal Crown Death Cries",
+  "sounds": [
+    "Enemy_RoyalCrown_DeathCry_01"
+  ],
+  "volume": 300
+}
+

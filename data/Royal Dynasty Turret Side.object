@@ -1,0 +1,379 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Muzzle1",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 87,
+          "y": 0
+        }
+      }
+    },
+    {
+      "height": 0,
+      "name": "Muzzle2",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 77,
+          "y": -32
+        }
+      }
+    },
+    {
+      "height": 0,
+      "name": "Muzzle3",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 77,
+          "y": 32
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Royal Dynasty Turret Side",
+  "shapes": [
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4802889,
+      "height": 1,
+      "mirror": 1,
+      "name": "Center",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 36,
+          "y": 25
+        },
+        {
+          "x": -2,
+          "y": 26
+        },
+        {
+          "x": -19,
+          "y": 23
+        },
+        {
+          "x": -24,
+          "y": 7
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 2,
+      "mirror": 1,
+      "name": "Main Ring",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 18,
+          "y": 21
+        },
+        {
+          "x": 23,
+          "y": 14
+        },
+        {
+          "x": 25,
+          "y": 7
+        },
+        {
+          "x": 47,
+          "y": 12
+        },
+        {
+          "x": 42,
+          "y": 26
+        },
+        {
+          "x": 32,
+          "y": 39
+        },
+        {
+          "x": 21,
+          "y": 45
+        },
+        {
+          "x": 9,
+          "y": 48
+        },
+        {
+          "x": -7,
+          "y": 48
+        },
+        {
+          "x": -21,
+          "y": 43
+        },
+        {
+          "x": -33,
+          "y": 34
+        },
+        {
+          "x": -41,
+          "y": 20
+        },
+        {
+          "x": -44,
+          "y": 7
+        },
+        {
+          "x": -24,
+          "y": 7
+        },
+        {
+          "x": -21,
+          "y": 15
+        },
+        {
+          "x": -13,
+          "y": 23
+        },
+        {
+          "x": -2,
+          "y": 26
+        },
+        {
+          "x": 10,
+          "y": 25
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -10,
+              "y": 30
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -10,
+              "y": -30
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 3,
+      "mirror": 1,
+      "name": "Gun Barrel",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 83,
+          "y": 9
+        },
+        {
+          "x": 47,
+          "y": 12
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 3,
+      "mirror": 1,
+      "name": "Back",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -10,
+          "y": 7
+        },
+        {
+          "x": -47,
+          "y": 7
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -10,
+              "y": 30
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -10,
+              "y": -30
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 11506944,
+      "height": 3,
+      "mirror": 1,
+      "name": "Gun Back",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 47,
+          "y": 12
+        },
+        {
+          "x": 35,
+          "y": 12
+        },
+        {
+          "x": 24,
+          "y": 9
+        },
+        {
+          "x": 17,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -4,
+              "y": 37
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -30,
+              "y": 22
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -4,
+              "y": -37
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -30,
+              "y": -22
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 14079702,
+      "height": 3,
+      "mirror": 1,
+      "name": "Rivet",
+      "noDraw": 1,
+      "points": [
+        {
+          "x": 5,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 3
+        },
+        {
+          "x": 1,
+          "y": 3
+        },
+        {
+          "x": -1,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -10,
+              "y": 30
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -10,
+              "y": -30
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 11506944,
+      "height": 4,
+      "mirror": 1,
+      "name": "Gun Muzzle",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 92,
+          "y": 8
+        },
+        {
+          "x": 83,
+          "y": 9
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

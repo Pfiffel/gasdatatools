@@ -1,0 +1,710 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 30,
+      "name": "Muzzle L1",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 177,
+          "y": -48
+        }
+      }
+    },
+    {
+      "height": 30,
+      "name": "Muzzle R1",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 177,
+          "y": 48
+        }
+      }
+    },
+    {
+      "height": 30,
+      "name": "Muzzle L2",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 150,
+          "y": -90
+        }
+      }
+    },
+    {
+      "height": 30,
+      "name": "Muzzle R2",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 150,
+          "y": 90
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Royal Sovereign Turret",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": 9
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": 19
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": -9
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": -19
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 11506944,
+      "height": 2,
+      "mirror": 1,
+      "name": "Gun Platform",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -27,
+          "y": 5
+        },
+        {
+          "x": 60,
+          "y": 5
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 2,
+      "mirror": 1,
+      "name": "Gun Platform",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 60,
+          "y": 22
+        },
+        {
+          "x": 81,
+          "y": 22
+        },
+        {
+          "x": 110,
+          "y": 15
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": 48
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -27,
+              "y": 90
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": -48
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -27,
+              "y": -90
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 2,
+      "mirror": 1,
+      "name": "Gun Muzzle",
+      "noDraw": 1,
+      "points": [
+        {
+          "x": 159,
+          "y": 16
+        },
+        {
+          "x": 190,
+          "y": 12
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [
+        {
+          "pos": {
+            "f": 320,
+            "p": {
+              "x": 0,
+              "y": -15
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 320,
+            "p": {
+              "x": 21,
+              "y": -47
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": -320,
+            "p": {
+              "x": 0,
+              "y": 15
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": -320,
+            "p": {
+              "x": 21,
+              "y": 47
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 11506944,
+      "height": 2,
+      "mirror": 1,
+      "name": "Back",
+      "noDraw": 1,
+      "points": [
+        {
+          "x": -86,
+          "y": 8
+        },
+        {
+          "x": -76,
+          "y": 13
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 3,
+      "mirror": 1,
+      "name": "Gun Platform 2",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 73,
+          "y": 48
+        },
+        {
+          "x": 50,
+          "y": 90
+        },
+        {
+          "x": -44,
+          "y": 90
+        },
+        {
+          "x": -71,
+          "y": 48
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 3,
+      "mirror": 1,
+      "name": "Gun Platform 3",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 73,
+          "y": 48
+        },
+        {
+          "x": 81,
+          "y": 22
+        },
+        {
+          "x": -75,
+          "y": 22
+        },
+        {
+          "x": -75,
+          "y": 40
+        },
+        {
+          "x": -71,
+          "y": 48
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 3,
+      "mirror": 1,
+      "name": "Gun Platform 1",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -44,
+          "y": 90
+        },
+        {
+          "x": -36,
+          "y": 100
+        },
+        {
+          "x": -25,
+          "y": 107
+        },
+        {
+          "x": -11,
+          "y": 111
+        },
+        {
+          "x": 33,
+          "y": 111
+        },
+        {
+          "x": 49,
+          "y": 90
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": 48
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -27,
+              "y": 90
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": -48
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -27,
+              "y": -90
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 3,
+      "mirror": 1,
+      "name": "Gun 3",
+      "noDraw": 1,
+      "points": [
+        {
+          "x": 98,
+          "y": 13
+        },
+        {
+          "x": 152,
+          "y": 13
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": 48
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -27,
+              "y": 90
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": -48
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -27,
+              "y": -90
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 11506944,
+      "height": 3,
+      "mirror": 1,
+      "name": "Gun 4",
+      "noDraw": 1,
+      "points": [
+        {
+          "x": 152,
+          "y": 13
+        },
+        {
+          "x": 159,
+          "y": 18
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4802889,
+      "height": 4,
+      "mirror": 1,
+      "name": "Counterweight",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -80,
+          "y": 31
+        },
+        {
+          "x": -73,
+          "y": 36
+        },
+        {
+          "x": -38,
+          "y": 36
+        },
+        {
+          "x": -27,
+          "y": 22
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": 48
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -27,
+              "y": 90
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": -48
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -27,
+              "y": -90
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 4,
+      "mirror": 1,
+      "name": "Gun 1",
+      "noDraw": 1,
+      "points": [
+        {
+          "x": 12,
+          "y": 3
+        },
+        {
+          "x": 80,
+          "y": 20
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": 48
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -27,
+              "y": 90
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": -48
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -27,
+              "y": -90
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 11506944,
+      "height": 4,
+      "mirror": 1,
+      "name": "Gun 2",
+      "noDraw": 1,
+      "points": [
+        {
+          "x": 80,
+          "y": 20
+        },
+        {
+          "x": 98,
+          "y": 16
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": 21
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 11,
+              "y": 48
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 37,
+              "y": 90
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": -21
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 11,
+              "y": -48
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 37,
+              "y": -90
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 14079702,
+      "height": 4,
+      "mirror": 1,
+      "name": "Rivet",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -71,
+          "y": 2
+        },
+        {
+          "x": -68,
+          "y": 5
+        },
+        {
+          "x": -64,
+          "y": 5
+        },
+        {
+          "x": -61,
+          "y": 2
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

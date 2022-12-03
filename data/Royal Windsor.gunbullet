@@ -1,0 +1,18 @@
+{
+  "damage": 200,
+  "emitterType": "Royal Emperor",
+  "name": "Royal Windsor",
+  "objectType": "Royal Windsor Bullet",
+  "powers": [
+    {
+      "data": {
+        "distance": 100,
+        "speed": 800
+      },
+      "tag": "KnockbackPower"
+    }
+  ],
+  "soundPack": "Iron Bulwark Bullet",
+  "speed": 170
+}
+

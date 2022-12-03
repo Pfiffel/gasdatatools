@@ -1,0 +1,190 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 59,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Royal Chieftain Turret",
+  "shapes": [
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11506944,
+      "height": 4,
+      "mirror": 1,
+      "name": "Hose",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 46,
+          "y": 8
+        },
+        {
+          "x": 34,
+          "y": 9
+        },
+        {
+          "x": 30,
+          "y": 13
+        },
+        {
+          "x": 18,
+          "y": 7
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 4,
+      "mirror": 1,
+      "name": "Turret",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 60,
+          "y": 14
+        },
+        {
+          "x": 51,
+          "y": 13
+        },
+        {
+          "x": 46,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 9578700,
+      "height": 5,
+      "mirror": 1,
+      "name": "Turret Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 9,
+          "y": 13
+        },
+        {
+          "x": 29,
+          "y": 22
+        },
+        {
+          "x": 18,
+          "y": 31
+        },
+        {
+          "x": -20,
+          "y": 31
+        },
+        {
+          "x": -30,
+          "y": 23
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 5,
+      "mirror": 1,
+      "name": "Turret Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 18,
+          "y": 7
+        },
+        {
+          "x": 30,
+          "y": 13
+        },
+        {
+          "x": 30,
+          "y": 20
+        },
+        {
+          "x": 29,
+          "y": 22
+        },
+        {
+          "x": 9,
+          "y": 13
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": -17
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": 17
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 6961157,
+      "height": 7,
+      "mirror": 1,
+      "name": "Exhaust",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -15,
+          "y": 3
+        },
+        {
+          "x": -18,
+          "y": 6
+        },
+        {
+          "x": -58,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

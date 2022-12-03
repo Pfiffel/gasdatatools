@@ -1,10 +1,10 @@
 {
   "color": 6561567,
   "convoyBosses": [
-    "Iron Leviathan",
-    "Iron Colossus",
-    "Iron Behemoth",
-    "Iron Juggernaut"
+    "Royal Monarch",
+    "Royal Crown",
+    "Royal Dynasty",
+    "Royal Sovereign"
   ],
   "convoyPeriodSeconds": 2000,
   "eventBossPeriodSeconds": 600,
@@ -14,19 +14,19 @@
   "monsters": [
     {
       "count": 100,
-      "name": "Iron Hammer"
+      "name": "Royal Hotspur"
     },
     {
       "count": 100,
-      "name": "Iron Legionnaire"
+      "name": "Royal Cavalier"
     },
     {
       "count": 25,
-      "name": "Iron Bulwark"
+      "name": "Royal Chieftain"
     },
     {
       "count": 25,
-      "name": "Iron Protector"
+      "name": "Royal Grenadier"
     }
   ],
   "name": "Cromwell 3 Red",

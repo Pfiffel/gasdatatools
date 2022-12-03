@@ -1,0 +1,94 @@
+{
+  "boss": 0,
+  "burrowDetectRange": 0,
+  "collisionRadius": 40,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Royal Britannia Death Cries",
+  "drops": [],
+  "fixedFacing": 0,
+  "healRate": 0,
+  "hp": 650,
+  "idleAnimation": "Royal Windsor",
+  "maxMoveDistance": 500,
+  "name": "Royal Britannia",
+  "objectType": "Royal Britannia",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "Royal Windsor",
+  "runAnimationDuration": 200,
+  "runSpeed": 75,
+  "shields": [],
+  "successorInvulnerability": 1,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 2500,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Royal Britannia Turret",
+      "params": {
+        "data": {
+          "damage": 250,
+          "delay": 1000,
+          "explosionType": "Royal Britannia Shotgun",
+          "halfArc": 150,
+          "powers": [],
+          "range": 450,
+          "triggerSound": "Enemy_IronLance_Shotgun_Long_Telegraph",
+          "triggerVolume": 50
+        },
+        "tag": "ShotgunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "Turret Front",
+      "cooldown": 1200,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Royal Britannia Turret Aux",
+      "params": {
+        "data": {
+          "angleBetweenProjectiles": 150,
+          "gunBulletType": "Royal Britannia",
+          "leading": 0,
+          "numProjectiles": 1,
+          "range": 700
+        },
+        "tag": "GunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "Turret Back",
+      "cooldown": 1600,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Royal Britannia Turret Aux",
+      "params": {
+        "data": {
+          "angleBetweenProjectiles": 150,
+          "gunBulletType": "Royal Britannia",
+          "leading": 0,
+          "numProjectiles": 1,
+          "range": 700
+        },
+        "tag": "GunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 36,
+  "xpLevelCap": 19
+}
+

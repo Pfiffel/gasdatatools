@@ -1,0 +1,743 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 14,
+      "name": "Turret",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": -12,
+          "y": 0
+        }
+      }
+    },
+    {
+      "height": 14,
+      "name": "Turret Front",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 38,
+          "y": 0
+        }
+      }
+    },
+    {
+      "height": 14,
+      "name": "Turret Back",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": -100,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Royal Dreadnought",
+  "shapes": [
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 2,
+      "mirror": 1,
+      "name": "Hull Out",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 73,
+          "y": 104
+        },
+        {
+          "x": 126,
+          "y": 34
+        },
+        {
+          "x": 132,
+          "y": 22
+        },
+        {
+          "x": 104,
+          "y": 22
+        },
+        {
+          "x": 95,
+          "y": 26
+        },
+        {
+          "x": 53,
+          "y": 77
+        },
+        {
+          "x": -62,
+          "y": 76
+        },
+        {
+          "x": -83,
+          "y": 39
+        },
+        {
+          "x": -110,
+          "y": 39
+        },
+        {
+          "x": -77,
+          "y": 103
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11506944,
+      "height": 2,
+      "mirror": 1,
+      "name": "Front Plate",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 87,
+          "y": 97
+        },
+        {
+          "x": 124,
+          "y": 42
+        },
+        {
+          "x": 135,
+          "y": 30
+        },
+        {
+          "x": 113,
+          "y": 30
+        },
+        {
+          "x": 108,
+          "y": 32
+        },
+        {
+          "x": 62,
+          "y": 92
+        },
+        {
+          "x": 64,
+          "y": 97
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 3,
+      "mirror": 1,
+      "name": "Front Plate Array",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 74,
+          "y": 92
+        },
+        {
+          "x": 98,
+          "y": 92
+        },
+        {
+          "x": 107,
+          "y": 80
+        },
+        {
+          "x": 82,
+          "y": 80
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 3,
+      "mirror": 1,
+      "name": "Front Plate Array",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 91,
+          "y": 69
+        },
+        {
+          "x": 113,
+          "y": 69
+        },
+        {
+          "x": 121,
+          "y": 57
+        },
+        {
+          "x": 99,
+          "y": 57
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 3,
+      "mirror": 1,
+      "name": "Front Plate Array",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 107,
+          "y": 47
+        },
+        {
+          "x": 128,
+          "y": 47
+        },
+        {
+          "x": 135,
+          "y": 36
+        },
+        {
+          "x": 114,
+          "y": 36
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 4,
+      "mirror": 1,
+      "name": "Hull Mid",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 104,
+          "y": 22
+        },
+        {
+          "x": 95,
+          "y": 26
+        },
+        {
+          "x": 53,
+          "y": 77
+        },
+        {
+          "x": -63,
+          "y": 76
+        },
+        {
+          "x": -79,
+          "y": 47
+        },
+        {
+          "x": 38,
+          "y": 47
+        },
+        {
+          "x": 67,
+          "y": 22
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11842740,
+      "height": 4,
+      "mirror": 1,
+      "name": "Hull In",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 82,
+          "y": 4
+        },
+        {
+          "x": 67,
+          "y": 22
+        },
+        {
+          "x": 38,
+          "y": 47
+        },
+        {
+          "x": -84,
+          "y": 47
+        },
+        {
+          "x": -89,
+          "y": 39
+        },
+        {
+          "x": -110,
+          "y": 39
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 30,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 60,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 90,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 1,
+      "collider": 0,
+      "color": 14079702,
+      "height": 6,
+      "mirror": 1,
+      "name": "Rivet Out",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -50,
+          "y": 93
+        },
+        {
+          "x": -48,
+          "y": 95
+        },
+        {
+          "x": -48,
+          "y": 97
+        },
+        {
+          "x": -50,
+          "y": 99
+        },
+        {
+          "x": -52,
+          "y": 99
+        },
+        {
+          "x": -54,
+          "y": 97
+        },
+        {
+          "x": -54,
+          "y": 95
+        },
+        {
+          "x": -52,
+          "y": 93
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 14079702,
+      "height": 6,
+      "mirror": 1,
+      "name": "Rivet In",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 52,
+          "y": 63
+        },
+        {
+          "x": 54,
+          "y": 65
+        },
+        {
+          "x": 54,
+          "y": 67
+        },
+        {
+          "x": 52,
+          "y": 69
+        },
+        {
+          "x": 50,
+          "y": 69
+        },
+        {
+          "x": 48,
+          "y": 67
+        },
+        {
+          "x": 48,
+          "y": 65
+        },
+        {
+          "x": 50,
+          "y": 63
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 14079702,
+      "height": 6,
+      "mirror": 1,
+      "name": "Rivet In",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 68,
+          "y": 45
+        },
+        {
+          "x": 70,
+          "y": 47
+        },
+        {
+          "x": 70,
+          "y": 49
+        },
+        {
+          "x": 68,
+          "y": 51
+        },
+        {
+          "x": 66,
+          "y": 51
+        },
+        {
+          "x": 64,
+          "y": 49
+        },
+        {
+          "x": 64,
+          "y": 47
+        },
+        {
+          "x": 66,
+          "y": 45
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 14079702,
+      "height": 6,
+      "mirror": 1,
+      "name": "Rivet In",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 83,
+          "y": 26
+        },
+        {
+          "x": 85,
+          "y": 28
+        },
+        {
+          "x": 85,
+          "y": 30
+        },
+        {
+          "x": 83,
+          "y": 32
+        },
+        {
+          "x": 81,
+          "y": 32
+        },
+        {
+          "x": 79,
+          "y": 30
+        },
+        {
+          "x": 79,
+          "y": 28
+        },
+        {
+          "x": 81,
+          "y": 26
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6961157,
+      "height": 8,
+      "mirror": 1,
+      "name": "Exhaust",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -74,
+          "y": 80
+        },
+        {
+          "x": -68,
+          "y": 85
+        },
+        {
+          "x": -69,
+          "y": 92
+        },
+        {
+          "x": -74,
+          "y": 96
+        },
+        {
+          "x": -106,
+          "y": 95
+        },
+        {
+          "x": -110,
+          "y": 91
+        },
+        {
+          "x": -110,
+          "y": 85
+        },
+        {
+          "x": -106,
+          "y": 81
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6961157,
+      "height": 8,
+      "mirror": 1,
+      "name": "Exhaust",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -85,
+          "y": 55
+        },
+        {
+          "x": -80,
+          "y": 60
+        },
+        {
+          "x": -80,
+          "y": 67
+        },
+        {
+          "x": -85,
+          "y": 71
+        },
+        {
+          "x": -117,
+          "y": 70
+        },
+        {
+          "x": -122,
+          "y": 65
+        },
+        {
+          "x": -121,
+          "y": 59
+        },
+        {
+          "x": -117,
+          "y": 56
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6961157,
+      "height": 10,
+      "mirror": 1,
+      "name": "Piping",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 4,
+          "y": 66
+        },
+        {
+          "x": 20,
+          "y": 69
+        },
+        {
+          "x": 22,
+          "y": 71
+        },
+        {
+          "x": 29,
+          "y": 85
+        },
+        {
+          "x": 35,
+          "y": 86
+        },
+        {
+          "x": 43,
+          "y": 83
+        },
+        {
+          "x": 44,
+          "y": 76
+        },
+        {
+          "x": 33,
+          "y": 54
+        },
+        {
+          "x": 7,
+          "y": 47
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6961157,
+      "height": 10,
+      "mirror": 1,
+      "name": "Piping",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -26,
+          "y": 66
+        },
+        {
+          "x": -39,
+          "y": 73
+        },
+        {
+          "x": -41,
+          "y": 88
+        },
+        {
+          "x": -47,
+          "y": 91
+        },
+        {
+          "x": -54,
+          "y": 90
+        },
+        {
+          "x": -59,
+          "y": 85
+        },
+        {
+          "x": -58,
+          "y": 67
+        },
+        {
+          "x": -54,
+          "y": 60
+        },
+        {
+          "x": -30,
+          "y": 46
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 12,
+      "mirror": 1,
+      "name": "Center",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 11,
+          "y": 25
+        },
+        {
+          "x": 5,
+          "y": 69
+        },
+        {
+          "x": -27,
+          "y": 68
+        },
+        {
+          "x": -35,
+          "y": 25
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

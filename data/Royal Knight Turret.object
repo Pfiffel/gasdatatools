@@ -1,0 +1,764 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 87,
+          "y": 72
+        }
+      }
+    }
+  ],
+  "bonePivots": [
+    {
+      "name": "Hand",
+      "p": {
+        "x": 2,
+        "y": 44
+      }
+    },
+    {
+      "name": "Foot",
+      "p": {
+        "x": 1,
+        "y": 31
+      }
+    }
+  ],
+  "floppiness": 0,
+  "name": "Royal Knight Turret",
+  "shapes": [
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 7,
+      "mirror": 1,
+      "name": "Cannon Front",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 44,
+          "y": 66
+        },
+        {
+          "x": 44,
+          "y": 78
+        },
+        {
+          "x": 84,
+          "y": 78
+        },
+        {
+          "x": 92,
+          "y": 81
+        },
+        {
+          "x": 92,
+          "y": 63
+        },
+        {
+          "x": 84,
+          "y": 66
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 4802889,
+      "height": 8,
+      "mirror": 1,
+      "name": "Cannon Center",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -25,
+          "y": 62
+        },
+        {
+          "x": -29,
+          "y": 64
+        },
+        {
+          "x": -33,
+          "y": 67
+        },
+        {
+          "x": -35,
+          "y": 71
+        },
+        {
+          "x": -35,
+          "y": 82
+        },
+        {
+          "x": 43,
+          "y": 82
+        },
+        {
+          "x": 46,
+          "y": 79
+        },
+        {
+          "x": 46,
+          "y": 65
+        },
+        {
+          "x": 42,
+          "y": 62
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hand",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 8,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 1,
+      "collider": 0,
+      "color": 4802889,
+      "height": 8,
+      "mirror": 1,
+      "name": "Cannon Ring",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 51,
+          "y": 65
+        },
+        {
+          "x": 51,
+          "y": 79
+        },
+        {
+          "x": 56,
+          "y": 79
+        },
+        {
+          "x": 56,
+          "y": 65
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 4802889,
+      "height": 10,
+      "mirror": 1,
+      "name": "Cannon Back",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -20,
+          "y": 63
+        },
+        {
+          "x": -22,
+          "y": 66
+        },
+        {
+          "x": -22,
+          "y": 72
+        },
+        {
+          "x": -20,
+          "y": 76
+        },
+        {
+          "x": -16,
+          "y": 77
+        },
+        {
+          "x": 2,
+          "y": 77
+        },
+        {
+          "x": 5,
+          "y": 76
+        },
+        {
+          "x": 7,
+          "y": 72
+        },
+        {
+          "x": 7,
+          "y": 65
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 12,
+      "mirror": 1,
+      "name": "Cannon Sight",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 82,
+          "y": 72
+        },
+        {
+          "x": 81,
+          "y": 72
+        },
+        {
+          "x": 82,
+          "y": 73
+        },
+        {
+          "x": 86,
+          "y": 73
+        },
+        {
+          "x": 87,
+          "y": 72
+        },
+        {
+          "x": 86,
+          "y": 72
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Shoulders",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 25,
+      "mirror": 1,
+      "name": "Shoulder",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 24,
+          "y": 48
+        },
+        {
+          "x": 24,
+          "y": 60
+        },
+        {
+          "x": 21,
+          "y": 64
+        },
+        {
+          "x": 17,
+          "y": 66
+        },
+        {
+          "x": 12,
+          "y": 67
+        },
+        {
+          "x": -10,
+          "y": 67
+        },
+        {
+          "x": -16,
+          "y": 66
+        },
+        {
+          "x": -20,
+          "y": 64
+        },
+        {
+          "x": -23,
+          "y": 60
+        },
+        {
+          "x": -23,
+          "y": 48
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -15,
+              "y": 58
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": 61
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 16,
+              "y": 58
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -15,
+              "y": -58
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": -61
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 16,
+              "y": -58
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 26,
+      "mirror": 1,
+      "name": "Shoulder Rivet",
+      "noDraw": 1,
+      "points": [
+        {
+          "x": -3,
+          "y": 1
+        },
+        {
+          "x": -1,
+          "y": 3
+        },
+        {
+          "x": 1,
+          "y": 3
+        },
+        {
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6961157,
+      "height": 28,
+      "mirror": 1,
+      "name": "Exhaust",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -32,
+          "y": 4
+        },
+        {
+          "x": -36,
+          "y": 7
+        },
+        {
+          "x": -38,
+          "y": 11
+        },
+        {
+          "x": -38,
+          "y": 16
+        },
+        {
+          "x": -36,
+          "y": 20
+        },
+        {
+          "x": -32,
+          "y": 22
+        },
+        {
+          "x": -23,
+          "y": 22
+        },
+        {
+          "x": -23,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Shoulders",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 12538707,
+      "height": 30,
+      "mirror": 1,
+      "name": "Torso",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 25,
+          "y": 3
+        },
+        {
+          "x": 24,
+          "y": 10
+        },
+        {
+          "x": 23,
+          "y": 16
+        },
+        {
+          "x": 19,
+          "y": 20
+        },
+        {
+          "x": -24,
+          "y": 20
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Shoulders",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 32,
+      "mirror": 1,
+      "name": "Shoulder",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 28,
+          "y": 20
+        },
+        {
+          "x": 28,
+          "y": 44
+        },
+        {
+          "x": 25,
+          "y": 48
+        },
+        {
+          "x": 19,
+          "y": 51
+        },
+        {
+          "x": 13,
+          "y": 52
+        },
+        {
+          "x": -13,
+          "y": 52
+        },
+        {
+          "x": -20,
+          "y": 51
+        },
+        {
+          "x": -24,
+          "y": 48
+        },
+        {
+          "x": -28,
+          "y": 44
+        },
+        {
+          "x": -28,
+          "y": 20
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -22,
+              "y": 41
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -8,
+              "y": 45
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 8,
+              "y": 45
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 22,
+              "y": 41
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -22,
+              "y": -41
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -8,
+              "y": -45
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 8,
+              "y": -45
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 22,
+              "y": -41
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 33,
+      "mirror": 1,
+      "name": "Shoulder Rivet",
+      "noDraw": 1,
+      "points": [
+        {
+          "x": -3,
+          "y": 1
+        },
+        {
+          "x": -1,
+          "y": 3
+        },
+        {
+          "x": 1,
+          "y": 3
+        },
+        {
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4802889,
+      "height": 36,
+      "mirror": 1,
+      "name": "Head",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -18,
+          "y": 4
+        },
+        {
+          "x": -16,
+          "y": 9
+        },
+        {
+          "x": -11,
+          "y": 12
+        },
+        {
+          "x": 4,
+          "y": 12
+        },
+        {
+          "x": 7,
+          "y": 11
+        },
+        {
+          "x": 9,
+          "y": 8
+        },
+        {
+          "x": 12,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 37,
+      "mirror": 1,
+      "name": "Visor",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 9,
+          "y": 8
+        },
+        {
+          "x": 7,
+          "y": 11
+        },
+        {
+          "x": 4,
+          "y": 12
+        },
+        {
+          "x": -12,
+          "y": 12
+        },
+        {
+          "x": -9,
+          "y": 17
+        },
+        {
+          "x": 4,
+          "y": 17
+        },
+        {
+          "x": 9,
+          "y": 16
+        },
+        {
+          "x": 12,
+          "y": 12
+        },
+        {
+          "x": 17,
+          "y": 4
+        },
+        {
+          "x": 12,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 10,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 14079702,
+      "height": 38,
+      "mirror": 1,
+      "name": "Head Rivet",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -15,
+          "y": 1
+        },
+        {
+          "x": -13,
+          "y": 3
+        },
+        {
+          "x": -11,
+          "y": 3
+        },
+        {
+          "x": -9,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

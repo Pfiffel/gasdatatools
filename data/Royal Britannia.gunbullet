@@ -1,0 +1,10 @@
+{
+  "damage": 200,
+  "emitterType": "Iron Bulwark",
+  "name": "Royal Britannia",
+  "objectType": "Royal Britannia Bullet",
+  "powers": [],
+  "soundPack": "Iron Bulwark Bullet",
+  "speed": 150
+}
+

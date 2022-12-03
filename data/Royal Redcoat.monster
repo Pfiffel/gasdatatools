@@ -1,0 +1,49 @@
+{
+  "boss": 0,
+  "burrowDetectRange": 0,
+  "collisionRadius": 15,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Royal Redcoat Death Cries",
+  "drops": [],
+  "fixedFacing": 0,
+  "healRate": 0,
+  "hp": 45,
+  "idleAnimation": "BaseArcher Idle",
+  "maxMoveDistance": 500,
+  "name": "Royal Redcoat",
+  "objectType": "Royal Redcoat",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "BaseArcher Run",
+  "runAnimationDuration": 700,
+  "runSpeed": 75,
+  "shields": [],
+  "successorInvulnerability": 1,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 1000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Royal Redcoat Turret",
+      "params": {
+        "data": {
+          "angleBetweenProjectiles": 150,
+          "gunBulletType": "Royal Redcoat",
+          "leading": 0,
+          "numProjectiles": 1,
+          "range": 600
+        },
+        "tag": "GunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 1,
+  "xpLevelCap": 19
+}
+

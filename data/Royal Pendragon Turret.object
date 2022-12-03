@@ -1,0 +1,406 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 75,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [
+    {
+      "name": "Hand",
+      "p": {
+        "x": -9,
+        "y": 55
+      }
+    },
+    {
+      "name": "Foot",
+      "p": {
+        "x": -10,
+        "y": 39
+      }
+    }
+  ],
+  "floppiness": 0,
+  "name": "Royal Pendragon Turret",
+  "shapes": [
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11506944,
+      "height": 0,
+      "mirror": 1,
+      "name": "Horns",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -26,
+          "y": 4
+        },
+        {
+          "x": -23,
+          "y": 11
+        },
+        {
+          "x": -17,
+          "y": 15
+        },
+        {
+          "x": -9,
+          "y": 17
+        },
+        {
+          "x": -1,
+          "y": 18
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11506944,
+      "height": 2,
+      "mirror": 1,
+      "name": "Horns",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -14,
+          "y": 5
+        },
+        {
+          "x": -11,
+          "y": 12
+        },
+        {
+          "x": -5,
+          "y": 17
+        },
+        {
+          "x": 4,
+          "y": 20
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 4,
+      "mirror": 1,
+      "name": "Horns",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 2,
+          "y": 34
+        },
+        {
+          "x": 21,
+          "y": 34
+        },
+        {
+          "x": 21,
+          "y": 39
+        },
+        {
+          "x": 2,
+          "y": 39
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 4,
+      "mirror": 1,
+      "name": "Horns",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 2,
+          "y": 39
+        },
+        {
+          "x": 21,
+          "y": 39
+        },
+        {
+          "x": 24,
+          "y": 55
+        },
+        {
+          "x": 31,
+          "y": 64
+        },
+        {
+          "x": 40,
+          "y": 68
+        },
+        {
+          "x": 24,
+          "y": 67
+        },
+        {
+          "x": 14,
+          "y": 62
+        },
+        {
+          "x": 5,
+          "y": 51
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11506944,
+      "height": 4,
+      "mirror": 1,
+      "name": "Horns",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 2,
+          "y": 34
+        },
+        {
+          "x": 21,
+          "y": 34
+        },
+        {
+          "x": 22,
+          "y": 22
+        },
+        {
+          "x": 2,
+          "y": 11
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11506944,
+      "height": 6,
+      "mirror": 1,
+      "name": "Head Front",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 44,
+          "y": 30
+        },
+        {
+          "x": 63,
+          "y": 19
+        },
+        {
+          "x": 89,
+          "y": 7
+        },
+        {
+          "x": 92,
+          "y": 2
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 14079702,
+      "height": 8,
+      "mirror": 1,
+      "name": "Eyes",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 48,
+          "y": 9
+        },
+        {
+          "x": 58,
+          "y": 6
+        },
+        {
+          "x": 55,
+          "y": 18
+        },
+        {
+          "x": 44,
+          "y": 25
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 12,
+      "mirror": 1,
+      "name": "Head Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 2,
+          "y": 12
+        },
+        {
+          "x": 12,
+          "y": 20
+        },
+        {
+          "x": 30,
+          "y": 29
+        },
+        {
+          "x": 44,
+          "y": 30
+        },
+        {
+          "x": 44,
+          "y": 25
+        },
+        {
+          "x": 48,
+          "y": 9
+        },
+        {
+          "x": 58,
+          "y": 6
+        },
+        {
+          "x": 62,
+          "y": 6
+        },
+        {
+          "x": 67,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 14079702,
+      "height": 14,
+      "mirror": 1,
+      "name": "Spike",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 57,
+          "y": 2
+        },
+        {
+          "x": 54,
+          "y": 5
+        },
+        {
+          "x": 51,
+          "y": 5
+        },
+        {
+          "x": 48,
+          "y": 2
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 14079702,
+      "height": 14,
+      "mirror": 1,
+      "name": "Spike",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 41,
+          "y": 2
+        },
+        {
+          "x": 38,
+          "y": 6
+        },
+        {
+          "x": 33,
+          "y": 6
+        },
+        {
+          "x": 29,
+          "y": 2
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Head",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 14079702,
+      "height": 14,
+      "mirror": 1,
+      "name": "Spike",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 21,
+          "y": 3
+        },
+        {
+          "x": 18,
+          "y": 7
+        },
+        {
+          "x": 12,
+          "y": 7
+        },
+        {
+          "x": 8,
+          "y": 3
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

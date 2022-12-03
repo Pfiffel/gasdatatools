@@ -1,6 +1,6 @@
 {
   "bossMonsterName": "Iron Commander Karkus",
-  "enabled": 0,
+  "enabled": 1,
   "factionLairs": [
     {
       "lairType": "Cromwell 0 Noob",
@@ -43,51 +43,51 @@
   "speaker": "Lord Protector Cromwell",
   "toKill": [
     {
-      "monsterName": "Iron Centurion",
+      "monsterName": "Royal Britannia",
       "numToKill": 50
     },
     {
-      "monsterName": "Iron Purifier",
+      "monsterName": "Royal Hussar",
       "numToKill": 50
     },
     {
-      "monsterName": "Iron Lance",
+      "monsterName": "Royal Empire",
       "numToKill": 75
     },
     {
-      "monsterName": "Iron Fortress",
+      "monsterName": "Royal Knight",
       "numToKill": 75
     },
     {
-      "monsterName": "Iron Triumph",
+      "monsterName": "Royal Dreadnought",
       "numToKill": 125
     },
     {
-      "monsterName": "Iron Conqueror",
+      "monsterName": "Royal Albion",
       "numToKill": 125
     },
     {
-      "monsterName": "Iron Acropolis",
+      "monsterName": "Royal Windsor",
       "numToKill": 30
     },
     {
-      "monsterName": "Iron Praefectus",
+      "monsterName": "Royal Pendragon",
       "numToKill": 30
     },
     {
-      "monsterName": "Iron Leviathan 3",
+      "monsterName": "Royal Monarch 3",
       "numToKill": 10
     },
     {
-      "monsterName": "Iron Colossus 3",
+      "monsterName": "Royal Crown 3",
       "numToKill": 10
     },
     {
-      "monsterName": "Iron Behemoth 3",
+      "monsterName": "Royal Sovereign 3",
       "numToKill": 10
     },
     {
-      "monsterName": "Iron Juggernaut 3",
+      "monsterName": "Royal Dynasty 3",
       "numToKill": 10
     }
   ]

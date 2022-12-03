@@ -1,0 +1,228 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Muzzle1",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 75,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Royal Crown Turret Aux",
+  "shapes": [
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11506944,
+      "height": 3,
+      "mirror": 1,
+      "name": "Muzzle",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 81,
+          "y": 11
+        },
+        {
+          "x": 65,
+          "y": 14
+        },
+        {
+          "x": 35,
+          "y": 16
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 4,
+      "mirror": 1,
+      "name": "Gun",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 35,
+          "y": 16
+        },
+        {
+          "x": 31,
+          "y": 23
+        },
+        {
+          "x": 17,
+          "y": 14
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 5,
+      "mirror": 1,
+      "name": "Center",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 17,
+          "y": 10
+        },
+        {
+          "x": -34,
+          "y": 10
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 5,
+      "mirror": 1,
+      "name": "Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 32,
+          "y": 26
+        },
+        {
+          "x": 21,
+          "y": 42
+        },
+        {
+          "x": -13,
+          "y": 42
+        },
+        {
+          "x": -34,
+          "y": 26
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11506944,
+      "height": 5,
+      "mirror": 1,
+      "name": "Strap",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 17,
+          "y": 10
+        },
+        {
+          "x": 17,
+          "y": 14
+        },
+        {
+          "x": 32,
+          "y": 23
+        },
+        {
+          "x": 32,
+          "y": 26
+        },
+        {
+          "x": -34,
+          "y": 26
+        },
+        {
+          "x": -34,
+          "y": 10
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 17,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 34,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 1,
+      "collider": 0,
+      "color": 14079702,
+      "height": 5,
+      "mirror": 1,
+      "name": "Rivet",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -24,
+          "y": 15
+        },
+        {
+          "x": -22,
+          "y": 17
+        },
+        {
+          "x": -22,
+          "y": 19
+        },
+        {
+          "x": -24,
+          "y": 21
+        },
+        {
+          "x": -26,
+          "y": 21
+        },
+        {
+          "x": -28,
+          "y": 19
+        },
+        {
+          "x": -28,
+          "y": 17
+        },
+        {
+          "x": -26,
+          "y": 15
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

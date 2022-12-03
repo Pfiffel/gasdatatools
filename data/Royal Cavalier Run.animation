@@ -1,0 +1,210 @@
+{
+  "keyFrames": [
+    {
+      "bonePositions": [
+        {
+          "bone": "Back Foot",
+          "rot": 0,
+          "x": -30,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Back Leg",
+          "rot": 0,
+          "x": -15,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Front Foot",
+          "rot": 0,
+          "x": 30,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Front Leg",
+          "rot": 0,
+          "x": 15,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 0,
+      "tag": ""
+    },
+    {
+      "bonePositions": [
+        {
+          "bone": "Back Foot",
+          "rot": 0,
+          "x": -10,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Back Leg",
+          "rot": 0,
+          "x": -5,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Front Foot",
+          "rot": 0,
+          "x": -10,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Front Leg",
+          "rot": 0,
+          "x": -5,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 166,
+      "tag": ""
+    },
+    {
+      "bonePositions": [
+        {
+          "bone": "Back Foot",
+          "rot": 0,
+          "x": 10,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Back Leg",
+          "rot": 0,
+          "x": 5,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Front Foot",
+          "rot": 0,
+          "x": -20,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Front Leg",
+          "rot": 0,
+          "x": -10,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 333,
+      "tag": ""
+    },
+    {
+      "bonePositions": [
+        {
+          "bone": "Back Foot",
+          "rot": 0,
+          "x": 20,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Back Leg",
+          "rot": 0,
+          "x": 10,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Front Foot",
+          "rot": 0,
+          "x": -20,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Front Leg",
+          "rot": 0,
+          "x": -10,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 500,
+      "tag": ""
+    },
+    {
+      "bonePositions": [
+        {
+          "bone": "Back Foot",
+          "rot": 0,
+          "x": 20,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Back Leg",
+          "rot": 0,
+          "x": 10,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Front Foot",
+          "rot": 0,
+          "x": -10,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Front Leg",
+          "rot": 0,
+          "x": -5,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 667,
+      "tag": ""
+    },
+    {
+      "bonePositions": [
+        {
+          "bone": "Back Foot",
+          "rot": 0,
+          "x": 10,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Back Leg",
+          "rot": 0,
+          "x": 5,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Front Foot",
+          "rot": 0,
+          "x": 10,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Front Leg",
+          "rot": 0,
+          "x": 5,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 833,
+      "tag": ""
+    }
+  ],
+  "name": "Royal Cavalier Run"
+}
+

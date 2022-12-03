@@ -1,0 +1,81 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Royal Redcoat Bullet",
+  "shapes": [
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 14844183,
+      "height": 58,
+      "mirror": 1,
+      "name": "Orange",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 17,
+          "y": 0
+        },
+        {
+          "x": 14,
+          "y": 9
+        },
+        {
+          "x": 6,
+          "y": 16
+        },
+        {
+          "x": -6,
+          "y": 16
+        },
+        {
+          "x": -14,
+          "y": 9
+        },
+        {
+          "x": -17,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 14867735,
+      "height": 59,
+      "mirror": 1,
+      "name": "Yellow",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 11,
+          "y": 2
+        },
+        {
+          "x": 7,
+          "y": 9
+        },
+        {
+          "x": 0,
+          "y": 11
+        },
+        {
+          "x": -7,
+          "y": 9
+        },
+        {
+          "x": -11,
+          "y": 2
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

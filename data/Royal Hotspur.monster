@@ -1,0 +1,93 @@
+{
+  "boss": 0,
+  "burrowDetectRange": 0,
+  "collisionRadius": 35,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Royal Hotspur Death Cries",
+  "drops": [],
+  "fixedFacing": 0,
+  "healRate": 0,
+  "hp": 280,
+  "idleAnimation": "Royal Windsor",
+  "maxMoveDistance": 500,
+  "name": "Royal Hotspur",
+  "objectType": "Royal Hotspur",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "Royal Windsor",
+  "runAnimationDuration": 200,
+  "runSpeed": 75,
+  "shields": [
+    {
+      "additionalRadius": 10,
+      "angle": 0,
+      "color": 4286945,
+      "halfArc": 500,
+      "percentProtection": 90,
+      "thickness": 15
+    }
+  ],
+  "successorInvulnerability": 1,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 2500,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Royal Hotspur Turret",
+      "params": {
+        "data": {
+          "delay": 600,
+          "duration": 1000,
+          "endSound": "Enemy_RoyalDragoon_Flamethrower_End",
+          "endVolume": 75,
+          "halfArc": 150,
+          "loopSound": "Enemy_RoyalDragoon_Flamethrower_Loop",
+          "loopVolume": 75,
+          "particles": [
+            {
+              "cooldown": 8,
+              "maxDistPercent": 100,
+              "minDistPercent": 100,
+              "particleType": "Flamethrower1"
+            },
+            {
+              "cooldown": 8,
+              "maxDistPercent": 100,
+              "minDistPercent": 75,
+              "particleType": "Flamethrower2"
+            },
+            {
+              "cooldown": 8,
+              "maxDistPercent": 100,
+              "minDistPercent": 50,
+              "particleType": "Flamethrower3"
+            }
+          ],
+          "powers": [
+            {
+              "data": {
+                "dps": 200
+              },
+              "tag": "SizzlePower"
+            }
+          ],
+          "range": 300,
+          "startSound": "Enemy_RoyalDragoon_Flamethrower_Start",
+          "startVolume": 75,
+          "telegraphSound": "Enemy_IronConqueror_Shotgun_Med_Telegraph",
+          "telegraphVolume": 50
+        },
+        "tag": "FlamethrowerParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 9,
+  "xpLevelCap": 19
+}
+

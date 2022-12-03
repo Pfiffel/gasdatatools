@@ -1,0 +1,10 @@
+{
+  "damage": 200,
+  "emitterType": "Iron Bulwark",
+  "name": "Royal Hussar",
+  "objectType": "Royal Britannia Bullet",
+  "powers": [],
+  "soundPack": "Iron Bulwark Bullet",
+  "speed": 280
+}
+

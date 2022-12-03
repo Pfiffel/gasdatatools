@@ -1,0 +1,103 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Muzzle1",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 57,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Royal Crown Turret Main",
+  "shapes": [
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 4,
+      "mirror": 1,
+      "name": "Turret",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -12,
+          "y": 25
+        },
+        {
+          "x": -33,
+          "y": 36
+        },
+        {
+          "x": -24,
+          "y": 15
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 4,
+      "mirror": 1,
+      "name": "Turret",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 12,
+          "y": 25
+        },
+        {
+          "x": 33,
+          "y": 36
+        },
+        {
+          "x": 24,
+          "y": 15
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 5,
+      "mirror": 1,
+      "name": "Turret",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 27,
+          "y": 15
+        },
+        {
+          "x": 12,
+          "y": 27
+        },
+        {
+          "x": -11,
+          "y": 27
+        },
+        {
+          "x": -26,
+          "y": 15
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

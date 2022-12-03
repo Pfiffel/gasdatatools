@@ -1,0 +1,49 @@
+{
+  "boss": 0,
+  "burrowDetectRange": 0,
+  "collisionRadius": 20,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Royal Comet Death Cries",
+  "drops": [],
+  "fixedFacing": 1,
+  "healRate": 0,
+  "hp": 120,
+  "idleAnimation": "Royal Sentinel",
+  "maxMoveDistance": 500,
+  "name": "Royal Comet",
+  "objectType": "Royal Comet",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "",
+  "runAnimationDuration": 700,
+  "runSpeed": 140,
+  "shields": [],
+  "successorInvulnerability": 1,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "",
+      "cooldown": 2200,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "angleBetweenProjectiles": 150,
+          "gunBulletType": "Royal Dominion",
+          "leading": 0,
+          "numProjectiles": 1,
+          "range": 600
+        },
+        "tag": "GunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 0,
+  "xpLevelCap": 19
+}
+

@@ -1,0 +1,99 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Muzzle1",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 22,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Royal Windsor Turret Aux",
+  "shapes": [
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 2,
+      "mirror": 1,
+      "name": "Hose",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 12,
+          "y": 4
+        },
+        {
+          "x": 0,
+          "y": 7
+        },
+        {
+          "x": -6,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11506944,
+      "height": 4,
+      "mirror": 1,
+      "name": "Turret",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 25,
+          "y": 5
+        },
+        {
+          "x": 11,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 5,
+      "mirror": 1,
+      "name": "Counterweight",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 3,
+          "y": 9
+        },
+        {
+          "x": -3,
+          "y": 13
+        },
+        {
+          "x": -8,
+          "y": 10
+        },
+        {
+          "x": -11,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

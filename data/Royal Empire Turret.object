@@ -1,0 +1,484 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Muzzle1",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 91,
+          "y": 0
+        }
+      }
+    },
+    {
+      "height": 0,
+      "name": "Muzzle3",
+      "pos": {
+        "f": 400,
+        "p": {
+          "x": 69,
+          "y": 59
+        }
+      }
+    },
+    {
+      "height": 0,
+      "name": "Muzzle2",
+      "pos": {
+        "f": -400,
+        "p": {
+          "x": 69,
+          "y": -59
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Royal Empire Turret",
+  "shapes": [
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11506944,
+      "height": 3,
+      "mirror": 1,
+      "name": "Mount",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 43,
+          "y": 11
+        },
+        {
+          "x": 38,
+          "y": 22
+        },
+        {
+          "x": 31,
+          "y": 32
+        },
+        {
+          "x": 22,
+          "y": 38
+        },
+        {
+          "x": 11,
+          "y": 23
+        },
+        {
+          "x": -1,
+          "y": 12
+        },
+        {
+          "x": -18,
+          "y": 6
+        },
+        {
+          "x": -39,
+          "y": 5
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [
+        {
+          "pos": {
+            "f": -400,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 400,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 4,
+      "mirror": 1,
+      "name": "Gun 3",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 91,
+          "y": 9
+        },
+        {
+          "x": 68,
+          "y": 9
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [
+        {
+          "pos": {
+            "f": -400,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 400,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 4,
+      "mirror": 1,
+      "name": "Gun 1",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 43,
+          "y": 9
+        },
+        {
+          "x": 36,
+          "y": 9
+        },
+        {
+          "x": 29,
+          "y": 7
+        },
+        {
+          "x": 26,
+          "y": 3
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [
+        {
+          "pos": {
+            "f": -400,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 400,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 5,
+      "mirror": 1,
+      "name": "Gun 2",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 68,
+          "y": 9
+        },
+        {
+          "x": 64,
+          "y": 6
+        },
+        {
+          "x": 47,
+          "y": 6
+        },
+        {
+          "x": 43,
+          "y": 9
+        },
+        {
+          "x": 40,
+          "y": 6
+        },
+        {
+          "x": 39,
+          "y": 2
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [
+        {
+          "pos": {
+            "f": -400,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 400,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 4405220,
+      "height": 5,
+      "mirror": 1,
+      "name": "Muzzle",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 97,
+          "y": 5
+        },
+        {
+          "x": 91,
+          "y": 9
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 6,
+      "mirror": 1,
+      "name": "Counterweight",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -17,
+          "y": 6
+        },
+        {
+          "x": -1,
+          "y": 12
+        },
+        {
+          "x": 12,
+          "y": 23
+        },
+        {
+          "x": 22,
+          "y": 38
+        },
+        {
+          "x": 9,
+          "y": 42
+        },
+        {
+          "x": -6,
+          "y": 42
+        },
+        {
+          "x": -20,
+          "y": 35
+        },
+        {
+          "x": -29,
+          "y": 27
+        },
+        {
+          "x": -36,
+          "y": 16
+        },
+        {
+          "x": -39,
+          "y": 5
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6961157,
+      "height": 7,
+      "mirror": 1,
+      "name": "Exhaust",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -26,
+          "y": 13
+        },
+        {
+          "x": -22,
+          "y": 13
+        },
+        {
+          "x": -17,
+          "y": 16
+        },
+        {
+          "x": -15,
+          "y": 19
+        },
+        {
+          "x": -20,
+          "y": 27
+        },
+        {
+          "x": -26,
+          "y": 30
+        },
+        {
+          "x": -45,
+          "y": 30
+        },
+        {
+          "x": -43,
+          "y": 22
+        },
+        {
+          "x": -39,
+          "y": 18
+        },
+        {
+          "x": -30,
+          "y": 18
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6961157,
+      "height": 7,
+      "mirror": 1,
+      "name": "Exhaust",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -5,
+          "y": 29
+        },
+        {
+          "x": -1,
+          "y": 29
+        },
+        {
+          "x": 4,
+          "y": 32
+        },
+        {
+          "x": 6,
+          "y": 35
+        },
+        {
+          "x": 1,
+          "y": 43
+        },
+        {
+          "x": -5,
+          "y": 46
+        },
+        {
+          "x": -24,
+          "y": 46
+        },
+        {
+          "x": -22,
+          "y": 38
+        },
+        {
+          "x": -18,
+          "y": 34
+        },
+        {
+          "x": -9,
+          "y": 34
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 20,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 40,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 11842740,
+      "height": 7,
+      "mirror": 1,
+      "name": "Rivet",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -19,
+          "y": 1
+        },
+        {
+          "x": -22,
+          "y": 3
+        },
+        {
+          "x": -24,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

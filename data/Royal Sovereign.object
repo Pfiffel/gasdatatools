@@ -1,0 +1,1695 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 30,
+      "name": "Turret Main",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 60,
+          "y": 0
+        }
+      }
+    },
+    {
+      "height": 30,
+      "name": "Turret BL",
+      "pos": {
+        "f": -900,
+        "p": {
+          "x": -90,
+          "y": -150
+        }
+      }
+    },
+    {
+      "height": 30,
+      "name": "Turret BR",
+      "pos": {
+        "f": 900,
+        "p": {
+          "x": -90,
+          "y": 150
+        }
+      }
+    },
+    {
+      "height": 30,
+      "name": "Turret BC",
+      "pos": {
+        "f": 1800,
+        "p": {
+          "x": -152,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Royal Sovereign",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6961157,
+      "height": 8,
+      "mirror": 1,
+      "name": "Pipe Side 1",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -143,
+          "y": 251
+        },
+        {
+          "x": -132,
+          "y": 255
+        },
+        {
+          "x": -117,
+          "y": 255
+        },
+        {
+          "x": -117,
+          "y": 231
+        },
+        {
+          "x": -125,
+          "y": 229
+        },
+        {
+          "x": -140,
+          "y": 208
+        },
+        {
+          "x": -168,
+          "y": 208
+        },
+        {
+          "x": -163,
+          "y": 221
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11506944,
+      "height": 8,
+      "mirror": 1,
+      "name": "Pipe Back Conn",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -166,
+          "y": 115
+        },
+        {
+          "x": -212,
+          "y": 115
+        },
+        {
+          "x": -212,
+          "y": 99
+        },
+        {
+          "x": -210,
+          "y": 92
+        },
+        {
+          "x": -204,
+          "y": 89
+        },
+        {
+          "x": -166,
+          "y": 89
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track 2",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11506944,
+      "height": 8,
+      "mirror": 1,
+      "name": "Plate Back",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -282,
+          "y": 171
+        },
+        {
+          "x": -278,
+          "y": 185
+        },
+        {
+          "x": -117,
+          "y": 185
+        },
+        {
+          "x": -111,
+          "y": 171
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 6961157,
+      "height": 8,
+      "mirror": 1,
+      "name": "Lower Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 123,
+          "y": 55
+        },
+        {
+          "x": 131,
+          "y": 65
+        },
+        {
+          "x": 243,
+          "y": 65
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6961157,
+      "height": 8,
+      "mirror": 1,
+      "name": "Pipe Back",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -240,
+          "y": 116
+        },
+        {
+          "x": -212,
+          "y": 115
+        },
+        {
+          "x": -212,
+          "y": 99
+        },
+        {
+          "x": -210,
+          "y": 92
+        },
+        {
+          "x": -204,
+          "y": 89
+        },
+        {
+          "x": -182,
+          "y": 89
+        },
+        {
+          "x": -191,
+          "y": 68
+        },
+        {
+          "x": -221,
+          "y": 68
+        },
+        {
+          "x": -231,
+          "y": 71
+        },
+        {
+          "x": -238,
+          "y": 79
+        },
+        {
+          "x": -240,
+          "y": 89
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track 2",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11506944,
+      "height": 8,
+      "mirror": 1,
+      "name": "Plate Back",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -282,
+          "y": 147
+        },
+        {
+          "x": -278,
+          "y": 133
+        },
+        {
+          "x": -117,
+          "y": 133
+        },
+        {
+          "x": -111,
+          "y": 147
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 8,
+      "mirror": 1,
+      "name": "Bolt F 1",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 183,
+          "y": 168
+        },
+        {
+          "x": 136,
+          "y": 168
+        },
+        {
+          "x": 139,
+          "y": 175
+        },
+        {
+          "x": 179,
+          "y": 175
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 8,
+      "mirror": 1,
+      "name": "Bolt F 2",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 177,
+          "y": 175
+        },
+        {
+          "x": 142,
+          "y": 175
+        },
+        {
+          "x": 149,
+          "y": 194
+        },
+        {
+          "x": 170,
+          "y": 194
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 8,
+      "mirror": 1,
+      "name": "Pipe Side Conn",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -58,
+          "y": 255
+        },
+        {
+          "x": -117,
+          "y": 255
+        },
+        {
+          "x": -117,
+          "y": 231
+        },
+        {
+          "x": -58,
+          "y": 231
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track 2",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 8,
+      "mirror": 1,
+      "name": "Bolt B 2",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -217,
+          "y": 215
+        },
+        {
+          "x": -252,
+          "y": 215
+        },
+        {
+          "x": -245,
+          "y": 234
+        },
+        {
+          "x": -224,
+          "y": 234
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track 2",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 8,
+      "mirror": 1,
+      "name": "Bolt B 1",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -211,
+          "y": 208
+        },
+        {
+          "x": -258,
+          "y": 208
+        },
+        {
+          "x": -255,
+          "y": 215
+        },
+        {
+          "x": -215,
+          "y": 215
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6961157,
+      "height": 8,
+      "mirror": 1,
+      "name": "Pipe Side 2",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -23,
+          "y": 240
+        },
+        {
+          "x": -33,
+          "y": 250
+        },
+        {
+          "x": -43,
+          "y": 255
+        },
+        {
+          "x": -58,
+          "y": 255
+        },
+        {
+          "x": -58,
+          "y": 231
+        },
+        {
+          "x": -50,
+          "y": 229
+        },
+        {
+          "x": -26,
+          "y": 190
+        },
+        {
+          "x": -2,
+          "y": 201
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11506944,
+      "height": 9,
+      "mirror": 1,
+      "name": "Pipe Side Conn",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -70,
+          "y": 243
+        },
+        {
+          "x": -72,
+          "y": 246
+        },
+        {
+          "x": -103,
+          "y": 246
+        },
+        {
+          "x": -105,
+          "y": 243
+        },
+        {
+          "x": -103,
+          "y": 240
+        },
+        {
+          "x": -72,
+          "y": 240
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 10,
+      "mirror": 1,
+      "name": "Plate Front",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 39,
+          "y": 108
+        },
+        {
+          "x": 45,
+          "y": 121
+        },
+        {
+          "x": 282,
+          "y": 121
+        },
+        {
+          "x": 282,
+          "y": 108
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 10,
+      "mirror": 1,
+      "name": "Plate Front",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 43,
+          "y": 83
+        },
+        {
+          "x": 39,
+          "y": 96
+        },
+        {
+          "x": 282,
+          "y": 96
+        },
+        {
+          "x": 282,
+          "y": 83
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 14079702,
+      "height": 10,
+      "mirror": 1,
+      "name": "Lower Hull Rivet",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 225,
+          "y": 49
+        },
+        {
+          "x": 223,
+          "y": 51
+        },
+        {
+          "x": 223,
+          "y": 55
+        },
+        {
+          "x": 225,
+          "y": 57
+        },
+        {
+          "x": 229,
+          "y": 57
+        },
+        {
+          "x": 231,
+          "y": 55
+        },
+        {
+          "x": 231,
+          "y": 51
+        },
+        {
+          "x": 229,
+          "y": 49
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11506944,
+      "height": 10,
+      "mirror": 1,
+      "name": "Plate Front",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 39,
+          "y": 96
+        },
+        {
+          "x": 39,
+          "y": 108
+        },
+        {
+          "x": 282,
+          "y": 108
+        },
+        {
+          "x": 282,
+          "y": 96
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track 2",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 12,
+      "mirror": 1,
+      "name": "Track B In",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -108,
+          "y": 133
+        },
+        {
+          "x": -287,
+          "y": 133
+        },
+        {
+          "x": -278,
+          "y": 118
+        },
+        {
+          "x": -266,
+          "y": 110
+        },
+        {
+          "x": -128,
+          "y": 110
+        },
+        {
+          "x": -116,
+          "y": 117
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 12,
+      "mirror": 1,
+      "name": "Track F Out",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 286,
+          "y": 121
+        },
+        {
+          "x": 45,
+          "y": 121
+        },
+        {
+          "x": 64,
+          "y": 168
+        },
+        {
+          "x": 183,
+          "y": 168
+        },
+        {
+          "x": 207,
+          "y": 163
+        },
+        {
+          "x": 247,
+          "y": 148
+        },
+        {
+          "x": 286,
+          "y": 130
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track 2",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 12,
+      "mirror": 1,
+      "name": "Track B Out",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -107,
+          "y": 185
+        },
+        {
+          "x": -286,
+          "y": 185
+        },
+        {
+          "x": -277,
+          "y": 200
+        },
+        {
+          "x": -265,
+          "y": 208
+        },
+        {
+          "x": -127,
+          "y": 208
+        },
+        {
+          "x": -115,
+          "y": 201
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 12,
+      "mirror": 1,
+      "name": "Track F In",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 43,
+          "y": 83
+        },
+        {
+          "x": 288,
+          "y": 83
+        },
+        {
+          "x": 288,
+          "y": 74
+        },
+        {
+          "x": 241,
+          "y": 65
+        },
+        {
+          "x": 130,
+          "y": 65
+        },
+        {
+          "x": 123,
+          "y": 56
+        },
+        {
+          "x": 55,
+          "y": 56
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track 2",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 12,
+      "mirror": 1,
+      "name": "Plate Back",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -282,
+          "y": 147
+        },
+        {
+          "x": -282,
+          "y": 171
+        },
+        {
+          "x": -111,
+          "y": 171
+        },
+        {
+          "x": -111,
+          "y": 147
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6961157,
+      "height": 14,
+      "mirror": 1,
+      "name": "Orb Conn Back",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -146,
+          "y": 147
+        },
+        {
+          "x": -187,
+          "y": 147
+        },
+        {
+          "x": -195,
+          "y": 149
+        },
+        {
+          "x": -199,
+          "y": 155
+        },
+        {
+          "x": -199,
+          "y": 162
+        },
+        {
+          "x": -195,
+          "y": 168
+        },
+        {
+          "x": -187,
+          "y": 171
+        },
+        {
+          "x": -146,
+          "y": 171
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 54,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 101,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 150,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 1,
+      "collider": 0,
+      "color": 14079702,
+      "height": 14,
+      "mirror": 1,
+      "name": "Track Rivets F",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 78,
+          "y": 131
+        },
+        {
+          "x": 76,
+          "y": 133
+        },
+        {
+          "x": 76,
+          "y": 137
+        },
+        {
+          "x": 78,
+          "y": 139
+        },
+        {
+          "x": 82,
+          "y": 139
+        },
+        {
+          "x": 84,
+          "y": 137
+        },
+        {
+          "x": 84,
+          "y": 133
+        },
+        {
+          "x": 82,
+          "y": 131
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track 2",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 47,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 88,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 131,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 1,
+      "collider": 0,
+      "color": 14079702,
+      "height": 14,
+      "mirror": 1,
+      "name": "Track Rivets B Inner",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -264,
+          "y": 117
+        },
+        {
+          "x": -266,
+          "y": 119
+        },
+        {
+          "x": -266,
+          "y": 123
+        },
+        {
+          "x": -264,
+          "y": 125
+        },
+        {
+          "x": -260,
+          "y": 125
+        },
+        {
+          "x": -258,
+          "y": 123
+        },
+        {
+          "x": -258,
+          "y": 119
+        },
+        {
+          "x": -260,
+          "y": 117
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track 2",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 47,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 88,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 131,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 1,
+      "collider": 0,
+      "color": 14079702,
+      "height": 14,
+      "mirror": 1,
+      "name": "Track Rivets B Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -264,
+          "y": 192
+        },
+        {
+          "x": -266,
+          "y": 194
+        },
+        {
+          "x": -266,
+          "y": 198
+        },
+        {
+          "x": -264,
+          "y": 200
+        },
+        {
+          "x": -260,
+          "y": 200
+        },
+        {
+          "x": -258,
+          "y": 198
+        },
+        {
+          "x": -258,
+          "y": 194
+        },
+        {
+          "x": -260,
+          "y": 192
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -92,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 1800,
+            "p": {
+              "x": -87,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 1800,
+            "p": {
+              "x": 5,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 16,
+      "mirror": 1,
+      "name": "Orb Side",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 21,
+          "y": 118
+        },
+        {
+          "x": 21,
+          "y": 202
+        },
+        {
+          "x": 34,
+          "y": 194
+        },
+        {
+          "x": 44,
+          "y": 182
+        },
+        {
+          "x": 48,
+          "y": 167
+        },
+        {
+          "x": 48,
+          "y": 153
+        },
+        {
+          "x": 44,
+          "y": 138
+        },
+        {
+          "x": 35,
+          "y": 127
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -92,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 16,
+      "mirror": 1,
+      "name": "Orb Center",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -16,
+          "y": 118
+        },
+        {
+          "x": -16,
+          "y": 202
+        },
+        {
+          "x": -4,
+          "y": 205
+        },
+        {
+          "x": 9,
+          "y": 205
+        },
+        {
+          "x": 21,
+          "y": 202
+        },
+        {
+          "x": 21,
+          "y": 118
+        },
+        {
+          "x": 9,
+          "y": 115
+        },
+        {
+          "x": -5,
+          "y": 115
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 18,
+      "mirror": 1,
+      "name": "Orb Conn Back",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -131,
+          "y": 138
+        },
+        {
+          "x": -146,
+          "y": 144
+        },
+        {
+          "x": -146,
+          "y": 174
+        },
+        {
+          "x": -131,
+          "y": 182
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": -26
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": 26
+            }
+          }
+        }
+      ],
+      "closed": 1,
+      "collider": 0,
+      "color": 6961157,
+      "height": 18,
+      "mirror": 1,
+      "name": "Orb Conn Back",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -28,
+          "y": 162
+        },
+        {
+          "x": -28,
+          "y": 156
+        },
+        {
+          "x": -31,
+          "y": 153
+        },
+        {
+          "x": -58,
+          "y": 153
+        },
+        {
+          "x": -61,
+          "y": 156
+        },
+        {
+          "x": -61,
+          "y": 162
+        },
+        {
+          "x": -58,
+          "y": 165
+        },
+        {
+          "x": -31,
+          "y": 165
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11506944,
+      "height": 18,
+      "mirror": 1,
+      "name": "Orb Conn",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 1,
+          "y": 160
+        },
+        {
+          "x": -4,
+          "y": 163
+        },
+        {
+          "x": -4,
+          "y": 197
+        },
+        {
+          "x": 1,
+          "y": 200
+        },
+        {
+          "x": 6,
+          "y": 197
+        },
+        {
+          "x": 6,
+          "y": 163
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -91,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 1,
+      "collider": 0,
+      "color": 11506944,
+      "height": 18,
+      "mirror": 1,
+      "name": "Orb Conn",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -9,
+          "y": 100
+        },
+        {
+          "x": -9,
+          "y": 134
+        },
+        {
+          "x": 13,
+          "y": 134
+        },
+        {
+          "x": 13,
+          "y": 100
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11842740,
+      "height": 20,
+      "mirror": 1,
+      "name": "Gun Platform",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 0,
+          "y": 56
+        },
+        {
+          "x": 123,
+          "y": 56
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11842740,
+      "height": 20,
+      "mirror": 1,
+      "name": "Gun Platform",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -198,
+          "y": 56
+        },
+        {
+          "x": 0,
+          "y": 56
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 20,
+      "mirror": 1,
+      "name": "Gun Platform",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 60,
+          "y": 56
+        },
+        {
+          "x": -198,
+          "y": 56
+        },
+        {
+          "x": -182,
+          "y": 94
+        },
+        {
+          "x": -175,
+          "y": 100
+        },
+        {
+          "x": 42,
+          "y": 100
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -92,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 1,
+      "collider": 0,
+      "color": 14079702,
+      "height": 22,
+      "mirror": 1,
+      "name": "Track Rivets F",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 0,
+          "y": 119
+        },
+        {
+          "x": -2,
+          "y": 121
+        },
+        {
+          "x": -2,
+          "y": 125
+        },
+        {
+          "x": 0,
+          "y": 127
+        },
+        {
+          "x": 4,
+          "y": 127
+        },
+        {
+          "x": 6,
+          "y": 125
+        },
+        {
+          "x": 6,
+          "y": 121
+        },
+        {
+          "x": 4,
+          "y": 119
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 42,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 88,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 130,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 170,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 1,
+      "collider": 0,
+      "color": 14079702,
+      "height": 22,
+      "mirror": 1,
+      "name": "Platform Rivet",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -171,
+          "y": 81
+        },
+        {
+          "x": -173,
+          "y": 83
+        },
+        {
+          "x": -173,
+          "y": 87
+        },
+        {
+          "x": -171,
+          "y": 89
+        },
+        {
+          "x": -167,
+          "y": 89
+        },
+        {
+          "x": -165,
+          "y": 87
+        },
+        {
+          "x": -165,
+          "y": 83
+        },
+        {
+          "x": -167,
+          "y": 81
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": 32
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": -32
+            }
+          }
+        }
+      ],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 22,
+      "mirror": 0,
+      "name": "Platform Rivet Center",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -62,
+          "y": -4
+        },
+        {
+          "x": -64,
+          "y": -2
+        },
+        {
+          "x": -64,
+          "y": 2
+        },
+        {
+          "x": -62,
+          "y": 4
+        },
+        {
+          "x": -58,
+          "y": 4
+        },
+        {
+          "x": -56,
+          "y": 2
+        },
+        {
+          "x": -56,
+          "y": -2
+        },
+        {
+          "x": -58,
+          "y": -4
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+
