@@ -133,13 +133,13 @@ class Monster
 		return minions;
 	}
 	
-	output(bRow, scale = SCALE_STANDARD, bDrawRadius = false) {
+	output(bRow, scale = SCALE_STANDARD, bDrawRadius = false, bDrawShield = false) {
 		let div = document.createElement('div');
 		div.classList.add("inline");
 		let divInfo = document.createElement('div');
 		divInfo.classList.add("inline");
 		var divSprite = document.createElement('div');
-		divSprite.appendChild(draw(this.data, scale, false, bDrawRadius));
+		divSprite.appendChild(draw(this.data, scale, false, bDrawRadius, bDrawShield));
 		if(bRow) {
 			divSprite.classList.add("infoBlockRow");
 			divSprite.style.width = "75px";
@@ -252,6 +252,12 @@ class Monster
 		for (let charge in this._charges){
 			let attackDiv = document.createElement('div');
 			attackDiv.innerHTML = "Charge: <b>" + this._charges[charge].range + "</b> range (+" + this._charges[charge].extraRange + "), <b>" + this._charges[charge].speed + "</b> speed";
+			div.appendChild(attackDiv);
+		}
+		for (var sh in this.data.shields){
+			var shield = this.data.shields[sh];
+			let attackDiv = document.createElement('div');
+			attackDiv.innerHTML = "Shield: <b>" + shield.percentProtection + "%</b> damage reduction";
 			div.appendChild(attackDiv);
 		}
 		if(this.data.burrowDetectRange > 0)

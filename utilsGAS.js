@@ -617,6 +617,20 @@ function getLair(type){
 		var lair = gasData["lair"][i];
 		if(type == lair.name) return lair;
 	}
+	console.log("lair not found: " + type);
+}
+function getLairForFaction(factionName, tag){
+	for (let i = 0; i < gasData["faction"].length; i++)
+	{
+		var faction = gasData["faction"][i];
+		if(factionName == faction.name)
+		for (let f = 0; f < faction.factionLairs.length; f++)
+		{
+			var lair = faction.factionLairs[f];
+			if(tag == lair.monsterFieldTag) return getLair(lair.lairType);
+		}
+	}
+	console.log("faction not found: " + faction);
 }
 function getMonster(type){
 	for (let i = 0; i < gasData["monster"].length; i++)
@@ -718,7 +732,15 @@ function getMaxFromShapes(object, x, y, max)
 	}
 	return max;
 }
-function getObjectResolution(object, weapons, radius){
+function getObjectResolution(object, weapons, shields, radius, scale){
+	var maxShieldAdd = 0;
+	for (var sh in shields){
+		var shield = shields[sh];
+		maxShieldAdd = Math.max(maxShieldAdd, (shield.additionalRadius + shield.thickness));
+	}
+	radius += maxShieldAdd;
+	// TODO dirty hack, figure out what's going on with scaling
+	radius /= scale == 0.5 ? scale : 1;
 	var max = [-radius,-radius,radius,radius];
 	max = this.getMaxFromShapes(object, 0, 0, max);
 	if(weapons != undefined)
@@ -731,6 +753,9 @@ function getObjectResolution(object, weapons, radius){
 			var attach = weapons[i].attachmentPoint;
 			// TODO offset[0] which is facing
 			if(attach != "") offset = this.getAttachmentPoint(object, attach);
+			//var angle = offset[0];
+			//var xRotated = offset[1] * Math.cos(angle) - offset[2] * Math.sin(angle);
+			//var yRotated = offset[1] * Math.sin(angle) + offset[2] * Math.cos(angle);
 			max = this.getMaxFromShapes(getObject(turret), offset[1], offset[2], max);
 		}
 	}
@@ -808,15 +833,16 @@ function closeShape(ctx, scale, color){
 	
 	ctx.closePath();
 }
-function draw(data, scale = 0.4, bPrev = false, bDrawRadius = false)
+function draw(data, scale = 0.4, bPrev = false, bDrawRadius = false, bDrawShields = false)
 {
+	//scale = 1;
 	var object = getObject(data.objectType, bPrev);
 	if(object == undefined) {
 		console.log("Can't find " + data.objectType);
 		return document.createElement('canvas');
 	}
-	var radius = bDrawRadius ? (data.collisionRadius == undefined ? 0 : data.collisionRadius / scale) : 0;
-	var res = getObjectResolution(object, data.weapons, radius);
+	var radius = data.collisionRadius == undefined ? 0 : data.collisionRadius;
+	var res = getObjectResolution(object, data.weapons, bDrawShields ? data.shields : [], radius, scale);
 	var canvas = document.createElement('canvas');
 	canvas.title = data.name;
 	canvas.width = res[0] * scale + 4;
@@ -840,7 +866,21 @@ function draw(data, scale = 0.4, bPrev = false, bDrawRadius = false)
 				drawShapes(ctx, scale, x+offset[1], y+offset[2], getObject(turret, bPrev), offset[0]);
 			}
 		}
-		DrawCollisionRadius(radius, ctx, scale, x, y);
+		if(bDrawRadius) DrawCollisionRadius(radius / scale, ctx, scale, x, y);
+		if(bDrawShields) for (var sh in data.shields){
+			var shield = data.shields[sh];
+			ctx.beginPath();
+			var offset = (radius + shield.additionalRadius) / scale;
+			var left = degToRad((-shield.halfArc+shield.angle)/10);
+			var right = degToRad((shield.halfArc+shield.angle)/10);
+			ctx.arc(x, y, offset, left, right, false);
+			ctx.arc(x, y, offset + shield.thickness / scale, right, left, true);
+			ctx.arc(x, y, offset, left, left, false);
+			ctx.globalAlpha = 0.5;
+			ctx.fillStyle = numberToHex(shield.color);
+			ctx.fill();
+			ctx.closePath();
+		}
 	}
 	return canvas;
 }

@@ -7,10 +7,11 @@ var filters = document.getElementById("filters");
 var sortedMonsters;
 
 var drawRadius = makeInputCheckbox("Show Collision Radius", RefreshLists, filters, false);
-
+var drawShields = makeInputCheckbox("Show Shields", RefreshLists, filters, true);
 const FILTER_NAME = "Name";
-makeInputRadios(FILTER_NAME, ["All","Iron","Xenofrog","Nest","Bogweed","Training"], RefreshLists, filters);
-//makeInputRadios(FILTER_NAME, ["All","Iron","Royal","Xenofrog","Nest","Bogweed","Training"], RefreshLists, filters);
+makeInputRadios(FILTER_NAME, ["All","Iron","Royal","Xenofrog","Nest","Bogweed","Training"], RefreshLists, filters);
+const FILTER_SUCCESSOR = "Successor";
+makeInputRadios(FILTER_SUCCESSOR, ["Any","Has Successor","Has no Successor"], RefreshLists, filters);
 const FILTER_BOSS = "Boss";
 makeInputRadios(FILTER_BOSS, ["Any","Is Boss","Is not Boss"], RefreshLists, filters);
 var dropsLoot = makeInputCheckbox("Drops Specific Loot", RefreshLists, filters, false);
@@ -55,12 +56,16 @@ function MakeMonsterList()
 		var filterBoss = (monster.data.boss && (selBoss == "Is Boss")) || (!monster.data.boss && (selBoss == "Is not Boss"));
 		if(selBoss != "Any" && !filterBoss) continue;
 
+		var selSucc = document.querySelector('input[name="'+FILTER_SUCCESSOR+'"]:checked').value;
+		var filterSucc = ((monster.data.successorMonster != "") && (selSucc == "Has Successor")) || ((monster.data.successorMonster == "") && (selSucc == "Has no Successor"));
+		if(selSucc != "Any" && !filterSucc) continue;
+
 		filterLoot = ((monster.data.drops != undefined && monster.data.drops.length != 0) && dropsLoot.checked) || !dropsLoot.checked;
 		if(!filterLoot) continue;
 
 		let monsterDiv = document.createElement('div');
 		monsterDiv.classList.add("monsterBlock");
-		monsterDiv.appendChild(monster.output(false, SCALE_STANDARD, drawRadius.checked));
+		monsterDiv.appendChild(monster.output(false, SCALE_STANDARD, drawRadius.checked, drawShields.checked));
 		divList.appendChild(monsterDiv);
 	}
 	return divList;

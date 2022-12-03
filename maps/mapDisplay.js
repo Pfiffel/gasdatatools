@@ -1,5 +1,5 @@
 var tableOutput = document.getElementById("tableOutput");
-var datatypes = ["map","lair","region","lane","monster","gunbullet","object","item"]; // for utilGAS to load files, calls parseData once completed
+var datatypes = ["map","faction","lair","region","lane","monster","gunbullet","object","item"]; // for utilGAS to load files, calls parseData once completed
 loadGasData();
 var errorLogs = document.createElement('div');
 tableOutput.appendChild(errorLogs);
@@ -8,13 +8,34 @@ function LogError(text)
 {
     makeDiv(text, errorLogs);
 }
-function parseIDs() // make super duper recursive id checker?
-{
 
+var filters = document.getElementById("filters");
+const FILTER_FACTION = "Faction";
+
+function RefreshLists()
+{
+	tableOutput.innerHTML = "";
+	tableOutput.appendChild(MakeMonsterList());
+	//tableOutput.appendChild(MakeCompactMonsterTable());
 }
 
 function parseData()
 {
+	var factions = [];
+	for (let i = 0; i < gasData["faction"].length; i++)
+	{
+		factions.push(gasData["faction"][i].name);
+	}
+	var head = document.createElement("h2");
+	head.textContent = "Active Faction";
+	header.appendChild(head);
+	makeInputRadios(FILTER_FACTION, factions, RefreshLists, filters);
+	RefreshLists();
+}
+
+function RefreshLists()
+{
+	tableOutput.innerHTML = "";
 	let divMaps = document.createElement('div');
 	divMaps.classList.add("inline");
 	var h1Maps = document.createElement("h1");
@@ -54,9 +75,11 @@ function parseData()
 			var monsterField = mf[m];
 			
 			let tr = tbl.insertRow();
-			var type = monsterField.lairType;
+			//var type = monsterField.lairType;
+			var tag = monsterField.tag;
 			var fieldSize = getPolyArea(monsterField.poly);
-			var lair = getLair(type);
+			var faction = document.querySelector('input[name="'+FILTER_FACTION+'"]:checked').value;
+			var lair = getLairForFaction(faction, tag);
 			var info = monsterField.sectorName + "<br/>";
 			info += monsterField.mapGridDesignator + "<br/><br/>";
 			info += "monsterSquareSide: " + lair.monsterSquareSide + "<br/>";
@@ -150,7 +173,7 @@ function MakeMonsterDiv(m, totalWeight, amount, tr)
 			return;
 	}
 	makeCell(m.count + "<br/>(" + round(percentage*100,2) + "%)", tr);
-	makeCellE(monster.output(true, SCALE_SMALL), tr);
+	makeCellE(monster.output(true, SCALE_SMALL, false, false), tr);
 	var minions = monster.getMinions();
 	var divMinion = document.createElement('div');
 	var totalAmount = percentage*amount;
@@ -167,7 +190,7 @@ function MakeMonsterDiv(m, totalWeight, amount, tr)
 		if(radius != "" && policy != "") addLine(max + radius + policy, divMinion);
 		//addLine("+" + round(totalAmount*minions[j].maxCount,2) + " (max total minions)", divMinion);
 		var minion = getMonster(minions[j].monsterName);
-		divMinion.appendChild(minion.output(true, SCALE_SMALL));
+		divMinion.appendChild(minion.output(true, SCALE_SMALL, false, false));
 	}
 	if(totalMaxSpawns) addLine("<b>" + totalMaxSpawns + "x</b> total max " + getPluralUnitOnly(totalMaxSpawns, "spawn"), divMinion);
 	if(totalMaxHP) addLine("<span class=\"hull\"><b>" + totalMaxHP + "</b> total max hp</b>", divMinion);
