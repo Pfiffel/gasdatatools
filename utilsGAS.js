@@ -18,7 +18,7 @@ const STAT_TYPES = {
 	"6": ["TRIGGER_FIRE_RATE", "Trigger Rate of Fire"],
 	"7": ["SHIELD_RATE", "Shield Recovery Rate"],
 	"8": ["GUN_RANGE", "Gun Range"],
-	"9": ["SHIELD_STRENGTH", "Shield Strengh"],
+	"9": ["SHIELD_STRENGTH", "Shield Strength"],
 	"10": ["RADIUS", "Hull Radius"],
 	"11": ["TRIGGER_COST", "Trigger Energy Cost"],
 	"12": ["ULT_FIRE_RATE", "Trigger 4 Rate of Fire"],
