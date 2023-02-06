@@ -1,0 +1,22 @@
+{
+  "boon": 1,
+  "credits": 7,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 60,
+        "statType": 16
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "engines": 1,
+  "guns": 0,
+  "name": "Inertial Accelerator",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "triggers": 0
+}
+

@@ -21,13 +21,13 @@
   ],
   "healRate": 200,
   "hp": 10000,
-  "idleAnimation": "Flamebringer Idle",
   "name": "Murder Hornet",
   "objectType": "Murder Hornet",
+  "passiveName": "",
+  "passives": [],
   "radius": 10,
   "reverseThrustEmitter": "Wasp Reverse Thruster",
   "rotationDecay": 32,
-  "runAnimation": "Flamebringer Run",
   "shields": [
     {
       "color": 3119035,
@@ -44,6 +44,28 @@
       "right": 900
     }
   ],
+  "slotLimits": [
+    {
+      "maxSlots": 6,
+      "minSlots": 4
+    },
+    {
+      "maxSlots": 6,
+      "minSlots": 4
+    },
+    {
+      "maxSlots": 6,
+      "minSlots": 4
+    },
+    {
+      "maxSlots": 5,
+      "minSlots": 4
+    },
+    {
+      "maxSlots": 4,
+      "minSlots": 0
+    }
+  ],
   "speedLimit": 250,
   "triggers": [
     {
@@ -55,6 +77,7 @@
       "params": [
         {
           "data": {
+            "autoAim": 0,
             "damage": 50,
             "delay": 500,
             "drawReticle": 1,
@@ -67,13 +90,17 @@
               "y": 130
             },
             "range": 115,
+            "reticleColor": 11184810,
             "statusEffects": [],
-            "targetingDelay": 0
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": ""
           },
           "tag": "ShotgunTrigger"
         },
         {
           "data": {
+            "autoAim": 0,
             "damage": 50,
             "delay": 500,
             "drawReticle": 1,
@@ -86,8 +113,11 @@
               "y": 0
             },
             "range": 120,
+            "reticleColor": 11184810,
             "statusEffects": [],
-            "targetingDelay": 0
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": ""
           },
           "tag": "ShotgunTrigger"
         },
@@ -99,6 +129,7 @@
             "mirror": 1,
             "objectType": "Wasp Mine",
             "sound": "",
+            "tag": "",
             "target": {
               "x": 220,
               "y": 130
@@ -115,6 +146,7 @@
             "mirror": 0,
             "objectType": "Wasp Mine",
             "sound": "",
+            "tag": "",
             "target": {
               "x": 250,
               "y": 0
@@ -136,6 +168,7 @@
       "params": [
         {
           "data": {
+            "autoAim": 0,
             "damage": 100,
             "delay": 0,
             "drawReticle": 1,
@@ -148,8 +181,11 @@
               "y": 0
             },
             "range": 250,
+            "reticleColor": 11184810,
             "statusEffects": [],
-            "targetingDelay": 0
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": ""
           },
           "tag": "ShotgunTrigger"
         }
@@ -167,18 +203,22 @@
         {
           "data": {
             "duration": 2000,
-            "emitterType": "Wasp Phase Negation"
+            "emitterType": "Wasp Phase Negation",
+            "percentChance": 100,
+            "tag": ""
           },
           "tag": "DematerializeTrigger"
         },
         {
           "data": {
+            "applyToMana": 0,
             "asPercentage": 0,
             "glyphCount": 4,
             "glyphDuration": 500,
             "glyphRadius": 50,
             "glyphType": "Heal Indicator",
-            "healAmount": 50
+            "healAmount": 50,
+            "tag": ""
           },
           "tag": "HealTrigger"
         }
@@ -201,7 +241,9 @@
             "glyphCount": 0,
             "glyphRadius": 0,
             "glyphType": "",
-            "statType": 0
+            "noStack": 0,
+            "statType": 0,
+            "tag": ""
           },
           "tag": "StatBoostTrigger"
         },
@@ -213,7 +255,9 @@
             "glyphCount": 0,
             "glyphRadius": 0,
             "glyphType": "",
-            "statType": 8
+            "noStack": 0,
+            "statType": 8,
+            "tag": ""
           },
           "tag": "StatBoostTrigger"
         }

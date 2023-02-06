@@ -1,14 +1,22 @@
 {
+  "boon": 1,
   "credits": 2,
+  "defenses": 0,
   "effects": [
     {
       "data": {
+        "activeWhile": 0,
         "amount": 6,
         "statType": 0
       },
       "tag": "ItemStat"
     }
   ],
-  "name": "Flux Booster"
+  "engines": 0,
+  "guns": 1,
+  "name": "Flux Booster",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "triggers": 0
 }
 

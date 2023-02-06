@@ -16,6 +16,7 @@
       "range": 250,
       "soundPack": "Wasp Guns",
       "speed": 1200,
+      "tag": "",
       "turretBone": "Turret"
     }
   ],
@@ -23,6 +24,28 @@
   "hp": 600,
   "name": "Wasp",
   "objectType": "Wasp",
+  "passiveName": "Wasp Venom",
+  "passives": [
+    {
+      "data": {
+        "gunTag": "",
+        "percentChance": 100,
+        "statusEffects": [
+          {
+            "data": {
+              "dps": 1,
+              "duration": 10000,
+              "reducedDurationOnBoss": 0,
+              "stack": 1
+            },
+            "tag": "DoTEffect"
+          }
+        ],
+        "tooltipGunDescription": "gun"
+      },
+      "tag": "GunProcs"
+    }
+  ],
   "radius": 10,
   "reverseThrustEmitter": "Wasp Reverse Thruster",
   "rotationDecay": 32,
@@ -33,6 +56,32 @@
       "level": 0,
       "maxStrength": 200,
       "right": 1800
+    }
+  ],
+  "slotLimits": [
+    {
+      "maxSlots": 4,
+      "minSlots": 1
+    },
+    {
+      "maxSlots": 7,
+      "minSlots": 2
+    },
+    {
+      "maxSlots": 5,
+      "minSlots": 1
+    },
+    {
+      "maxSlots": 7,
+      "minSlots": 2
+    },
+    {
+      "maxSlots": 4,
+      "minSlots": 0
+    },
+    {
+      "maxSlots": 6,
+      "minSlots": 2
     }
   ],
   "speedLimit": 250,
@@ -46,6 +95,7 @@
       "params": [
         {
           "data": {
+            "autoAim": 0,
             "damage": 50,
             "delay": 500,
             "drawReticle": 1,
@@ -58,6 +108,7 @@
               "y": 130
             },
             "range": 115,
+            "reticleColor": 11184810,
             "statusEffects": [],
             "tag": "Wasp 1 Shotgun 1",
             "targetingDelay": 0,
@@ -67,6 +118,7 @@
         },
         {
           "data": {
+            "autoAim": 0,
             "damage": 50,
             "delay": 500,
             "drawReticle": 1,
@@ -79,6 +131,7 @@
               "y": 0
             },
             "range": 120,
+            "reticleColor": 11184810,
             "statusEffects": [],
             "tag": "Wasp 1 Shotgun 2",
             "targetingDelay": 0,
@@ -133,6 +186,7 @@
       "params": [
         {
           "data": {
+            "autoAim": 0,
             "damage": 100,
             "delay": 0,
             "drawReticle": 1,
@@ -145,6 +199,7 @@
               "y": 0
             },
             "range": 250,
+            "reticleColor": 11184810,
             "statusEffects": [],
             "tag": "Wasp 2 Shotgun",
             "targetingDelay": 0,
@@ -204,7 +259,7 @@
             "glyphCount": 0,
             "glyphRadius": 0,
             "glyphType": "",
-            "noStack": 0,
+            "maxStacks": 0,
             "statType": 0,
             "tag": "Wasp 4 StatBoost 1"
           },
@@ -218,7 +273,7 @@
             "glyphCount": 0,
             "glyphRadius": 0,
             "glyphType": "",
-            "noStack": 0,
+            "maxStacks": 0,
             "statType": 8,
             "tag": "Wasp 4 StatBoost 2"
           },

@@ -9,37 +9,40 @@
     {
       "cooldown": 350,
       "damage": 8,
-      "emitterType": "Mustang Guns",
+      "emitterType": "Hercules Guns",
       "f": 0,
       "halfArc": 1800,
       "objectType": "Hercules Aux Bullet",
       "range": 265,
       "soundPack": "Hercules Small Guns",
       "speed": 1200,
+      "tag": "",
       "turretBone": "Aux Turret"
     },
     {
       "cooldown": 425,
       "damage": 15,
-      "emitterType": "Mustang Guns",
+      "emitterType": "Hercules Guns",
       "f": 0,
       "halfArc": 600,
       "objectType": "Hercules Secondary Bullet",
       "range": 300,
       "soundPack": "Hercules Medium Guns",
       "speed": 1200,
+      "tag": "",
       "turretBone": "Secondary Turret"
     },
     {
-      "cooldown": 650,
+      "cooldown": 850,
       "damage": 50,
-      "emitterType": "Mustang Guns",
+      "emitterType": "Hercules Guns",
       "f": 0,
       "halfArc": 200,
       "objectType": "Hercules Bullet",
       "range": 335,
       "soundPack": "Hercules Big Guns",
       "speed": 1200,
+      "tag": "",
       "turretBone": "Turret"
     }
   ],
@@ -47,6 +50,29 @@
   "hp": 1000,
   "name": "Hercules",
   "objectType": "Hercules",
+  "passiveName": "Force Multiplier",
+  "passives": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 1,
+            "duration": 10000,
+            "emitterType": "",
+            "glyphCount": 0,
+            "glyphRadius": 0,
+            "glyphType": "",
+            "maxStacks": 75,
+            "statType": 5,
+            "tag": "Hercules Passive"
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 13
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
   "radius": 24,
   "reverseThrustEmitter": "Hercules Reverse Thruster",
   "rotationDecay": 32,
@@ -87,6 +113,32 @@
       "right": 1800
     }
   ],
+  "slotLimits": [
+    {
+      "maxSlots": 4,
+      "minSlots": 1
+    },
+    {
+      "maxSlots": 9,
+      "minSlots": 3
+    },
+    {
+      "maxSlots": 6,
+      "minSlots": 1
+    },
+    {
+      "maxSlots": 4,
+      "minSlots": 1
+    },
+    {
+      "maxSlots": 4,
+      "minSlots": 0
+    },
+    {
+      "maxSlots": 6,
+      "minSlots": 2
+    }
+  ],
   "speedLimit": 230,
   "triggers": [
     {
@@ -98,6 +150,7 @@
       "params": [
         {
           "data": {
+            "autoAim": 0,
             "damage": 95,
             "delay": 0,
             "drawReticle": 0,
@@ -110,6 +163,7 @@
               "y": 0
             },
             "range": 265,
+            "reticleColor": 11184810,
             "statusEffects": [],
             "tag": "Hercules 1 Shotgun",
             "targetingDelay": 0,
@@ -130,6 +184,7 @@
       "params": [
         {
           "data": {
+            "autoAim": 0,
             "damage": 200,
             "delay": 0,
             "drawReticle": 0,
@@ -142,6 +197,7 @@
               "y": 0
             },
             "range": 335,
+            "reticleColor": 11184810,
             "statusEffects": [],
             "tag": "Hercules 2 Shotgun",
             "targetingDelay": 0,
@@ -162,6 +218,7 @@
       "params": [
         {
           "data": {
+            "autoAim": 0,
             "damage": 75,
             "delay": 300,
             "drawReticle": 1,
@@ -174,6 +231,7 @@
               "y": 0
             },
             "range": 160,
+            "reticleColor": 11184810,
             "statusEffects": [],
             "tag": "Hercules 3 Shotgun 1",
             "targetingDelay": 0,
@@ -183,6 +241,7 @@
         },
         {
           "data": {
+            "autoAim": 0,
             "damage": 75,
             "delay": 700,
             "drawReticle": 0,
@@ -195,6 +254,7 @@
               "y": 0
             },
             "range": 160,
+            "reticleColor": 11184810,
             "statusEffects": [],
             "tag": "Hercules 3 Shotgun 2",
             "targetingDelay": 400,
@@ -204,6 +264,7 @@
         },
         {
           "data": {
+            "autoAim": 0,
             "damage": 75,
             "delay": 1100,
             "drawReticle": 0,
@@ -216,6 +277,7 @@
               "y": 0
             },
             "range": 160,
+            "reticleColor": 11184810,
             "statusEffects": [],
             "tag": "Hercules 3 Shotgun 3",
             "targetingDelay": 800,
@@ -225,6 +287,7 @@
         },
         {
           "data": {
+            "autoAim": 0,
             "damage": 75,
             "delay": 1500,
             "drawReticle": 0,
@@ -237,6 +300,7 @@
               "y": 0
             },
             "range": 160,
+            "reticleColor": 11184810,
             "statusEffects": [],
             "tag": "Hercules 3 Shotgun 4",
             "targetingDelay": 1200,
@@ -246,6 +310,7 @@
         },
         {
           "data": {
+            "autoAim": 0,
             "damage": 75,
             "delay": 1900,
             "drawReticle": 0,
@@ -258,6 +323,7 @@
               "y": 0
             },
             "range": 160,
+            "reticleColor": 11184810,
             "statusEffects": [],
             "tag": "Hercules 3 Shotgun 5",
             "targetingDelay": 1600,
@@ -389,6 +455,7 @@
         },
         {
           "data": {
+            "autoAim": 0,
             "damage": 300,
             "delay": 0,
             "drawReticle": 0,
@@ -401,6 +468,7 @@
               "y": 0
             },
             "range": 265,
+            "reticleColor": 11184810,
             "statusEffects": [],
             "tag": "Hercules 4 Shotgun",
             "targetingDelay": 5000,

@@ -1,0 +1,22 @@
+{
+  "boon": 1,
+  "credits": 6,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 10,
+        "statType": 18
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "engines": 1,
+  "guns": 0,
+  "name": "Turbonic Rotator",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "triggers": 0
+}
+

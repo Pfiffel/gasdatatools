@@ -1,0 +1,231 @@
+{
+  "boon": 1,
+  "credits": 5,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 40,
+            "delay": 300,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Plasma Rose",
+            "facing": 225,
+            "halfArc": 1800,
+            "mirror": 1,
+            "offset": {
+              "x": 210,
+              "y": 0
+            },
+            "range": 80,
+            "reticleColor": 12201189,
+            "statusEffects": [],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "Eight-Way Grenade Launch"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 1
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 40,
+            "delay": 300,
+            "drawReticle": 1,
+            "drawTooltip": 0,
+            "explosionType": "Plasma Rose",
+            "facing": 675,
+            "halfArc": 1800,
+            "mirror": 1,
+            "offset": {
+              "x": 210,
+              "y": 0
+            },
+            "range": 80,
+            "reticleColor": 12201189,
+            "statusEffects": [],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": ""
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 1
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 40,
+            "delay": 300,
+            "drawReticle": 1,
+            "drawTooltip": 0,
+            "explosionType": "Plasma Rose",
+            "facing": 1125,
+            "halfArc": 1800,
+            "mirror": 1,
+            "offset": {
+              "x": 210,
+              "y": 0
+            },
+            "range": 80,
+            "reticleColor": 12201189,
+            "statusEffects": [],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": ""
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 1
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 40,
+            "delay": 300,
+            "drawReticle": 1,
+            "drawTooltip": 0,
+            "explosionType": "Plasma Rose",
+            "facing": 1575,
+            "halfArc": 1800,
+            "mirror": 1,
+            "offset": {
+              "x": 210,
+              "y": 0
+            },
+            "range": 80,
+            "reticleColor": 12201189,
+            "statusEffects": [],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": ""
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 1
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "delay": 0,
+            "duration": 300,
+            "emitterType": "",
+            "facing": 225,
+            "mirror": 1,
+            "objectType": "Plasma Rose Projectile",
+            "sound": "",
+            "tag": "",
+            "target": {
+              "x": 210,
+              "y": 0
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        },
+        "when": 1
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "delay": 0,
+            "duration": 300,
+            "emitterType": "",
+            "facing": 675,
+            "mirror": 1,
+            "objectType": "Plasma Rose Projectile",
+            "sound": "",
+            "tag": "",
+            "target": {
+              "x": 210,
+              "y": 0
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        },
+        "when": 1
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "delay": 0,
+            "duration": 300,
+            "emitterType": "",
+            "facing": 1125,
+            "mirror": 1,
+            "objectType": "Plasma Rose Projectile",
+            "sound": "",
+            "tag": "",
+            "target": {
+              "x": 210,
+              "y": 0
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        },
+        "when": 1
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "delay": 0,
+            "duration": 300,
+            "emitterType": "",
+            "facing": 1575,
+            "mirror": 1,
+            "objectType": "Plasma Rose Projectile",
+            "sound": "",
+            "tag": "",
+            "target": {
+              "x": 210,
+              "y": 0
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        },
+        "when": 1
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Plasma Rose",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 1
+}
+

@@ -1,0 +1,40 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 8381227
+    },
+    {
+      "frac": 750,
+      "value": 11410632
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 500,
+  "minLifetime": 300,
+  "name": "Phaser Burst",
+  "objectType": "Medium Arrowhead",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 50,
+      "value": 500
+    },
+    {
+      "frac": 500,
+      "value": 400
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 8381227,
+  "startScale": 10,
+  "stayLow": 1
+}
+

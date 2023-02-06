@@ -1,0 +1,32 @@
+{
+  "boon": 1,
+  "credits": 5,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "cooldown": 500,
+        "damage": 45,
+        "emitterType": "Picolaser Trail",
+        "f": 0,
+        "halfArc": 75,
+        "objectType": "Picolaser Bullet",
+        "range": 130,
+        "reticleColor": 1027865,
+        "soundPack": "Hercules Small Guns",
+        "speed": 600,
+        "tag": "",
+        "turretBone": ""
+      },
+      "tag": "PlayerGunStats"
+    }
+  ],
+  "engines": 0,
+  "guns": 1,
+  "name": "Picolaser",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 0
+}
+

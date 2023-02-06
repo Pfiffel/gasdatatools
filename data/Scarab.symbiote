@@ -11,7 +11,7 @@
             "glyphCount": 8,
             "glyphRadius": 80,
             "glyphType": "Ephesus Glyph",
-            "noStack": 1,
+            "maxStacks": 1,
             "statType": 9,
             "tag": "Scarab Boost"
           },

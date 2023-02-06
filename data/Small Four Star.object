@@ -1,0 +1,43 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Small Four Star",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16777215,
+      "height": 0,
+      "mirror": 1,
+      "name": "Zap",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -19,
+          "y": 0
+        },
+        {
+          "x": -5,
+          "y": 6
+        },
+        {
+          "x": 0,
+          "y": 19
+        },
+        {
+          "x": 5,
+          "y": 6
+        },
+        {
+          "x": 19,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

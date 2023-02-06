@@ -1,0 +1,22 @@
+{
+  "boon": 1,
+  "credits": 0,
+  "defenses": 1,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 8,
+        "statType": 3
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Steel Plate",
+  "overworldDrop": 0,
+  "precursorTech": 0,
+  "triggers": 0
+}
+

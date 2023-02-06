@@ -16,6 +16,7 @@
       "range": 290,
       "soundPack": "Mako Long Guns",
       "speed": 1200,
+      "tag": "",
       "turretBone": "Turret"
     },
     {
@@ -28,6 +29,7 @@
       "range": 110,
       "soundPack": "Mako Short Guns",
       "speed": 600,
+      "tag": "Mako Short Gun",
       "turretBone": ""
     }
   ],
@@ -35,6 +37,26 @@
   "hp": 900,
   "name": "Mako",
   "objectType": "Mako",
+  "passiveName": "Feed",
+  "passives": [
+    {
+      "data": {
+        "gunTag": "Mako Short Gun",
+        "percentChance": 100,
+        "statusEffects": [
+          {
+            "data": {
+              "appliesToMana": 1,
+              "healing": 2
+            },
+            "tag": "VampEffect"
+          }
+        ],
+        "tooltipGunDescription": "short range gun"
+      },
+      "tag": "GunProcs"
+    }
+  ],
   "radius": 18,
   "reverseThrustEmitter": "Mako Reverse Thruster",
   "rotationDecay": 32,
@@ -45,6 +67,32 @@
       "level": 0,
       "maxStrength": 250,
       "right": 1200
+    }
+  ],
+  "slotLimits": [
+    {
+      "maxSlots": 7,
+      "minSlots": 2
+    },
+    {
+      "maxSlots": 4,
+      "minSlots": 1
+    },
+    {
+      "maxSlots": 7,
+      "minSlots": 2
+    },
+    {
+      "maxSlots": 5,
+      "minSlots": 1
+    },
+    {
+      "maxSlots": 4,
+      "minSlots": 0
+    },
+    {
+      "maxSlots": 6,
+      "minSlots": 2
     }
   ],
   "speedLimit": 250,
@@ -58,6 +106,7 @@
       "params": [
         {
           "data": {
+            "autoAim": 0,
             "damage": 180,
             "delay": 0,
             "drawReticle": 1,
@@ -70,6 +119,7 @@
               "y": 0
             },
             "range": 290,
+            "reticleColor": 11184810,
             "statusEffects": [],
             "tag": "Mako 1 Shotgun",
             "targetingDelay": 0,
@@ -147,6 +197,7 @@
       "params": [
         {
           "data": {
+            "autoAim": 0,
             "damage": 25,
             "delay": 0,
             "drawReticle": 1,
@@ -159,6 +210,7 @@
               "y": 0
             },
             "range": 290,
+            "reticleColor": 11184810,
             "statusEffects": [
               {
                 "data": {
@@ -181,7 +233,7 @@
             "glyphCount": 16,
             "glyphRadius": 50,
             "glyphType": "Axeraider Rally Glyph",
-            "noStack": 0,
+            "maxStacks": 0,
             "statType": 5,
             "tag": "Mako 4 StatBoost"
           },

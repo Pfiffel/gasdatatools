@@ -1,7 +1,7 @@
 {
   "color": 1674260,
   "convoyBosses": [],
-  "convoyPeriodSeconds": 600,
+  "convoyPeriodSeconds": 500,
   "eventBossPeriodSeconds": 600,
   "eventBosses": [],
   "maxEventBosses": 1,
@@ -27,4 +27,3 @@
   "name": "Swamp 1 Green",
   "noRespawn": 0
 }
-

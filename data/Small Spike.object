@@ -1,0 +1,35 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Small Spike",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16777215,
+      "height": 0,
+      "mirror": 1,
+      "name": "Zap",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -20,
+          "y": 4
+        },
+        {
+          "x": 14,
+          "y": 7
+        },
+        {
+          "x": 21,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

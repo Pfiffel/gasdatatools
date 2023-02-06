@@ -1,7 +1,7 @@
 {
   "color": 1346676,
   "convoyBosses": [],
-  "convoyPeriodSeconds": 600,
+  "convoyPeriodSeconds": 500,
   "eventBossPeriodSeconds": 600,
   "eventBosses": [],
   "maxEventBosses": 1,
@@ -27,4 +27,3 @@
   "name": "Karkus 2 Blue",
   "noRespawn": 0
 }
-

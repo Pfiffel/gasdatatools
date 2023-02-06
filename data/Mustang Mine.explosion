@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 50,
+      "maxDistPercent": 100,
+      "minDistPercent": 100,
+      "particleType": "Mustang Mine",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 50,
+      "maxDistPercent": 80,
+      "minDistPercent": 30,
+      "particleType": "Mustang Mine",
+      "uniformAngles": 0
+    }
+  ],
+  "name": "Mustang Mine",
+  "sound": "explosion4",
+  "volume": 50
+}
+

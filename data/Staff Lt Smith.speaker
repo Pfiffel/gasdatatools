@@ -1,5 +1,6 @@
 {
   "name": "Staff Lt Smith",
+  "portrait": "",
   "quoteLists": [
     {
       "quotes": [
@@ -41,6 +42,16 @@
         {
           "sound": "",
           "text": "Let's do it to it!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "In thrust we trust!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Fangs out, squaddie! Go get em!",
           "volume": 50
         }
       ],

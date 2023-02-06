@@ -11,7 +11,7 @@
             "glyphCount": 0,
             "glyphRadius": 0,
             "glyphType": "",
-            "noStack": 1,
+            "maxStacks": 1,
             "statType": 10,
             "tag": "Atomica Shrinkage"
           },

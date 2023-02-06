@@ -1,0 +1,32 @@
+{
+  "boon": 1,
+  "credits": 8,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "cooldown": 400,
+        "damage": 20,
+        "emitterType": "Transmatter Blaster Trail",
+        "f": 0,
+        "halfArc": 450,
+        "objectType": "Transmatter Blaster Bullet",
+        "range": 175,
+        "reticleColor": 4320972,
+        "soundPack": "Hercules Small Guns",
+        "speed": 800,
+        "tag": "",
+        "turretBone": ""
+      },
+      "tag": "PlayerGunStats"
+    }
+  ],
+  "engines": 0,
+  "guns": 1,
+  "name": "Transmatter Blaster",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 0
+}
+

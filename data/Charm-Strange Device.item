@@ -1,0 +1,32 @@
+{
+  "boon": 1,
+  "credits": 6,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "cooldown": 450,
+        "damage": 25,
+        "emitterType": "Charm-Strange Device Trail",
+        "f": 1800,
+        "halfArc": 900,
+        "objectType": "Charm-Strange Device Bullet",
+        "range": 290,
+        "reticleColor": 15427174,
+        "soundPack": "Hercules Small Guns",
+        "speed": 800,
+        "tag": "",
+        "turretBone": ""
+      },
+      "tag": "PlayerGunStats"
+    }
+  ],
+  "engines": 0,
+  "guns": 1,
+  "name": "Charm-Strange Device",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 0
+}
+

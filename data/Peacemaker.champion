@@ -16,6 +16,7 @@
       "range": 300,
       "soundPack": "Peacemaker Guns",
       "speed": 1500,
+      "tag": "",
       "turretBone": "Turret"
     }
   ],
@@ -23,6 +24,17 @@
   "hp": 800,
   "name": "Peacemaker",
   "objectType": "Peacemaker",
+  "passiveName": "Marshal's Law",
+  "passives": [
+    {
+      "data": {
+        "activeWhile": 20,
+        "amount": 200,
+        "statType": 0
+      },
+      "tag": "ItemStat"
+    }
+  ],
   "radius": 20,
   "reverseThrustEmitter": "Peacemaker Reverse Thruster",
   "rotationDecay": 32,
@@ -33,6 +45,32 @@
       "level": 0,
       "maxStrength": 300,
       "right": 1800
+    }
+  ],
+  "slotLimits": [
+    {
+      "maxSlots": 8,
+      "minSlots": 3
+    },
+    {
+      "maxSlots": 5,
+      "minSlots": 1
+    },
+    {
+      "maxSlots": 6,
+      "minSlots": 1
+    },
+    {
+      "maxSlots": 4,
+      "minSlots": 1
+    },
+    {
+      "maxSlots": 4,
+      "minSlots": 0
+    },
+    {
+      "maxSlots": 6,
+      "minSlots": 2
     }
   ],
   "speedLimit": 240,
@@ -52,6 +90,7 @@
             "drawReticle": 1,
             "drawTooltip": 0,
             "explosionType": "Peacemaker Bomblet",
+            "facing": 0,
             "halfArc": 1800,
             "mirror": 1,
             "offset": {
@@ -75,6 +114,7 @@
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Peacemaker Bomblet",
+            "facing": 0,
             "halfArc": 1800,
             "mirror": 0,
             "offset": {
@@ -95,6 +135,7 @@
             "delay": 0,
             "duration": 350,
             "emitterType": "Wasp Mines",
+            "facing": 0,
             "mirror": 1,
             "objectType": "Wasp Mine",
             "sound": "",
@@ -112,6 +153,7 @@
             "delay": 0,
             "duration": 225,
             "emitterType": "Wasp Mines",
+            "facing": 0,
             "mirror": 0,
             "objectType": "Wasp Mine",
             "sound": "",
@@ -143,6 +185,7 @@
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Peacemaker Cylinder Blast",
+            "facing": 0,
             "halfArc": 150,
             "mirror": 0,
             "offset": {
@@ -166,6 +209,7 @@
             "drawReticle": 0,
             "drawTooltip": 0,
             "explosionType": "Peacemaker Cylinder Blast",
+            "facing": 0,
             "halfArc": 150,
             "mirror": 0,
             "offset": {
@@ -189,6 +233,7 @@
             "drawReticle": 0,
             "drawTooltip": 0,
             "explosionType": "Peacemaker Cylinder Blast",
+            "facing": 0,
             "halfArc": 150,
             "mirror": 0,
             "offset": {
@@ -212,6 +257,7 @@
             "drawReticle": 0,
             "drawTooltip": 0,
             "explosionType": "Peacemaker Cylinder Blast",
+            "facing": 0,
             "halfArc": 150,
             "mirror": 0,
             "offset": {
@@ -235,6 +281,7 @@
             "drawReticle": 0,
             "drawTooltip": 0,
             "explosionType": "Peacemaker Cylinder Blast",
+            "facing": 0,
             "halfArc": 150,
             "mirror": 0,
             "offset": {
@@ -258,6 +305,7 @@
             "drawReticle": 0,
             "drawTooltip": 0,
             "explosionType": "Peacemaker Cylinder Blast",
+            "facing": 0,
             "halfArc": 150,
             "mirror": 0,
             "offset": {
@@ -292,7 +340,7 @@
             "glyphDuration": 500,
             "glyphRadius": 50,
             "glyphType": "Heal Indicator",
-            "healAmount": 50,
+            "healAmount": 40,
             "tag": "Peacemaker 3 Heal"
           },
           "tag": "HealTrigger"
@@ -303,7 +351,7 @@
             "glyphDuration": 0,
             "glyphRadius": 0,
             "glyphType": "Heal Indicator",
-            "refillPercentage": 50,
+            "refillPercentage": 40,
             "shieldIndex": -1,
             "tag": "Peacemaker 3 ShieldRefill"
           },
@@ -328,6 +376,7 @@
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Peacemaker Hand Cannon Blast",
+            "facing": 0,
             "halfArc": 150,
             "mirror": 0,
             "offset": {
@@ -351,7 +400,7 @@
             "glyphCount": 8,
             "glyphRadius": 70,
             "glyphType": "Hand Cannon Glyph",
-            "noStack": 0,
+            "maxStacks": 0,
             "statType": 5,
             "tag": "Peacemaker 4 StatBoost"
           },

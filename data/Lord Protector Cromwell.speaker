@@ -65,7 +65,7 @@
         },
         {
           "sound": "",
-          "text": "I’ll say this slowly so that even you might understand. Die. Peasant.\n",
+          "text": "I'll say this slowly so that even you might understand. Die. Peasant.\n",
           "volume": 50
         },
         {
@@ -90,7 +90,7 @@
       "quotes": [
         {
           "sound": "",
-          "text": "It’s good to be the king.",
+          "text": "It's good to be the king.",
           "volume": 50
         },
         {
@@ -379,7 +379,7 @@
           "volume": 50
         }
       ],
-      "tag": "Quest Boss Victory"
+      "tag": "Quest Boss Loss"
     },
     {
       "quotes": [
@@ -429,7 +429,7 @@
           "volume": 50
         }
       ],
-      "tag": "Quest Boss Loss"
+      "tag": "Quest Boss Victory"
     }
   ]
 }

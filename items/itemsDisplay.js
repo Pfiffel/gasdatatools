@@ -22,7 +22,7 @@ function parseData()
 			SYMBIOTE_DROPPERS[getTier(monster.xp)-2].push(monster);
 	}*/
 	var totalAmount = 0;
-	for (let t = 1; t < TIERS+1; t++)
+	for (let t = 0; t < TIERS+1; t++)
 	{
 		var amount = GetItemAmount(t, 1, 0);
 		totalAmount += GetItemAmount(t, -1, -1);
@@ -36,66 +36,71 @@ function parseData()
 		}*/
 	}
 	let tr = tbl.insertRow();
-	for (let t = 1; t < TIERS+1; t++)
+	for (let t = 0; t < TIERS+1; t++)
 	{
 		var cell = makeCell("", tr);
 		cell.appendChild(MakeTieredItemList(t));
 	}
 	tableOutput.appendChild(MakeTextDiv("<h1>Items (" + totalAmount + " total)</h1>"));
 	tableOutput.appendChild(MakeTextDiv("<h2>Tiered</h2>"));
-	tableOutput.appendChild(tbl);
+	//tableOutput.appendChild(tbl);
+	tableOutput.appendChild(MakeSpecificTable(1,1,0,0,0));
+	tableOutput.appendChild(MakeTextDiv("<h2>Rare</h2>"));
+	tableOutput.appendChild(MakeSpecificTable(1,-1,0,1,0));
 	tableOutput.appendChild(MakeTextDiv("<h2>2-Statted</h2>"));
-	tableOutput.appendChild(MakeSpecificTable(1,2,0));
+	tableOutput.appendChild(MakeSpecificTable(1,2,0,0,1));
 	tableOutput.appendChild(MakeTextDiv("<h2>Precursor Tech</h2>"));
-	tableOutput.appendChild(MakeSpecificTable(1,-1,1));
+	tableOutput.appendChild(MakeSpecificTable(1,-1,1,0,1));
 	tableOutput.appendChild(MakeTextDiv("<h2>Usage Stats</h2>"));
 	tableOutput.appendChild(showUsage(STAT_TYPES));
 	tableOutput.appendChild(showUsage(TRIGGERED_TRIGGER_EFFECTS));
 	//tableOutput.appendChild(showUsage(ACTIVE_WHILE_NAMES));
 }
-function GetItemAmount(tier, statAmount, precursor)
+function GetItemAmount(tier, statAmount, precursor, rare)
 {
 	var amount = 0;
 	for (var i = 0; i < gasData["item"].length; i++)
 	{
 		var item = gasData["item"][i];
-		if(ItemIsNot(item, tier, statAmount, precursor)) continue;
+		if(ItemIsNot(item, tier, statAmount, precursor, rare)) continue;
 		amount++;
 	}
 	return amount;
 }
-function ItemIsNot(item, tier, statAmount, precursor)
+function ItemIsNot(item, tier, statAmount, precursor, rare)
 {
 	if(item.precursorTech == undefined) item.precursorTech = 0;
+	if(item.rare == undefined) item.rare = 0;
 	if(item.credits != tier) return true;
+	if(item.rare != rare) return true;
 	if(precursor != -1 && item.precursorTech != precursor) return true;
 	if(statAmount != -1 && item.effects.length != statAmount) return true;
 	return false;
 }
-function MakeSpecificTable(startTier, statAmount, precursor)
+function MakeSpecificTable(startTier, statAmount, precursor, rare, inline)
 {
 	var tbl = document.createElement('table');
 	let th = tbl.insertRow();
 	let tr = tbl.insertRow();
 	for (let t = startTier; t < TIERS+1; t++)
 	{
-		var amount = GetItemAmount(t, statAmount, precursor);
+		var amount = GetItemAmount(t, statAmount, precursor, rare);
 		if(amount == 0) continue;
 		makeHeaderCell(colorWrap("Tier " + t, TIER_COLORS[t]) + " - " + amount + " total<br/>", th);
 		var cell = makeCell("", tr);
-		cell.appendChild(MakeSpecificItemList(t, statAmount, precursor));
+		cell.appendChild(MakeSpecificItemList(t, statAmount, precursor, rare, inline));
 	}
 	return tbl;
 }
-function MakeSpecificItemList(tier, statAmount, precursor)
+function MakeSpecificItemList(tier, statAmount, precursor, rare, inline)
 {
 	var div = document.createElement('div');
 	for (var i = 0; i < gasData["item"].length; i++)
 	{
 		var item = gasData["item"][i];
-		if(ItemIsNot(item, tier, statAmount, precursor)) continue;
+		if(ItemIsNot(item, tier, statAmount, precursor, rare)) continue;
 		var tbl = MakeStatsTable(item, item.credits);
-		tbl.classList.add("inline");
+		if(inline) tbl.classList.add("inline");
 		div.appendChild(tbl);
 	}
 	return div;

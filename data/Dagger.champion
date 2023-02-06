@@ -21,13 +21,13 @@
   ],
   "healRate": 2,
   "hp": 600,
-  "idleAnimation": "Flamebringer Idle",
   "name": "Dagger",
   "objectType": "Dagger",
+  "passiveName": "",
+  "passives": [],
   "radius": 15,
   "reverseThrustEmitter": "Wasp Reverse Thruster",
   "rotationDecay": 32,
-  "runAnimation": "Flamebringer Run",
   "shields": [
     {
       "color": 14663747,
@@ -35,6 +35,28 @@
       "level": 0,
       "maxStrength": 50,
       "right": 1800
+    }
+  ],
+  "slotLimits": [
+    {
+      "maxSlots": 6,
+      "minSlots": 1
+    },
+    {
+      "maxSlots": 5,
+      "minSlots": 1
+    },
+    {
+      "maxSlots": 6,
+      "minSlots": 3
+    },
+    {
+      "maxSlots": 6,
+      "minSlots": 1
+    },
+    {
+      "maxSlots": 4,
+      "minSlots": 0
     }
   ],
   "speedLimit": 230,
@@ -48,6 +70,7 @@
       "params": [
         {
           "data": {
+            "autoAim": 0,
             "damage": 15,
             "delay": 0,
             "drawReticle": 1,
@@ -60,8 +83,11 @@
               "y": 0
             },
             "range": 250,
+            "reticleColor": 11184810,
             "statusEffects": [],
-            "targetingDelay": 0
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": ""
           },
           "tag": "ShotgunTrigger"
         }
@@ -78,6 +104,7 @@
       "params": [
         {
           "data": {
+            "autoAim": 0,
             "damage": 10,
             "delay": 500,
             "drawReticle": 0,
@@ -90,13 +117,17 @@
               "y": 130
             },
             "range": 115,
+            "reticleColor": 11184810,
             "statusEffects": [],
-            "targetingDelay": 0
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": ""
           },
           "tag": "ShotgunTrigger"
         },
         {
           "data": {
+            "autoAim": 0,
             "damage": 10,
             "delay": 500,
             "drawReticle": 0,
@@ -109,8 +140,11 @@
               "y": 130
             },
             "range": 115,
+            "reticleColor": 11184810,
             "statusEffects": [],
-            "targetingDelay": 0
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": ""
           },
           "tag": "ShotgunTrigger"
         },
@@ -122,6 +156,7 @@
             "mirror": 1,
             "objectType": "Wasp Mine",
             "sound": "",
+            "tag": "",
             "target": {
               "x": 140,
               "y": 130
@@ -138,6 +173,7 @@
             "mirror": 1,
             "objectType": "Wasp Mine",
             "sound": "",
+            "tag": "",
             "target": {
               "x": -140,
               "y": 130
@@ -166,7 +202,8 @@
               "level": 0,
               "maxStrength": 300,
               "right": 1800
-            }
+            },
+            "tag": ""
           },
           "tag": "ExtraShieldTrigger"
         },
@@ -177,7 +214,8 @@
             "glyphRadius": 100,
             "glyphType": "Axeraider Unstoppable Glyph",
             "refillPercentage": 100,
-            "shieldIndex": -1
+            "shieldIndex": -1,
+            "tag": ""
           },
           "tag": "ShieldRefillTrigger"
         }
@@ -200,7 +238,9 @@
             "glyphCount": 15,
             "glyphRadius": 80,
             "glyphType": "Axeraider Rally Glyph",
-            "statType": 5
+            "noStack": 0,
+            "statType": 5,
+            "tag": ""
           },
           "tag": "StatBoostTrigger"
         }

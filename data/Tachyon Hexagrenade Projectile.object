@@ -1,0 +1,85 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Tachyon Hexagrenade Projectile",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 14803770,
+      "height": 57,
+      "mirror": 1,
+      "name": "Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 31,
+          "y": 3
+        },
+        {
+          "x": 28,
+          "y": 11
+        },
+        {
+          "x": 18,
+          "y": 17
+        },
+        {
+          "x": -7,
+          "y": 18
+        },
+        {
+          "x": -28,
+          "y": 15
+        },
+        {
+          "x": -72,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 12865556,
+      "height": 59,
+      "mirror": 1,
+      "name": "Inner",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 22,
+          "y": 2
+        },
+        {
+          "x": 18,
+          "y": 5
+        },
+        {
+          "x": 8,
+          "y": 6
+        },
+        {
+          "x": -7,
+          "y": 6
+        },
+        {
+          "x": -24,
+          "y": 5
+        },
+        {
+          "x": -53,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

@@ -6,7 +6,8 @@
     "Iron Behemoth",
     "Iron Juggernaut"
   ],
-  "convoyPeriodSeconds": 450,
+  "convoyDifficulty": 4,
+  "convoyPeriodSeconds": 500,
   "eventBossPeriodSeconds": 600,
   "eventBosses": [],
   "maxEventBosses": 1,
@@ -32,4 +33,3 @@
   "name": "Swamp 6 Yellow",
   "noRespawn": 0
 }
-

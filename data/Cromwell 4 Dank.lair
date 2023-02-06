@@ -6,7 +6,8 @@
     "Royal Dynasty",
     "Royal Sovereign"
   ],
-  "convoyPeriodSeconds": 1000,
+  "convoyDifficulty": 2,
+  "convoyPeriodSeconds": 500,
   "eventBossPeriodSeconds": 600,
   "eventBosses": [],
   "maxEventBosses": 1,
@@ -32,4 +33,3 @@
   "name": "Cromwell 4 Dank",
   "noRespawn": 0
 }
-

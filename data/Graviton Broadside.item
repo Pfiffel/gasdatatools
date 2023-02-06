@@ -1,0 +1,45 @@
+{
+  "boon": 1,
+  "credits": 8,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 125,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Subatomic Broadside",
+            "facing": 900,
+            "halfArc": 450,
+            "mirror": 1,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 275,
+            "reticleColor": 9003472,
+            "statusEffects": [],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "Paired Lateral Blasts"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Graviton Broadside",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 1
+}
+

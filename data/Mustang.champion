@@ -16,6 +16,7 @@
       "range": 300,
       "soundPack": "Mustang Big Guns",
       "speed": 1200,
+      "tag": "",
       "turretBone": "Turret"
     },
     {
@@ -28,6 +29,7 @@
       "range": 265,
       "soundPack": "Mustang Small Guns",
       "speed": 1200,
+      "tag": "",
       "turretBone": "Aux Turret"
     }
   ],
@@ -35,6 +37,38 @@
   "hp": 800,
   "name": "Mustang",
   "objectType": "Mustang",
+  "passiveName": "Wild Stallion",
+  "passives": [
+    {
+      "data": {
+        "activeWhile": 15,
+        "cooldown": 350,
+        "params": [
+          {
+            "data": {
+              "armingTime": 500,
+              "burstRadius": 125,
+              "damage": 75,
+              "duration": 2500,
+              "emitterType": "",
+              "explosionType": "Mustang Mine",
+              "objectType": "Mustang Mine",
+              "scatterHalfArc": 450,
+              "scatterRadius": 75,
+              "sensitivityRadius": 125,
+              "statusEffects": [],
+              "tag": ""
+            },
+            "tag": "MineTrigger"
+          }
+        ],
+        "percentChance": 100,
+        "reticleColor": 11184810,
+        "targetingRange": 0
+      },
+      "tag": "PeriodicTriggerEffect"
+    }
+  ],
   "radius": 13,
   "reverseThrustEmitter": "Mustang Reverse Thruster",
   "rotationDecay": 32,
@@ -52,6 +86,32 @@
       "level": 0,
       "maxStrength": 120,
       "right": 1800
+    }
+  ],
+  "slotLimits": [
+    {
+      "maxSlots": 6,
+      "minSlots": 2
+    },
+    {
+      "maxSlots": 4,
+      "minSlots": 1
+    },
+    {
+      "maxSlots": 6,
+      "minSlots": 1
+    },
+    {
+      "maxSlots": 7,
+      "minSlots": 2
+    },
+    {
+      "maxSlots": 4,
+      "minSlots": 0
+    },
+    {
+      "maxSlots": 6,
+      "minSlots": 2
     }
   ],
   "speedLimit": 240,
@@ -82,6 +142,7 @@
         },
         {
           "data": {
+            "autoAim": 0,
             "damage": 100,
             "delay": 350,
             "drawReticle": 1,
@@ -94,6 +155,7 @@
               "y": 0
             },
             "range": 150,
+            "reticleColor": 11184810,
             "statusEffects": [],
             "tag": "Mustang 1 Shotgun",
             "targetingDelay": 0,
@@ -138,6 +200,7 @@
       "params": [
         {
           "data": {
+            "autoAim": 0,
             "damage": 25,
             "delay": 0,
             "drawReticle": 1,
@@ -150,6 +213,7 @@
               "y": 0
             },
             "range": 265,
+            "reticleColor": 11184810,
             "statusEffects": [
               {
                 "data": {
@@ -179,6 +243,7 @@
       "params": [
         {
           "data": {
+            "autoAim": 0,
             "damage": 550,
             "delay": 0,
             "drawReticle": 1,
@@ -191,6 +256,7 @@
               "y": 0
             },
             "range": 300,
+            "reticleColor": 11184810,
             "statusEffects": [],
             "tag": "Mustang 4 Shotgun",
             "targetingDelay": 0,

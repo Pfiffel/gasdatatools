@@ -1,0 +1,40 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 9003472
+    },
+    {
+      "frac": 750,
+      "value": 3534812
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 500,
+  "minLifetime": 300,
+  "name": "Subatomic Broadside",
+  "objectType": "Small Spike",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 50,
+      "value": 550
+    },
+    {
+      "frac": 500,
+      "value": 550
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 9003472,
+  "startScale": 10,
+  "stayLow": 1
+}
+

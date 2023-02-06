@@ -5,11 +5,13 @@
       "data": {
         "params": {
           "data": {
+            "autoAim": 0,
             "damage": 25,
             "delay": 200,
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Flamebringer Grenade",
+            "facing": 0,
             "halfArc": 1800,
             "mirror": 0,
             "offset": {
@@ -30,7 +32,7 @@
             ],
             "tag": "",
             "targetingDelay": 0,
-            "tooltip": ""
+            "tooltip": "Six Flame Grenades"
           },
           "tag": "ShotgunTrigger"
         },
@@ -42,11 +44,13 @@
       "data": {
         "params": {
           "data": {
+            "autoAim": 0,
             "damage": 25,
             "delay": 350,
             "drawReticle": 1,
             "drawTooltip": 0,
             "explosionType": "Flamebringer Grenade",
+            "facing": 0,
             "halfArc": 1800,
             "mirror": 1,
             "offset": {
@@ -79,11 +83,13 @@
       "data": {
         "params": {
           "data": {
+            "autoAim": 0,
             "damage": 25,
             "delay": 500,
             "drawReticle": 1,
             "drawTooltip": 0,
             "explosionType": "Flamebringer Grenade",
+            "facing": 0,
             "halfArc": 1800,
             "mirror": 0,
             "offset": {
@@ -116,11 +122,13 @@
       "data": {
         "params": {
           "data": {
+            "autoAim": 0,
             "damage": 25,
             "delay": 650,
             "drawReticle": 1,
             "drawTooltip": 0,
             "explosionType": "Flamebringer Grenade",
+            "facing": 0,
             "halfArc": 1800,
             "mirror": 1,
             "offset": {
@@ -156,6 +164,7 @@
             "delay": 0,
             "duration": 200,
             "emitterType": "Flamebringer Mines",
+            "facing": 0,
             "mirror": 0,
             "objectType": "Flamebringer Mine",
             "sound": "",
@@ -179,6 +188,7 @@
             "delay": 0,
             "duration": 350,
             "emitterType": "Flamebringer Mines",
+            "facing": 0,
             "mirror": 1,
             "objectType": "Flamebringer Mine",
             "sound": "",
@@ -202,6 +212,7 @@
             "delay": 0,
             "duration": 500,
             "emitterType": "Flamebringer Mines",
+            "facing": 0,
             "mirror": 0,
             "objectType": "Flamebringer Mine",
             "sound": "",
@@ -225,6 +236,7 @@
             "delay": 0,
             "duration": 650,
             "emitterType": "Flamebringer Mines",
+            "facing": 0,
             "mirror": 1,
             "objectType": "Flamebringer Mine",
             "sound": "",

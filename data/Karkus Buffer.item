@@ -1,5 +1,7 @@
 {
+  "boon": 1,
   "credits": 8,
+  "defenses": 1,
   "effects": [
     {
       "data": {
@@ -18,8 +20,11 @@
       "tag": "ItemStat"
     }
   ],
+  "engines": 0,
+  "guns": 0,
   "name": "Karkus Buffer",
   "overworldDrop": 0,
-  "precursorTech": 0
+  "precursorTech": 0,
+  "triggers": 1
 }
 

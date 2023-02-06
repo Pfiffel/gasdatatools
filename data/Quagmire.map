@@ -3605,8 +3605,9 @@
   "patches": [],
   "quest": {
     "bossKillTime": 300000,
+    "bossRoamingRadius": 450,
+    "clearedRadius": 750,
     "postKillBaskTime": 60000,
-    "spawnAreaRadius": 850,
     "spawnPoints": [
       {
         "x": -110,

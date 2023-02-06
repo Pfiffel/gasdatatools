@@ -9,13 +9,14 @@
     {
       "cooldown": 250,
       "damage": 50,
-      "emitterType": "Mustang Guns",
+      "emitterType": "Warthog Guns",
       "f": 0,
       "halfArc": 1800,
       "objectType": "Mustang Bullet",
       "range": 160,
       "soundPack": "Warthog Guns",
       "speed": 1200,
+      "tag": "",
       "turretBone": "Turret"
     }
   ],
@@ -23,6 +24,49 @@
   "hp": 900,
   "name": "Warthog",
   "objectType": "Warthog",
+  "passiveName": "Feral Hog",
+  "passives": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 5,
+            "duration": 10000,
+            "emitterType": "",
+            "glyphCount": 0,
+            "glyphRadius": 0,
+            "glyphType": "",
+            "maxStacks": 0,
+            "statType": 0,
+            "tag": ""
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 11
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 5,
+            "duration": 10000,
+            "emitterType": "",
+            "glyphCount": 0,
+            "glyphRadius": 0,
+            "glyphType": "",
+            "maxStacks": 0,
+            "statType": 5,
+            "tag": ""
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 11
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
   "radius": 18,
   "reverseThrustEmitter": "Warthog Reverse Thruster",
   "rotationDecay": 32,
@@ -33,6 +77,32 @@
       "level": 0,
       "maxStrength": 200,
       "right": 1800
+    }
+  ],
+  "slotLimits": [
+    {
+      "maxSlots": 7,
+      "minSlots": 2
+    },
+    {
+      "maxSlots": 5,
+      "minSlots": 1
+    },
+    {
+      "maxSlots": 7,
+      "minSlots": 2
+    },
+    {
+      "maxSlots": 4,
+      "minSlots": 1
+    },
+    {
+      "maxSlots": 4,
+      "minSlots": 0
+    },
+    {
+      "maxSlots": 6,
+      "minSlots": 2
     }
   ],
   "speedLimit": 240,
@@ -46,6 +116,7 @@
       "params": [
         {
           "data": {
+            "autoAim": 0,
             "damage": 200,
             "delay": 0,
             "drawReticle": 1,
@@ -58,6 +129,7 @@
               "y": 0
             },
             "range": 160,
+            "reticleColor": 11184810,
             "statusEffects": [],
             "tag": "Warthog 1 Shotgun",
             "targetingDelay": 0,
@@ -97,6 +169,7 @@
         },
         {
           "data": {
+            "autoAim": 0,
             "damage": 10,
             "delay": 0,
             "drawReticle": 1,
@@ -109,6 +182,7 @@
               "y": 0
             },
             "range": 160,
+            "reticleColor": 11184810,
             "statusEffects": [
               {
                 "data": {
@@ -165,7 +239,7 @@
             "glyphCount": 0,
             "glyphRadius": 0,
             "glyphType": "",
-            "noStack": 0,
+            "maxStacks": 0,
             "statType": 0,
             "tag": "Warthog 4 StatBoost"
           },

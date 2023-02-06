@@ -1,0 +1,32 @@
+{
+  "boon": 1,
+  "credits": 8,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "cooldown": 255,
+        "damage": 15,
+        "emitterType": "Cosmoflux Emitter Trail",
+        "f": 0,
+        "halfArc": 1800,
+        "objectType": "Cosmoflux Emitter Bullet",
+        "range": 140,
+        "reticleColor": 5452025,
+        "soundPack": "Hercules Small Guns",
+        "speed": 600,
+        "tag": "",
+        "turretBone": ""
+      },
+      "tag": "PlayerGunStats"
+    }
+  ],
+  "engines": 0,
+  "guns": 1,
+  "name": "Cosmoflux Emitter",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 0
+}
+

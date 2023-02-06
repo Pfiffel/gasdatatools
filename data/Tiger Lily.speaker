@@ -5,14 +5,29 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_TigerLily_ImNotAfraidOfAnything",
+          "text": "I'm not afraid of anything!",
+          "volume": 100
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_TigerLily_YouDontScareMe",
           "text": "You don't scare me!",
-          "volume": 50
+          "volume": 100
         },
         {
-          "sound": "",
+          "sound": "Symbiote_TigerLily_ImNotAfraid",
           "text": "I'm not afraid!",
-          "volume": 50
+          "volume": 100
+        },
+        {
+          "sound": "Symbiote_TigerLily_IllNeverBackDown",
+          "text": "I'll never back down!",
+          "volume": 100
         }
       ],
       "tag": "Spawn"
@@ -20,12 +35,82 @@
     {
       "quotes": [
         {
-          "sound": "",
-          "text": "I'm not afraid of anything!",
-          "volume": 50
+          "sound": "Symbiote_TigerLily_YoureAmazing",
+          "text": "You're amazing!",
+          "volume": 100
         }
       ],
-      "tag": "Equip"
+      "tag": "Max Level"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_TigerLily_YoureTheBest",
+          "text": "You're the best!",
+          "volume": 100
+        },
+        {
+          "sound": "Symbiote_TigerLily_IWasntScared",
+          "text": "I wasn't scared!",
+          "volume": 100
+        },
+        {
+          "sound": "Symbiote_TigerLily_NoProblem",
+          "text": "No problem!",
+          "volume": 100
+        }
+      ],
+      "tag": "Add Boss Kill"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_TigerLily_WhoaThatWasClose",
+          "text": "Whoa, that was close!",
+          "volume": 100
+        }
+      ],
+      "tag": "Close Call"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_TigerLily_DontWorryWellTryAgain",
+          "text": "Don't worry, we'll try again.",
+          "volume": 100
+        }
+      ],
+      "tag": "Low Level Death"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_TigerLily_WhatsThat",
+          "text": "What's that?",
+          "volume": 100
+        }
+      ],
+      "tag": "Discover Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_TigerLily_YouGotIt",
+          "text": "You got it!",
+          "volume": 100
+        }
+      ],
+      "tag": "Activate Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_TigerLily_ThatWasEpic",
+          "text": "That was epic!",
+          "volume": 100
+        }
+      ],
+      "tag": "Quest Boss Victory"
     }
   ]
 }

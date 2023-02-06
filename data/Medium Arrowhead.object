@@ -1,0 +1,39 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Medium Arrowhead",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16777215,
+      "height": 0,
+      "mirror": 1,
+      "name": "Zap",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -8,
+          "y": 0
+        },
+        {
+          "x": -14,
+          "y": 23
+        },
+        {
+          "x": 10,
+          "y": 13
+        },
+        {
+          "x": 25,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

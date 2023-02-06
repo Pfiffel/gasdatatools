@@ -31,6 +31,46 @@
         }
       ],
       "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Balance restored.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Equilibrium reached.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Equity achieved.",
+          "volume": 50
+        }
+      ],
+      "tag": "Add Boss Kill"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "A sign of balance.",
+          "volume": 50
+        }
+      ],
+      "tag": "Discover Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The beacon of justice shines bright.",
+          "volume": 50
+        }
+      ],
+      "tag": "Activate Beacon"
     }
   ]
 }

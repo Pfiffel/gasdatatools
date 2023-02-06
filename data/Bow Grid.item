@@ -1,0 +1,28 @@
+{
+  "boon": 1,
+  "credits": 8,
+  "defenses": 1,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "shield": {
+          "color": 13391305,
+          "left": -400,
+          "level": 0,
+          "maxStrength": 120,
+          "right": 400
+        }
+      },
+      "tag": "ItemShield"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Bow Grid",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 0
+}
+

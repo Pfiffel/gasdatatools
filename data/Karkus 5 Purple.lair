@@ -6,7 +6,8 @@
     "Iron Behemoth",
     "Iron Juggernaut"
   ],
-  "convoyPeriodSeconds": 550,
+  "convoyDifficulty": 3,
+  "convoyPeriodSeconds": 500,
   "eventBossPeriodSeconds": 600,
   "eventBosses": [],
   "maxEventBosses": 1,
@@ -32,4 +33,3 @@
   "name": "Karkus 5 Purple",
   "noRespawn": 0
 }
-

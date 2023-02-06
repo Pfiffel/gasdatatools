@@ -1,7 +1,7 @@
 {
   "color": 5815121,
   "convoyBosses": [],
-  "convoyPeriodSeconds": 600,
+  "convoyPeriodSeconds": 500,
   "eventBossPeriodSeconds": 600,
   "eventBosses": [],
   "maxEventBosses": 8,
@@ -19,4 +19,3 @@
   "name": "Karkus 0 Noob",
   "noRespawn": 0
 }
-

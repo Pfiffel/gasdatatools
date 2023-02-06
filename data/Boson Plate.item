@@ -1,5 +1,7 @@
 {
+  "boon": 1,
   "credits": 7,
+  "defenses": 1,
   "effects": [
     {
       "data": {
@@ -10,8 +12,11 @@
       "tag": "ItemStat"
     }
   ],
+  "engines": 0,
+  "guns": 0,
   "name": "Boson Plate",
   "overworldDrop": 1,
-  "precursorTech": 0
+  "precursorTech": 0,
+  "triggers": 0
 }
 

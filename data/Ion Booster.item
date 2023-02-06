@@ -1,0 +1,22 @@
+{
+  "boon": 1,
+  "credits": 0,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 4,
+        "statType": 0
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "engines": 0,
+  "guns": 1,
+  "name": "Ion Booster",
+  "overworldDrop": 0,
+  "precursorTech": 0,
+  "triggers": 0
+}
+

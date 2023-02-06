@@ -1,0 +1,75 @@
+{
+  "boon": 1,
+  "credits": 6,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 50,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Cosmic Cataclysm",
+            "facing": 600,
+            "halfArc": 300,
+            "mirror": 1,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 285,
+            "reticleColor": 14803755,
+            "statusEffects": [],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "Triple Radial Burst"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 7
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 50,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 0,
+            "explosionType": "Cosmic Cataclysm",
+            "facing": -1800,
+            "halfArc": 300,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 290,
+            "reticleColor": 14803755,
+            "statusEffects": [],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "Forward Blast"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 7
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Cosmic Cataclysm",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 1
+}
+
