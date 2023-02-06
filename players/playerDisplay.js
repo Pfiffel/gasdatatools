@@ -20,10 +20,12 @@ function Refresh()
 	makeHeaderCell("Name", th);
 	makeHeaderCell("Blurb", th);
 	makeHeaderCell("Hull & Repair", th);
+	makeHeaderCell("Equipment", th);
 	makeHeaderCell("Radius", th);
 	makeHeaderCell("Movement", th);
 	
 	makeHeaderCell("Guns <i>(graphic is scaled down to " + percToString(GUN_SCALE) + ")</i>", th);
+	makeHeaderCell("Passive", th);
 	makeHeaderCell("Triggers <i>(DPS based on " + MANA_PER_SECOND + " mps)</i>", th);
 	makeHeaderCell("Shields", th);
 	for (let i = 0; i < gasData.champion.length; i++)
@@ -34,9 +36,10 @@ function Refresh()
 		var nameCell = makeCell(player.name + "<br/><br/>", tr, "name");
 
 		nameCell.appendChild(draw(player, 0.4));
-
+		//nameCell.appendChild(document.createTextNode(player.blurb));
 		makeCell(player.blurb, tr);
 		makeHullCell(tr.insertCell(), player);
+		makeEquipmentCell(tr.insertCell(), player);
 
 		var size = round(Math.PI*(player.radius*player.radius), 2);
 		var sizeCell = makeCell(player.radius, tr);
@@ -46,13 +49,18 @@ function Refresh()
 		sizeCell.appendChild(document.createTextNode("area size"));
 		makeMoveCell(tr.insertCell(), player);
 		makeGunCell(tr.insertCell(), player);
+		var pretendItem = {};
+		pretendItem.name = player.passiveName;
+		pretendItem.effects = player.passives;
+		makeCellE(MakeStatsTable(pretendItem, 0), tr);
+		//makePassiveCell(tr.insertCell(), player);
 		makeTriggerCell(tr.insertCell(), player);
 		makeShieldCell(tr.insertCell(), player);
 		if(document.getElementById(CHECKBOX_ACCOLADES).checked)
 		{
 			let tr2 = tbl.insertRow();
 			let accCell = tr2.insertCell();
-			accCell.colSpan = 9;
+			accCell.colSpan = 10;
 			accCell.style.width = "10px"; // hack to make it not stretch past the actual table width
 			makeAccoladeCell(accCell, player);
 		}
@@ -147,6 +155,23 @@ function makeHullCell(container, player)
 	var tilFull = round(player.hp/player.healRate, 2);
 	statRow(moveTable, "until full", tilFull + "s");
 	container.appendChild(moveTable);
+}
+function makeEquipmentCell(container, player)
+{
+	var eqTable = document.createElement('table');
+	let thE = eqTable.insertRow();
+	makeHeaderCell("Type", thE);
+	makeHeaderCell("Start", thE);
+	makeHeaderCell("Max", thE);
+	for (let i = 0; i < player.slotLimits.length; i++)
+	{
+		var type = player.slotLimits[i];
+		let trE = eqTable.insertRow();
+		makeCell(SLOT_TYPES[i][0], trE);
+		makeCell(type.minSlots, trE);
+		makeCell(type.maxSlots, trE);
+	}
+	container.appendChild(eqTable);
 }
 function makeGunCell(container, player)
 {
