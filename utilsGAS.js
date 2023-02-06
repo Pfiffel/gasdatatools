@@ -192,6 +192,7 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 				var hex = numberToHex(data.shield.color);
 				s += printKeyAndData("Shield", "Strength " + data.shield.maxStrength);
 				s += printKeyAndData("Shield", colorWrap("Arc "+GetArc(data.shield), hex));
+				// TODO show facing, calculate with right and left
 			}
 		}
 		else if(mainTag == "TriggeredTriggerEffect" || mainTag == "TriggeredHealMineBurst")
@@ -226,7 +227,11 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 		{
 			let gundps = round(1000*data.damage/data.cooldown,2);
 			s += printKeyAndData("Gun", gundps + " DPS");
-			s += printKeyAndData("Range", data.range);
+			s += printKeyAndData("├ Range", data.range, "", AddReticle(data.reticleColor));
+			var finish = "└ ";
+			if(data.f != 0) finish = "├ ";
+			s += printKeyAndData(finish + "Arc", (data.halfArc * 0.2) + "°");
+			if(data.f != 0) s += printKeyAndData("└ Facing", (data.f/10));
 			dps += gundps;
 		}
 		else if(mainTag == "PeriodicTriggerEffect")
