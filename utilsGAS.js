@@ -8,6 +8,15 @@ const TIER_NAMES = ["","Alpha","Beta","Gamma","Delta","Epsilon","Omega","","",""
 const MAX_LEVEL = 20;
 const SHIELD_STRENGTH_PER_RADIUS = 20;
 const MANA_PER_SECOND = 2.5;
+// [ui name, type name, item flag key]
+const SLOT_TYPES = {
+	"0": ["Gun Upgrades", "Guns", "guns"],
+	"1": ["Defense Upgrades", "Defenses", "defenses"],
+	"2": ["Trigger Upgrades", "Triggers", "triggers"],
+	"3": ["Engine Upgrades", "Engines", "engines"],
+	"4": ["Precursor Tech", "Precursor Tech", "precursorTech"],
+	"5": ["Equipment", "Equipment", ""]
+}
 const STAT_TYPES = {
 	"0": ["DAMAGE", "Gun Damage"],
 	"1": ["HEAL_RATE", "Repair Rate"],
@@ -23,7 +32,11 @@ const STAT_TYPES = {
 	"11": ["TRIGGER_COST", "Trigger Energy Cost"],
 	"12": ["ULT_FIRE_RATE", "Trigger 4 Rate of Fire"],
 	"13": ["TOP_SPEED", "Top Speed"],
-	"14": ["GUN_ARC", "Gun Arc"]
+	"14": ["GUN_ARC", "Gun Arc"],
+	"15": ["UNKNOWN", "UNKNOWN"],
+	"16": ["ACCELERATION", "Acceleration"],
+	"17": ["SCOOT_RATE", "Scoot Rate"],
+	"18": ["TURN_RATE", "Turn Rate"]
 };
 const ACTIVE_WHILE_NAMES = {
 	"0": ["ALWAYS", "always"],
@@ -45,7 +58,8 @@ const ACTIVE_WHILE_NAMES = {
 	"16": ["THRUSTING_BACKWARD", "reverse thrusters engaged"],
 	"17": ["SHIELDS_FULL", "all shields full"],
 	"18": ["ROTATING", "rotating"],
-	"19": ["NOT_ROTATING", "not rotating"]
+	"19": ["NOT_ROTATING", "not rotating"],
+	"20": ["UNKNOWN", "out of combat"]
 };
 const TRIGGERED_TRIGGER_EFFECTS = {
 	"0": ["TRIGGER1234", "any trigger"],
@@ -60,6 +74,8 @@ const TRIGGERED_TRIGGER_EFFECTS = {
 	"9": ["TRIGGER23", "trigger 2 or 3"],
 	"10": ["TRIGGER123", "trigger 1, 2 or 3"],
 	"11": ["ON_DAMAGE", "damage taken"],
+	"12": ["UNKNOWN", "UNKNOWN 12"],
+	"13": ["UNKNOWN", "shot hit"],
 };
 const PLAYER_POLICIES = {
 	"0": ["IGNORE", "Ignore"],
@@ -146,14 +162,15 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 	for (var effect in mainData.effects){
 		let data = mainData.effects[effect].data;
 		let mainTag = mainData.effects[effect].tag;
+		var activeWhile = data.activeWhile;
 		s = "";
 		if(mainTag == "ItemStat" || mainTag == "ItemShield")
 		{
-			var activeWhile = data.activeWhile;
 			if(activeWhile != undefined && activeWhile != 0) 
 			{
 				if(prevCondition != undefined && prevCondition == activeWhile) prevRepeat = true; else prevRepeat = false;
-				if(!prevRepeat) s += "While " + classWrap(ACTIVE_WHILE_NAMES[activeWhile][1], "cKeyValue") + ":<br/>";
+				if(!prevRepeat) try{ s += "While " + classWrap(ACTIVE_WHILE_NAMES[activeWhile][1], "cKeyValue") + ":<br/>"; }
+				catch(e) {console.log("while " + activeWhile + " not found");}
 				prevCondition = activeWhile;
 				if(ACTIVE_WHILE_NAMES[activeWhile][2] == undefined) ACTIVE_WHILE_NAMES[activeWhile][2] = 0;
 				ACTIVE_WHILE_NAMES[activeWhile][2]++;
@@ -180,7 +197,8 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 		else if(mainTag == "TriggeredTriggerEffect" || mainTag == "TriggeredHealMineBurst")
 		{
 			if(prevCondition != undefined && prevCondition == data.when) prevRepeat = true; else prevRepeat = false;
-			if(!prevRepeat) s += "On " + classWrap(TRIGGERED_TRIGGER_EFFECTS[data.when][1], "cKeyValue") + ":<br/>";
+			if(!prevRepeat) try{ s += "On " + classWrap(TRIGGERED_TRIGGER_EFFECTS[data.when][1], "cKeyValue") + ":<br/>"; }
+			catch(e) {console.log("when " + data.when + " not found");}
 			prevCondition = data.when;
 
 			if(TRIGGERED_TRIGGER_EFFECTS[data.when][2] == undefined) TRIGGERED_TRIGGER_EFFECTS[data.when][2] = 0;
@@ -216,7 +234,8 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 			var chanceTo = "";
 			if(data.percentChance != undefined && data.percentChance != 100)
 				chanceTo = ", " + classWrap(data.percentChance + "%", "cKeyValue") + " to";
-			s += "Every " + classWrap(ToTime(data.cooldown), "cKeyValue") + chanceTo + ":<br/>";
+			var condition = activeWhile != undefined ? ("While " + classWrap(ACTIVE_WHILE_NAMES[activeWhile][1], "cKeyValue")+", every ") : "Every ";
+			s += condition + classWrap(ToTime(data.cooldown), "cKeyValue") + chanceTo + ":<br/>";
 			let cooldownAndChanceMult = (10/data.cooldown)*data.percentChance;
 			for (var p in data.params){
 				var effect = data.params[p];
