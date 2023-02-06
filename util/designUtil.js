@@ -92,12 +92,13 @@ function MakeList()
 			if(weapon.params.data.gunBulletType != undefined) CheckBullet(monster.data, weapon.params.data, "gunBulletType");
 			if(weapon.params.data.monsterName != undefined) CheckMonster(monster.data, weapon.params.data, "monsterName");
 			if(weapon.objectType != "") CountObject(monster.data, weapon.objectType);
+			if(weapon.params.data.objectType != undefined && weapon.params.data.objectType != "") CountObject(monster.data, weapon.params.data.objectType);
 			// TODO Compound
 		}
 	}
 	for (let object in aAllObjects){
 		var amount = aAllObjects[object];
-		//if(amount == 0) MakeError("object <b>" + object + "</b> not used!");
+		if(amount == 0) MakeError("object <b>" + object + "</b> not used!");
 	}
 	return divList;
 }
