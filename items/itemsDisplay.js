@@ -8,9 +8,6 @@ loadGasData();
 
 function parseData()
 {
-	var tbl = document.createElement('table');
-	let th = tbl.insertRow();
-	
 	/*for (let t = 1; t < TIERS+1; t++)
 	{
 		SYMBIOTE_DROPPERS[t] = [];
@@ -22,6 +19,11 @@ function parseData()
 			SYMBIOTE_DROPPERS[getTier(monster.xp)-2].push(monster);
 	}*/
 	var totalAmount = 0;
+	for (var i = 0; i < gasData["item"].length; i++)
+	{
+		totalAmount++;
+	}
+	/*
 	for (let t = 0; t < TIERS+1; t++)
 	{
 		var amount = GetItemAmount(t, 1, 0);
@@ -34,16 +36,9 @@ function parseData()
 			divSprite.appendChild(draw(SYMBIOTE_DROPPERS[t][i],0.25));
 			headerCell.appendChild(divSprite);
 		}*/
-	}
-	let tr = tbl.insertRow();
-	for (let t = 0; t < TIERS+1; t++)
-	{
-		var cell = makeCell("", tr);
-		cell.appendChild(MakeTieredItemList(t));
-	}
+	//}
 	tableOutput.appendChild(MakeTextDiv("<h1>Items (" + totalAmount + " total)</h1>"));
 	tableOutput.appendChild(MakeTextDiv("<h2>Tiered</h2>"));
-	//tableOutput.appendChild(tbl);
 	tableOutput.appendChild(MakeSpecificTable(1,1,0,0,-1,0));
 	tableOutput.appendChild(MakeTextDiv("<h2>Rare</h2>"));
 	tableOutput.appendChild(MakeSpecificTable(1,-1,0,1,-1,0));
