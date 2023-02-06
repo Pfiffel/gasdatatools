@@ -37,7 +37,7 @@ function parseData()
 				{
 					var forChamp = (entity.champion != undefined) ? entity.champion + " " : "";
 					addLine("New " + forChamp + file, divList);
-					divList.appendChild(MakeStatsTable(entity, file == "accolade" ? 0 : entity.tier));
+					divList.appendChild(MakeStatsTable(entity, file == "item" ? entity.credits : file == "accolade" ? 0 : entity.tier));
 				}
 				else if (file == "monster" || file == "gunbullet" || file == "champion")
 				{
