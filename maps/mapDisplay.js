@@ -199,7 +199,7 @@ function MakeMonsterDiv(m, totalWeight, amount, tr)
 function convoyBossesTable(lair){
 	let div = document.createElement('div');
 	var cd = lair.convoyPeriodSeconds/60;
-	if(lair.convoyBosses.length) div.innerHTML += "Convoy every " + round(cd, 2) + " minutes (" + round((1/cd)*60,2) + "/h)<br/><br/>";
+	if(lair.convoyBosses.length) div.innerHTML += "Convoy every " + round(cd, 2) + " minutes (" + round((1/cd)*60,2) + "/h)<br/>Difficulty: "+lair.convoyDifficulty+"<br/><br/>";
 	for (let i = 0; i < lair.convoyBosses.length; i++)
 	{
 		div.innerHTML += getMonster(lair.convoyBosses[i]).printBasic() + "<br/>";
