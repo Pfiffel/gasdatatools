@@ -42,7 +42,7 @@ const ACTIVE_WHILE_NAMES = {
 	"0": ["ALWAYS", "always"],
 	"1": ["HEALTH_FULL", "undamaged"],
 	"2": ["HEALTH_BELOW_100", "damaged"],
-	"3": ["HEALTH_BELOW_50", "hull below 50%"],
+	"3": ["HEALTH_BELOW_75", "hull below 75%"],
 	"4": ["MANA_FULL", "energy full"],
 	"5": ["MANA_ABOVE_75", "energy above 75%"],
 	"6": ["MANA_BELOW_75", "energy below 75%"],
