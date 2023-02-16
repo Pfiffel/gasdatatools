@@ -5,6 +5,7 @@ loadGasData();
 var header = document.getElementById("header");
 var filters = document.getElementById("filters");
 var sortedMonsters;
+var soundList = {};
 
 function RefreshLists()
 {
@@ -34,6 +35,8 @@ function MakeList()
 	{
 		var bullet = gasData["gunbullet"][i];
 		CountObject(bullet, bullet.objectType);
+		soundList[bullet.name] = {};
+		soundList[bullet.name]["Bullet Shoot"] = bullet.soundPack;
 	}
 	for (let i = 0; i < gasData["particle"].length; i++)
 	{
@@ -86,21 +89,62 @@ function MakeList()
 		CountObject(monster.data, monster.data.objectType);
 		CheckAnimation(monster.data, monster.data, "idleAnimation");
 		CheckAnimation(monster.data, monster.data, "runAnimation");
+		soundList[monsterData.name] = {};
+		soundList[monsterData.name]["Death"] = monsterData.deathCrySoundPack;// == "Enemy Hits" ? "empty" : monsterData.deathCrySoundPack;
 		for (let i = 0; i < monster.data.weapons.length; i++)
 		{
 			var weapon = monster.data.weapons[i];
-			if(weapon.params.data.gunBulletType != undefined) CheckBullet(monster.data, weapon.params.data, "gunBulletType");
-			if(weapon.params.data.monsterName != undefined) CheckMonster(monster.data, weapon.params.data, "monsterName");
-			if(weapon.objectType != "") CountObject(monster.data, weapon.objectType);
-			if(weapon.params.data.objectType != undefined && weapon.params.data.objectType != "") CountObject(monster.data, weapon.params.data.objectType);
-			// TODO Compound
+			CheckWeapon(monster, weapon, weapon.params.data);
+			if(weapon.params.tag == "CompoundParams")
+			{
+				for (let j = 0; j < weapon.params.data.weapons.length; j++)
+				{
+					var compoundWeapon = weapon.params.data.weapons[j];
+					CheckWeapon(monster, compoundWeapon, compoundWeapon.data);
+				}
+			}
 		}
 	}
 	for (let object in aAllObjects){
 		var amount = aAllObjects[object];
-		if(amount == 0) MakeError("object <b>" + object + "</b> not used!");
+		//if(amount == 0) MakeError("object <b>" + object + "</b> not used!");
 	}
+	let tbl = document.createElement('table');
+	let th = tbl.insertRow();
+	makeHeaderCell("Sound Origin", th);
+	makeHeaderCell("Sound Type", th);
+	makeHeaderCell("Using", th);
+	for (let soundRoot in soundList){
+		var soundTypes = soundList[soundRoot];
+		if(!soundRoot.includes("Xenofrog")) continue;
+		for (let tag in soundTypes){
+			var sound = soundTypes[tag];
+			let tr = tbl.insertRow();
+			makeCell(soundRoot, tr);
+			makeCell(tag, tr);
+			makeCell(sound, tr);
+		}
+	}
+	tableOutput.appendChild(tbl);
 	return divList;
+}
+function CheckWeapon(monster, weapon, data)
+{
+	if(data.gunBulletType != undefined) CheckBullet(monster.data, data, "gunBulletType");
+	if(data.monsterName != undefined) CheckMonster(monster.data, data, "monsterName");
+	if(weapon.objectType != undefined && weapon.objectType != "") CountObject(monster.data, weapon.objectType);
+	if(data.objectType != undefined && data.objectType != "") CountObject(monster.data, data.objectType);
+	
+	if(weapon.tag == "ShotgunParams")
+	{
+		soundList[monster.data.name]["Shotgun Trigger"] = data.triggerSound;
+		soundList[monster.data.name]["Shotgun Explode"] = data.explosionType;// == "" ? "empty" : data.explosionType;
+	}
+	if(weapon.tag == "MortarParams" || weapon.tag == "MortarBarrageParams")
+	{
+		soundList[monster.data.name]["Mortar Shoot"] = data.shootSound;
+		soundList[monster.data.name]["Mortar Explode"] = data.explosionType;
+	}
 }
 function CountObject(root, name)
 {
