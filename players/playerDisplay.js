@@ -163,6 +163,8 @@ function makeEquipmentCell(container, player)
 	makeHeaderCell("Type", thE);
 	makeHeaderCell("Start", thE);
 	makeHeaderCell("Max", thE);
+	makeHeaderCell("Medals", thE);
+	var totalMedals = 0;
 	for (let i = 0; i < player.slotLimits.length; i++)
 	{
 		var type = player.slotLimits[i];
@@ -170,8 +172,13 @@ function makeEquipmentCell(container, player)
 		makeCell(SLOT_TYPES[i][0], trE);
 		makeCell(type.minSlots, trE);
 		makeCell(type.maxSlots, trE);
+		var unlocks = type.maxSlots - type.minSlots;
+		var totalCost = unlocks * unlocks;
+		totalMedals += totalCost;
+		makeCell(totalCost, trE);
 	}
 	container.appendChild(eqTable);
+	container.innerHTML += "Total Medals: <b>" + totalMedals + "</b>";
 }
 function makeGunCell(container, player)
 {
