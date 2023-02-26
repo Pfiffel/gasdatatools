@@ -14,6 +14,7 @@
       "halfArc": 150,
       "objectType": "Peacemaker Bullet",
       "range": 300,
+      "reticleColor": 11184810,
       "soundPack": "Peacemaker Guns",
       "speed": 1500,
       "tag": "",
@@ -340,7 +341,7 @@
             "glyphDuration": 500,
             "glyphRadius": 50,
             "glyphType": "Heal Indicator",
-            "healAmount": 40,
+            "healAmount": 30,
             "tag": "Peacemaker 3 Heal"
           },
           "tag": "HealTrigger"
@@ -351,7 +352,7 @@
             "glyphDuration": 0,
             "glyphRadius": 0,
             "glyphType": "Heal Indicator",
-            "refillPercentage": 40,
+            "refillPercentage": 30,
             "shieldIndex": -1,
             "tag": "Peacemaker 3 ShieldRefill"
           },

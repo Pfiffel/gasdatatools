@@ -3,23 +3,29 @@
   "effects": [
     {
       "data": {
-        "cooldown": 5000,
+        "activeWhile": 0,
+        "cooldown": 2000,
         "params": [
           {
             "data": {
               "armingTime": 1000,
               "burstRadius": 300,
-              "damage": 300,
+              "damage": 120,
               "duration": 5000,
               "emitterType": "Golden Hind Mine",
               "explosionType": "Golden Hind Mine",
               "objectType": "Golden Hind Mine",
-              "sensitivityRadius": 250
+              "scatterHalfArc": 0,
+              "scatterRadius": 0,
+              "sensitivityRadius": 250,
+              "statusEffects": [],
+              "tag": ""
             },
             "tag": "MineTrigger"
           }
         ],
         "percentChance": 100,
+        "reticleColor": 11184810,
         "targetingRange": 0
       },
       "tag": "PeriodicTriggerEffect"

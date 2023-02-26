@@ -14,6 +14,7 @@
       "halfArc": 450,
       "objectType": "Mako Long Bullet",
       "range": 290,
+      "reticleColor": 11184810,
       "soundPack": "Mako Long Guns",
       "speed": 1200,
       "tag": "",
@@ -22,11 +23,12 @@
     {
       "cooldown": 250,
       "damage": 50,
-      "emitterType": "Mustang Guns",
+      "emitterType": "Mako Guns",
       "f": 0,
       "halfArc": 450,
       "objectType": "Mako Short Bullet",
       "range": 110,
+      "reticleColor": 11184810,
       "soundPack": "Mako Short Guns",
       "speed": 600,
       "tag": "Mako Short Gun",
@@ -47,7 +49,7 @@
           {
             "data": {
               "appliesToMana": 1,
-              "healing": 2
+              "healing": 3
             },
             "tag": "VampEffect"
           }
@@ -112,6 +114,7 @@
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Mako Laser Beams Blast",
+            "facing": 0,
             "halfArc": 450,
             "mirror": 0,
             "offset": {
@@ -133,9 +136,9 @@
     },
     {
       "cooldown": 5000,
-      "description": "Lunges forward to attack with plasma jaws, restoring hull, energy and cooldown on a hit.",
+      "description": "Lunges forward to attack with plasma jaws, restoring hull and cooldown on a hit.",
       "icon": "shark-jaws",
-      "mana": 20,
+      "mana": 18,
       "name": "Jaws",
       "params": [
         {
@@ -146,7 +149,7 @@
               "dematerialTime": 500,
               "explosion": "Mako Jaws",
               "explosionRange": 50,
-              "manaToRefund": 10,
+              "manaToRefund": 0,
               "triggerIndexToResetCooldown": 1,
               "vamp": 1
             },
@@ -203,6 +206,7 @@
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Warthog Blast",
+            "facing": 0,
             "halfArc": 1800,
             "mirror": 0,
             "offset": {

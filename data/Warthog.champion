@@ -14,13 +14,14 @@
       "halfArc": 1800,
       "objectType": "Mustang Bullet",
       "range": 160,
+      "reticleColor": 11184810,
       "soundPack": "Warthog Guns",
       "speed": 1200,
       "tag": "",
       "turretBone": "Turret"
     }
   ],
-  "healRate": 6,
+  "healRate": 10,
   "hp": 900,
   "name": "Warthog",
   "objectType": "Warthog",
@@ -122,6 +123,7 @@
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Warthog Blast",
+            "facing": 0,
             "halfArc": 1800,
             "mirror": 0,
             "offset": {
@@ -175,6 +177,7 @@
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Warthog Stun",
+            "facing": 0,
             "halfArc": 1800,
             "mirror": 0,
             "offset": {

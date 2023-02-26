@@ -6,11 +6,13 @@
       "data": {
         "params": {
           "data": {
+            "autoAim": 0,
             "damage": 75,
             "delay": 2300,
             "drawReticle": 0,
             "drawTooltip": 1,
             "explosionType": "Hercules Zeon Burst",
+            "facing": 0,
             "halfArc": 1800,
             "mirror": 0,
             "offset": {
@@ -18,8 +20,9 @@
               "y": 0
             },
             "range": 160,
+            "reticleColor": 11184810,
             "statusEffects": [],
-            "tag": "",
+            "tag": "Hercules 3 Shotgun 6",
             "targetingDelay": 2000,
             "tooltip": "+1 Extra Missile"
           },
@@ -36,6 +39,7 @@
             "delay": 2000,
             "duration": 300,
             "emitterType": "Mustang Grenade",
+            "facing": 0,
             "mirror": 0,
             "objectType": "Hercules Missile",
             "sound": "Player_Hercules_ZeonRocket_Launch",

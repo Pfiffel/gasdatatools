@@ -3,11 +3,12 @@
   "effects": [
     {
       "data": {
-        "cooldown": 5000,
+        "activeWhile": 0,
+        "cooldown": 2400,
         "params": [
           {
             "data": {
-              "count": 6,
+              "count": 3,
               "damage": 75,
               "emitterType": "Locust Trail",
               "objectType": "Locust Missile",
@@ -17,7 +18,7 @@
               "tag": "",
               "timeGap": 400,
               "tweenType": "EXPOIN",
-              "volume": 50
+              "volume": 35
             },
             "tag": "SharkletTrigger"
           }

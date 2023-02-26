@@ -7,7 +7,12 @@
     "Entropic Plate",
     "Galvanic Capacitor",
     "Multiphasic Loader",
-    "Resonant Generator"
+    "Resonant Generator",
+    "Kinetic Accelerator",
+    "Lateral Displacer",
+    "Centrifugal Rotator",
+    "Subspace Cycler",
+    "Bilateral Charger"
   ],
   "deathCrySoundPack": "Iron Colossus Death Cries",
   "drops": [
