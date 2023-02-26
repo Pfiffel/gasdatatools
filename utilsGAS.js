@@ -227,6 +227,7 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 		{
 			let gundps = round(1000*data.damage/data.cooldown,2);
 			s += printKeyAndData("Gun", gundps + " DPS");
+			s += printKeyAndData("├ RoF", round(1000/data.cooldown,2), "", "/s");
 			s += printKeyAndData("├ Range", data.range, "", AddReticle(data.reticleColor));
 			var finish = "└ ";
 			if(data.f != 0) finish = "├ ";
