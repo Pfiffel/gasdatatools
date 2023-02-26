@@ -287,10 +287,10 @@ class Monster
 		}
 		return (listLoot != "" ? "Loot: " + listLoot : listLoot) + "<br/>" + (listConsolation != "" ? "Consolation: " + listConsolation : listConsolation);
 	}
-	printBasic() {
+	printBasic(hpMult = 1) {
         var move = Boolean(this.data.pauseBetweenMovements) ? "<b>" + this.data.runSpeed + "</b> spd <b>" + this.data.pauseBetweenMovements + "</b> pause " : "<b>" + this.data.runSpeed + "</b> spd";
 		var heal = (this.data.healRate != 0) ? "<b>" + this.data.healRate + "</b> heal ": "";
-        var hull = "<span class=\"hull\"><b>" + this._hp + "</b> HP " + heal + "</span>" ;
+        var hull = "<span class=\"hull\"><b>" + parseInt(this._hp*hpMult) + "</b> HP " + heal + "</span>" ;
         
         return this._name + " - T<b>" + this.getTier() + "</b>" + "<br/>" +
         hull + "<b>" + this._xp + "</b> XP " + "<br/>" + 
