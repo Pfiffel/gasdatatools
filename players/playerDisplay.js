@@ -3,7 +3,8 @@ var header = document.getElementById("header");
 var options = document.getElementById("options");
 var tableOutput = document.getElementById("tableOutput");
 var GUN_SCALE = 0.2;
-var miniDPSTable = [];
+var miniDPSTable = {};
+var miniProgressionTable = {};
 var skip = {"Testank":true,"Testank2":true,"Duality":true};
 const CHECKBOX_ACCOLADES = "Show Accolades";
 const NOTES_DPS = {
@@ -68,6 +69,7 @@ function Refresh()
 	tableOutput.innerHTML = "";
 	tableOutput.appendChild(tbl);
 	makeMiniDPSTable(tableOutput);
+	makeMiniProgressionTable(tableOutput);
 }
 function parseData()
 {
@@ -90,6 +92,9 @@ function makeAccoladeCell(container, player)
 	}
 	var totalCost = CalculateAccoladeCost(accolades.length);
 	accHeader.innerHTML = "<b>" + player.name + " Accolade Bonuses" + "</b> (" + accolades.length + " total, " + totalCost + " total Accolade cost: " + totalCost*100 + " boss kills)";
+	if(miniProgressionTable[player.name] == undefined) miniProgressionTable[player.name] = {};
+	miniProgressionTable[player.name].bonuses = accolades.length;
+	miniProgressionTable[player.name].accolades = totalCost;
 }
 function CalculateAccoladeCost(amount)
 {
@@ -138,6 +143,32 @@ function makeMiniDPSTable(container)
 	container.appendChild(div);
 	container.appendChild(tbl);
 }
+function makeMiniProgressionTable(container)
+{
+	tbl = document.createElement('table');
+	let th = tbl.insertRow();
+	makeHeaderCell("Tank", th);
+	makeHeaderCell("Slot Unlocks", th);
+	makeHeaderCell("Accolade Bonuses", th);
+	makeHeaderCell("Medals Cost", th);
+	makeHeaderCell("Accolades Cost", th);
+	makeHeaderCell("Total Boss Kills", th);
+	for (let tank in miniProgressionTable)
+	{
+		var data = miniProgressionTable[tank];
+		let tr = tbl.insertRow();
+		makeCell(tank, tr, "name");
+		makeCell(data.slots, tr);
+		makeCell(data.bonuses, tr);
+		makeCell(data.medals, tr);
+		makeCell(data.accolades, tr);
+		makeCell(data.medals*10+data.accolades*100, tr);
+	}
+	var div = document.createElement('div');
+	div.innerHTML += "Progression Summary";
+	container.appendChild(div);
+	container.appendChild(tbl);
+}
 function makeMoveCell(container, player)
 {
 	var moveTable = document.createElement('table');
@@ -165,6 +196,7 @@ function makeEquipmentCell(container, player)
 	makeHeaderCell("Max", thE);
 	makeHeaderCell("Medals", thE);
 	var totalMedals = 0;
+	var totalUnlocks = 0;
 	for (let i = 0; i < player.slotLimits.length; i++)
 	{
 		var type = player.slotLimits[i];
@@ -173,12 +205,16 @@ function makeEquipmentCell(container, player)
 		makeCell(type.minSlots, trE);
 		makeCell(type.maxSlots, trE);
 		var unlocks = type.maxSlots - type.minSlots;
+		totalUnlocks += unlocks;
 		var totalCost = unlocks * unlocks;
 		totalMedals += totalCost;
 		makeCell(totalCost, trE);
 	}
 	container.appendChild(eqTable);
 	container.innerHTML += "Total Medals: <b>" + totalMedals + "</b>";
+	if(miniProgressionTable[player.name] == undefined) miniProgressionTable[player.name] = {};
+	miniProgressionTable[player.name].slots = totalUnlocks;
+	miniProgressionTable[player.name].medals = totalMedals;
 }
 function makeGunCell(container, player)
 {
