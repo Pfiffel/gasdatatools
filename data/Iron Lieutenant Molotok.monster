@@ -1,5 +1,7 @@
 {
-  "boss": 1,
+  "armor": 0,
+  "boss": 0,
+  "burrowDetectRange": 0,
   "collisionRadius": 45,
   "consolationPrizes": [
     "Maser Booster",
@@ -38,20 +40,29 @@
       "micros": 100000
     }
   ],
+  "fixedFacing": 0,
   "healRate": 10,
   "hp": 8000,
   "idleAnimation": "BaseArcher Idle",
+  "maxMoveDistance": 500,
   "name": "Iron Lieutenant Molotok",
   "objectType": "Iron Lieutenant Molotok",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 1,
   "runAnimation": "Iron Lieutenant Molotok Run",
+  "runAnimationDuration": 700,
   "runSpeed": 100,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "",
   "weaponType": "",
   "weapons": [
     {
       "attachmentPoint": "Turret",
       "cooldown": 1000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "Iron Lieutenant Molotok Turret",
       "params": {
         "data": {
@@ -126,11 +137,19 @@
           ]
         },
         "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "",
       "cooldown": 1000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "",
       "params": {
         "data": {
@@ -140,7 +159,6 @@
               "data": {
                 "damage": 200,
                 "delay": 1000,
-                "detectionRange": 400,
                 "explosionType": "",
                 "halfArc": 150,
                 "powers": [],
@@ -154,7 +172,6 @@
               "data": {
                 "damage": 300,
                 "delay": 1000,
-                "detectionRange": 400,
                 "explosionType": "",
                 "halfArc": 300,
                 "powers": [],
@@ -168,7 +185,6 @@
               "data": {
                 "damage": 400,
                 "delay": 1000,
-                "detectionRange": 400,
                 "explosionType": "",
                 "halfArc": 450,
                 "powers": [],
@@ -190,7 +206,6 @@
               "data": {
                 "damage": 200,
                 "delay": 1000,
-                "detectionRange": 400,
                 "explosionType": "",
                 "halfArc": 150,
                 "powers": [],
@@ -204,7 +219,6 @@
               "data": {
                 "damage": 300,
                 "delay": 1000,
-                "detectionRange": 500,
                 "explosionType": "",
                 "halfArc": 150,
                 "powers": [],
@@ -218,7 +232,6 @@
               "data": {
                 "damage": 400,
                 "delay": 1000,
-                "detectionRange": 600,
                 "explosionType": "",
                 "halfArc": 150,
                 "powers": [],
@@ -247,11 +260,19 @@
           ]
         },
         "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "",
       "cooldown": 1000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "",
       "params": {
         "data": {
@@ -330,6 +351,12 @@
           ]
         },
         "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     }
   ],

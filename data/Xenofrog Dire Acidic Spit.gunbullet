@@ -17,16 +17,18 @@
       "data": {
         "caption": "",
         "duration": 5000,
+        "engines": 0,
         "guns": 0,
         "health": 1,
         "mana": 0,
+        "rotation": 0,
         "shield": 0,
         "triggers": 0
       },
       "tag": "DisablePower"
     }
   ],
-  "soundPack": "Iron Leviathan Bullet",
+  "soundPack": "Xenofrog Dire Defender Bullet",
   "speed": 140
 }
 

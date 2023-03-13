@@ -6,12 +6,13 @@
         "params": {
           "data": {
             "count": 1,
-            "damage": 100,
+            "damage": 150,
             "emitterType": "",
             "objectType": "Brood Maggot",
             "range": 310,
             "sound": "Player_Hercules_ZeonRocket_Launch",
             "speed": 400,
+            "statusEffects": [],
             "tag": "",
             "timeGap": 300,
             "tweenType": "QUADIN",

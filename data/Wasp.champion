@@ -14,6 +14,7 @@
       "halfArc": 1800,
       "objectType": "Wasp Bullet",
       "range": 250,
+      "reticleColor": 11184810,
       "soundPack": "Wasp Guns",
       "speed": 1200,
       "tag": "",
@@ -101,6 +102,7 @@
             "drawReticle": 1,
             "drawTooltip": 0,
             "explosionType": "Wasp Grenade",
+            "facing": 0,
             "halfArc": 1800,
             "mirror": 1,
             "offset": {
@@ -124,6 +126,7 @@
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Wasp Grenade",
+            "facing": 0,
             "halfArc": 1800,
             "mirror": 0,
             "offset": {
@@ -144,6 +147,7 @@
             "delay": 0,
             "duration": 500,
             "emitterType": "Wasp Mines",
+            "facing": 0,
             "mirror": 1,
             "objectType": "Wasp Mine",
             "sound": "",
@@ -161,6 +165,7 @@
             "delay": 0,
             "duration": 500,
             "emitterType": "Wasp Mines",
+            "facing": 0,
             "mirror": 0,
             "objectType": "Wasp Mine",
             "sound": "",
@@ -192,6 +197,7 @@
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Wasp Quark Blast",
+            "facing": 0,
             "halfArc": 1800,
             "mirror": 0,
             "offset": {
@@ -231,7 +237,7 @@
           "data": {
             "applyToMana": 0,
             "asPercentage": 0,
-            "glyphCount": 4,
+            "glyphCount": 2,
             "glyphDuration": 500,
             "glyphRadius": 50,
             "glyphType": "Heal Indicator",

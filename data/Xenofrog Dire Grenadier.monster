@@ -1,24 +1,32 @@
 {
+  "armor": 0,
   "boss": 0,
+  "burrowDetectRange": 0,
   "collisionRadius": 22,
   "consolationPrizes": [],
-  "deathCrySoundPack": "Enemy Hits",
+  "deathCrySoundPack": "Xenofrog Defender Death Cries",
   "drops": [],
+  "fixedFacing": 0,
   "healRate": 0,
   "hp": 500,
   "idleAnimation": "Xenofrog Idle",
   "maxMoveDistance": 200,
   "name": "Xenofrog Dire Grenadier",
   "objectType": "Xenofrog Dire Grenadier",
+  "onDamageSoundPack": "Xenofrog Hits",
   "pauseBetweenMovements": 900,
   "runAnimation": "Xenofrog Leap",
+  "runAnimationDuration": 700,
   "runSpeed": 300,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "",
   "weaponType": "",
   "weapons": [
     {
       "attachmentPoint": "Mouth",
       "cooldown": 2000,
+      "extraTargetingArc": 0,
       "halfArc": 1800,
       "objectType": "",
       "params": {
@@ -29,13 +37,13 @@
               "data": {
                 "damage": 300,
                 "emitterType": "",
-                "explosionType": "",
+                "explosionType": "Xenofrog Grenadier Grenade",
                 "objectType": "Xenofrog Grenadier Bullet",
                 "powers": [],
                 "radius": 100,
                 "range": 600,
-                "shootSound": "",
-                "shootVolume": 50,
+                "shootSound": "Enemy_XenofrogGrenadier_Bomb_Launch_01",
+                "shootVolume": 70,
                 "speed": 200
               },
               "tag": "MortarParams"
@@ -46,7 +54,7 @@
                 "damage": 300,
                 "delay": 600,
                 "emitterType": "",
-                "explosionType": "",
+                "explosionType": "Xenofrog Grenadier Grenade",
                 "flightTime": 1000,
                 "objectType": "Xenofrog Grenadier Bullet",
                 "powers": [],
@@ -58,8 +66,8 @@
                     "radius": 180
                   }
                 ],
-                "shootSound": "",
-                "shootVolume": 50
+                "shootSound": "Enemy_XenofrogGrenadier_Bomb_Launch_01",
+                "shootVolume": 70
               },
               "tag": "MortarBarrageParams"
             }
@@ -68,7 +76,9 @@
         "tag": "CompoundParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }

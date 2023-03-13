@@ -1,20 +1,25 @@
 {
+  "armor": 0,
   "boss": 0,
   "burrowDetectRange": 0,
   "collisionRadius": 30,
   "consolationPrizes": [],
   "deathCrySoundPack": "Bogweed High Death Cries",
   "drops": [],
+  "fixedFacing": 0,
   "healRate": 0,
   "hp": 750,
   "idleAnimation": "BaseArcher Idle",
   "maxMoveDistance": 0,
   "name": "Bogweed Acidic",
   "objectType": "Bogweed",
+  "onDamageSoundPack": "Xenofrog Nest Hits",
   "pauseBetweenMovements": 0,
   "runAnimation": "",
   "runAnimationDuration": 700,
   "runSpeed": 0,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "",
   "weaponType": "",
   "weapons": [
@@ -75,7 +80,9 @@
         "tag": "CompoundParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }

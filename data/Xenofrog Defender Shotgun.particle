@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 750,
+      "value": 10611293
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 350,
+  "minLifetime": 300,
+  "name": "Xenofrog Defender Shotgun",
+  "objectType": "Xenofrog Defender Particle",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 50,
+      "value": 600
+    },
+    {
+      "frac": 500,
+      "value": 600
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 1927683,
+  "startScale": 10,
+  "stayLow": 1
+}
+

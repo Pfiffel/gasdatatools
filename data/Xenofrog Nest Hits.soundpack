@@ -1,0 +1,10 @@
+{
+  "name": "Xenofrog Nest Hits",
+  "sounds": [
+    "Enemy_XenofrogNest_Hit_01",
+    "Enemy_XenofrogNest_Hit_02",
+    "Enemy_XenofrogNest_Hit_03"
+  ],
+  "volume": 75
+}
+

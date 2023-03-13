@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 60,
+      "maxDistPercent": 100,
+      "minDistPercent": 20,
+      "particleType": "Xenofrog Pustulant Explosion",
+      "uniformAngles": 0
+    },
+    {
+      "angularDensity": 30,
+      "maxDistPercent": 100,
+      "minDistPercent": 85,
+      "particleType": "Xenofrog Pustulant Explosion",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Xenofrog Pustulant Explosion",
+  "sound": "Enemy_XenofrogGrenadier_Bomb_Explosion_01",
+  "volume": 100
+}
+

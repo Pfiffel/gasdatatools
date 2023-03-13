@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 40,
+      "maxDistPercent": 100,
+      "minDistPercent": 20,
+      "particleType": "Xenofrog Grenadier Grenade",
+      "uniformAngles": 0
+    },
+    {
+      "angularDensity": 20,
+      "maxDistPercent": 100,
+      "minDistPercent": 85,
+      "particleType": "Xenofrog Grenadier Grenade",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Xenofrog Grenadier Grenade",
+  "sound": "Enemy_XenofrogGrenadier_Bomb_Explosion_01",
+  "volume": 100
+}
+

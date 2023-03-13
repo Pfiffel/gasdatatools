@@ -1,0 +1,47 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Xenofrog Soldier Particle",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 16777215,
+      "height": 0,
+      "mirror": 1,
+      "name": "Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 0,
+          "y": 11
+        },
+        {
+          "x": -44,
+          "y": 6
+        },
+        {
+          "x": -14,
+          "y": 19
+        },
+        {
+          "x": -6,
+          "y": 32
+        },
+        {
+          "x": 37,
+          "y": 41
+        },
+        {
+          "x": 8,
+          "y": 24
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

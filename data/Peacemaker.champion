@@ -337,7 +337,7 @@
           "data": {
             "applyToMana": 0,
             "asPercentage": 1,
-            "glyphCount": 4,
+            "glyphCount": 2,
             "glyphDuration": 500,
             "glyphRadius": 50,
             "glyphType": "Heal Indicator",

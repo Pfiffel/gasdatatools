@@ -1,19 +1,25 @@
 {
+  "armor": 0,
   "boss": 0,
+  "burrowDetectRange": 0,
   "collisionRadius": 80,
   "consolationPrizes": [],
-  "deathCrySoundPack": "Enemy Hits",
+  "deathCrySoundPack": "Xenofrog Nest Cesspit Death Cries",
   "drops": [],
+  "fixedFacing": 0,
   "healRate": 30,
   "hp": 2200,
   "idleAnimation": "BaseArcher Idle",
   "maxMoveDistance": 500,
   "name": "Xenofrog Cesspit Nest 9",
   "objectType": "Xenofrog Nest",
+  "onDamageSoundPack": "Xenofrog Nest Hits",
   "pauseBetweenMovements": 0,
   "runAnimation": "",
   "runAnimationDuration": 700,
   "runSpeed": 0,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "",
   "weaponType": "",
   "weapons": [
@@ -49,7 +55,9 @@
         "tag": "MinionParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -85,7 +93,9 @@
         "tag": "MinionParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }

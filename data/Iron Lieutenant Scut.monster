@@ -1,5 +1,7 @@
 {
-  "boss": 1,
+  "armor": 0,
+  "boss": 0,
+  "burrowDetectRange": 0,
   "collisionRadius": 70,
   "consolationPrizes": [
     "Dimagnetic Fixer",
@@ -38,25 +40,35 @@
       "micros": 100000
     }
   ],
+  "fixedFacing": 0,
   "healRate": 12,
   "hp": 12000,
   "idleAnimation": "BaseArcher Idle",
+  "maxMoveDistance": 500,
   "name": "Iron Lieutenant Scut",
   "objectType": "Iron Lieutenant Scut",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 1,
   "runAnimation": "Iron Lieutenant Scut Run",
+  "runAnimationDuration": 700,
   "runSpeed": 50,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "",
   "weaponType": "",
   "weapons": [
     {
       "attachmentPoint": "",
       "cooldown": 4000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "",
       "params": {
         "data": {
           "bulletRange": 800,
           "delay": 500,
+          "glyphType": "",
           "gunBulletType": "Iron Lieutenant Scut",
           "numBullets": 4,
           "range": 700,
@@ -84,11 +96,19 @@
           ]
         },
         "tag": "BarrageParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "Turret 1",
       "cooldown": 2000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "Iron Lieutenant Scut Turret",
       "params": {
         "data": {
@@ -116,11 +136,19 @@
           ]
         },
         "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "Turret 2",
       "cooldown": 2000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "Iron Lieutenant Scut Turret",
       "params": {
         "data": {
@@ -148,11 +176,19 @@
           ]
         },
         "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "Turret 3",
       "cooldown": 2000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "Iron Lieutenant Scut Turret",
       "params": {
         "data": {
@@ -180,11 +216,19 @@
           ]
         },
         "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "Turret 4",
       "cooldown": 2000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "Iron Lieutenant Scut Turret",
       "params": {
         "data": {
@@ -212,6 +256,12 @@
           ]
         },
         "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     }
   ],

@@ -1,24 +1,32 @@
 {
+  "armor": 0,
   "boss": 0,
+  "burrowDetectRange": 0,
   "collisionRadius": 25,
   "consolationPrizes": [],
-  "deathCrySoundPack": "Enemy Hits",
+  "deathCrySoundPack": "Xenofrog Defender Death Cries",
   "drops": [],
+  "fixedFacing": 0,
   "healRate": 0,
   "hp": 900,
   "idleAnimation": "Xenofrog Idle",
   "maxMoveDistance": 200,
   "name": "Xenofrog Dire Caustic Fusilier",
   "objectType": "Xenofrog Dire Caustic Fusilier",
+  "onDamageSoundPack": "Xenofrog Hits",
   "pauseBetweenMovements": 700,
   "runAnimation": "Xenofrog Leap",
+  "runAnimationDuration": 700,
   "runSpeed": 260,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "",
   "weaponType": "",
   "weapons": [
     {
       "attachmentPoint": "Mouth",
       "cooldown": 2500,
+      "extraTargetingArc": 0,
       "halfArc": 1800,
       "objectType": "",
       "params": {
@@ -50,7 +58,9 @@
         "tag": "CompoundParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }

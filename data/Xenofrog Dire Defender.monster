@@ -1,24 +1,32 @@
 {
+  "armor": 0,
   "boss": 0,
+  "burrowDetectRange": 0,
   "collisionRadius": 29,
   "consolationPrizes": [],
-  "deathCrySoundPack": "Enemy Hits",
+  "deathCrySoundPack": "Xenofrog Defender Death Cries",
   "drops": [],
+  "fixedFacing": 0,
   "healRate": 0,
   "hp": 1600,
   "idleAnimation": "Xenofrog Idle",
   "maxMoveDistance": 200,
   "name": "Xenofrog Dire Defender",
   "objectType": "Xenofrog Dire Defender",
+  "onDamageSoundPack": "Xenofrog Hits",
   "pauseBetweenMovements": 900,
   "runAnimation": "Xenofrog Leap",
+  "runAnimationDuration": 700,
   "runSpeed": 280,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "",
   "weaponType": "",
   "weapons": [
     {
       "attachmentPoint": "Mouth",
       "cooldown": 2000,
+      "extraTargetingArc": 0,
       "halfArc": 1800,
       "objectType": "",
       "params": {
@@ -39,7 +47,7 @@
               "data": {
                 "damage": 300,
                 "delay": 1000,
-                "explosionType": "",
+                "explosionType": "Xenofrog Defender Shotgun",
                 "halfArc": 250,
                 "powers": [
                   {
@@ -54,7 +62,7 @@
                   }
                 ],
                 "range": 300,
-                "triggerSound": "",
+                "triggerSound": "Enemy_XenofrogDefender_Shotgun_Telegraph",
                 "triggerVolume": 50
               },
               "tag": "ShotgunParams"
@@ -64,7 +72,9 @@
         "tag": "CompoundParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }

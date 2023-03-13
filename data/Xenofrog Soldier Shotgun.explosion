@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 50,
+      "maxDistPercent": 100,
+      "minDistPercent": 100,
+      "particleType": "Xenofrog Soldier Shotgun",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 150,
+      "maxDistPercent": 95,
+      "minDistPercent": 20,
+      "particleType": "Xenofrog Soldier Shotgun",
+      "uniformAngles": 0
+    }
+  ],
+  "name": "Xenofrog Soldier Shotgun",
+  "sound": "Enemy_XenofrogDefender_Shotgun_Blast",
+  "volume": 100
+}
+

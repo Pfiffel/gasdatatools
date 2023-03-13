@@ -1,5 +1,5 @@
 {
-  "description": "Cuirass sacrifices speed for protection.",
+  "description": "Cuirass sacrifices power for protection.",
   "effects": [
     {
       "data": {
@@ -12,8 +12,8 @@
     {
       "data": {
         "activeWhile": 0,
-        "amount": -30,
-        "statType": 5
+        "amount": -20,
+        "statType": 0
       },
       "tag": "ItemStat"
     }

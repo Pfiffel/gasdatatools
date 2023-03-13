@@ -1,18 +1,18 @@
 {
   "arcOffset": 0,
-  "cooldown": 10000,
+  "cooldown": 100,
   "endSound": "Player_Warthog_WarFooting_End",
   "endVolume": 200,
   "halfArc": 1800,
   "loopSound": "Player_Warthog_WarFooting_Loop",
   "loopVolume": 200,
-  "maxDist": 125,
-  "minDist": 125,
+  "maxDist": 30,
+  "minDist": 10,
   "mirror": 0,
   "name": "Warthog War Boar",
-  "particleCount": 0,
+  "particleCount": 1,
   "particleTypes": [
-    "Wasp Overload"
+    "Nightsong Heal"
   ],
   "startSound": "Player_Warthog_WarFooting_Start",
   "startVolume": 100

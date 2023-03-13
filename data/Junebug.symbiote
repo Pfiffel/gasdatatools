@@ -18,7 +18,7 @@
                 "data": {
                   "amount": 25,
                   "caption": "Hull Strength +25%",
-                  "duration": 5000,
+                  "duration": 10000,
                   "emitterType": "",
                   "statType": 3
                 },

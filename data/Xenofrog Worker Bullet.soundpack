@@ -1,0 +1,8 @@
+{
+  "name": "Xenofrog Worker Bullet",
+  "sounds": [
+    "Enemy_XenofrogWorker_Gun_01"
+  ],
+  "volume": 100
+}
+

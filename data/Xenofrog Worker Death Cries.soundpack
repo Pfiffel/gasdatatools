@@ -1,0 +1,8 @@
+{
+  "name": "Xenofrog Worker Death Cries",
+  "sounds": [
+    "Enemy_XenofrogWorker_DeathCry_01"
+  ],
+  "volume": 150
+}
+

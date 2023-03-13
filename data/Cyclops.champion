@@ -14,6 +14,7 @@
       "halfArc": 75,
       "objectType": "Cyclops Bullet",
       "range": 400,
+      "reticleColor": 11184810,
       "soundPack": "Cyclops Guns",
       "speed": 1300,
       "tag": "",
@@ -97,6 +98,7 @@
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Cyclops Cone Blast",
+            "facing": 0,
             "halfArc": 75,
             "mirror": 0,
             "offset": {
@@ -158,7 +160,7 @@
           "data": {
             "applyToMana": 0,
             "asPercentage": 1,
-            "glyphCount": 4,
+            "glyphCount": 2,
             "glyphDuration": 500,
             "glyphRadius": 50,
             "glyphType": "Heal Indicator",
@@ -186,6 +188,7 @@
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Cyclops Laser Beam",
+            "facing": 0,
             "halfArc": 2,
             "mirror": 0,
             "offset": {
@@ -206,6 +209,7 @@
             "delay": 400,
             "duration": 100,
             "emitterType": "Wasp Main Thruster",
+            "facing": 0,
             "mirror": 0,
             "objectType": "Cyclops Laser",
             "sound": "",

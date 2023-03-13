@@ -31,6 +31,26 @@
         }
       ],
       "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I have saved you.",
+          "volume": 50
+        }
+      ],
+      "tag": "Lifesaver Saved"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I was unable to save you.",
+          "volume": 50
+        }
+      ],
+      "tag": "Lifesaver Died"
     }
   ]
 }

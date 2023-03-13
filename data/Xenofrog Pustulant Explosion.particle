@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 900,
+      "value": 7602378
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 500,
+  "minLifetime": 250,
+  "name": "Xenofrog Pustulant Explosion",
+  "objectType": "Xenofrog Grenadier Particle",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 50,
+      "value": 1000
+    },
+    {
+      "frac": 900,
+      "value": 400
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 3095594,
+  "startScale": 10,
+  "stayLow": 1
+}
+

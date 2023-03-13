@@ -1,0 +1,47 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Xenofrog Grenadier Particle",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16777215,
+      "height": 0,
+      "mirror": 1,
+      "name": "Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -2,
+          "y": 0
+        },
+        {
+          "x": -15,
+          "y": 7
+        },
+        {
+          "x": -2,
+          "y": 11
+        },
+        {
+          "x": -12,
+          "y": 21
+        },
+        {
+          "x": 4,
+          "y": 17
+        },
+        {
+          "x": 14,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

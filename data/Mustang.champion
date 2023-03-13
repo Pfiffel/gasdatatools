@@ -14,6 +14,7 @@
       "halfArc": 600,
       "objectType": "Mustang Bullet",
       "range": 300,
+      "reticleColor": 11184810,
       "soundPack": "Mustang Big Guns",
       "speed": 1200,
       "tag": "",
@@ -27,6 +28,7 @@
       "halfArc": 1800,
       "objectType": "Mustang Aux Bullet",
       "range": 265,
+      "reticleColor": 11184810,
       "soundPack": "Mustang Small Guns",
       "speed": 1200,
       "tag": "",
@@ -128,6 +130,7 @@
             "delay": 0,
             "duration": 350,
             "emitterType": "Mustang Grenade",
+            "facing": 0,
             "mirror": 0,
             "objectType": "Mustang Grenade",
             "sound": "",
@@ -148,6 +151,7 @@
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Mustang Grenade",
+            "facing": 0,
             "halfArc": 1800,
             "mirror": 0,
             "offset": {
@@ -169,7 +173,7 @@
     },
     {
       "cooldown": 5000,
-      "description": "Releases a structure-restorative nanobot cloud",
+      "description": "Activates repairbots and dispenses nanorepair packs",
       "icon": "lightning-spanner",
       "mana": 20,
       "name": "Nanorepair",
@@ -178,7 +182,7 @@
           "data": {
             "applyToMana": 0,
             "asPercentage": 0,
-            "glyphCount": 4,
+            "glyphCount": 2,
             "glyphDuration": 500,
             "glyphRadius": 50,
             "glyphType": "Heal Indicator",
@@ -186,6 +190,23 @@
             "tag": "Mustang 2 Heal"
           },
           "tag": "HealTrigger"
+        },
+        {
+          "data": {
+            "angleOffset": 900,
+            "armingTime": 750,
+            "duration": 15000,
+            "emitterType": "Heal Mine",
+            "explosionType": "Heal Mine",
+            "healing": 85,
+            "mineCount": 2,
+            "objectType": "Heal Mine",
+            "powers": [],
+            "radius": 45,
+            "ringRadius": 110,
+            "tag": ""
+          },
+          "tag": "PickupPackTrigger"
         }
       ],
       "sound": "Player_Mustang_SelfRepair",
@@ -206,6 +227,7 @@
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Mustang Fireburst",
+            "facing": 0,
             "halfArc": 1800,
             "mirror": 0,
             "offset": {
@@ -249,6 +271,7 @@
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Mustang Ion Burst",
+            "facing": 0,
             "halfArc": 600,
             "mirror": 0,
             "offset": {

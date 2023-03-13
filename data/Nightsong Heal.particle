@@ -17,9 +17,8 @@
   "maxLifetime": 600,
   "minLifetime": 400,
   "name": "Nightsong Heal",
-  "objectType": "Small Cross",
+  "objectType": "Small Wrench",
   "positionTweenType": "EXPOOUT",
-  "randomFinalFacing": 0,
   "scalePoints": [
     {
       "frac": 100,

@@ -1,24 +1,32 @@
 {
+  "armor": 0,
   "boss": 0,
+  "burrowDetectRange": 0,
   "collisionRadius": 23,
   "consolationPrizes": [],
-  "deathCrySoundPack": "Enemy Hits",
+  "deathCrySoundPack": "Xenofrog Defender Death Cries",
   "drops": [],
+  "fixedFacing": 0,
   "healRate": 0,
   "hp": 750,
   "idleAnimation": "Xenofrog Idle",
   "maxMoveDistance": 200,
   "name": "Xenofrog Dire Pustulant",
   "objectType": "Xenofrog Dire Pustulant",
+  "onDamageSoundPack": "Xenofrog Hits",
   "pauseBetweenMovements": 600,
   "runAnimation": "Xenofrog Leap",
+  "runAnimationDuration": 700,
   "runSpeed": 275,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "",
   "weaponType": "",
   "weapons": [
     {
-      "attachmentPoint": "Mouth",
+      "attachmentPoint": "",
       "cooldown": 2000,
+      "extraTargetingArc": 0,
       "halfArc": 1800,
       "objectType": "",
       "params": {
@@ -29,11 +37,11 @@
               "data": {
                 "damage": 400,
                 "delay": 1000,
-                "explosionType": "",
+                "explosionType": "Xenofrog Pustulant Explosion",
                 "halfArc": 1800,
                 "powers": [],
                 "range": 180,
-                "triggerSound": "",
+                "triggerSound": "Enemy_XenofrogDefender_Shotgun_Telegraph",
                 "triggerVolume": 50
               },
               "tag": "ShotgunParams"
@@ -43,7 +51,9 @@
         "tag": "CompoundParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }

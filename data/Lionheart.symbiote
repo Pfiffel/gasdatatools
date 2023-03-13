@@ -6,12 +6,12 @@
         "params": {
           "data": {
             "amount": 20,
-            "duration": 1000,
+            "duration": 2000,
             "emitterType": "",
             "glyphCount": 6,
             "glyphRadius": 45,
             "glyphType": "Lionheart Glyph",
-            "noStack": 0,
+            "maxStacks": 0,
             "statType": 5,
             "tag": ""
           },
