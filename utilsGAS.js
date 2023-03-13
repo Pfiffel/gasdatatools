@@ -5,6 +5,7 @@ const monsterSkip = {"Iron Justiciar":true, "Test Event Boss 2":true, "Test Even
 
 const TIER_COLORS = ["","#FF7777","#77CC77","#9999FF","#77DDDD","#FFFF77","#EB98CB","#F5A849","#C162F5","#FFFFFF","#8EC726"];
 const TIER_NAMES = ["","Alpha","Beta","Gamma","Delta","Epsilon","Omega","","","","Precursor Tech"];
+const MODULE_CREDITS = [0,5,10,25,50,100,250,500,1000];
 const MAX_LEVEL = 20;
 const SHIELD_STRENGTH_PER_RADIUS = 20;
 const MANA_PER_SECOND = 2.5;

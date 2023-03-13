@@ -85,7 +85,7 @@ function MakeSpecificTable(startTier, statAmount, precursor, rare, boon, inline)
 	{
 		var amount = GetItemAmount(t, statAmount, precursor, rare, boon);
 		if(amount == 0) continue;
-		makeHeaderCell(colorWrap("Tier " + t, TIER_COLORS[t]) + " - " + amount + " total<br/>", th);
+		makeHeaderCell(colorWrap("Tier " + t, TIER_COLORS[t]) + ((boon == 1) ? (" - " + MODULE_CREDITS[t] + " Credits") :"") + " - " + amount + " total<br/>", th); MODULE_CREDITS
 		var cell = makeCell("", tr);
 		cell.appendChild(MakeSpecificItemList(t, statAmount, precursor, rare, boon, inline));
 	}
