@@ -8,8 +8,9 @@ var sortedMonsters;
 
 var drawRadiusCB = makeInputCheckbox("Show Collision Radius", RefreshLists, filters, false);
 var drawShieldsCB = makeInputCheckbox("Show Shields", RefreshLists, filters, true);
-var showSoundsCB = makeInputCheckbox("Show Sounds", RefreshLists, filters, true);
-//var showSoundsCB = {}; showSoundsCB.checked = false;
+//var showSoundsCB = makeInputCheckbox("Show Sounds", RefreshLists, filters, true);
+var showSoundsCB = {}; showSoundsCB.checked = false;
+
 const FILTER_NAME = "Name";
 makeInputRadios(FILTER_NAME, ["All","Iron","Royal","Xenofrog","Nest","Bogweed","Training"], RefreshLists, filters);
 const FILTER_SUCCESSOR = "Successor";

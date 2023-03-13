@@ -105,7 +105,6 @@ function makeAudio(container, type, path, volume){
 	sound.controls = 'controls';
 	sound.src      = path;
 	sound.type     = 'audio/ogg';
-	console.log(type, volume)
 	sound.volume = volume/400;
 	//sound.style.scale="0.5"
 	//sound.style.width="50%";

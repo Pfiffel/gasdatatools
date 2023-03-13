@@ -183,7 +183,7 @@ class Monster
 	}
 	parseSoundPack(container, label, packName, fallback = undefined)
 	{
-		if(packName == undefined) packName = fallback;
+		if(packName == undefined || packName == "") packName = fallback;
 		if(packName != undefined)
 		{
 			var pack = getSoundPack(packName);
