@@ -76,31 +76,31 @@ class Monster
 					damageMT += wD.salvoes[j].bombCount * damageST;
                     total += wD.salvoes[j].bombCount;
 				}
-				this._mortars[tag+wD.damage+wD.bombRadius] = {"damage": wD.damage, "radius": wD.bombRadius, "salvoes": total};
+				this._mortars[tag+wD.damage+wD.bombRadius] = {"damage": wD.damage, "radius": wD.bombRadius, "salvoes": total, "wD": wD};
 				break;
 			case "MortarParams":
 				damageST = wD.damage;
 				damageMT = damageST;
-				this._mortars[tag+wD.damage+wD.radius] = {"damage": wD.damage, "radius": wD.radius, "powers": wD.powers};
+				this._mortars[tag+wD.damage+wD.radius] = {"damage": wD.damage, "radius": wD.radius, "powers": wD.powers, "wD": wD};
 				break;
 			case "MinelayerParams":
 				damageST = wD.damage;
 				damageMT = damageST;
-				this._mines[tag+wD.damage+wD.radius] = {"damage": wD.damage, "radius": wD.radius, "powers": wD.powers};
+				this._mines[tag+wD.damage+wD.radius] = {"damage": wD.damage, "radius": wD.radius, "powers": wD.powers, "wD": wD};
 				break;
 			case "ShotgunParams":
 				damageST = wD.damage;
 				damageMT = damageST;
-				this._shotguns[tag+wD.damage+wD.range] = {"damage": wD.damage, "range": wD.range, "powers": wD.powers};
+				this._shotguns[tag+wD.damage+wD.range] = {"damage": wD.damage, "range": wD.range, "powers": wD.powers, "wD": wD};
 				break;
 			case "FlamethrowerParams":
 				// TODO flamethrower damage and stuff
 				damageST = wD.damage;
 				damageMT = damageST;
-				this._flamethrowers[tag+wD.range+wD.halfArc] = {"range": wD.range, "powers": wD.powers, "delay": wD.delay, "halfArc": wD.halfArc};
+				this._flamethrowers[tag+wD.range+wD.halfArc] = {"range": wD.range, "powers": wD.powers, "delay": wD.delay, "halfArc": wD.halfArc, "wD": wD};
 				break;
 			case "ChargeParams":
-				this._charges[tag+wD.range+wD.extraRange+wD.speed] = {"range": wD.range, "extraRange": wD.extraRange, "speed": wD.speed};
+				this._charges[tag+wD.range+wD.extraRange+wD.speed] = {"range": wD.range, "extraRange": wD.extraRange, "speed": wD.speed, "wD": wD};
 			case "MinionParams":
 			case "NullParams":
 				break;
@@ -133,11 +133,11 @@ class Monster
 		return minions;
 	}
 	
-	output(bRow, scale = SCALE_STANDARD, bDrawRadius = false, bDrawShield = false) {
+	output(bRow, scale = SCALE_STANDARD, bDrawRadius = false, bDrawShield = false, bShowSounds = false) {
 		let div = document.createElement('div');
 		div.classList.add("inline");
 		let divInfo = document.createElement('div');
-		divInfo.classList.add("inline");
+		//divInfo.classList.add("inline");
 		var divSprite = document.createElement('div');
 		divSprite.appendChild(draw(this.data, scale, false, bDrawRadius, bDrawShield));
 		if(bRow) {
@@ -169,13 +169,34 @@ class Monster
 			
 			divInfo.appendChild(divRewardInfo);
 		}
-		var divAttacks = this.outputAttacks(scale);
-	//	var divLoot = this.outputLoot();
+		var divAttacks = document.createElement('div');
+		if(bShowSounds)
+		{
+			this.parseSoundPack(divAttacks, "On Hit", this.data.onDamageSoundPack, "Enemy Hits");
+			this.parseSoundPack(divAttacks, "Death", this.data.deathCrySoundPack);
+		}
+		divAttacks.appendChild(this.outputAttacks(scale, bShowSounds));
 		//divAttacks.style.width = "150px";
 		divInfo.appendChild(divAttacks);
-	//	divInfo.appendChild(divLoot);
 		div.appendChild(divInfo);
 		return div;
+	}
+	parseSoundPack(container, label, packName, fallback = undefined)
+	{
+		if(packName == undefined) packName = fallback;
+		if(packName != undefined)
+		{
+			var pack = getSoundPack(packName);
+			var sound = pack.sounds[0];
+			makeAudio(container, label, '../../client/sound/'+sound+".ogg", pack.volume);
+		}
+	}
+	parseSound(container, label, soundName, soundVolume)
+	{
+		if(soundName != undefined && soundName != "")
+		{
+			makeAudio(container, label, '../../client/sound/'+soundName+".ogg", soundVolume);
+		}
 	}
     convertPowersToString(powers)
     {
@@ -198,7 +219,7 @@ class Monster
 		}
         return "<span class=\"power\">" + s + "</span>";
     }
-	outputAttacks(scale = SCALE_STANDARD)
+	outputAttacks(scale = SCALE_STANDARD, bShowSounds = false)
 	{
 		this.getDPS(); // just to populate attacks
 		let div = document.createElement('div');
@@ -221,12 +242,24 @@ class Monster
                                 "<b>" + this._bullets[bullet].range + "</b> range" + this.convertPowersToString(jsonBullet.powers);
 			attackDiv.appendChild(spriteDiv);
 			attackDiv.appendChild(infoDiv);
+			if(bShowSounds)
+			{
+				this.parseSoundPack(attackDiv, "Bullet", jsonBullet.soundPack);
+			}
 			div.appendChild(attackDiv);
 		}
 		for (let shotgun in this._shotguns){
+			let letCurrentData = this._shotguns[shotgun];
 			let attackDiv = document.createElement('div');
-            var powers = this.convertPowersToString(this._shotguns[shotgun].powers);
-			attackDiv.innerHTML = "Shotgun: <b>" + this._shotguns[shotgun].damage + "</b> damage, <b>" + this._shotguns[shotgun].range + "</b> range" + powers;
+            var powers = this.convertPowersToString(letCurrentData.powers);
+			attackDiv.innerHTML = "Shotgun: <b>" + letCurrentData.damage + "</b> damage, <b>" + letCurrentData.range + "</b> range" + powers;
+			if(bShowSounds)
+			{
+				// TODO lol hack, just attached the whole data object (wD) to these
+				this.parseSound(attackDiv, "Telegraph", letCurrentData.wD.triggerSound, letCurrentData.wD.triggerVolume)
+				var explosion = getExplosion(letCurrentData.wD.explosionType);
+				if(explosion != undefined) this.parseSound(attackDiv, "Explosion", explosion.sound, explosion.volume)
+			}
 			div.appendChild(attackDiv);
 		}
 		for (let flamethrower in this._flamethrowers){
@@ -238,9 +271,17 @@ class Monster
 			div.appendChild(attackDiv);
 		}
 		for (let mortar in this._mortars){
+			let letCurrentData = this._mortars[mortar];
 			let attackDiv = document.createElement('div');
-            var num = this._mortars[mortar].salvoes;
-			attackDiv.innerHTML = (num != undefined ? num + " Mortars" : "Mortar") + ": <b>" + this._mortars[mortar].damage + "</b> damage, <b>" + this._mortars[mortar].radius + "</b> radius" + this.convertPowersToString(this._mortars[mortar].powers);
+            var num = letCurrentData.salvoes;
+			attackDiv.innerHTML = (num != undefined ? num + " Mortars" : "Mortar") + ": <b>" + letCurrentData.damage + "</b> damage, <b>" + letCurrentData.radius + "</b> radius" + this.convertPowersToString(letCurrentData.powers);
+			if(bShowSounds)
+			{
+				// TODO lol hack, just attached the whole data object (wD) to these
+				this.parseSound(attackDiv, "Launch", letCurrentData.wD.shootSound, letCurrentData.wD.shootVolume)
+				var explosion = getExplosion(letCurrentData.wD.explosionType);
+				if(explosion != undefined) this.parseSound(attackDiv, "Explosion", explosion.sound, explosion.volume)
+			}
 			div.appendChild(attackDiv);
 		}
 		for (let mine in this._mines){

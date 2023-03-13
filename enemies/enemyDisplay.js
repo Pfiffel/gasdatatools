@@ -1,13 +1,15 @@
 var tableOutput = document.getElementById("tableOutput");
-var datatypes = ["map","lair","monster","gunbullet","object","item"]; // for utilGAS to load files, calls parseData once completed
+var datatypes = ["map","lair","monster","gunbullet","object","item","soundpack","explosion"]; // for utilGAS to load files, calls parseData once completed
 loadGasData();
 
 var header = document.getElementById("header");
 var filters = document.getElementById("filters");
 var sortedMonsters;
 
-var drawRadius = makeInputCheckbox("Show Collision Radius", RefreshLists, filters, false);
-var drawShields = makeInputCheckbox("Show Shields", RefreshLists, filters, true);
+var drawRadiusCB = makeInputCheckbox("Show Collision Radius", RefreshLists, filters, false);
+var drawShieldsCB = makeInputCheckbox("Show Shields", RefreshLists, filters, true);
+var showSoundsCB = makeInputCheckbox("Show Sounds", RefreshLists, filters, true);
+//var showSoundsCB = {}; showSoundsCB.checked = false;
 const FILTER_NAME = "Name";
 makeInputRadios(FILTER_NAME, ["All","Iron","Royal","Xenofrog","Nest","Bogweed","Training"], RefreshLists, filters);
 const FILTER_SUCCESSOR = "Successor";
@@ -65,7 +67,7 @@ function MakeMonsterList()
 
 		let monsterDiv = document.createElement('div');
 		monsterDiv.classList.add("monsterBlock");
-		monsterDiv.appendChild(monster.output(false, SCALE_STANDARD, drawRadius.checked, drawShields.checked));
+		monsterDiv.appendChild(monster.output(false, SCALE_STANDARD, drawRadiusCB.checked, drawShieldsCB.checked, showSoundsCB.checked));
 		divList.appendChild(monsterDiv);
 	}
 	return divList;

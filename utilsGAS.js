@@ -664,6 +664,35 @@ function getMonster(type){
 		if(type == monster.name) return new Monster(monster);
 	}
 }
+function getExplosion(type){
+	for (let i = 0; i < gasData["explosion"].length; i++)
+	{
+		var explosion = gasData["explosion"][i];
+		if(type == explosion.name) return explosion;
+	}
+}
+function getEmitter(type){
+	for (let i = 0; i < gasData["emitter"].length; i++)
+	{
+		var emitter = gasData["emitter"][i];
+		if(type == emitter.name) return emitter;
+	}
+}
+function getExplosionSound(name){
+	if(name == undefined || name == "") return "";
+	return getExplosion(name).sound;
+}
+function getSoundPack(type){
+	for (let i = 0; i < gasData["soundpack"].length; i++)
+	{
+		var soundPack = gasData["soundpack"][i];
+		if(type == soundPack.name) return soundPack;
+	}
+}
+function getSoundFromPack(name){
+	var pack = getSoundPack(name);
+	return pack.sounds[0];
+}
 function getAnimation(type){
 	for (let i = 0; i < gasData["animation"].length; i++)
 	{

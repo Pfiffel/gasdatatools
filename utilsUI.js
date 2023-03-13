@@ -99,3 +99,22 @@ function makeDividerV(html, height, container){
 	div.innerHTML = html;
 	container.appendChild(div);
 }
+function makeAudio(container, type, path, volume){
+	var sound      = document.createElement('audio');
+	sound.id       = 'audio-player';
+	sound.controls = 'controls';
+	sound.src      = path;
+	sound.type     = 'audio/ogg';
+	console.log(type, volume)
+	sound.volume = volume/400;
+	//sound.style.scale="0.5"
+	//sound.style.width="50%";
+	var newlabel = document.createElement("div");
+	
+	newlabel.innerHTML = type+" ("+volume+"): ";
+	var cont = document.createElement("div");
+	cont.appendChild(newlabel); 
+	//if(className != undefined) input.classList.add(className);
+	cont.appendChild(sound); 
+	container.appendChild(cont); 
+}
