@@ -689,6 +689,10 @@ function getSoundPack(type){
 		var soundPack = gasData["soundpack"][i];
 		if(type == soundPack.name) return soundPack;
 	}
+	var notFound = {};
+	notFound.name = type + "(NOT FOUND)";
+	notFound.sounds = [];
+	return notFound;
 }
 function getSoundFromPack(name){
 	var pack = getSoundPack(name);

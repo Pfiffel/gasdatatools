@@ -6,6 +6,9 @@ var header = document.getElementById("header");
 var filters = document.getElementById("filters");
 var sortedMonsters;
 var soundList = {};
+soundList["champion"] = {};
+soundList["monster"] = {};
+soundList["gunbullet"] = {};
 
 function RefreshLists()
 {
@@ -35,8 +38,8 @@ function MakeList()
 	{
 		var bullet = gasData["gunbullet"][i];
 		CountObject(bullet, bullet.objectType);
-		soundList[bullet.name+" (Bullet)"] = {};
-		soundList[bullet.name+" (Bullet)"]["Bullet Shoot"] = getSoundFromPack(bullet.soundPack);
+		soundList["gunbullet"][bullet.name+" (Bullet)"] = {};
+		soundList["gunbullet"][bullet.name+" (Bullet)"]["Bullet Shoot"] = getSoundFromPack(bullet.soundPack);
 	}
 	for (let i = 0; i < gasData["particle"].length; i++)
 	{
@@ -46,21 +49,42 @@ function MakeList()
 	for (let i = 0; i < gasData["champion"].length; i++)
 	{
 		var champion = gasData["champion"][i];
+		soundList["champion"][champion.name] = {};
 		CountObject(champion, champion.objectType);
 		for (let i = 0; i < champion.guns.length; i++)
 		{
 			var gun = champion.guns[i];
 			if(gun.objectType != "") CountObject(champion, gun.objectType);
+			var sp = getSoundPack(gun.soundPack);
+			soundList["champion"][champion.name]["Gun" +(i+1)] = sp.name + " (" + sp.sounds.length + " files)";
 		}
 		for (let i = 0; i < champion.triggers.length; i++)
 		{
 			var trigger = champion.triggers[i];
+			//if(param.tag == "SharkletTrigger"){
+				soundList["champion"][champion.name]["Trigger"+(i+1) + " " + trigger.name + ": " + "Sound"] = trigger.sound;
+			//}
 			for (let j = 0; j < trigger.params.length; j++)
 			{
 				var param = trigger.params[j];
 				if(param.data.objectType != undefined) CountObject(champion, param.data.objectType);
+
+				if(param.data.explosionType != undefined && param.data.explosionType != ""){
+					soundList["champion"][champion.name]["Trigger"+(i+1) + " " + trigger.name + ": " + j + " Explosion"] = getExplosionSound(param.data.explosionType);
+				}
+				if(param.data.emitterType != undefined && param.data.emitterType != ""){
+					AddEmitterSoundList("champion", champion.name, "Trigger"+(i+1) + " " + trigger.name + ": ", param.tag, param.data.emitterType);
+				}
+				if(param.tag == "LeapTrigger" && param.data.collisionSettings.explosion != ""){
+					soundList["champion"][champion.name]["Trigger"+(i+1) + " " + trigger.name + ": " + j + " Explosion"] = getExplosionSound(param.data.collisionSettings.explosion);
+				}
+				if(param.data.sound != undefined){
+					soundList["champion"][champion.name]["Trigger"+(i+1) + " " + trigger.name + ": " + j + " Sound "] = param.data.sound;
+				}
 			}
 		}
+		AddEmitterSoundList("champion", champion.name, "", "Forward", champion.forwardThrustEmitter);
+		AddEmitterSoundList("champion", champion.name, "", "Reverse", champion.reverseThrustEmitter);
 	}
 	for (let i = 0; i < gasData["decor"].length; i++)
 	{
@@ -89,8 +113,8 @@ function MakeList()
 		CountObject(monster.data, monster.data.objectType);
 		CheckAnimation(monster.data, monster.data, "idleAnimation");
 		CheckAnimation(monster.data, monster.data, "runAnimation");
-		soundList[monsterData.name] = {};
-		soundList[monsterData.name]["Death"] = getSoundFromPack(monsterData.deathCrySoundPack);// == "Enemy Hits" ? "empty" : monsterData.deathCrySoundPack;
+		soundList["monster"][monsterData.name] = {};
+		soundList["monster"][monsterData.name]["Death"] = getSoundFromPack(monsterData.deathCrySoundPack);// == "Enemy Hits" ? "empty" : monsterData.deathCrySoundPack;
 		var index = 0;
 		for (let i = 0; i < monster.data.weapons.length; i++)
 		{
@@ -114,20 +138,31 @@ function MakeList()
 	}
 	let tbl = document.createElement('table');
 	let th = tbl.insertRow();
+	makeHeaderCell("Entity Type", th);
 	makeHeaderCell("Sound Origin", th);
 	makeHeaderCell("Sound Type", th);
 	makeHeaderCell("Using", th);
-	for (let soundRoot in soundList){
-		var soundTypes = soundList[soundRoot];
-		//if(!soundRoot.includes("Xenofrog")) continue;
-		//if(!soundRoot.includes("Royal")) continue;
-		//if(/[2-9]/.test(soundRoot)) continue;
-		for (let tag in soundTypes){
-			var sound = soundTypes[tag];
-			let tr = tbl.insertRow();
-			makeCell(soundRoot, tr);
-			makeCell(tag, tr);
-			makeCell(sound, tr);
+	for (let entityType in soundList){
+		if(entityType != "champion") continue;
+		var soundRoots = soundList[entityType];
+		for (let soundRoot in soundRoots){
+			if(soundRoot.includes("Dagger")) continue;
+			if(soundRoot.includes("Murder Hornet")) continue;
+			if(soundRoot.includes("Soundtesttank")) continue;
+			if(soundRoot.includes("Testank")) continue;
+			if(soundRoot.includes("Wasptest")) continue;
+			var soundTypes = soundRoots[soundRoot];
+			//if(!soundRoot.includes("Xenofrog")) continue;
+			//if(!soundRoot.includes("Royal")) continue;
+			//if(/[2-9]/.test(soundRoot)) continue;
+			for (let tag in soundTypes){
+				var sound = soundTypes[tag];
+				let tr = tbl.insertRow();
+				makeCell(entityType, tr);
+				makeCell(soundRoot, tr);
+				makeCell(tag, tr);
+				makeCell(sound, tr);
+			}
 		}
 	}
 	tableOutput.appendChild(tbl);
@@ -144,31 +179,42 @@ function CheckWeapon(monster, weapon, compound, index)
 	var add = index + " ";
 	if(tag == "ShotgunParams")
 	{
-		soundList[monster.data.name][add + "Shotgun Trigger"] = wD.triggerSound;
-		soundList[monster.data.name][add + "Shotgun Explode"] = getExplosionSound(wD.explosionType);// == "" ? "empty" : data.explosionType;
+		soundList["monster"][monster.data.name][add + "Shotgun Trigger"] = wD.triggerSound;
+		soundList["monster"][monster.data.name][add + "Shotgun Explosion"] = getExplosionSound(wD.explosionType);// == "" ? "empty" : data.explosionType;
 	}
 	if(tag == "MortarParams" || tag == "MortarBarrageParams")
 	{
-		soundList[monster.data.name][add + "Mortar Shoot"] = wD.shootSound;
-		soundList[monster.data.name][add + "Mortar Explode"] = getExplosionSound(wD.explosionType);
+		soundList["monster"][monster.data.name][add + "Mortar Shoot"] = wD.shootSound;
+		soundList["monster"][monster.data.name][add + "Mortar Explosion"] = getExplosionSound(wD.explosionType);
 	}
 	if(tag == "FlamethrowerParams")
 	{
-		soundList[monster.data.name][add + "Flamethrower Trigger"] = wD.telegraphSound;
-		soundList[monster.data.name][add + "Flamethrower Start"] = wD.startSound;
-		soundList[monster.data.name][add + "Flamethrower Loop"] = wD.loopSound;
-		soundList[monster.data.name][add + "Flamethrower End"] = wD.endSound;
+		soundList["monster"][monster.data.name][add + "Flamethrower Trigger"] = wD.telegraphSound;
+		soundList["monster"][monster.data.name][add + "Flamethrower Start"] = wD.startSound;
+		soundList["monster"][monster.data.name][add + "Flamethrower Loop"] = wD.loopSound;
+		soundList["monster"][monster.data.name][add + "Flamethrower End"] = wD.endSound;
 	}
 	if(tag == "MinelayerParams")
 	{
-		if(wD.emitterType != "")
+		/*if(wD.emitterType != "")
 		{
 			var emitter = getEmitter(wD.emitterType);
-			soundList[monster.data.name][add + "Mine Start"] = emitter.startSound;
-			soundList[monster.data.name][add + "Mine Loop"] = emitter.loopSound;
-			soundList[monster.data.name][add + "Mine End"] = emitter.endSound;
-		}
-		soundList[monster.data.name][add + "Mine Explode"] = getExplosionSound(wD.explosionType);
+			soundList["monster"][monster.data.name][add + "Mine Start"] = emitter.startSound;
+			soundList["monster"][monster.data.name][add + "Mine Loop"] = emitter.loopSound;
+			soundList["monster"][monster.data.name][add + "Mine End"] = emitter.endSound;
+		}*/
+		AddEmitterSoundList("monster", monster.data.name, add, "Mine", wD.emitterType);
+		soundList["monster"][monster.data.name][add + "Mine Explosion"] = getExplosionSound(wD.explosionType);
+	}
+}
+function AddEmitterSoundList(entityType, entity, add, prefix, emitterType)
+{
+	if(emitterType != "")
+	{
+		var emitter = getEmitter(emitterType);
+		soundList[entityType][entity][add + prefix + " Start"] = emitter.startSound;
+		soundList[entityType][entity][add + prefix + " Loop"] = emitter.loopSound;
+		soundList[entityType][entity][add + prefix + " End"] = emitter.endSound;
 	}
 }
 function CountObject(root, name)
