@@ -34,10 +34,12 @@ const STAT_TYPES = {
 	"12": ["ULT_FIRE_RATE", "Trigger 4 Rate of Fire"],
 	"13": ["TOP_SPEED", "Top Speed"],
 	"14": ["GUN_ARC", "Gun Arc"],
-	"15": ["UNKNOWN", "UNKNOWN"],
+	"15": ["DAMAGE_VS_BURNING", "Damage vs Burning"],
 	"16": ["ACCELERATION", "Acceleration"],
 	"17": ["SCOOT_RATE", "Scoot Rate"],
-	"18": ["TURN_RATE", "Turn Rate"]
+	"18": ["TURN_RATE", "Turn Rate"],
+	"19": ["XP_RATE", "XP Bonus"],
+	"20": ["DAMAGE_VS_FROZEN", "Damage vs Frozen/Chilled"]
 };
 const ACTIVE_WHILE_NAMES = {
 	"0": ["ALWAYS", "always"],
@@ -60,7 +62,7 @@ const ACTIVE_WHILE_NAMES = {
 	"17": ["SHIELDS_FULL", "all shields full"],
 	"18": ["ROTATING", "rotating"],
 	"19": ["NOT_ROTATING", "not rotating"],
-	"20": ["UNKNOWN", "out of combat"]
+	"20": ["NEW_CHARACTER", "on new character"]
 };
 const TRIGGERED_TRIGGER_EFFECTS = {
 	"0": ["TRIGGER1234", "any trigger"],
@@ -75,8 +77,8 @@ const TRIGGERED_TRIGGER_EFFECTS = {
 	"9": ["TRIGGER23", "trigger 2 or 3"],
 	"10": ["TRIGGER123", "trigger 1, 2 or 3"],
 	"11": ["ON_DAMAGE", "damage taken"],
-	"12": ["UNKNOWN", "UNKNOWN 12"],
-	"13": ["UNKNOWN", "shot hit"],
+	"12": ["ON_ITEM_PICKUP", "item picked up"],
+	"13": ["ON_SHOOT", "shot hit"],
 };
 const PLAYER_POLICIES = {
 	"0": ["IGNORE", "Ignore"],
