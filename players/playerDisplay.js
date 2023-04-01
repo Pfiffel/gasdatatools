@@ -8,10 +8,17 @@ var miniProgressionTable = {};
 var skip = {"Testank":true,"Testank2":true,"Duality":true};
 const CHECKBOX_ACCOLADES = "Show Accolades";
 const NOTES_DPS = {
+	"Mustang":"Does not consider passive",
 	"Wasp":"Assumes you always hit all Trigger 1 projectiles",
 	"Mako":"Does not consider Trigger 2 cooldown and energy resets\nDoes not consider extra output during Trigger 4 debuff"
 };
-
+const NOTES_GUN_DPS = {
+	"Hercules":"Does not consider passive",
+	"Peacemaker":"Does not consider passive",
+	"Warthog":"Does not consider passive",
+	"Wasp":"Does not consider passive",
+	"Yeti":"Does not consider passive"
+};
 var datatypes = ["champion","object","accolade"]; // for utilGAS to load files, calls parseData once completed
 loadGasData();
 function Refresh()
@@ -251,8 +258,10 @@ function makeGunCell(container, player)
 		totalDPS += dps;
 		makeCell(round(dps, 2), trG);
 	}
+	var addAsterisk = NOTES_GUN_DPS[player.name] != undefined;
+	if(addAsterisk) divTable.title = NOTES_GUN_DPS[player.name];
 	divTable.appendChild(gunTable);
-	divTable.innerHTML += "Total DPS: <b>" + round(totalDPS, 2) + "</b>";
+	divTable.innerHTML += "Total DPS: <b>" + round(totalDPS, 2) + (addAsterisk ? "*" : "") + "</b>";
 	if(miniDPSTable[player.name] == undefined) miniDPSTable[player.name] = {};
 	miniDPSTable[player.name].gunDPS = totalDPS;
 	//divTable.innerHTML += "<br/><i>graphic is scaled down to " + percToString(GUN_SCALE) + "</i>";
