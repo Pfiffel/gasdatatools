@@ -368,7 +368,7 @@ function AddEffectsText(data)
 		}
 		else if(effect == "VampEffect")
 		{
-			s += printKeyAndData("Vampiric Repair per hit", effectData.healing);
+			s += printKeyAndData((effectData.appliesToMana == 1 ? "Energy Recharge" : "Vampiric Repair") + " per hit", effectData.healing, (effectData.appliesToMana == 1 ? "energy" : "heal"));
 		}
 	}
 	return s;
