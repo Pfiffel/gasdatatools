@@ -1,0 +1,243 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 88,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Royal Fire Pod Turret",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 23,
+      "mirror": 1,
+      "name": "Ring",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -46,
+          "y": 11
+        },
+        {
+          "x": -37,
+          "y": 29
+        },
+        {
+          "x": -23,
+          "y": 42
+        },
+        {
+          "x": -2,
+          "y": 47
+        },
+        {
+          "x": 15,
+          "y": 45
+        },
+        {
+          "x": 30,
+          "y": 36
+        },
+        {
+          "x": 41,
+          "y": 23
+        },
+        {
+          "x": 47,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 23,
+      "mirror": 1,
+      "name": "Disk",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -33,
+          "y": 5
+        },
+        {
+          "x": -26,
+          "y": 24
+        },
+        {
+          "x": -13,
+          "y": 34
+        },
+        {
+          "x": 2,
+          "y": 37
+        },
+        {
+          "x": 16,
+          "y": 34
+        },
+        {
+          "x": 29,
+          "y": 23
+        },
+        {
+          "x": 34,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 6961157,
+      "height": 23,
+      "mirror": 1,
+      "name": "Rear Panel",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -33,
+          "y": 5
+        },
+        {
+          "x": -29,
+          "y": 16
+        },
+        {
+          "x": -22,
+          "y": 12
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 6961157,
+      "height": 24,
+      "mirror": 1,
+      "name": "Gun Base",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -1,
+          "y": 5
+        },
+        {
+          "x": 0,
+          "y": 12
+        },
+        {
+          "x": 6,
+          "y": 15
+        },
+        {
+          "x": 13,
+          "y": 15
+        },
+        {
+          "x": 15,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 6961157,
+      "height": 24,
+      "mirror": 1,
+      "name": "Gun Forward Barrel",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 48,
+          "y": 13
+        },
+        {
+          "x": 67,
+          "y": 13
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 25,
+      "mirror": 1,
+      "name": "Gun Barrel",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 10,
+          "y": 11
+        },
+        {
+          "x": 11,
+          "y": 13
+        },
+        {
+          "x": 52,
+          "y": 13
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 13217847,
+      "height": 25,
+      "mirror": 1,
+      "name": "Gun Muzzle",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 66,
+          "y": 15
+        },
+        {
+          "x": 75,
+          "y": 15
+        },
+        {
+          "x": 89,
+          "y": 12
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

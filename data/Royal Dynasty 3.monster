@@ -45,7 +45,7 @@
   ],
   "fixedFacing": 0,
   "healRate": 0,
-  "hp": 4000,
+  "hp": 6000,
   "idleAnimation": "Royal Monarch",
   "maxMoveDistance": 500,
   "name": "Royal Dynasty 3",

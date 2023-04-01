@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 20,
+      "maxDistPercent": 100,
+      "minDistPercent": 25,
+      "particleType": "Yeti Ice Storm",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Yeti Ambush Collide",
+  "sound": "Player_Yeti_FrostyAmbush_Collide",
+  "volume": 150
+}
+

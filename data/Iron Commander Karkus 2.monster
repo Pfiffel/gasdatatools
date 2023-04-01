@@ -1,23 +1,34 @@
 {
+  "armor": 0,
   "boss": 1,
+  "burrowDetectRange": 0,
   "collisionRadius": 70,
   "consolationPrizes": [],
   "deathCrySoundPack": "Iron Acropolis Death Cries",
   "drops": [],
+  "fixedFacing": 0,
   "healRate": 0,
-  "hp": 6000,
+  "hp": 8000,
   "idleAnimation": "BaseArcher Idle",
+  "maxMoveDistance": 500,
   "name": "Iron Commander Karkus 2",
   "objectType": "Iron Commander Karkus",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "Iron Commander Karkus Run",
+  "runAnimationDuration": 700,
   "runSpeed": 80,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "Iron Commander Karkus 3",
   "weaponType": "",
   "weapons": [
     {
       "attachmentPoint": "",
       "cooldown": 2000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "",
       "params": {
         "data": {
@@ -77,6 +88,7 @@
                 "emitterType": "Iron Triumph",
                 "explosionType": "Iron Triumph Burst",
                 "objectType": "Iron Commander Karkus Mine",
+                "persist": 0,
                 "powers": [],
                 "radius": 150,
                 "range": 700,
@@ -91,6 +103,7 @@
                 "emitterType": "Iron Triumph",
                 "explosionType": "Iron Triumph Burst",
                 "objectType": "Iron Commander Karkus Mine",
+                "persist": 0,
                 "powers": [],
                 "radius": 150,
                 "range": 700,
@@ -101,11 +114,19 @@
           ]
         },
         "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "",
       "cooldown": 3500,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "",
       "params": {
         "data": {
@@ -115,6 +136,7 @@
               "data": {
                 "bulletRange": 750,
                 "delay": 300,
+                "glyphType": "",
                 "gunBulletType": "Iron Commander Karkus Disarm",
                 "numBullets": 4,
                 "range": 800,
@@ -145,7 +167,6 @@
             },
             {
               "data": {
-                "aimed": 1,
                 "angleBetweenProjectiles": 200,
                 "gunBulletType": "Iron Triumph",
                 "leading": 0,
@@ -158,6 +179,7 @@
               "data": {
                 "bulletRange": 750,
                 "delay": 300,
+                "glyphType": "",
                 "gunBulletType": "Iron Commander Karkus Disarm",
                 "numBullets": 4,
                 "range": 800,
@@ -188,7 +210,6 @@
             },
             {
               "data": {
-                "aimed": 1,
                 "angleBetweenProjectiles": 200,
                 "gunBulletType": "Iron Triumph",
                 "leading": 0,
@@ -200,11 +221,19 @@
           ]
         },
         "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "Center Turret",
       "cooldown": 1000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "Iron Commander Karkus Turret",
       "params": {
         "data": {
@@ -214,7 +243,6 @@
               "data": {
                 "damage": 600,
                 "delay": 1000,
-                "detectionRange": 750,
                 "explosionType": "Iron Lance Shotgun",
                 "halfArc": 75,
                 "powers": [],
@@ -247,6 +275,12 @@
           ]
         },
         "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     }
   ],

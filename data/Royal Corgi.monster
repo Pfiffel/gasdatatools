@@ -1,0 +1,58 @@
+{
+  "boss": 0,
+  "burrowDetectRange": 0,
+  "collisionRadius": 28,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Royal Sentinel Death Cries",
+  "drops": [],
+  "fixedFacing": 0,
+  "healRate": 0,
+  "hp": 1200,
+  "idleAnimation": "Royal Sentinel",
+  "maxMoveDistance": 0,
+  "name": "Royal Corgi",
+  "objectType": "Royal Sentinel",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "",
+  "runAnimationDuration": 700,
+  "runSpeed": 200,
+  "shields": [
+    {
+      "additionalRadius": 20,
+      "angle": -900,
+      "color": 65298,
+      "halfArc": 1200,
+      "percentProtection": 80,
+      "thickness": 20
+    }
+  ],
+  "successorInvulnerability": 1,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "",
+      "cooldown": 1200,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "angleBetweenProjectiles": 150,
+          "gunBulletType": "Royal Sentinel",
+          "leading": 0,
+          "numProjectiles": 1,
+          "range": 800
+        },
+        "tag": "GunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 4,
+  "xpLevelCap": 19
+}
+

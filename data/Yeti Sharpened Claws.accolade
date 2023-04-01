@@ -1,0 +1,26 @@
+{
+  "champion": "Yeti",
+  "displayName": "Sharpened Claws",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "count": 0,
+            "damage": 15,
+            "range": 0,
+            "speed": 0,
+            "timeGap": 0
+          },
+          "tag": "SharkletTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Yeti 2 Sharklet",
+        "tooltip": "On Icy Claws:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Yeti Sharpened Claws"
+}
+

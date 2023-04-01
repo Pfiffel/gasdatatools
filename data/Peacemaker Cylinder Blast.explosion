@@ -9,7 +9,7 @@
     }
   ],
   "name": "Peacemaker Cylinder Blast",
-  "sound": "Player_Wasp_PosTorpedo_Explosion",
+  "sound": "Player_Peacemaker_CylinderDump_Explode",
   "volume": 125
 }
 

@@ -31,6 +31,116 @@
         }
       ],
       "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Have pride! You've earned your crown!",
+          "volume": 50
+        }
+      ],
+      "tag": "Max Level"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Lord of the hunt!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Heart of the lion!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Lion of battle!",
+          "volume": 50
+        }
+      ],
+      "tag": "Add Boss Kill"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "By the mane of the lion, that was close!",
+          "volume": 50
+        }
+      ],
+      "tag": "Close Call"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "We will avenge you, great and loyal friend!",
+          "volume": 50
+        }
+      ],
+      "tag": "Low Level Death"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "A beacon! Let us hunt it!",
+          "volume": 50
+        }
+      ],
+      "tag": "Discover Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The beacon is ours!",
+          "volume": 50
+        }
+      ],
+      "tag": "Activate Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Lionhearted indeed!",
+          "volume": 50
+        }
+      ],
+      "tag": "Quest Boss Victory"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Friendship and loyalty forever!",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Friendship and loyalty forever!",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire With Medal"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Friendship and loyalty forever!",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire With Accolade"
     }
   ]
 }

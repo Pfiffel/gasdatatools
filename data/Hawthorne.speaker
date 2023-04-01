@@ -31,6 +31,116 @@
         }
       ],
       "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "A true thorn warrior!",
+          "volume": 50
+        }
+      ],
+      "tag": "Max Level"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Transfixed, the foe is vanquished!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Rent asunder, the enemy perishes!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Entwined in brambles!",
+          "volume": 50
+        }
+      ],
+      "tag": "Add Boss Kill"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Impaled, nigh unto death!",
+          "volume": 50
+        }
+      ],
+      "tag": "Close Call"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Your bones shall nourish my roots.",
+          "volume": 50
+        }
+      ],
+      "tag": "Low Level Death"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "A beacon lies hidden, as a berry in the brambles.",
+          "volume": 50
+        }
+      ],
+      "tag": "Discover Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The beacon blooms, as a rose among thorns.",
+          "volume": 50
+        }
+      ],
+      "tag": "Activate Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "You are the master of thorns!",
+          "volume": 50
+        }
+      ],
+      "tag": "Quest Boss Victory"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The brambles spread ever outward.",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The brambles spread ever outward.",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire With Medal"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The brambles spread ever outward.",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire With Accolade"
     }
   ]
 }

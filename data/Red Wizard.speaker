@@ -31,6 +31,116 @@
         }
       ],
       "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Your powers shall never match my own!",
+          "volume": 50
+        }
+      ],
+      "tag": "Max Level"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I have defeated another adversary!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I have vanquished another foe!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I have easily destroyed another enemy!",
+          "volume": 50
+        }
+      ],
+      "tag": "Add Boss Kill"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "You have narrowly escaped, this time.",
+          "volume": 50
+        }
+      ],
+      "tag": "Close Call"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I contemplate creation on a scale you cannot comprehend. This death means nothing.",
+          "volume": 50
+        }
+      ],
+      "tag": "Low Level Death"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I require that beacon!",
+          "volume": 50
+        }
+      ],
+      "tag": "Discover Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I shall incorporate this beacon's power into my own.",
+          "volume": 50
+        }
+      ],
+      "tag": "Activate Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "All too easy.",
+          "volume": 50
+        }
+      ],
+      "tag": "Quest Boss Victory"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I have grown beyond you.",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I have grown beyond you.",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire With Medal"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I have grown beyond you.",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire With Accolade"
     }
   ]
 }

@@ -1,0 +1,25 @@
+{
+  "champion": "Yeti",
+  "displayName": "Deadly Ambush",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "collisionDamage": 100,
+            "collisionDematerialTime": 0,
+            "collisionManaToRefund": 0,
+            "range": 0
+          },
+          "tag": "LeapTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Yeti 3 Leap",
+        "tooltip": "On Frosty Ambush:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Yeti Deadly Ambush"
+}
+

@@ -1,0 +1,22 @@
+{
+  "arcOffset": 400,
+  "cooldown": 40,
+  "endSound": "Player_Yeti_Movement_End",
+  "endVolume": 50,
+  "halfArc": 50,
+  "loopSound": "Player_Yeti_Movement_Loop",
+  "loopVolume": 50,
+  "maxDist": 50,
+  "minDist": 25,
+  "mirror": 1,
+  "name": "Yeti Reverse Thruster",
+  "particleCount": 1,
+  "particleTypes": [
+    "Yeti Thruster",
+    "Yeti Thruster 2",
+    "Yeti Thruster 3"
+  ],
+  "startSound": "Player_Yeti_Movement_Start",
+  "startVolume": 50
+}
+

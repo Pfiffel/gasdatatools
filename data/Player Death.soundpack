@@ -1,0 +1,8 @@
+{
+  "name": "Player Death",
+  "sounds": [
+    "UI_Death"
+  ],
+  "volume": 100
+}
+

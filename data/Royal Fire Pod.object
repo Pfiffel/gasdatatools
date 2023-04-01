@@ -1,0 +1,101 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Turret",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Royal Fire Pod",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 8,
+      "mirror": 1,
+      "name": "Outer Ring",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -73,
+          "y": 24
+        },
+        {
+          "x": -63,
+          "y": 54
+        },
+        {
+          "x": -29,
+          "y": 76
+        },
+        {
+          "x": 29,
+          "y": 76
+        },
+        {
+          "x": 63,
+          "y": 54
+        },
+        {
+          "x": 73,
+          "y": 24
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 6961157,
+      "height": 14,
+      "mirror": 1,
+      "name": "Inner Ring",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -59,
+          "y": 17
+        },
+        {
+          "x": -49,
+          "y": 37
+        },
+        {
+          "x": -31,
+          "y": 53
+        },
+        {
+          "x": 0,
+          "y": 61
+        },
+        {
+          "x": 31,
+          "y": 53
+        },
+        {
+          "x": 49,
+          "y": 37
+        },
+        {
+          "x": 59,
+          "y": 17
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

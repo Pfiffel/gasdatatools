@@ -1,0 +1,1431 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 30,
+      "name": "Turret Main",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "height": 30,
+      "name": "Turret FC",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 132,
+          "y": 0
+        }
+      }
+    },
+    {
+      "height": 30,
+      "name": "Turret BL",
+      "pos": {
+        "f": -1350,
+        "p": {
+          "x": -110,
+          "y": -140
+        }
+      }
+    },
+    {
+      "height": 30,
+      "name": "Turret BR",
+      "pos": {
+        "f": 1350,
+        "p": {
+          "x": -110,
+          "y": 140
+        }
+      }
+    },
+    {
+      "height": 30,
+      "name": "Turret BC",
+      "pos": {
+        "f": 1800,
+        "p": {
+          "x": -175,
+          "y": 0
+        }
+      }
+    },
+    {
+      "height": 30,
+      "name": "Turret FR",
+      "pos": {
+        "f": 450,
+        "p": {
+          "x": 110,
+          "y": 140
+        }
+      }
+    },
+    {
+      "height": 30,
+      "name": "Turret FL",
+      "pos": {
+        "f": -450,
+        "p": {
+          "x": 110,
+          "y": -140
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Lord Protector Cromwell",
+  "shapes": [
+    {
+      "bone": "Track",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -182,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -140,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -98,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 59,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 100,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 142,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 181,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 6,
+      "mirror": 1,
+      "name": "Hoveerpod Cover",
+      "noDraw": 1,
+      "points": [
+        {
+          "x": 15,
+          "y": 249
+        },
+        {
+          "x": -14,
+          "y": 249
+        },
+        {
+          "x": -11,
+          "y": 263
+        },
+        {
+          "x": -3,
+          "y": 263
+        },
+        {
+          "x": -3,
+          "y": 254
+        },
+        {
+          "x": 3,
+          "y": 254
+        },
+        {
+          "x": 3,
+          "y": 263
+        },
+        {
+          "x": 11,
+          "y": 263
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 6961157,
+      "height": 6,
+      "mirror": 1,
+      "name": "Fore Platform",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 139,
+          "y": 64
+        },
+        {
+          "x": 183,
+          "y": 65
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6961157,
+      "height": 6,
+      "mirror": 1,
+      "name": "Embedded Back",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -148,
+          "y": 119
+        },
+        {
+          "x": -244,
+          "y": 119
+        },
+        {
+          "x": -245,
+          "y": 141
+        },
+        {
+          "x": -242,
+          "y": 150
+        },
+        {
+          "x": -241,
+          "y": 162
+        },
+        {
+          "x": -218,
+          "y": 176
+        },
+        {
+          "x": -219,
+          "y": 225
+        },
+        {
+          "x": -97,
+          "y": 227
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6961157,
+      "height": 6,
+      "mirror": 1,
+      "name": "Embedded Back",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 152,
+          "y": 119
+        },
+        {
+          "x": 248,
+          "y": 119
+        },
+        {
+          "x": 249,
+          "y": 141
+        },
+        {
+          "x": 246,
+          "y": 150
+        },
+        {
+          "x": 245,
+          "y": 162
+        },
+        {
+          "x": 222,
+          "y": 176
+        },
+        {
+          "x": 223,
+          "y": 225
+        },
+        {
+          "x": 77,
+          "y": 225
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": 143
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 21,
+              "y": 172
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 44,
+              "y": 202
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 1800,
+            "p": {
+              "x": 4,
+              "y": 143
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 1800,
+            "p": {
+              "x": -16,
+              "y": 173
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 1800,
+            "p": {
+              "x": -39,
+              "y": 202
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 0,
+              "y": -143
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 20,
+              "y": -172
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 43,
+              "y": -202
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 1800,
+            "p": {
+              "x": 4,
+              "y": -143
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 1800,
+            "p": {
+              "x": -16,
+              "y": -172
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 1800,
+            "p": {
+              "x": -39,
+              "y": -202
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 7,
+      "mirror": 1,
+      "name": "Fore\/Aft Pipe",
+      "noDraw": 1,
+      "points": [
+        {
+          "x": -276,
+          "y": 0
+        },
+        {
+          "x": -265,
+          "y": 12
+        },
+        {
+          "x": -113,
+          "y": 12
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -182,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -140,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -98,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 59,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 100,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 142,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 181,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 7,
+      "mirror": 1,
+      "name": "Hoveerpod Connector",
+      "noDraw": 1,
+      "points": [
+        {
+          "x": -19,
+          "y": 244
+        },
+        {
+          "x": -17,
+          "y": 249
+        },
+        {
+          "x": 17,
+          "y": 249
+        },
+        {
+          "x": 19,
+          "y": 244
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 8,
+      "mirror": 1,
+      "name": "Center Plate 1",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -168,
+          "y": 98
+        },
+        {
+          "x": -111,
+          "y": 219
+        },
+        {
+          "x": 89,
+          "y": 219
+        },
+        {
+          "x": 187,
+          "y": 74
+        },
+        {
+          "x": 188,
+          "y": 61
+        },
+        {
+          "x": 129,
+          "y": 61
+        },
+        {
+          "x": 36,
+          "y": 178
+        },
+        {
+          "x": -73,
+          "y": 180
+        },
+        {
+          "x": -120,
+          "y": 81
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 8,
+      "mirror": 1,
+      "name": "Fore Strake Inner",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 198,
+          "y": 3
+        },
+        {
+          "x": 120,
+          "y": 3
+        },
+        {
+          "x": 120,
+          "y": 17
+        },
+        {
+          "x": 198,
+          "y": 17
+        },
+        {
+          "x": 209,
+          "y": 10
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 8,
+      "mirror": 1,
+      "name": "Fore Strake Middle",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 198,
+          "y": 22
+        },
+        {
+          "x": 120,
+          "y": 22
+        },
+        {
+          "x": 120,
+          "y": 36
+        },
+        {
+          "x": 198,
+          "y": 36
+        },
+        {
+          "x": 209,
+          "y": 29
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11506944,
+      "height": 8,
+      "mirror": 1,
+      "name": "Track",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 243,
+          "y": 110
+        },
+        {
+          "x": -145,
+          "y": 111
+        },
+        {
+          "x": -239,
+          "y": 111
+        },
+        {
+          "x": -253,
+          "y": 124
+        },
+        {
+          "x": 259,
+          "y": 125
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 8,
+      "mirror": 1,
+      "name": "Fore Strake Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 198,
+          "y": 42
+        },
+        {
+          "x": 120,
+          "y": 42
+        },
+        {
+          "x": 120,
+          "y": 56
+        },
+        {
+          "x": 198,
+          "y": 56
+        },
+        {
+          "x": 209,
+          "y": 49
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 9,
+      "mirror": 1,
+      "name": "Center Plate 2",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -151,
+          "y": 72
+        },
+        {
+          "x": -88,
+          "y": 205
+        },
+        {
+          "x": 51,
+          "y": 205
+        },
+        {
+          "x": 143,
+          "y": 65
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 10,
+      "mirror": 1,
+      "name": "Flank Plate",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 228,
+          "y": 219
+        },
+        {
+          "x": -231,
+          "y": 218
+        },
+        {
+          "x": -203,
+          "y": 245
+        },
+        {
+          "x": -76,
+          "y": 244
+        },
+        {
+          "x": -63,
+          "y": 230
+        },
+        {
+          "x": 18,
+          "y": 230
+        },
+        {
+          "x": 32,
+          "y": 244
+        },
+        {
+          "x": 203,
+          "y": 245
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 10,
+      "mirror": 1,
+      "name": "Rear Platform",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -217,
+          "y": 85
+        },
+        {
+          "x": -210,
+          "y": 90
+        },
+        {
+          "x": -140,
+          "y": 90
+        },
+        {
+          "x": -131,
+          "y": 81
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -156,
+              "y": 40
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -156,
+              "y": 12
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -156,
+              "y": -40
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -156,
+              "y": -12
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -156,
+              "y": 67
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": -156,
+              "y": -68
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 6961157,
+      "height": 11,
+      "mirror": 1,
+      "name": "Rear Platform Strake",
+      "noDraw": 1,
+      "points": [
+        {
+          "x": -61,
+          "y": 3
+        },
+        {
+          "x": 25,
+          "y": 3
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6961157,
+      "height": 12,
+      "mirror": 1,
+      "name": "Center Exhaust",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -247,
+          "y": 37
+        },
+        {
+          "x": -181,
+          "y": 37
+        },
+        {
+          "x": -172,
+          "y": 34
+        },
+        {
+          "x": -167,
+          "y": 28
+        },
+        {
+          "x": -167,
+          "y": 17
+        },
+        {
+          "x": -171,
+          "y": 11
+        },
+        {
+          "x": -179,
+          "y": 9
+        },
+        {
+          "x": -247,
+          "y": 9
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6961157,
+      "height": 12,
+      "mirror": 1,
+      "name": "Inner Forward Pod",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 159,
+          "y": 118
+        },
+        {
+          "x": 168,
+          "y": 121
+        },
+        {
+          "x": 173,
+          "y": 128
+        },
+        {
+          "x": 173,
+          "y": 143
+        },
+        {
+          "x": 168,
+          "y": 152
+        },
+        {
+          "x": 156,
+          "y": 155
+        },
+        {
+          "x": 73,
+          "y": 155
+        },
+        {
+          "x": 62,
+          "y": 151
+        },
+        {
+          "x": 57,
+          "y": 143
+        },
+        {
+          "x": 57,
+          "y": 128
+        },
+        {
+          "x": 62,
+          "y": 121
+        },
+        {
+          "x": 71,
+          "y": 118
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6961157,
+      "height": 12,
+      "mirror": 1,
+      "name": "Outer Exhaust",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -247,
+          "y": 82
+        },
+        {
+          "x": -181,
+          "y": 82
+        },
+        {
+          "x": -172,
+          "y": 79
+        },
+        {
+          "x": -167,
+          "y": 73
+        },
+        {
+          "x": -167,
+          "y": 62
+        },
+        {
+          "x": -171,
+          "y": 56
+        },
+        {
+          "x": -179,
+          "y": 54
+        },
+        {
+          "x": -247,
+          "y": 54
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6961157,
+      "height": 12,
+      "mirror": 1,
+      "name": "Outer Forward Pod",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 130,
+          "y": 162
+        },
+        {
+          "x": 139,
+          "y": 165
+        },
+        {
+          "x": 144,
+          "y": 172
+        },
+        {
+          "x": 144,
+          "y": 187
+        },
+        {
+          "x": 139,
+          "y": 196
+        },
+        {
+          "x": 127,
+          "y": 199
+        },
+        {
+          "x": 44,
+          "y": 199
+        },
+        {
+          "x": 33,
+          "y": 195
+        },
+        {
+          "x": 28,
+          "y": 187
+        },
+        {
+          "x": 28,
+          "y": 172
+        },
+        {
+          "x": 33,
+          "y": 165
+        },
+        {
+          "x": 42,
+          "y": 162
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6961157,
+      "height": 13,
+      "mirror": 1,
+      "name": "Inner Exhaust Tip",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -257,
+          "y": 9
+        },
+        {
+          "x": -265,
+          "y": 12
+        },
+        {
+          "x": -270,
+          "y": 18
+        },
+        {
+          "x": -270,
+          "y": 26
+        },
+        {
+          "x": -267,
+          "y": 31
+        },
+        {
+          "x": -258,
+          "y": 36
+        },
+        {
+          "x": -247,
+          "y": 37
+        },
+        {
+          "x": -241,
+          "y": 35
+        },
+        {
+          "x": -236,
+          "y": 31
+        },
+        {
+          "x": -234,
+          "y": 25
+        },
+        {
+          "x": -234,
+          "y": 19
+        },
+        {
+          "x": -235,
+          "y": 14
+        },
+        {
+          "x": -240,
+          "y": 10
+        },
+        {
+          "x": -247,
+          "y": 9
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6961157,
+      "height": 13,
+      "mirror": 1,
+      "name": "Outer Exhaust Tip",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -257,
+          "y": 54
+        },
+        {
+          "x": -265,
+          "y": 57
+        },
+        {
+          "x": -270,
+          "y": 63
+        },
+        {
+          "x": -270,
+          "y": 71
+        },
+        {
+          "x": -267,
+          "y": 76
+        },
+        {
+          "x": -258,
+          "y": 81
+        },
+        {
+          "x": -247,
+          "y": 82
+        },
+        {
+          "x": -241,
+          "y": 80
+        },
+        {
+          "x": -236,
+          "y": 76
+        },
+        {
+          "x": -234,
+          "y": 70
+        },
+        {
+          "x": -234,
+          "y": 64
+        },
+        {
+          "x": -235,
+          "y": 59
+        },
+        {
+          "x": -240,
+          "y": 55
+        },
+        {
+          "x": -247,
+          "y": 54
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11506944,
+      "height": 14,
+      "mirror": 1,
+      "name": "Inner Forward Pod Detail",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 124,
+          "y": 136
+        },
+        {
+          "x": 127,
+          "y": 140
+        },
+        {
+          "x": 157,
+          "y": 140
+        },
+        {
+          "x": 159,
+          "y": 136
+        },
+        {
+          "x": 157,
+          "y": 132
+        },
+        {
+          "x": 127,
+          "y": 132
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11506944,
+      "height": 14,
+      "mirror": 1,
+      "name": "Inner Forward Pod Detail 2",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 87,
+          "y": 154
+        },
+        {
+          "x": 94,
+          "y": 154
+        },
+        {
+          "x": 94,
+          "y": 118
+        },
+        {
+          "x": 87,
+          "y": 118
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11506944,
+      "height": 14,
+      "mirror": 1,
+      "name": "Outer Forward Pod Detail",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 94,
+          "y": 180
+        },
+        {
+          "x": 97,
+          "y": 184
+        },
+        {
+          "x": 127,
+          "y": 184
+        },
+        {
+          "x": 129,
+          "y": 180
+        },
+        {
+          "x": 127,
+          "y": 176
+        },
+        {
+          "x": 97,
+          "y": 176
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Track",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11506944,
+      "height": 14,
+      "mirror": 1,
+      "name": "Outer Forward Pod Detail 2",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 58,
+          "y": 198
+        },
+        {
+          "x": 65,
+          "y": 198
+        },
+        {
+          "x": 65,
+          "y": 162
+        },
+        {
+          "x": 58,
+          "y": 162
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 15,
+      "mirror": 1,
+      "name": "Center Plate 3",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -109,
+          "y": 92
+        },
+        {
+          "x": -68,
+          "y": 170
+        },
+        {
+          "x": 16,
+          "y": 170
+        },
+        {
+          "x": 92,
+          "y": 72
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

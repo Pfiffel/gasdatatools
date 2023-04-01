@@ -1,0 +1,31 @@
+{
+  "champion": "Yeti",
+  "displayName": "Storm Intensity",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "damage": 25,
+            "delay": 0,
+            "halfArc": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 0,
+            "statusEffects": [],
+            "targetingDelay": 0
+          },
+          "tag": "ShotgunTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Yeti 4 Shotgun",
+        "tooltip": "On Ice Storm:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Yeti Storm Intensity"
+}
+

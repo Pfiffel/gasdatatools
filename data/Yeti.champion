@@ -1,0 +1,451 @@
+{
+  "acceleration": 900,
+  "angularAccel": 94,
+  "blurb": "Frosty brawler tank",
+  "choosable": 1,
+  "equipment": [],
+  "forwardThrustEmitter": "Yeti Main Thruster",
+  "guns": [
+    {
+      "cooldown": 260,
+      "damage": 50,
+      "emitterType": "Yeti Guns",
+      "f": 0,
+      "halfArc": 1800,
+      "objectType": "Yeti Bullet",
+      "range": 170,
+      "reticleColor": 11184810,
+      "soundPack": "Yeti Guns",
+      "speed": 1200,
+      "tag": "",
+      "turretBone": "Turret"
+    }
+  ],
+  "healRate": 20,
+  "hp": 900,
+  "name": "Yeti",
+  "objectType": "Yeti",
+  "passiveName": "Icy Resolve",
+  "passives": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 150,
+        "statType": 20
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "radius": 24,
+  "reverseThrustEmitter": "Yeti Reverse Thruster",
+  "rotationDecay": 32,
+  "shields": [
+    {
+      "color": 7711140,
+      "left": -1800,
+      "level": 0,
+      "maxStrength": 200,
+      "right": 1800
+    }
+  ],
+  "slotLimits": [
+    {
+      "maxSlots": 5,
+      "minSlots": 2
+    },
+    {
+      "maxSlots": 7,
+      "minSlots": 2
+    },
+    {
+      "maxSlots": 6,
+      "minSlots": 1
+    },
+    {
+      "maxSlots": 5,
+      "minSlots": 1
+    },
+    {
+      "maxSlots": 4,
+      "minSlots": 0
+    },
+    {
+      "maxSlots": 6,
+      "minSlots": 2
+    }
+  ],
+  "speedLimit": 245,
+  "triggers": [
+    {
+      "cooldown": 1000,
+      "description": "Activates dual endothermic detonators, chilling enemies in the blast zones and recharging shields",
+      "icon": "crowned-explosion",
+      "mana": 18,
+      "name": "Cold Bomb",
+      "params": [
+        {
+          "data": {
+            "autoAim": 0,
+            "damage": 75,
+            "delay": 350,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Yeti Grenade",
+            "facing": 300,
+            "halfArc": 1800,
+            "mirror": 1,
+            "offset": {
+              "x": 250,
+              "y": 0
+            },
+            "range": 150,
+            "reticleColor": 11184810,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 5000
+                },
+                "tag": "ChillEffect"
+              }
+            ],
+            "tag": "Yeti 1 Shotgun",
+            "targetingDelay": 0,
+            "tooltip": ""
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "delay": 0,
+            "duration": 350,
+            "emitterType": "Yeti Grenade",
+            "facing": 300,
+            "mirror": 1,
+            "objectType": "Mustang Grenade",
+            "sound": "",
+            "tag": "Yeti 1 Slug",
+            "target": {
+              "x": 250,
+              "y": 0
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        },
+        {
+          "data": {
+            "glyphCount": 8,
+            "glyphDuration": 500,
+            "glyphRadius": 60,
+            "glyphType": "Yeti Shield Glyph",
+            "refillPercentage": 35,
+            "shieldIndex": -1,
+            "tag": "Yeti 1 ShieldRefill"
+          },
+          "tag": "ShieldRefillTrigger"
+        }
+      ],
+      "sound": "Player_Yeti_ColdBomb_Launch",
+      "volume": 100
+    },
+    {
+      "cooldown": 5000,
+      "description": "Fires five freeze rockets",
+      "icon": "missile-swarm",
+      "mana": 12,
+      "name": "Frigid Claws",
+      "params": [
+        {
+          "data": {
+            "count": 5,
+            "damage": 75,
+            "emitterType": "Yeti Missile Trail",
+            "objectType": "Yeti Missile",
+            "range": 300,
+            "sound": "Player_Yeti_FrigidClaws_Launch",
+            "speed": 325,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 3000
+                },
+                "tag": "FreezeEffect"
+              }
+            ],
+            "tag": "Yeti 2 Sharklet",
+            "timeGap": 150,
+            "tweenType": "QUADIN",
+            "volume": 100
+          },
+          "tag": "SharkletTrigger"
+        }
+      ],
+      "sound": "Player_Yeti_FrigidClaws",
+      "volume": 50
+    },
+    {
+      "cooldown": 10000,
+      "description": "Launches forward, freezing any enemy hit and activating an auxiliary shield",
+      "icon": "sasquatch",
+      "mana": 10,
+      "name": "Frosty Ambush",
+      "params": [
+        {
+          "data": {
+            "collisionSettings": {
+              "cooldownToRetain": 1000,
+              "damage": 250,
+              "dematerialTime": 500,
+              "explosion": "Yeti Ambush Collide",
+              "explosionRange": 50,
+              "manaToRefund": 0,
+              "statusEffects": [
+                {
+                  "data": {
+                    "duration": 4000
+                  },
+                  "tag": "FreezeEffect"
+                }
+              ],
+              "triggerIndexToResetCooldown": -1,
+              "vamp": 0
+            },
+            "drawTooltip": 1,
+            "emitterType": "",
+            "range": 300,
+            "tag": "Yeti 3 Leap"
+          },
+          "tag": "LeapTrigger"
+        },
+        {
+          "data": {
+            "duration": 5000,
+            "stats": {
+              "color": 2608599,
+              "left": -1800,
+              "level": 0,
+              "maxStrength": 300,
+              "right": 1800
+            },
+            "tag": "Yeti 3 ExtraShield"
+          },
+          "tag": "ExtraShieldTrigger"
+        }
+      ],
+      "sound": "Player_Yeti_FrostyAmbush",
+      "volume": 100
+    },
+    {
+      "cooldown": 30000,
+      "description": "Creates a large zone of negative temperature anomalies",
+      "icon": "ice-bolt",
+      "mana": 10,
+      "name": "Ice Storm",
+      "params": [
+        {
+          "data": {
+            "amount": 750,
+            "applyToMana": 0,
+            "duration": 4500,
+            "emitterType": "Yeti Ice Storm",
+            "glyphCount": 0,
+            "glyphRadius": 0,
+            "glyphType": "",
+            "noStack": 0,
+            "tag": "Yeti 4 HealOverTime"
+          },
+          "tag": "HealOverTimeTrigger"
+        },
+        {
+          "data": {
+            "autoAim": 0,
+            "damage": 100,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Yeti Ice Storm",
+            "facing": 0,
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 300,
+            "reticleColor": 11184810,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 4000
+                },
+                "tag": "ChillEffect"
+              }
+            ],
+            "tag": "Yeti 4 Shotgun",
+            "targetingDelay": 750,
+            "tooltip": "6x Icy Burst"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "autoAim": 0,
+            "damage": 100,
+            "delay": 0,
+            "drawReticle": 0,
+            "drawTooltip": 0,
+            "explosionType": "Yeti Ice Storm",
+            "facing": 0,
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 300,
+            "reticleColor": 3377308,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 4000
+                },
+                "tag": "ChillEffect"
+              }
+            ],
+            "tag": "Yeti 4 Shotgun",
+            "targetingDelay": 1500,
+            "tooltip": "Ice Storm"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "autoAim": 0,
+            "damage": 100,
+            "delay": 0,
+            "drawReticle": 0,
+            "drawTooltip": 0,
+            "explosionType": "Yeti Ice Storm",
+            "facing": 0,
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 300,
+            "reticleColor": 3377308,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 4000
+                },
+                "tag": "ChillEffect"
+              }
+            ],
+            "tag": "Yeti 4 Shotgun",
+            "targetingDelay": 2250,
+            "tooltip": "Ice Storm"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "autoAim": 0,
+            "damage": 100,
+            "delay": 0,
+            "drawReticle": 0,
+            "drawTooltip": 0,
+            "explosionType": "Yeti Ice Storm",
+            "facing": 0,
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 300,
+            "reticleColor": 3377308,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 4000
+                },
+                "tag": "ChillEffect"
+              }
+            ],
+            "tag": "Yeti 4 Shotgun",
+            "targetingDelay": 3000,
+            "tooltip": "Ice Storm"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "autoAim": 0,
+            "damage": 100,
+            "delay": 0,
+            "drawReticle": 0,
+            "drawTooltip": 0,
+            "explosionType": "Yeti Ice Storm",
+            "facing": 0,
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 300,
+            "reticleColor": 3377308,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 4000
+                },
+                "tag": "ChillEffect"
+              }
+            ],
+            "tag": "Yeti 4 Shotgun",
+            "targetingDelay": 3750,
+            "tooltip": "Ice Storm"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "autoAim": 0,
+            "damage": 100,
+            "delay": 0,
+            "drawReticle": 0,
+            "drawTooltip": 0,
+            "explosionType": "Yeti Ice Storm",
+            "facing": 0,
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 300,
+            "reticleColor": 3377308,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 4000
+                },
+                "tag": "ChillEffect"
+              }
+            ],
+            "tag": "Yeti 4 Shotgun",
+            "targetingDelay": 4500,
+            "tooltip": "Ice Storm"
+          },
+          "tag": "ShotgunTrigger"
+        }
+      ],
+      "sound": "",
+      "volume": 75
+    }
+  ]
+}
+

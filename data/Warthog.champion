@@ -1,7 +1,7 @@
 {
   "acceleration": 850,
   "angularAccel": 84,
-  "blurb": "Close-in brawler tank",
+  "blurb": "Close-in scrapper tank",
   "choosable": 1,
   "equipment": [],
   "forwardThrustEmitter": "Warthog Main Thruster",

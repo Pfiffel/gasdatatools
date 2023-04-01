@@ -1,13 +1,13 @@
 {
   "arcOffset": 0,
-  "cooldown": 80,
+  "cooldown": 20,
   "endSound": "Player_Wasp_CoupOverload_End",
   "endVolume": 50,
   "halfArc": 1800,
   "loopSound": "",
   "loopVolume": 50,
-  "maxDist": 125,
-  "minDist": 125,
+  "maxDist": 75,
+  "minDist": 50,
   "mirror": 0,
   "name": "Wasp Overload",
   "particleCount": 1,
@@ -15,6 +15,6 @@
     "Wasp Overload"
   ],
   "startSound": "Player_Wasp_CoupOverload_Start",
-  "startVolume": 125
+  "startVolume": 200
 }
 

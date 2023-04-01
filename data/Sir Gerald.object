@@ -1,0 +1,1174 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 20,
+      "name": "Turret",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [
+    {
+      "name": "Hand",
+      "p": {
+        "x": -54,
+        "y": 44
+      }
+    },
+    {
+      "name": "Foot",
+      "p": {
+        "x": -55,
+        "y": 31
+      }
+    }
+  ],
+  "floppiness": 0,
+  "name": "Sir Gerald",
+  "shapes": [
+    {
+      "bone": "Front Foot",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 4802889,
+      "height": 0,
+      "mirror": 1,
+      "name": "Front Foot 1",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 71,
+          "y": 52
+        },
+        {
+          "x": 61,
+          "y": 42
+        },
+        {
+          "x": 89,
+          "y": 42
+        },
+        {
+          "x": 94,
+          "y": 45
+        },
+        {
+          "x": 100,
+          "y": 52
+        }
+      ],
+      "useBoneMirror": 0
+    },
+    {
+      "bone": "Front Foot",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 4802889,
+      "height": 0,
+      "mirror": 1,
+      "name": "Front Foot 1",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 71,
+          "y": 58
+        },
+        {
+          "x": 61,
+          "y": 68
+        },
+        {
+          "x": 89,
+          "y": 68
+        },
+        {
+          "x": 94,
+          "y": 64
+        },
+        {
+          "x": 100,
+          "y": 58
+        }
+      ],
+      "useBoneMirror": 0
+    },
+    {
+      "bone": "Back Foot",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 4802889,
+      "height": 0,
+      "mirror": 1,
+      "name": "Back Foot 1",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -68,
+          "y": 52
+        },
+        {
+          "x": -78,
+          "y": 42
+        },
+        {
+          "x": -50,
+          "y": 42
+        },
+        {
+          "x": -45,
+          "y": 45
+        },
+        {
+          "x": -39,
+          "y": 52
+        }
+      ],
+      "useBoneMirror": 0
+    },
+    {
+      "bone": "Back Foot",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 4802889,
+      "height": 0,
+      "mirror": 1,
+      "name": "Back Foot 1",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -68,
+          "y": 58
+        },
+        {
+          "x": -78,
+          "y": 68
+        },
+        {
+          "x": -50,
+          "y": 68
+        },
+        {
+          "x": -45,
+          "y": 64
+        },
+        {
+          "x": -39,
+          "y": 58
+        }
+      ],
+      "useBoneMirror": 0
+    },
+    {
+      "bone": "Front Foot",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 4802889,
+      "height": 1,
+      "mirror": 1,
+      "name": "Front Foot 2",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 69,
+          "y": 64
+        },
+        {
+          "x": 65,
+          "y": 68
+        },
+        {
+          "x": 60,
+          "y": 68
+        },
+        {
+          "x": 32,
+          "y": 68
+        },
+        {
+          "x": 28,
+          "y": 66
+        },
+        {
+          "x": 25,
+          "y": 64
+        },
+        {
+          "x": 25,
+          "y": 46
+        },
+        {
+          "x": 28,
+          "y": 43
+        },
+        {
+          "x": 32,
+          "y": 41
+        },
+        {
+          "x": 60,
+          "y": 41
+        },
+        {
+          "x": 65,
+          "y": 43
+        },
+        {
+          "x": 68,
+          "y": 45
+        },
+        {
+          "x": 73,
+          "y": 52
+        },
+        {
+          "x": 73,
+          "y": 58
+        }
+      ],
+      "useBoneMirror": 0
+    },
+    {
+      "bone": "Back Foot",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 4802889,
+      "height": 1,
+      "mirror": 1,
+      "name": "Back Foot 2",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -115,
+          "y": 64
+        },
+        {
+          "x": -111,
+          "y": 68
+        },
+        {
+          "x": -106,
+          "y": 68
+        },
+        {
+          "x": -77,
+          "y": 68
+        },
+        {
+          "x": -73,
+          "y": 66
+        },
+        {
+          "x": -71,
+          "y": 64
+        },
+        {
+          "x": -71,
+          "y": 46
+        },
+        {
+          "x": -74,
+          "y": 43
+        },
+        {
+          "x": -77,
+          "y": 41
+        },
+        {
+          "x": -106,
+          "y": 41
+        },
+        {
+          "x": -111,
+          "y": 43
+        },
+        {
+          "x": -114,
+          "y": 45
+        },
+        {
+          "x": -119,
+          "y": 52
+        },
+        {
+          "x": -119,
+          "y": 58
+        }
+      ],
+      "useBoneMirror": 0
+    },
+    {
+      "bone": "Back Leg",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 2,
+      "mirror": 1,
+      "name": "Back Leg",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -118,
+          "y": 64
+        },
+        {
+          "x": -112,
+          "y": 65
+        },
+        {
+          "x": -88,
+          "y": 65
+        },
+        {
+          "x": -82,
+          "y": 60
+        },
+        {
+          "x": -82,
+          "y": 48
+        },
+        {
+          "x": -87,
+          "y": 43
+        },
+        {
+          "x": -112,
+          "y": 43
+        },
+        {
+          "x": -116,
+          "y": 44
+        },
+        {
+          "x": -120,
+          "y": 46
+        },
+        {
+          "x": -122,
+          "y": 51
+        },
+        {
+          "x": -122,
+          "y": 58
+        },
+        {
+          "x": -120,
+          "y": 62
+        }
+      ],
+      "useBoneMirror": 0
+    },
+    {
+      "bone": "Front Leg",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 2,
+      "mirror": 1,
+      "name": "Front Leg",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 41,
+          "y": 64
+        },
+        {
+          "x": 35,
+          "y": 65
+        },
+        {
+          "x": 11,
+          "y": 65
+        },
+        {
+          "x": 4,
+          "y": 64
+        },
+        {
+          "x": 1,
+          "y": 60
+        },
+        {
+          "x": 0,
+          "y": 48
+        },
+        {
+          "x": 3,
+          "y": 44
+        },
+        {
+          "x": 10,
+          "y": 43
+        },
+        {
+          "x": 35,
+          "y": 43
+        },
+        {
+          "x": 40,
+          "y": 44
+        },
+        {
+          "x": 44,
+          "y": 46
+        },
+        {
+          "x": 45,
+          "y": 51
+        },
+        {
+          "x": 45,
+          "y": 58
+        },
+        {
+          "x": 44,
+          "y": 62
+        }
+      ],
+      "useBoneMirror": 0
+    },
+    {
+      "bone": "Body",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 15,
+      "mirror": 1,
+      "name": "Body Front",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 33,
+          "y": 11
+        },
+        {
+          "x": 31,
+          "y": 17
+        },
+        {
+          "x": 27,
+          "y": 24
+        },
+        {
+          "x": 21,
+          "y": 31
+        },
+        {
+          "x": 16,
+          "y": 34
+        },
+        {
+          "x": 11,
+          "y": 35
+        },
+        {
+          "x": -28,
+          "y": 35
+        },
+        {
+          "x": -32,
+          "y": 31
+        },
+        {
+          "x": -32,
+          "y": 11
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Body",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 15,
+      "mirror": 1,
+      "name": "Body Sep",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -30,
+          "y": 36
+        },
+        {
+          "x": -28,
+          "y": 34
+        },
+        {
+          "x": -32,
+          "y": 31
+        },
+        {
+          "x": -32,
+          "y": 4
+        },
+        {
+          "x": -34,
+          "y": 4
+        },
+        {
+          "x": -34,
+          "y": 32
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Body",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4802889,
+      "height": 15,
+      "mirror": 1,
+      "name": "Body Back",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -32,
+          "y": 11
+        },
+        {
+          "x": 33,
+          "y": 11
+        },
+        {
+          "x": 34,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Body",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 20,
+      "mirror": 1,
+      "name": "Back Leg Plate",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -66,
+          "y": 64
+        },
+        {
+          "x": -100,
+          "y": 64
+        },
+        {
+          "x": -100,
+          "y": 42
+        },
+        {
+          "x": -66,
+          "y": 42
+        }
+      ],
+      "useBoneMirror": 0
+    },
+    {
+      "bone": "Body",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 20,
+      "mirror": 1,
+      "name": "Front Leg Plate",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 12,
+          "y": 35
+        },
+        {
+          "x": -12,
+          "y": 35
+        },
+        {
+          "x": -16,
+          "y": 42
+        },
+        {
+          "x": 16,
+          "y": 42
+        }
+      ],
+      "useBoneMirror": 0
+    },
+    {
+      "bone": "Body",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 20,
+      "mirror": 1,
+      "name": "Front Leg Plate",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 16,
+          "y": 64
+        },
+        {
+          "x": -16,
+          "y": 64
+        },
+        {
+          "x": -16,
+          "y": 42
+        },
+        {
+          "x": 16,
+          "y": 42
+        }
+      ],
+      "useBoneMirror": 0
+    },
+    {
+      "bone": "Body",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 20,
+      "mirror": 1,
+      "name": "Back Leg Plate",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -70,
+          "y": 35
+        },
+        {
+          "x": -96,
+          "y": 35
+        },
+        {
+          "x": -99,
+          "y": 42
+        },
+        {
+          "x": -67,
+          "y": 42
+        }
+      ],
+      "useBoneMirror": 0
+    },
+    {
+      "bone": "Body",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 20,
+      "mirror": 1,
+      "name": "Front Leg Plate",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 11,
+          "y": 70
+        },
+        {
+          "x": -11,
+          "y": 70
+        },
+        {
+          "x": -16,
+          "y": 64
+        },
+        {
+          "x": 16,
+          "y": 64
+        }
+      ],
+      "useBoneMirror": 0
+    },
+    {
+      "bone": "Body",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 20,
+      "mirror": 1,
+      "name": "Back Leg Plate",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -72,
+          "y": 70
+        },
+        {
+          "x": -94,
+          "y": 70
+        },
+        {
+          "x": -100,
+          "y": 64
+        },
+        {
+          "x": -66,
+          "y": 64
+        }
+      ],
+      "useBoneMirror": 0
+    },
+    {
+      "bone": "Body",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 21,
+      "mirror": 1,
+      "name": "Body Back",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -91,
+          "y": 28
+        },
+        {
+          "x": -81,
+          "y": 42
+        },
+        {
+          "x": -35,
+          "y": 42
+        },
+        {
+          "x": -29,
+          "y": 36
+        },
+        {
+          "x": -34,
+          "y": 32
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Body",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 14,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 1,
+      "collider": 0,
+      "color": 14079702,
+      "height": 22,
+      "mirror": 1,
+      "name": "Rivet Top",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -10,
+          "y": 54
+        },
+        {
+          "x": -8,
+          "y": 52
+        },
+        {
+          "x": -6,
+          "y": 52
+        },
+        {
+          "x": -4,
+          "y": 54
+        },
+        {
+          "x": -4,
+          "y": 56
+        },
+        {
+          "x": -6,
+          "y": 58
+        },
+        {
+          "x": -8,
+          "y": 58
+        },
+        {
+          "x": -10,
+          "y": 56
+        }
+      ],
+      "useBoneMirror": 0
+    },
+    {
+      "bone": "Body",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 14,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 1,
+      "collider": 0,
+      "color": 14079702,
+      "height": 22,
+      "mirror": 1,
+      "name": "Rivet Top",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -93,
+          "y": 54
+        },
+        {
+          "x": -91,
+          "y": 52
+        },
+        {
+          "x": -89,
+          "y": 52
+        },
+        {
+          "x": -87,
+          "y": 54
+        },
+        {
+          "x": -87,
+          "y": 56
+        },
+        {
+          "x": -89,
+          "y": 58
+        },
+        {
+          "x": -91,
+          "y": 58
+        },
+        {
+          "x": -93,
+          "y": 56
+        }
+      ],
+      "useBoneMirror": 0
+    },
+    {
+      "bone": "Body",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 6961157,
+      "height": 23,
+      "mirror": 1,
+      "name": "Tube Back",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -63,
+          "y": 4
+        },
+        {
+          "x": -66,
+          "y": 4
+        },
+        {
+          "x": -68,
+          "y": 3
+        },
+        {
+          "x": -69,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Body",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11373142,
+      "height": 23,
+      "mirror": 1,
+      "name": "Body Back",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -63,
+          "y": 4
+        },
+        {
+          "x": -36,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Body",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 6961157,
+      "height": 23,
+      "mirror": 1,
+      "name": "Tube Back",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -36,
+          "y": 4
+        },
+        {
+          "x": -30,
+          "y": 4
+        },
+        {
+          "x": -28,
+          "y": 3
+        },
+        {
+          "x": -27,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Body",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 25,
+      "mirror": 1,
+      "name": "Canister",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -64,
+          "y": 36
+        },
+        {
+          "x": -91,
+          "y": 36
+        },
+        {
+          "x": -91,
+          "y": 8
+        },
+        {
+          "x": -64,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Body",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 25,
+      "mirror": 1,
+      "name": "Canister Round",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -56,
+          "y": 36
+        },
+        {
+          "x": -50,
+          "y": 36
+        },
+        {
+          "x": -45,
+          "y": 33
+        },
+        {
+          "x": -43,
+          "y": 29
+        },
+        {
+          "x": -42,
+          "y": 22
+        },
+        {
+          "x": -43,
+          "y": 15
+        },
+        {
+          "x": -45,
+          "y": 11
+        },
+        {
+          "x": -50,
+          "y": 8
+        },
+        {
+          "x": -56,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Body",
+      "clones": [
+        {
+          "pos": {
+            "f": 0,
+            "p": {
+              "x": 35,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 1,
+      "collider": 0,
+      "color": 13217847,
+      "height": 25,
+      "mirror": 1,
+      "name": "Canister Frame",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -91,
+          "y": 36
+        },
+        {
+          "x": -99,
+          "y": 36
+        },
+        {
+          "x": -99,
+          "y": 8
+        },
+        {
+          "x": -91,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Body",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 25,
+      "mirror": 1,
+      "name": "Canister Round",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -99,
+          "y": 36
+        },
+        {
+          "x": -106,
+          "y": 36
+        },
+        {
+          "x": -112,
+          "y": 33
+        },
+        {
+          "x": -114,
+          "y": 29
+        },
+        {
+          "x": -115,
+          "y": 22
+        },
+        {
+          "x": -114,
+          "y": 15
+        },
+        {
+          "x": -112,
+          "y": 11
+        },
+        {
+          "x": -106,
+          "y": 8
+        },
+        {
+          "x": -99,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Body",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6961157,
+      "height": 27,
+      "mirror": 1,
+      "name": "Tube Back",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -86,
+          "y": 20
+        },
+        {
+          "x": -88,
+          "y": 22
+        },
+        {
+          "x": -86,
+          "y": 24
+        },
+        {
+          "x": -68,
+          "y": 24
+        },
+        {
+          "x": -67,
+          "y": 22
+        },
+        {
+          "x": -68,
+          "y": 20
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

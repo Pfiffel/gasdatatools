@@ -1,0 +1,22 @@
+{
+  "champion": "Yeti",
+  "displayName": "Bomb Recharge",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "refillPercentage": 10
+          },
+          "tag": "ShieldRefillTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Yeti 1 ShieldRefill",
+        "tooltip": "On Cold Bomb:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Yeti Bomb Recharge"
+}
+

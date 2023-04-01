@@ -34,8 +34,8 @@
         "statusEffects": [
           {
             "data": {
-              "dps": 1,
-              "duration": 10000,
+              "dps": 2,
+              "duration": 5000,
               "reducedDurationOnBoss": 0,
               "stack": 1
             },
@@ -276,9 +276,9 @@
             "amount": 25,
             "duration": 6500,
             "emitterType": "Wasp Overload",
-            "glyphCount": 0,
-            "glyphRadius": 0,
-            "glyphType": "",
+            "glyphCount": 8,
+            "glyphRadius": 35,
+            "glyphType": "Wasp Venom Glyph",
             "maxStacks": 0,
             "statType": 8,
             "tag": "Wasp 4 StatBoost 2"

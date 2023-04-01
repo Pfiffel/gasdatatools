@@ -1,0 +1,16 @@
+{
+  "champion": "Yeti",
+  "displayName": "Heightened Resolve",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 50,
+        "statType": 20
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Yeti Heightened Resolve"
+}
+

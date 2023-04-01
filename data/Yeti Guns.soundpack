@@ -1,0 +1,16 @@
+{
+  "name": "Yeti Guns",
+  "sounds": [
+    "Player_Yeti_Gun_01",
+    "Player_Yeti_Gun_02",
+    "Player_Yeti_Gun_03",
+    "Player_Yeti_Gun_04",
+    "Player_Yeti_Gun_05",
+    "Player_Yeti_Gun_06",
+    "Player_Yeti_Gun_07",
+    "Player_Yeti_Gun_08",
+    "Player_Yeti_Gun_09"
+  ],
+  "volume": 100
+}
+

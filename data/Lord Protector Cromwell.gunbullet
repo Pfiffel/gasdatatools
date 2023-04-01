@@ -1,0 +1,10 @@
+{
+  "damage": 300,
+  "emitterType": "Iron Behemoth Trail",
+  "name": "Lord Protector Cromwell",
+  "objectType": "Lord Protector Cromwell Bullet",
+  "powers": [],
+  "soundPack": "Iron Triumph Bullet",
+  "speed": 220
+}
+

@@ -31,6 +31,116 @@
         }
       ],
       "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Gale force!",
+          "volume": 50
+        }
+      ],
+      "tag": "Max Level"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Felled by the fury of the storm!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Another victim of the might of the storm!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "The power of the storm shall not be denied!",
+          "volume": 50
+        }
+      ],
+      "tag": "Add Boss Kill"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "You have survived the tempest!",
+          "volume": 50
+        }
+      ],
+      "tag": "Close Call"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The mighty storm will rise again.",
+          "volume": 50
+        }
+      ],
+      "tag": "Low Level Death"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "A beacon in the storm!",
+          "volume": 50
+        }
+      ],
+      "tag": "Discover Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The beacon will guide you through the storm.",
+          "volume": 50
+        }
+      ],
+      "tag": "Activate Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Victory, through the power of the storm!",
+          "volume": 50
+        }
+      ],
+      "tag": "Quest Boss Victory"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The storm rages on!",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The storm rages on!",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire With Medal"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The storm rages on!",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire With Accolade"
     }
   ]
 }

@@ -1,0 +1,73 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Lord Protector Cromwell Bullet Triggerlock",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 9633682,
+      "height": 76,
+      "mirror": 1,
+      "name": "Inner",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 33,
+          "y": 0
+        },
+        {
+          "x": 16,
+          "y": 12
+        },
+        {
+          "x": 0,
+          "y": 16
+        },
+        {
+          "x": -17,
+          "y": 12
+        },
+        {
+          "x": -34,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 2653644,
+      "height": 78,
+      "mirror": 1,
+      "name": "Middle",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -19,
+          "y": 0
+        },
+        {
+          "x": -7,
+          "y": 6
+        },
+        {
+          "x": 6,
+          "y": 6
+        },
+        {
+          "x": 17,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

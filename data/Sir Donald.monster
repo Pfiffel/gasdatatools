@@ -1,0 +1,140 @@
+{
+  "boss": 0,
+  "burrowDetectRange": 0,
+  "collisionRadius": 34,
+  "consolationPrizes": [
+    "Dimagnetic Fixer",
+    "Entropic Plate"
+  ],
+  "deathCrySoundPack": "Royal Knight Death Cries",
+  "drops": [
+    {
+      "itemType": "Omniant Fixer",
+      "levelCap": 20,
+      "micros": 10000
+    },
+    {
+      "itemType": "Cthoric Plate",
+      "levelCap": 20,
+      "micros": 10000
+    },
+    {
+      "itemType": "Tripolar Fixer",
+      "levelCap": 20,
+      "micros": 50000
+    },
+    {
+      "itemType": "Boson Plate",
+      "levelCap": 20,
+      "micros": 50000
+    },
+    {
+      "itemType": "Picoscale Fixer",
+      "levelCap": 20,
+      "micros": 100000
+    },
+    {
+      "itemType": "Hadron Plate",
+      "levelCap": 20,
+      "micros": 100000
+    }
+  ],
+  "fixedFacing": 0,
+  "healRate": 0,
+  "hp": 6000,
+  "idleAnimation": "BaseArcher Idle",
+  "maxMoveDistance": 500,
+  "name": "Sir Donald",
+  "objectType": "Sir Donald",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "Royal Cavalier Run",
+  "runAnimationDuration": 700,
+  "runSpeed": 85,
+  "shields": [],
+  "successorInvulnerability": 1,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 1000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Royal Cavalier Turret",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "extraRange": 200,
+                "range": 350,
+                "speed": 200
+              },
+              "tag": "ChargeParams"
+            },
+            {
+              "data": {
+                "damage": 300,
+                "delay": 1000,
+                "explosionType": "Royal Knight Shotgun",
+                "halfArc": 250,
+                "powers": [],
+                "range": 300,
+                "triggerSound": "Enemy_RoyalKnight_Shotgun_Telegraph",
+                "triggerVolume": 50
+              },
+              "tag": "ShotgunParams"
+            },
+            {
+              "data": {
+                "damage": 300,
+                "delay": 1000,
+                "explosionType": "Royal Knight Shotgun",
+                "halfArc": 250,
+                "powers": [],
+                "range": 400,
+                "triggerSound": "Enemy_RoyalKnight_Shotgun_Telegraph",
+                "triggerVolume": 50
+              },
+              "tag": "ShotgunParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 1400,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "angleBetweenProjectiles": 250,
+          "gunBulletType": "Royal Monarch",
+          "leading": 0,
+          "numProjectiles": 5,
+          "range": 600
+        },
+        "tag": "GunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 49,
+  "xpLevelCap": 19
+}
+

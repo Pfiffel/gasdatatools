@@ -8,13 +8,14 @@
             "count": 5,
             "damage": 50,
             "emitterType": "Starfire Trail",
-            "objectType": "Starfire",
+            "objectType": "Starfire Missile",
             "range": 250,
             "sound": "Player_Hercules_ZeonRocket_Launch",
             "speed": 350,
+            "statusEffects": [],
             "tag": "",
             "timeGap": 300,
-            "tweenType": "QUARTIN",
+            "tweenType": "QUADIN",
             "volume": 50
           },
           "tag": "SharkletTrigger"

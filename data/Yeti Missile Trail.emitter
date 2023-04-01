@@ -1,0 +1,20 @@
+{
+  "arcOffset": 1800,
+  "cooldown": 10,
+  "endSound": "",
+  "endVolume": 50,
+  "halfArc": 450,
+  "loopSound": "",
+  "loopVolume": 50,
+  "maxDist": 20,
+  "minDist": 10,
+  "mirror": 0,
+  "name": "Yeti Missile Trail",
+  "particleCount": 1,
+  "particleTypes": [
+    "Yeti Missile Trail"
+  ],
+  "startSound": "",
+  "startVolume": 50
+}
+

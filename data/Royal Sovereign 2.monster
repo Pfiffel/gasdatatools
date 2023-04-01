@@ -7,7 +7,7 @@
   "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
-  "hp": 4000,
+  "hp": 6000,
   "idleAnimation": "Royal Monarch",
   "maxMoveDistance": 500,
   "name": "Royal Sovereign 2",
@@ -59,7 +59,7 @@
           "powers": [
             {
               "data": {
-                "dps": 500
+                "dps": 600
               },
               "tag": "SizzlePower"
             }
@@ -115,7 +115,7 @@
           "powers": [
             {
               "data": {
-                "dps": 500
+                "dps": 600
               },
               "tag": "SizzlePower"
             }

@@ -1,0 +1,258 @@
+{
+  "armor": 0,
+  "boss": 1,
+  "burrowDetectRange": 0,
+  "collisionRadius": 100,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Royal Monarch Enrage 2",
+  "drops": [],
+  "fixedFacing": 0,
+  "healRate": 0,
+  "hp": 6000,
+  "idleAnimation": "Royal Monarch",
+  "maxMoveDistance": 500,
+  "name": "Lord Protector Cromwell 3",
+  "objectType": "Lord Protector Cromwell",
+  "onDamageSoundPack": "",
+  "pauseBetweenMovements": 0,
+  "resistant": 0,
+  "runAnimation": "Royal Monarch",
+  "runAnimationDuration": 200,
+  "runSpeed": 40,
+  "shields": [
+    {
+      "additionalRadius": 30,
+      "angle": 0,
+      "color": 47103,
+      "halfArc": 400,
+      "percentProtection": 90,
+      "thickness": 20
+    },
+    {
+      "additionalRadius": 30,
+      "angle": 1800,
+      "color": 47103,
+      "halfArc": 400,
+      "percentProtection": 90,
+      "thickness": 20
+    }
+  ],
+  "successorInvulnerability": 1,
+  "successorMonster": "Lord Protector Cromwell 4",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret Main",
+      "cooldown": 6000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Lord Protector Cromwell Turret",
+      "params": {
+        "data": {
+          "gunBulletType": "Lord Protector Cromwell",
+          "range": 800
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "Turret Main",
+      "cooldown": 4000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Lord Protector Cromwell Turret",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "bulletRange": 800,
+                "delay": 300,
+                "glyphType": "",
+                "gunBulletType": "Lord Protector Cromwell Triggerlock",
+                "numBullets": 3,
+                "range": 800,
+                "salvoes": [
+                  {
+                    "angle": 0,
+                    "mirror": 1
+                  },
+                  {
+                    "angle": 240,
+                    "mirror": 1
+                  },
+                  {
+                    "angle": 480,
+                    "mirror": 1
+                  },
+                  {
+                    "angle": 120,
+                    "mirror": 1
+                  },
+                  {
+                    "angle": 360,
+                    "mirror": 1
+                  },
+                  {
+                    "angle": 600,
+                    "mirror": 1
+                  }
+                ]
+              },
+              "tag": "BarrageParams"
+            },
+            {
+              "data": {
+                "angleBetweenProjectiles": 200,
+                "gunBulletType": "Royal Albion",
+                "leading": 0,
+                "numProjectiles": 9,
+                "range": 800
+              },
+              "tag": "GunParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "Turret BR",
+      "cooldown": 1800,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Lord Protector Cromwell Turret Aux",
+      "params": {
+        "data": {
+          "gunBulletType": "Royal Monarch",
+          "range": 700
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "Turret BL",
+      "cooldown": 1800,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Lord Protector Cromwell Turret Aux",
+      "params": {
+        "data": {
+          "gunBulletType": "Royal Monarch",
+          "range": 700
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "",
+      "cooldown": 10000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "delay": 500,
+          "range": 700,
+          "salvoes": [
+            {
+              "angle": 0,
+              "count": 6,
+              "emitterType": "",
+              "explosionType": "",
+              "guardian": 0,
+              "lifetime": 7000,
+              "monsterName": "Royal Fire Pod",
+              "movement": {
+                "data": {
+                  "playerPolicy": 0,
+                  "radius": 400
+                },
+                "tag": "RandomMovement"
+              },
+              "noCollide": 1,
+              "noRespawn": 0,
+              "projectileType": "Iron Tortugon Capsule",
+              "radius": 500,
+              "sound": "",
+              "speed": 500,
+              "volume": 50
+            }
+          ]
+        },
+        "tag": "MinionBarrageParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "RandomTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "",
+      "cooldown": 1000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "emitterType": "",
+          "explosionType": "",
+          "guardian": 1,
+          "lifetime": 0,
+          "maxCount": 1,
+          "monsterName": "Sir Archibald",
+          "movement": {
+            "data": {
+              "radius": 400
+            },
+            "tag": "OrbitMovement"
+          },
+          "noCollide": 1,
+          "noRespawn": 1,
+          "projectileType": "",
+          "range": 0,
+          "sound": "",
+          "speed": 0,
+          "volume": 50
+        },
+        "tag": "MinionParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "RandomTargeting"
+      }
+    }
+  ],
+  "xp": 100,
+  "xpLevelCap": 19
+}
+

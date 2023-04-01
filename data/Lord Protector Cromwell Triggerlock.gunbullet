@@ -1,0 +1,25 @@
+{
+  "damage": 150,
+  "emitterType": "Iron Commander Karkus Disarm",
+  "name": "Lord Protector Cromwell Triggerlock",
+  "objectType": "Lord Protector Cromwell Bullet Triggerlock",
+  "powers": [
+    {
+      "data": {
+        "caption": "Triggers Disabled",
+        "duration": 3000,
+        "engines": 0,
+        "guns": 0,
+        "health": 0,
+        "mana": 0,
+        "rotation": 0,
+        "shield": 0,
+        "triggers": 1
+      },
+      "tag": "DisablePower"
+    }
+  ],
+  "soundPack": "Iron Protector Bullet",
+  "speed": 150
+}
+

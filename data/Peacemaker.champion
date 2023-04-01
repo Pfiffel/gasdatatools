@@ -168,8 +168,8 @@
           "tag": "SlugTrigger"
         }
       ],
-      "sound": "Player_Warthog_PolaricDetonation",
-      "volume": 50
+      "sound": "Player_Peacemaker_Bomblet_Launch",
+      "volume": 75
     },
     {
       "cooldown": 5000,

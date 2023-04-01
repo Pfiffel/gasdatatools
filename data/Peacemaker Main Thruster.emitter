@@ -1,11 +1,11 @@
 {
   "arcOffset": 1800,
   "cooldown": 10,
-  "endSound": "Player_Cyclops_Movement_End",
-  "endVolume": 50,
+  "endSound": "Player_Peacemaker_Movement_End",
+  "endVolume": 90,
   "halfArc": 50,
-  "loopSound": "Player_Cyclops_Movement_Loop",
-  "loopVolume": 30,
+  "loopSound": "Player_Peacemaker_Movement_Loop",
+  "loopVolume": 60,
   "maxDist": 100,
   "minDist": 50,
   "mirror": 0,
@@ -15,7 +15,7 @@
     "Peacemaker Thruster",
     "Peacemaker Thruster 2"
   ],
-  "startSound": "Player_Cyclops_Movement_Start",
-  "startVolume": 50
+  "startSound": "Player_Peacemaker_Movement_Start",
+  "startVolume": 90
 }
 

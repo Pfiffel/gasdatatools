@@ -1,5 +1,7 @@
 {
+  "armor": 0,
   "boss": 1,
+  "burrowDetectRange": 0,
   "collisionRadius": 70,
   "consolationPrizes": [
     "Fusion Booster",
@@ -224,16 +226,21 @@
       "micros": 15000
     }
   ],
+  "fixedFacing": 0,
   "healRate": 0,
-  "hp": 8000,
+  "hp": 10000,
   "idleAnimation": "BaseArcher Idle",
   "maxMoveDistance": 500,
   "name": "Iron Commander Karkus 5",
   "objectType": "Iron Commander Karkus",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "Iron Commander Karkus Run",
   "runAnimationDuration": 700,
   "runSpeed": 100,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "",
   "weaponType": "",
   "weapons": [
@@ -262,6 +269,7 @@
                 "emitterType": "Iron Triumph",
                 "explosionType": "Iron Triumph Burst",
                 "objectType": "Iron Commander Karkus Mine",
+                "persist": 0,
                 "powers": [],
                 "radius": 150,
                 "range": 700,
@@ -276,6 +284,7 @@
                 "emitterType": "Iron Triumph",
                 "explosionType": "Iron Triumph Burst",
                 "objectType": "Iron Commander Karkus Mine",
+                "persist": 0,
                 "powers": [],
                 "radius": 150,
                 "range": 700,
@@ -288,7 +297,9 @@
         "tag": "CompoundParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -306,6 +317,7 @@
               "data": {
                 "bulletRange": 750,
                 "delay": 300,
+                "glyphType": "",
                 "gunBulletType": "Iron Commander Karkus Disarm",
                 "numBullets": 4,
                 "range": 800,
@@ -348,6 +360,7 @@
               "data": {
                 "bulletRange": 750,
                 "delay": 300,
+                "glyphType": "",
                 "gunBulletType": "Iron Commander Karkus Disarm",
                 "numBullets": 4,
                 "range": 800,
@@ -391,7 +404,9 @@
         "tag": "CompoundParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -456,6 +471,7 @@
               "data": {
                 "bulletRange": 300,
                 "delay": 0,
+                "glyphType": "",
                 "gunBulletType": "Iron Bulwark",
                 "numBullets": 12,
                 "range": 600,
@@ -485,7 +501,9 @@
         "tag": "CompoundParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -511,7 +529,9 @@
         "tag": "CompoundParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }

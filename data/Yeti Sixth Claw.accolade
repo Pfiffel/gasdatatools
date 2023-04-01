@@ -1,0 +1,26 @@
+{
+  "champion": "Yeti",
+  "displayName": "Sixth Claw",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "count": 1,
+            "damage": 0,
+            "range": 0,
+            "speed": 0,
+            "timeGap": 0
+          },
+          "tag": "SharkletTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Yeti 2 Sharklet",
+        "tooltip": "On Icy Claws:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Yeti Sixth Claw"
+}
+

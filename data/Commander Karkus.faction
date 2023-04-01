@@ -1,6 +1,6 @@
 {
   "bossMonsterName": "Iron Commander Karkus",
-  "enabled": 0,
+  "enabled": 1,
   "factionLairs": [
     {
       "lairType": "Karkus 0 Noob",

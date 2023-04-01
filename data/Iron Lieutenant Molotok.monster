@@ -42,7 +42,7 @@
   ],
   "fixedFacing": 0,
   "healRate": 10,
-  "hp": 8000,
+  "hp": 10000,
   "idleAnimation": "BaseArcher Idle",
   "maxMoveDistance": 500,
   "name": "Iron Lieutenant Molotok",

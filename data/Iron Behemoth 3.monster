@@ -43,7 +43,7 @@
     }
   ],
   "healRate": 0,
-  "hp": 4000,
+  "hp": 6000,
   "idleAnimation": "BaseArcher Idle",
   "maxMoveDistance": 500,
   "name": "Iron Behemoth 3",

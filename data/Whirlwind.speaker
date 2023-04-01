@@ -5,9 +5,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Whirlwind_OhImAllAflutter",
           "text": "Oh, I'm all aflutter!",
-          "volume": 50
+          "volume": 100
         }
       ],
       "tag": "Equip"
@@ -15,19 +15,19 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Whirlwind_HereThereEverywhere",
           "text": "Here, there, everywhere!",
-          "volume": 50
+          "volume": 100
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Whirlwind_AllAroundEverywhere",
           "text": "All around, everywhere!",
-          "volume": 50
+          "volume": 100
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Whirlwind_LeftRightLowHigh",
           "text": "Left, right, low, high, oh my!",
-          "volume": 50
+          "volume": 100
         }
       ],
       "tag": "Spawn"
@@ -35,9 +35,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Whirlwind_Level1000",
           "text": "Level one thousand! My goodness!",
-          "volume": 50
+          "volume": 100
         }
       ],
       "tag": "Max Level"
@@ -45,19 +45,19 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Whirlwind_OhGoody",
           "text": "Oh goody!",
-          "volume": 50
+          "volume": 100
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Whirlwind_VeryNice",
           "text": "Very nice!",
-          "volume": 50
+          "volume": 100
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Whirlwind_OhHowLovely",
           "text": "Oh, how lovely!",
-          "volume": 50
+          "volume": 100
         }
       ],
       "tag": "Add Boss Kill"
@@ -65,9 +65,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Whirlwind_MyGracious",
           "text": "My gracious!",
-          "volume": 50
+          "volume": 100
         }
       ],
       "tag": "Close Call"
@@ -75,9 +75,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Whirlwind_OhDearieMe",
           "text": "Oh dearie me!",
-          "volume": 50
+          "volume": 100
         }
       ],
       "tag": "Low Level Death"
@@ -85,9 +85,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Whirlwind_WedBetterStayAway",
           "text": "We'd better stay away from that!",
-          "volume": 50
+          "volume": 100
         }
       ],
       "tag": "Discover Beacon"
@@ -95,9 +95,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Whirlwind_YouGotTheBacon",
           "text": "You got the bacon?",
-          "volume": 50
+          "volume": 100
         }
       ],
       "tag": "Activate Beacon"
@@ -105,9 +105,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Whirlwind_WhatsGoingOn",
           "text": "What's going on?",
-          "volume": 50
+          "volume": 100
         }
       ],
       "tag": "Quest Boss Victory"
@@ -115,9 +115,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Whirlwind_Hello",
           "text": "Hello?",
-          "volume": 50
+          "volume": 100
         }
       ],
       "tag": "Retire"
@@ -125,9 +125,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Whirlwind_Hello",
           "text": "Hello?",
-          "volume": 50
+          "volume": 100
         }
       ],
       "tag": "Retire With Medal"
@@ -135,12 +135,22 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Whirlwind_Hello",
           "text": "Hello?",
-          "volume": 50
+          "volume": 100
         }
       ],
       "tag": "Retire With Accolade"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Whirlwind_Huh",
+          "text": "Huh?",
+          "volume": 100
+        }
+      ],
+      "tag": "Remove"
     }
   ]
 }

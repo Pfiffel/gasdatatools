@@ -5,7 +5,7 @@
   "deathCrySoundPack": "Iron Colossus Enrage 3",
   "drops": [],
   "healRate": 0,
-  "hp": 4000,
+  "hp": 6000,
   "idleAnimation": "BaseArcher Idle",
   "name": "Iron Colossus 2",
   "objectType": "Iron Colossus",

@@ -1,0 +1,176 @@
+{
+  "armor": 0,
+  "boss": 1,
+  "burrowDetectRange": 0,
+  "collisionRadius": 100,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Royal Monarch Enrage 2",
+  "drops": [],
+  "fixedFacing": 0,
+  "healRate": 0,
+  "hp": 6000,
+  "idleAnimation": "Royal Monarch",
+  "maxMoveDistance": 100,
+  "name": "Lord Protector Cromwell",
+  "objectType": "Lord Protector Cromwell",
+  "onDamageSoundPack": "",
+  "pauseBetweenMovements": 0,
+  "resistant": 0,
+  "runAnimation": "Royal Monarch",
+  "runAnimationDuration": 200,
+  "runSpeed": 60,
+  "shields": [],
+  "successorInvulnerability": 1,
+  "successorMonster": "Lord Protector Cromwell 2",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "",
+      "cooldown": 3000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "emitterType": "",
+          "explosionType": "",
+          "guardian": 1,
+          "lifetime": 30000,
+          "maxCount": 5,
+          "monsterName": "Royal Corgi",
+          "movement": {
+            "data": {
+              "radius": 300
+            },
+            "tag": "OrbitMovement"
+          },
+          "noCollide": 1,
+          "noRespawn": 1,
+          "projectileType": "",
+          "range": 100,
+          "sound": "",
+          "speed": 300,
+          "volume": 50
+        },
+        "tag": "MinionParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "Turret Main",
+      "cooldown": 4000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Lord Protector Cromwell Turret",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "bulletRange": 800,
+                "delay": 300,
+                "glyphType": "",
+                "gunBulletType": "Lord Protector Cromwell Triggerlock",
+                "numBullets": 3,
+                "range": 800,
+                "salvoes": [
+                  {
+                    "angle": 0,
+                    "mirror": 1
+                  },
+                  {
+                    "angle": 240,
+                    "mirror": 1
+                  },
+                  {
+                    "angle": 480,
+                    "mirror": 1
+                  },
+                  {
+                    "angle": 120,
+                    "mirror": 1
+                  },
+                  {
+                    "angle": 360,
+                    "mirror": 1
+                  },
+                  {
+                    "angle": 600,
+                    "mirror": 1
+                  }
+                ]
+              },
+              "tag": "BarrageParams"
+            },
+            {
+              "data": {
+                "angleBetweenProjectiles": 200,
+                "gunBulletType": "Royal Albion",
+                "leading": 0,
+                "numProjectiles": 9,
+                "range": 800
+              },
+              "tag": "GunParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "Turret BR",
+      "cooldown": 2000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Lord Protector Cromwell Turret Aux",
+      "params": {
+        "data": {
+          "gunBulletType": "Royal Monarch",
+          "range": 700
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "Turret BL",
+      "cooldown": 2000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Lord Protector Cromwell Turret Aux",
+      "params": {
+        "data": {
+          "gunBulletType": "Royal Monarch",
+          "range": 700
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 100,
+  "xpLevelCap": 19
+}
+

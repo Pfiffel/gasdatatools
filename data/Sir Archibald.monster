@@ -1,0 +1,156 @@
+{
+  "boss": 0,
+  "burrowDetectRange": 0,
+  "collisionRadius": 34,
+  "consolationPrizes": [
+    "Maser Booster",
+    "Multiphasic Loader"
+  ],
+  "deathCrySoundPack": "Royal Knight Death Cries",
+  "drops": [
+    {
+      "itemType": "Fusion Booster",
+      "levelCap": 20,
+      "micros": 10000
+    },
+    {
+      "itemType": "Maxim Loader",
+      "levelCap": 20,
+      "micros": 10000
+    },
+    {
+      "itemType": "Darkmatter Booster",
+      "levelCap": 20,
+      "micros": 50000
+    },
+    {
+      "itemType": "Surge Loader",
+      "levelCap": 20,
+      "micros": 50000
+    },
+    {
+      "itemType": "Antimatter Booster",
+      "levelCap": 20,
+      "micros": 100000
+    },
+    {
+      "itemType": "Relativistic Loader",
+      "levelCap": 20,
+      "micros": 100000
+    }
+  ],
+  "fixedFacing": 0,
+  "healRate": 0,
+  "hp": 6000,
+  "idleAnimation": "BaseArcher Idle",
+  "maxMoveDistance": 500,
+  "name": "Sir Archibald",
+  "objectType": "Sir Archibald",
+  "pauseBetweenMovements": 0,
+  "runAnimation": "Royal Cavalier Run",
+  "runAnimationDuration": 700,
+  "runSpeed": 85,
+  "shields": [],
+  "successorInvulnerability": 1,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 1000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Royal Knight Turret",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "extraRange": 200,
+                "range": 350,
+                "speed": 200
+              },
+              "tag": "ChargeParams"
+            },
+            {
+              "data": {
+                "damage": 100,
+                "delay": 500,
+                "explosionType": "Royal Monarch Shotgun",
+                "halfArc": 1800,
+                "powers": [
+                  {
+                    "data": {
+                      "distance": 80,
+                      "speed": 700
+                    },
+                    "tag": "KnockbackPower"
+                  }
+                ],
+                "range": 200,
+                "triggerSound": "Enemy_RoyalKnight_Shotgun_Telegraph",
+                "triggerVolume": 50
+              },
+              "tag": "ShotgunParams"
+            },
+            {
+              "data": {
+                "damage": 100,
+                "delay": 1000,
+                "explosionType": "Royal Monarch Shotgun",
+                "halfArc": 350,
+                "powers": [
+                  {
+                    "data": {
+                      "distance": 80,
+                      "speed": 700
+                    },
+                    "tag": "KnockbackPower"
+                  }
+                ],
+                "range": 400,
+                "triggerSound": "Enemy_RoyalKnight_Shotgun_Telegraph",
+                "triggerVolume": 50
+              },
+              "tag": "ShotgunParams"
+            },
+            {
+              "data": {},
+              "tag": "NullParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 900,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Royal Knight Turret",
+      "params": {
+        "data": {
+          "angleBetweenProjectiles": 150,
+          "gunBulletType": "Royal Albion",
+          "leading": 0,
+          "numProjectiles": 3,
+          "range": 600
+        },
+        "tag": "GunParams"
+      },
+      "targeting": {
+        "data": {},
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 49,
+  "xpLevelCap": 19
+}
+

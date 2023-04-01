@@ -1,5 +1,6 @@
 {
   "color": 13610263,
+  "groundColors": [],
   "name": "Badlands",
   "objects": [
     {
@@ -26,6 +27,7 @@
       "density": 1,
       "objectType": "Skull"
     }
-  ]
+  ],
+  "regionType": "Plateau"
 }
 

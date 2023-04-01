@@ -1,0 +1,145 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Yeti Missile",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 2608599,
+      "height": 99,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 42,
+          "y": 11
+        },
+        {
+          "x": 31,
+          "y": 16
+        },
+        {
+          "x": 18,
+          "y": 15
+        },
+        {
+          "x": 6,
+          "y": 12
+        },
+        {
+          "x": -46,
+          "y": 12
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16771535,
+      "height": 100,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 80,
+          "y": 0
+        },
+        {
+          "x": 69,
+          "y": 7
+        },
+        {
+          "x": 56,
+          "y": 10
+        },
+        {
+          "x": 30,
+          "y": 12
+        },
+        {
+          "x": 20,
+          "y": 11
+        },
+        {
+          "x": 17,
+          "y": 5
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16771535,
+      "height": 100,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -9,
+          "y": 13
+        },
+        {
+          "x": -11,
+          "y": 17
+        },
+        {
+          "x": -15,
+          "y": 17
+        },
+        {
+          "x": -18,
+          "y": 13
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16771535,
+      "height": 100,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -40,
+          "y": 10
+        },
+        {
+          "x": -47,
+          "y": 21
+        },
+        {
+          "x": -54,
+          "y": 21
+        },
+        {
+          "x": -57,
+          "y": 5
+        },
+        {
+          "x": -49,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

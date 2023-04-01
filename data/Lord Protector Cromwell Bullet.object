@@ -1,0 +1,119 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Lord Protector Cromwell Bullet",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 1266116,
+      "height": 57,
+      "mirror": 1,
+      "name": "Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -22,
+          "y": 0
+        },
+        {
+          "x": -17,
+          "y": 15
+        },
+        {
+          "x": -7,
+          "y": 22
+        },
+        {
+          "x": 7,
+          "y": 22
+        },
+        {
+          "x": 17,
+          "y": 16
+        },
+        {
+          "x": 22,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 1556450,
+      "height": 58,
+      "mirror": 1,
+      "name": "Middle",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 15,
+          "y": 0
+        },
+        {
+          "x": 12,
+          "y": 10
+        },
+        {
+          "x": 4,
+          "y": 15
+        },
+        {
+          "x": -4,
+          "y": 15
+        },
+        {
+          "x": -12,
+          "y": 10
+        },
+        {
+          "x": -15,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 2673835,
+      "height": 59,
+      "mirror": 1,
+      "name": "Inner",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 9,
+          "y": 1
+        },
+        {
+          "x": 6,
+          "y": 8
+        },
+        {
+          "x": 0,
+          "y": 9
+        },
+        {
+          "x": -6,
+          "y": 8
+        },
+        {
+          "x": -9,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

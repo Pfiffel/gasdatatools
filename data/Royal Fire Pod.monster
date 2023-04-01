@@ -1,0 +1,77 @@
+{
+  "armor": 0,
+  "boss": 0,
+  "burrowDetectRange": 0,
+  "collisionRadius": 38,
+  "consolationPrizes": [],
+  "deathCrySoundPack": "Iron Colossus Station Death Cries",
+  "drops": [],
+  "fixedFacing": 0,
+  "healRate": 0,
+  "hp": 2000,
+  "idleAnimation": "BaseArcher Idle",
+  "maxMoveDistance": 500,
+  "name": "Royal Fire Pod",
+  "objectType": "Royal Fire Pod",
+  "onDamageSoundPack": "",
+  "pauseBetweenMovements": 0,
+  "resistant": 0,
+  "runAnimation": "",
+  "runAnimationDuration": 700,
+  "runSpeed": 0,
+  "shields": [],
+  "successorInvulnerability": 1,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 2000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "Royal Fire Pod Turret",
+      "params": {
+        "data": {
+          "delay": 600,
+          "duration": 1000,
+          "endSound": "Enemy_RoyalDragoon_Flamethrower_End",
+          "endVolume": 75,
+          "halfArc": 300,
+          "loopSound": "Enemy_RoyalDragoon_Flamethrower_Loop",
+          "loopVolume": 75,
+          "particles": [
+            {
+              "cooldown": 2,
+              "maxDistPercent": 100,
+              "minDistPercent": 30,
+              "particleType": "Draco Blast"
+            }
+          ],
+          "powers": [
+            {
+              "data": {
+                "dps": 300
+              },
+              "tag": "SizzlePower"
+            }
+          ],
+          "range": 250,
+          "startSound": "Enemy_RoyalDragoon_Flamethrower_Start",
+          "startVolume": 75,
+          "telegraphSound": "Enemy_IronConqueror_Shotgun_Med_Telegraph",
+          "telegraphVolume": 50
+        },
+        "tag": "FlamethrowerParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 0,
+  "xpLevelCap": 19
+}
+

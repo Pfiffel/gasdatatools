@@ -16,7 +16,7 @@
     }
   ],
   "name": "Peacemaker Bomblet",
-  "sound": "Enemy_IronPurifier_Med_Mine_Explode",
-  "volume": 50
+  "sound": "Player_Peacemaker_Bomblet_Explode",
+  "volume": 150
 }
 

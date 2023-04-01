@@ -1,0 +1,23 @@
+{
+  "champion": "Yeti",
+  "displayName": "Protected Ambush",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "duration": 0,
+            "maxStrength": 75
+          },
+          "tag": "ExtraShieldTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Yeti 3 ExtraShield",
+        "tooltip": "On Frosty Ambush:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Yeti Protected Ambush"
+}
+

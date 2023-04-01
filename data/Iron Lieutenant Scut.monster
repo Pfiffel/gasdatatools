@@ -42,7 +42,7 @@
   ],
   "fixedFacing": 0,
   "healRate": 12,
-  "hp": 12000,
+  "hp": 14000,
   "idleAnimation": "BaseArcher Idle",
   "maxMoveDistance": 500,
   "name": "Iron Lieutenant Scut",

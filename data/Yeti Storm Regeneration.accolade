@@ -1,0 +1,23 @@
+{
+  "champion": "Yeti",
+  "displayName": "Storm Regeneration",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "amount": 250,
+            "duration": 0
+          },
+          "tag": "HealOverTimeTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Yeti 4 HealOverTime",
+        "tooltip": "On Ice Storm:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Yeti Storm Regeneration"
+}
+

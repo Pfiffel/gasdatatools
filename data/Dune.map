@@ -270,7 +270,7 @@
       ]
     },
     {
-      "laneType": "Swamp",
+      "laneType": "Badlands",
       "waypoints": [
         {
           "x": 63,
@@ -1515,7 +1515,7 @@
       ]
     },
     {
-      "laneType": "Swamp",
+      "laneType": "Badlands",
       "waypoints": [
         {
           "x": -63,
@@ -3269,7 +3269,7 @@
   ],
   "monsterFields": [
     {
-      "decorType": "Swamp Green",
+      "decorType": "Badlands",
       "lairType": "Swamp 0 Noob",
       "localFauna": [
         {
@@ -3277,7 +3277,7 @@
           "name": "Bogweed"
         }
       ],
-      "mapGridDesignator": "Planet Orion-Q154-Beta-5",
+      "mapGridDesignator": "Planet Draco-F902-Pi-12",
       "miniBosses": [],
       "poly": [
         {
@@ -3297,7 +3297,7 @@
           "y": 30000
         }
       ],
-      "sectorName": "QUAGMIRE",
+      "sectorName": "DUNE",
       "tag": "Zone 0"
     },
     {
@@ -3329,7 +3329,7 @@
           "y": 22500
         }
       ],
-      "sectorName": "The Muck",
+      "sectorName": "The Wastes",
       "tag": "Zone 1"
     },
     {
@@ -3366,7 +3366,7 @@
           "y": 15000
         }
       ],
-      "sectorName": "The Azure Bog",
+      "sectorName": "The Sands",
       "tag": "Zone 2"
     },
     {
@@ -3403,7 +3403,7 @@
           "y": 7500
         }
       ],
-      "sectorName": "The Red Squelch",
+      "sectorName": "The Desert",
       "tag": "Zone 3"
     },
     {
@@ -3440,7 +3440,7 @@
           "y": 0
         }
       ],
-      "sectorName": "The Dank Morass",
+      "sectorName": "The Rocks",
       "tag": "Zone 4"
     },
     {
@@ -3478,7 +3478,7 @@
           "y": -7500
         }
       ],
-      "sectorName": "The Tyrian Sludge",
+      "sectorName": "The Dunes",
       "tag": "Zone 5"
     },
     {
@@ -3516,7 +3516,7 @@
           "y": -15000
         }
       ],
-      "sectorName": "The Sulfur Swamp",
+      "sectorName": "The Parch",
       "tag": "Zone 6"
     },
     {
@@ -3555,7 +3555,7 @@
           "y": -22500
         }
       ],
-      "sectorName": "The Acid Mire",
+      "sectorName": "The Dustbowl",
       "tag": "Zone 7"
     },
     {
@@ -3597,7 +3597,7 @@
           "y": -30000
         }
       ],
-      "sectorName": "The Black Cesspit",
+      "sectorName": "The Barrens",
       "tag": "Zone 8"
     }
   ],
@@ -3655,7 +3655,7 @@
           "y": 27305
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -3692,7 +3692,7 @@
           "y": 27338
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -3803,7 +3803,7 @@
           "y": 29369
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -4090,7 +4090,7 @@
           "y": 27738
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -4205,7 +4205,7 @@
           "y": 26963
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -8161,7 +8161,7 @@
           "y": 27567
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -8406,7 +8406,7 @@
           "y": 28726
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -10186,7 +10186,7 @@
           "y": 28060
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -10747,7 +10747,7 @@
           "y": 28670
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -11064,7 +11064,7 @@
           "y": 28113
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -11548,7 +11548,7 @@
           "y": 28231
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -11719,7 +11719,7 @@
           "y": 28879
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -11752,7 +11752,7 @@
           "y": 27331
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -11867,7 +11867,7 @@
           "y": 27660
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -11994,7 +11994,7 @@
           "y": 28535
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -12101,7 +12101,7 @@
           "y": 28053
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -12175,7 +12175,7 @@
           "y": 29187
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -12253,7 +12253,7 @@
           "y": 29010
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -12294,7 +12294,7 @@
           "y": 26767
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -12612,7 +12612,7 @@
           "y": 27822
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -12649,7 +12649,7 @@
           "y": 26785
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -12686,7 +12686,7 @@
           "y": 28775
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -12731,7 +12731,7 @@
           "y": 29199
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -12931,7 +12931,7 @@
           "y": 28294
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -12968,7 +12968,7 @@
           "y": 27733
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -13005,7 +13005,7 @@
           "y": 28849
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -13564,7 +13564,7 @@
           "y": 27409
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -14004,7 +14004,7 @@
           "y": 28917
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -14049,7 +14049,7 @@
           "y": 27111
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -14372,7 +14372,7 @@
           "y": 28164
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -14655,7 +14655,7 @@
           "y": 28835
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -14930,7 +14930,7 @@
           "y": 27835
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -15008,7 +15008,7 @@
           "y": 28644
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -15082,7 +15082,7 @@
           "y": 28792
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -15119,7 +15119,7 @@
           "y": 28731
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -15156,7 +15156,7 @@
           "y": 28126
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -15351,7 +15351,7 @@
           "y": 28974
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -15392,7 +15392,7 @@
           "y": 28810
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -15429,7 +15429,7 @@
           "y": 29328
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -15511,7 +15511,7 @@
           "y": 28190
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -15552,7 +15552,7 @@
           "y": 28399
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -15626,7 +15626,7 @@
           "y": 26928
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -15867,7 +15867,7 @@
           "y": 28359
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -29579,7 +29579,7 @@
           "y": 27585
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -30027,7 +30027,7 @@
           "y": 27305
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -30064,7 +30064,7 @@
           "y": 27338
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -30175,7 +30175,7 @@
           "y": 29369
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -30462,7 +30462,7 @@
           "y": 27738
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -30577,7 +30577,7 @@
           "y": 26963
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -34803,7 +34803,7 @@
           "y": 27567
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -35048,7 +35048,7 @@
           "y": 28726
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -36828,7 +36828,7 @@
           "y": 28060
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -37389,7 +37389,7 @@
           "y": 28670
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -37706,7 +37706,7 @@
           "y": 28113
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -38190,7 +38190,7 @@
           "y": 28231
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -38361,7 +38361,7 @@
           "y": 28879
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -38394,7 +38394,7 @@
           "y": 27331
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -38509,7 +38509,7 @@
           "y": 27660
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -38636,7 +38636,7 @@
           "y": 28535
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -38743,7 +38743,7 @@
           "y": 28053
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -38817,7 +38817,7 @@
           "y": 29187
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -38895,7 +38895,7 @@
           "y": 29010
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -38936,7 +38936,7 @@
           "y": 26767
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -39254,7 +39254,7 @@
           "y": 27822
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -39291,7 +39291,7 @@
           "y": 26785
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -39328,7 +39328,7 @@
           "y": 28775
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -39373,7 +39373,7 @@
           "y": 29199
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -39573,7 +39573,7 @@
           "y": 28294
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -39610,7 +39610,7 @@
           "y": 27733
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -39647,7 +39647,7 @@
           "y": 28849
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -40206,7 +40206,7 @@
           "y": 27409
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -40646,7 +40646,7 @@
           "y": 28917
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -40691,7 +40691,7 @@
           "y": 27111
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -41014,7 +41014,7 @@
           "y": 28164
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -41297,7 +41297,7 @@
           "y": 28835
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -41572,7 +41572,7 @@
           "y": 27835
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -41650,7 +41650,7 @@
           "y": 28644
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -41724,7 +41724,7 @@
           "y": 28792
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -41761,7 +41761,7 @@
           "y": 28731
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -41798,7 +41798,7 @@
           "y": 28126
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -41993,7 +41993,7 @@
           "y": 28974
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -42034,7 +42034,7 @@
           "y": 28810
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -42071,7 +42071,7 @@
           "y": 29328
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -42153,7 +42153,7 @@
           "y": 28190
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -42194,7 +42194,7 @@
           "y": 28399
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -42268,7 +42268,7 @@
           "y": 26928
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -42509,7 +42509,7 @@
           "y": 28359
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [
@@ -56933,7 +56933,7 @@
           "y": 27585
         }
       ],
-      "regionType": "Swamp"
+      "regionType": "Plateau"
     },
     {
       "poly": [

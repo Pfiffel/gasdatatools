@@ -2,7 +2,7 @@
   "damage": 250,
   "emitterType": "Iron Triumph",
   "name": "Royal Monarch",
-  "objectType": "Royal Albion Bullet",
+  "objectType": "Royal Monarch Bullet",
   "powers": [],
   "soundPack": "Iron Triumph Bullet",
   "speed": 200
