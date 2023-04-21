@@ -6,7 +6,7 @@
     {
       "data": {
         "activeWhile": 0,
-        "amount": 25,
+        "amount": 10,
         "statType": 17
       },
       "tag": "ItemStat"
@@ -16,6 +16,16 @@
   "guns": 0,
   "name": "Phase Displacer",
   "overworldDrop": 1,
+  "plusEffects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 2,
+        "statType": 17
+      },
+      "tag": "ItemStat"
+    }
+  ],
   "precursorTech": 0,
   "rare": 0,
   "triggers": 0

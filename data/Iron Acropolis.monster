@@ -1,29 +1,37 @@
 {
+  "armor": 0,
   "boss": 0,
+  "burrowDetectRange": 0,
   "collisionRadius": 50,
   "consolationPrizes": [],
   "deathCrySoundPack": "Iron Acropolis Death Cries",
   "drops": [],
+  "fixedFacing": 0,
   "healRate": 0,
   "hp": 1600,
   "idleAnimation": "BaseArcher Idle",
   "maxMoveDistance": 500,
   "name": "Iron Acropolis",
   "objectType": "Iron Acropolis",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "Iron Anvil Run",
+  "runAnimationDuration": 700,
   "runSpeed": 75,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "",
   "weaponType": "",
   "weapons": [
     {
       "attachmentPoint": "Front Left Turret",
       "cooldown": 1000,
+      "extraTargetingArc": 0,
       "halfArc": 1800,
       "objectType": "Iron Acropolis Turret",
       "params": {
         "data": {
-          "aimed": 1,
           "angleBetweenProjectiles": 150,
           "gunBulletType": "Iron Triumph",
           "leading": 0,
@@ -31,16 +39,22 @@
           "range": 500
         },
         "tag": "GunParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "Front Right Turret",
       "cooldown": 1000,
+      "extraTargetingArc": 0,
       "halfArc": 1800,
       "objectType": "Iron Acropolis Turret",
       "params": {
         "data": {
-          "aimed": 1,
           "angleBetweenProjectiles": 150,
           "gunBulletType": "Iron Triumph",
           "leading": 0,
@@ -48,16 +62,22 @@
           "range": 600
         },
         "tag": "GunParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "Back Right Turret",
       "cooldown": 1000,
+      "extraTargetingArc": 0,
       "halfArc": 1800,
       "objectType": "Iron Acropolis Turret",
       "params": {
         "data": {
-          "aimed": 1,
           "angleBetweenProjectiles": 150,
           "gunBulletType": "Iron Triumph",
           "leading": 0,
@@ -65,16 +85,22 @@
           "range": 600
         },
         "tag": "GunParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "Back Left Turret",
       "cooldown": 1000,
+      "extraTargetingArc": 0,
       "halfArc": 1800,
       "objectType": "Iron Acropolis Turret",
       "params": {
         "data": {
-          "aimed": 1,
           "angleBetweenProjectiles": 150,
           "gunBulletType": "Iron Triumph",
           "leading": 0,
@@ -82,17 +108,25 @@
           "range": 600
         },
         "tag": "GunParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "",
       "cooldown": 1000,
+      "extraTargetingArc": 0,
       "halfArc": 1800,
       "objectType": "",
       "params": {
         "data": {
           "bulletRange": 500,
-          "delay": 50,
+          "delay": 100,
+          "glyphType": "",
           "gunBulletType": "Iron Triumph",
           "numBullets": 4,
           "range": 550,
@@ -112,6 +146,12 @@
           ]
         },
         "tag": "BarrageParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     }
   ],

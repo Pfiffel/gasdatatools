@@ -1,25 +1,32 @@
 {
+  "armor": 0,
   "boss": 0,
+  "burrowDetectRange": 0,
   "collisionRadius": 55,
   "consolationPrizes": [],
   "deathCrySoundPack": "Iron Triumph Death Cries",
   "drops": [],
+  "fixedFacing": 0,
   "healRate": 0,
   "hp": 1300,
   "idleAnimation": "",
   "maxMoveDistance": 500,
   "name": "Iron Triumph",
   "objectType": "Iron Triumph",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "",
   "runAnimationDuration": 700,
   "runSpeed": 75,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "",
   "weaponType": "",
   "weapons": [
     {
       "attachmentPoint": "Turret Left",
-      "cooldown": 1500,
+      "cooldown": 1200,
       "extraTargetingArc": 0,
       "halfArc": 1800,
       "objectType": "Iron Triumph Turret",
@@ -34,13 +41,15 @@
         "tag": "GunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "Turret Right",
-      "cooldown": 1500,
+      "cooldown": 1200,
       "extraTargetingArc": 0,
       "halfArc": 1800,
       "objectType": "Iron Triumph Turret",
@@ -55,13 +64,15 @@
         "tag": "GunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "Turret Main",
-      "cooldown": 1500,
+      "cooldown": 1200,
       "extraTargetingArc": 0,
       "halfArc": 1800,
       "objectType": "Iron Triumph Turret",
@@ -76,13 +87,15 @@
         "tag": "GunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "",
-      "cooldown": 750,
+      "cooldown": 1000,
       "extraTargetingArc": 0,
       "halfArc": 1800,
       "objectType": "",
@@ -93,6 +106,7 @@
           "emitterType": "Iron Triumph",
           "explosionType": "Iron Triumph Burst",
           "objectType": "Iron Triumph Mine",
+          "persist": 0,
           "powers": [],
           "radius": 50,
           "range": 500,
@@ -101,7 +115,9 @@
         "tag": "MinelayerParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }

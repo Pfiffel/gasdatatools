@@ -1,0 +1,147 @@
+{
+  "name": "Comet",
+  "portrait": "Comet",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "At last, I have returned.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I have returned. Let us commence.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I have returned. We may begin.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I have returned. It is time.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "An excellent accomplishment, for one so young.",
+          "volume": 50
+        }
+      ],
+      "tag": "Max Level"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "A powerful display, young one.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "You are formidable, young one!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Very impressive, young one!",
+          "volume": 50
+        }
+      ],
+      "tag": "Add Boss Kill"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I thought I'd lost you, young one.",
+          "volume": 50
+        }
+      ],
+      "tag": "Close Call"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Take the long view on these setbacks, young one.",
+          "volume": 50
+        }
+      ],
+      "tag": "Low Level Death"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Young one, capture that beacon!",
+          "volume": 50
+        }
+      ],
+      "tag": "Discover Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "This beacon shall guide our wanderings.",
+          "volume": 50
+        }
+      ],
+      "tag": "Activate Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "An indomitable feat, young one!",
+          "volume": 50
+        }
+      ],
+      "tag": "Quest Boss Victory"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "We shall meet again, in one million years.",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "We shall meet again, in one million years.",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire With Medal"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "We shall meet again, in one million years.",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire With Accolade"
+    }
+  ]
+}
+

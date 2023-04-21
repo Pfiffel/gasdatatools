@@ -1,0 +1,34 @@
+{
+  "description": "Rime guards her heart in a fortress of ice.",
+  "effects": [
+    {
+      "data": {
+        "gunTag": "",
+        "percentChance": 25,
+        "statusEffects": [
+          {
+            "data": {
+              "duration": 3000
+            },
+            "tag": "ChillEffect"
+          },
+          {
+            "data": {
+              "dps": 25,
+              "duration": 3000,
+              "reducedDurationOnBoss": 0,
+              "stack": 1
+            },
+            "tag": "DoTEffect"
+          }
+        ],
+        "tooltipGunDescription": "gun"
+      },
+      "tag": "GunProcs"
+    }
+  ],
+  "enemies": [],
+  "name": "Rime",
+  "tier": 3
+}
+

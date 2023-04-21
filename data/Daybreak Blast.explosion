@@ -1,0 +1,29 @@
+{
+  "layers": [
+    {
+      "angularDensity": 15,
+      "maxDistPercent": 85,
+      "minDistPercent": 85,
+      "particleType": "Daybreak",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 15,
+      "maxDistPercent": 55,
+      "minDistPercent": 55,
+      "particleType": "Daybreak",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 15,
+      "maxDistPercent": 25,
+      "minDistPercent": 25,
+      "particleType": "Daybreak",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Daybreak Blast",
+  "sound": "Player_Wasp_PosTorpedo_Explosion",
+  "volume": 50
+}
+

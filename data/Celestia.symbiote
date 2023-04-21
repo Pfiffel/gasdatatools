@@ -1,0 +1,33 @@
+{
+  "description": "Celestia observes mortals from the heavens, and is moved to pity.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 0,
+            "explosionType": "Celestia",
+            "powers": [
+              {
+                "data": {
+                  "amount": 75,
+                  "showCaption": 0
+                },
+                "tag": "ShieldRechargePower"
+              }
+            ],
+            "radius": 400,
+            "tag": ""
+          },
+          "tag": "AreaHealTrigger"
+        },
+        "when": 2
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Celestia",
+  "tier": 5
+}
+

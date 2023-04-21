@@ -1,0 +1,61 @@
+{
+  "description": "Daybreak radiates power on all.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "explosionType": "Daybreak Blast",
+            "radius": 350,
+            "reticleColor": 11184810,
+            "tag": ""
+          },
+          "tag": "ProjectilePurgeTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 0,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Empty",
+            "facing": 0,
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 350,
+            "reticleColor": 11184810,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 1500
+                },
+                "tag": "DisarmEffect"
+              }
+            ],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": ""
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Daybreak",
+  "tier": 6
+}
+

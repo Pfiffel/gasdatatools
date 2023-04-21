@@ -6,7 +6,7 @@
     {
       "data": {
         "activeWhile": 0,
-        "amount": 20,
+        "amount": 22,
         "statType": 16
       },
       "tag": "ItemStat"
@@ -16,6 +16,16 @@
   "guns": 0,
   "name": "Inertial Accelerator",
   "overworldDrop": 1,
+  "plusEffects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 4,
+        "statType": 16
+      },
+      "tag": "ItemStat"
+    }
+  ],
   "precursorTech": 0,
   "rare": 0,
   "triggers": 0

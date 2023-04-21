@@ -1,0 +1,31 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Daybreak Particle",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16711423,
+      "height": 15,
+      "mirror": 1,
+      "name": "Bar",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -107,
+          "y": 6
+        },
+        {
+          "x": 107,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

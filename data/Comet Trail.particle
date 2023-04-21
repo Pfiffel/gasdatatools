@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 900,
+      "value": 11125976
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 750,
+  "minLifetime": 650,
+  "name": "Comet Trail",
+  "objectType": "Small Hex",
+  "positionTweenType": "QUADINOUT",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 220
+    },
+    {
+      "frac": 900,
+      "value": 280
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 11125976,
+  "startScale": 10,
+  "stayLow": 1
+}
+

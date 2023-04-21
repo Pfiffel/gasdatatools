@@ -1,0 +1,147 @@
+{
+  "name": "Celestia",
+  "portrait": "Celestia",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The stars shine on all creatures great and small.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The heavens shine down on the mortal realm.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "May the wisdom of the heavens guide your deeds.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "The heavens shall protect you in all endeavours.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Even mortal creatures can improve themselves.",
+          "volume": 50
+        }
+      ],
+      "tag": "Max Level"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The power of the heavens will not be denied.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "The supremacy of the stars cannot be challenged.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "No mortal can withstand the power of the stars.",
+          "volume": 50
+        }
+      ],
+      "tag": "Add Boss Kill"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The protection of the heavens!",
+          "volume": 50
+        }
+      ],
+      "tag": "Close Call"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The heavens mourn you.",
+          "volume": 50
+        }
+      ],
+      "tag": "Low Level Death"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "What is this, that was obscured from heaven's gaze?",
+          "volume": 50
+        }
+      ],
+      "tag": "Discover Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The heavens have claimed this beacon.",
+          "volume": 50
+        }
+      ],
+      "tag": "Activate Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Within the starlight lies unspeakable power.",
+          "volume": 50
+        }
+      ],
+      "tag": "Quest Boss Victory"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I shall observe you from afar.",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I shall observe you from afar.",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire With Medal"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I shall observe you from afar.",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire With Accolade"
+    }
+  ]
+}
+

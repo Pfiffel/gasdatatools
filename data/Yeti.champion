@@ -8,7 +8,7 @@
   "guns": [
     {
       "cooldown": 260,
-      "damage": 50,
+      "damage": 40,
       "emitterType": "Yeti Guns",
       "f": 0,
       "halfArc": 1800,
@@ -80,7 +80,7 @@
       "cooldown": 1000,
       "description": "Activates dual endothermic detonators, chilling enemies in the blast zones and recharging shields",
       "icon": "crowned-explosion",
-      "mana": 18,
+      "mana": 20,
       "name": "Cold Bomb",
       "params": [
         {
@@ -138,7 +138,7 @@
             "glyphDuration": 500,
             "glyphRadius": 60,
             "glyphType": "Yeti Shield Glyph",
-            "refillPercentage": 35,
+            "refillPercentage": 30,
             "shieldIndex": -1,
             "tag": "Yeti 1 ShieldRefill"
           },

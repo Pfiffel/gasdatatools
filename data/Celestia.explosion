@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 30,
+      "maxDistPercent": 100,
+      "minDistPercent": 95,
+      "particleType": "Celestia",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Celestia",
+  "sound": "Wasp Dematerialize",
+  "volume": 25
+}
+

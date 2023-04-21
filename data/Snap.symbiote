@@ -8,7 +8,7 @@
         "statusEffects": [
           {
             "data": {
-              "duration": 1500
+              "duration": 3000
             },
             "tag": "FreezeEffect"
           },

@@ -1,4 +1,5 @@
 {
+  "armor": 0,
   "boss": 0,
   "burrowDetectRange": 0,
   "collisionRadius": 48,
@@ -12,7 +13,9 @@
   "maxMoveDistance": 500,
   "name": "Royal Windsor",
   "objectType": "Royal Windsor",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "Royal Windsor",
   "runAnimationDuration": 200,
   "runSpeed": 75,
@@ -23,7 +26,7 @@
   "weapons": [
     {
       "attachmentPoint": "Turret",
-      "cooldown": 750,
+      "cooldown": 1000,
       "extraTargetingArc": 0,
       "halfArc": 1800,
       "objectType": "Royal Windsor Turret",
@@ -35,13 +38,15 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "Aux Turret",
-      "cooldown": 600,
+      "cooldown": 500,
       "extraTargetingArc": 0,
       "halfArc": 1800,
       "objectType": "Royal Windsor Turret Aux",
@@ -56,7 +61,9 @@
         "tag": "GunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }

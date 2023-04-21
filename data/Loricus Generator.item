@@ -16,7 +16,18 @@
   "guns": 0,
   "name": "Loricus Generator",
   "overworldDrop": 1,
+  "plusEffects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 8,
+        "statType": 9
+      },
+      "tag": "ItemStat"
+    }
+  ],
   "precursorTech": 0,
+  "rare": 0,
   "triggers": 0
 }
 

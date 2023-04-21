@@ -1,4 +1,5 @@
 {
+  "armor": 0,
   "boss": 0,
   "burrowDetectRange": 0,
   "collisionRadius": 34,
@@ -12,7 +13,9 @@
   "maxMoveDistance": 500,
   "name": "Royal Albion",
   "objectType": "Royal Albion",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "Royal Windsor",
   "runAnimationDuration": 200,
   "runSpeed": 75,
@@ -23,7 +26,7 @@
   "weapons": [
     {
       "attachmentPoint": "Turret",
-      "cooldown": 3500,
+      "cooldown": 2000,
       "extraTargetingArc": 0,
       "halfArc": 1800,
       "objectType": "Royal Albion Turret",
@@ -57,7 +60,9 @@
         "tag": "BarrageParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }

@@ -16,7 +16,18 @@
   "guns": 1,
   "name": "Neutron Booster",
   "overworldDrop": 1,
+  "plusEffects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 2,
+        "statType": 0
+      },
+      "tag": "ItemStat"
+    }
+  ],
   "precursorTech": 0,
+  "rare": 0,
   "triggers": 0
 }
 

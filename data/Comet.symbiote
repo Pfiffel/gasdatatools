@@ -1,0 +1,40 @@
+{
+  "description": "Comet has returned after one million years.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "count": 1,
+            "damage": 250,
+            "emitterType": "Comet Trail",
+            "objectType": "Comet",
+            "range": 300,
+            "reticleColor": 4681105,
+            "sound": "",
+            "speed": 400,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 3000
+                },
+                "tag": "FreezeEffect"
+              }
+            ],
+            "tag": "",
+            "timeGap": 0,
+            "tweenType": "QUADIN",
+            "volume": 50
+          },
+          "tag": "SharkletTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Comet",
+  "tier": 4
+}
+

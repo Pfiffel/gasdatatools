@@ -16,7 +16,18 @@
   "guns": 1,
   "name": "Relativistic Loader",
   "overworldDrop": 1,
+  "plusEffects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 2,
+        "statType": 5
+      },
+      "tag": "ItemStat"
+    }
+  ],
   "precursorTech": 0,
+  "rare": 0,
   "triggers": 0
 }
 

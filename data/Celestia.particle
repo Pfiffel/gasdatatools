@@ -1,0 +1,40 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 2135997
+    },
+    {
+      "frac": 750,
+      "value": 2135997
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 2,
+  "maxLifetime": 750,
+  "minLifetime": 650,
+  "name": "Celestia",
+  "objectType": "Shield Glyph",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 300
+    },
+    {
+      "frac": 750,
+      "value": 300
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 16776958,
+  "startScale": 10,
+  "stayLow": 1
+}
+
