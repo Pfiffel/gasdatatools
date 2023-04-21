@@ -322,24 +322,31 @@ function MakePickupPackText(data)
 	s += "Create <b>" + data.mineCount + "</b> pickup pack" + (data.mineCount != 1 ? "s" : "") + "<br/>";
 	if(data.healing > 0) s += printKeyAndData("Repair Amount", data.healing, "heal");
 	s += printKeyAndData("Duration", ToTime(data.duration));
-	if(data.powers != undefined) for(let i = 0; i < data.powers.length; i++)
-	{
-		let powerData = data.powers[i].data;
-		let power = data.powers[i].tag;
-		if(power == "StatPower")
+	s += MakePowerText(data);
+	return s;
+}
+function MakePowerText(data)
+{
+	var s = "";
+	if(data.powers != undefined)
+		for(let i = 0; i < data.powers.length; i++)
 		{
-			s += printKeyAndData(GetStat(powerData.statType, 1), BonusPrefix(powerData.amount) + "%");
-			s += printKeyAndData("Duration", ToTime(powerData.duration));
+			let powerData = data.powers[i].data;
+			let power = data.powers[i].tag;
+			if(power == "StatPower")
+			{
+				s += printKeyAndData(GetStat(powerData.statType, 1), BonusPrefix(powerData.amount) + "%");
+				s += printKeyAndData("Duration", ToTime(powerData.duration));
+			}
+			else if(power == "ShieldRechargePower")
+			{
+				s += "Refill all shields <b>" + powerData.amount + "</b>" + "<br/>";
+			}
+			else if(power == "EnergyDamagePower")
+			{
+				s += "Recharge <b>" + -powerData.energyDamage + "</b> energy" + "<br/>";
+			}
 		}
-		else if(power == "ShieldRechargePower")
-		{
-			s += "Refill all shields <b>" + powerData.amount + "</b>" + "<br/>";
-		}
-		else if(power == "EnergyDamagePower")
-		{
-			s += "Recharge <b>" + -powerData.energyDamage + "</b> energy" + "<br/>";
-		}
-	}
 	return s;
 }
 function AddEffectsText(data)
@@ -355,7 +362,7 @@ function AddEffectsText(data)
 		}
 		else if(effect == "RootEffect")
 		{
-			s += printKeyAndData("Root Duration", ToTime(effectData.duration));
+			s += printKeyAndData("Immobilize Duration", ToTime(effectData.duration));
 		}
 		else if(effect == "Damage Effect")
 		{
@@ -363,12 +370,23 @@ function AddEffectsText(data)
 		}
 		else if(effect == "DoTEffect" || effect == "BurningEffect")
 		{
-			s += printKeyAndData("DoT DPS", effectData.dps);
-			s += printKeyAndData("DoT Duration", ToTime(effectData.duration));
+			s += printKeyAndData("Damage", effectData.dps*effectData.duration/1000 + " over " + ToTime(effectData.duration));
 		}
 		else if(effect == "VampEffect")
 		{
 			s += printKeyAndData((effectData.appliesToMana == 1 ? "Energy Recharge" : "Vampiric Repair") + " per hit", effectData.healing, (effectData.appliesToMana == 1 ? "energy" : "heal"));
+		}
+		else if(effect == "DisarmEffect")
+		{
+			s += printKeyAndData("Disarm Duration", ToTime(effectData.duration));
+		}
+		else if(effect == "ChillEffect")
+		{
+			s += printKeyAndData("Chill Duration", ToTime(effectData.duration));
+		}
+		else 
+		{
+			console.log("uncaught effect: " + effect);
 		}
 	}
 	return s;
@@ -403,6 +421,9 @@ function GetTriggeredEffectString(tag, data)
 		s += printKeyAndData("Heal Amount", data.amount + (data.asPercentage == 1 ? "%" : ""), data.applyToMana == 1 ? "energy" : "heal");
 		s += printKeyAndData("Duration", ToTime(data.duration));
 	}
+	else if(tag == "ProjectilePurgeTrigger"){
+		s += "Destroy enemy projectiles within radius of <b>" + data.radius + "</b>" + "<br/>";
+	}
 	else if(tag == "PickupPackTrigger"){
 		s += MakePickupPackText(data);
 	}
@@ -414,8 +435,9 @@ function GetTriggeredEffectString(tag, data)
 		damage += data.damage;
 	}
 	else if(tag == "AreaHealTrigger"){
-		s += printKeyAndData("Repair Amount", data.amount, "heal");
+		if(data.amount > 0) s += printKeyAndData("Repair Amount", data.amount, "heal");
 		s += printKeyAndData("Radius", data.radius);
+		s += MakePowerText(data);
 	}
 	else if(tag == "ShieldRefillTrigger"){
 		s += printKeyAndData("Shield Refill", data.refillPercentage + "%");
@@ -456,6 +478,11 @@ function GetTriggeredEffectString(tag, data)
 		s += printKeyAndData("Missile Count", data.count);
 		s += printKeyAndData("Damage", data.damage);
 		s += printKeyAndData("Range", data.range);
+		for (var effects in data.statusEffects){
+			var effect = data.statusEffects[effects];
+			let o = ShowStatusEffect(effect);
+			s += o.s;
+		}
 		damage += data.damage * data.count;
 	}
 	var o = {};

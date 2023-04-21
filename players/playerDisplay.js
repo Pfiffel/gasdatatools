@@ -98,7 +98,7 @@ function makeAccoladeCell(container, player)
 		container.appendChild(divTable);
 	}
 	var totalCost = CalculateAccoladeCost(accolades.length);
-	accHeader.innerHTML = "<b>" + player.name + " Accolade Bonuses" + "</b> (" + accolades.length + " total, " + totalCost + " total Accolade cost: " + totalCost*100 + " boss kills)";
+	accHeader.innerHTML = "<b>" + player.name + " Accolade Bonuses" + "</b> (" + accolades.length + " total, " + totalCost + " total Accolade cost: " + totalCost*100 + " boss kills & " + totalCost*350 + " Glory)";
 	if(miniProgressionTable[player.name] == undefined) miniProgressionTable[player.name] = {};
 	miniProgressionTable[player.name].bonuses = accolades.length;
 	miniProgressionTable[player.name].accolades = totalCost;
@@ -159,7 +159,10 @@ function makeMiniProgressionTable(container)
 	makeHeaderCell("Accolade Bonuses", th);
 	makeHeaderCell("Medals Cost", th);
 	makeHeaderCell("Accolades Cost", th);
-	makeHeaderCell("Total Boss Kills", th);
+	makeHeaderCell("Medals Glory", th);
+	makeHeaderCell("Accolades Glory", th);
+	makeHeaderCell("Total Glory", th);
+	makeHeaderCell("Minimum Boss Kills", th);
 	for (let tank in miniProgressionTable)
 	{
 		var data = miniProgressionTable[tank];
@@ -169,7 +172,11 @@ function makeMiniProgressionTable(container)
 		makeCell(data.bonuses, tr);
 		makeCell(data.medals, tr);
 		makeCell(data.accolades, tr);
-		makeCell(data.medals*10+data.accolades*100, tr);
+		var medals = (data.medals-1)*(data.medals+4)/2*5;
+		makeCell(medals, tr);
+		makeCell(data.accolades*350, tr);
+		makeCell(medals+data.accolades*350, tr);
+		makeCell(Math.ceil(medals/6)+data.accolades*100, tr);
 	}
 	var div = document.createElement('div');
 	div.innerHTML += "Progression Summary";
@@ -213,7 +220,7 @@ function makeEquipmentCell(container, player)
 		makeCell(type.maxSlots, trE);
 		var unlocks = type.maxSlots - type.minSlots;
 		totalUnlocks += unlocks;
-		var totalCost = unlocks * unlocks;
+		var totalCost = (unlocks*(unlocks+1))/2;
 		totalMedals += totalCost;
 		makeCell(totalCost, trE);
 	}
