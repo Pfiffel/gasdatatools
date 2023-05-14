@@ -10,7 +10,7 @@
           "color": 6862952,
           "left": -1800,
           "level": 0,
-          "maxStrength": 50,
+          "maxStrength": 100,
           "right": 1800
         }
       },
@@ -21,6 +21,7 @@
   "guns": 0,
   "name": "Photon Matrix",
   "overworldDrop": 1,
+  "plusEffects": [],
   "precursorTech": 0,
   "rare": 1,
   "triggers": 0

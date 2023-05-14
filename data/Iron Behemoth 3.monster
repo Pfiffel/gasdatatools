@@ -1,57 +1,33 @@
 {
+  "armor": 0,
   "boss": 1,
+  "burrowDetectRange": 0,
   "collisionRadius": 108,
-  "consolationPrizes": [
-    "Maser Booster",
-    "Dimagnetic Fixer",
-    "Entropic Plate",
-    "Galvanic Capacitor",
-    "Multiphasic Loader",
-    "Resonant Generator",
-    "Kinetic Accelerator",
-    "Lateral Displacer",
-    "Centrifugal Rotator",
-    "Subspace Cycler",
-    "Bilateral Charger"
-  ],
+  "consolationItemPack": "Tier 5 Common",
+  "consolationPrizes": [],
   "deathCrySoundPack": "Iron Colossus Death Cries",
-  "drops": [
-    {
-      "itemType": "Cythera Mechanism",
-      "levelCap": 20,
-      "micros": 30000
-    },
-    {
-      "itemType": "Gortyn Mechanism",
-      "levelCap": 20,
-      "micros": 30000
-    },
-    {
-      "itemType": "Juktas Mechanism",
-      "levelCap": 20,
-      "micros": 30000
-    },
-    {
-      "itemType": "Megara Mechanism",
-      "levelCap": 20,
-      "micros": 30000
-    },
-    {
-      "itemType": "Pylos Mechanism",
-      "levelCap": 20,
-      "micros": 30000
-    }
-  ],
+  "drops": [],
+  "fixedFacing": 0,
   "healRate": 0,
   "hp": 6000,
   "idleAnimation": "BaseArcher Idle",
+  "itemPackDrops": [
+    {
+      "itemPack": "Precursor Techs",
+      "micros": 150000
+    }
+  ],
   "maxMoveDistance": 500,
   "name": "Iron Behemoth 3",
   "objectType": "Iron Behemoth",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "Iron Behemoth Run",
   "runAnimationDuration": 700,
   "runSpeed": 100,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "",
   "weaponType": "",
   "weapons": [
@@ -77,7 +53,9 @@
         "tag": "MortarParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -204,7 +182,9 @@
         "tag": "CompoundParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -222,7 +202,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -240,7 +222,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -258,7 +242,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -276,7 +262,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -294,7 +282,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -312,7 +302,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -330,7 +322,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -348,7 +342,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -362,6 +358,7 @@
         "data": {
           "bulletRange": 800,
           "delay": 0,
+          "glyphType": "",
           "gunBulletType": "Iron Behemoth Slow",
           "numBullets": 12,
           "range": 700,
@@ -376,6 +373,7 @@
       },
       "targeting": {
         "data": {
+          "alsoTargetDematerialized": 0,
           "plusAngle": 0
         },
         "tag": "FixedTargeting"

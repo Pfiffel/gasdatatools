@@ -3,39 +3,28 @@
   "boss": 0,
   "burrowDetectRange": 0,
   "collisionRadius": 35,
+  "consolationItemPack": "",
   "consolationPrizes": [],
   "deathCrySoundPack": "Iron Hammer Death Cries",
-  "drops": [
-    {
-      "itemType": "Starcore Charger",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Volutive Cycler",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Atomic Charger",
-      "levelCap": 20,
-      "micros": 50000
-    },
-    {
-      "itemType": "Reactive Cycler",
-      "levelCap": 20,
-      "micros": 50000
-    },
-    {
-      "itemType": "Flux Charger",
-      "levelCap": 20,
-      "micros": 100000
-    }
-  ],
+  "drops": [],
   "fixedFacing": 0,
   "healRate": 8,
   "hp": 8000,
   "idleAnimation": "",
+  "itemPackDrops": [
+    {
+      "itemPack": "Tier 6 Common",
+      "micros": 200000
+    },
+    {
+      "itemPack": "Tier 7 Common",
+      "micros": 100000
+    },
+    {
+      "itemPack": "Tier 8 Common",
+      "micros": 20000
+    }
+  ],
   "maxMoveDistance": 500,
   "name": "Iron Lieutenant Adler",
   "objectType": "Iron Lieutenant Adler",

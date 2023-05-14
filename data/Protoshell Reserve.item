@@ -1,0 +1,34 @@
+{
+  "boon": 1,
+  "credits": 8,
+  "defenses": 1,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "glyphCount": 6,
+            "glyphDuration": 500,
+            "glyphRadius": 75,
+            "glyphType": "Ephesus Glyph",
+            "refillPercentage": 50,
+            "shieldIndex": -1,
+            "tag": ""
+          },
+          "tag": "ShieldRefillTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Protoshell Reserve",
+  "overworldDrop": 1,
+  "plusEffects": [],
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 0
+}
+

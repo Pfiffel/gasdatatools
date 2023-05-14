@@ -5,8 +5,8 @@
       "data": {
         "params": {
           "data": {
-            "amount": 20,
-            "duration": 2000,
+            "amount": 25,
+            "duration": 5000,
             "emitterType": "",
             "glyphCount": 6,
             "glyphRadius": 45,

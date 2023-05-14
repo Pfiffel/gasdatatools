@@ -1,0 +1,70 @@
+{
+  "boon": 1,
+  "credits": 7,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 120,
+            "delay": 300,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Pulser Grenade",
+            "facing": 0,
+            "halfArc": 1800,
+            "mirror": 1,
+            "offset": {
+              "x": 0,
+              "y": 180
+            },
+            "range": 100,
+            "reticleColor": 7724073,
+            "statusEffects": [],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "Paired Lateral Grenades"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 1
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "delay": 0,
+            "duration": 300,
+            "emitterType": "Pulser Grenade Trail",
+            "facing": 0,
+            "mirror": 1,
+            "objectType": "Pulser Grenade Projectile",
+            "sound": "",
+            "tag": "",
+            "target": {
+              "x": 0,
+              "y": 180
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        },
+        "when": 1
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Pulser Grenades",
+  "overworldDrop": 1,
+  "plusEffects": [],
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 1
+}
+

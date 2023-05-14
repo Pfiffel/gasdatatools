@@ -12,7 +12,7 @@
         },
         "showTooltipStats": 1,
         "tag": "Yeti 1 ShieldRefill",
-        "tooltip": "On Cold Bomb:"
+        "tooltip": "On Cryo Bomb:"
       },
       "tag": "TaggedTriggerBonus"
     }

@@ -3602,6 +3602,7 @@
     }
   ],
   "name": "Quagmire",
+  "overworld": 1,
   "patches": [],
   "quest": {
     "bossKillTime": 300000,

@@ -1,0 +1,32 @@
+{
+  "colorPoints": [
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 600,
+  "minLifetime": 400,
+  "name": "Exarch Grenade Trail",
+  "objectType": "Spike Three",
+  "positionTweenType": "EXPOIN",
+  "scalePoints": [
+    {
+      "frac": 50,
+      "value": 500
+    },
+    {
+      "frac": 500,
+      "value": 500
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 4968084,
+  "startScale": 10,
+  "stayLow": 0
+}
+

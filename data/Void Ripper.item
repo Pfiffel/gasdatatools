@@ -6,7 +6,7 @@
     {
       "data": {
         "cooldown": 500,
-        "damage": 15,
+        "damage": 20,
         "emitterType": "Void Ripper Trail",
         "f": 900,
         "halfArc": 450,
@@ -23,7 +23,7 @@
     {
       "data": {
         "cooldown": 500,
-        "damage": 15,
+        "damage": 20,
         "emitterType": "Void Ripper Trail",
         "f": -900,
         "halfArc": 450,
@@ -42,6 +42,7 @@
   "guns": 1,
   "name": "Void Ripper",
   "overworldDrop": 1,
+  "plusEffects": [],
   "precursorTech": 0,
   "rare": 1,
   "triggers": 0

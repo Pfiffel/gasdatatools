@@ -6,7 +6,7 @@
     {
       "data": {
         "cooldown": 450,
-        "damage": 25,
+        "damage": 40,
         "emitterType": "Charm-Strange Device Trail",
         "f": 1800,
         "halfArc": 900,
@@ -25,6 +25,7 @@
   "guns": 1,
   "name": "Charm-Strange Device",
   "overworldDrop": 1,
+  "plusEffects": [],
   "precursorTech": 0,
   "rare": 1,
   "triggers": 0

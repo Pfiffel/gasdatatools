@@ -8,7 +8,7 @@
         "params": {
           "data": {
             "autoAim": 0,
-            "damage": 125,
+            "damage": 180,
             "delay": 0,
             "drawReticle": 1,
             "drawTooltip": 1,
@@ -38,6 +38,7 @@
   "guns": 0,
   "name": "Graviton Broadside",
   "overworldDrop": 1,
+  "plusEffects": [],
   "precursorTech": 0,
   "rare": 1,
   "triggers": 1

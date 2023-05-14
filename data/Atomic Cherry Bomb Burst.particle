@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 500,
+      "value": 13763629
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 500,
+  "minLifetime": 300,
+  "name": "Atomic Cherry Bomb Burst",
+  "objectType": "Diamond",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 50,
+      "value": 500
+    },
+    {
+      "frac": 999,
+      "value": 400
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 13763629,
+  "startScale": 10,
+  "stayLow": 1
+}
+

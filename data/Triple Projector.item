@@ -10,7 +10,7 @@
           "color": 8289492,
           "left": -1800,
           "level": 0,
-          "maxStrength": 30,
+          "maxStrength": 60,
           "right": 1800
         }
       },
@@ -23,7 +23,7 @@
           "color": 8289492,
           "left": -1800,
           "level": 0,
-          "maxStrength": 30,
+          "maxStrength": 60,
           "right": 1800
         }
       },
@@ -36,7 +36,7 @@
           "color": 8289492,
           "left": -1800,
           "level": 0,
-          "maxStrength": 30,
+          "maxStrength": 60,
           "right": 1800
         }
       },
@@ -47,6 +47,7 @@
   "guns": 0,
   "name": "Triple Projector",
   "overworldDrop": 1,
+  "plusEffects": [],
   "precursorTech": 0,
   "rare": 1,
   "triggers": 0

@@ -17,7 +17,7 @@
       "reticleColor": 11184810,
       "soundPack": "Peacemaker Guns",
       "speed": 1500,
-      "tag": "",
+      "tag": "Peacemaker Main Gun",
       "turretBone": "Turret"
     }
   ],
@@ -29,11 +29,19 @@
   "passives": [
     {
       "data": {
-        "activeWhile": 20,
-        "amount": 200,
-        "statType": 0
+        "chargeTime": 3000,
+        "gunTag": "Peacemaker Main Gun",
+        "statusEffects": [
+          {
+            "data": {
+              "damage": 150
+            },
+            "tag": "DamageEffect"
+          }
+        ],
+        "tooltipGunDescription": "main gun"
       },
-      "tag": "ItemStat"
+      "tag": "GunCharger"
     }
   ],
   "radius": 20,

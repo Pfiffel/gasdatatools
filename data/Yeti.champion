@@ -81,7 +81,7 @@
       "description": "Activates dual endothermic detonators, chilling enemies in the blast zones and recharging shields",
       "icon": "crowned-explosion",
       "mana": 20,
-      "name": "Cold Bomb",
+      "name": "Cryo Bomb",
       "params": [
         {
           "data": {
@@ -162,6 +162,7 @@
             "emitterType": "Yeti Missile Trail",
             "objectType": "Yeti Missile",
             "range": 300,
+            "reticleColor": 11184810,
             "sound": "Player_Yeti_FrigidClaws_Launch",
             "speed": 325,
             "statusEffects": [

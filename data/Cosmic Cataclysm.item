@@ -8,7 +8,7 @@
         "params": {
           "data": {
             "autoAim": 0,
-            "damage": 50,
+            "damage": 70,
             "delay": 0,
             "drawReticle": 1,
             "drawTooltip": 1,
@@ -68,6 +68,7 @@
   "guns": 0,
   "name": "Cosmic Cataclysm",
   "overworldDrop": 1,
+  "plusEffects": [],
   "precursorTech": 0,
   "rare": 1,
   "triggers": 1

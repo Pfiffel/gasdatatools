@@ -1,0 +1,81 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Pulser Grenade Projectile",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 7724073,
+      "height": 57,
+      "mirror": 1,
+      "name": "Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 30,
+          "y": 3
+        },
+        {
+          "x": 27,
+          "y": 11
+        },
+        {
+          "x": 13,
+          "y": 17
+        },
+        {
+          "x": 1,
+          "y": 19
+        },
+        {
+          "x": -27,
+          "y": 14
+        },
+        {
+          "x": -66,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 2743367,
+      "height": 59,
+      "mirror": 1,
+      "name": "Inner",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 19,
+          "y": 2
+        },
+        {
+          "x": 15,
+          "y": 5
+        },
+        {
+          "x": 6,
+          "y": 9
+        },
+        {
+          "x": -20,
+          "y": 5
+        },
+        {
+          "x": -39,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

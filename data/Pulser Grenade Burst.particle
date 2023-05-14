@@ -1,0 +1,40 @@
+{
+  "colorPoints": [
+    {
+      "frac": 200,
+      "value": 7724073
+    },
+    {
+      "frac": 800,
+      "value": 7724073
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 400,
+  "minLifetime": 300,
+  "name": "Pulser Grenade Burst",
+  "objectType": "Spike Three",
+  "positionTweenType": "CIRCOUT",
+  "scalePoints": [
+    {
+      "frac": 50,
+      "value": 500
+    },
+    {
+      "frac": 800,
+      "value": 700
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 2743367,
+  "startScale": 10,
+  "stayLow": 1
+}
+

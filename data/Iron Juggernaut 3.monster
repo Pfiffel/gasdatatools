@@ -1,57 +1,33 @@
 {
+  "armor": 0,
   "boss": 1,
+  "burrowDetectRange": 0,
   "collisionRadius": 108,
-  "consolationPrizes": [
-    "Maser Booster",
-    "Dimagnetic Fixer",
-    "Entropic Plate",
-    "Galvanic Capacitor",
-    "Multiphasic Loader",
-    "Resonant Generator",
-    "Kinetic Accelerator",
-    "Lateral Displacer",
-    "Centrifugal Rotator",
-    "Subspace Cycler",
-    "Bilateral Charger"
-  ],
+  "consolationItemPack": "Tier 5 Common",
+  "consolationPrizes": [],
   "deathCrySoundPack": "Iron Leviathan Death Cries",
-  "drops": [
-    {
-      "itemType": "Falkonera Mechanism",
-      "levelCap": 20,
-      "micros": 30000
-    },
-    {
-      "itemType": "Rhodes Mechanism",
-      "levelCap": 20,
-      "micros": 30000
-    },
-    {
-      "itemType": "Stratos Mechanism",
-      "levelCap": 20,
-      "micros": 30000
-    },
-    {
-      "itemType": "Temnos Mechanism",
-      "levelCap": 20,
-      "micros": 30000
-    },
-    {
-      "itemType": "Zakros Mechanism",
-      "levelCap": 20,
-      "micros": 30000
-    }
-  ],
+  "drops": [],
+  "fixedFacing": 0,
   "healRate": 0,
   "hp": 6000,
   "idleAnimation": "BaseArcher Idle",
+  "itemPackDrops": [
+    {
+      "itemPack": "Precursor Techs",
+      "micros": 150000
+    }
+  ],
   "maxMoveDistance": 500,
   "name": "Iron Juggernaut 3",
   "objectType": "Iron Juggernaut",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "Iron Behemoth Run",
   "runAnimationDuration": 814,
   "runSpeed": 86,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "",
   "weaponType": "",
   "weapons": [
@@ -69,7 +45,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -87,7 +65,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -104,6 +84,7 @@
           "emitterType": "",
           "explosionType": "Iron Juggernaut Mine Blast",
           "objectType": "Iron Juggernaut Mine",
+          "persist": 0,
           "powers": [],
           "radius": 108,
           "range": 400,
@@ -112,7 +93,9 @@
         "tag": "MinelayerParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -130,7 +113,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -148,7 +133,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -166,6 +153,7 @@
               "data": {
                 "bulletRange": 900,
                 "delay": 500,
+                "glyphType": "",
                 "gunBulletType": "Iron Leviathan",
                 "numBullets": 5,
                 "range": 1000,
@@ -211,7 +199,9 @@
         "tag": "CompoundParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -229,7 +219,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -277,6 +269,7 @@
       },
       "targeting": {
         "data": {
+          "alsoTargetDematerialized": 0,
           "plusAngle": 0
         },
         "tag": "FixedTargeting"
@@ -326,6 +319,7 @@
       },
       "targeting": {
         "data": {
+          "alsoTargetDematerialized": 0,
           "plusAngle": 1800
         },
         "tag": "FixedTargeting"

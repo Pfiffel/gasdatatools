@@ -1,56 +1,28 @@
 {
+  "armor": 0,
   "boss": 1,
   "burrowDetectRange": 0,
   "collisionRadius": 115,
-  "consolationPrizes": [
-    "Maser Booster",
-    "Dimagnetic Fixer",
-    "Entropic Plate",
-    "Galvanic Capacitor",
-    "Multiphasic Loader",
-    "Resonant Generator",
-    "Kinetic Accelerator",
-    "Lateral Displacer",
-    "Centrifugal Rotator",
-    "Subspace Cycler",
-    "Bilateral Charger"
-  ],
+  "consolationItemPack": "Tier 5 Common",
+  "consolationPrizes": [],
   "deathCrySoundPack": "Royal Dynasty Death Cries",
-  "drops": [
-    {
-      "itemType": "Falkonera Mechanism",
-      "levelCap": 20,
-      "micros": 30000
-    },
-    {
-      "itemType": "Rhodes Mechanism",
-      "levelCap": 20,
-      "micros": 30000
-    },
-    {
-      "itemType": "Stratos Mechanism",
-      "levelCap": 20,
-      "micros": 30000
-    },
-    {
-      "itemType": "Temnos Mechanism",
-      "levelCap": 20,
-      "micros": 30000
-    },
-    {
-      "itemType": "Zakros Mechanism",
-      "levelCap": 20,
-      "micros": 30000
-    }
-  ],
+  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 6000,
   "idleAnimation": "Royal Monarch",
+  "itemPackDrops": [
+    {
+      "itemPack": "Precursor Techs",
+      "micros": 150000
+    }
+  ],
   "maxMoveDistance": 500,
   "name": "Royal Dynasty 3",
   "objectType": "Royal Dynasty",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "Royal Monarch",
   "runAnimationDuration": 200,
   "runSpeed": 100,
@@ -89,6 +61,7 @@
       },
       "targeting": {
         "data": {
+          "alsoTargetDematerialized": 0,
           "plusAngle": 130
         },
         "tag": "FixedTargeting"
@@ -124,6 +97,7 @@
       },
       "targeting": {
         "data": {
+          "alsoTargetDematerialized": 0,
           "plusAngle": -130
         },
         "tag": "FixedTargeting"
@@ -143,7 +117,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -161,7 +137,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -179,7 +157,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -197,7 +177,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -230,7 +212,9 @@
         "tag": "MinelayerParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -275,6 +259,7 @@
       },
       "targeting": {
         "data": {
+          "alsoTargetDematerialized": 0,
           "plusAngle": 0
         },
         "tag": "FixedTargeting"

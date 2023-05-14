@@ -1,56 +1,28 @@
 {
+  "armor": 0,
   "boss": 1,
   "burrowDetectRange": 0,
   "collisionRadius": 100,
-  "consolationPrizes": [
-    "Maser Booster",
-    "Dimagnetic Fixer",
-    "Entropic Plate",
-    "Galvanic Capacitor",
-    "Multiphasic Loader",
-    "Resonant Generator",
-    "Kinetic Accelerator",
-    "Lateral Displacer",
-    "Centrifugal Rotator",
-    "Subspace Cycler",
-    "Bilateral Charger"
-  ],
+  "consolationItemPack": "Tier 5 Common",
+  "consolationPrizes": [],
   "deathCrySoundPack": "Royal Crown Death Cries",
-  "drops": [
-    {
-      "itemType": "Argos Mechanism",
-      "levelCap": 20,
-      "micros": 30000
-    },
-    {
-      "itemType": "Delos Mechanism",
-      "levelCap": 20,
-      "micros": 30000
-    },
-    {
-      "itemType": "Himera Mechanism",
-      "levelCap": 20,
-      "micros": 30000
-    },
-    {
-      "itemType": "Kios Mechanism",
-      "levelCap": 20,
-      "micros": 30000
-    },
-    {
-      "itemType": "Naxos Mechanism",
-      "levelCap": 20,
-      "micros": 30000
-    }
-  ],
+  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 6000,
   "idleAnimation": "Royal Monarch",
+  "itemPackDrops": [
+    {
+      "itemPack": "Precursor Techs",
+      "micros": 150000
+    }
+  ],
   "maxMoveDistance": 500,
   "name": "Royal Crown 3",
   "objectType": "Royal Crown",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "Royal Monarch",
   "runAnimationDuration": 200,
   "runSpeed": 100,
@@ -101,6 +73,7 @@
       },
       "targeting": {
         "data": {
+          "alsoTargetDematerialized": 0,
           "plusAngle": 0
         },
         "tag": "FixedTargeting"
@@ -123,7 +96,9 @@
         "tag": "GunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -144,7 +119,9 @@
         "tag": "GunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -165,7 +142,9 @@
         "tag": "GunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -201,6 +180,7 @@
       },
       "targeting": {
         "data": {
+          "alsoTargetDematerialized": 0,
           "plusAngle": 1200
         },
         "tag": "FixedTargeting"
@@ -238,6 +218,7 @@
       },
       "targeting": {
         "data": {
+          "alsoTargetDematerialized": 0,
           "plusAngle": -1200
         },
         "tag": "FixedTargeting"

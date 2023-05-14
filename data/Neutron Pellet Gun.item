@@ -6,7 +6,7 @@
     {
       "data": {
         "cooldown": 250,
-        "damage": 10,
+        "damage": 15,
         "emitterType": "Neutron Pellet Gun Trail",
         "f": 0,
         "halfArc": 300,
@@ -25,6 +25,7 @@
   "guns": 1,
   "name": "Neutron Pellet Gun",
   "overworldDrop": 1,
+  "plusEffects": [],
   "precursorTech": 0,
   "rare": 1,
   "triggers": 0

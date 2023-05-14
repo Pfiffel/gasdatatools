@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 25,
+      "maxDistPercent": 100,
+      "minDistPercent": 100,
+      "particleType": "Synaptic Disruptor Burst",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 10,
+      "maxDistPercent": 80,
+      "minDistPercent": 80,
+      "particleType": "Synaptic Disruptor Burst",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Synaptic Disruptor",
+  "sound": "explosion4",
+  "volume": 50
+}
+

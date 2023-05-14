@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 50,
+      "maxDistPercent": 100,
+      "minDistPercent": 90,
+      "particleType": "Nero Device",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 50,
+      "maxDistPercent": 90,
+      "minDistPercent": 60,
+      "particleType": "Nero Device",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Nero Device",
+  "sound": "explosion3",
+  "volume": 50
+}
+

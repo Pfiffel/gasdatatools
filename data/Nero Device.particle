@@ -1,0 +1,40 @@
+{
+  "colorPoints": [
+    {
+      "frac": 50,
+      "value": 14719251
+    },
+    {
+      "frac": 600,
+      "value": 15339793
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 500,
+  "minLifetime": 300,
+  "name": "Nero Device",
+  "objectType": "Flamethrower1",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 50,
+      "value": 500
+    },
+    {
+      "frac": 500,
+      "value": 500
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 16776958,
+  "startScale": 10,
+  "stayLow": 0
+}
+

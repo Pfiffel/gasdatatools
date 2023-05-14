@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 30,
+      "maxDistPercent": 100,
+      "minDistPercent": 96,
+      "particleType": "Pulser Grenade Burst",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 35,
+      "maxDistPercent": 80,
+      "minDistPercent": 30,
+      "particleType": "Pulser Grenade Burst",
+      "uniformAngles": 0
+    }
+  ],
+  "name": "Pulser Grenade",
+  "sound": "explosion4",
+  "volume": 50
+}
+

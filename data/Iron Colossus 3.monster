@@ -1,57 +1,33 @@
 {
+  "armor": 0,
   "boss": 1,
+  "burrowDetectRange": 0,
   "collisionRadius": 115,
-  "consolationPrizes": [
-    "Maser Booster",
-    "Dimagnetic Fixer",
-    "Entropic Plate",
-    "Galvanic Capacitor",
-    "Multiphasic Loader",
-    "Resonant Generator",
-    "Kinetic Accelerator",
-    "Lateral Displacer",
-    "Centrifugal Rotator",
-    "Subspace Cycler",
-    "Bilateral Charger"
-  ],
+  "consolationItemPack": "Tier 5 Common",
+  "consolationPrizes": [],
   "deathCrySoundPack": "Iron Colossus Death Cries",
-  "drops": [
-    {
-      "itemType": "Argos Mechanism",
-      "levelCap": 20,
-      "micros": 30000
-    },
-    {
-      "itemType": "Delos Mechanism",
-      "levelCap": 20,
-      "micros": 30000
-    },
-    {
-      "itemType": "Himera Mechanism",
-      "levelCap": 20,
-      "micros": 30000
-    },
-    {
-      "itemType": "Kios Mechanism",
-      "levelCap": 20,
-      "micros": 30000
-    },
-    {
-      "itemType": "Naxos Mechanism",
-      "levelCap": 20,
-      "micros": 30000
-    }
-  ],
+  "drops": [],
+  "fixedFacing": 0,
   "healRate": 0,
   "hp": 6000,
   "idleAnimation": "BaseArcher Idle",
+  "itemPackDrops": [
+    {
+      "itemPack": "Precursor Techs",
+      "micros": 150000
+    }
+  ],
   "maxMoveDistance": 500,
   "name": "Iron Colossus 3",
   "objectType": "Iron Colossus",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "Iron Colossus Run",
   "runAnimationDuration": 700,
   "runSpeed": 100,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "",
   "weaponType": "",
   "weapons": [
@@ -69,7 +45,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -87,7 +65,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -123,7 +103,9 @@
         "tag": "MinionParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -218,7 +200,9 @@
         "tag": "CompoundParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }

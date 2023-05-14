@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 25,
+      "maxDistPercent": 100,
+      "minDistPercent": 100,
+      "particleType": "Omega Wave Burst",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 35,
+      "maxDistPercent": 80,
+      "minDistPercent": 30,
+      "particleType": "Omega Wave Burst",
+      "uniformAngles": 0
+    }
+  ],
+  "name": "Omega Wave",
+  "sound": "explosion4",
+  "volume": 50
+}
+

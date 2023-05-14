@@ -3,233 +3,31 @@
   "boss": 1,
   "burrowDetectRange": 0,
   "collisionRadius": 100,
-  "consolationPrizes": [
-    "Fusion Booster",
-    "Omniant Fixer",
-    "Starcore Charger",
-    "Cthoric Plate",
-    "Planck Capacitor",
-    "Maxim Loader",
-    "Volutive Cycler",
-    "Loricus Generator"
-  ],
+  "consolationPrizes": [],
   "deathCrySoundPack": "Royal Monarch Enrage 2",
-  "drops": [
-    {
-      "itemType": "Karkus Attuner",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Karkus Booster",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Karkus Buffer",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Karkus Capacitor",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Karkus Charger",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Karkus Cycler",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Karkus Driver",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Karkus Dynamo",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Karkus Emitter",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Karkus Equalizer",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Karkus Generator",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Karkus Igniter",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Karkus Impeller",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Karkus Injector",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Karkus Inverter",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Karkus Ionizer",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Karkus Pulser",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Karkus Radiator",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Karkus Resonator",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Karkus Servo",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Karkus Stabilizer",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Legion Attuner",
-      "levelCap": 20,
-      "micros": 15000
-    },
-    {
-      "itemType": "Legion Booster",
-      "levelCap": 20,
-      "micros": 15000
-    },
-    {
-      "itemType": "Legion Buffer",
-      "levelCap": 20,
-      "micros": 15000
-    },
-    {
-      "itemType": "Legion Capacitor",
-      "levelCap": 20,
-      "micros": 15000
-    },
-    {
-      "itemType": "Legion Charger",
-      "levelCap": 20,
-      "micros": 15000
-    },
-    {
-      "itemType": "Legion Cycler",
-      "levelCap": 20,
-      "micros": 15000
-    },
-    {
-      "itemType": "Legion Driver",
-      "levelCap": 20,
-      "micros": 15000
-    },
-    {
-      "itemType": "Legion Dynamo",
-      "levelCap": 20,
-      "micros": 15000
-    },
-    {
-      "itemType": "Legion Emitter",
-      "levelCap": 20,
-      "micros": 15000
-    },
-    {
-      "itemType": "Legion Equalizer",
-      "levelCap": 20,
-      "micros": 15000
-    },
-    {
-      "itemType": "Legion Generator",
-      "levelCap": 20,
-      "micros": 15000
-    },
-    {
-      "itemType": "Legion Igniter",
-      "levelCap": 20,
-      "micros": 15000
-    },
-    {
-      "itemType": "Legion Impeller",
-      "levelCap": 20,
-      "micros": 15000
-    },
-    {
-      "itemType": "Legion Injector",
-      "levelCap": 20,
-      "micros": 15000
-    },
-    {
-      "itemType": "Legion Inverter",
-      "levelCap": 20,
-      "micros": 15000
-    },
-    {
-      "itemType": "Legion Ionizer",
-      "levelCap": 20,
-      "micros": 15000
-    },
-    {
-      "itemType": "Legion Pulser",
-      "levelCap": 20,
-      "micros": 15000
-    },
-    {
-      "itemType": "Legion Radiator",
-      "levelCap": 20,
-      "micros": 15000
-    },
-    {
-      "itemType": "Legion Resonator",
-      "levelCap": 20,
-      "micros": 15000
-    },
-    {
-      "itemType": "Legion Servo",
-      "levelCap": 20,
-      "micros": 15000
-    },
-    {
-      "itemType": "Legion Stabilizer",
-      "levelCap": 20,
-      "micros": 15000
-    }
-  ],
+  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 6000,
   "idleAnimation": "Royal Monarch",
+  "itemPackDrops": [
+    {
+      "itemPack": "Karkus",
+      "micros": 210000
+    },
+    {
+      "itemPack": "Legion",
+      "micros": 315000
+    },
+    {
+      "itemPack": "Tier 8 Common",
+      "micros": 400000
+    },
+    {
+      "itemPack": "Precursor Techs",
+      "micros": 1000000
+    }
+  ],
   "maxMoveDistance": 500,
   "name": "Lord Protector Cromwell 5",
   "objectType": "Lord Protector Cromwell",

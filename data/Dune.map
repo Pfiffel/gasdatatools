@@ -3602,6 +3602,7 @@
     }
   ],
   "name": "Dune",
+  "overworld": 0,
   "patches": [],
   "quest": {
     "bossKillTime": 300000,

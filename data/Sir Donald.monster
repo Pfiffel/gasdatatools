@@ -1,52 +1,36 @@
 {
+  "armor": 0,
   "boss": 0,
   "burrowDetectRange": 0,
   "collisionRadius": 34,
-  "consolationPrizes": [
-    "Dimagnetic Fixer",
-    "Entropic Plate"
-  ],
+  "consolationItemPack": "Tier 5 Common",
+  "consolationPrizes": [],
   "deathCrySoundPack": "Royal Knight Death Cries",
-  "drops": [
-    {
-      "itemType": "Omniant Fixer",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Cthoric Plate",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Tripolar Fixer",
-      "levelCap": 20,
-      "micros": 50000
-    },
-    {
-      "itemType": "Boson Plate",
-      "levelCap": 20,
-      "micros": 50000
-    },
-    {
-      "itemType": "Picoscale Fixer",
-      "levelCap": 20,
-      "micros": 100000
-    },
-    {
-      "itemType": "Hadron Plate",
-      "levelCap": 20,
-      "micros": 100000
-    }
-  ],
+  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 6000,
   "idleAnimation": "BaseArcher Idle",
+  "itemPackDrops": [
+    {
+      "itemPack": "Tier 6 Common",
+      "micros": 200000
+    },
+    {
+      "itemPack": "Tier 7 Common",
+      "micros": 100000
+    },
+    {
+      "itemPack": "Tier 8 Common",
+      "micros": 20000
+    }
+  ],
   "maxMoveDistance": 500,
   "name": "Sir Donald",
   "objectType": "Sir Donald",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "Royal Cavalier Run",
   "runAnimationDuration": 700,
   "runSpeed": 85,
@@ -108,7 +92,9 @@
         "tag": "CompoundParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -129,7 +115,9 @@
         "tag": "GunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }

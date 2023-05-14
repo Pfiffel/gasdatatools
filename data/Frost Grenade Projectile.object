@@ -1,0 +1,81 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Frost Grenade Projectile",
+  "shapes": [
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 5559269,
+      "height": 40,
+      "mirror": 1,
+      "name": "Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -10,
+          "y": 0
+        },
+        {
+          "x": -23,
+          "y": 15
+        },
+        {
+          "x": -5,
+          "y": 10
+        },
+        {
+          "x": 0,
+          "y": 28
+        },
+        {
+          "x": 5,
+          "y": 10
+        },
+        {
+          "x": 25,
+          "y": 15
+        },
+        {
+          "x": 10,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11526115,
+      "height": 50,
+      "mirror": 1,
+      "name": "Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -13,
+          "y": 0
+        },
+        {
+          "x": -6,
+          "y": 11
+        },
+        {
+          "x": 6,
+          "y": 11
+        },
+        {
+          "x": 13,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

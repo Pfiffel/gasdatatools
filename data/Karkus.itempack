@@ -1,0 +1,27 @@
+{
+  "items": [
+    "Karkus Attuner",
+    "Karkus Booster",
+    "Karkus Buffer",
+    "Karkus Capacitor",
+    "Karkus Charger",
+    "Karkus Cycler",
+    "Karkus Driver",
+    "Karkus Dynamo",
+    "Karkus Emitter",
+    "Karkus Equalizer",
+    "Karkus Generator",
+    "Karkus Igniter",
+    "Karkus Impeller",
+    "Karkus Injector",
+    "Karkus Inverter",
+    "Karkus Ionizer",
+    "Karkus Pulser",
+    "Karkus Radiator",
+    "Karkus Resonator",
+    "Karkus Servo",
+    "Karkus Stabilizer"
+  ],
+  "name": "Karkus"
+}
+

@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 50,
+      "maxDistPercent": 100,
+      "minDistPercent": 100,
+      "particleType": "Frost Grenade Burst",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 50,
+      "maxDistPercent": 80,
+      "minDistPercent": 30,
+      "particleType": "Frost Grenade Burst",
+      "uniformAngles": 0
+    }
+  ],
+  "name": "Frost Grenade",
+  "sound": "Player_Yeti_ColdBomb_Explode",
+  "volume": 150
+}
+

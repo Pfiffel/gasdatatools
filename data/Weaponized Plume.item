@@ -6,12 +6,12 @@
     {
       "data": {
         "cooldown": 330,
-        "damage": 30,
+        "damage": 50,
         "emitterType": "Weaponized Plume Trail",
         "f": 1800,
         "halfArc": 75,
         "objectType": "Weaponized Plume Bullet",
-        "range": 170,
+        "range": 200,
         "reticleColor": 15537824,
         "soundPack": "Hercules Small Guns",
         "speed": 700,
@@ -25,6 +25,7 @@
   "guns": 1,
   "name": "Weaponized Plume",
   "overworldDrop": 1,
+  "plusEffects": [],
   "precursorTech": 0,
   "rare": 1,
   "triggers": 0

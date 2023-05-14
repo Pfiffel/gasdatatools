@@ -1,0 +1,69 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Omega Wave Projectile",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4856319,
+      "height": 57,
+      "mirror": 1,
+      "name": "Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 16,
+          "y": 6
+        },
+        {
+          "x": 7,
+          "y": 15
+        },
+        {
+          "x": -7,
+          "y": 15
+        },
+        {
+          "x": -16,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 7754239,
+      "height": 59,
+      "mirror": 1,
+      "name": "Inner",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 10,
+          "y": 3
+        },
+        {
+          "x": 4,
+          "y": 9
+        },
+        {
+          "x": -4,
+          "y": 9
+        },
+        {
+          "x": -10,
+          "y": 3
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

@@ -10,7 +10,7 @@
           "color": 5161401,
           "left": -900,
           "level": 0,
-          "maxStrength": 80,
+          "maxStrength": 160,
           "right": 900
         }
       },
@@ -21,6 +21,7 @@
   "guns": 0,
   "name": "Forward Lattice",
   "overworldDrop": 1,
+  "plusEffects": [],
   "precursorTech": 0,
   "rare": 1,
   "triggers": 0

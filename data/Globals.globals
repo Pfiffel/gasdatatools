@@ -2,6 +2,20 @@
   "hullHitsSoundPack": "Hull Hits",
   "name": "Globals",
   "playerDeathSoundPack": "Player Death",
-  "shieldHitsSoundPack": "Shield Hits"
+  "shieldHitsSoundPack": "Shield Hits",
+  "tieredItemLimits": [
+    {
+      "limit": 12,
+      "tier": 6
+    },
+    {
+      "limit": 8,
+      "tier": 7
+    },
+    {
+      "limit": 5,
+      "tier": 8
+    }
+  ]
 }
 

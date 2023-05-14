@@ -10,7 +10,7 @@
           "color": 14530869,
           "left": 1350,
           "level": 0,
-          "maxStrength": 150,
+          "maxStrength": 300,
           "right": -1350
         }
       },
@@ -21,6 +21,7 @@
   "guns": 0,
   "name": "Afterguard",
   "overworldDrop": 1,
+  "plusEffects": [],
   "precursorTech": 0,
   "rare": 1,
   "triggers": 0

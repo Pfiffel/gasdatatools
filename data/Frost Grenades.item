@@ -1,0 +1,138 @@
+{
+  "boon": 1,
+  "credits": 7,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 80,
+            "delay": 500,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Frost Grenade",
+            "facing": 0,
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 295,
+              "y": 0
+            },
+            "range": 80,
+            "reticleColor": 5559269,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 5000
+                },
+                "tag": "ChillEffect"
+              }
+            ],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "Grenade Trio"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 80,
+            "delay": 500,
+            "drawReticle": 1,
+            "drawTooltip": 0,
+            "explosionType": "Frost Grenade",
+            "facing": 0,
+            "halfArc": 1800,
+            "mirror": 1,
+            "offset": {
+              "x": 174,
+              "y": 69
+            },
+            "range": 80,
+            "reticleColor": 5559269,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 5000
+                },
+                "tag": "ChillEffect"
+              }
+            ],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": ""
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "delay": 0,
+            "duration": 500,
+            "emitterType": "Frost Grenade Trail",
+            "facing": 0,
+            "mirror": 0,
+            "objectType": "Frost Grenade Projectile",
+            "sound": "",
+            "tag": "",
+            "target": {
+              "x": 295,
+              "y": 0
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "delay": 0,
+            "duration": 500,
+            "emitterType": "Frost Grenade Trail",
+            "facing": 0,
+            "mirror": 1,
+            "objectType": "Frost Grenade Projectile",
+            "sound": "",
+            "tag": "",
+            "target": {
+              "x": 174,
+              "y": 69
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Frost Grenades",
+  "overworldDrop": 1,
+  "plusEffects": [],
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 1
+}
+

@@ -3,15 +3,19 @@
   "effects": [
     {
       "data": {
+        "gunTag": "",
+        "maxProcsPerSecond": 10,
         "percentChance": 100,
         "statusEffects": [
           {
             "data": {
+              "appliesToMana": 0,
               "healing": 10
             },
             "tag": "VampEffect"
           }
-        ]
+        ],
+        "tooltipGunDescription": "gun"
       },
       "tag": "GunProcs"
     }

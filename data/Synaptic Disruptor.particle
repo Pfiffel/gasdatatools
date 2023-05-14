@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 16770613
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 350,
+  "minLifetime": 300,
+  "name": "Synaptic Disruptor",
+  "objectType": "Royal Britannia Particle",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 50,
+      "value": 500
+    },
+    {
+      "frac": 500,
+      "value": 500
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 10391329,
+  "startScale": 10,
+  "stayLow": 1
+}
+

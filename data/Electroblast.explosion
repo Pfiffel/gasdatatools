@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 40,
+      "maxDistPercent": 100,
+      "minDistPercent": 90,
+      "particleType": "Electroblast",
+      "uniformAngles": 0
+    },
+    {
+      "angularDensity": 35,
+      "maxDistPercent": 80,
+      "minDistPercent": 30,
+      "particleType": "Electroblast",
+      "uniformAngles": 0
+    }
+  ],
+  "name": "Electroblast",
+  "sound": "explosion4",
+  "volume": 50
+}
+

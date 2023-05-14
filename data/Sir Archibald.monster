@@ -1,52 +1,36 @@
 {
+  "armor": 0,
   "boss": 0,
   "burrowDetectRange": 0,
   "collisionRadius": 34,
-  "consolationPrizes": [
-    "Maser Booster",
-    "Multiphasic Loader"
-  ],
+  "consolationItemPack": "Tier 5 Common",
+  "consolationPrizes": [],
   "deathCrySoundPack": "Royal Knight Death Cries",
-  "drops": [
-    {
-      "itemType": "Fusion Booster",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Maxim Loader",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Darkmatter Booster",
-      "levelCap": 20,
-      "micros": 50000
-    },
-    {
-      "itemType": "Surge Loader",
-      "levelCap": 20,
-      "micros": 50000
-    },
-    {
-      "itemType": "Antimatter Booster",
-      "levelCap": 20,
-      "micros": 100000
-    },
-    {
-      "itemType": "Relativistic Loader",
-      "levelCap": 20,
-      "micros": 100000
-    }
-  ],
+  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 6000,
   "idleAnimation": "BaseArcher Idle",
+  "itemPackDrops": [
+    {
+      "itemPack": "Tier 6 Common",
+      "micros": 200000
+    },
+    {
+      "itemPack": "Tier 7 Common",
+      "micros": 100000
+    },
+    {
+      "itemPack": "Tier 8 Common",
+      "micros": 20000
+    }
+  ],
   "maxMoveDistance": 500,
   "name": "Sir Archibald",
   "objectType": "Sir Archibald",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "Royal Cavalier Run",
   "runAnimationDuration": 700,
   "runSpeed": 85,
@@ -124,7 +108,9 @@
         "tag": "CompoundParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -145,7 +131,9 @@
         "tag": "GunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }

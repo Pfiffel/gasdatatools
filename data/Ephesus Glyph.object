@@ -8,31 +8,32 @@
       "bone": "",
       "clones": [],
       "closed": 0,
-      "color": 47031,
+      "collider": 0,
+      "color": 3716790,
       "height": 0,
       "mirror": 1,
       "name": "Glyph",
       "noDraw": 0,
       "points": [
         {
-          "x": 20,
+          "x": -28,
           "y": 0
         },
         {
-          "x": 9,
-          "y": 11
+          "x": -12,
+          "y": 15
         },
         {
-          "x": -4,
-          "y": 16
+          "x": 5,
+          "y": 22
         },
         {
-          "x": -16,
-          "y": 16
+          "x": 22,
+          "y": 22
         },
         {
-          "x": -11,
-          "y": 5
+          "x": 15,
+          "y": 7
         }
       ],
       "useBoneMirror": 1

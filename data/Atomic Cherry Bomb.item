@@ -1,0 +1,70 @@
+{
+  "boon": 1,
+  "credits": 6,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 180,
+            "delay": 400,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Atomic Cherry Bomb",
+            "facing": 0,
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 300,
+              "y": 0
+            },
+            "range": 40,
+            "reticleColor": 13763629,
+            "statusEffects": [],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "Grenade Launch"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 1
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "delay": 0,
+            "duration": 400,
+            "emitterType": "Atomic Cherry Bomb Trail",
+            "facing": 0,
+            "mirror": 0,
+            "objectType": "Atomic Cherry Bomb Projectile",
+            "sound": "",
+            "tag": "",
+            "target": {
+              "x": 300,
+              "y": 0
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        },
+        "when": 1
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Atomic Cherry Bomb",
+  "overworldDrop": 1,
+  "plusEffects": [],
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 1
+}
+

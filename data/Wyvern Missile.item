@@ -1,0 +1,40 @@
+{
+  "boon": 1,
+  "credits": 5,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "count": 1,
+            "damage": 60,
+            "emitterType": "Wyvern Missile Trail",
+            "objectType": "Wyvern Missile",
+            "range": 260,
+            "reticleColor": 2265001,
+            "sound": "Hercules Missile",
+            "speed": 300,
+            "statusEffects": [],
+            "tag": "",
+            "timeGap": 0,
+            "tweenType": "QUARTIN",
+            "volume": 50
+          },
+          "tag": "SharkletTrigger"
+        },
+        "when": 6
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "engines": 1,
+  "guns": 0,
+  "name": "Wyvern Missile",
+  "overworldDrop": 1,
+  "plusEffects": [],
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 0
+}
+

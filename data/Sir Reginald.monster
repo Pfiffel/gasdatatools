@@ -1,44 +1,36 @@
 {
+  "armor": 0,
   "boss": 0,
   "burrowDetectRange": 0,
   "collisionRadius": 30,
+  "consolationItemPack": "",
   "consolationPrizes": [],
   "deathCrySoundPack": "Royal Dragoon Death Cries",
-  "drops": [
-    {
-      "itemType": "Starcore Charger",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Volutive Cycler",
-      "levelCap": 20,
-      "micros": 10000
-    },
-    {
-      "itemType": "Atomic Charger",
-      "levelCap": 20,
-      "micros": 50000
-    },
-    {
-      "itemType": "Reactive Cycler",
-      "levelCap": 20,
-      "micros": 50000
-    },
-    {
-      "itemType": "Flux Charger",
-      "levelCap": 20,
-      "micros": 100000
-    }
-  ],
+  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 8000,
   "idleAnimation": "BaseArcher Idle",
+  "itemPackDrops": [
+    {
+      "itemPack": "Tier 6 Common",
+      "micros": 200000
+    },
+    {
+      "itemPack": "Tier 7 Common",
+      "micros": 100000
+    },
+    {
+      "itemPack": "Tier 8 Common",
+      "micros": 20000
+    }
+  ],
   "maxMoveDistance": 500,
   "name": "Sir Reginald",
   "objectType": "Sir Reginald",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "Royal Cavalier Run",
   "runAnimationDuration": 700,
   "runSpeed": 100,
@@ -136,7 +128,9 @@
         "tag": "CompoundParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }

@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 40,
+      "maxDistPercent": 100,
+      "minDistPercent": 100,
+      "particleType": "Scourge Reactor",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 25,
+      "maxDistPercent": 50,
+      "minDistPercent": 30,
+      "particleType": "Scourge Reactor",
+      "uniformAngles": 0
+    }
+  ],
+  "name": "Scourge Reactor",
+  "sound": "explosion1",
+  "volume": 50
+}
+

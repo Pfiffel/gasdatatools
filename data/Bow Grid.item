@@ -10,7 +10,7 @@
           "color": 13391305,
           "left": -400,
           "level": 0,
-          "maxStrength": 120,
+          "maxStrength": 240,
           "right": 400
         }
       },
@@ -21,6 +21,7 @@
   "guns": 0,
   "name": "Bow Grid",
   "overworldDrop": 1,
+  "plusEffects": [],
   "precursorTech": 0,
   "rare": 1,
   "triggers": 0

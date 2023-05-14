@@ -1,0 +1,36 @@
+{
+  "boon": 1,
+  "credits": 5,
+  "defenses": 1,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 200,
+            "applyToMana": 0,
+            "duration": 3000,
+            "emitterType": "",
+            "glyphCount": 2,
+            "glyphRadius": 60,
+            "glyphType": "Heal Indicator",
+            "noStack": 0,
+            "tag": ""
+          },
+          "tag": "HealOverTimeTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Nanoassembler",
+  "overworldDrop": 1,
+  "plusEffects": [],
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 0
+}
+

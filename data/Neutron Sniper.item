@@ -6,7 +6,7 @@
     {
       "data": {
         "cooldown": 500,
-        "damage": 15,
+        "damage": 20,
         "emitterType": "Neutron Sniper Trail",
         "f": 0,
         "halfArc": 100,
@@ -25,6 +25,7 @@
   "guns": 1,
   "name": "Neutron Sniper",
   "overworldDrop": 1,
+  "plusEffects": [],
   "precursorTech": 0,
   "rare": 1,
   "triggers": 0
