@@ -390,6 +390,8 @@ function AddEffectsText(data)
 		{
 			console.log("uncaught effect: " + effect);
 		}
+		if(effectData.reducedDurationOnBoss != undefined && effectData.reducedDurationOnBoss == 1) s += "Reduced on bosses";
+		if(effectData.stack != undefined && effectData.stack == 1) s += "Effect stacks";
 	}
 	return s;
 }
