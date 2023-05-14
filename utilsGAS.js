@@ -161,6 +161,7 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 	let prevCondition = undefined;
 	let prevCell;
 	let prevRepeat = false;
+	let delayArray = [];
 	let dps = 0;
 	for (var effect in mainData.effects){
 		let data = mainData.effects[effect].data;
@@ -212,7 +213,7 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 			
 			if(mainTag == "TriggeredTriggerEffect")
 			{
-				let o = GetTriggeredEffectString(data.params.tag, data.params.data);
+				let o = GetTriggeredEffectString(data.params.tag, data.params.data, delayArray);
 				s += o.s;
 				//dps += o.damage;
 			}
@@ -246,9 +247,10 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 			var condition = activeWhile != undefined ? ("While " + classWrap(ACTIVE_WHILE_NAMES[activeWhile][1], "cKeyValue")+", every ") : "Every ";
 			s += condition + classWrap(ToTime(data.cooldown), "cKeyValue") + chanceTo + ":<br/>";
 			let cooldownAndChanceMult = (10/data.cooldown)*data.percentChance;
+			
 			for (var p in data.params){
 				var effect = data.params[p];
-				let o = GetTriggeredEffectString(effect.tag, effect.data);
+				let o = GetTriggeredEffectString(effect.tag, effect.data, delayArray);
 				s += o.s;
 				dps += o.damage * cooldownAndChanceMult;
 			}
@@ -297,7 +299,6 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 				s += printKeyAndData(key, iterEffect.data[key]);
 			}
 		}
-		
 		if(prevRepeat)
 			prevCell.innerHTML += s;
 		else
@@ -306,6 +307,7 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 			prevCell.colSpan = 2;
 		}
 	}
+	prevCell.innerHTML += GetTriggeredEffectDelayArray(delayArray);
 	if(countAoE > 1) prevCell.innerHTML += "<b>x"+countAoE+"</b>";
 	hashAoE = "";
 	countAoE = 0;
@@ -393,7 +395,26 @@ function AddEffectsText(data)
 }
 var hashAoE = "";
 var countAoE = 0;
-function GetTriggeredEffectString(tag, data)
+function GetTriggeredEffectDelayArray(array)
+{
+	var string = "";
+	var lastDelay = 0;
+	var actualDelays = 0;
+	for (var i in array){
+		var delay = array[i];
+		// only show "0s" delay if it's in a succession of different delays (don't show single delay of 0s but show Blood Imp starting at 0s)
+		if(delay > lastDelay || (array.length > 1 && i == 0))
+		{
+			actualDelays++;
+			lastDelay = delay;
+			if(i != 0)
+				string += ", ";
+			string += ToTime(delay);
+		}
+	}
+	return string == "" ? "" : printKeyAndData(actualDelays > 1 ? "Delays" : "Delay", string);
+}
+function GetTriggeredEffectString(tag, data, delayArray)
 {
 	var s = ""; var damage = 0;
 	if(tag == "FireRateBoostTrigger"){
@@ -408,9 +429,11 @@ function GetTriggeredEffectString(tag, data)
 			if(data.tooltip != "") s += data.tooltip + "<br/>";
 			if(data.damage > 0) s += printKeyAndData("AoE Damage", data.damage);
 			s += printKeyAndData("Range", data.range, "", AddReticle(data.reticleColor));
+			//if(data.delay > 0) s += printKeyAndData("First Delay", ToTime(data.delay));
 			s += printKeyAndData("Arc", (data.halfArc * 0.2) + "°");
 			s += AddEffectsText(data);
 		}
+		delayArray.push(data.delay);
 		damage += data.damage;
 		hashAoE = newHashAoE;
 	}
