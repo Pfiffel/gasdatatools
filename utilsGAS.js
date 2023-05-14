@@ -62,7 +62,8 @@ const ACTIVE_WHILE_NAMES = {
 	"17": ["SHIELDS_FULL", "all shields full"],
 	"18": ["ROTATING", "rotating"],
 	"19": ["NOT_ROTATING", "not rotating"],
-	"20": ["NEW_CHARACTER", "on new character"]
+	"20": ["OUT_OF_COMBAT", "out of combat"],
+	"21": ["NEW_CHARACTER", "on new character"]
 };
 const TRIGGERED_TRIGGER_EFFECTS = {
 	"0": ["TRIGGER1234", "any trigger"],
@@ -228,6 +229,11 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 			s += AddEffectsText(data);
 			if(data.maxProcsPerSecond != undefined && data.maxProcsPerSecond != 0) s += "Maximum " + data.maxProcsPerSecond + " applications per second";
 		}
+		else if(mainTag == "GunCharger")
+		{
+			s += "If " + data.tooltipGunDescription + " not fired for " + ToTime(data.chargeTime) + ", add:<br/>";
+			s += AddEffectsText(data);
+		}
 		else if(mainTag == "PlayerGunStats")
 		{
 			let gundps = round(1000*data.damage/data.cooldown,2);
@@ -367,7 +373,7 @@ function AddEffectsText(data)
 		{
 			s += printKeyAndData("Immobilize Duration", ToTime(effectData.duration));
 		}
-		else if(effect == "Damage Effect")
+		else if(effect == "DamageEffect")
 		{
 			s += printKeyAndData("Damage", effectData.damage);
 		}
