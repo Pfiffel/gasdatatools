@@ -226,6 +226,7 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 		{
 			s += data.percentChance != 100 ? (classWrap(data.percentChance + "%", "cKeyValue") + " to affect gun shots:<br/>") : "Affects gun shots:<br/>";
 			s += AddEffectsText(data);
+			if(data.maxProcsPerSecond != undefined && data.maxProcsPerSecond != 0) s += "Maximum " + data.maxProcsPerSecond + " applications per second";
 		}
 		else if(mainTag == "PlayerGunStats")
 		{
