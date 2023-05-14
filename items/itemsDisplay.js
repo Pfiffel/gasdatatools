@@ -3,7 +3,7 @@ var TIERS = 10;
 var ITEM_DROPPERS = [];
 var tableOutput = document.getElementById("tableOutput");
 
-var datatypes = ["item","monster","object"]; // for utilGAS to load files, calls parseData once completed
+var datatypes = ["item","monster","object","globals"]; // for utilGAS to load files, calls parseData once completed
 loadGasData();
 
 function parseData()
@@ -38,6 +38,8 @@ function parseData()
 		}*/
 	//}
 	tableOutput.appendChild(MakeTextDiv("<h1>Items (" + totalAmount + " total)</h1>"));
+	tableOutput.appendChild(MakeTextDiv("<h2>Item Limits Per Run</h2>"));
+	tableOutput.appendChild(MakeItemLimitTable());
 	tableOutput.appendChild(MakeTextDiv("<h2>Tiered</h2>"));
 	tableOutput.appendChild(MakeSpecificTable(1,1,0,0,-1,0));
 	tableOutput.appendChild(MakeTextDiv("<h2>Rare</h2>"));
@@ -52,6 +54,22 @@ function parseData()
 	tableOutput.appendChild(showUsage(STAT_TYPES));
 	tableOutput.appendChild(showUsage(TRIGGERED_TRIGGER_EFFECTS));
 	//tableOutput.appendChild(showUsage(ACTIVE_WHILE_NAMES));
+}
+function MakeItemLimitTable()
+{
+	let limits = GetGlobals().tieredItemLimits;
+	let tbl = document.createElement('table');
+	let thE = tbl.insertRow();
+	makeHeaderCell("Tier", thE);
+	makeHeaderCell("Limit", thE);
+	for (let i = 0; i < limits.length; i++)
+	{
+		var type = limits[i];
+		let trE = tbl.insertRow();
+		makeCell(colorWrap("Tier " + type.tier, TIER_COLORS[type.tier]), trE);
+		makeCell(type.limit, trE);
+	}
+	return tbl;
 }
 function GetItemAmount(tier, statAmount, precursor, rare, boon)
 {

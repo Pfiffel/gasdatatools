@@ -788,6 +788,14 @@ function getItem(type){
 	}
 	console.log(type + " Item not found");
 }
+function GetGlobals(){
+	for (let i = 0; i < gasData["globals"].length; i++)
+	{
+		var g = gasData["globals"][i];
+		if("Globals" == g.name) return g;
+	}
+	console.log(type + " globals not found");
+}
 function GetSpeaker(type){
 	for (let i = 0; i < gasData["speaker"].length; i++)
 	{
