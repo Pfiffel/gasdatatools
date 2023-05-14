@@ -245,6 +245,7 @@ function makeGunCell(container, player)
 	makeHeaderCell("Speed", thG);
 	makeHeaderCell("DPS", thG);
 	var totalDPS = 0;
+	var totalShotsPerSecond = 0;
 	var gunDrawData = [];
 	for (let g = 0; g < player.guns.length; g++)
 	{
@@ -261,14 +262,17 @@ function makeGunCell(container, player)
 		newGunData.halfArc = gun.halfArc;
 		newGunData.radians = degToRad(gun.halfArc/10);
 		gunDrawData.push(newGunData);
-		var dps = (1000/gun.cooldown)*gun.damage;
+		let shotsPerSecond = (1000/gun.cooldown);
+		var dps = shotsPerSecond*gun.damage;
 		totalDPS += dps;
+		totalShotsPerSecond += shotsPerSecond;
 		makeCell(round(dps, 2), trG);
 	}
 	var addAsterisk = NOTES_GUN_DPS[player.name] != undefined;
 	if(addAsterisk) divTable.title = NOTES_GUN_DPS[player.name];
 	divTable.appendChild(gunTable);
 	divTable.innerHTML += "Total DPS: <b>" + round(totalDPS, 2) + (addAsterisk ? "*" : "") + "</b>";
+	divTable.innerHTML += "<br/>Total shots per second: <b>" + round(totalShotsPerSecond, 2) + "</b>";
 	if(miniDPSTable[player.name] == undefined) miniDPSTable[player.name] = {};
 	miniDPSTable[player.name].gunDPS = totalDPS;
 	//divTable.innerHTML += "<br/><i>graphic is scaled down to " + percToString(GUN_SCALE) + "</i>";
