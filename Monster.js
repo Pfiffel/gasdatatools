@@ -352,7 +352,7 @@ class Monster
 	printRewards() {
 		// TODO maybe use isSymbioteDropper(monster) here
 		var givesXP = Boolean(this._xp);
-		var hasGlobalDrops = !Boolean(this.data.drops.length) && givesXP;
+		var hasGlobalDrops = !(this.data.itemPackDrops != undefined && this.data.itemPackDrops.length > 0) && givesXP;
 		var t = this.getTier()-2;
 		var dropsSymbiote = (t > 0 && t <= 6) && hasGlobalDrops;
 		if(!dropsSymbiote && !givesXP && !hasGlobalDrops) return "";

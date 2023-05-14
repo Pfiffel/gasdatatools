@@ -115,7 +115,7 @@ function getTier(xp){
 function isSymbioteDropper(monster)
 {
 	var givesXP = Boolean(monster.xp);
-	var hasGlobalDrops = !Boolean(monster.drops.length) && givesXP;
+	var hasGlobalDrops = !(monster.itemPackDrops != undefined && monster.itemPackDrops.length > 0) && givesXP;
 	var t = getTier(monster.xp) - 2;
 	return(t > 0 && t <= 6) && hasGlobalDrops;
 }
