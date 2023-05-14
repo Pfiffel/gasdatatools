@@ -312,21 +312,33 @@ class Monster
 	outputLoot()
 	{
 		var listLoot = "";
-		for (let drop in this.data.drops){
-			var item = this.data.drops[drop];
-			let mainData = getItem(item.itemType);
-			if(mainData == undefined) continue;
-			var tier = mainData.credits;
-			listLoot += "<b>" + colorWrap(mainData.name, TIER_COLORS[tier])  + "</b> " + (item.micros/10000)+ "%, ";
+		for (let itemPackIndex in this.data.itemPackDrops){
+			let itemPack = this.data.itemPackDrops[itemPackIndex];
+			listLoot += this.GetItemPackList(itemPack.itemPack, itemPack.micros);
 		}
 		var listConsolation = "";
-		for (let i in this.data.consolationPrizes){
-			let mainData = getItem(this.data.consolationPrizes[i]);
-			if(mainData == undefined) continue;
-			var tier = mainData.credits;
-			listConsolation += "<b>" + colorWrap(mainData.name, TIER_COLORS[tier])  + "</b>, ";
+		let itemPack = this.data.consolationItemPack;
+		if(itemPack != undefined && itemPack != "")
+		{
+			listConsolation += this.GetItemPackList(itemPack);
 		}
 		return (listLoot != "" ? "Loot: " + listLoot : listLoot) + "<br/>" + (listConsolation != "" ? "Consolation: " + listConsolation : listConsolation);
+	}
+	GetItemPackList(itemPackName, micros = -1)
+	{
+		var list = "";
+		let itemPackData = getItemPack(itemPackName);
+		let perc = micros != -1 ? " <b>" + (micros/10000)+ "%</b>" : "";
+		list += "<br/>" + itemPackName + perc + ": ";
+		for (let itemIndex in itemPackData.items){
+			if(itemIndex != 0) list += ", ";
+			let itemName = itemPackData.items[itemIndex];
+			let mainData = getItem(itemName);
+			if(mainData == undefined) continue;
+			let tier = mainData.credits;
+			list += "<b>" + colorWrap(mainData.name, TIER_COLORS[tier])  + "</b>";
+		}
+		return list;
 	}
 	printBasic(hpMult = 1) {
         var move = Boolean(this.data.pauseBetweenMovements) ? "<b>" + this.data.runSpeed + "</b> spd <b>" + this.data.pauseBetweenMovements + "</b> pause " : "<b>" + this.data.runSpeed + "</b> spd";

@@ -1,5 +1,5 @@
 var tableOutput = document.getElementById("tableOutput");
-var datatypes = ["map","lair","monster","gunbullet","object","item","soundpack","explosion"]; // for utilGAS to load files, calls parseData once completed
+var datatypes = ["map","lair","monster","gunbullet","object","item","soundpack","explosion","itempack"]; // for utilGAS to load files, calls parseData once completed
 loadGasData();
 
 var header = document.getElementById("header");
@@ -63,7 +63,7 @@ function MakeMonsterList()
 		var filterSucc = ((monster.data.successorMonster != "") && (selSucc == "Has Successor")) || ((monster.data.successorMonster == "") && (selSucc == "Has no Successor"));
 		if(selSucc != "Any" && !filterSucc) continue;
 
-		filterLoot = ((monster.data.drops != undefined && monster.data.drops.length != 0) && dropsLoot.checked) || !dropsLoot.checked;
+		filterLoot = ((monster.data.itemPackDrops != undefined && monster.data.itemPackDrops.length != 0) && dropsLoot.checked) || !dropsLoot.checked;
 		if(!filterLoot) continue;
 
 		let monsterDiv = document.createElement('div');

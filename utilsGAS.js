@@ -473,6 +473,7 @@ function GetTriggeredEffectString(tag, data, delayArray)
 	else if(tag == "StatBoostTrigger"){
 		s += printKeyAndData(GetStat(data.statType, 1), data.amount + "%");
 		s += printKeyAndData("Duration", ToTime(data.duration));
+		if(data.maxStacks > 0) s += printKeyAndData("Max Stacks", data.maxStacks);
 	}
 	else if(tag == "DematerializeTrigger"){
 		if(data.percentChance != undefined && data.percentChance != 100)
@@ -787,6 +788,14 @@ function getItem(type){
 		if(type == item.name) return item;
 	}
 	console.log(type + " Item not found");
+}
+function getItemPack(type){
+	for (let i = 0; i < gasData["itempack"].length; i++)
+	{
+		var item = gasData["itempack"][i];
+		if(type == item.name) return item;
+	}
+	console.log(type + " Item Pack not found");
 }
 function GetGlobals(){
 	for (let i = 0; i < gasData["globals"].length; i++)
