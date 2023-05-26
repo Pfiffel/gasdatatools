@@ -100,6 +100,10 @@ function GetStat(i, j)
 	catch(e) {console.log("stat " + i + " not found");}
 	return ["UNKNOWN", "UNKNOWN", 0, {}];
 }
+function GetArc(halfArc)
+{
+	return "<b>"+(halfArc*0.2)+"°</b>";
+}
 function monsterSort(a, b)
 {
 	if(a.boss) return 1;

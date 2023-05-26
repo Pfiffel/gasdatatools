@@ -91,7 +91,21 @@ class Monster
 			case "ShotgunParams":
 				damageST = wD.damage;
 				damageMT = damageST;
-				this._shotguns[tag+wD.damage+wD.range] = {"damage": wD.damage, "range": wD.range, "powers": wD.powers, "wD": wD};
+				this._shotguns[tag+wD.damage+wD.range+wD.halfArc] = {"damage": wD.damage, "range": wD.range, "halfArc": wD.halfArc, "powers": wD.powers, "wD": wD};
+				break;
+			case "ShotgunBarrageParams":
+				for (let j = 0; j < wD.blastSeries.length; j++)
+				{
+					let newWD = wD.blastSeries[j].params;
+					damageST += newWD.damage;
+					var total = 0;
+					for (let b = 0; b < wD.blastSeries[j].blasts.length; b++)
+					{
+						total += wD.blastSeries[j].blasts[b].mirror+1;
+					}
+					damageMT += damageST * total;
+					this._shotguns[tag+newWD.damage+newWD.range+newWD.halfArc] = {"damage": newWD.damage, "range": newWD.range, "halfArc": newWD.halfArc, "powers": newWD.powers, "wD": wD};
+				}
 				break;
 			case "FlamethrowerParams":
 				// TODO flamethrower damage and stuff
@@ -175,7 +189,14 @@ class Monster
 			this.parseSoundPack(divAttacks, "On Hit", this.data.onDamageSoundPack, "Enemy Hits");
 			this.parseSoundPack(divAttacks, "Death", this.data.deathCrySoundPack);
 		}
-		divAttacks.appendChild(this.outputAttacks(scale, bShowSounds));
+		try
+		{
+			divAttacks.appendChild(this.outputAttacks(scale, bShowSounds));
+		}
+		catch(e)
+		{
+			console.log("problem with attacks from " + this._name + ": " + e)
+		}
 		//divAttacks.style.width = "150px";
 		divInfo.appendChild(divAttacks);
 		div.appendChild(divInfo);
@@ -252,7 +273,7 @@ class Monster
 			let letCurrentData = this._shotguns[shotgun];
 			let attackDiv = document.createElement('div');
             var powers = this.convertPowersToString(letCurrentData.powers);
-			attackDiv.innerHTML = "Shotgun: <b>" + letCurrentData.damage + "</b> damage, <b>" + letCurrentData.range + "</b> range" + powers;
+			attackDiv.innerHTML = "Shotgun: <b>" + letCurrentData.damage + "</b> damage, " + GetArc(letCurrentData.halfArc) + ", <b>" + letCurrentData.range + "</b> range" + powers;
 			if(bShowSounds)
 			{
 				// TODO lol hack, just attached the whole data object (wD) to these
@@ -266,7 +287,7 @@ class Monster
 			let attackDiv = document.createElement('div');
             var powers = this.convertPowersToString(this._flamethrowers[flamethrower].powers);
 			attackDiv.innerHTML = "Flamethrower: <b>" + this._flamethrowers[flamethrower].delay + "</b> delay, " + 
-			"<b>" + this._flamethrowers[flamethrower].halfArc + "</b> halfArc, " + "<br/>" + 
+			GetArc(this._flamethrowers[flamethrower].halfArc) + ", " + "<br/>" + 
 			"<b>" + this._flamethrowers[flamethrower].range + "</b> range" + powers;
 			div.appendChild(attackDiv);
 		}
