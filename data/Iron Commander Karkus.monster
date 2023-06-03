@@ -1,23 +1,34 @@
 {
+  "armor": 0,
   "boss": 1,
+  "burrowDetectRange": 0,
   "collisionRadius": 70,
   "consolationPrizes": [],
   "deathCrySoundPack": "Iron Acropolis Death Cries",
   "drops": [],
+  "fixedFacing": 0,
   "healRate": 0,
-  "hp": 6000,
+  "hp": 8000,
   "idleAnimation": "BaseArcher Idle",
+  "maxMoveDistance": 500,
   "name": "Iron Commander Karkus",
   "objectType": "Iron Commander Karkus",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "Iron Commander Karkus Run",
+  "runAnimationDuration": 700,
   "runSpeed": 40,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "Iron Commander Karkus 2",
   "weaponType": "",
   "weapons": [
     {
       "attachmentPoint": "",
       "cooldown": 1000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "",
       "params": {
         "data": {
@@ -43,11 +54,19 @@
           "volume": 50
         },
         "tag": "MinionParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "",
       "cooldown": 1000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "",
       "params": {
         "data": {
@@ -73,11 +92,19 @@
           "volume": 50
         },
         "tag": "MinionParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "",
       "cooldown": 1000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "",
       "params": {
         "data": {
@@ -102,11 +129,19 @@
           "volume": 50
         },
         "tag": "MinionParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "Center Turret",
-      "cooldown": 4000,
+      "cooldown": 3000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "Iron Commander Karkus Turret",
       "params": {
         "data": {
@@ -116,6 +151,7 @@
               "data": {
                 "bulletRange": 750,
                 "delay": 300,
+                "glyphType": "",
                 "gunBulletType": "Iron Commander Karkus Disarm",
                 "numBullets": 4,
                 "range": 800,
@@ -139,6 +175,10 @@
                   {
                     "angle": 720,
                     "mirror": 0
+                  },
+                  {
+                    "angle": 900,
+                    "mirror": 0
                   }
                 ]
               },
@@ -146,12 +186,11 @@
             },
             {
               "data": {
-                "aimed": 1,
                 "angleBetweenProjectiles": 200,
                 "gunBulletType": "Iron Triumph",
                 "leading": 0,
-                "numProjectiles": 4,
-                "range": 1000
+                "numProjectiles": 9,
+                "range": 800
               },
               "tag": "GunParams"
             },
@@ -159,10 +198,15 @@
               "data": {
                 "bulletRange": 750,
                 "delay": 300,
+                "glyphType": "",
                 "gunBulletType": "Iron Commander Karkus Disarm",
                 "numBullets": 4,
                 "range": 800,
                 "salvoes": [
+                  {
+                    "angle": 900,
+                    "mirror": 0
+                  },
                   {
                     "angle": 720,
                     "mirror": 0
@@ -189,18 +233,23 @@
             },
             {
               "data": {
-                "aimed": 1,
                 "angleBetweenProjectiles": 200,
                 "gunBulletType": "Iron Triumph",
                 "leading": 0,
-                "numProjectiles": 4,
-                "range": 1000
+                "numProjectiles": 9,
+                "range": 800
               },
               "tag": "GunParams"
             }
           ]
         },
         "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     }
   ],

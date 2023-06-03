@@ -1,0 +1,18 @@
+{
+  "arcOffset": 0,
+  "cooldown": 80,
+  "endSound": "Player_Mako_BloodFrenzy_End",
+  "endVolume": 75,
+  "halfArc": 1800,
+  "loopSound": "Player_Mako_BloodFrenzy_Loop3",
+  "loopVolume": 75,
+  "maxDist": 125,
+  "minDist": 125,
+  "mirror": 0,
+  "name": "Mako Blood Frenzy",
+  "particleCount": 0,
+  "particleTypes": [],
+  "startSound": "Player_Mako_BloodFrenzy_Start",
+  "startVolume": 156
+}
+

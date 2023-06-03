@@ -1,10 +1,10 @@
 {
   "arcOffset": 1800,
   "cooldown": 10,
-  "endSound": "Player_Warthog_Movement_End",
+  "endSound": "Player_Mako_Movement_End2",
   "endVolume": 50,
   "halfArc": 50,
-  "loopSound": "Player_Warthog_Movement_Loop",
+  "loopSound": "Player_Mako_Movement_Loop2",
   "loopVolume": 100,
   "maxDist": 100,
   "minDist": 50,
@@ -15,7 +15,7 @@
     "Mako Thruster",
     "Mako Thruster 2"
   ],
-  "startSound": "Player_Warthog_Movement_Start",
+  "startSound": "Player_Mako_Movement_Start2",
   "startVolume": 100
 }
 

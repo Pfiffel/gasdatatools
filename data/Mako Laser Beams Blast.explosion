@@ -23,7 +23,7 @@
     }
   ],
   "name": "Mako Laser Beams Blast",
-  "sound": "Player_Wasp_PosTorpedo_Explosion",
-  "volume": 50
+  "sound": "Player_Mako_LaserBeams_002",
+  "volume": 100
 }
 

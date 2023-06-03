@@ -8,7 +8,7 @@
   "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
-  "hp": 8000,
+  "hp": 10000,
   "idleAnimation": "BaseArcher Idle",
   "maxMoveDistance": 500,
   "name": "Iron Commander Karkus 4",
@@ -37,7 +37,7 @@
             {
               "data": {
                 "bombRadius": 100,
-                "damage": 150,
+                "damage": 220,
                 "delay": 1000,
                 "emitterType": "",
                 "explosionType": "",
@@ -160,6 +160,10 @@
                   {
                     "angle": 720,
                     "mirror": 0
+                  },
+                  {
+                    "angle": 900,
+                    "mirror": 0
                   }
                 ]
               },
@@ -170,8 +174,8 @@
                 "angleBetweenProjectiles": 200,
                 "gunBulletType": "Iron Triumph",
                 "leading": 0,
-                "numProjectiles": 4,
-                "range": 1000
+                "numProjectiles": 9,
+                "range": 800
               },
               "tag": "GunParams"
             },
@@ -184,6 +188,10 @@
                 "numBullets": 4,
                 "range": 800,
                 "salvoes": [
+                  {
+                    "angle": 900,
+                    "mirror": 0
+                  },
                   {
                     "angle": 720,
                     "mirror": 0
@@ -213,8 +221,8 @@
                 "angleBetweenProjectiles": 200,
                 "gunBulletType": "Iron Triumph",
                 "leading": 0,
-                "numProjectiles": 4,
-                "range": 1000
+                "numProjectiles": 9,
+                "range": 800
               },
               "tag": "GunParams"
             }
@@ -241,42 +249,96 @@
           "weapons": [
             {
               "data": {
-                "damage": 600,
-                "delay": 1000,
-                "explosionType": "Iron Lance Shotgun",
-                "halfArc": 75,
-                "powers": [],
-                "range": 750,
-                "triggerSound": "Enemy_IronLance_Shotgun_Long_Telegraph",
-                "triggerVolume": 50
+                "blastSeries": [
+                  {
+                    "blasts": [
+                      {
+                        "angleOffset": 360,
+                        "delay": 0,
+                        "mirror": 1
+                      },
+                      {
+                        "angleOffset": 0,
+                        "delay": 0,
+                        "mirror": 0
+                      }
+                    ],
+                    "params": {
+                      "damage": 600,
+                      "delay": 1000,
+                      "explosionType": "Iron Lance Shotgun",
+                      "halfArc": 65,
+                      "powers": [],
+                      "range": 750,
+                      "triggerSound": "Enemy_IronLance_Shotgun_Long_Telegraph",
+                      "triggerVolume": 50
+                    }
+                  }
+                ]
               },
-              "tag": "ShotgunParams"
+              "tag": "ShotgunBarrageParams"
             },
             {
               "data": {
-                "damage": 600,
-                "delay": 1000,
-                "explosionType": "Iron Lance Shotgun",
-                "halfArc": 75,
-                "powers": [],
-                "range": 750,
-                "triggerSound": "Enemy_IronLance_Shotgun_Long_Telegraph",
-                "triggerVolume": 50
+                "blastSeries": [
+                  {
+                    "blasts": [
+                      {
+                        "angleOffset": 180,
+                        "delay": 0,
+                        "mirror": 1
+                      },
+                      {
+                        "angleOffset": 540,
+                        "delay": 0,
+                        "mirror": 1
+                      }
+                    ],
+                    "params": {
+                      "damage": 600,
+                      "delay": 1000,
+                      "explosionType": "Iron Lance Shotgun",
+                      "halfArc": 65,
+                      "powers": [],
+                      "range": 750,
+                      "triggerSound": "Enemy_IronLance_Shotgun_Long_Telegraph",
+                      "triggerVolume": 50
+                    }
+                  }
+                ]
               },
-              "tag": "ShotgunParams"
+              "tag": "ShotgunBarrageParams"
             },
             {
               "data": {
-                "damage": 600,
-                "delay": 1000,
-                "explosionType": "Iron Lance Shotgun",
-                "halfArc": 75,
-                "powers": [],
-                "range": 750,
-                "triggerSound": "Enemy_IronLance_Shotgun_Long_Telegraph",
-                "triggerVolume": 50
+                "blastSeries": [
+                  {
+                    "blasts": [
+                      {
+                        "angleOffset": 360,
+                        "delay": 0,
+                        "mirror": 1
+                      },
+                      {
+                        "angleOffset": 0,
+                        "delay": 0,
+                        "mirror": 0
+                      }
+                    ],
+                    "params": {
+                      "damage": 600,
+                      "delay": 1000,
+                      "explosionType": "Iron Lance Shotgun",
+                      "halfArc": 65,
+                      "powers": [],
+                      "range": 750,
+                      "triggerSound": "Enemy_IronLance_Shotgun_Long_Telegraph",
+                      "triggerVolume": 50
+                    }
+                  }
+                ]
               },
-              "tag": "ShotgunParams"
+              "tag": "ShotgunBarrageParams"
             },
             {
               "data": {},

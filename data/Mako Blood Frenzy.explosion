@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 100,
+      "maxDistPercent": 100,
+      "minDistPercent": 80,
+      "particleType": "Mako Laser Beams Blast",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Mako Blood Frenzy",
+  "sound": "",
+  "volume": 100
+}
+

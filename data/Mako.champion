@@ -44,6 +44,7 @@
     {
       "data": {
         "gunTag": "Mako Short Gun",
+        "maxProcsPerSecond": 0,
         "percentChance": 100,
         "statusEffects": [
           {
@@ -131,8 +132,8 @@
           "tag": "ShotgunTrigger"
         }
       ],
-      "sound": "Player_Mustang_BigGun_02",
-      "volume": 151
+      "sound": "",
+      "volume": 100
     },
     {
       "cooldown": 5000,
@@ -150,6 +151,7 @@
               "explosion": "Mako Jaws",
               "explosionRange": 50,
               "manaToRefund": 0,
+              "statusEffects": [],
               "triggerIndexToResetCooldown": 1,
               "vamp": 1
             },
@@ -161,7 +163,7 @@
           "tag": "LeapTrigger"
         }
       ],
-      "sound": "Player_Warthog_StunWarp_Warp",
+      "sound": "Player_Mako_JawsLunge_002",
       "volume": 50
     },
     {
@@ -178,18 +180,20 @@
             "emitterType": "Mako Sharklets",
             "objectType": "Sharklet",
             "range": 290,
-            "sound": "Player_Hercules_ZeonRocket_Launch",
+            "reticleColor": 11184810,
+            "sound": "Player_Mako_Sharklet_Launch",
             "speed": 250,
+            "statusEffects": [],
             "tag": "Mako 3 Sharklet",
             "timeGap": 200,
             "tweenType": "QUARTIN",
-            "volume": 40
+            "volume": 125
           },
           "tag": "SharkletTrigger"
         }
       ],
-      "sound": "Player_Warthog_TeraCapRecharge",
-      "volume": 50
+      "sound": "Player_Mako_Sharklet_Activate",
+      "volume": 100
     },
     {
       "cooldown": 30000,
@@ -205,7 +209,7 @@
             "delay": 0,
             "drawReticle": 1,
             "drawTooltip": 1,
-            "explosionType": "Warthog Blast",
+            "explosionType": "Mako Blood Frenzy",
             "facing": 0,
             "halfArc": 1800,
             "mirror": 0,
@@ -233,10 +237,10 @@
           "data": {
             "amount": 50,
             "duration": 5000,
-            "emitterType": "",
+            "emitterType": "Mako Blood Frenzy",
             "glyphCount": 16,
             "glyphRadius": 50,
-            "glyphType": "Axeraider Rally Glyph",
+            "glyphType": "Mako Blood Frenzy Glyph",
             "maxStacks": 0,
             "statType": 5,
             "tag": "Mako 4 StatBoost"

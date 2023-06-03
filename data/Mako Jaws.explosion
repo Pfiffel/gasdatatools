@@ -23,7 +23,7 @@
     }
   ],
   "name": "Mako Jaws",
-  "sound": "Player_Warthog_StunWarp_Stun",
+  "sound": "Player_Mako_JawsCollide_003",
   "volume": 100
 }
 
