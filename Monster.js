@@ -12,6 +12,7 @@ class Monster
 		this._mortars = {};
 		this._mines = {};
 		this._charges = {};
+		this._minions = {};
 	}
 	getTier(){
 		return parseInt(Math.sqrt(this._xp));
@@ -115,7 +116,17 @@ class Monster
 				break;
 			case "ChargeParams":
 				this._charges[tag+wD.range+wD.extraRange+wD.speed] = {"range": wD.range, "extraRange": wD.extraRange, "speed": wD.speed, "wD": wD};
+				break;
 			case "MinionParams":
+				this._minions[wD.monsterName] = {"maxCount": wD.maxCount};
+				break;
+			case "MinionBarrageParams":
+				for (let j = 0; j < wD.salvoes.length; j++)
+				{
+					let salvo = wD.salvoes[j];
+					this._minions[salvo.monsterName] = {"maxCount": salvo.count};
+				}
+				break;
 			case "NullParams":
 				break;
 			default:
@@ -315,6 +326,18 @@ class Monster
 			let attackDiv = document.createElement('div');
 			attackDiv.innerHTML = "Charge: <b>" + this._charges[charge].range + "</b> range (+" + this._charges[charge].extraRange + "), <b>" + this._charges[charge].speed + "</b> speed";
 			div.appendChild(attackDiv);
+		}
+		let minionList = "";
+		for (let minion in this._minions){
+			if(minionList != "") minionList += ", ";
+
+			minionList += this._minions[minion].maxCount + "x <b>" + minion + "</b>";
+		}
+		if(minionList != "")
+		{
+			let extraDiv = document.createElement('div');
+			extraDiv.innerHTML = "Spawns Minions: " + minionList;
+			div.appendChild(extraDiv);
 		}
 		for (var sh in this.data.shields){
 			var shield = this.data.shields[sh];
