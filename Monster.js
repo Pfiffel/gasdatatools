@@ -351,6 +351,12 @@ class Monster
 			extraDiv.innerHTML = "Burrows: <b>" + this.data.burrowDetectRange + "</b> detection range";
 			div.appendChild(extraDiv);
 		}
+		if(this.data.successorMonster != "")
+		{
+			let extraDiv = document.createElement('div');
+			extraDiv.innerHTML = "Succeeded by: <b>" + this.data.successorMonster + "</b>";
+			div.appendChild(extraDiv);
+		}
 		return div;
 	}
 	outputLoot()
