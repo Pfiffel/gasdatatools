@@ -1,0 +1,39 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Obsidian Jackal Particle",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16711423,
+      "height": 20,
+      "mirror": 1,
+      "name": "Head",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -43,
+          "y": 4
+        },
+        {
+          "x": -20,
+          "y": 9
+        },
+        {
+          "x": -5,
+          "y": 15
+        },
+        {
+          "x": 34,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

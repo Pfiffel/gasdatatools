@@ -6,6 +6,16 @@
       "quotes": [
         {
           "sound": "",
+          "text": "Lean on my strength.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
           "text": "Rely on my power.",
           "volume": 50
         },
@@ -21,16 +31,6 @@
         }
       ],
       "tag": "Spawn"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
-          "text": "Lean on my strength.",
-          "volume": 50
-        }
-      ],
-      "tag": "Equip"
     },
     {
       "quotes": [

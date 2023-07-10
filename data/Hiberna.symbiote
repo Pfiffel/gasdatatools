@@ -1,0 +1,46 @@
+{
+  "description": "Hibernia keeps watch over her frozen demesne.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 75,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Hiberna Blast",
+            "facing": 0,
+            "halfArc": 200,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 380,
+            "reticleColor": 2063819,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 4000
+                },
+                "tag": "ChillEffect"
+              }
+            ],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "Cold Blast"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Hiberna",
+  "tier": 5
+}
+

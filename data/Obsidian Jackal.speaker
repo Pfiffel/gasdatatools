@@ -1,0 +1,147 @@
+{
+  "name": "Obsidian Jackal",
+  "portrait": "Obsidian Jackal",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The sands of time stand still.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I keep vigil through eternity.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Unceasingly, I keep watch.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I stand, watching.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I perceive your power has grown.",
+          "volume": 50
+        }
+      ],
+      "tag": "Max Level"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Behold! A victory!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Bear witness! An enemy has fallen!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Observe! An adversary is vanquished!",
+          "volume": 50
+        }
+      ],
+      "tag": "Add Boss Kill"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "You must watch more closely.",
+          "volume": 50
+        }
+      ],
+      "tag": "Close Call"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I have observed another failure.",
+          "volume": 50
+        }
+      ],
+      "tag": "Low Level Death"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "You must secure that watchpoint.",
+          "volume": 50
+        }
+      ],
+      "tag": "Discover Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The watchpoint is secured.",
+          "volume": 50
+        }
+      ],
+      "tag": "Activate Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The eons bear solemn witness to this great victory.",
+          "volume": 50
+        }
+      ],
+      "tag": "Quest Boss Victory"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "My vigil continues.",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "My vigil continues.",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire With Medal"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "My vigil continues.",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire With Accolade"
+    }
+  ]
+}
+

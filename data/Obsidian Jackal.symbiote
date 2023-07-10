@@ -1,0 +1,46 @@
+{
+  "description": "Obsidian Jackal stands watch through the eons.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 100,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Obsidian Jackal Blast",
+            "facing": 0,
+            "halfArc": 150,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 300,
+            "reticleColor": 263429,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 3000
+                },
+                "tag": "DisarmEffect"
+              }
+            ],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "Explosive Blast"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Obsidian Jackal",
+  "tier": 6
+}
+

@@ -1,0 +1,147 @@
+{
+  "name": "Hiberna",
+  "portrait": "Hiberna",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Brace yourself. Winter is here.",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I must oversee my frozen home.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Springtime will always be a stranger to me.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "The eternal winter, it is my destiny.",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "You are tempered by the cold.",
+          "volume": 50
+        }
+      ],
+      "tag": "Max Level"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Winter's wrath falls upon another!\n",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "None can match the frozen north!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Winter's winds have felled another!",
+          "volume": 50
+        }
+      ],
+      "tag": "Add Boss Kill"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Harden your resolve!",
+          "volume": 50
+        }
+      ],
+      "tag": "Close Call"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "A harsh lesson of winter.",
+          "volume": 50
+        }
+      ],
+      "tag": "Low Level Death"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Beacon of the north! I demand it!",
+          "volume": 50
+        }
+      ],
+      "tag": "Discover Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Beacon pole of the north!",
+          "volume": 50
+        }
+      ],
+      "tag": "Activate Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Unrelenting, unstoppable! The cold always wins!",
+          "volume": 50
+        }
+      ],
+      "tag": "Quest Boss Victory"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I return north to guard my lands.",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I return north to guard my lands.",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire With Medal"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I return north to guard my lands.",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire With Accolade"
+    }
+  ]
+}
+

@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 90,
+      "maxDistPercent": 100,
+      "minDistPercent": 100,
+      "particleType": "Obsidian Jackal Blast",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 400,
+      "maxDistPercent": 98,
+      "minDistPercent": 25,
+      "particleType": "Obsidian Jackal Blast",
+      "uniformAngles": 0
+    }
+  ],
+  "name": "Obsidian Jackal Blast",
+  "sound": "Player_Wasp_PosTorpedo_Explosion",
+  "volume": 50
+}
+

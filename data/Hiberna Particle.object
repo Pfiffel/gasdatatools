@@ -1,0 +1,63 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Hiberna Particle",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16711423,
+      "height": 20,
+      "mirror": 1,
+      "name": "Head",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 50,
+          "y": 0
+        },
+        {
+          "x": 14,
+          "y": 8
+        },
+        {
+          "x": 13,
+          "y": 14
+        },
+        {
+          "x": 55,
+          "y": 71
+        },
+        {
+          "x": -1,
+          "y": 17
+        },
+        {
+          "x": -9,
+          "y": 14
+        },
+        {
+          "x": -69,
+          "y": 57
+        },
+        {
+          "x": -18,
+          "y": 9
+        },
+        {
+          "x": -20,
+          "y": 5
+        },
+        {
+          "x": -104,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

@@ -1,0 +1,29 @@
+{
+  "layers": [
+    {
+      "angularDensity": 80,
+      "maxDistPercent": 100,
+      "minDistPercent": 100,
+      "particleType": "Hiberna Blast",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 60,
+      "maxDistPercent": 75,
+      "minDistPercent": 75,
+      "particleType": "Hiberna Blast",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 40,
+      "maxDistPercent": 50,
+      "minDistPercent": 50,
+      "particleType": "Hiberna Blast",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Hiberna Blast",
+  "sound": "Player_Wasp_PosTorpedo_Explosion",
+  "volume": 50
+}
+
