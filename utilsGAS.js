@@ -87,7 +87,7 @@ const PLAYER_POLICIES = {
 };
 
 // Helpers
-function GetArc(data)
+function GetArcShield(data)
 {
 	var arc = -(data.left-data.right)/10;
 	if(arc < 0) arc += 360;
@@ -200,7 +200,7 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 			{
 				var hex = numberToHex(data.shield.color);
 				s += printKeyAndData("Shield", "Strength " + data.shield.maxStrength);
-				s += printKeyAndData("Shield", colorWrap("Arc "+GetArc(data.shield), hex));
+				s += printKeyAndData("Shield", colorWrap("Arc "+GetArcShield(data.shield), hex));
 				// TODO show facing, calculate with right and left
 			}
 		}
@@ -500,7 +500,7 @@ function GetTriggeredEffectString(tag, data, delayArray)
 	else if(tag == "ExtraShieldTrigger"){
 		var hex = numberToHex(data.stats.color);
 		s += printKeyAndData("Shield", "Strength " + data.stats.maxStrength);
-		s += printKeyAndData("Shield", colorWrap("Arc "+GetArc(data.stats), hex));
+		s += printKeyAndData("Shield", colorWrap("Arc "+GetArcShield(data.stats), hex));
 	}
 	else if(tag == "GunProcTrigger"){
 		s += "For <b>" + ToTime(data.duration) + "</b>, gun shots apply:" + "<br/>";

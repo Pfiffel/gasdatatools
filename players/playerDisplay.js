@@ -431,7 +431,7 @@ function makeShieldCell(container, player)
 		shieldCell.style.color = numberToHex(shield.color);
 		makeCell(shield.maxStrength, trS);
 		makeCell(shield.level, trS);
-		makeCell(GetArc(shield), trS);
+		makeCell(GetArcShield(shield), trS);
 		strengthPerLevel[shield.level] = shield.maxStrength;
 		var newShieldData = {};
 		newShieldData.strength = shield.maxStrength;
