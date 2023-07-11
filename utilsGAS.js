@@ -479,7 +479,7 @@ function GetTriggeredEffectString(tag, data, delayArray)
 		s += printKeyAndData("Shield Refill", data.refillPercentage + "%");
 	}
 	else if(tag == "HealTrigger"){
-		s += printKeyAndData("Repair Amount", data.healAmount + (data.asPercentage == 1 ? "%" : ""), data.applyToMana == 1 ? "energy" : "heal");
+		s += printKeyAndData((data.applyToMana == 1 ? "Energy Recharge" : "Repair") + " Amount", data.healAmount + (data.asPercentage == 1 ? "%" : ""), data.applyToMana == 1 ? "energy" : "heal");
 	}
 	else if(tag == "StatBoostTrigger"){
 		s += printKeyAndData(GetStat(data.statType, 1), data.amount + "%");
