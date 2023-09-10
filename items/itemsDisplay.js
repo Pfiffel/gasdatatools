@@ -6,38 +6,40 @@ var tableOutput = document.getElementById("tableOutput");
 var datatypes = ["item","monster","object","globals"]; // for utilGAS to load files, calls parseData once completed
 loadGasData();
 
+var header = document.getElementById("header");
+var filters = document.getElementById("filters");
+
+var itemTypeCB = [];
+for(var i in SLOT_TYPES)
+{
+	if(i == 5) continue; // skip Equipment
+	var type = SLOT_TYPES[i];
+	itemTypeCB[i] = makeInputCheckbox(type[1], RefreshLists, filters, true);
+}
+function FilterCheck(item)
+{
+	for(var i in itemTypeCB)
+	{
+		var cb = itemTypeCB[i];
+		var type = SLOT_TYPES[i];
+		if(item[type[2]] == 1 && cb.checked) return true;
+	}
+	return false;
+}
+function RefreshLists()
+{
+	tableOutput.innerHTML = "";
+	MakeList();
+}
 function parseData()
 {
-	/*for (let t = 1; t < TIERS+1; t++)
-	{
-		SYMBIOTE_DROPPERS[t] = [];
-	}
-	for (let m = 0; m < gasData["monster"].length; m++)
-	{
-		var monster = gasData["monster"][m];
-		if(monsterSkip[monster.name] != true && isSymbioteDropper(monster))
-			SYMBIOTE_DROPPERS[getTier(monster.xp)-2].push(monster);
-	}*/
-	var totalAmount = 0;
-	for (var i = 0; i < gasData["item"].length; i++)
-	{
-		totalAmount++;
-	}
-	/*
-	for (let t = 0; t < TIERS+1; t++)
-	{
-		var amount = GetItemAmount(t, 1, 0);
-		totalAmount += GetItemAmount(t, -1, -1);
-		var headerCell = makeHeaderCell(colorWrap("Tier " + t, TIER_COLORS[t]) + " - " + amount + " total<br/>", th);//From: 
-		/*for (let i = 0; i < SYMBIOTE_DROPPERS[t].length; i++)
-		{
-			var divSprite = document.createElement('div');
-			divSprite.classList.add("inline");
-			divSprite.appendChild(draw(SYMBIOTE_DROPPERS[t][i],0.25));
-			headerCell.appendChild(divSprite);
-		}*/
-	//}
-	tableOutput.appendChild(MakeTextDiv("<h1>Items (" + totalAmount + " total)</h1>"));
+	var h1List = document.createElement("h1");
+	h1List.textContent = "Items (" + gasData["item"].length + " total)";
+	header.appendChild(h1List);
+	RefreshLists();
+}
+function MakeList()
+{
 	tableOutput.appendChild(MakeTextDiv("<h2>Item Limits Per Run</h2>"));
 	tableOutput.appendChild(MakeItemLimitTable());
 	tableOutput.appendChild(MakeTextDiv("<h2>Tiered</h2>"));
@@ -115,7 +117,7 @@ function MakeSpecificItemList(tier, statAmount, precursor, rare, boon, inline)
 	for (var i = 0; i < gasData["item"].length; i++)
 	{
 		var item = gasData["item"][i];
-		//if(item.guns != 1) continue;
+		if(!FilterCheck(item)) continue;
 		if(ItemIsNot(item, tier, statAmount, precursor, rare, boon)) continue;
 		var tbl = MakeStatsTable(item, item.credits);
 		if(inline) tbl.classList.add("inline");
