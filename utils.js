@@ -85,6 +85,9 @@ function opBonusMalus(amount){
 function trimList(sList){
 	return sList.substring(0, sList.length - 1);
 }
+function trimListBy(sList, chars){
+	return sList.substring(0, sList.length - chars);
+}
 function nameEndsIn(name, string){
 	return (name.indexOf(string) !== -1) && (name.length - name.indexOf(string) == string.length);
 }

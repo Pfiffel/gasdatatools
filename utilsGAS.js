@@ -137,6 +137,17 @@ function SpeakerToText(data)
 	}
 	return s;
 }
+function SlotTypeToText(data)
+{
+	var s = "";
+	for(var i in SLOT_TYPES)
+	{
+		var type = SLOT_TYPES[i];
+		if(data[type[2]] == 1) s += type[1] + ", ";
+	}
+
+	return s;
+}
 function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bDescription = true, bSpeaker = false)
 {
 	if(tier == 0) tier = mainData.tier;
@@ -154,6 +165,13 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 
 	var name = mainData.displayName != undefined ? mainData.displayName : mainData.name;
 	makeHeaderCell(colorWrap(name, TIER_COLORS[tier]), th);
+	
+	var slotTypes = SlotTypeToText(mainData);
+	if(slotTypes != "")
+	{
+		let th2 = tbl.insertRow();
+		makeHeaderCell(trimListBy(slotTypes, 2), th2);
+	}
 
 	if(bDescription && mainData.description != undefined && mainData.description != "")
 	{

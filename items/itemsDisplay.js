@@ -115,6 +115,7 @@ function MakeSpecificItemList(tier, statAmount, precursor, rare, boon, inline)
 	for (var i = 0; i < gasData["item"].length; i++)
 	{
 		var item = gasData["item"][i];
+		//if(item.guns != 1) continue;
 		if(ItemIsNot(item, tier, statAmount, precursor, rare, boon)) continue;
 		var tbl = MakeStatsTable(item, item.credits);
 		if(inline) tbl.classList.add("inline");
