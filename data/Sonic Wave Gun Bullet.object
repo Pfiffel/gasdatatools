@@ -1,0 +1,51 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 400,
+  "name": "Sonic Wave Gun Bullet",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4518889,
+      "height": 80,
+      "mirror": 1,
+      "name": "Bullet",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 5,
+          "y": 11
+        },
+        {
+          "x": -5,
+          "y": 18
+        },
+        {
+          "x": -15,
+          "y": 16
+        },
+        {
+          "x": -17,
+          "y": 29
+        },
+        {
+          "x": -4,
+          "y": 32
+        },
+        {
+          "x": 12,
+          "y": 22
+        },
+        {
+          "x": 19,
+          "y": 9
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

@@ -5,19 +5,19 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_RedWizard_NoneShallPassMe",
           "text": "None shall pass me!",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_RedWizard_YouPatheticCreaturesBowDown",
           "text": "You pathetic creatures! Bow down!",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_RedWizard_MyPowerIsUnequalled",
           "text": "My power is unequalled!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Spawn"
@@ -25,9 +25,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_RedWizard_WhoDaresEnterMyPresence",
           "text": "Who dares enter my presence?",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Equip"
@@ -35,9 +35,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_RedWizard_YourPowersShallNeverMatchMyOwn",
           "text": "Your powers shall never match my own!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Max Level"
@@ -45,19 +45,19 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_RedWizard_IHaveDefeatedAnotherAdversary",
           "text": "I have defeated another adversary!",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_RedWizard_IHaveVanquishedAnotherFoe",
           "text": "I have vanquished another foe!",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_RedWizard_IHaveEasilyDestroyedAnotherEnemy",
           "text": "I have easily destroyed another enemy!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Add Boss Kill"
@@ -65,9 +65,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_RedWizard_YouHaveNarrowlyEscapedThisTime",
           "text": "You have narrowly escaped, this time.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Close Call"
@@ -75,9 +75,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_RedWizard_IContemplateCreationOnAScaleYouCannotComprehendThisDeathMeansNothing",
           "text": "I contemplate creation on a scale you cannot comprehend. This death means nothing.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Low Level Death"
@@ -85,9 +85,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_RedWizard_IRequireThatBeacon",
           "text": "I require that beacon!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Discover Beacon"
@@ -95,9 +95,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_RedWizard_IShallIncorporateThisBeaconsPowerIntoMyOwn",
           "text": "I shall incorporate this beacon's power into my own.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Activate Beacon"
@@ -105,9 +105,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_RedWizard_AllTooEasy",
           "text": "All too easy.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Quest Boss Victory"
@@ -115,9 +115,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_RedWizard_IHaveGrownBeyondYou",
           "text": "I have grown beyond you.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire"
@@ -125,9 +125,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_RedWizard_IHaveGrownBeyondYou",
           "text": "I have grown beyond you.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire With Medal"
@@ -135,9 +135,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_RedWizard_IHaveGrownBeyondYou",
           "text": "I have grown beyond you.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire With Accolade"

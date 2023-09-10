@@ -5,9 +5,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_ObsidianJackal_TheSandsOfTimeStandStill",
           "text": "The sands of time stand still.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Equip"
@@ -15,19 +15,19 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_ObsidianJackal_IKeepVigilThroughEternity",
           "text": "I keep vigil through eternity.",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_ObsidianJackal_UnceasinglyIKeepWatch",
           "text": "Unceasingly, I keep watch.",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_ObsidianJackal_IStandWatching",
           "text": "I stand, watching.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Spawn"
@@ -35,9 +35,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_ObsidianJackal_IPerceiveYourPowerHasGrown",
           "text": "I perceive your power has grown.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Max Level"
@@ -45,19 +45,19 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_ObsidianJackal_BeholdAVictory",
           "text": "Behold! A victory!",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_ObsidianJackal_BearWitnessAnEnemyHasFallen",
           "text": "Bear witness! An enemy has fallen!",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_ObsidianJackal_ObserveAnAdversaryIsVanquished",
           "text": "Observe! An adversary is vanquished!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Add Boss Kill"
@@ -65,9 +65,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_ObsidianJackal_YouMustWatchMoreClosely",
           "text": "You must watch more closely.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Close Call"
@@ -75,9 +75,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_ObsidianJackal_IHaveObservedAnotherFailure",
           "text": "I have observed another failure.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Low Level Death"
@@ -85,9 +85,9 @@
     {
       "quotes": [
         {
-          "sound": "",
-          "text": "You must secure that watchpoint.",
-          "volume": 50
+          "sound": "Symbiote_ObsidianJackal_YouMustSecureThatWatchpost",
+          "text": "You must secure that watchpost.",
+          "volume": 200
         }
       ],
       "tag": "Discover Beacon"
@@ -95,9 +95,9 @@
     {
       "quotes": [
         {
-          "sound": "",
-          "text": "The watchpoint is secured.",
-          "volume": 50
+          "sound": "Symbiote_ObsidianJackal_TheWatchpostIsSecured",
+          "text": "The watchpost is secured.",
+          "volume": 200
         }
       ],
       "tag": "Activate Beacon"
@@ -105,9 +105,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_ObsidianJackal_TheEonsBearSolemnWitnessToThisGreatVictory",
           "text": "The eons bear solemn witness to this great victory.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Quest Boss Victory"
@@ -115,9 +115,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_ObsidianJackal_MyVigilContinues",
           "text": "My vigil continues.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire"
@@ -125,9 +125,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_ObsidianJackal_MyVigilContinues",
           "text": "My vigil continues.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire With Medal"
@@ -135,9 +135,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_ObsidianJackal_MyVigilContinues",
           "text": "My vigil continues.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire With Accolade"

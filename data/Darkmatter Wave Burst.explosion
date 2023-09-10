@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 60,
+      "maxDistPercent": 100,
+      "minDistPercent": 100,
+      "particleType": "Darkmatter Wave",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Darkmatter Wave Burst",
+  "sound": "explosion4",
+  "volume": 50
+}
+

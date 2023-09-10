@@ -1,0 +1,35 @@
+{
+  "boon": 1,
+  "credits": 7,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "applyToMana": 1,
+            "asPercentage": 0,
+            "glyphCount": 2,
+            "glyphDuration": 500,
+            "glyphRadius": 50,
+            "glyphType": "Recharge Indicator",
+            "healAmount": 10,
+            "tag": ""
+          },
+          "tag": "HealTrigger"
+        },
+        "when": 11
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Kinetic Divertor",
+  "overworldDrop": 1,
+  "plusEffects": [],
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 1
+}
+

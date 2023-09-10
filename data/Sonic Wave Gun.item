@@ -1,0 +1,33 @@
+{
+  "boon": 1,
+  "credits": 5,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "cooldown": 400,
+        "damage": 11,
+        "emitterType": "Sonic Wave Gun Trail",
+        "f": 0,
+        "halfArc": 1800,
+        "objectType": "Sonic Wave Gun Bullet",
+        "range": 240,
+        "reticleColor": 4518889,
+        "soundPack": "Hercules Small Guns",
+        "speed": 600,
+        "tag": "",
+        "turretBone": ""
+      },
+      "tag": "PlayerGunStats"
+    }
+  ],
+  "engines": 0,
+  "guns": 1,
+  "name": "Sonic Wave Gun",
+  "overworldDrop": 1,
+  "plusEffects": [],
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 0
+}
+

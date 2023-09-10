@@ -5,19 +5,19 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Grave_SurrenderToMe",
           "text": "Surrender to me.",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Grave_NoOneGetsOutAlive",
           "text": "No one gets out alive.",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Grave_ThereIsNoEscape",
           "text": "There is no escape.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Spawn"
@@ -25,9 +25,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Grave_TheEndComesForUsAll",
           "text": "The end comes for us all.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Equip"
@@ -35,9 +35,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Grave_YouHaveSurvivedThusFar",
           "text": "You have survived thus far.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Max Level"
@@ -45,19 +45,19 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Grave_TheGraveTakesAnother",
           "text": "The grave takes another.",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Grave_TheDeadClaimAnother",
           "text": "The dead claim another.",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Grave_IntoTheDarkness",
           "text": "Into the darkness.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Add Boss Kill"
@@ -65,9 +65,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Grave_YourTimeWillComeItIsInevitable",
           "text": "Your time will come. It is inevitable.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Close Call"
@@ -75,9 +75,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Grave_YourTimeHasCome",
           "text": "Your time has come.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Low Level Death"
@@ -85,9 +85,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Grave_ABeaconToOblivion",
           "text": "A beacon to oblivion.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Discover Beacon"
@@ -95,9 +95,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Grave_ThePortalOpensTheGraveYawns",
           "text": "The portal opens. The grave yawns.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Activate Beacon"
@@ -105,9 +105,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Grave_ConsumedByOblivion",
           "text": "Consumed by oblivion.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Quest Boss Victory"
@@ -115,9 +115,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Grave_YouHaveNotEscapedTheGrave",
           "text": "You have not escaped the grave.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire"
@@ -125,9 +125,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Grave_YouHaveNotEscapedTheGrave",
           "text": "You have not escaped the grave.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire With Medal"
@@ -135,9 +135,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Grave_YouHaveNotEscapedTheGrave",
           "text": "You have not escaped the grave.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire With Accolade"

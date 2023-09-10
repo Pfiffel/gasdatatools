@@ -1,0 +1,39 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 400,
+  "name": "Plasma Cutter Bullet",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 8650550,
+      "height": 80,
+      "mirror": 1,
+      "name": "Bullet",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -70,
+          "y": 0
+        },
+        {
+          "x": -54,
+          "y": 6
+        },
+        {
+          "x": 55,
+          "y": 6
+        },
+        {
+          "x": 69,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

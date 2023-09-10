@@ -5,19 +5,29 @@
     {
       "quotes": [
         {
-          "sound": "",
-          "text": "Unerring accuracy.\n",
-          "volume": 50
+          "sound": "Symbiote_Darkfall_IStrike",
+          "text": "I strike.",
+          "volume": 250
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Darkfall_UnerringAccuracy",
+          "text": "Unerring accuracy.",
+          "volume": 250
         },
         {
-          "sound": "",
-          "text": "Sudden death.\n",
-          "volume": 50
+          "sound": "Symbiote_Darkfall_SuddenDeath",
+          "text": "Sudden death.",
+          "volume": 250
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Darkfall_NoMercyNoQuarter",
           "text": "No mercy, no quarter.",
-          "volume": 50
+          "volume": 250
         }
       ],
       "tag": "Spawn"
@@ -25,12 +35,112 @@
     {
       "quotes": [
         {
-          "sound": "",
-          "text": "I strike.",
-          "volume": 50
+          "sound": "Symbiote_Darkfall_TrainingProtocolComplete",
+          "text": "Training protocol complete.",
+          "volume": 250
         }
       ],
-      "tag": "Equip"
+      "tag": "Max Level"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Darkfall_SubjectAssassinated",
+          "text": "Subject assassinated.",
+          "volume": 250
+        },
+        {
+          "sound": "Symbiote_Darkfall_TargetNeutralized",
+          "text": "Target neutralized.",
+          "volume": 250
+        },
+        {
+          "sound": "Symbiote_Darkfall_ContractFulfilled",
+          "text": "Contract fulfilled.",
+          "volume": 250
+        }
+      ],
+      "tag": "Add Boss Kill"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Darkfall_PreyStalkedQuarryHuntedCompetitionEliminated",
+          "text": "Prey stalked, quarry hunted, competition eliminated.",
+          "volume": 250
+        }
+      ],
+      "tag": "Quest Boss Victory"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Darkfall_LuckyEscape",
+          "text": "Lucky escape.",
+          "volume": 250
+        }
+      ],
+      "tag": "Close Call"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Darkfall_NotSoLucky",
+          "text": "Not so lucky.",
+          "volume": 250
+        }
+      ],
+      "tag": "Low Level Death"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Darkfall_TargetAcquired",
+          "text": "Target acquired.",
+          "volume": 250
+        }
+      ],
+      "tag": "Discover Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Darkfall_BeaconSecured",
+          "text": "Beacon secured.",
+          "volume": 250
+        }
+      ],
+      "tag": "Activate Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Darkfall_MissionComplete",
+          "text": "Mission complete.",
+          "volume": 250
+        }
+      ],
+      "tag": "Retire"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Darkfall_MissionComplete",
+          "text": "Mission complete.",
+          "volume": 250
+        }
+      ],
+      "tag": "Retire With Medal"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Darkfall_MissionComplete",
+          "text": "Mission complete.",
+          "volume": 250
+        }
+      ],
+      "tag": "Retire With Accolade"
     }
   ]
 }

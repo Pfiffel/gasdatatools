@@ -1,0 +1,46 @@
+{
+  "boon": 1,
+  "credits": 8,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 50,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Darkmatter Wave Burst",
+            "facing": 0,
+            "halfArc": 400,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 320,
+            "reticleColor": 3355443,
+            "statusEffects": [],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "Forward Blast"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 5
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Darkmatter Wave",
+  "overworldDrop": 1,
+  "plusEffects": [],
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 1
+}
+

@@ -1,0 +1,33 @@
+{
+  "boon": 1,
+  "credits": 5,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "cooldown": 280,
+        "damage": 12,
+        "emitterType": "Plasma Cutter Trail",
+        "f": 0,
+        "halfArc": 375,
+        "objectType": "Plasma Cutter Bullet",
+        "range": 190,
+        "reticleColor": 8650550,
+        "soundPack": "Hercules Small Guns",
+        "speed": 800,
+        "tag": "",
+        "turretBone": ""
+      },
+      "tag": "PlayerGunStats"
+    }
+  ],
+  "engines": 0,
+  "guns": 1,
+  "name": "Plasma Cutter",
+  "overworldDrop": 1,
+  "plusEffects": [],
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 0
+}
+

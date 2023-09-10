@@ -1,0 +1,34 @@
+{
+  "boon": 1,
+  "credits": 6,
+  "defenses": 1,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "glyphCount": 3,
+            "glyphDuration": 500,
+            "glyphRadius": 40,
+            "glyphType": "Ephesus Glyph",
+            "refillPercentage": 10,
+            "shieldIndex": -1,
+            "tag": ""
+          },
+          "tag": "ShieldRefillTrigger"
+        },
+        "when": 1
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Power Cell",
+  "overworldDrop": 1,
+  "plusEffects": [],
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 0
+}
+

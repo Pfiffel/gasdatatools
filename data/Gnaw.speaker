@@ -5,9 +5,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Gnaw_TastyDeliciousBones",
           "text": "Tasty, delicious bones!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Equip"
@@ -15,19 +15,19 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Gnaw_YesNiceBones",
           "text": "Yes, nice bones!",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Gnaw_DeliciousLegBones",
           "text": "Delicious leg bones!",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Gnaw_GiveMeYourBones",
           "text": "Give me your bones!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Spawn"
@@ -35,9 +35,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Gnaw_YesYesTheBonesGrowStronger",
           "text": "Yes, yes, the bones grow stronger!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Max Level"
@@ -45,19 +45,19 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Gnaw_MoreBones",
           "text": "More bones!",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Gnaw_OhTheBones",
           "text": "Oh the bones!",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Gnaw_GiveMeTheBones",
           "text": "Give me the bones!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Add Boss Kill"
@@ -65,49 +65,9 @@
     {
       "quotes": [
         {
-          "sound": "",
-          "text": "You're too fast! I'm so hungry!",
-          "volume": 50
-        }
-      ],
-      "tag": "Close Call"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
-          "text": "Can I have the bones?",
-          "volume": 50
-        }
-      ],
-      "tag": "Low Level Death"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
-          "text": "Get that for me!",
-          "volume": 50
-        }
-      ],
-      "tag": "Discover Beacon"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
-          "text": "There's no meat on this!",
-          "volume": 50
-        }
-      ],
-      "tag": "Activate Beacon"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
+          "sound": "Symbiote_Gnaw_MineAllMine",
           "text": "Mine! All mine!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Quest Boss Victory"
@@ -115,9 +75,49 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Gnaw_YoureTooFastImSoHungry",
+          "text": "You're too fast! I'm so hungry!",
+          "volume": 200
+        }
+      ],
+      "tag": "Close Call"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Gnaw_CanIHaveTheBones",
+          "text": "Can I have the bones?",
+          "volume": 200
+        }
+      ],
+      "tag": "Low Level Death"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Gnaw_GetThatForMe",
+          "text": "Get that for me!",
+          "volume": 200
+        }
+      ],
+      "tag": "Discover Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Gnaw_TheresNoMeatOnThis",
+          "text": "There's no meat on this!",
+          "volume": 200
+        }
+      ],
+      "tag": "Activate Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Gnaw_OffToFindMoreBones",
           "text": "Off to find more bones!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire"
@@ -125,9 +125,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Gnaw_OffToFindMoreBones",
           "text": "Off to find more bones!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire With Medal"
@@ -135,9 +135,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Gnaw_OffToFindMoreBones",
           "text": "Off to find more bones!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire With Accolade"

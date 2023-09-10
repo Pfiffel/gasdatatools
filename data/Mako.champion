@@ -146,7 +146,7 @@
           "data": {
             "collisionSettings": {
               "cooldownToRetain": 1500,
-              "damage": 250,
+              "damage": 200,
               "dematerialTime": 500,
               "explosion": "Mako Jaws",
               "explosionRange": 50,
@@ -182,6 +182,7 @@
             "range": 290,
             "reticleColor": 11184810,
             "sound": "Player_Mako_Sharklet_Launch",
+            "soundPack": "",
             "speed": 250,
             "statusEffects": [],
             "tag": "Mako 3 Sharklet",

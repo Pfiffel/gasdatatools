@@ -1,0 +1,43 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 400,
+  "name": "Darkmatter Wave",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 3355443,
+      "height": 80,
+      "mirror": 1,
+      "name": "Particle",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 3,
+          "y": 8
+        },
+        {
+          "x": -10,
+          "y": 33
+        },
+        {
+          "x": -14,
+          "y": 58
+        },
+        {
+          "x": 7,
+          "y": 38
+        },
+        {
+          "x": 16,
+          "y": 13
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+
