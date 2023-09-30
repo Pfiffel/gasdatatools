@@ -5,19 +5,29 @@
     {
       "quotes": [
         {
-          "sound": "",
-          "text": "Hee hee! I'll show 'em!\n",
-          "volume": 50
+          "sound": "Symbiote_Snap_DontTakeMePotOCold",
+          "text": "Don't take me pot o' cold!",
+          "volume": 200
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Snap_HeeHeeIllShowEm",
+          "text": "Hee hee! I'll show 'em!",
+          "volume": 200
         },
         {
-          "sound": "",
-          "text": "Can't catch me!\n",
-          "volume": 50
+          "sound": "Symbiote_Snap_CantCatchMe",
+          "text": "Can't catch me!",
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Snap_TheyreAfterMeLuckyCharms",
           "text": "They're after me lucky charms!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Spawn"
@@ -25,12 +35,112 @@
     {
       "quotes": [
         {
-          "sound": "",
-          "text": "Don't take me pot o' cold!",
-          "volume": 50
+          "sound": "Symbiote_Snap_HeeHeeYoureAGrandLeprechaunNow",
+          "text": "Hee hee! You're a grand leprechaun now!",
+          "volume": 200
         }
       ],
-      "tag": "Equip"
+      "tag": "Max Level"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Snap_AhItWarmsMeHeart",
+          "text": "Ah, it warms me heart!",
+          "volume": 200
+        },
+        {
+          "sound": "Symbiote_Snap_FrozenSolid",
+          "text": "Frozen solid!",
+          "volume": 200
+        },
+        {
+          "sound": "Symbiote_Snap_ChilledToTheBone",
+          "text": "Chilled to the bone!",
+          "volume": 200
+        }
+      ],
+      "tag": "Add Boss Kill"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Snap_WintersWrathUponYe",
+          "text": "Winter's wrath upon ye!",
+          "volume": 200
+        }
+      ],
+      "tag": "Quest Boss Victory"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Snap_YouveGotTheLeprechaunsGiftOLuck",
+          "text": "You've got the leprechaun's gift o' luck!",
+          "volume": 200
+        }
+      ],
+      "tag": "Close Call"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Snap_ItChillsMyHeartWhenABraveLeprechaunFalls",
+          "text": "It chills my heart when a brave leprechaun falls.",
+          "volume": 200
+        }
+      ],
+      "tag": "Low Level Death"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Snap_ABeaconItsASignOGoodFortune",
+          "text": "A beacon! It's a sign o' good fortune!",
+          "volume": 200
+        }
+      ],
+      "tag": "Discover Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Snap_TheBeaconItsATreasureTrove",
+          "text": "The beacon, it's a treasure trove!",
+          "volume": 200
+        }
+      ],
+      "tag": "Activate Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Snap_WooHooImAway",
+          "text": "Woo hoo, I'm away!",
+          "volume": 200
+        }
+      ],
+      "tag": "Retire"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Snap_WooHooImAway",
+          "text": "Woo hoo, I'm away!",
+          "volume": 200
+        }
+      ],
+      "tag": "Retire With Medal"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Snap_WooHooImAway",
+          "text": "Woo hoo, I'm away!",
+          "volume": 200
+        }
+      ],
+      "tag": "Retire With Accolade"
     }
   ]
 }

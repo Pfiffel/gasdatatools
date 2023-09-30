@@ -5,29 +5,9 @@
     {
       "quotes": [
         {
-          "sound": "",
-          "text": "Felicitations.",
-          "volume": 50
-        },
-        {
-          "sound": "",
-          "text": "Well met.",
-          "volume": 50
-        },
-        {
-          "sound": "",
-          "text": "Salutations.",
-          "volume": 50
-        }
-      ],
-      "tag": "Spawn"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
+          "sound": "Symbiote_GreyGhost_GreetingsStranger",
           "text": "Greetings, stranger.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Equip"
@@ -35,9 +15,29 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_GreyGhost_Felicitations",
+          "text": "Felicitations.",
+          "volume": 200
+        },
+        {
+          "sound": "Symbiote_GreyGhost_WellMet",
+          "text": "Well met.",
+          "volume": 200
+        },
+        {
+          "sound": "Symbiote_GreyGhost_Salutations",
+          "text": "Salutations.",
+          "volume": 200
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_GreyGhost_BravoBravo",
           "text": "Bravo! Bravo!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Max Level"
@@ -45,69 +45,29 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_GreyGhost_Capital",
           "text": "Capital!",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_GreyGhost_Extraordinary",
           "text": "Extraordinary!",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_GreyGhost_Marvelous",
           "text": "Marvelous!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Add Boss Kill"
     },
-    {
+	{
       "quotes": [
         {
-          "sound": "",
-          "text": "That was a close shave.",
-          "volume": 50
-        }
-      ],
-      "tag": "Close Call"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
-          "text": "A pity, that.",
-          "volume": 50
-        }
-      ],
-      "tag": "Low Level Death"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
-          "text": "A beacon! Superb!",
-          "volume": 50
-        }
-      ],
-      "tag": "Discover Beacon"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
-          "text": "Jolly good!",
-          "volume": 50
-        }
-      ],
-      "tag": "Activate Beacon"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
+          "sound": "Symbiote_GreyGhost_SplendidAbsolutelyBrilliant",
           "text": "Splendid! Absolutely brilliant!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Quest Boss Victory"
@@ -115,9 +75,49 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_GreyGhost_ThatWasACloseShave",
+          "text": "That was a close shave.",
+          "volume": 200
+        }
+      ],
+      "tag": "Close Call"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_GreyGhost_APityThat",
+          "text": "A pity, that.",
+          "volume": 200
+        }
+      ],
+      "tag": "Low Level Death"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_GreyGhost_ABeaconSuperb",
+          "text": "A beacon! Superb!",
+          "volume": 200
+        }
+      ],
+      "tag": "Discover Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_GreyGhost_JollyGood",
+          "text": "Jolly good!",
+          "volume": 200
+        }
+      ],
+      "tag": "Activate Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_GreyGhost_OffIGoThen",
           "text": "Off I go, then.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire"
@@ -125,9 +125,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_GreyGhost_OffIGoThen",
           "text": "Off I go, then.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire With Medal"
@@ -135,9 +135,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_GreyGhost_OffIGoThen",
           "text": "Off I go, then.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire With Accolade"

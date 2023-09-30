@@ -5,19 +5,29 @@
     {
       "quotes": [
         {
-          "sound": "",
-          "text": "This concoction is perfect!\n",
-          "volume": 50
+          "sound": "Symbiote_Alchemist_TheChemistryIsUndeniable",
+          "text": "The chemistry is undeniable!",
+          "volume": 200
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Alchemist_ThisConcoctionIsPerfect",
+          "text": "This concoction is perfect!",
+          "volume": 200
         },
         {
-          "sound": "",
-          "text": "The ideal combination of elements!\n",
-          "volume": 50
+          "sound": "Symbiote_Alchemist_TheIdealCombinationOfElements",
+          "text": "The ideal combination of elements!",
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Alchemist_WhatCouldPossiblyGoWrong",
           "text": "What could possibly go wrong?",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Spawn"
@@ -25,12 +35,112 @@
     {
       "quotes": [
         {
-          "sound": "",
-          "text": "The chemistry is undeniable!",
-          "volume": 50
+          "sound": "Symbiote_Alchemist_ThisConcoctionIsReadyToBlow",
+          "text": "This concoction is ready to blow!",
+          "volume": 200
         }
       ],
-      "tag": "Equip"
+      "tag": "Max Level"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Alchemist_WhatAVolatileCombination",
+          "text": "What a volatile combination!",
+          "volume": 200
+        },
+        {
+          "sound": "Symbiote_Alchemist_ThatWasAnExplosiveReaction",
+          "text": "Bear witness! An enemy has fallen!",
+          "volume": 200
+        },
+        {
+          "sound": "Symbiote_Alchemist_SpontaneousExplosionsMyFavoriteKind",
+          "text": "Observe! An adversary is vanquished!",
+          "volume": 200
+        }
+      ],
+      "tag": "Add Boss Kill"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Alchemist_NowThatWasABigKaboom",
+          "text": "Now that was a big kaboom!",
+          "volume": 200
+        }
+      ],
+      "tag": "Quest Boss Victory"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Alchemist_MyHypothesisWasRightExplosionsDoMakeEverythingMoreExciting",
+          "text": "My hypothesis was right! Explosions do make everything more exciting.",
+          "volume": 200
+        }
+      ],
+      "tag": "Close Call"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Alchemist_WellThatResultWasUnexpected",
+          "text": "Well, that result was unexpected!",
+          "volume": 200
+        }
+      ],
+      "tag": "Low Level Death"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Alchemist_WeMustAcquireThoseChemicals",
+          "text": "We must acquire those chemicals!",
+          "volume": 200
+        }
+      ],
+      "tag": "Discover Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Alchemist_AhhYesWeCanDoAllKindsOfExperimentsWithThese",
+          "text": "Ahh yes, we can do all kinds of experiments with these!",
+          "volume": 200
+        }
+      ],
+      "tag": "Activate Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Alchemist_ForScience",
+          "text": "For science!",
+          "volume": 200
+        }
+      ],
+      "tag": "Retire"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Alchemist_ForScience",
+          "text": "For science!",
+          "volume": 200
+        }
+      ],
+      "tag": "Retire With Medal"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Alchemist_ForScience",
+          "text": "For science!",
+          "volume": 200
+        }
+      ],
+      "tag": "Retire With Accolade"
     }
   ]
 }

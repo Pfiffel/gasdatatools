@@ -1,0 +1,161 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Capstone HWall",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 1,
+      "color": 4211272,
+      "height": 0,
+      "mirror": 1,
+      "name": "Floor",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 154,
+          "y": 52
+        },
+        {
+          "x": -154,
+          "y": 52
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 1,
+      "color": 6777726,
+      "height": 44,
+      "mirror": 1,
+      "name": "Roof",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -144,
+          "y": 34
+        },
+        {
+          "x": -127,
+          "y": 47
+        },
+        {
+          "x": -79,
+          "y": 47
+        },
+        {
+          "x": -69,
+          "y": 47
+        },
+        {
+          "x": -21,
+          "y": 47
+        },
+        {
+          "x": -4,
+          "y": 34
+        },
+        {
+          "x": 4,
+          "y": 34
+        },
+        {
+          "x": 21,
+          "y": 47
+        },
+        {
+          "x": 69,
+          "y": 47
+        },
+        {
+          "x": 79,
+          "y": 47
+        },
+        {
+          "x": 127,
+          "y": 47
+        },
+        {
+          "x": 144,
+          "y": 34
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4211272,
+      "height": 47,
+      "mirror": 1,
+      "name": "Top Cross",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -138,
+          "y": 10
+        },
+        {
+          "x": -70,
+          "y": 10
+        },
+        {
+          "x": -70,
+          "y": 38
+        },
+        {
+          "x": -36,
+          "y": 38
+        },
+        {
+          "x": -9,
+          "y": 19
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4211272,
+      "height": 47,
+      "mirror": 1,
+      "name": "Top Cross",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 138,
+          "y": 10
+        },
+        {
+          "x": 70,
+          "y": 10
+        },
+        {
+          "x": 70,
+          "y": 38
+        },
+        {
+          "x": 36,
+          "y": 38
+        },
+        {
+          "x": 9,
+          "y": 19
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+
