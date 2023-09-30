@@ -342,7 +342,7 @@ class Monster
 		for (var sh in this.data.shields){
 			var shield = this.data.shields[sh];
 			let attackDiv = document.createElement('div');
-			attackDiv.innerHTML = "Shield: <b>" + shield.percentProtection + "%</b> damage reduction";
+			attackDiv.innerHTML = "Shield: " + GetArc(shield.halfArc) + ", <b>" + shield.percentProtection + "%</b> damage reduction";
 			div.appendChild(attackDiv);
 		}
 		if(this.data.burrowDetectRange > 0)
