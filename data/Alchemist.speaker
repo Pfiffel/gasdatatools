@@ -51,12 +51,12 @@
         },
         {
           "sound": "Symbiote_Alchemist_ThatWasAnExplosiveReaction",
-          "text": "Bear witness! An enemy has fallen!",
+          "text": "That was an explosive reaction!",
           "volume": 200
         },
         {
           "sound": "Symbiote_Alchemist_SpontaneousExplosionsMyFavoriteKind",
-          "text": "Observe! An adversary is vanquished!",
+          "text": "Spontaneous explosions, my favorite kind!",
           "volume": 200
         }
       ],

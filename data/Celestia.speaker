@@ -5,9 +5,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Celestia_TheStarsShineOnAllCreaturesGreatAndSmall",
           "text": "The stars shine on all creatures great and small.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Equip"
@@ -15,19 +15,19 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Celestia_TheHeavensShineDownOnTheMortalRealm",
           "text": "The heavens shine down on the mortal realm.",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Celestia_MayTheWisdomOfTheHeavensGuideYourDeeds",
           "text": "May the wisdom of the heavens guide your deeds.",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Celestia_TheHeavensShallProtectYouInAllEndeavours",
           "text": "The heavens shall protect you in all endeavours.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Spawn"
@@ -35,9 +35,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Celestia_EvenMortalCreaturesCanImproveThemselves",
           "text": "Even mortal creatures can improve themselves.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Max Level"
@@ -45,19 +45,19 @@
     {
       "quotes": [
         {
-          "sound": "",
-          "text": "The power of the heavens will not be denied.",
-          "volume": 50
+          "sound": "Symbiote_Celestia_ThePowerOfTheHeavensShallNotBeDenied",
+          "text": "The power of the heavens shall not be denied.",
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Celestia_TheSupremacyOfTheStarsCannotBeChallenged",
           "text": "The supremacy of the stars cannot be challenged.",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Celestia_NoMortalCanWithstandThePowerOfTheStars",
           "text": "No mortal can withstand the power of the stars.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Add Boss Kill"
@@ -65,49 +65,9 @@
     {
       "quotes": [
         {
-          "sound": "",
-          "text": "The protection of the heavens!",
-          "volume": 50
-        }
-      ],
-      "tag": "Close Call"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
-          "text": "The heavens mourn you.",
-          "volume": 50
-        }
-      ],
-      "tag": "Low Level Death"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
-          "text": "What is this, that was obscured from heaven's gaze?",
-          "volume": 50
-        }
-      ],
-      "tag": "Discover Beacon"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
-          "text": "The heavens have claimed this beacon.",
-          "volume": 50
-        }
-      ],
-      "tag": "Activate Beacon"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
+          "sound": "Symbiote_Celestia_WithinTheStarlightLiesUnspeakablePower",
           "text": "Within the starlight lies unspeakable power.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Quest Boss Victory"
@@ -115,9 +75,49 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Celestia_TheProtectionOfTheHeavens",
+          "text": "The protection of the heavens!",
+          "volume": 200
+        }
+      ],
+      "tag": "Close Call"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Celestia_TheHeavensMournYou",
+          "text": "The heavens mourn you.",
+          "volume": 200
+        }
+      ],
+      "tag": "Low Level Death"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Celestia_WhatIsThisThatWasObscuredFromHeavensGaze",
+          "text": "What is this, that was obscured from heaven's gaze?",
+          "volume": 200
+        }
+      ],
+      "tag": "Discover Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Celestia_TheHeavensHaveClaimedThisBeacon",
+          "text": "The heavens have claimed this beacon.",
+          "volume": 200
+        }
+      ],
+      "tag": "Activate Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Celestia_IShallObserveYouFromAfar",
           "text": "I shall observe you from afar.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire"
@@ -125,9 +125,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Celestia_IShallObserveYouFromAfar",
           "text": "I shall observe you from afar.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire With Medal"
@@ -135,9 +135,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Celestia_IShallObserveYouFromAfar",
           "text": "I shall observe you from afar.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire With Accolade"

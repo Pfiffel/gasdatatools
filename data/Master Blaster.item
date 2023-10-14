@@ -1,0 +1,24 @@
+{
+  "boon": 1,
+  "credits": 8,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 12,
+        "statType": 21
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Master Blaster",
+  "overworldDrop": 1,
+  "plusEffects": [],
+  "precursorTech": 0,
+  "rare": 0,
+  "triggers": 1
+}
+

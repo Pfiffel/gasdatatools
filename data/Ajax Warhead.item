@@ -1,0 +1,24 @@
+{
+  "boon": 1,
+  "credits": 6,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 20,
+        "statType": 23
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Ajax Warhead",
+  "overworldDrop": 1,
+  "plusEffects": [],
+  "precursorTech": 0,
+  "rare": 0,
+  "triggers": 1
+}
+

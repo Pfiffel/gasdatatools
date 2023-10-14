@@ -5,29 +5,9 @@
     {
       "quotes": [
         {
-          "sound": "",
-          "text": "Hey honey, nice to see ya!",
-          "volume": 50
-        },
-        {
-          "sound": "",
-          "text": "What's cookin', good lookin'?",
-          "volume": 50
-        },
-        {
-          "sound": "",
-          "text": "Well, butter my biscuits!",
-          "volume": 50
-        }
-      ],
-      "tag": "Spawn"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
+          "sound": "Symbiote_Sweetwater_WellIllBe",
           "text": "Well I'll be!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Equip"
@@ -35,9 +15,29 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Sweetwater_HeyHoneyNiceToSeeYa",
+          "text": "Hey honey, nice to see ya!",
+          "volume": 200
+        },
+        {
+          "sound": "Symbiote_Sweetwater_WhatsCookinGoodLookin",
+          "text": "What's cookin', good lookin'?",
+          "volume": 200
+        },
+        {
+          "sound": "Symbiote_Sweetwater_WellButterMyBiscuits",
+          "text": "Well, butter my biscuits!",
+          "volume": 200
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Sweetwater_OhSweetieImSoProud",
           "text": "Oh sweetie, I'm so proud!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Max Level"
@@ -45,19 +45,19 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Sweetwater_GreatJobSugarBumpkins",
           "text": "Great job, sugar bumpkins!",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Sweetwater_WayToGoHoneyBunch",
           "text": "Way to go, honey bunch!",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Sweetwater_NiceJobSweetPea",
           "text": "Nice job, sweet pea!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Add Boss Kill"
@@ -65,49 +65,9 @@
     {
       "quotes": [
         {
-          "sound": "",
-          "text": "Bless your heart, let's get you fixed up.",
-          "volume": 50
-        }
-      ],
-      "tag": "Close Call"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
-          "text": "Aww honey, I'm so sorry.",
-          "volume": 50
-        }
-      ],
-      "tag": "Low Level Death"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
-          "text": "Hey sugar plum! What's that?",
-          "volume": 50
-        }
-      ],
-      "tag": "Discover Beacon"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
-          "text": "Isn't that just a ray of sunshine?",
-          "volume": 50
-        }
-      ],
-      "tag": "Activate Beacon"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
+          "sound": "Symbiote_Sweetwater_OhDarlinYouDidSoGood",
           "text": "Oh darlin', you did so good!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Quest Boss Victory"
@@ -115,9 +75,49 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Sweetwater_BlessYourHeartLetsGetYouFixedUp",
+          "text": "Bless your heart, let's get you fixed up.",
+          "volume": 200
+        }
+      ],
+      "tag": "Close Call"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Sweetwater_AwwHoneyImSoSorry",
+          "text": "Aww honey, I'm so sorry.",
+          "volume": 200
+        }
+      ],
+      "tag": "Low Level Death"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Sweetwater_HeySugarPlumWhatsThat",
+          "text": "Hey sugar plum! What's that?",
+          "volume": 200
+        }
+      ],
+      "tag": "Discover Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Sweetwater_WellAintThatJustARayOfSunshine",
+          "text": "Well ain't that just a ray of sunshine?",
+          "volume": 200
+        }
+      ],
+      "tag": "Activate Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Sweetwater_SeeYouNextTimeSugarPie",
           "text": "See you next time, sugar pie!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire"
@@ -125,9 +125,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Sweetwater_SeeYouNextTimeSugarPie",
           "text": "See you next time, sugar pie!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire With Medal"
@@ -135,9 +135,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Sweetwater_SeeYouNextTimeSugarPie",
           "text": "See you next time, sugar pie!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire With Accolade"

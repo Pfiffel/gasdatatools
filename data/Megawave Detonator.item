@@ -1,0 +1,24 @@
+{
+  "boon": 1,
+  "credits": 7,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 22,
+        "statType": 22
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Megawave Detonator",
+  "overworldDrop": 1,
+  "plusEffects": [],
+  "precursorTech": 0,
+  "rare": 0,
+  "triggers": 1
+}
+

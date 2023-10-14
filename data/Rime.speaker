@@ -5,9 +5,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Rime_LongHaveISufferedInTheCold",
           "text": "Long have I suffered in the cold.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Equip"
@@ -15,19 +15,19 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Rime_IFaceTheColdAlone",
           "text": "I face the cold, alone.",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
-          "text": "Ice feels no pain.",
-          "volume": 50
+          "sound": "Symbiote_Rime_FrozenIceFeelsNoPain",
+          "text": "Frozen ice feels no pain.",
+          "volume": 200
         },
         {
-          "sound": "",
-          "text": "I'll freeze out the world.",
-          "volume": 50
+          "sound": "Symbiote_Rime_IShallFreezeOutTheWorld",
+          "text": "I shall freeze out the world.",
+          "volume": 200
         }
       ],
       "tag": "Spawn"
@@ -35,9 +35,9 @@
     {
       "quotes": [
         {
-          "sound": "",
-          "text": "Let the ice harden around you!",
-          "volume": 50
+          "sound": "Symbiote_Rime_TheIceHardensAroundYourHeart",
+          "text": "The ice hardens around your heart!",
+          "volume": 200
         }
       ],
       "tag": "Max Level"
@@ -45,19 +45,19 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Rime_ColdAsIce",
+          "text": "Cold as ice!",
+          "volume": 200
+        },
+        {
+          "sound": "Symbiote_Rime_ColdHearted",
           "text": "Cold hearted!",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
-          "text": "Frosty!",
-          "volume": 50
-        },
-        {
-          "sound": "",
-          "text": "Stone cold!",
-          "volume": 50
+          "sound": "Symbiote_Rime_Frozen",
+          "text": "Frozen!",
+          "volume": 200
         }
       ],
       "tag": "Add Boss Kill"
@@ -65,49 +65,9 @@
     {
       "quotes": [
         {
-          "sound": "",
-          "text": "Saved by solid ice!",
-          "volume": 50
-        }
-      ],
-      "tag": "Close Call"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
-          "text": "Thin ice!",
-          "volume": 50
-        }
-      ],
-      "tag": "Low Level Death"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
-          "text": "That ice fortress, I need it!",
-          "volume": 50
-        }
-      ],
-      "tag": "Discover Beacon"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
-          "text": "My impregnable ice fortress!",
-          "volume": 50
-        }
-      ],
-      "tag": "Activate Beacon"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
+          "sound": "Symbiote_Rime_HeartOfPurestIce",
           "text": "Heart of purest ice!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Quest Boss Victory"
@@ -115,9 +75,49 @@
     {
       "quotes": [
         {
-          "sound": "",
-          "text": "Back into the cold!",
-          "volume": 50
+          "sound": "Symbiote_Rime_ThinIce",
+          "text": "Thin ice!",
+          "volume": 200
+        }
+      ],
+      "tag": "Close Call"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Rime_TheIceItShatters",
+          "text": "The ice, it shatters!",
+          "volume": 200
+        }
+      ],
+      "tag": "Low Level Death"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Rime_ThatIceFortressINeedIt",
+          "text": "That ice fortress, I need it!",
+          "volume": 200
+        }
+      ],
+      "tag": "Discover Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Rime_MyImpregnableIceFortress",
+          "text": "My impregnable ice fortress!",
+          "volume": 200
+        }
+      ],
+      "tag": "Activate Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Rime_BackToTheCold",
+          "text": "Back to the cold!",
+          "volume": 200
         }
       ],
       "tag": "Retire"
@@ -125,9 +125,9 @@
     {
       "quotes": [
         {
-          "sound": "",
-          "text": "Back into the cold!",
-          "volume": 50
+          "sound": "Symbiote_Rime_BackToTheCold",
+          "text": "Back to the cold!",
+          "volume": 200
         }
       ],
       "tag": "Retire With Medal"
@@ -135,9 +135,9 @@
     {
       "quotes": [
         {
-          "sound": "",
-          "text": "Back into the cold!",
-          "volume": 50
+          "sound": "Symbiote_Rime_BackToTheCold",
+          "text": "Back to the cold!",
+          "volume": 200
         }
       ],
       "tag": "Retire With Accolade"

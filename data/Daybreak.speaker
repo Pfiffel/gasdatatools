@@ -5,9 +5,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Daybreak_InvokeMyPower",
           "text": "Invoke my power!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Equip"
@@ -15,19 +15,19 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Daybreak_ThePowerOfDawnHasNoLimits",
           "text": "The power of dawn has no limits.",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Daybreak_IAidThoseWhoAskItOfMe",
           "text": "I aid those who ask it of me.",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Daybreak_ProstrateYourselfBeforeMyOmnipotence",
           "text": "Prostrate yourself before my omnipotence.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Spawn"
@@ -35,9 +35,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Daybreak_TheGoddessShinesOnThoseWhoImproveThemselves",
           "text": "The goddess shines on those who improve themselves.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Max Level"
@@ -45,19 +45,19 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Daybreak_DestroyedByThePowerOfTheGoddess",
           "text": "Destroyed by the power of the goddess!",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Daybreak_OverwhelmedByTheBrightnessOfDawn",
           "text": "Overwhelmed by the brightness of dawn!",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Daybreak_OverwroughtByPureSunlight",
           "text": "Overwrought by pure sunlight!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Add Boss Kill"
@@ -65,49 +65,9 @@
     {
       "quotes": [
         {
-          "sound": "",
-          "text": "I have spared you.",
-          "volume": 50
-        }
-      ],
-      "tag": "Close Call"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
-          "text": "I bid you rise again in the light of day!",
-          "volume": 50
-        }
-      ],
-      "tag": "Low Level Death"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
-          "text": "We shall claim that beacon!",
-          "volume": 50
-        }
-      ],
-      "tag": "Discover Beacon"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
-          "text": "This beacon is mine!",
-          "volume": 50
-        }
-      ],
-      "tag": "Activate Beacon"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
+          "sound": "Symbiote_Daybreak_KneelBeforeMyAllConqueringPower",
           "text": "Kneel before my all-conquering power!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Quest Boss Victory"
@@ -115,9 +75,49 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Daybreak_IHaveSparedYou",
+          "text": "I have spared you.",
+          "volume": 200
+        }
+      ],
+      "tag": "Close Call"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Daybreak_IBidYouRiseAgainInTheLightOfDay",
+          "text": "I bid you rise again in the light of day!",
+          "volume": 200
+        }
+      ],
+      "tag": "Low Level Death"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Daybreak_WeShallClaimThatBeacon",
+          "text": "We shall claim that beacon!",
+          "volume": 200
+        }
+      ],
+      "tag": "Discover Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Daybreak_ThisBeaconIsMine",
+          "text": "This beacon is mine!",
+          "volume": 200
+        }
+      ],
+      "tag": "Activate Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Daybreak_IGoForthToShineOnEveryWorld",
           "text": "I go forth to shine on every world!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire"
@@ -125,9 +125,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Daybreak_IGoForthToShineOnEveryWorld",
           "text": "I go forth to shine on every world!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire With Medal"
@@ -135,9 +135,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Daybreak_IGoForthToShineOnEveryWorld",
           "text": "I go forth to shine on every world!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire With Accolade"

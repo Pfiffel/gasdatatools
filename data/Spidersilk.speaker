@@ -5,29 +5,9 @@
     {
       "quotes": [
         {
-          "sound": "",
-          "text": "Stay. Away.",
-          "volume": 50
-        },
-        {
-          "sound": "",
-          "text": "Do not come near.",
-          "volume": 50
-        },
-        {
-          "sound": "",
-          "text": "Be gone from me.",
-          "volume": 50
-        }
-      ],
-      "tag": "Spawn"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
+          "sound": "Symbiote_Spidersilk_YesIDoBite",
           "text": "Yes, I do bite.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Equip"
@@ -35,9 +15,29 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Spidersilk_StayAway",
+          "text": "Stay. Away.",
+          "volume": 200
+        },
+        {
+          "sound": "Symbiote_Spidersilk_DoNotComeNear",
+          "text": "Do not come near.",
+          "volume": 200
+        },
+        {
+          "sound": "Symbiote_Spidersilk_BeGoneFromMe",
+          "text": "Be gone from me.",
+          "volume": 200
+        }
+      ],
+      "tag": "Spawn"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Spidersilk_WellDoneLittleFlyNowStepIntoMyParlor",
           "text": "Well done, little fly. Now step into my parlor.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Max Level"
@@ -45,19 +45,19 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Spidersilk_EnsnaredByTheSpider",
           "text": "Ensnared by the spider.",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Spidersilk_Envenomed",
           "text": "Envenomed.",
-          "volume": 50
+          "volume": 200
         },
         {
-          "sound": "",
+          "sound": "Symbiote_Spidersilk_CaughtInTheWeb",
           "text": "Caught in the web.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Add Boss Kill"
@@ -65,49 +65,9 @@
     {
       "quotes": [
         {
-          "sound": "",
-          "text": "You have evaded the trap, little fly.",
-          "volume": 50
-        }
-      ],
-      "tag": "Close Call"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
-          "text": "Ensnared by a web of deceit.",
-          "volume": 50
-        }
-      ],
-      "tag": "Low Level Death"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
-          "text": "Ensnare that beacon!",
-          "volume": 50
-        }
-      ],
-      "tag": "Discover Beacon"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
-          "text": "Well done, my spider.",
-          "volume": 50
-        }
-      ],
-      "tag": "Activate Beacon"
-    },
-    {
-      "quotes": [
-        {
-          "sound": "",
+          "sound": "Symbiote_Spidersilk_TheSpidersKissIsDeadly",
           "text": "The spider's kiss is deadly.",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Quest Boss Victory"
@@ -115,9 +75,49 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Spidersilk_YouHaveEvadedTheTrapLittleFly",
+          "text": "You have evaded the trap, little fly.",
+          "volume": 200
+        }
+      ],
+      "tag": "Close Call"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Spidersilk_EnsnaredByAWebOfDeceit",
+          "text": "Ensnared by a web of deceit.",
+          "volume": 200
+        }
+      ],
+      "tag": "Low Level Death"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Spidersilk_EnsnareThatBeacon",
+          "text": "Ensnare that beacon!",
+          "volume": 200
+        }
+      ],
+      "tag": "Discover Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Spidersilk_WellDoneMySpider",
+          "text": "Well done, my spider.",
+          "volume": 200
+        }
+      ],
+      "tag": "Activate Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "Symbiote_Spidersilk_FareYouWellMySpider",
           "text": "Fare you well, my spider!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire"
@@ -125,9 +125,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Spidersilk_FareYouWellMySpider",
           "text": "Fare you well, my spider!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire With Medal"
@@ -135,9 +135,9 @@
     {
       "quotes": [
         {
-          "sound": "",
+          "sound": "Symbiote_Spidersilk_FareYouWellMySpider",
           "text": "Fare you well, my spider!",
-          "volume": 50
+          "volume": 200
         }
       ],
       "tag": "Retire With Accolade"
