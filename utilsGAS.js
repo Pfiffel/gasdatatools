@@ -39,7 +39,10 @@ const STAT_TYPES = {
 	"17": ["SCOOT_RATE", "Scoot Rate"],
 	"18": ["TURN_RATE", "Turn Rate"],
 	"19": ["XP_RATE", "XP Bonus"],
-	"20": ["DAMAGE_VS_FROZEN", "Damage vs Frozen/Chilled"]
+	"20": ["DAMAGE_VS_FROZEN", "Damage vs Frozen/Chilled"],
+	"21": ["BLAST_DAMAGE", "Blast Damage"],
+	"22": ["BOMB_DAMAGE", "Bomb Damage"],
+	"23": ["MISSILE_DAMAGE", "Missile Damage"]
 };
 const ACTIVE_WHILE_NAMES = {
 	"0": ["ALWAYS", "always"],
