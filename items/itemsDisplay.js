@@ -3,7 +3,7 @@ var TIERS = 10;
 var ITEM_DROPPERS = [];
 var tableOutput = document.getElementById("tableOutput");
 
-var datatypes = ["item","monster","object","globals"]; // for utilGAS to load files, calls parseData once completed
+var datatypes = ["item","monster","object","globals","symbiote","champion"]; // for utilGAS to load files, calls parseData once completed
 loadGasData();
 
 var header = document.getElementById("header");
@@ -50,12 +50,173 @@ function MakeList()
 	tableOutput.appendChild(MakeSpecificTable(1,2,0,0,-1,1));
 	tableOutput.appendChild(MakeTextDiv("<h2>Precursor Tech</h2>"));
 	tableOutput.appendChild(MakeSpecificTable(1,-1,1,0,-1,1));
+	tableOutput.appendChild(MakeTextDiv("<h2>Damage Types</h2>"));
+	tableOutput.appendChild(DamageTypeTable());
 	tableOutput.appendChild(MakeTextDiv("<h2>Enhancement Modules</h2>"));
 	tableOutput.appendChild(MakeSpecificTable(0,-1,0,-1,1,0));
 	tableOutput.appendChild(MakeTextDiv("<h2>Usage Stats</h2>"));
 	tableOutput.appendChild(showUsage(STAT_TYPES));
 	tableOutput.appendChild(showUsage(TRIGGERED_TRIGGER_EFFECTS));
 	//tableOutput.appendChild(showUsage(ACTIVE_WHILE_NAMES));
+}
+function DamageTypeTable()
+{
+	var tbl = document.createElement('table');
+	let th = tbl.insertRow();
+	makeHeaderCell(STAT_TYPES[STATS.BLAST_DAMAGE][1], th);
+	makeHeaderCell(STAT_TYPES[STATS.BOMB_DAMAGE][1], th);
+	makeHeaderCell(STAT_TYPES[STATS.MISSILE_DAMAGE][1], th);
+	let tr = tbl.insertRow();
+	for (let i = STATS.BLAST_DAMAGE; i <= STATS.MISSILE_DAMAGE; i++)
+	{
+		let cell = makeCell("", tr);
+		cell.appendChild(MakeTriggerList(i));
+	}
+	/*let tr2 = tbl.insertRow();
+	for (let i = STATS.BLAST_DAMAGE; i <= STATS.MISSILE_DAMAGE; i++)
+	{
+		let cell = makeCell("", tr2);
+		cell.appendChild(MakePassiveList(i));
+	}*/
+	let tr3 = tbl.insertRow();
+	for (let i = STATS.BLAST_DAMAGE; i <= STATS.MISSILE_DAMAGE; i++)
+	{
+		let cell = makeCell("", tr3);
+		cell.appendChild(MakeSymbioteItemList(gasData.symbiote, i));
+	}
+	let tr4 = tbl.insertRow();
+	for (let i = STATS.BLAST_DAMAGE; i <= STATS.MISSILE_DAMAGE; i++)
+	{
+		let cell = makeCell("", tr4);
+		cell.appendChild(MakeSymbioteItemList(gasData.item, i));
+	}
+	return tbl;
+}
+function MakeTriggerList(stat)
+{
+	var div = document.createElement('div');
+	// TODO fix redundancy in playerDisplay
+	for (let i = 0; i < gasData.champion.length; i++)
+	{
+		var player = gasData.champion[i];
+		if(player.choosable != 1) continue;
+		for (let t = 0; t < player.triggers.length; t++)
+		{
+			var trigger = player.triggers[t];
+			var hasEffect = DataHasEffectTrigger(trigger, stat);
+			if(hasEffect)
+			{
+				trigger.championName = player.name;
+				let tbl = MakeStatsTable(trigger, 0, false, false, false, false, t);
+				tbl.classList.add("inline");
+				div.appendChild(tbl);
+				continue;
+			}
+		}
+		for (let t = 0; t < player.passives.length; t++)
+		{
+			var pretendItem = {};
+			pretendItem.name = player.passiveName;
+			pretendItem.effects = player.passives;
+			var hasEffect = DataHasEffect(pretendItem.effects, stat);
+			if(hasEffect)
+			{
+				pretendItem.championName = player.name;
+				let tbl = MakeStatsTable(pretendItem, 0);
+				tbl.classList.add("inline");
+				div.appendChild(tbl);
+				continue;
+			}
+		}
+	}
+	return div;
+}
+/*function MakePassiveList(stat)
+{
+	var div = document.createElement('div');
+	// TODO fix redundancy in playerDisplay
+	for (let i = 0; i < gasData.champion.length; i++)
+	{
+		var player = gasData.champion[i];
+		if(player.choosable != 1) continue;
+		for (let t = 0; t < player.passives.length; t++)
+		{
+			var pretendItem = {};
+			pretendItem.name = player.passiveName;
+			pretendItem.effects = player.passives;
+			var hasEffect = DataHasEffect(pretendItem.effects, stat);
+			if(hasEffect)
+			{
+				pretendItem.championName = player.name;
+				let tbl = MakeStatsTable(pretendItem, 0);
+				tbl.classList.add("inline");
+				div.appendChild(tbl);
+				continue;
+			}
+		}
+	}
+	return div;
+}*/
+function MakeSymbioteItemList(type, stat)
+{
+	var div = document.createElement('div');
+	for (let i = 0; i < type.length; i++)
+	{
+		var thing = type[i];
+		try{
+			var hasEffect = DataHasEffect(thing.effects, stat);
+			if(hasEffect)
+			{
+				let tbl;
+				if(type == gasData.symbiote)
+					tbl = MakeStatsTable(thing, thing.tier, true, false, false);
+				else
+					tbl = MakeStatsTable(thing, thing.credits);
+				tbl.classList.add("inline");
+				div.appendChild(tbl);
+				continue;
+			}
+		}
+		catch(e)
+		{
+			console.log(thing.name);
+			console.log(e);
+		}
+	}
+	return div;
+}
+function DataHasEffect(effect, stat)
+{
+	for (let p = 0; p < effect.length; p++)
+	{
+		var params = effect[p].data.params;
+		if(params == undefined) return false;
+		if(
+			(IsBlast(params) && stat == STATS.BLAST_DAMAGE) || 
+			(IsBomb(params) && stat == STATS.BOMB_DAMAGE) || 
+			(IsMissile(params) && stat == STATS.MISSILE_DAMAGE)
+			)
+		{
+			return true;
+		}
+	}
+	return false;
+}
+function DataHasEffectTrigger(data, stat)
+{
+	for (let p = 0; p < data.params.length; p++)
+	{
+		var params = data.params[p];
+		if(
+			(IsBlast(params) && stat == STATS.BLAST_DAMAGE) || 
+			(IsBomb(params) && stat == STATS.BOMB_DAMAGE) || 
+			(IsMissile(params) && stat == STATS.MISSILE_DAMAGE)
+			)
+		{
+			return true;
+		}
+	}
+	return false;
 }
 function MakeItemLimitTable()
 {

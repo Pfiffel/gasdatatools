@@ -18,6 +18,12 @@ const SLOT_TYPES = {
 	"4": ["Precursor Tech", "Precursor Tech", "precursorTech"],
 	"5": ["Equipment", "Equipment", ""]
 }
+
+const STATS = {
+	BLAST_DAMAGE: 21,
+	BOMB_DAMAGE: 22,
+	MISSILE_DAMAGE: 23,
+}
 const STAT_TYPES = {
 	"0": ["DAMAGE", "Gun Damage"],
 	"1": ["HEAL_RATE", "Repair Rate"],
@@ -68,6 +74,7 @@ const ACTIVE_WHILE_NAMES = {
 	"20": ["OUT_OF_COMBAT", "out of combat"],
 	"21": ["NEW_CHARACTER", "on new character"]
 };
+const TRIGGER_TO_WHEN = [1,7,8,4];
 const TRIGGERED_TRIGGER_EFFECTS = {
 	"0": ["TRIGGER1234", "any trigger"],
 	"1": ["TRIGGER1", "trigger 1"],
@@ -126,6 +133,49 @@ function isSymbioteDropper(monster)
 	var t = getTier(monster.xp) - 2;
 	return(t > 0 && t <= 6) && hasGlobalDrops;
 }
+function IsBlast(params)
+{
+	if(IsShotgun(params, true))
+		return true;
+	return false;
+}
+function IsBomb(params)
+{
+	if(IsShotgun(params, false))
+		return true;
+	return false;
+}
+function IsShotgun(params, bHasNoOffset)
+{
+	if(!Array.isArray(params) && params.tag == "MineTrigger" && (params.data.damage > 0) && !bHasNoOffset)
+		return true;
+	if(!Array.isArray(params) && params.tag == "ShotgunTrigger" && (params.data.damage > 0) && (HasNoOffset(params.data) == bHasNoOffset))
+		return true;
+	for (var p in params)
+	{
+		if(params[p].tag == "MineTrigger" && (params[p].data.damage > 0) && !bHasNoOffset)
+			return true;
+		if(params[p].tag == "ShotgunTrigger" && (params[p].data.damage > 0) && (HasNoOffset(params[p].data) == bHasNoOffset))
+			return true;
+	}
+	return false;
+}
+function IsMissile(params)
+{
+	if(!Array.isArray(params) && params.tag == "SharkletTrigger")
+		return true;
+	for (var p in params)
+	{
+		if(params[p].tag == "SharkletTrigger")
+			return true;
+	}
+	return false;
+}
+function HasNoOffset(data)
+{
+	if(data.offset.x == 0 && data.offset.y == 0) return true;
+	return false;
+}
 // ITEMS and SYMBS
 function SpeakerToText(data)
 {
@@ -151,7 +201,7 @@ function SlotTypeToText(data)
 
 	return s;
 }
-function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bDescription = true, bSpeaker = false)
+function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bDescription = true, bSpeaker = false, idxTrigger = -1)
 {
 	if(tier == 0) tier = mainData.tier;
 	var tbl = document.createElement('table');
@@ -165,8 +215,9 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 		var img = makeCellE(image, th);
 		img.rowSpan = 10;
 	}
-
+	
 	var name = mainData.displayName != undefined ? mainData.displayName : mainData.name;
+	if(mainData.championName != undefined) name = name + " (" + mainData.championName + ")";
 	makeHeaderCell(colorWrap(name, TIER_COLORS[tier]), th);
 	
 	var slotTypes = SlotTypeToText(mainData);
@@ -189,6 +240,15 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 	let prevRepeat = false;
 	let delayArray = [];
 	let dps = 0;
+	if(mainData.effects == undefined && idxTrigger != -1) // is trigger
+	{
+		var tempTriggers = mainData.params;
+		// repackage trigger format to symb/item format
+		mainData.effects = [];
+		for (var triggerParams in tempTriggers){
+			mainData.effects.push({"data":{"params":tempTriggers[triggerParams],"when":TRIGGER_TO_WHEN[idxTrigger]},"tag": "TriggeredTriggerEffect"})
+		}
+	}
 	for (var effect in mainData.effects){
 		let data = mainData.effects[effect].data;
 		let mainTag = mainData.effects[effect].tag;
@@ -418,6 +478,10 @@ function AddEffectsText(data)
 		{
 			s += printKeyAndData("Chill Duration", ToTime(effectData.duration));
 		}
+		else if(effect == "SusceptibleEffect")
+		{
+			s += printKeyAndData("Susceptibility Duration", ToTime(effectData.duration));
+		}
 		else 
 		{
 			console.log("uncaught effect: " + effect);
@@ -461,7 +525,7 @@ function GetTriggeredEffectString(tag, data, delayArray)
 		if(hashAoE != newHashAoE)
 		{
 			if(data.tooltip != "") s += data.tooltip + "<br/>";
-			if(data.damage > 0) s += printKeyAndData("AoE Damage", data.damage);
+			if(data.damage > 0) s += printKeyAndData((HasNoOffset(data) ? "Blast" : "Bomb") + " Damage", data.damage);
 			s += printKeyAndData("Range", data.range, "", AddReticle(data.reticleColor));
 			//if(data.delay > 0) s += printKeyAndData("First Delay", ToTime(data.delay));
 			s += printKeyAndData("Arc", (data.halfArc * 0.2) + "°");
@@ -486,7 +550,7 @@ function GetTriggeredEffectString(tag, data, delayArray)
 	}
 	else if(tag == "MineTrigger")
 	{
-		s += printKeyAndData("AoE Damage", data.damage);
+		s += printKeyAndData("Bomb Damage", data.damage);
 		s += printKeyAndData("Range", data.burstRadius);
 		s += printKeyAndData("Duration", ToTime(data.duration));
 		damage += data.damage;
