@@ -201,6 +201,7 @@ function CheckSymbiote(symbiote)
 		{
 			for (var effects in data.statusEffects){
 				var effect = data.statusEffects[effects];
+				soundList["symbiote"][symbiote.name]["Zap Sound"] = "";
 				CheckStatusEffect("symbiote", symbiote.name, effect);
 			}
 		}
@@ -208,8 +209,9 @@ function CheckSymbiote(symbiote)
 }
 function CheckStatusEffect(origin, name, effect)
 {
+	// TODO may have PlaySoundEffect AND explosion sfx
 	if(effect.tag == "BlastEffect") {soundList[origin][name][effect.tag] = getExplosionSound(effect.data.explosionType);}
-	if(effect.tag == "PlaySoundEffect") {soundList[origin][name][effect.tag] = effect.data.sound;}
+	if(effect.tag == "PlaySoundEffect") {soundList[origin][name]["Zap Sound"] = effect.data.sound;}
 }
 function CheckTriggeredEffect(origin, name, tag, data)
 {
