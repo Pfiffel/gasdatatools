@@ -512,6 +512,10 @@ function GetTriggeredEffectDelayArray(array)
 	}
 	return string == "" ? "" : printKeyAndData(actualDelays > 1 ? "Delays" : "Delay", string);
 }
+function GetBlastOrBombString(data)
+{
+	return (HasNoOffset(data) ? "Blast" : "Bomb");
+}
 function GetTriggeredEffectString(tag, data, delayArray)
 {
 	var s = ""; var damage = 0;
@@ -525,7 +529,7 @@ function GetTriggeredEffectString(tag, data, delayArray)
 		if(hashAoE != newHashAoE)
 		{
 			if(data.tooltip != "") s += data.tooltip + "<br/>";
-			if(data.damage > 0) s += printKeyAndData((HasNoOffset(data) ? "Blast" : "Bomb") + " Damage", data.damage);
+			if(data.damage > 0) s += printKeyAndData(GetBlastOrBombString(data) + " Damage", data.damage);
 			s += printKeyAndData("Range", data.range, "", AddReticle(data.reticleColor));
 			//if(data.delay > 0) s += printKeyAndData("First Delay", ToTime(data.delay));
 			s += printKeyAndData("Arc", (data.halfArc * 0.2) + "°");

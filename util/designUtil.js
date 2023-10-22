@@ -1,11 +1,12 @@
 var tableOutput = document.getElementById("tableOutput");
-var datatypes = ["animation","champion","decor","map","lair","monster","gunbullet","object","item","particle","region","explosion","soundpack","emitter"]; // for utilGAS to load files, calls parseData once completed
+var datatypes = ["animation","champion","decor","map","lair","monster","gunbullet","object","symbiote","item","particle","region","explosion","soundpack","emitter"]; // for utilGAS to load files, calls parseData once completed
 loadGasData();
 
 var header = document.getElementById("header");
 var filters = document.getElementById("filters");
 var sortedMonsters;
 var soundList = {};
+soundList["symbiote"] = {};
 soundList["champion"] = {};
 soundList["monster"] = {};
 soundList["gunbullet"] = {};
@@ -86,6 +87,12 @@ function MakeList()
 		AddEmitterSoundList("champion", champion.name, "", "Forward", champion.forwardThrustEmitter);
 		AddEmitterSoundList("champion", champion.name, "", "Reverse", champion.reverseThrustEmitter);
 	}
+	for (let i = 0; i < gasData["symbiote"].length; i++)
+	{
+		var symbiote = gasData["symbiote"][i];
+		soundList["symbiote"][symbiote.name] = {};
+		CheckSymbiote(symbiote);
+	}
 	for (let i = 0; i < gasData["decor"].length; i++)
 	{
 		var decor = gasData["decor"][i];
@@ -143,7 +150,7 @@ function MakeList()
 	makeHeaderCell("Sound Type", th);
 	makeHeaderCell("Using", th);
 	for (let entityType in soundList){
-		if(entityType != "champion") continue;
+		if(entityType != "symbiote") continue;
 		var soundRoots = soundList[entityType];
 		for (let soundRoot in soundRoots){
 			if(soundRoot.includes("Dagger")) continue;
@@ -167,6 +174,91 @@ function MakeList()
 	}
 	tableOutput.appendChild(tbl);
 	return divList;
+}
+function CheckSymbiote(symbiote)
+{
+	for (var effect in symbiote.effects){
+		let data = symbiote.effects[effect].data;
+		let mainTag = symbiote.effects[effect].tag;
+		// TODO check if heal mines/pickup packs could use custom sounds
+		//  mainTag == "TriggeredHealMineBurst"
+		if(mainTag == "TriggeredTriggerEffect")
+		{
+			CheckTriggeredEffect("symbiote", symbiote.name, data.params.tag, data.params.data);
+		}
+		else if(mainTag == "PlayerGunStats")
+		{
+			var sp = getSoundPack(data.soundPack);
+			soundList["symbiote"][symbiote.name]["Gun"] = sp.name + " (" + sp.sounds.length + " files)";
+		}
+		else if(mainTag == "PeriodicTriggerEffect")
+		{
+			for (var p in data.params){
+				CheckTriggeredEffect("symbiote", symbiote.name, data.params[p].tag, data.params[p].data);
+			}
+		}
+		else if(mainTag == "RandomTargetEffect" || mainTag == "TriggeredRandomTargetEffect")
+		{
+			for (var effects in data.statusEffects){
+				var effect = data.statusEffects[effects];
+				CheckStatusEffect("symbiote", symbiote.name, effect);
+			}
+		}
+	}
+}
+function CheckStatusEffect(origin, name, effect)
+{
+	if(effect.tag == "BlastEffect") {soundList[origin][name][effect.tag] = getExplosionSound(effect.data.explosionType);}
+	if(effect.tag == "PlaySoundEffect") {soundList[origin][name][effect.tag] = effect.data.sound;}
+}
+function CheckTriggeredEffect(origin, name, tag, data)
+{
+	if(tag == "FireRateBoostTrigger"){
+	}
+	else if(tag == "ShotgunTrigger"){
+		//soundList[origin][name]["Shotgun Trigger"] = wD.triggerSound;
+		soundList[origin][name][GetBlastOrBombString(data) + " Explosion"] = getExplosionSound(data.explosionType);
+	}
+	else if(tag == "CooldownResetTrigger"){
+	}
+	else if(tag == "HealOverTimeTrigger"){
+	}
+	else if(tag == "ProjectilePurgeTrigger"){
+		soundList[origin][name]["ProjectilePurge"] = getExplosionSound(data.explosionType);
+	}
+	else if(tag == "PickupPackTrigger"){
+		soundList[origin][name]["Pickup"] = getExplosionSound(data.explosionType);
+	}
+	else if(tag == "MineTrigger"){
+		soundList[origin][name]["Mine Explosion"] = getExplosionSound(data.explosionType);
+	}
+	else if(tag == "AreaHealTrigger"){
+		soundList[origin][name]["AreaHeal"] = getExplosionSound(data.explosionType);
+	}
+	else if(tag == "ShieldRefillTrigger"){
+	}
+	else if(tag == "HealTrigger"){
+	}
+	else if(tag == "StatBoostTrigger"){
+	}
+	else if(tag == "DematerializeTrigger"){
+	}
+	else if(tag == "ExtraGunTrigger"){
+		var sp = getSoundPack(data.stats.soundPack);
+		soundList[origin][name]["Gun"] = sp.name + " (" + sp.sounds.length + " files)";
+	}
+	else if(tag == "ExtraShieldTrigger"){
+	}
+	else if(tag == "GunProcTrigger"){
+	}
+	else if(tag == "LeapTrigger"){
+	}
+	else if(tag == "SharkletTrigger"){
+		soundList[origin][name]["Missile Launch"] = data.sound;
+	}
+	else if(data.sound != undefined){
+		soundList[origin][name][tag + " Sound"] = data.sound;
+	}
 }
 function CheckWeapon(monster, weapon, compound, index)
 {
