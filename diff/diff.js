@@ -14,6 +14,7 @@ function parseIDs() // make super duper recursive id checker?
 
 }
 var changedSymbs = {};
+var changedItems = {};
 var changedObjects = {};
 var changedMaps = {};
 let divList = document.createElement('div');
@@ -78,6 +79,12 @@ function parseData()
 		divList.appendChild(MakeGraphicCompareBlock(entity + " changes",
 		MakeStatsTable(GetPrevEntity("symbiote", entity), 0), 
 		MakeStatsTable(GetNewEntity("symbiote", entity), 0)));
+	}
+	for (let entity in changedItems)
+	{
+		divList.appendChild(MakeGraphicCompareBlock(entity + " changes",
+		MakeStatsTable(GetPrevEntity("item", entity), 0, false), 
+		MakeStatsTable(GetNewEntity("item", entity), 0, false)));
 	}
 	var entitySpriteChanged = FindObjectUsage(changedObjects);
 	for (let entity in entitySpriteChanged)
@@ -187,6 +194,7 @@ function CompareJSON(entity, entityPrev, superParent, fileType, parentStringList
 				if(fileType == "object") {changedObjects[superParent] = true; continue;}
 				if(fileType == "map" && (key == "x" || key == "y" || key == "tag" || key == "regionType")) {changedMaps[superParent] = true; continue;}
 				if(fileType == "symbiote") {changedSymbs[superParent] = true; continue;}
+				if(fileType == "item") {changedItems[superParent] = true; continue;}
 				if(IsNewButDefaultValue(entityPrev, entity, key)) continue;
 				MakeChangeEntry(header, key, entityPrev[key], entity[key], divList);
 			}
@@ -195,7 +203,7 @@ function CompareJSON(entity, entityPrev, superParent, fileType, parentStringList
 }
 function IsNewButDefaultValue(entityPrev, entity, key)
 {
-	// somewhat hacky, this is to make it not show new entries when they are just the default value, entry added my maker due to other changes
+	// somewhat hacky, this is to make it not show new entries when they are just the default value, entry added by maker due to other changes
 	if(entityPrev[key] == undefined)
 		if(key == "maxMoveDistance" && entity[key] == 500) return true;
 		else if(key == "runAnimationDuration" && entity[key] == 700) return true;
