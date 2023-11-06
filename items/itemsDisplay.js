@@ -3,7 +3,7 @@ var TIERS = 10;
 var ITEM_DROPPERS = [];
 var tableOutput = document.getElementById("tableOutput");
 
-var datatypes = ["item","monster","object","globals","symbiote","champion"]; // for utilGAS to load files, calls parseData once completed
+var datatypes = ["item","addon","monster","object","globals","symbiote","champion"]; // for utilGAS to load files, calls parseData once completed
 loadGasData();
 
 var header = document.getElementById("header");
@@ -50,6 +50,8 @@ function MakeList()
 	tableOutput.appendChild(MakeSpecificTable(1,2,0,0,-1,1));
 	tableOutput.appendChild(MakeTextDiv("<h2>Precursor Tech</h2>"));
 	tableOutput.appendChild(MakeSpecificTable(1,-1,1,0,-1,1));
+	tableOutput.appendChild(MakeTextDiv("<h2>Addons</h2>"));
+	tableOutput.appendChild(MakeAddonTable());
 	tableOutput.appendChild(MakeTextDiv("<h2>Damage Types</h2>"));
 	tableOutput.appendChild(DamageTypeTable());
 	tableOutput.appendChild(MakeTextDiv("<h2>Enhancement Modules</h2>"));
@@ -266,7 +268,7 @@ function MakeSpecificTable(startTier, statAmount, precursor, rare, boon, inline)
 	{
 		var amount = GetItemAmount(t, statAmount, precursor, rare, boon);
 		if(amount == 0) continue;
-		makeHeaderCell(colorWrap("Tier " + t, TIER_COLORS[t]) + ((boon == 1) ? (" - " + MODULE_CREDITS[t] + " Credits") :"") + " - " + amount + " total<br/>", th); MODULE_CREDITS
+		makeHeaderCell(colorWrap("Tier " + t, TIER_COLORS[t]) + ((boon == 1) ? (" - " + MODULE_CREDITS[t] + " Credits") :"") + " - " + amount + " total<br/>", th);
 		var cell = makeCell("", tr);
 		cell.appendChild(MakeSpecificItemList(t, statAmount, precursor, rare, boon, inline));
 	}
@@ -308,4 +310,43 @@ function GetTieredItemForStatType(tier, type)
 			if(item.effects.length == 1)
 				if(item.effects[0].data.statType == type) return item;
 	}
+}
+function MakeAddonTable()
+{
+	var tbl = document.createElement('table');
+	let th = tbl.insertRow();
+	let tr = tbl.insertRow();
+	for (let t = 0; t < TIERS; t++)
+	{
+		var amount = GetAddonAmount(t);
+		if(amount == 0) continue;
+		makeHeaderCell(colorWrap("Tier " + (t+1) + " - " + ADDON_TIER_NAMES[t], TIER_COLORS[t+1]) + " - " + amount + " total<br/>", th);
+		var cell = makeCell("", tr);
+		cell.appendChild(MakeAddonList(t));
+	}
+	return tbl;
+}
+function GetAddonAmount(tier)
+{
+	var amount = 0;
+	for (var i = 0; i < gasData["addon"].length; i++)
+	{
+		var item = gasData["addon"][i];
+		if(item.rarity != tier) continue;
+		amount++;
+	}
+	return amount;
+}
+function MakeAddonList(tier)
+{
+	var div = document.createElement('div');
+	for (var i = 0; i < gasData["addon"].length; i++)
+	{
+		var item = gasData["addon"][i];
+		if(item.rarity != tier) continue;
+		var tbl = MakeStatsTable(item);
+		tbl.classList.add("inline");
+		div.appendChild(tbl);
+	}
+	return div;
 }

@@ -18,7 +18,14 @@ const SLOT_TYPES = {
 	"4": ["Precursor Tech", "Precursor Tech", "precursorTech"],
 	"5": ["Equipment", "Equipment", ""]
 }
-
+const ADDON_TIER_NAMES = {
+	"0": "Common",
+	"1": "Uncommon",
+	"2": "Rare",
+	"3": "Epic",
+	"4": "Legendary",
+	"5": "Mythic",
+}
 const STATS = {
 	BLAST_DAMAGE: 21,
 	BOMB_DAMAGE: 22,
@@ -204,6 +211,8 @@ function SlotTypeToText(data)
 function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bDescription = true, bSpeaker = false, idxTrigger = -1)
 {
 	if(tier == 0) tier = mainData.tier;
+	if(mainData.credits != undefined) tier = mainData.credits;
+	else if(mainData.rarity != undefined) tier = mainData.rarity + 1;
 	var tbl = document.createElement('table');
 	let th = tbl.insertRow();
 
@@ -888,6 +897,14 @@ function getItem(type){
 		if(type == item.name) return item;
 	}
 	console.log(type + " Item not found");
+}
+function getAddon(type){
+	for (let i = 0; i < gasData["addon"].length; i++)
+	{
+		var item = gasData["addon"][i];
+		if(type == item.name) return item;
+	}
+	console.log(type + " Addon not found");
 }
 function getItemPack(type){
 	for (let i = 0; i < gasData["itempack"].length; i++)
