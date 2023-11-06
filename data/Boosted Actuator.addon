@@ -1,0 +1,23 @@
+{
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 1,
+        "statType": 0
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 2,
+        "statType": 6
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Boosted Actuator",
+  "rarity": 0
+}
+

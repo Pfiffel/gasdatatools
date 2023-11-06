@@ -22,6 +22,13 @@
               "spacing": 15
             },
             "tag": "ParticleLineEffect"
+          },
+          {
+            "data": {
+              "sound": "Symbiote_Effect_Pepper_Zap",
+              "volume": 200
+            },
+            "tag": "PlaySoundEffect"
           }
         ],
         "targets": 1,

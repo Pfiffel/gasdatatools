@@ -1,0 +1,27 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 40,
+            "duration": 2500,
+            "emitterType": "",
+            "glyphCount": 2,
+            "glyphRadius": 65,
+            "glyphType": "Gun RoF Glyph",
+            "maxStacks": 0,
+            "statType": 5,
+            "tag": ""
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Amplified Pulser",
+  "rarity": 3
+}
+

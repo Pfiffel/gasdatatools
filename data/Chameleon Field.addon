@@ -1,0 +1,22 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "duration": 500,
+            "emitterType": "",
+            "percentChance": 100,
+            "tag": ""
+          },
+          "tag": "DematerializeTrigger"
+        },
+        "when": 1
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Chameleon Field",
+  "rarity": 2
+}
+

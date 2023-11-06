@@ -1,33 +1,41 @@
 {
+  "boon": 0,
   "credits": 10,
+  "defenses": 0,
   "effects": [
     {
       "data": {
         "params": {
           "data": {
-            "collisionSettings": {
-              "cooldownToRetain": 1000,
-              "damage": 0,
-              "explosion": "",
-              "explosionRange": 0,
-              "manaToRefund": 0,
-              "triggerIndexToResetCooldown": -1,
-              "vamp": 0
-            },
-            "drawTooltip": 1,
-            "emitterType": "Cyclops Blink",
-            "range": 150,
-            "tag": ""
+            "count": 1,
+            "damage": 175,
+            "emitterType": "Rhodes Missile Trail",
+            "objectType": "Rhodes Missile",
+            "range": 300,
+            "reticleColor": 4479402,
+            "sound": "",
+            "soundPack": "",
+            "speed": 300,
+            "statusEffects": [],
+            "tag": "",
+            "timeGap": 0,
+            "tweenType": "CUBICIN",
+            "volume": 50
           },
-          "tag": "LeapTrigger"
+          "tag": "SharkletTrigger"
         },
         "when": 8
       },
       "tag": "TriggeredTriggerEffect"
     }
   ],
+  "engines": 0,
+  "guns": 0,
   "name": "Rhodes Mechanism",
   "overworldDrop": 0,
-  "precursorTech": 1
+  "plusEffects": [],
+  "precursorTech": 1,
+  "rare": 0,
+  "triggers": 0
 }
 

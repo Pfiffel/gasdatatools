@@ -1,0 +1,26 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "applyToMana": 0,
+            "asPercentage": 0,
+            "glyphCount": 2,
+            "glyphDuration": 300,
+            "glyphRadius": 50,
+            "glyphType": "Heal Indicator",
+            "healAmount": 30,
+            "tag": ""
+          },
+          "tag": "HealTrigger"
+        },
+        "when": 7
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Autopatcher",
+  "rarity": 2
+}
+

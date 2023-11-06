@@ -1,0 +1,23 @@
+{
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 4,
+        "statType": 16
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 2,
+        "statType": 13
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Afterburner",
+  "rarity": 1
+}
+

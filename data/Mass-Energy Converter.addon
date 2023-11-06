@@ -1,0 +1,25 @@
+{
+  "effects": [
+    {
+      "data": {
+        "gunTag": "",
+        "maxProcsPerSecond": 10,
+        "percentChance": 100,
+        "statusEffects": [
+          {
+            "data": {
+              "appliesToMana": 1,
+              "healing": 1
+            },
+            "tag": "VampEffect"
+          }
+        ],
+        "tooltipGunDescription": "gun"
+      },
+      "tag": "GunProcs"
+    }
+  ],
+  "name": "Mass-Energy Converter",
+  "rarity": 4
+}
+

@@ -1,0 +1,20 @@
+{
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "shield": {
+          "color": 11496470,
+          "left": -900,
+          "level": 0,
+          "maxStrength": 200,
+          "right": 900
+        }
+      },
+      "tag": "ItemShield"
+    }
+  ],
+  "name": "Xeron Barrier",
+  "rarity": 3
+}
+

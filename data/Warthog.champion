@@ -135,7 +135,7 @@
             "statusEffects": [],
             "tag": "Warthog 1 Shotgun",
             "targetingDelay": 0,
-            "tooltip": ""
+            "tooltip": "Polaric Burst"
           },
           "tag": "ShotgunTrigger"
         }
@@ -159,6 +159,7 @@
               "explosion": "",
               "explosionRange": 0,
               "manaToRefund": 0,
+              "statusEffects": [],
               "triggerIndexToResetCooldown": -1,
               "vamp": 0
             },
@@ -196,7 +197,7 @@
             ],
             "tag": "Warthog 2 Shotgun",
             "targetingDelay": 160,
-            "tooltip": ""
+            "tooltip": "Disabling Blast"
           },
           "tag": "ShotgunTrigger"
         }

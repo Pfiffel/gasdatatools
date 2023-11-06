@@ -30,6 +30,7 @@
     {
       "data": {
         "gunTag": "",
+        "maxProcsPerSecond": 0,
         "percentChance": 100,
         "statusEffects": [
           {
@@ -138,7 +139,7 @@
             "statusEffects": [],
             "tag": "Wasp 1 Shotgun 2",
             "targetingDelay": 0,
-            "tooltip": ""
+            "tooltip": "Triple Positron Detonation"
           },
           "tag": "ShotgunTrigger"
         },
@@ -209,7 +210,7 @@
             "statusEffects": [],
             "tag": "Wasp 2 Shotgun",
             "targetingDelay": 0,
-            "tooltip": ""
+            "tooltip": "Quark Anomaly"
           },
           "tag": "ShotgunTrigger"
         }

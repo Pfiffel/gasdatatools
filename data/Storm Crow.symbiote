@@ -10,12 +10,12 @@
             "emitterType": "Storm Crow",
             "objectType": "Storm Crow",
             "range": 320,
-            "sound": "",
+            "sound": "Symbiote_Effect_StormCrow_Launch",
             "speed": 200,
             "tag": "",
             "timeGap": 10,
             "tweenType": "QUARTIN",
-            "volume": 50
+            "volume": 100
           },
           "tag": "SharkletTrigger"
         },

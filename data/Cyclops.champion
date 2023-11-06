@@ -110,7 +110,7 @@
             "statusEffects": [],
             "tag": "Cyclops 1 Shotgun",
             "targetingDelay": 0,
-            "tooltip": ""
+            "tooltip": "Optical Blast"
           },
           "tag": "ShotgunTrigger"
         }
@@ -134,6 +134,7 @@
               "explosion": "",
               "explosionRange": 0,
               "manaToRefund": 0,
+              "statusEffects": [],
               "triggerIndexToResetCooldown": -1,
               "vamp": 0
             },
@@ -200,7 +201,7 @@
             "statusEffects": [],
             "tag": "Cyclops 3 Shotgun",
             "targetingDelay": 500,
-            "tooltip": ""
+            "tooltip": "Incinerating Ray"
           },
           "tag": "ShotgunTrigger"
         },

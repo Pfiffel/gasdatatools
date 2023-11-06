@@ -13,12 +13,15 @@
               "emitterType": "Locust Trail",
               "objectType": "Locust Missile",
               "range": 340,
-              "sound": "Player_Hercules_Shockwave",
+              "reticleColor": 11184810,
+              "sound": "",
+              "soundPack": "Locust Launch",
               "speed": 200,
+              "statusEffects": [],
               "tag": "",
               "timeGap": 400,
-              "tweenType": "EXPOIN",
-              "volume": 35
+              "tweenType": "QUARTIN",
+              "volume": 100
             },
             "tag": "SharkletTrigger"
           }

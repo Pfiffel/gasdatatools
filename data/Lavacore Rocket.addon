@@ -1,0 +1,41 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "count": 1,
+            "damage": 50,
+            "emitterType": "Lavacore Rocket Trail",
+            "objectType": "Lavacore Rocket",
+            "range": 290,
+            "reticleColor": 6557955,
+            "sound": "",
+            "soundPack": "",
+            "speed": 300,
+            "statusEffects": [
+              {
+                "data": {
+                  "dps": 50,
+                  "duration": 3000,
+                  "reducedDurationOnBoss": 0
+                },
+                "tag": "BurningEffect"
+              }
+            ],
+            "tag": "",
+            "timeGap": 0,
+            "tweenType": "CUBICIN",
+            "volume": 50
+          },
+          "tag": "SharkletTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Lavacore Rocket",
+  "rarity": 4
+}
+

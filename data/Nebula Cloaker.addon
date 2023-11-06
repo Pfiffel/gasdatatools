@@ -1,0 +1,22 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "duration": 1000,
+            "emitterType": "",
+            "percentChance": 100,
+            "tag": ""
+          },
+          "tag": "DematerializeTrigger"
+        },
+        "when": 7
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Nebula Cloaker",
+  "rarity": 3
+}
+

@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 900,
+      "value": 11115041
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 550,
+  "minLifetime": 400,
+  "name": "Basilisk Missile Trail",
+  "objectType": "Small Hex",
+  "positionTweenType": "QUADINOUT",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 200
+    },
+    {
+      "frac": 900,
+      "value": 240
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 11115041,
+  "startScale": 10,
+  "stayLow": 0
+}
+

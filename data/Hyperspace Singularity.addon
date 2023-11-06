@@ -1,0 +1,22 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "duration": 5000,
+            "emitterType": "",
+            "percentChance": 100,
+            "tag": ""
+          },
+          "tag": "DematerializeTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Hyperspace Singularity",
+  "rarity": 4
+}
+

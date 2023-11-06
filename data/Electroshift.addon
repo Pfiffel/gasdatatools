@@ -1,0 +1,26 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "applyToMana": 1,
+            "asPercentage": 0,
+            "glyphCount": 2,
+            "glyphDuration": 250,
+            "glyphRadius": 45,
+            "glyphType": "Energy Glyph",
+            "healAmount": 3,
+            "tag": ""
+          },
+          "tag": "HealTrigger"
+        },
+        "when": 6
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Electroshift",
+  "rarity": 1
+}
+

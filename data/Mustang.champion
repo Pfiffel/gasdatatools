@@ -163,7 +163,7 @@
             "statusEffects": [],
             "tag": "Mustang 1 Shotgun",
             "targetingDelay": 0,
-            "tooltip": ""
+            "tooltip": "Plasma Grenade"
           },
           "tag": "ShotgunTrigger"
         }
@@ -248,7 +248,7 @@
             ],
             "tag": "Mustang 3 Shotgun",
             "targetingDelay": 0,
-            "tooltip": ""
+            "tooltip": "Quantum Explosion"
           },
           "tag": "ShotgunTrigger"
         }
@@ -283,7 +283,7 @@
             "statusEffects": [],
             "tag": "Mustang 4 Shotgun",
             "targetingDelay": 0,
-            "tooltip": ""
+            "tooltip": "Ion Discharge"
           },
           "tag": "ShotgunTrigger"
         }

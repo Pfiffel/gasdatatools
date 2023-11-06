@@ -1,0 +1,32 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "count": 1,
+            "damage": 65,
+            "emitterType": "Nemesis Rocket Trail",
+            "objectType": "Nemesis Rocket",
+            "range": 290,
+            "reticleColor": 7564305,
+            "sound": "",
+            "soundPack": "",
+            "speed": 300,
+            "statusEffects": [],
+            "tag": "",
+            "timeGap": 0,
+            "tweenType": "CUBICIN",
+            "volume": 50
+          },
+          "tag": "SharkletTrigger"
+        },
+        "when": 1
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Nemesis Rocket",
+  "rarity": 2
+}
+

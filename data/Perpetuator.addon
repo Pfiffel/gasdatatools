@@ -1,0 +1,43 @@
+{
+  "effects": [
+    {
+      "data": {
+        "gunTag": "",
+        "maxProcsPerSecond": 10,
+        "percentChance": 100,
+        "statusEffects": [
+          {
+            "data": {
+              "appliesToMana": 0,
+              "healing": 15
+            },
+            "tag": "VampEffect"
+          }
+        ],
+        "tooltipGunDescription": "gun"
+      },
+      "tag": "GunProcs"
+    },
+    {
+      "data": {
+        "gunTag": "",
+        "maxProcsPerSecond": 10,
+        "percentChance": 100,
+        "statusEffects": [
+          {
+            "data": {
+              "appliesToMana": 1,
+              "healing": 1
+            },
+            "tag": "VampEffect"
+          }
+        ],
+        "tooltipGunDescription": "gun"
+      },
+      "tag": "GunProcs"
+    }
+  ],
+  "name": "Perpetuator",
+  "rarity": 4
+}
+

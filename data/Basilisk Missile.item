@@ -1,0 +1,41 @@
+{
+  "boon": 1,
+  "credits": 6,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "count": 1,
+            "damage": 150,
+            "emitterType": "Basilisk Missile Trail",
+            "objectType": "Basilisk Missile",
+            "range": 260,
+            "reticleColor": 11115041,
+            "sound": "Hercules Missile",
+            "soundPack": "",
+            "speed": 300,
+            "statusEffects": [],
+            "tag": "",
+            "timeGap": 0,
+            "tweenType": "CUBICIN",
+            "volume": 50
+          },
+          "tag": "SharkletTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Basilisk Missile",
+  "overworldDrop": 1,
+  "plusEffects": [],
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 1
+}
+

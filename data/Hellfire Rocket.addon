@@ -1,0 +1,47 @@
+{
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "cooldown": 1500,
+        "params": [
+          {
+            "data": {
+              "count": 1,
+              "damage": 100,
+              "emitterType": "Hellfire Rocket Trail",
+              "objectType": "Hellfire Rocket",
+              "range": 290,
+              "reticleColor": 11184810,
+              "sound": "",
+              "soundPack": "",
+              "speed": 300,
+              "statusEffects": [
+                {
+                  "data": {
+                    "dps": 75,
+                    "duration": 2000,
+                    "reducedDurationOnBoss": 0
+                  },
+                  "tag": "BurningEffect"
+                }
+              ],
+              "tag": "",
+              "timeGap": 0,
+              "tweenType": "CUBICIN",
+              "volume": 50
+            },
+            "tag": "SharkletTrigger"
+          }
+        ],
+        "percentChance": 100,
+        "reticleColor": 7942922,
+        "targetingRange": 290
+      },
+      "tag": "PeriodicTriggerEffect"
+    }
+  ],
+  "name": "Hellfire Rocket",
+  "rarity": 5
+}
+

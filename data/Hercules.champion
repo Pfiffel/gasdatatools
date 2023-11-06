@@ -171,7 +171,7 @@
             "statusEffects": [],
             "tag": "Hercules 1 Shotgun",
             "targetingDelay": 0,
-            "tooltip": ""
+            "tooltip": "Spacetime Fracture"
           },
           "tag": "ShotgunTrigger"
         },
@@ -220,7 +220,7 @@
             "statusEffects": [],
             "tag": "Hercules 2 Shotgun",
             "targetingDelay": 0,
-            "tooltip": ""
+            "tooltip": "Neutron Blast"
           },
           "tag": "ShotgunTrigger"
         }
@@ -255,7 +255,7 @@
             "statusEffects": [],
             "tag": "Hercules 3 Shotgun 1",
             "targetingDelay": 0,
-            "tooltip": ""
+            "tooltip": "Plasma Detonation"
           },
           "tag": "ShotgunTrigger"
         },
@@ -502,7 +502,7 @@
             "statusEffects": [],
             "tag": "Hercules 4 Shotgun",
             "targetingDelay": 5000,
-            "tooltip": ""
+            "tooltip": "Quantum Shellburst"
           },
           "tag": "ShotgunTrigger"
         }

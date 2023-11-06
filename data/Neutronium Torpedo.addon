@@ -1,0 +1,38 @@
+{
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "cooldown": 5000,
+        "params": [
+          {
+            "data": {
+              "count": 1,
+              "damage": 75,
+              "emitterType": "Neutronium Torpedo Trail",
+              "objectType": "Neutronium Torpedo",
+              "range": 290,
+              "reticleColor": 11184810,
+              "sound": "",
+              "soundPack": "",
+              "speed": 300,
+              "statusEffects": [],
+              "tag": "",
+              "timeGap": 0,
+              "tweenType": "CUBICIN",
+              "volume": 50
+            },
+            "tag": "SharkletTrigger"
+          }
+        ],
+        "percentChance": 100,
+        "reticleColor": 813665,
+        "targetingRange": 290
+      },
+      "tag": "PeriodicTriggerEffect"
+    }
+  ],
+  "name": "Neutronium Torpedo",
+  "rarity": 1
+}
+

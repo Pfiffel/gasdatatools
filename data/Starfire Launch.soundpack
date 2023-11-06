@@ -1,0 +1,10 @@
+{
+  "name": "Starfire Launch",
+  "sounds": [
+    "Symbiote_Effect_Starfire_Launch_01",
+    "Symbiote_Effect_Starfire_Launch_02",
+    "Symbiote_Effect_Starfire_Launch_03"
+  ],
+  "volume": 50
+}
+

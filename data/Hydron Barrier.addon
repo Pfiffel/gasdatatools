@@ -1,0 +1,20 @@
+{
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "shield": {
+          "color": 2070429,
+          "left": -450,
+          "level": 0,
+          "maxStrength": 60,
+          "right": 450
+        }
+      },
+      "tag": "ItemShield"
+    }
+  ],
+  "name": "Hydron Barrier",
+  "rarity": 1
+}
+

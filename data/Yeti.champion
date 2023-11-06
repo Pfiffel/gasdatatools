@@ -110,7 +110,7 @@
             ],
             "tag": "Yeti 1 Shotgun",
             "targetingDelay": 0,
-            "tooltip": ""
+            "tooltip": "Endothermic Detonation"
           },
           "tag": "ShotgunTrigger"
         },
@@ -164,6 +164,7 @@
             "range": 300,
             "reticleColor": 11184810,
             "sound": "Player_Yeti_FrigidClaws_Launch",
+            "soundPack": "",
             "speed": 325,
             "statusEffects": [
               {

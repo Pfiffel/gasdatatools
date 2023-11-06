@@ -44,8 +44,8 @@
           },
           {
             "data": {
-              "sound": "Wasp Dematerialize",
-              "volume": 75
+              "sound": "Symbiote_Effect_Cataract_Zap",
+              "volume": 125
             },
             "tag": "PlaySoundEffect"
           }

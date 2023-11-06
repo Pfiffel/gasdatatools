@@ -31,6 +31,13 @@
               "radius": 250
             },
             "tag": "BlastEffect"
+          },
+          {
+            "data": {
+              "sound": "Symbiote_Effect_Thunderhead_Zap",
+              "volume": 200
+            },
+            "tag": "PlaySoundEffect"
           }
         ]
       },

@@ -10,13 +10,13 @@
             "emitterType": "",
             "objectType": "Brood Maggot",
             "range": 310,
-            "sound": "Player_Hercules_ZeonRocket_Launch",
+            "sound": "Symbiote_Effect_BroodQueen_Launch",
             "speed": 400,
             "statusEffects": [],
             "tag": "",
             "timeGap": 300,
             "tweenType": "QUADIN",
-            "volume": 50
+            "volume": 150
           },
           "tag": "SharkletTrigger"
         },

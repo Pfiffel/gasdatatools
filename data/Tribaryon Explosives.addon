@@ -1,0 +1,23 @@
+{
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 2,
+        "statType": 21
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 4,
+        "statType": 22
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Tribaryon Explosives",
+  "rarity": 0
+}
+

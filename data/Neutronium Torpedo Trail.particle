@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 900,
+      "value": 1171147
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 550,
+  "minLifetime": 400,
+  "name": "Neutronium Torpedo Trail",
+  "objectType": "Small Hex",
+  "positionTweenType": "QUADINOUT",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 200
+    },
+    {
+      "frac": 900,
+      "value": 240
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 1171147,
+  "startScale": 10,
+  "stayLow": 0
+}
+

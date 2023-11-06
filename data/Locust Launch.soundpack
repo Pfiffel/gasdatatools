@@ -1,0 +1,10 @@
+{
+  "name": "Locust Launch",
+  "sounds": [
+    "Symbiote_Effect_Locust_Launch_01",
+    "Symbiote_Effect_Locust_Launch_02",
+    "Symbiote_Effect_Locust_Launch_03"
+  ],
+  "volume": 50
+}
+

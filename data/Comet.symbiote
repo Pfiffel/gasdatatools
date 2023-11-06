@@ -11,7 +11,7 @@
             "objectType": "Comet",
             "range": 300,
             "reticleColor": 4681105,
-            "sound": "",
+            "sound": "Symbiote_Effect_Comet_Launch",
             "speed": 400,
             "statusEffects": [
               {
@@ -24,7 +24,7 @@
             "tag": "",
             "timeGap": 0,
             "tweenType": "QUADIN",
-            "volume": 50
+            "volume": 150
           },
           "tag": "SharkletTrigger"
         },

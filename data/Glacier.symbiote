@@ -26,8 +26,8 @@
           },
           {
             "data": {
-              "sound": "Wasp Dematerialize",
-              "volume": 75
+              "sound": "Symbiote_Effect_Glacier_Zap",
+              "volume": 150
             },
             "tag": "PlaySoundEffect"
           }

@@ -39,6 +39,13 @@
               "spacing": 50
             },
             "tag": "ParticleLineEffect"
+          },
+          {
+            "data": {
+              "sound": "Symbiote_Effect_Tentacle_Zap",
+              "volume": 300
+            },
+            "tag": "PlaySoundEffect"
           }
         ],
         "targets": 1,

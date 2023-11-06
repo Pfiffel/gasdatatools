@@ -1,0 +1,87 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Hellfire Rocket",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 5907200,
+      "height": 99,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -9,
+          "y": 15
+        },
+        {
+          "x": -57,
+          "y": 16
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16413209,
+      "height": 100,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 59,
+          "y": 3
+        },
+        {
+          "x": 41,
+          "y": 18
+        },
+        {
+          "x": 13,
+          "y": 21
+        },
+        {
+          "x": -13,
+          "y": 16
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 16413209,
+      "height": 100,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -27,
+          "y": 11
+        },
+        {
+          "x": -45,
+          "y": 50
+        },
+        {
+          "x": -63,
+          "y": 11
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

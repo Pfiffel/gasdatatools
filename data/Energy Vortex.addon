@@ -1,0 +1,23 @@
+{
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 4,
+        "statType": 4
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": -4,
+        "statType": 11
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Energy Vortex",
+  "rarity": 1
+}
+

@@ -3,6 +3,7 @@
   "effects": [
     {
       "data": {
+        "activeWhile": 0,
         "cooldown": 2500,
         "params": [
           {
@@ -13,6 +14,7 @@
               "drawReticle": 0,
               "drawTooltip": 1,
               "explosionType": "Draco Blast",
+              "facing": 0,
               "halfArc": 150,
               "mirror": 0,
               "offset": {
@@ -21,7 +23,16 @@
               },
               "range": 325,
               "reticleColor": 12530441,
-              "statusEffects": [],
+              "statusEffects": [
+                {
+                  "data": {
+                    "dps": 40,
+                    "duration": 2500,
+                    "reducedDurationOnBoss": 0
+                  },
+                  "tag": "BurningEffect"
+                }
+              ],
               "tag": "",
               "targetingDelay": 0,
               "tooltip": "Fire Blast"

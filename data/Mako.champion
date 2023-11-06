@@ -127,7 +127,7 @@
             "statusEffects": [],
             "tag": "Mako 1 Shotgun",
             "targetingDelay": 0,
-            "tooltip": ""
+            "tooltip": "Laser Array"
           },
           "tag": "ShotgunTrigger"
         }
@@ -230,7 +230,7 @@
             ],
             "tag": "Mako 4 Shotgun",
             "targetingDelay": 0,
-            "tooltip": ""
+            "tooltip": "Frenzy Burst"
           },
           "tag": "ShotgunTrigger"
         },

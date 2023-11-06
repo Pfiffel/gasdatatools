@@ -135,7 +135,7 @@
             "statusEffects": [],
             "tag": "Peacemaker 1 Shotgun 2",
             "targetingDelay": 0,
-            "tooltip": ""
+            "tooltip": "Canister Charge"
           },
           "tag": "ShotgunTrigger"
         },
@@ -206,7 +206,7 @@
             "statusEffects": [],
             "tag": "Peacemaker 2 Shotgun 1",
             "targetingDelay": 0,
-            "tooltip": ""
+            "tooltip": "Scattergun Round"
           },
           "tag": "ShotgunTrigger"
         },
@@ -397,7 +397,7 @@
             "statusEffects": [],
             "tag": "Peacemaker 4 Shotgun",
             "targetingDelay": 0,
-            "tooltip": ""
+            "tooltip": "Cannon Shot"
           },
           "tag": "ShotgunTrigger"
         },

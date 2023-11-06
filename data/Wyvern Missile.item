@@ -14,11 +14,12 @@
             "range": 260,
             "reticleColor": 2265001,
             "sound": "Hercules Missile",
+            "soundPack": "",
             "speed": 300,
             "statusEffects": [],
             "tag": "",
             "timeGap": 0,
-            "tweenType": "QUARTIN",
+            "tweenType": "CUBICIN",
             "volume": 50
           },
           "tag": "SharkletTrigger"

@@ -20,7 +20,16 @@
             },
             "range": 225,
             "reticleColor": 1398737,
-            "statusEffects": [],
+            "statusEffects": [
+              {
+                "data": {
+                  "dps": 25,
+                  "duration": 2000,
+                  "reducedDurationOnBoss": 0
+                },
+                "tag": "BurningEffect"
+              }
+            ],
             "tag": "",
             "targetingDelay": 0,
             "tooltip": "Explosive Blast"

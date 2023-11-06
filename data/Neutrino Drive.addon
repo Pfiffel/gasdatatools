@@ -1,0 +1,23 @@
+{
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": -2,
+        "statType": 10
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 2,
+        "statType": 17
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Neutrino Drive",
+  "rarity": 1
+}
+

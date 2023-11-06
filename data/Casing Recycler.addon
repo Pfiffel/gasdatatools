@@ -1,0 +1,25 @@
+{
+  "effects": [
+    {
+      "data": {
+        "gunTag": "",
+        "maxProcsPerSecond": 10,
+        "percentChance": 100,
+        "statusEffects": [
+          {
+            "data": {
+              "appliesToMana": 0,
+              "healing": 2
+            },
+            "tag": "VampEffect"
+          }
+        ],
+        "tooltipGunDescription": "gun"
+      },
+      "tag": "GunProcs"
+    }
+  ],
+  "name": "Casing Recycler",
+  "rarity": 2
+}
+

@@ -1,0 +1,23 @@
+{
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 20,
+        "statType": 20
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 20,
+        "statType": 15
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Thermiculum",
+  "rarity": 1
+}
+

@@ -1,0 +1,23 @@
+{
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 2,
+        "statType": 21
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 5,
+        "statType": 23
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Quanticore Explosives",
+  "rarity": 0
+}
+

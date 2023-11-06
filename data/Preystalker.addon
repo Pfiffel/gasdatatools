@@ -1,0 +1,32 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "count": 1,
+            "damage": 90,
+            "emitterType": "Preystalker Trail",
+            "objectType": "Preystalker",
+            "range": 290,
+            "reticleColor": 7093911,
+            "sound": "",
+            "soundPack": "",
+            "speed": 300,
+            "statusEffects": [],
+            "tag": "",
+            "timeGap": 0,
+            "tweenType": "CUBICIN",
+            "volume": 50
+          },
+          "tag": "SharkletTrigger"
+        },
+        "when": 7
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Preystalker",
+  "rarity": 3
+}
+

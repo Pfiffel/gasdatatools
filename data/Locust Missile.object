@@ -8,6 +8,7 @@
       "bone": "",
       "clones": [],
       "closed": 0,
+      "collider": 0,
       "color": 2374944,
       "height": 99,
       "mirror": 1,
@@ -15,70 +16,12 @@
       "noDraw": 0,
       "points": [
         {
-          "x": 55,
-          "y": 6
-        },
-        {
-          "x": 2,
-          "y": 6
-        }
-      ],
-      "useBoneMirror": 1
-    },
-    {
-      "bone": "",
-      "clones": [],
-      "closed": 0,
-      "color": 13591580,
-      "height": 100,
-      "mirror": 1,
-      "name": "Main",
-      "noDraw": 0,
-      "points": [
-        {
-          "x": 84,
-          "y": 4
-        },
-        {
-          "x": 72,
-          "y": 13
-        },
-        {
-          "x": 60,
-          "y": 13
-        },
-        {
-          "x": 50,
-          "y": 6
-        }
-      ],
-      "useBoneMirror": 1
-    },
-    {
-      "bone": "",
-      "clones": [],
-      "closed": 0,
-      "color": 3170088,
-      "height": 100,
-      "mirror": 1,
-      "name": "Main",
-      "noDraw": 0,
-      "points": [
-        {
-          "x": 39,
-          "y": 6
-        },
-        {
           "x": 36,
-          "y": 10
+          "y": 8
         },
         {
-          "x": 25,
-          "y": 10
-        },
-        {
-          "x": 22,
-          "y": 6
+          "x": -40,
+          "y": 8
         }
       ],
       "useBoneMirror": 1
@@ -87,6 +30,37 @@
       "bone": "",
       "clones": [],
       "closed": 0,
+      "collider": 0,
+      "color": 16087332,
+      "height": 100,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 78,
+          "y": 5
+        },
+        {
+          "x": 61,
+          "y": 18
+        },
+        {
+          "x": 43,
+          "y": 18
+        },
+        {
+          "x": 29,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
       "color": 3170088,
       "height": 100,
       "mirror": 1,
@@ -94,16 +68,46 @@
       "noDraw": 0,
       "points": [
         {
-          "x": 7,
-          "y": 6
+          "x": 13,
+          "y": 8
         },
         {
-          "x": -2,
-          "y": 15
+          "x": 8,
+          "y": 14
         },
         {
           "x": -7,
-          "y": 15
+          "y": 14
+        },
+        {
+          "x": -11,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 3170088,
+      "height": 100,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -33,
+          "y": 8
+        },
+        {
+          "x": -46,
+          "y": 21
+        },
+        {
+          "x": -54,
+          "y": 21
         }
       ],
       "useBoneMirror": 1

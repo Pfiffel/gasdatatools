@@ -33,6 +33,13 @@
               "spacing": 50
             },
             "tag": "ParticleLineEffect"
+          },
+          {
+            "data": {
+              "sound": "Symbiote_Effect_Hawthorne_Zap",
+              "volume": 275
+            },
+            "tag": "PlaySoundEffect"
           }
         ],
         "targets": 1,

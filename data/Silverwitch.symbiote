@@ -31,6 +31,13 @@
               "radius": 55
             },
             "tag": "BlastEffect"
+          },
+          {
+            "data": {
+              "sound": "Symbiote_Effect_Silverwitch_Zap",
+              "volume": 125
+            },
+            "tag": "PlaySoundEffect"
           }
         ]
       },

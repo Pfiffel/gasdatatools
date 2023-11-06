@@ -1,0 +1,25 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "glyphCount": 2,
+            "glyphDuration": 250,
+            "glyphRadius": 50,
+            "glyphType": "Shield Glyph",
+            "refillPercentage": 10,
+            "shieldIndex": -1,
+            "tag": ""
+          },
+          "tag": "ShieldRefillTrigger"
+        },
+        "when": 7
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Auxiliary Cell",
+  "rarity": 2
+}
+

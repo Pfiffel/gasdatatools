@@ -1,0 +1,26 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "applyToMana": 0,
+            "asPercentage": 0,
+            "glyphCount": 2,
+            "glyphDuration": 250,
+            "glyphRadius": 45,
+            "glyphType": "Heal Indicator",
+            "healAmount": 5,
+            "tag": ""
+          },
+          "tag": "HealTrigger"
+        },
+        "when": 1
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Nanite Swarm",
+  "rarity": 1
+}
+
