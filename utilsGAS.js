@@ -548,6 +548,21 @@ function GetTriggeredEffectString(tag, data, delayArray)
 		damage += data.damage;
 		hashAoE = newHashAoE;
 	}
+	else if(tag == "CannonTrigger"){
+		var newHashAoE = data.count + data.damage + data.range + data.speed;
+		if(hashAoE != newHashAoE)
+		{
+			s += "Fire " + data.count + " piercing cannon shells<br/>";
+			s += printKeyAndData("├ Radius", data.radius);
+			s += printKeyAndData("├ Damage", data.damage);
+			s += printKeyAndData("├ Range", data.range);
+			s += printKeyAndData("└ Speed", data.speed);
+			s += AddEffectsText(data);
+		}
+		delayArray.push(data.delay);
+		damage += data.damage * data.count;
+		hashAoE = newHashAoE;
+	}
 	else if(tag == "CooldownResetTrigger"){
 		s += "Reset cooldown on <b>trigger " + (data.triggerIndex+1) + "</b>" + "<br/>";
 	}
@@ -796,7 +811,7 @@ function GetAccolades(champion){
 	for (let i = 0; i < gasData["accolade"].length; i++)
 	{
 		var accolade = gasData["accolade"][i];
-		if(champion == accolade.champion) accolades.push(accolade);
+		if(champion == accolade.champion || accolade.champion == "") accolades.push(accolade);
 	}
 	return accolades;
 }
