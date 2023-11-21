@@ -33,7 +33,7 @@ function Refresh()
 	makeHeaderCell("Movement", th);
 	
 	makeHeaderCell("Guns <i>(graphic is scaled down to " + percToString(GUN_SCALE) + ")</i>", th);
-	makeHeaderCell("Passive", th);
+	//makeHeaderCell("Passive", th);
 	makeHeaderCell("Triggers <i>(DPS based on " + MANA_PER_SECOND + " mps)</i>", th);
 	makeHeaderCell("Shields", th);
 	for (let i = 0; i < gasData.champion.length; i++)
@@ -57,13 +57,42 @@ function Refresh()
 		sizeCell.appendChild(document.createTextNode("area size"));
 		makeMoveCell(tr.insertCell(), player);
 		makeGunCell(tr.insertCell(), player);
+		makeTriggerCell(tr.insertCell(), player);
+		makeShieldCell(tr.insertCell(), player);
+
+		let tr2 = tbl.insertRow();
+
+		let passiveCell = tr2.insertCell();
+		passiveCell.colSpan = 2;
+		passiveCell.style.width = "10px"; // hack to make it not stretch past the actual table width
+		var pasHeader = document.createElement('div');
+		pasHeader.innerHTML = "<b>" + player.name + " Passive</b>";
+		passiveCell.appendChild(pasHeader);
 		var pretendItem = {};
 		pretendItem.name = player.passiveName;
 		pretendItem.effects = player.passives;
-		makeCellE(MakeStatsTable(pretendItem, 0), tr);
-		//makePassiveCell(tr.insertCell(), player);
-		makeTriggerCell(tr.insertCell(), player);
-		makeShieldCell(tr.insertCell(), player);
+		let patDiv = document.createElement('div');
+		patDiv.appendChild(MakeStatsTable(pretendItem, 0));
+		passiveCell.appendChild(patDiv);
+		//makeCellE(patDiv, tr);
+
+		
+		let triggerCell = tr2.insertCell();
+		triggerCell.colSpan = 10;
+		triggerCell.style.width = "10px"; // hack to make it not stretch past the actual table width
+		var trigHeader = document.createElement('div');
+		trigHeader.innerHTML = "<b>" + player.name + " Triggers</b>";
+		triggerCell.appendChild(trigHeader);
+		for (let t = 0; t < player.triggers.length; t++)
+		{
+			var trigger = player.triggers[t];
+			//trigger.name = "(" + (t+1) + ") " + trigger.name;
+			trigger.championName = (t+1);
+			let tbl = MakeStatsTable(trigger, 0, false, false, false, false, t);
+			tbl.classList.add("inline");
+			triggerCell.appendChild(tbl);
+		}
+
 		if(document.getElementById(CHECKBOX_ACCOLADES).checked)
 		{
 			let tr2 = tbl.insertRow();
