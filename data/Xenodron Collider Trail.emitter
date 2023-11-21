@@ -1,0 +1,20 @@
+{
+  "arcOffset": 0,
+  "cooldown": 10,
+  "endSound": "",
+  "endVolume": 50,
+  "halfArc": 0,
+  "loopSound": "",
+  "loopVolume": 50,
+  "maxDist": 0,
+  "minDist": 0,
+  "mirror": 0,
+  "name": "Xenodron Collider Trail",
+  "particleCount": 1,
+  "particleTypes": [
+    "Xenodron Collider Trail"
+  ],
+  "startSound": "",
+  "startVolume": 50
+}
+

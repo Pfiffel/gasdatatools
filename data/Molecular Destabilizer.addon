@@ -1,0 +1,47 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 20,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Molecular Destabilizer Burst",
+            "facing": 0,
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 250,
+            "reticleColor": 39679,
+            "statusEffects": [
+              {
+                "data": {
+                  "dps": 40,
+                  "duration": 3000,
+                  "reducedDurationOnBoss": 0,
+                  "stack": 0
+                },
+                "tag": "DoTEffect"
+              }
+            ],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "Entropy Blast"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 7
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Molecular Destabilizer",
+  "rarity": 3
+}
+

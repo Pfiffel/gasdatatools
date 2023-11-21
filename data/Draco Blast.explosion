@@ -16,7 +16,7 @@
     }
   ],
   "name": "Draco Blast",
-  "sound": "Player_Wasp_PosTorpedo_Explosion",
-  "volume": 50
+  "sound": "Symbiote_Effect_Draco_Explode",
+  "volume": 100
 }
 

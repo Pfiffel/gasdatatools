@@ -1,0 +1,16 @@
+{
+  "champion": "",
+  "displayName": "Loader Augment",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 2,
+        "statType": 5
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Generic Loader Augment"
+}
+

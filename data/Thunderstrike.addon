@@ -1,0 +1,41 @@
+{
+  "effects": [
+    {
+      "data": {
+        "cooldown": 350,
+        "damage": 20,
+        "emitterType": "Thunderstrike Trail",
+        "f": 600,
+        "halfArc": 600,
+        "objectType": "Thunderstrike Bullet",
+        "range": 300,
+        "reticleColor": 65535,
+        "soundPack": "Hercules Big Guns",
+        "speed": 600,
+        "tag": "",
+        "turretBone": ""
+      },
+      "tag": "PlayerGunStats"
+    },
+    {
+      "data": {
+        "cooldown": 350,
+        "damage": 20,
+        "emitterType": "Thunderstrike Trail",
+        "f": -600,
+        "halfArc": 600,
+        "objectType": "Thunderstrike Bullet",
+        "range": 300,
+        "reticleColor": 2673852,
+        "soundPack": "Hercules Big Guns",
+        "speed": 600,
+        "tag": "",
+        "turretBone": ""
+      },
+      "tag": "PlayerGunStats"
+    }
+  ],
+  "name": "Thunderstrike",
+  "rarity": 5
+}
+

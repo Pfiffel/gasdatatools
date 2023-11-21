@@ -16,7 +16,7 @@
     }
   ],
   "name": "Red Wizard Grenade",
-  "sound": "Player_Mustang_Grenade_Explosion",
-  "volume": 50
+  "sound": "Symbiote_Effect_RedWizard_Explode",
+  "volume": 100
 }
 

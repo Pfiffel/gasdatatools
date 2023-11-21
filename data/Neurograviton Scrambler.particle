@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 750,
+      "value": 8536831
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 800,
+  "minLifetime": 400,
+  "name": "Neurograviton Scrambler",
+  "objectType": "Small Hourglass",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 500
+    },
+    {
+      "frac": 900,
+      "value": 400
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 8536831,
+  "startScale": 10,
+  "stayLow": 1
+}
+

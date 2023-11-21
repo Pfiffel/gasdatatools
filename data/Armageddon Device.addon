@@ -1,0 +1,163 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 10,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Armageddon Device Blast",
+            "facing": 0,
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 330,
+            "reticleColor": 15965459,
+            "statusEffects": [
+              {
+                "data": {
+                  "dps": 60,
+                  "duration": 4000,
+                  "reducedDurationOnBoss": 0
+                },
+                "tag": "BurningEffect"
+              }
+            ],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "4x Fiery Bursts"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 10,
+            "delay": 0,
+            "drawReticle": 0,
+            "drawTooltip": 0,
+            "explosionType": "Armageddon Device Blast",
+            "facing": 0,
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 333,
+            "reticleColor": 15965459,
+            "statusEffects": [
+              {
+                "data": {
+                  "dps": 60,
+                  "duration": 4000,
+                  "reducedDurationOnBoss": 0
+                },
+                "tag": "BurningEffect"
+              }
+            ],
+            "tag": "",
+            "targetingDelay": 1200,
+            "tooltip": "4x Fiery Bursts"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 10,
+            "delay": 0,
+            "drawReticle": 0,
+            "drawTooltip": 0,
+            "explosionType": "Armageddon Device Blast",
+            "facing": 0,
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 333,
+            "reticleColor": 15965459,
+            "statusEffects": [
+              {
+                "data": {
+                  "dps": 60,
+                  "duration": 4000,
+                  "reducedDurationOnBoss": 0
+                },
+                "tag": "BurningEffect"
+              }
+            ],
+            "tag": "",
+            "targetingDelay": 2400,
+            "tooltip": "4x Fiery Bursts"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 10,
+            "delay": 0,
+            "drawReticle": 0,
+            "drawTooltip": 0,
+            "explosionType": "Armageddon Device Blast",
+            "facing": 0,
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 333,
+            "reticleColor": 15965459,
+            "statusEffects": [
+              {
+                "data": {
+                  "dps": 60,
+                  "duration": 4000,
+                  "reducedDurationOnBoss": 0
+                },
+                "tag": "BurningEffect"
+              }
+            ],
+            "tag": "",
+            "targetingDelay": 3600,
+            "tooltip": "4x Fiery Bursts"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Armageddon Device",
+  "rarity": 5
+}
+

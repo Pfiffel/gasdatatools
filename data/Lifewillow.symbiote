@@ -7,12 +7,16 @@
           "data": {
             "angleOffset": 0,
             "armingTime": 750,
+            "creationSound": "Symbiote_Effect_Lifewillow_PickupCreate",
+            "creationVolume": 75,
             "duration": 10000,
             "emitterType": "Heal Mine",
-            "explosionType": "Heal Mine",
+            "expiryExplosion": "Heal Mine Expiry",
             "healing": 100,
             "mineCount": 2,
             "objectType": "Heal Mine",
+            "pickupExplosion": "Heal Mine Pickup",
+            "powers": [],
             "radius": 30,
             "ringRadius": 50,
             "tag": ""

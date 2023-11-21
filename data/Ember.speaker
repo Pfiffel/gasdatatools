@@ -26,11 +26,121 @@
       "quotes": [
         {
           "sound": "",
-          "text": "There will be flames.",
+          "text": "There will be flames!",
           "volume": 50
         }
       ],
       "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The zenith of flame!",
+          "volume": 50
+        }
+      ],
+      "tag": "Max Level"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Reduced to embers!\n",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Ashes to ashes!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Mere cinders and smoke!",
+          "volume": 50
+        }
+      ],
+      "tag": "Add Boss Kill"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "A spark of luck in an inferno of danger.",
+          "volume": 50
+        }
+      ],
+      "tag": "Close Call"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "In ashes, we find the mettle of warriors.",
+          "volume": 50
+        }
+      ],
+      "tag": "Low Level Death"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "You must ignite that beacon!",
+          "volume": 50
+        }
+      ],
+      "tag": "Discover Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Ignited! The beacon is ablaze!",
+          "volume": 50
+        }
+      ],
+      "tag": "Activate Beacon"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The fire has spoken. Its verdict is destruction.",
+          "volume": 50
+        }
+      ],
+      "tag": "Quest Boss Victory"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Unquenched, my inferno rages on!",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Unquenched, my inferno rages on!",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire With Medal"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Unquenched, my inferno rages on!",
+          "volume": 50
+        }
+      ],
+      "tag": "Retire With Accolade"
     }
   ]
 }

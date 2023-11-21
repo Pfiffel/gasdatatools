@@ -1,5 +1,5 @@
 {
-  "description": "Ember repays like for like.",
+  "description": "Ember smolders with burning intensity.",
   "effects": [
     {
       "data": {
@@ -16,6 +16,26 @@
         "statType": 0
       },
       "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 3,
+        "gunTag": "",
+        "maxProcsPerSecond": 0,
+        "percentChance": 100,
+        "statusEffects": [
+          {
+            "data": {
+              "dps": 5,
+              "duration": 5000,
+              "reducedDurationOnBoss": 0
+            },
+            "tag": "BurningEffect"
+          }
+        ],
+        "tooltipGunDescription": "gun"
+      },
+      "tag": "GunProcs"
     }
   ],
   "enemies": [],

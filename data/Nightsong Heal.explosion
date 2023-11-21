@@ -16,7 +16,7 @@
     }
   ],
   "name": "Nightsong Heal",
-  "sound": "Wasp Dematerialize",
-  "volume": 25
+  "sound": "Symbiote_Effect_Nightsong_Explode",
+  "volume": 50
 }
 

@@ -1,0 +1,37 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 20,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Zaptech Blast Burst",
+            "facing": 0,
+            "halfArc": 400,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 220,
+            "reticleColor": 15614975,
+            "statusEffects": [],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "Energy Burst"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 1
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Zaptech Blast",
+  "rarity": 1
+}
+

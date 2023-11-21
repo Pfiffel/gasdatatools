@@ -9,7 +9,7 @@
     }
   ],
   "name": "Golden Hind Mine",
-  "sound": "Player_Wasp_PosTorpedo_Explosion",
-  "volume": 35
+  "sound": "Symbiote_Effect_GoldenHind_Explode",
+  "volume": 100
 }
 

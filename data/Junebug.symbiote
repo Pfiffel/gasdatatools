@@ -7,12 +7,15 @@
           "data": {
             "angleOffset": 0,
             "armingTime": 750,
+            "creationSound": "Symbiote_Effect_Junebug_PickupCreate",
+            "creationVolume": 180,
             "duration": 15000,
             "emitterType": "Hull Mine",
-            "explosionType": "Hull Mine",
+            "expiryExplosion": "Hull Mine Expiry",
             "healing": 0,
             "mineCount": 1,
             "objectType": "Hull Glyph",
+            "pickupExplosion": "Hull Mine Pickup",
             "powers": [
               {
                 "data": {

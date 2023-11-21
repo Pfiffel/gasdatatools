@@ -1,0 +1,24 @@
+{
+  "effects": [
+    {
+      "data": {
+        "cooldown": 350,
+        "damage": 30,
+        "emitterType": "Chronoflux Rifle Trail",
+        "f": 0,
+        "halfArc": 80,
+        "objectType": "Chronoflux Rifle Bullet",
+        "range": 360,
+        "reticleColor": 45428,
+        "soundPack": "Cyclops Guns",
+        "speed": 900,
+        "tag": "",
+        "turretBone": ""
+      },
+      "tag": "PlayerGunStats"
+    }
+  ],
+  "name": "Chronoflux Rifle",
+  "rarity": 4
+}
+

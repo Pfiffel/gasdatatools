@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 300,
+      "maxDistPercent": 100,
+      "minDistPercent": 100,
+      "particleType": "Nanotronic Annihilator Burst",
+      "uniformAngles": 0
+    },
+    {
+      "angularDensity": 400,
+      "maxDistPercent": 100,
+      "minDistPercent": 50,
+      "particleType": "Nanotronic Annihilator Burst",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Nanotronic Annihilator Blast",
+  "sound": "explosion4",
+  "volume": 150
+}
+

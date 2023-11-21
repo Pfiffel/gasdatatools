@@ -1,0 +1,37 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 75,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Gravimetric Ray Blast",
+            "facing": 0,
+            "halfArc": 40,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 340,
+            "reticleColor": 524543,
+            "statusEffects": [],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "Beam Projection"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 1
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Gravimetric Ray",
+  "rarity": 2
+}
+

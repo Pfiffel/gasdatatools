@@ -167,13 +167,13 @@
             "facing": 0,
             "mirror": 0,
             "objectType": "Flamebringer Mine",
-            "sound": "",
+            "sound": "Symbiote_Effect_Flamebringer_Launch",
             "tag": "",
             "target": {
               "x": 150,
               "y": 0
             },
-            "volume": 50
+            "volume": 100
           },
           "tag": "SlugTrigger"
         },

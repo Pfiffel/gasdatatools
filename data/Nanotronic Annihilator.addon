@@ -1,0 +1,47 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 10,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Nanotronic Annihilator Blast",
+            "facing": 0,
+            "halfArc": 60,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 340,
+            "reticleColor": 16722587,
+            "statusEffects": [
+              {
+                "data": {
+                  "dps": 100,
+                  "duration": 3000,
+                  "reducedDurationOnBoss": 0,
+                  "stack": 0
+                },
+                "tag": "DoTEffect"
+              }
+            ],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "Entropy Beam"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Nanotronic Annihilator",
+  "rarity": 4
+}
+

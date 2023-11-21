@@ -23,7 +23,7 @@
     }
   ],
   "name": "Darkfall Blast",
-  "sound": "Player_Cyclops_ConeLaser",
-  "volume": 75
+  "sound": "Symbiote_Effect_Darkfall_Explode",
+  "volume": 100
 }
 

@@ -23,7 +23,7 @@
     }
   ],
   "name": "Anger Spirit Blast",
-  "sound": "Player_Wasp_PosTorpedo_Explosion",
-  "volume": 50
+  "sound": "Symbiote_Effect_AngerSpirit_Explode",
+  "volume": 100
 }
 

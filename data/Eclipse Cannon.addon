@@ -1,0 +1,27 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "count": 10,
+            "damage": 50,
+            "emitterType": "Eclipse Cannon Trail",
+            "objectType": "Eclipse Cannon Shell",
+            "radius": 15,
+            "range": 500,
+            "speed": 1500,
+            "tag": "",
+            "timeGap": 150
+          },
+          "tag": "CannonTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Eclipse Cannon",
+  "rarity": 5
+}
+

@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 3238989
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 2000,
+  "minLifetime": 1500,
+  "name": "Zeta Ray Trail",
+  "objectType": "Zeta Ray Trail",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 25,
+      "value": 500
+    },
+    {
+      "frac": 900,
+      "value": 200
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 7720096,
+  "startScale": 10,
+  "stayLow": 1
+}
+

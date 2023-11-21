@@ -1,0 +1,16 @@
+{
+  "champion": "",
+  "displayName": "Loader Upgrade",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 1,
+        "statType": 5
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Generic Loader Upgrade"
+}
+

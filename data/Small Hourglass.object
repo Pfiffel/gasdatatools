@@ -1,0 +1,59 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Small Hourglass",
+  "shapes": [
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16776958,
+      "height": 10,
+      "mirror": 1,
+      "name": "Cross",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -30,
+          "y": 19
+        },
+        {
+          "x": -23,
+          "y": 19
+        },
+        {
+          "x": -12,
+          "y": 14
+        },
+        {
+          "x": -7,
+          "y": 7
+        },
+        {
+          "x": 0,
+          "y": 6
+        },
+        {
+          "x": 7,
+          "y": 7
+        },
+        {
+          "x": 12,
+          "y": 14
+        },
+        {
+          "x": 23,
+          "y": 19
+        },
+        {
+          "x": 30,
+          "y": 19
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

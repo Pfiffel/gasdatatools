@@ -1,0 +1,37 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 60,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Particle Flare Burst",
+            "facing": 0,
+            "halfArc": 250,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 220,
+            "reticleColor": 4974469,
+            "statusEffects": [],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "Gamma Blast"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 7
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Particle Flare",
+  "rarity": 2
+}
+

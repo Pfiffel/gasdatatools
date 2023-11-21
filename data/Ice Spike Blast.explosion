@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 120,
+      "maxDistPercent": 100,
+      "minDistPercent": 100,
+      "particleType": "Ice Spike Blast",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Ice Spike Blast",
+  "sound": "Symbiote_Effect_Hiberna_Explode",
+  "volume": 150
+}
+

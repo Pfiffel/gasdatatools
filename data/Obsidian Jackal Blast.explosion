@@ -16,7 +16,7 @@
     }
   ],
   "name": "Obsidian Jackal Blast",
-  "sound": "Player_Wasp_PosTorpedo_Explosion",
-  "volume": 50
+  "sound": "Symbiote_Effect_ObsidianJackal_Explode",
+  "volume": 150
 }
 

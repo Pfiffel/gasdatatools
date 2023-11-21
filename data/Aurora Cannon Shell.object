@@ -1,0 +1,89 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Aurora Cannon Shell",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 14723856,
+      "height": 58,
+      "mirror": 1,
+      "name": "Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 43,
+          "y": 9
+        },
+        {
+          "x": 35,
+          "y": 18
+        },
+        {
+          "x": 18,
+          "y": 24
+        },
+        {
+          "x": -13,
+          "y": 24
+        },
+        {
+          "x": -38,
+          "y": 20
+        },
+        {
+          "x": -63,
+          "y": 15
+        },
+        {
+          "x": -98,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 14477894,
+      "height": 59,
+      "mirror": 1,
+      "name": "Inner",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 33,
+          "y": 3
+        },
+        {
+          "x": 27,
+          "y": 7
+        },
+        {
+          "x": 12,
+          "y": 9
+        },
+        {
+          "x": -10,
+          "y": 9
+        },
+        {
+          "x": -36,
+          "y": 7
+        },
+        {
+          "x": -81,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

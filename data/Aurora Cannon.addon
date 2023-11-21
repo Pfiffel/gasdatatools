@@ -1,0 +1,27 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "count": 3,
+            "damage": 35,
+            "emitterType": "Aurora Cannon Trail",
+            "objectType": "Aurora Cannon Shell",
+            "radius": 15,
+            "range": 500,
+            "speed": 1500,
+            "tag": "",
+            "timeGap": 150
+          },
+          "tag": "CannonTrigger"
+        },
+        "when": 7
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Aurora Cannon",
+  "rarity": 2
+}
+

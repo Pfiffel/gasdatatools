@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 50,
+      "maxDistPercent": 100,
+      "minDistPercent": 90,
+      "particleType": "Pyrobomb Burst",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 50,
+      "maxDistPercent": 90,
+      "minDistPercent": 60,
+      "particleType": "Pyrobomb Burst",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Pyrobomb Burst",
+  "sound": "explosion3",
+  "volume": 50
+}
+

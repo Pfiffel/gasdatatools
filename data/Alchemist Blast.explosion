@@ -1,22 +1,22 @@
 {
   "layers": [
     {
-      "angularDensity": 25,
+      "angularDensity": 75,
       "maxDistPercent": 100,
       "minDistPercent": 97,
       "particleType": "Alchemist Blast",
       "uniformAngles": 1
     },
     {
-      "angularDensity": 30,
+      "angularDensity": 60,
       "maxDistPercent": 95,
-      "minDistPercent": 15,
-      "particleType": "Alchemist Blast",
+      "minDistPercent": 20,
+      "particleType": "Alchemist Smoke",
       "uniformAngles": 0
     }
   ],
   "name": "Alchemist Blast",
-  "sound": "Player_Hercules_Shockwave",
-  "volume": 80
+  "sound": "Symbiote_Effect_Alchemist_Explode",
+  "volume": 100
 }
 

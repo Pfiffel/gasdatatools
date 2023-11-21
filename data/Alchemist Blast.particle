@@ -2,7 +2,7 @@
   "colorPoints": [
     {
       "frac": 250,
-      "value": 1398737
+      "value": 3452656
     },
     {
       "frac": 1000,
@@ -10,10 +10,10 @@
     }
   ],
   "facing": 1,
-  "maxLifetime": 350,
+  "maxLifetime": 700,
   "minLifetime": 300,
   "name": "Alchemist Blast",
-  "objectType": "Triangle",
+  "objectType": "Flamethrower1",
   "positionTweenType": "EXPOOUT",
   "scalePoints": [
     {

@@ -7,16 +7,20 @@
           "data": {
             "angleOffset": 0,
             "armingTime": 750,
+            "creationSound": "Symbiote_Effect_LittleMouse_PickupCreate",
+            "creationVolume": 100,
             "duration": 15000,
             "emitterType": "Shield Mine",
-            "explosionType": "Shield Mine",
+            "expiryExplosion": "Shield Mine Expiry",
             "healing": 0,
             "mineCount": 1,
             "objectType": "Shield Glyph",
+            "pickupExplosion": "Shield Mine Pickup",
             "powers": [
               {
                 "data": {
-                  "amount": 150
+                  "amount": 150,
+                  "showCaption": 1
                 },
                 "tag": "ShieldRechargePower"
               }

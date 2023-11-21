@@ -1,0 +1,47 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Pyrobomb Projectile",
+  "shapes": [
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16737280,
+      "height": 50,
+      "mirror": 1,
+      "name": "Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -22,
+          "y": 0
+        },
+        {
+          "x": -9,
+          "y": 10
+        },
+        {
+          "x": 0,
+          "y": 13
+        },
+        {
+          "x": 6,
+          "y": 12
+        },
+        {
+          "x": 12,
+          "y": 6
+        },
+        {
+          "x": 13,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

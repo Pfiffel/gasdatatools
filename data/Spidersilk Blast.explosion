@@ -44,7 +44,7 @@
     }
   ],
   "name": "Spidersilk Blast",
-  "sound": "Player_Wasp_PosTorpedo_Explosion",
-  "volume": 50
+  "sound": "Symbiote_Effect_Spidersilk_Explode",
+  "volume": 125
 }
 

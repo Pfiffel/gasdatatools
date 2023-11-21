@@ -1,0 +1,24 @@
+{
+  "effects": [
+    {
+      "data": {
+        "cooldown": 500,
+        "damage": 32,
+        "emitterType": "Etheric Bolt Thrower Trail",
+        "f": 0,
+        "halfArc": 300,
+        "objectType": "Etheric Bolt Thrower Bullet",
+        "range": 240,
+        "reticleColor": 11483647,
+        "soundPack": "Mustang Big Guns",
+        "speed": 650,
+        "tag": "",
+        "turretBone": ""
+      },
+      "tag": "PlayerGunStats"
+    }
+  ],
+  "name": "Etheric Bolt Thrower",
+  "rarity": 3
+}
+

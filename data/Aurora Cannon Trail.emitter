@@ -1,0 +1,20 @@
+{
+  "arcOffset": 0,
+  "cooldown": 10,
+  "endSound": "",
+  "endVolume": 50,
+  "halfArc": 1800,
+  "loopSound": "",
+  "loopVolume": 50,
+  "maxDist": 35,
+  "minDist": 0,
+  "mirror": 0,
+  "name": "Aurora Cannon Trail",
+  "particleCount": 10,
+  "particleTypes": [
+    "Aurora Cannon Trail"
+  ],
+  "startSound": "",
+  "startVolume": 50
+}
+

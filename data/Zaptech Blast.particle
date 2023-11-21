@@ -1,0 +1,40 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 14896639
+    },
+    {
+      "frac": 750,
+      "value": 9502889
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 500,
+  "minLifetime": 150,
+  "name": "Zaptech Blast",
+  "objectType": "Small Lightning Bolt",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 500
+    },
+    {
+      "frac": 900,
+      "value": 500
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 16776958,
+  "startScale": 10,
+  "stayLow": 1
+}
+

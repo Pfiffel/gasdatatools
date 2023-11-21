@@ -1,0 +1,44 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 20,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Chrono Disruptor",
+            "facing": 0,
+            "halfArc": 300,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 230,
+            "reticleColor": 4279039,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 4000
+                },
+                "tag": "StunEffect"
+              }
+            ],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "Stunning Blast"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Chrono Disruptor",
+  "rarity": 3
+}
+

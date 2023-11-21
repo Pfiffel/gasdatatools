@@ -1,0 +1,50 @@
+{
+  "effects": [
+    {
+      "data": {
+        "range": 275,
+        "reticleColor": 8536831,
+        "statusEffects": [
+          {
+            "data": {
+              "duration": 1500
+            },
+            "tag": "StunEffect"
+          },
+          {
+            "data": {
+              "arcOffset": 0,
+              "halfArc": 0,
+              "maxDist": 20,
+              "minDist": 10,
+              "particleType": "Neurograviton Scrambler",
+              "spacing": 30
+            },
+            "tag": "ParticleLineEffect"
+          },
+          {
+            "data": {
+              "damage": 0,
+              "explosionType": "Neurograviton Scrambler Zap",
+              "radius": 45
+            },
+            "tag": "BlastEffect"
+          },
+          {
+            "data": {
+              "sound": "Symbiote_Effect_Silverwitch_Zap",
+              "volume": 125
+            },
+            "tag": "PlaySoundEffect"
+          }
+        ],
+        "targets": 1,
+        "when": 6
+      },
+      "tag": "TriggeredRandomTargetEffect"
+    }
+  ],
+  "name": "Neurograviton Scrambler",
+  "rarity": 4
+}
+

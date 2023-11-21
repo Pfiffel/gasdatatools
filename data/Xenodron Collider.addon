@@ -1,0 +1,24 @@
+{
+  "effects": [
+    {
+      "data": {
+        "cooldown": 750,
+        "damage": 8,
+        "emitterType": "Xenodron Collider Trail",
+        "f": 0,
+        "halfArc": 150,
+        "objectType": "Xenodron Collider Bullet",
+        "range": 225,
+        "reticleColor": 16763737,
+        "soundPack": "Mustang Small Guns",
+        "speed": 600,
+        "tag": "",
+        "turretBone": ""
+      },
+      "tag": "PlayerGunStats"
+    }
+  ],
+  "name": "Xenodron Collider",
+  "rarity": 1
+}
+

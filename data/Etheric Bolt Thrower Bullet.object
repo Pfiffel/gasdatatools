@@ -1,0 +1,47 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Etheric Bolt Thrower Bullet",
+  "shapes": [
+    {
+      "bone": "Yellow",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 8061899,
+      "height": 120,
+      "mirror": 0,
+      "name": "Yellow",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 12,
+          "y": -33
+        },
+        {
+          "x": 12,
+          "y": 0
+        },
+        {
+          "x": 81,
+          "y": 0
+        },
+        {
+          "x": -12,
+          "y": 32
+        },
+        {
+          "x": -12,
+          "y": 0
+        },
+        {
+          "x": -81,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

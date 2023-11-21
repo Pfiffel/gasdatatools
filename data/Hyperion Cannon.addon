@@ -1,0 +1,27 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "count": 8,
+            "damage": 50,
+            "emitterType": "Hyperion Cannon Trail",
+            "objectType": "Hyperion Cannon Shell",
+            "radius": 15,
+            "range": 500,
+            "speed": 1500,
+            "tag": "",
+            "timeGap": 150
+          },
+          "tag": "CannonTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Hyperion Cannon",
+  "rarity": 4
+}
+

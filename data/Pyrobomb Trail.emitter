@@ -1,0 +1,20 @@
+{
+  "arcOffset": 0,
+  "cooldown": 28,
+  "endSound": "",
+  "endVolume": 50,
+  "halfArc": 0,
+  "loopSound": "",
+  "loopVolume": 50,
+  "maxDist": 5,
+  "minDist": 0,
+  "mirror": 0,
+  "name": "Pyrobomb Trail",
+  "particleCount": 2,
+  "particleTypes": [
+    "Pyrobomb Trail"
+  ],
+  "startSound": "",
+  "startVolume": 50
+}
+

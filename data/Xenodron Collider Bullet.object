@@ -1,0 +1,85 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Xenodron Collider Bullet",
+  "shapes": [
+    {
+      "bone": "Orange",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11640064,
+      "height": 58,
+      "mirror": 1,
+      "name": "Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 40,
+          "y": 3
+        },
+        {
+          "x": 32,
+          "y": 12
+        },
+        {
+          "x": 15,
+          "y": 18
+        },
+        {
+          "x": -12,
+          "y": 27
+        },
+        {
+          "x": -14,
+          "y": 13
+        },
+        {
+          "x": -69,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Yellow",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 15854514,
+      "height": 59,
+      "mirror": 1,
+      "name": "Inner",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 32,
+          "y": 3
+        },
+        {
+          "x": 26,
+          "y": 7
+        },
+        {
+          "x": 11,
+          "y": 9
+        },
+        {
+          "x": -4,
+          "y": 16
+        },
+        {
+          "x": -4,
+          "y": 6
+        },
+        {
+          "x": -47,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

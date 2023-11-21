@@ -1,0 +1,83 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 150,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Zeta Ray Blast",
+            "facing": 0,
+            "halfArc": 2,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 340,
+            "reticleColor": 2673789,
+            "statusEffects": [],
+            "tag": "",
+            "targetingDelay": 500,
+            "tooltip": "Charged Ray"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 7
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "delay": 350,
+            "duration": 150,
+            "emitterType": "",
+            "facing": 0,
+            "mirror": 0,
+            "objectType": "Zeta Ray",
+            "sound": "",
+            "tag": "",
+            "target": {
+              "x": 350,
+              "y": 0
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        },
+        "when": 7
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "delay": 350,
+            "distance": 340,
+            "line": {
+              "arcOffset": 0,
+              "halfArc": 0,
+              "maxDist": 10,
+              "minDist": 10,
+              "particleType": "Zeta Ray Trail",
+              "spacing": 15
+            },
+            "tag": ""
+          },
+          "tag": "ParticleLineTrigger"
+        },
+        "when": 7
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Zeta Ray",
+  "rarity": 4
+}
+

@@ -1,0 +1,44 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 10,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Ice Spike Blast",
+            "facing": 0,
+            "halfArc": 60,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 290,
+            "reticleColor": 5814527,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 3000
+                },
+                "tag": "ChillEffect"
+              }
+            ],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "Chilling Blast"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 7
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Ice Spike",
+  "rarity": 1
+}
+

@@ -1,0 +1,27 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "count": 1,
+            "damage": 25,
+            "emitterType": "Railcannon Trail",
+            "objectType": "Railcannon Shell",
+            "radius": 15,
+            "range": 500,
+            "speed": 1500,
+            "tag": "",
+            "timeGap": 300
+          },
+          "tag": "CannonTrigger"
+        },
+        "when": 1
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Railcannon",
+  "rarity": 1
+}
+

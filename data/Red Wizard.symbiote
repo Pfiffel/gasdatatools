@@ -35,13 +35,13 @@
               "emitterType": "Red Wizard Grenade",
               "mirror": 1,
               "objectType": "Red Wizard Grenade",
-              "sound": "",
+              "sound": "Symbiote_Effect_RedWizard_Launch",
               "tag": "",
               "target": {
                 "x": 125,
                 "y": 125
               },
-              "volume": 50
+              "volume": 100
             },
             "tag": "SlugTrigger"
           },

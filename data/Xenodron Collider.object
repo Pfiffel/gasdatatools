@@ -1,0 +1,81 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Xenodron Collider",
+  "shapes": [
+    {
+      "bone": "Orange",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16774019,
+      "height": 58,
+      "mirror": 1,
+      "name": "Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 40,
+          "y": 3
+        },
+        {
+          "x": 32,
+          "y": 12
+        },
+        {
+          "x": 15,
+          "y": 18
+        },
+        {
+          "x": -16,
+          "y": 30
+        },
+        {
+          "x": -16,
+          "y": 18
+        },
+        {
+          "x": -69,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Yellow",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16768772,
+      "height": 59,
+      "mirror": 1,
+      "name": "Inner",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 33,
+          "y": 3
+        },
+        {
+          "x": 27,
+          "y": 7
+        },
+        {
+          "x": 12,
+          "y": 9
+        },
+        {
+          "x": -10,
+          "y": 9
+        },
+        {
+          "x": -52,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

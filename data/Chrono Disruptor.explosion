@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 30,
+      "maxDistPercent": 100,
+      "minDistPercent": 100,
+      "particleType": "Chrono Disruptor",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 30,
+      "maxDistPercent": 80,
+      "minDistPercent": 80,
+      "particleType": "Chrono Disruptor",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Chrono Disruptor",
+  "sound": "explosion4",
+  "volume": 50
+}
+

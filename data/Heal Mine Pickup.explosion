@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 8,
+      "maxDistPercent": 150,
+      "minDistPercent": 150,
+      "particleType": "Nightsong Heal",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Heal Mine Pickup",
+  "sound": "Effect_Repair",
+  "volume": 75
+}
+

@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 4,
+      "maxDistPercent": 100,
+      "minDistPercent": 100,
+      "particleType": "Neurograviton Scrambler",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Neurograviton Scrambler Zap",
+  "sound": "",
+  "volume": 100
+}
+

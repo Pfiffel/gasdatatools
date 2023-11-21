@@ -9,7 +9,7 @@
     }
   ],
   "name": "Celestia",
-  "sound": "Wasp Dematerialize",
-  "volume": 25
+  "sound": "Symbiote_Effect_Celestia_Explode",
+  "volume": 175
 }
 

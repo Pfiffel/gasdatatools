@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 12,
+      "maxDistPercent": 150,
+      "minDistPercent": 150,
+      "particleType": "Shield Mine",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Shield Mine Pickup",
+  "sound": "Effect_Shield_Refill",
+  "volume": 50
+}
+

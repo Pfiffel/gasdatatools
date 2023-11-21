@@ -1,0 +1,40 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 16722587
+    },
+    {
+      "frac": 800,
+      "value": 16722587
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 350,
+  "minLifetime": 300,
+  "name": "Nanotronic Annihilator Burst",
+  "objectType": "Spike Three",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 50,
+      "value": 700
+    },
+    {
+      "frac": 800,
+      "value": 700
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 16776958,
+  "startScale": 10,
+  "stayLow": 1
+}
+

@@ -1,0 +1,29 @@
+{
+  "layers": [
+    {
+      "angularDensity": 400,
+      "maxDistPercent": 100,
+      "minDistPercent": 97,
+      "particleType": "Zeta Ray",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 400,
+      "maxDistPercent": 97,
+      "minDistPercent": 75,
+      "particleType": "Zeta Ray",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 400,
+      "maxDistPercent": 80,
+      "minDistPercent": 15,
+      "particleType": "Zeta Ray",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Zeta Ray Blast",
+  "sound": "Player_Cyclops_LaserBeam_Fire",
+  "volume": 200
+}
+

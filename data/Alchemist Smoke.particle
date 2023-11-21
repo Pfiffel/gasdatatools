@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 900,
+      "value": 3452656
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 700,
+  "minLifetime": 500,
+  "name": "Alchemist Smoke",
+  "objectType": "Shard1",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 400
+    },
+    {
+      "frac": 500,
+      "value": 400
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 3452656,
+  "startScale": 10,
+  "stayLow": 0
+}
+

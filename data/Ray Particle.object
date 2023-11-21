@@ -1,0 +1,39 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Ray Particle",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16579836,
+      "height": 0,
+      "mirror": 1,
+      "name": "Glyph",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -43,
+          "y": 0
+        },
+        {
+          "x": -29,
+          "y": 6
+        },
+        {
+          "x": 29,
+          "y": 6
+        },
+        {
+          "x": 43,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

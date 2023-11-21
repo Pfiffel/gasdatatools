@@ -1,0 +1,32 @@
+{
+  "colorPoints": [
+    {
+      "frac": 1000,
+      "value": 4592896
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 600,
+  "minLifetime": 400,
+  "name": "Pyrobomb Trail",
+  "objectType": "Shard1",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 400
+    },
+    {
+      "frac": 900,
+      "value": 200
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 16737280,
+  "startScale": 10,
+  "stayLow": 0
+}
+

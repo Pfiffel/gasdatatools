@@ -1,0 +1,24 @@
+{
+  "effects": [
+    {
+      "data": {
+        "cooldown": 500,
+        "damage": 15,
+        "emitterType": "Nova Gun Trail",
+        "f": 0,
+        "halfArc": 1800,
+        "objectType": "Nova Gun Bullet",
+        "range": 180,
+        "reticleColor": 16750667,
+        "soundPack": "Wasp Guns",
+        "speed": 650,
+        "tag": "",
+        "turretBone": ""
+      },
+      "tag": "PlayerGunStats"
+    }
+  ],
+  "name": "Nova Gun",
+  "rarity": 2
+}
+

@@ -1,0 +1,40 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 14477894
+    },
+    {
+      "frac": 750,
+      "value": 14723856
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 1000,
+  "minLifetime": 1000,
+  "name": "Aurora Cannon Trail",
+  "objectType": "Shard1",
+  "positionTweenType": "QUINTOUT",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 500
+    },
+    {
+      "frac": 900,
+      "value": 200
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 14723856,
+  "startScale": 10,
+  "stayLow": 0
+}
+

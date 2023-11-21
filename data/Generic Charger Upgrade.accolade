@@ -1,0 +1,16 @@
+{
+  "champion": "",
+  "displayName": "Charger Upgrade",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 2,
+        "statType": 2
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Generic Charger Upgrade"
+}
+

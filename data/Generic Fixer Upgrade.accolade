@@ -1,0 +1,16 @@
+{
+  "champion": "",
+  "displayName": "Fixer Upgrade",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 4,
+        "statType": 1
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "name": "Generic Fixer Upgrade"
+}
+
