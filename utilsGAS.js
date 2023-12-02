@@ -227,6 +227,7 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 	
 	var name = mainData.displayName != undefined ? mainData.displayName : mainData.name;
 	if(mainData.championName != undefined) name = name + " (" + mainData.championName + ")";
+	if(mainData.mana != undefined) name = name + " - " + classWrap(mainData.mana, "energy");
 	makeHeaderCell(colorWrap(name, TIER_COLORS[tier]), th);
 	
 	var slotTypes = SlotTypeToText(mainData);
@@ -325,8 +326,8 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 		}
 		else if(mainTag == "GunCharger")
 		{
-			s += "If " + data.tooltipGunDescription + " not fired for " + ToTime(data.chargeTime) + ", add:<br/>";
-			s += AddEffectsText(data);
+			s += "Every " + ToTime(data.cooldown) + " double gun damage for next shot<br/>";
+			//s += AddEffectsText(data);
 		}
 		else if(mainTag == "PlayerGunStats")
 		{
@@ -519,6 +520,7 @@ function GetTriggeredEffectDelayArray(array)
 			string += ToTime(delay);
 		}
 	}
+	if(array.every((currentValue) => currentValue == 0)) string = "";
 	return string == "" ? "" : printKeyAndData(actualDelays > 1 ? "Delays" : "Delay", string);
 }
 function GetBlastOrBombString(data)
@@ -544,7 +546,10 @@ function GetTriggeredEffectString(tag, data, delayArray)
 			s += printKeyAndData("Arc", (data.halfArc * 0.2) + "°");
 			s += AddEffectsText(data);
 		}
-		delayArray.push(data.delay);
+		// TODO this might become problematic if something uses both
+		// TODO show difference by indicating which delay is centered on tank or remains where used (Yeti Storm vs Blood Imp)
+		if(data.targetingDelay == 0) delayArray.push(data.delay);
+		if(data.delay == 0) delayArray.push(data.targetingDelay);
 		damage += data.damage;
 		hashAoE = newHashAoE;
 	}
@@ -623,6 +628,10 @@ function GetTriggeredEffectString(tag, data, delayArray)
 	}
 	else if(tag == "LeapTrigger"){
 		s += printKeyAndData("Leap Distance", data.range);
+		if(data.collisionSettings.vamp) s += "Collision Heals<br/>";
+		if(data.collisionSettings.triggerIndexToResetCooldown != -1)s += printKeyAndData("Collision Cooldown Set To", ToTime(data.collisionSettings.cooldownToRetain));
+		if(data.collisionSettings.damage > 0) s += printKeyAndData("Collision Damage", data.collisionSettings.damage);
+		if(data.collisionSettings.dematerialTime > 0) s += printKeyAndData("Collision Dematerialze Time",  ToTime(data.collisionSettings.dematerialTime));
 	}
 	else if(tag == "SharkletTrigger"){
 		s += printKeyAndData("Missile Count", data.count);
@@ -655,13 +664,19 @@ function GetBonusEffectString(tag, data)
 		if(data.targetingDelay != 0)	s += printKeyAndDataBonus("Targeting Delay", BonusPrefixToTime(data.targetingDelay));
 		s += AddEffectsText(data);
 	}
+	if(tag == "MineTriggerBonus"){
+		// TODO duration, armingTime
+		if(data.damage != 0)					s += printKeyAndDataBonus("Bomb Damage", BonusPrefix(data.damage));
+		if(data.burstRadius != 0)			s += printKeyAndDataBonus("Burst Radius", BonusPrefix(data.burstRadius));
+		if(data.sensitivityRadius != 0)	s += printKeyAndDataBonus("Sensitivity Radius", BonusPrefix(data.sensitivityRadius));
+	}
 	else if(tag == "HealOverTimeTriggerBonus"){
 		if(data.amount != 0)					s += printKeyAndDataBonus("Repair Amount", BonusPrefix(data.amount));
 		if(data.duration != 0)				s += printKeyAndDataBonus("Duration", BonusPrefixToTime(data.duration));
-	}/*
-	else if(tag == "ShieldRefillTrigger"){
-		s += printKeyAndData("Shield Refill", data.refillPercentage + "%");
-	}*/
+	}
+	else if(tag == "ShieldRefillTriggerBonus"){
+		if(data.refillPercentage != 0)	s += printKeyAndDataBonus("Shield Refill", BonusPrefix(data.refillPercentage) + "%");
+	}
 	else if(tag == "HealTriggerBonus"){
 		if(data.healAmount != 0)			s += printKeyAndDataBonus("Repair Amount", BonusPrefix(data.healAmount) + (data.usePercentInTooltip == 1 ? "%" : ""), data.applyToMana == 1 ? "energy" : "heal");
 	}
@@ -670,7 +685,7 @@ function GetBonusEffectString(tag, data)
 		if(data.duration != 0)				s += printKeyAndDataBonus("Duration", BonusPrefixToTime(data.duration));
 	}
 	else if(tag == "DematerializeTriggerBonus"){
-		if(data.percentChance != 0)		s += printKeyAndDataBonus("Dematerialize Chance", BonusPrefix(data.percentChance));
+		if(data.percentChance != 0)		s += printKeyAndDataBonus("Dematerialize Chance", BonusPrefix(data.percentChance) + "%");
 		if(data.duration != 0)				s += printKeyAndDataBonus("Dematerialize Duration", BonusPrefixToTime(data.duration));
 	}/*
 	else if(tag == "ExtraGunTrigger"){
