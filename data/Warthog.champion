@@ -35,11 +35,12 @@
             "duration": 10000,
             "emitterType": "",
             "glyphCount": 0,
+            "glyphOrientation": 0,
             "glyphRadius": 0,
             "glyphType": "",
             "maxStacks": 0,
             "statType": 0,
-            "tag": ""
+            "tag": "Warthog Passive Damage"
           },
           "tag": "StatBoostTrigger"
         },
@@ -55,11 +56,12 @@
             "duration": 10000,
             "emitterType": "",
             "glyphCount": 0,
+            "glyphOrientation": 0,
             "glyphRadius": 0,
             "glyphType": "",
             "maxStacks": 0,
             "statType": 5,
-            "tag": ""
+            "tag": "Warthog Passive RoF"
           },
           "tag": "StatBoostTrigger"
         },
@@ -239,10 +241,11 @@
           "data": {
             "amount": 200,
             "duration": 5000,
-            "emitterType": "",
-            "glyphCount": 0,
-            "glyphRadius": 0,
-            "glyphType": "",
+            "emitterType": "Warthog War Boar",
+            "glyphCount": 20,
+            "glyphOrientation": 0,
+            "glyphRadius": 70,
+            "glyphType": "Axeraider Rally Glyph",
             "maxStacks": 0,
             "statType": 0,
             "tag": "Warthog 4 StatBoost"
@@ -254,10 +257,10 @@
             "amount": 1000,
             "applyToMana": 0,
             "duration": 5000,
-            "emitterType": "Warthog War Boar",
-            "glyphCount": 20,
-            "glyphRadius": 70,
-            "glyphType": "Axeraider Rally Glyph",
+            "emitterType": "",
+            "glyphCount": 0,
+            "glyphRadius": 0,
+            "glyphType": "",
             "noStack": 0,
             "tag": "Warthog 4 HealOverTime"
           },

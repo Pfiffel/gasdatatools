@@ -11,6 +11,7 @@
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Wrack",
+            "facing": 0,
             "halfArc": 1800,
             "mirror": 0,
             "offset": {
@@ -22,9 +23,10 @@
             "statusEffects": [
               {
                 "data": {
-                  "dps": 50,
+                  "dps": 75,
                   "duration": 3000,
-                  "reducedDurationOnBoss": 0
+                  "reducedDurationOnBoss": 0,
+                  "stack": 0
                 },
                 "tag": "DoTEffect"
               }

@@ -19,7 +19,7 @@
             "powers": [
               {
                 "data": {
-                  "amount": 150,
+                  "amount": 250,
                   "showCaption": 1
                 },
                 "tag": "ShieldRechargePower"

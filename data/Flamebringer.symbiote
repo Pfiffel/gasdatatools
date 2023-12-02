@@ -6,7 +6,7 @@
         "params": {
           "data": {
             "autoAim": 0,
-            "damage": 25,
+            "damage": 50,
             "delay": 200,
             "drawReticle": 1,
             "drawTooltip": 1,
@@ -19,12 +19,12 @@
               "y": 0
             },
             "range": 60,
-            "reticleColor": 14292267,
+            "reticleColor": 9834012,
             "statusEffects": [
               {
                 "data": {
-                  "dps": 50,
-                  "duration": 4000,
+                  "dps": 60,
+                  "duration": 5000,
                   "reducedDurationOnBoss": 0
                 },
                 "tag": "BurningEffect"
@@ -45,7 +45,7 @@
         "params": {
           "data": {
             "autoAim": 0,
-            "damage": 25,
+            "damage": 50,
             "delay": 350,
             "drawReticle": 1,
             "drawTooltip": 0,
@@ -58,12 +58,12 @@
               "y": 110
             },
             "range": 60,
-            "reticleColor": 14292267,
+            "reticleColor": 9834012,
             "statusEffects": [
               {
                 "data": {
-                  "dps": 50,
-                  "duration": 4000,
+                  "dps": 60,
+                  "duration": 5000,
                   "reducedDurationOnBoss": 0
                 },
                 "tag": "BurningEffect"
@@ -84,7 +84,7 @@
         "params": {
           "data": {
             "autoAim": 0,
-            "damage": 25,
+            "damage": 50,
             "delay": 500,
             "drawReticle": 1,
             "drawTooltip": 0,
@@ -97,12 +97,12 @@
               "y": 0
             },
             "range": 60,
-            "reticleColor": 14292267,
+            "reticleColor": 9834012,
             "statusEffects": [
               {
                 "data": {
-                  "dps": 50,
-                  "duration": 4000,
+                  "dps": 60,
+                  "duration": 5000,
                   "reducedDurationOnBoss": 0
                 },
                 "tag": "BurningEffect"
@@ -123,7 +123,7 @@
         "params": {
           "data": {
             "autoAim": 0,
-            "damage": 25,
+            "damage": 50,
             "delay": 650,
             "drawReticle": 1,
             "drawTooltip": 0,
@@ -136,12 +136,12 @@
               "y": 105
             },
             "range": 60,
-            "reticleColor": 14292267,
+            "reticleColor": 9834012,
             "statusEffects": [
               {
                 "data": {
-                  "dps": 50,
-                  "duration": 4000,
+                  "dps": 60,
+                  "duration": 5000,
                   "reducedDurationOnBoss": 0
                 },
                 "tag": "BurningEffect"

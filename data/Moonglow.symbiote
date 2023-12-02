@@ -11,7 +11,8 @@
             "glyphDuration": 500,
             "glyphRadius": 50,
             "glyphType": "Heal Indicator Small",
-            "healAmount": 30
+            "healAmount": 40,
+            "tag": ""
           },
           "tag": "HealTrigger"
         },

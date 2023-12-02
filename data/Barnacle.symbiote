@@ -21,6 +21,14 @@
       "data": {
         "activeWhile": 12,
         "amount": 50,
+        "statType": 9
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 12,
+        "amount": 50,
         "statType": 0
       },
       "tag": "ItemStat"

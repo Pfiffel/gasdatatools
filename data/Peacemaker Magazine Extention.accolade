@@ -1,0 +1,23 @@
+{
+  "champion": "Peacemaker",
+  "displayName": "Magazine Extention",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "amount": 0,
+            "duration": 2000
+          },
+          "tag": "StatBoostTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Peacemaker 4 StatBoost",
+        "tooltip": "On Hand Cannon:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Peacemaker Magazine Extention"
+}
+

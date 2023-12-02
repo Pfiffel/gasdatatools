@@ -1,0 +1,31 @@
+{
+  "champion": "Hercules",
+  "displayName": "Amplified Shellburst",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "damage": 300,
+            "delay": 0,
+            "halfArc": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 0,
+            "statusEffects": [],
+            "targetingDelay": 0
+          },
+          "tag": "ShotgunTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Hercules 4 Shotgun",
+        "tooltip": "On Battle Aegis Shellburst:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Hercules Amplified Shellburst"
+}
+

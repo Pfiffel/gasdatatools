@@ -1,0 +1,28 @@
+{
+  "champion": "Hercules",
+  "displayName": "Impact Multiplier",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 1,
+            "duration": 10000,
+            "emitterType": "",
+            "glyphCount": 0,
+            "glyphRadius": 0,
+            "glyphType": "",
+            "maxStacks": 25,
+            "statType": 5,
+            "tag": "Hercules Impact Multiplier"
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 13
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Hercules Impact Multiplier"
+}
+

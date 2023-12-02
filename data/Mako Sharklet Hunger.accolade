@@ -19,6 +19,24 @@
         "tooltip": "On Sharklets:"
       },
       "tag": "TaggedTriggerBonus"
+    },
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "count": 0,
+            "damage": 6,
+            "range": 0,
+            "speed": 0,
+            "timeGap": 0
+          },
+          "tag": "SharkletTriggerBonus"
+        },
+        "showTooltipStats": 0,
+        "tag": "Mako Laser Sharklet",
+        "tooltip": ""
+      },
+      "tag": "TaggedTriggerBonus"
     }
   ],
   "name": "Mako Sharklet Hunger"

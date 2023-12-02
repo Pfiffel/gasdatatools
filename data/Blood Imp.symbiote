@@ -6,18 +6,19 @@
         "params": {
           "data": {
             "autoAim": 0,
-            "damage": 60,
+            "damage": 75,
             "delay": 0,
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Blood Imp",
+            "facing": 0,
             "halfArc": 1800,
             "mirror": 0,
             "offset": {
               "x": 0,
               "y": 0
             },
-            "range": 310,
+            "range": 350,
             "reticleColor": 11534336,
             "statusEffects": [],
             "tag": "",
@@ -35,18 +36,19 @@
         "params": {
           "data": {
             "autoAim": 0,
-            "damage": 60,
+            "damage": 75,
             "delay": 1000,
             "drawReticle": 0,
             "drawTooltip": 0,
             "explosionType": "Blood Imp",
+            "facing": 0,
             "halfArc": 1800,
             "mirror": 0,
             "offset": {
               "x": 0,
               "y": 0
             },
-            "range": 310,
+            "range": 350,
             "reticleColor": 12534291,
             "statusEffects": [],
             "tag": "",
@@ -64,18 +66,19 @@
         "params": {
           "data": {
             "autoAim": 0,
-            "damage": 60,
+            "damage": 75,
             "delay": 2000,
             "drawReticle": 0,
             "drawTooltip": 0,
             "explosionType": "Blood Imp",
+            "facing": 0,
             "halfArc": 1800,
             "mirror": 0,
             "offset": {
               "x": 0,
               "y": 0
             },
-            "range": 310,
+            "range": 350,
             "reticleColor": 12534291,
             "statusEffects": [],
             "tag": "",
@@ -93,18 +96,19 @@
         "params": {
           "data": {
             "autoAim": 0,
-            "damage": 60,
+            "damage": 75,
             "delay": 3000,
             "drawReticle": 0,
             "drawTooltip": 0,
             "explosionType": "Blood Imp",
+            "facing": 0,
             "halfArc": 1800,
             "mirror": 0,
             "offset": {
               "x": 0,
               "y": 0
             },
-            "range": 310,
+            "range": 350,
             "reticleColor": 12534291,
             "statusEffects": [],
             "tag": "",
@@ -122,18 +126,19 @@
         "params": {
           "data": {
             "autoAim": 0,
-            "damage": 60,
+            "damage": 75,
             "delay": 4000,
             "drawReticle": 0,
             "drawTooltip": 0,
             "explosionType": "Blood Imp",
+            "facing": 0,
             "halfArc": 1800,
             "mirror": 0,
             "offset": {
               "x": 0,
               "y": 0
             },
-            "range": 310,
+            "range": 350,
             "reticleColor": 12534291,
             "statusEffects": [],
             "tag": "",
@@ -151,18 +156,19 @@
         "params": {
           "data": {
             "autoAim": 0,
-            "damage": 60,
+            "damage": 75,
             "delay": 5000,
             "drawReticle": 0,
             "drawTooltip": 0,
             "explosionType": "Blood Imp",
+            "facing": 0,
             "halfArc": 1800,
             "mirror": 0,
             "offset": {
               "x": 0,
               "y": 0
             },
-            "range": 310,
+            "range": 350,
             "reticleColor": 12534291,
             "statusEffects": [],
             "tag": "",
@@ -180,18 +186,19 @@
         "params": {
           "data": {
             "autoAim": 0,
-            "damage": 60,
+            "damage": 75,
             "delay": 6000,
             "drawReticle": 0,
             "drawTooltip": 0,
             "explosionType": "Blood Imp",
+            "facing": 0,
             "halfArc": 1800,
             "mirror": 0,
             "offset": {
               "x": 0,
               "y": 0
             },
-            "range": 310,
+            "range": 350,
             "reticleColor": 12534291,
             "statusEffects": [],
             "tag": "",
@@ -209,23 +216,24 @@
         "params": {
           "data": {
             "autoAim": 0,
-            "damage": 60,
+            "damage": 75,
             "delay": 7000,
             "drawReticle": 0,
             "drawTooltip": 0,
             "explosionType": "Blood Imp",
+            "facing": 0,
             "halfArc": 1800,
             "mirror": 0,
             "offset": {
               "x": 0,
               "y": 0
             },
-            "range": 310,
+            "range": 350,
             "reticleColor": 12534291,
             "statusEffects": [],
             "tag": "",
             "targetingDelay": 0,
-            "tooltip": "Circle of Pestilence"
+            "tooltip": "8x Circle of Pestilence"
           },
           "tag": "ShotgunTrigger"
         },

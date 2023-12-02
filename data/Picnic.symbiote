@@ -19,9 +19,9 @@
             "powers": [
               {
                 "data": {
-                  "amount": 30,
+                  "amount": 50,
                   "caption": "Gun Damage +30%",
-                  "duration": 5000,
+                  "duration": 10000,
                   "emitterType": "",
                   "statType": 0
                 },
@@ -56,7 +56,7 @@
             "powers": [
               {
                 "data": {
-                  "energyDamage": -40
+                  "energyDamage": -50
                 },
                 "tag": "EnergyDamagePower"
               }
@@ -82,7 +82,7 @@
             "duration": 15000,
             "emitterType": "Heal Mine",
             "expiryExplosion": "Heal Mine Expiry",
-            "healing": 150,
+            "healing": 200,
             "mineCount": 2,
             "objectType": "Heal Mine",
             "pickupExplosion": "Heal Mine Pickup",

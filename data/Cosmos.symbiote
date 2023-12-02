@@ -4,7 +4,7 @@
     {
       "data": {
         "activeWhile": 0,
-        "cooldown": 7000,
+        "cooldown": 5000,
         "params": [
           {
             "data": {
@@ -22,7 +22,7 @@
               "powers": [
                 {
                   "data": {
-                    "energyDamage": -30
+                    "energyDamage": -40
                   },
                   "tag": "EnergyDamagePower"
                 }

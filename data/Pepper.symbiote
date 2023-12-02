@@ -8,7 +8,7 @@
         "statusEffects": [
           {
             "data": {
-              "damage": 65
+              "damage": 150
             },
             "tag": "DamageEffect"
           },

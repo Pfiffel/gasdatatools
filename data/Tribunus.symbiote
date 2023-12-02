@@ -5,11 +5,13 @@
       "data": {
         "params": {
           "data": {
-            "damage": 100,
+            "autoAim": 0,
+            "damage": 150,
             "delay": 0,
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Tribunus Blast",
+            "facing": 0,
             "halfArc": 1800,
             "mirror": 0,
             "offset": {

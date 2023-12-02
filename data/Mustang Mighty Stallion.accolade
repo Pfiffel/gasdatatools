@@ -1,0 +1,26 @@
+{
+  "champion": "Mustang",
+  "displayName": "Mighty Stallion",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "armingTime": 0,
+            "burstRadius": 0,
+            "damage": 25,
+            "duration": 0,
+            "sensitivityRadius": 0
+          },
+          "tag": "MineTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Mustang Passive Mine",
+        "tooltip": "On Wild Stallion Bombs:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Mustang Mighty Stallion"
+}
+

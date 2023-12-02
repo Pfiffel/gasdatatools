@@ -5,13 +5,15 @@
       "data": {
         "params": {
           "data": {
-            "amount": 60,
+            "amount": 75,
             "applyToMana": 0,
             "duration": 4000,
             "emitterType": "Rainsplatter HoT",
             "glyphCount": 4,
             "glyphRadius": 65,
-            "glyphType": ""
+            "glyphType": "",
+            "noStack": 0,
+            "tag": ""
           },
           "tag": "HealOverTimeTrigger"
         },

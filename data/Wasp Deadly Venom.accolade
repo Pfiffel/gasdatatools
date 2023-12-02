@@ -1,0 +1,29 @@
+{
+  "champion": "Wasp",
+  "displayName": "Deadly Venom",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "gunTag": "",
+        "maxProcsPerSecond": 0,
+        "percentChance": 100,
+        "statusEffects": [
+          {
+            "data": {
+              "dps": 1,
+              "duration": 5000,
+              "reducedDurationOnBoss": 0,
+              "stack": 1
+            },
+            "tag": "DoTEffect"
+          }
+        ],
+        "tooltipGunDescription": "gun"
+      },
+      "tag": "GunProcs"
+    }
+  ],
+  "name": "Wasp Deadly Venom"
+}
+

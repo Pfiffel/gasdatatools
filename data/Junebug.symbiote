@@ -19,11 +19,21 @@
             "powers": [
               {
                 "data": {
-                  "amount": 25,
-                  "caption": "Hull Strength +25%",
+                  "amount": 35,
+                  "caption": "Hull Strength +35% Repair Rate +35%",
                   "duration": 10000,
                   "emitterType": "",
                   "statType": 3
+                },
+                "tag": "StatPower"
+              },
+              {
+                "data": {
+                  "amount": 35,
+                  "caption": "",
+                  "duration": 10000,
+                  "emitterType": "",
+                  "statType": 1
                 },
                 "tag": "StatPower"
               }

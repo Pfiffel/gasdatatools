@@ -1,4 +1,4 @@
-const BUILD = 48;
+const BUILD = 49;
 const pages = {"enemies":true, "players":true, "symbiotes":true, "items":true, "maps":true, "diff":true};
 const here = getCurrentPage();
 const nav = document.getElementById("nav");

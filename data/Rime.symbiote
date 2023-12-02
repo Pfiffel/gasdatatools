@@ -3,7 +3,9 @@
   "effects": [
     {
       "data": {
+        "activeWhile": 0,
         "gunTag": "",
+        "maxProcsPerSecond": 0,
         "percentChance": 25,
         "statusEffects": [
           {
@@ -14,7 +16,7 @@
           },
           {
             "data": {
-              "dps": 25,
+              "dps": 20,
               "duration": 3000,
               "reducedDurationOnBoss": 0,
               "stack": 1

@@ -5,11 +5,13 @@
       "data": {
         "params": {
           "data": {
-            "damage": 150,
+            "autoAim": 0,
+            "damage": 200,
             "delay": 0,
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Darkfall Blast",
+            "facing": 0,
             "halfArc": 50,
             "mirror": 0,
             "offset": {

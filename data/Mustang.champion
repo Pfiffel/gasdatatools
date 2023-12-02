@@ -59,7 +59,7 @@
               "scatterRadius": 75,
               "sensitivityRadius": 125,
               "statusEffects": [],
-              "tag": ""
+              "tag": "Mustang Passive Mine"
             },
             "tag": "MineTrigger"
           }
@@ -195,13 +195,15 @@
           "data": {
             "angleOffset": 900,
             "armingTime": 750,
+            "creationSound": "",
+            "creationVolume": 50,
             "duration": 15000,
             "emitterType": "Heal Mine",
-            "pickupExplosion": "Heal Mine Pickup",
             "expiryExplosion": "Heal Mine Expiry",
             "healing": 85,
             "mineCount": 2,
             "objectType": "Heal Mine",
+            "pickupExplosion": "Heal Mine Pickup",
             "powers": [],
             "radius": 45,
             "ringRadius": 110,

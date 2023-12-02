@@ -1,0 +1,28 @@
+{
+  "champion": "Yeti",
+  "displayName": "Eviscerating Ambush",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 60,
+            "duration": 1000,
+            "emitterType": "",
+            "glyphCount": 2,
+            "glyphRadius": 60,
+            "glyphType": "Gun RoF Glyph",
+            "maxStacks": 0,
+            "statType": 5,
+            "tag": "Yeti Eviscerating Ambush StatBoost"
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Yeti Eviscerating Ambush"
+}
+

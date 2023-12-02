@@ -1,12 +1,12 @@
 {
-  "description": "Hibernia keeps watch over her frozen demesne.",
+  "description": "Hiberna keeps watch over her frozen demesne.",
   "effects": [
     {
       "data": {
         "params": {
           "data": {
             "autoAim": 0,
-            "damage": 75,
+            "damage": 100,
             "delay": 0,
             "drawReticle": 1,
             "drawTooltip": 1,

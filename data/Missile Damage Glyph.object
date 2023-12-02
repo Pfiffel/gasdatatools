@@ -1,0 +1,47 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Missile Damage Glyph",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 3433167,
+      "height": 0,
+      "mirror": 1,
+      "name": "Glyph",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 28,
+          "y": 0
+        },
+        {
+          "x": 13,
+          "y": 9
+        },
+        {
+          "x": 9,
+          "y": 5
+        },
+        {
+          "x": -7,
+          "y": 5
+        },
+        {
+          "x": -14,
+          "y": 10
+        },
+        {
+          "x": -21,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

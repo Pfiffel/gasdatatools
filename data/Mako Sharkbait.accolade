@@ -1,0 +1,28 @@
+{
+  "champion": "Mako",
+  "displayName": "Sharkbait",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 100,
+            "duration": 5000,
+            "emitterType": "",
+            "glyphCount": 5,
+            "glyphRadius": 80,
+            "glyphType": "Missile Damage Glyph",
+            "maxStacks": 0,
+            "statType": 23,
+            "tag": "Mako Sharkbait StatBoost"
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Mako Sharkbait"
+}
+

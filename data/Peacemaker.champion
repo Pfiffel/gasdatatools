@@ -29,17 +29,7 @@
   "passives": [
     {
       "data": {
-        "chargeTime": 3000,
-        "gunTag": "Peacemaker Main Gun",
-        "statusEffects": [
-          {
-            "data": {
-              "damage": 150
-            },
-            "tag": "DamageEffect"
-          }
-        ],
-        "tooltipGunDescription": "main gun"
+        "cooldown": 1000
       },
       "tag": "GunCharger"
     }

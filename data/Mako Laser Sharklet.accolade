@@ -1,0 +1,33 @@
+{
+  "champion": "Mako",
+  "displayName": "Laser Sharklet",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "count": 1,
+            "damage": 30,
+            "emitterType": "Mako Sharklets",
+            "objectType": "Sharklet",
+            "range": 290,
+            "reticleColor": 11184810,
+            "sound": "Player_Mako_Sharklet_Launch",
+            "soundPack": "",
+            "speed": 250,
+            "statusEffects": [],
+            "tag": "Mako Laser Sharklet",
+            "timeGap": 200,
+            "tweenType": "QUARTIN",
+            "volume": 125
+          },
+          "tag": "SharkletTrigger"
+        },
+        "when": 1
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Mako Laser Sharklet"
+}
+

@@ -1,0 +1,33 @@
+{
+  "champion": "Warthog",
+  "displayName": "Bristlehide Quills",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "count": 3,
+            "damage": 80,
+            "emitterType": "Warthog Missile",
+            "objectType": "Warthog Missile",
+            "range": 240,
+            "reticleColor": 11184810,
+            "sound": "",
+            "soundPack": "",
+            "speed": 400,
+            "statusEffects": [],
+            "tag": "Warthog Bristlehide Quills",
+            "timeGap": 300,
+            "tweenType": "QUARTIN",
+            "volume": 50
+          },
+          "tag": "SharkletTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Warthog Bristlehide Quills"
+}
+

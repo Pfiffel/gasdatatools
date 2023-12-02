@@ -1,0 +1,28 @@
+{
+  "champion": "Cyclops",
+  "displayName": "Refocus",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 50,
+            "duration": 5000,
+            "emitterType": "",
+            "glyphCount": 2,
+            "glyphRadius": 50,
+            "glyphType": "Blast Damage Glyph",
+            "maxStacks": 0,
+            "statType": 21,
+            "tag": ""
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Cyclops Refocus"
+}
+

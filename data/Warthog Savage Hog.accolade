@@ -1,0 +1,38 @@
+{
+  "champion": "Warthog",
+  "displayName": "Savage Hog",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "amount": 2,
+            "duration": 0
+          },
+          "tag": "StatBoostTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Warthog Passive Damage",
+        "tooltip": "On Feral Hog:"
+      },
+      "tag": "TaggedTriggerBonus"
+    },
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "amount": 2,
+            "duration": 0
+          },
+          "tag": "StatBoostTriggerBonus"
+        },
+        "showTooltipStats": 0,
+        "tag": "Warthog Passive RoF",
+        "tooltip": ""
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Warthog Savage Hog"
+}
+

@@ -1,0 +1,59 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Blast Damage Glyph",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 15958272,
+      "height": 15,
+      "mirror": 1,
+      "name": "Glyph",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 34,
+          "y": 0
+        },
+        {
+          "x": 8,
+          "y": 4
+        },
+        {
+          "x": 25,
+          "y": 25
+        },
+        {
+          "x": 4,
+          "y": 8
+        },
+        {
+          "x": 0,
+          "y": 34
+        },
+        {
+          "x": -4,
+          "y": 8
+        },
+        {
+          "x": -24,
+          "y": 24
+        },
+        {
+          "x": -8,
+          "y": 4
+        },
+        {
+          "x": -35,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

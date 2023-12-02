@@ -1,0 +1,26 @@
+{
+  "champion": "Mako",
+  "displayName": "Gorge",
+  "effects": [
+    {
+      "data": {
+        "gunTag": "Mako Short Gun",
+        "maxProcsPerSecond": 0,
+        "percentChance": 100,
+        "statusEffects": [
+          {
+            "data": {
+              "appliesToMana": 1,
+              "healing": 1
+            },
+            "tag": "VampEffect"
+          }
+        ],
+        "tooltipGunDescription": "short range gun"
+      },
+      "tag": "GunProcs"
+    }
+  ],
+  "name": "Mako Gorge"
+}
+

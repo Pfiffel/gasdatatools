@@ -1,0 +1,29 @@
+{
+  "champion": "Mustang",
+  "displayName": "Pyroclasmic Overdrive",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 50,
+            "duration": 5000,
+            "emitterType": "",
+            "glyphCount": 2,
+            "glyphOrientation": 1,
+            "glyphRadius": 40,
+            "glyphType": "Gun Burn Damage Glyph",
+            "maxStacks": 0,
+            "statType": 15,
+            "tag": "Mustang Pyroclasmic Overdrive StatBoost"
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Mustang Pyroclasmic Overdrive"
+}
+

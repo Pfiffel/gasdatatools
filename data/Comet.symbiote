@@ -6,12 +6,13 @@
         "params": {
           "data": {
             "count": 1,
-            "damage": 250,
+            "damage": 300,
             "emitterType": "Comet Trail",
             "objectType": "Comet",
             "range": 300,
             "reticleColor": 4681105,
             "sound": "Symbiote_Effect_Comet_Launch",
+            "soundPack": "",
             "speed": 400,
             "statusEffects": [
               {

@@ -1,0 +1,28 @@
+{
+  "champion": "Warthog",
+  "displayName": "Ironhide Charge",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "duration": 2000,
+            "stats": {
+              "color": 11300931,
+              "left": -1800,
+              "level": 0,
+              "maxStrength": 300,
+              "right": 1800
+            },
+            "tag": ""
+          },
+          "tag": "ExtraShieldTrigger"
+        },
+        "when": 7
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Warthog Ironhide Charge"
+}
+

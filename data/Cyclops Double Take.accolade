@@ -1,0 +1,84 @@
+{
+  "champion": "Cyclops",
+  "displayName": "Double Take",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 150,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Cyclops Laser Beam",
+            "facing": 0,
+            "halfArc": 2,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 400,
+            "reticleColor": 11184810,
+            "statusEffects": [],
+            "tag": "Cyclops Double Take Shotgun",
+            "targetingDelay": 250,
+            "tooltip": "Additional Ray"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "delay": 150,
+            "duration": 100,
+            "emitterType": "Wasp Main Thruster",
+            "facing": 0,
+            "mirror": 0,
+            "objectType": "Cyclops Laser",
+            "sound": "",
+            "tag": "Cyclops Double Take Slug",
+            "target": {
+              "x": 400,
+              "y": 0
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "delay": 150,
+            "distance": 400,
+            "line": {
+              "arcOffset": 0,
+              "halfArc": 1800,
+              "maxDist": 15,
+              "minDist": 5,
+              "particleType": "Cyclops Laser",
+              "spacing": 15
+            },
+            "tag": "Cyclops Double Take ParticleLine"
+          },
+          "tag": "ParticleLineTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Cyclops Double Take"
+}
+

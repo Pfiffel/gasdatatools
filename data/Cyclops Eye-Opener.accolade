@@ -1,0 +1,38 @@
+{
+  "champion": "Cyclops",
+  "displayName": "Eye-Opener",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 250,
+            "delay": 0,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Cyclops Cone Blast",
+            "facing": 0,
+            "halfArc": 75,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 400,
+            "reticleColor": 11184810,
+            "statusEffects": [],
+            "tag": "Cyclops Eye-Opener Shotgun",
+            "targetingDelay": 0,
+            "tooltip": "Optical Blast"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Cyclops Eye-Opener"
+}
+

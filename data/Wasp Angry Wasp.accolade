@@ -1,0 +1,28 @@
+{
+  "champion": "Wasp",
+  "displayName": "Angry Wasp",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 40,
+            "duration": 2000,
+            "emitterType": "",
+            "glyphCount": 4,
+            "glyphRadius": 65,
+            "glyphType": "Wasp RoF Glyph",
+            "maxStacks": 0,
+            "statType": 5,
+            "tag": "Wasp Angry Wasp StatBoost"
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Wasp Angry Wasp"
+}
+

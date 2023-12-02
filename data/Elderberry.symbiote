@@ -12,7 +12,7 @@
             "duration": 15000,
             "emitterType": "Heal Mine",
             "expiryExplosion": "Heal Mine Expiry",
-            "healing": 175,
+            "healing": 200,
             "mineCount": 8,
             "objectType": "Heal Mine",
             "pickupExplosion": "Heal Mine Pickup",

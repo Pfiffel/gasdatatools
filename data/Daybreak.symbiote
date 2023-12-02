@@ -38,7 +38,7 @@
             "statusEffects": [
               {
                 "data": {
-                  "duration": 1500
+                  "duration": 1000
                 },
                 "tag": "DisarmEffect"
               }

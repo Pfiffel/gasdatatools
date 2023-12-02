@@ -1,0 +1,29 @@
+{
+  "champion": "Hercules",
+  "displayName": "Ballistic Haymaker",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 30,
+            "duration": 2000,
+            "emitterType": "",
+            "glyphCount": 2,
+            "glyphOrientation": 1,
+            "glyphRadius": 50,
+            "glyphType": "Damage Glyph Small",
+            "maxStacks": 0,
+            "statType": 0,
+            "tag": "Hercules Ballistic Haymaker StatBoost"
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 7
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Hercules Ballistic Haymaker"
+}
+

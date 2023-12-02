@@ -1,0 +1,20 @@
+{
+  "champion": "Peacemaker",
+  "displayName": "Autoloader",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "triggerIndex": 1
+          },
+          "tag": "CooldownResetTrigger"
+        },
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Peacemaker Autoloader"
+}
+

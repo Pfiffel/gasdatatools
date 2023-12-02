@@ -1,0 +1,28 @@
+{
+  "champion": "Wasp",
+  "displayName": "Microsting",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": -20,
+            "duration": 5000,
+            "emitterType": "",
+            "glyphCount": 0,
+            "glyphRadius": 0,
+            "glyphType": "",
+            "maxStacks": 0,
+            "statType": 10,
+            "tag": "Wasp Microstring StatBoost"
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Wasp Microsting"
+}
+

@@ -6,7 +6,7 @@
         "params": {
           "data": {
             "autoAim": 0,
-            "damage": 100,
+            "damage": 150,
             "delay": 0,
             "drawReticle": 1,
             "drawTooltip": 1,

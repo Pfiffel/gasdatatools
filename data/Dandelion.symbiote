@@ -4,18 +4,18 @@
     {
       "data": {
         "activeWhile": 0,
-        "cooldown": 8000,
+        "cooldown": 6000,
         "params": [
           {
             "data": {
               "angleOffset": 0,
               "armingTime": 750,
               "creationSound": "Symbiote_Effect_Dandelion_PickupCreate",
-              "creationVolume": 80,
+              "creationVolume": 40,
               "duration": 15000,
               "emitterType": "Heal Mine",
               "expiryExplosion": "Heal Mine Expiry",
-              "healing": 250,
+              "healing": 350,
               "mineCount": 1,
               "objectType": "Heal Mine",
               "pickupExplosion": "Heal Mine Pickup",

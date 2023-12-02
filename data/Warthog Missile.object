@@ -1,0 +1,113 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Turret Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 35,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [
+    {
+      "name": "Turret",
+      "p": {
+        "x": -11,
+        "y": 0
+      }
+    }
+  ],
+  "floppiness": 0,
+  "name": "Warthog Missile",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 7618581,
+      "height": 50,
+      "mirror": 1,
+      "name": "Quill",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 80,
+          "y": 0
+        },
+        {
+          "x": -1,
+          "y": 40
+        },
+        {
+          "x": -1,
+          "y": 27
+        },
+        {
+          "x": 5,
+          "y": 18
+        },
+        {
+          "x": -48,
+          "y": 32
+        },
+        {
+          "x": -63,
+          "y": 9
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16771535,
+      "height": 51,
+      "mirror": 1,
+      "name": "Quill",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 66,
+          "y": 0
+        },
+        {
+          "x": 43,
+          "y": 9
+        },
+        {
+          "x": 10,
+          "y": 28
+        },
+        {
+          "x": 24,
+          "y": 8
+        },
+        {
+          "x": -2,
+          "y": 10
+        },
+        {
+          "x": -41,
+          "y": 24
+        },
+        {
+          "x": -28,
+          "y": 10
+        },
+        {
+          "x": -57,
+          "y": 7
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+
