@@ -7,6 +7,7 @@ var filters = document.getElementById("filters");
 var sortedMonsters;
 var soundList = {};
 soundList["symbiote"] = {};
+soundList["item"] = {};
 soundList["champion"] = {};
 soundList["monster"] = {};
 soundList["gunbullet"] = {};
@@ -91,7 +92,13 @@ function MakeList()
 	{
 		var symbiote = gasData["symbiote"][i];
 		soundList["symbiote"][symbiote.name] = {};
-		CheckSymbiote(symbiote);
+		CheckGeneric("symbiote", symbiote);
+	}
+	for (let i = 0; i < gasData["item"].length; i++)
+	{
+		var item = gasData["item"][i];
+		soundList["item"][item.name] = {};
+		CheckGeneric("item", item);
 	}
 	for (let i = 0; i < gasData["decor"].length; i++)
 	{
@@ -150,7 +157,7 @@ function MakeList()
 	makeHeaderCell("Sound Type", th);
 	makeHeaderCell("Using", th);
 	for (let entityType in soundList){
-		if(entityType != "symbiote") continue;
+		if(entityType != "item") continue;
 		var soundRoots = soundList[entityType];
 		for (let soundRoot in soundRoots){
 			if(soundRoot.includes("Dagger")) continue;
@@ -175,34 +182,34 @@ function MakeList()
 	tableOutput.appendChild(tbl);
 	return divList;
 }
-function CheckSymbiote(symbiote)
+function CheckGeneric(type, object)
 {
-	for (var effect in symbiote.effects){
-		let data = symbiote.effects[effect].data;
-		let mainTag = symbiote.effects[effect].tag;
+	for (var effect in object.effects){
+		let data = object.effects[effect].data;
+		let mainTag = object.effects[effect].tag;
 		// TODO check if heal mines/pickup packs could use custom sounds
 		//  mainTag == "TriggeredHealMineBurst"
 		if(mainTag == "TriggeredTriggerEffect")
 		{
-			CheckTriggeredEffect("symbiote", symbiote.name, data.params.tag, data.params.data);
+			CheckTriggeredEffect(type, object.name, data.params.tag, data.params.data);
 		}
 		else if(mainTag == "PlayerGunStats")
 		{
 			var sp = getSoundPack(data.soundPack);
-			soundList["symbiote"][symbiote.name]["Gun"] = sp.name + " (" + sp.sounds.length + " files)";
+			soundList[type][object.name]["Gun"] = sp.name + " (" + sp.sounds.length + " files)";
 		}
 		else if(mainTag == "PeriodicTriggerEffect")
 		{
 			for (var p in data.params){
-				CheckTriggeredEffect("symbiote", symbiote.name, data.params[p].tag, data.params[p].data);
+				CheckTriggeredEffect(type, object.name, data.params[p].tag, data.params[p].data);
 			}
 		}
 		else if(mainTag == "RandomTargetEffect" || mainTag == "TriggeredRandomTargetEffect")
 		{
 			for (var effects in data.statusEffects){
 				var effect = data.statusEffects[effects];
-				soundList["symbiote"][symbiote.name]["Zap Sound"] = "";
-				CheckStatusEffect("symbiote", symbiote.name, effect);
+				soundList[type][object.name]["Zap Sound"] = "";
+				CheckStatusEffect(type, object.name, effect);
 			}
 		}
 	}
@@ -221,9 +228,16 @@ function CheckTriggeredEffect(origin, name, tag, data)
 		//soundList[origin][name]["Shotgun Trigger"] = wD.triggerSound;
 		soundList[origin][name][GetBlastOrBombString(data) + " Explosion"] = getExplosionSound(data.explosionType);
 	}
+	else if(tag == "SlugTrigger"){
+		soundList[origin][name]["Bomb Launch"] = data.sound;
+	}
 	else if(tag == "CooldownResetTrigger"){
 	}
+	else if(tag == "HealTrigger"){
+		soundList[origin][name][data.applyToMana == 1 ? "Recharge Instant" : "Repair Instant"] = "";
+	}
 	else if(tag == "HealOverTimeTrigger"){
+		soundList[origin][name][data.applyToMana == 1 ? "Recharge Over Time" : "Repair Over Time"] = "";
 	}
 	else if(tag == "ProjectilePurgeTrigger"){
 		soundList[origin][name]["ProjectilePurge"] = getExplosionSound(data.explosionType);
@@ -238,8 +252,6 @@ function CheckTriggeredEffect(origin, name, tag, data)
 		soundList[origin][name]["AreaHeal"] = getExplosionSound(data.explosionType);
 	}
 	else if(tag == "ShieldRefillTrigger"){
-	}
-	else if(tag == "HealTrigger"){
 	}
 	else if(tag == "StatBoostTrigger"){
 	}
