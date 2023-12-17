@@ -43,11 +43,11 @@ function MakeList()
 	tableOutput.appendChild(MakeTextDiv("<h2>Item Limits Per Run</h2>"));
 	tableOutput.appendChild(MakeItemLimitTable());
 	tableOutput.appendChild(MakeTextDiv("<h2>Tiered</h2>"));
-	tableOutput.appendChild(MakeSpecificTable(1,1,0,0,-1,0));
+	tableOutput.appendChild(MakeSpecificTable(1,-1,0,0,-1,0,1));
 	tableOutput.appendChild(MakeTextDiv("<h2>Rare</h2>"));
 	tableOutput.appendChild(MakeSpecificTable(1,-1,0,1,-1,1));
-	tableOutput.appendChild(MakeTextDiv("<h2>2-Statted</h2>"));
-	tableOutput.appendChild(MakeSpecificTable(1,2,0,0,-1,1));
+	tableOutput.appendChild(MakeTextDiv("<h2>2-Statted Boss Loot</h2>"));
+	tableOutput.appendChild(MakeSpecificTable(7,2,0,0,-1,1));
 	tableOutput.appendChild(MakeTextDiv("<h2>Precursor Tech</h2>"));
 	tableOutput.appendChild(MakeSpecificTable(1,-1,1,0,-1,1));
 	tableOutput.appendChild(MakeTextDiv("<h2>Addons</h2>"));
@@ -236,18 +236,18 @@ function MakeItemLimitTable()
 	}
 	return tbl;
 }
-function GetItemAmount(tier, statAmount, precursor, rare, boon)
+function GetItemAmount(tier, statAmount, precursor, rare, boon, overworld)
 {
 	var amount = 0;
 	for (var i = 0; i < gasData["item"].length; i++)
 	{
 		var item = gasData["item"][i];
-		if(ItemIsNot(item, tier, statAmount, precursor, rare, boon)) continue;
+		if(ItemIsNot(item, tier, statAmount, precursor, rare, boon, overworld)) continue;
 		amount++;
 	}
 	return amount;
 }
-function ItemIsNot(item, tier, statAmount, precursor, rare, boon)
+function ItemIsNot(item, tier, statAmount, precursor, rare, boon, overworld)
 {
 	if(item.rare == undefined) item.rare = 0;
 	if(rare != -1 && item.rare != rare) return true;
@@ -257,31 +257,32 @@ function ItemIsNot(item, tier, statAmount, precursor, rare, boon)
 	if(item.precursorTech == undefined) item.precursorTech = 0;
 	if(precursor != -1 && item.precursorTech != precursor) return true;
 	if(statAmount != -1 && item.effects.length != statAmount) return true;
+	if(overworld != -1 && item.overworldDrop != overworld) return true;
 	return false;
 }
-function MakeSpecificTable(startTier, statAmount, precursor, rare, boon, inline)
+function MakeSpecificTable(startTier, statAmount, precursor, rare, boon, inline, overworld = -1)
 {
 	var tbl = document.createElement('table');
 	let th = tbl.insertRow();
 	let tr = tbl.insertRow();
 	for (let t = startTier; t < TIERS+1; t++)
 	{
-		var amount = GetItemAmount(t, statAmount, precursor, rare, boon);
+		var amount = GetItemAmount(t, statAmount, precursor, rare, boon, overworld);
 		if(amount == 0) continue;
 		makeHeaderCell(colorWrap("Tier " + t, TIER_COLORS[t]) + ((boon == 1) ? (" - " + MODULE_CREDITS[t] + " Credits") :"") + " - " + amount + " total<br/>", th);
 		var cell = makeCell("", tr);
-		cell.appendChild(MakeSpecificItemList(t, statAmount, precursor, rare, boon, inline));
+		cell.appendChild(MakeSpecificItemList(t, statAmount, precursor, rare, boon, inline, overworld));
 	}
 	return tbl;
 }
-function MakeSpecificItemList(tier, statAmount, precursor, rare, boon, inline)
+function MakeSpecificItemList(tier, statAmount, precursor, rare, boon, inline, overworld)
 {
 	var div = document.createElement('div');
 	for (var i = 0; i < gasData["item"].length; i++)
 	{
 		var item = gasData["item"][i];
 		if(!FilterCheck(item)) continue;
-		if(ItemIsNot(item, tier, statAmount, precursor, rare, boon)) continue;
+		if(ItemIsNot(item, tier, statAmount, precursor, rare, boon, overworld)) continue;
 		var tbl = MakeStatsTable(item, item.credits);
 		if(inline) tbl.classList.add("inline");
 		div.appendChild(tbl);
