@@ -509,7 +509,7 @@ function ShowStatusEffect(effect)
 	else if(effect.tag == "DoTEffect") {dotTotal = effect.data.dps*effect.data.duration/1000; s += printKeyAndData("DoT", dotTotal + " over " + ToTime(effect.data.duration)); damage += dotTotal;}
 	else if(effect.tag == "ChillEffect")s += printKeyAndData("Chill Duration", ToTime(effect.data.duration));
 	else if(effect.tag == "GlyphCircleEffect") bSkipExtraInfo = true;
-	else if(effect.tag == "ParticleLine") ;
+	else if(effect.tag == "ParticleLineEffect") ;
 	else if(effect.tag == "PlaySoundEffect") ;
 	else if(effect.tag == "BlastEffect") {s += printKeyAndData("AoE Damage", effect.data.damage);s += printKeyAndData("Radius", effect.data.radius); damage += effect.data.damage;}
 	else if(effect.tag == "DamageEffect") {s += printKeyAndData("Damage", effect.data.damage); damage += effect.data.damage;}
