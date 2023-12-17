@@ -1,5 +1,7 @@
 {
+  "boon": 0,
   "credits": 10,
+  "defenses": 0,
   "effects": [
     {
       "data": {
@@ -11,17 +13,42 @@
             "glyphDuration": 500,
             "glyphRadius": 50,
             "glyphType": "Heal Indicator",
-            "healAmount": 60
+            "healAmount": 60,
+            "tag": ""
           },
           "tag": "HealTrigger"
         },
         "when": 4
       },
       "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 50,
+            "duration": 10000,
+            "emitterType": "",
+            "glyphCount": 2,
+            "glyphRadius": 50,
+            "glyphType": "Heal Rate Indicator Small",
+            "maxStacks": 0,
+            "statType": 1,
+            "tag": ""
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
     }
   ],
+  "engines": 0,
+  "guns": 0,
   "name": "Stratos Mechanism",
   "overworldDrop": 0,
-  "precursorTech": 1
+  "precursorTech": 1,
+  "rare": 0,
+  "triggers": 0
 }
 

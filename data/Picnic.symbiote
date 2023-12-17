@@ -20,7 +20,7 @@
               {
                 "data": {
                   "amount": 50,
-                  "caption": "Gun Damage +30%",
+                  "caption": "Gun Damage +50%",
                   "duration": 10000,
                   "emitterType": "",
                   "statType": 0

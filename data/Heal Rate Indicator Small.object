@@ -1,0 +1,71 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Heal Rate Indicator Small",
+  "shapes": [
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 13420072,
+      "height": 100,
+      "mirror": 1,
+      "name": "Cross",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -25,
+          "y": 0
+        },
+        {
+          "x": -29,
+          "y": 8
+        },
+        {
+          "x": -38,
+          "y": 8
+        },
+        {
+          "x": -33,
+          "y": 17
+        },
+        {
+          "x": -22,
+          "y": 17
+        },
+        {
+          "x": -14,
+          "y": 6
+        },
+        {
+          "x": 14,
+          "y": 6
+        },
+        {
+          "x": 22,
+          "y": 17
+        },
+        {
+          "x": 33,
+          "y": 17
+        },
+        {
+          "x": 38,
+          "y": 8
+        },
+        {
+          "x": 29,
+          "y": 8
+        },
+        {
+          "x": 25,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

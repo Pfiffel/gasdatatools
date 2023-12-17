@@ -1,5 +1,7 @@
 {
+  "boon": 0,
   "credits": 10,
+  "defenses": 0,
   "effects": [
     {
       "data": {
@@ -7,13 +9,24 @@
           "data": {
             "angleOffset": -900,
             "armingTime": 1000,
+            "creationSound": "",
+            "creationVolume": 50,
             "duration": 15000,
-            "emitterType": "Heal Mine",
-            "pickupExplosion": "Heal Mine Pickup",
+            "emitterType": "Heal Shield Mine",
             "expiryExplosion": "Heal Mine Expiry",
-            "healing": 60,
+            "healing": 80,
             "mineCount": 3,
-            "objectType": "Heal Mine",
+            "objectType": "Heal Shield Mine",
+            "pickupExplosion": "Heal Shield Mine Pickup",
+            "powers": [
+              {
+                "data": {
+                  "amount": 80,
+                  "showCaption": 1
+                },
+                "tag": "ShieldRechargePower"
+              }
+            ],
             "radius": 35,
             "ringRadius": 70,
             "tag": ""
@@ -25,8 +38,12 @@
       "tag": "TriggeredTriggerEffect"
     }
   ],
+  "engines": 0,
+  "guns": 0,
   "name": "Himera Mechanism",
   "overworldDrop": 0,
-  "precursorTech": 1
+  "precursorTech": 1,
+  "rare": 0,
+  "triggers": 0
 }
 

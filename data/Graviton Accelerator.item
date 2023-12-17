@@ -10,22 +10,20 @@
         "statType": 16
       },
       "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 6,
+        "statType": 13
+      },
+      "tag": "ItemStat"
     }
   ],
   "engines": 1,
   "guns": 0,
   "name": "Graviton Accelerator",
   "overworldDrop": 1,
-  "plusEffects": [
-    {
-      "data": {
-        "activeWhile": 0,
-        "amount": 4,
-        "statType": 16
-      },
-      "tag": "ItemStat"
-    }
-  ],
   "precursorTech": 0,
   "rare": 0,
   "triggers": 0

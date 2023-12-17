@@ -1,59 +1,38 @@
 {
+  "boon": 0,
   "credits": 10,
+  "defenses": 0,
   "effects": [
     {
       "data": {
         "params": {
           "data": {
-            "damage": 120,
-            "delay": 3000,
-            "drawReticle": 1,
-            "drawTooltip": 1,
-            "explosionType": "Odessos Mine Blast",
-            "halfArc": 1800,
-            "mirror": 0,
-            "offset": {
-              "x": 0,
-              "y": 0
-            },
-            "range": 280,
-            "statusEffects": [],
-            "tag": "",
-            "targetingDelay": 0,
-            "tooltip": "Timed Bomb Drop"
-          },
-          "tag": "ShotgunTrigger"
-        },
-        "when": 3
-      },
-      "tag": "TriggeredTriggerEffect"
-    },
-    {
-      "data": {
-        "params": {
-          "data": {
-            "delay": 0,
-            "duration": 3000,
+            "armingTime": 800,
+            "burstRadius": 280,
+            "damage": 200,
+            "duration": 5000,
             "emitterType": "Odessos Mine",
-            "mirror": 0,
+            "explosionType": "Odessos Mine Blast",
             "objectType": "Odessos Mine",
-            "sound": "",
-            "tag": "",
-            "target": {
-              "x": 0,
-              "y": 0
-            },
-            "volume": 50
+            "scatterHalfArc": 1800,
+            "scatterRadius": 0,
+            "sensitivityRadius": 260,
+            "statusEffects": [],
+            "tag": ""
           },
-          "tag": "SlugTrigger"
+          "tag": "MineTrigger"
         },
         "when": 3
       },
       "tag": "TriggeredTriggerEffect"
     }
   ],
+  "engines": 0,
+  "guns": 0,
   "name": "Odessos Mechanism",
   "overworldDrop": 0,
-  "precursorTech": 1
+  "precursorTech": 1,
+  "rare": 0,
+  "triggers": 0
 }
 

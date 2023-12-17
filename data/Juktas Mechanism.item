@@ -1,5 +1,7 @@
 {
+  "boon": 0,
   "credits": 10,
+  "defenses": 0,
   "effects": [
     {
       "data": {
@@ -9,15 +11,19 @@
             "stats": {
               "cooldown": 750,
               "damage": 25,
+              "displayName": "Juktas Mechanism",
               "emitterType": "Juktas Bullet Trail",
               "f": 0,
               "halfArc": 600,
               "objectType": "Juktas Bullet",
               "range": 400,
+              "reticleColor": 11184810,
               "soundPack": "Hercules Big Guns",
               "speed": 700,
+              "tag": "",
               "turretBone": ""
-            }
+            },
+            "tag": ""
           },
           "tag": "ExtraGunTrigger"
         },
@@ -26,8 +32,12 @@
       "tag": "TriggeredTriggerEffect"
     }
   ],
+  "engines": 0,
+  "guns": 0,
   "name": "Juktas Mechanism",
   "overworldDrop": 0,
-  "precursorTech": 1
+  "precursorTech": 1,
+  "rare": 0,
+  "triggers": 0
 }
 

@@ -1,15 +1,19 @@
 {
+  "boon": 0,
   "credits": 10,
+  "defenses": 0,
   "effects": [
     {
       "data": {
         "params": {
           "data": {
-            "damage": 90,
+            "autoAim": 0,
+            "damage": 140,
             "delay": 0,
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Hercules Burst",
+            "facing": 0,
             "halfArc": 200,
             "mirror": 0,
             "offset": {
@@ -17,9 +21,10 @@
               "y": 0
             },
             "range": 275,
+            "reticleColor": 11184810,
             "statusEffects": [],
             "tag": "",
-            "targetingDelay": 0,
+            "targetingDelay": 160,
             "tooltip": "Forward Blast"
           },
           "tag": "ShotgunTrigger"
@@ -29,8 +34,12 @@
       "tag": "TriggeredTriggerEffect"
     }
   ],
+  "engines": 0,
+  "guns": 0,
   "name": "Temnos Mechanism",
   "overworldDrop": 0,
-  "precursorTech": 1
+  "precursorTech": 1,
+  "rare": 0,
+  "triggers": 0
 }
 

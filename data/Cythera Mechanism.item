@@ -1,5 +1,7 @@
 {
+  "boon": 0,
   "credits": 10,
+  "defenses": 0,
   "effects": [
     {
       "data": {
@@ -9,15 +11,19 @@
             "stats": {
               "cooldown": 400,
               "damage": 10,
+              "displayName": "Cythera Mechanism",
               "emitterType": "Mustang Guns",
               "f": 0,
               "halfArc": 1800,
               "objectType": "Mustang Bullet",
               "range": 300,
+              "reticleColor": 11184810,
               "soundPack": "Mustang Small Guns",
               "speed": 900,
+              "tag": "",
               "turretBone": ""
-            }
+            },
+            "tag": ""
           },
           "tag": "ExtraGunTrigger"
         },
@@ -26,8 +32,12 @@
       "tag": "TriggeredTriggerEffect"
     }
   ],
+  "engines": 0,
+  "guns": 0,
   "name": "Cythera Mechanism",
   "overworldDrop": 0,
-  "precursorTech": 1
+  "precursorTech": 1,
+  "rare": 0,
+  "triggers": 0
 }
 

@@ -393,12 +393,28 @@
         },
         {
           "data": {
-            "amount": 100,
+            "amount": 75,
             "duration": 6000,
             "emitterType": "",
             "glyphCount": 8,
+            "glyphOrientation": 0,
             "glyphRadius": 70,
             "glyphType": "Hand Cannon Glyph",
+            "maxStacks": 0,
+            "statType": 0,
+            "tag": "Peacemaker 4 StatBoost"
+          },
+          "tag": "StatBoostTrigger"
+        },
+        {
+          "data": {
+            "amount": 25,
+            "duration": 6000,
+            "emitterType": "",
+            "glyphCount": 0,
+            "glyphOrientation": 0,
+            "glyphRadius": 70,
+            "glyphType": "",
             "maxStacks": 0,
             "statType": 5,
             "tag": "Peacemaker 4 StatBoost"

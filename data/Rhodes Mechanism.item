@@ -7,7 +7,7 @@
       "data": {
         "params": {
           "data": {
-            "count": 1,
+            "count": 3,
             "damage": 175,
             "emitterType": "Rhodes Missile Trail",
             "objectType": "Rhodes Missile",
@@ -18,7 +18,7 @@
             "speed": 300,
             "statusEffects": [],
             "tag": "",
-            "timeGap": 0,
+            "timeGap": 300,
             "tweenType": "CUBICIN",
             "volume": 50
           },
@@ -33,7 +33,6 @@
   "guns": 0,
   "name": "Rhodes Mechanism",
   "overworldDrop": 0,
-  "plusEffects": [],
   "precursorTech": 1,
   "rare": 0,
   "triggers": 0

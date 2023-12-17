@@ -1,15 +1,19 @@
 {
+  "boon": 0,
   "credits": 10,
+  "defenses": 0,
   "effects": [
     {
       "data": {
         "params": {
           "data": {
-            "damage": 50,
+            "autoAim": 0,
+            "damage": 80,
             "delay": 300,
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Wasp Grenade",
+            "facing": 0,
             "halfArc": 1800,
             "mirror": 1,
             "offset": {
@@ -17,6 +21,7 @@
               "y": 60
             },
             "range": 100,
+            "reticleColor": 11184810,
             "statusEffects": [],
             "tag": "",
             "targetingDelay": 0,
@@ -35,6 +40,7 @@
             "delay": 0,
             "duration": 300,
             "emitterType": "Wasp Mines",
+            "facing": 0,
             "mirror": 1,
             "objectType": "Wasp Mine",
             "sound": "",
@@ -52,8 +58,12 @@
       "tag": "TriggeredTriggerEffect"
     }
   ],
+  "engines": 0,
+  "guns": 0,
   "name": "Naxos Mechanism",
   "overworldDrop": 0,
-  "precursorTech": 1
+  "precursorTech": 1,
+  "rare": 0,
+  "triggers": 0
 }
 

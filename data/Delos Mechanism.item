@@ -1,5 +1,7 @@
 {
+  "boon": 0,
   "credits": 10,
+  "defenses": 0,
   "effects": [
     {
       "data": {
@@ -8,11 +10,11 @@
         "statusEffects": [
           {
             "data": {
-              "dps": 12,
+              "dps": 25,
               "duration": 5000,
-              "reducedDurationOnBoss": 1
+              "reducedDurationOnBoss": 0
             },
-            "tag": "DoTEffect"
+            "tag": "BurningEffect"
           }
         ],
         "targets": 1,
@@ -21,8 +23,12 @@
       "tag": "TriggeredRandomTargetEffect"
     }
   ],
+  "engines": 0,
+  "guns": 0,
   "name": "Delos Mechanism",
   "overworldDrop": 0,
-  "precursorTech": 1
+  "precursorTech": 1,
+  "rare": 0,
+  "triggers": 0
 }
 

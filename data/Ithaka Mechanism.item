@@ -1,5 +1,7 @@
 {
+  "boon": 0,
   "credits": 10,
+  "defenses": 0,
   "effects": [
     {
       "data": {
@@ -11,17 +13,23 @@
             "emitterType": "",
             "glyphCount": 2,
             "glyphRadius": 75,
-            "glyphType": "Recharge Indicator"
+            "glyphType": "Recharge Indicator",
+            "noStack": 0,
+            "tag": ""
           },
           "tag": "HealOverTimeTrigger"
         },
-        "when": 0
+        "when": 2
       },
       "tag": "TriggeredTriggerEffect"
     }
   ],
+  "engines": 0,
+  "guns": 0,
   "name": "Ithaka Mechanism",
   "overworldDrop": 0,
-  "precursorTech": 1
+  "precursorTech": 1,
+  "rare": 0,
+  "triggers": 0
 }
 

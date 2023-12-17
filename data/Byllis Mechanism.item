@@ -1,5 +1,7 @@
 {
+  "boon": 0,
   "credits": 10,
+  "defenses": 0,
   "effects": [
     {
       "data": {
@@ -19,7 +21,7 @@
           },
           {
             "data": {
-              "damage": 40
+              "damage": 90
             },
             "tag": "DamageEffect"
           }
@@ -30,8 +32,12 @@
       "tag": "TriggeredRandomTargetEffect"
     }
   ],
+  "engines": 0,
+  "guns": 0,
   "name": "Byllis Mechanism",
   "overworldDrop": 0,
-  "precursorTech": 1
+  "precursorTech": 1,
+  "rare": 0,
+  "triggers": 0
 }
 

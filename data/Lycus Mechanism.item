@@ -1,28 +1,56 @@
 {
+  "boon": 0,
   "credits": 10,
+  "defenses": 0,
   "effects": [
     {
       "data": {
         "params": {
           "data": {
-            "duration": 3000,
+            "duration": 4000,
             "percentChance": 100,
             "statusEffect": {
               "data": {
                 "duration": 1000
               },
               "tag": "StunEffect"
-            }
+            },
+            "tag": ""
           },
           "tag": "GunProcTrigger"
         },
         "when": 4
       },
       "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 25,
+            "duration": 4000,
+            "emitterType": "",
+            "glyphCount": 2,
+            "glyphOrientation": 1,
+            "glyphRadius": 60,
+            "glyphType": "Damage Glyph Small",
+            "maxStacks": 0,
+            "statType": 0,
+            "tag": ""
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
     }
   ],
+  "engines": 0,
+  "guns": 0,
   "name": "Lycus Mechanism",
   "overworldDrop": 0,
-  "precursorTech": 1
+  "precursorTech": 1,
+  "rare": 0,
+  "triggers": 0
 }
 
