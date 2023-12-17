@@ -278,11 +278,18 @@ function MakeSpecificTable(startTier, statAmount, precursor, rare, boon, inline,
 function MakeSpecificItemList(tier, statAmount, precursor, rare, boon, inline, overworld)
 {
 	var div = document.createElement('div');
+	var tempItems = [];
 	for (var i = 0; i < gasData["item"].length; i++)
 	{
 		var item = gasData["item"][i];
 		if(!FilterCheck(item)) continue;
 		if(ItemIsNot(item, tier, statAmount, precursor, rare, boon, overworld)) continue;
+		tempItems.push(item);
+	}
+	tempItems.sort((a, b) => ItemSort(a, b));
+	for (var i = 0; i < tempItems.length; i++)
+	{
+		var item = tempItems[i];
 		var tbl = MakeStatsTable(item, item.credits);
 		if(inline) tbl.classList.add("inline");
 		div.appendChild(tbl);

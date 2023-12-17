@@ -130,6 +130,40 @@ function monsterSort(a, b)
 	else
 		return -1;
 }
+// TODO use stat idx of first stat instead of string category
+const ITEM_SORTING_INDEX =
+{
+	"Booster": 1,
+	"Plate": 2,
+	"Generator": 3,
+	"Loader": 4,
+	"Fixer": 5,
+	"Cycler": 6,
+	"Charger": 7,
+	"Capacitor": 8,
+	"Displacer": 9,
+	"Rotator": 10,
+	"Accelerator": 11,
+	"Blaster": 12,
+	"Detonator": 13,
+	"Warhead": 14,
+}
+function GetItemSortingIndex(item)
+{
+	for (let category in ITEM_SORTING_INDEX)
+	{
+		if(item.name.includes(category))
+			return ITEM_SORTING_INDEX[category];
+	}
+	return 0;
+}
+function ItemSort(a, b)
+{
+	if(GetItemSortingIndex(a) > GetItemSortingIndex(b))
+		return 1;
+	else
+		return -1;
+}
 function getTier(xp){
 	return parseInt(Math.sqrt(xp));
 }
@@ -332,13 +366,7 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 		else if(mainTag == "PlayerGunStats")
 		{
 			let gundps = round(1000*data.damage/data.cooldown,2);
-			s += printKeyAndData("Gun", gundps + " DPS");
-			s += printKeyAndData("├ RoF", round(1000/data.cooldown,2), "", "/s");
-			s += printKeyAndData("├ Range", data.range, "", AddReticle(data.reticleColor));
-			var finish = "└ ";
-			if(data.f != 0) finish = "├ ";
-			s += printKeyAndData(finish + "Arc", (data.halfArc * 0.2) + "°");
-			if(data.f != 0) s += printKeyAndData("└ Facing", (data.f/10));
+			s += MakeGunStats(data);
 			dps += gundps;
 		}
 		else if(mainTag == "PeriodicTriggerEffect")
@@ -453,51 +481,53 @@ function MakePowerText(data)
 		}
 	return s;
 }
+function MakeGunStats(data)
+{
+	var s = "";
+	let gundps = round(1000*data.damage/data.cooldown,2);
+	s += printKeyAndData("Gun", gundps + " DPS");
+	s += printKeyAndData("├ RoF", round(1000/data.cooldown,2), "", "/s");
+	s += printKeyAndData("├ Range", data.range, "", AddReticle(data.reticleColor));
+	var finish = "└ ";
+	if(data.f != 0) finish = "├ ";
+	s += printKeyAndData(finish + "Arc", (data.halfArc * 0.2) + "°");
+	if(data.f != 0) s += printKeyAndData("└ Facing", (data.f/10));
+	return s;
+}
+function ShowStatusEffect(effect)
+{
+
+	var s = ""; var damage = 0;
+	var bSkipExtraInfo = false;
+	if(effect.tag == "NoEffect") ;
+	else if(effect.tag == "RootEffect") s += printKeyAndData("Immobilize Duration", ToTime(effect.data.duration));
+	else if(effect.tag == "FreezeEffect") s += printKeyAndData("Freeze Duration", ToTime(effect.data.duration));
+	else if(effect.tag == "StunEffect") s += printKeyAndData("Stun Duration", ToTime(effect.data.duration));
+	else if(effect.tag == "DisarmEffect") s += printKeyAndData("Disarm Duration", ToTime(effect.data.duration));
+	else if(effect.tag == "SusceptibleEffect") s += printKeyAndData("Susceptibility Duration", ToTime(effect.data.duration));
+	else if(effect.tag == "BurningEffect") {dotTotal = effect.data.dps*effect.data.duration/1000; s += printKeyAndData("Burn Damage", dotTotal + " over " + ToTime(effect.data.duration)); damage += dotTotal;}
+	else if(effect.tag == "DoTEffect") {dotTotal = effect.data.dps*effect.data.duration/1000; s += printKeyAndData("DoT", dotTotal + " over " + ToTime(effect.data.duration)); damage += dotTotal;}
+	else if(effect.tag == "ChillEffect")s += printKeyAndData("Chill Duration", ToTime(effect.data.duration));
+	else if(effect.tag == "GlyphCircleEffect") bSkipExtraInfo = true;
+	else if(effect.tag == "ParticleLine") ;
+	else if(effect.tag == "PlaySoundEffect") ;
+	else if(effect.tag == "BlastEffect") {s += printKeyAndData("AoE Damage", effect.data.damage);s += printKeyAndData("Radius", effect.data.radius); damage += effect.data.damage;}
+	else if(effect.tag == "DamageEffect") {s += printKeyAndData("Damage", effect.data.damage); damage += effect.data.damage;}
+	else if(effect.tag == "VampEffect") s += printKeyAndData((effect.data.appliesToMana == 1 ? "Energy Recharge" : "Vampiric Repair") + " per hit", effect.data.healing, (effect.data.appliesToMana == 1 ? "energy" : "heal"));
+	else console.log("uncaught effect: " + effect.tag);
+	if(!bSkipExtraInfo && effect.data.reducedDurationOnBoss != undefined && effect.data.reducedDurationOnBoss == 1) s += "Reduced duration on bosses<br/>";
+	if(effect.data.stack != undefined && effect.data.stack == 1) s += "Effect stacks<br/>";
+	var o = {};
+	o.s = s;
+	o.damage = damage;
+	return o;
+}
 function AddEffectsText(data)
 {
 	var s = "";
 	if(data.statusEffects != undefined) for(let i = 0; i < data.statusEffects.length; i++)
 	{
-		let effectData = data.statusEffects[i].data;
-		let effect = data.statusEffects[i].tag;
-		if(effect == "StunEffect")
-		{
-			s += printKeyAndData("Stun Duration", ToTime(effectData.duration));
-		}
-		else if(effect == "RootEffect")
-		{
-			s += printKeyAndData("Immobilize Duration", ToTime(effectData.duration));
-		}
-		else if(effect == "DamageEffect")
-		{
-			s += printKeyAndData("Damage", effectData.damage);
-		}
-		else if(effect == "DoTEffect" || effect == "BurningEffect")
-		{
-			s += printKeyAndData("Damage", effectData.dps*effectData.duration/1000 + " over " + ToTime(effectData.duration));
-		}
-		else if(effect == "VampEffect")
-		{
-			s += printKeyAndData((effectData.appliesToMana == 1 ? "Energy Recharge" : "Vampiric Repair") + " per hit", effectData.healing, (effectData.appliesToMana == 1 ? "energy" : "heal"));
-		}
-		else if(effect == "DisarmEffect")
-		{
-			s += printKeyAndData("Disarm Duration", ToTime(effectData.duration));
-		}
-		else if(effect == "ChillEffect")
-		{
-			s += printKeyAndData("Chill Duration", ToTime(effectData.duration));
-		}
-		else if(effect == "SusceptibleEffect")
-		{
-			s += printKeyAndData("Susceptibility Duration", ToTime(effectData.duration));
-		}
-		else 
-		{
-			console.log("uncaught effect: " + effect);
-		}
-		if(effectData.reducedDurationOnBoss != undefined && effectData.reducedDurationOnBoss == 1) s += "Reduced on bosses";
-		if(effectData.stack != undefined && effectData.stack == 1) s += "Effect stacks";
+		s += ShowStatusEffect(data.statusEffects[i]).s;
 	}
 	return s;
 }
@@ -611,8 +641,8 @@ function GetTriggeredEffectString(tag, data, delayArray)
 	}
 	else if(tag == "ExtraGunTrigger"){
 		let dps = round(1000*data.stats.damage/data.stats.cooldown,2);
-		s += printKeyAndData("Create Gun", dps + " DPS");
-		s += printKeyAndData("Duration", ToTime(data.duration));
+		s += "Create gun for <b>" + ToTime(data.duration) + "</b>:" + "<br/>";
+		s += MakeGunStats(data.stats);
 		damage += dps*(data.duration/1000);
 	}
 	else if(tag == "ExtraShieldTrigger"){
@@ -713,22 +743,6 @@ function GetBonusEffectString(tag, data)
 		if(data.range != 0)						s += printKeyAndDataBonus("Range", BonusPrefix(data.range));
 	}
 	return s;
-}
-function ShowStatusEffect(effect)
-{
-
-	var s = ""; var damage = 0;
-	if(effect.tag == "FreezeEffect") s += printKeyAndData("Freeze Duration", ToTime(effect.data.duration));
-	if(effect.tag == "StunEffect") s += printKeyAndData("Stun Duration", ToTime(effect.data.duration));
-	if(effect.tag == "DoTEffect") {dotTotal = effect.data.dps*effect.data.duration/1000; s += printKeyAndData("DoT Total", dotTotal); damage += dotTotal;}
-	if(effect.tag == "DamageEffect") {s += printKeyAndData("Damage", effect.data.damage); damage += effect.data.damage;}
-	if(effect.tag == "BlastEffect") {s += printKeyAndData("AoE Damage", effect.data.damage);s += printKeyAndData("Radius", effect.data.radius); damage += effect.data.damage;}
-	if(effect.tag == "SusceptibleEffect") s += printKeyAndData("Susceptibility Duration", ToTime(effect.data.duration));
-	
-	var o = {};
-	o.s = s;
-	o.damage = damage;
-	return o;
 }
 function showUsage(data)
 {
