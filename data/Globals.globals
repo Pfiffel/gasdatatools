@@ -54,6 +54,10 @@
       "limit": 5,
       "tier": 8
     }
-  ]
+  ],
+  "uiColors": {
+    "abilityHighlightColor": 3531257,
+    "abilityTitleColor": 4364026
+  }
 }
 

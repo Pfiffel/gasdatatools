@@ -6,7 +6,7 @@
     {
       "data": {
         "activeWhile": 0,
-        "amount": 18,
+        "amount": 13,
         "statType": 6
       },
       "tag": "ItemStat"
@@ -16,16 +16,6 @@
   "guns": 0,
   "name": "Subspace Cycler",
   "overworldDrop": 1,
-  "plusEffects": [
-    {
-      "data": {
-        "activeWhile": 0,
-        "amount": 4,
-        "statType": 6
-      },
-      "tag": "ItemStat"
-    }
-  ],
   "precursorTech": 0,
   "rare": 0,
   "triggers": 1
