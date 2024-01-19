@@ -486,6 +486,7 @@ function MakeGunStats(data)
 	var s = "";
 	let gundps = round(1000*data.damage/data.cooldown,2);
 	s += printKeyAndData("Gun", gundps + " DPS");
+	s += printKeyAndData("├ Damage", data.damage);
 	s += printKeyAndData("├ RoF", round(1000/data.cooldown,2), "", "/s");
 	s += printKeyAndData("├ Range", data.range, "", AddReticle(data.reticleColor));
 	var finish = "└ ";
@@ -647,6 +648,7 @@ function GetTriggeredEffectString(tag, data, delayArray)
 	}
 	else if(tag == "ExtraShieldTrigger"){
 		var hex = numberToHex(data.stats.color);
+		s += "Temporary shield for <b>" + ToTime(data.duration) + "</b>:" + "<br/>";
 		s += printKeyAndData("Shield", "Strength " + data.stats.maxStrength);
 		s += printKeyAndData("Shield", colorWrap("Arc "+GetArcShield(data.stats), hex));
 	}
