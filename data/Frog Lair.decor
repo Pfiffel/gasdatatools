@@ -1,0 +1,33 @@
+{
+  "color": 13610263,
+  "groundColors": [],
+  "name": "Frog Lair",
+  "objects": [
+    {
+      "density": 5,
+      "objectType": "SkeletonLizard"
+    },
+    {
+      "density": 41,
+      "objectType": "RockDebris"
+    },
+    {
+      "density": 242,
+      "objectType": "Bone Shard"
+    },
+    {
+      "density": 247,
+      "objectType": "Bone Shard2"
+    },
+    {
+      "density": 10,
+      "objectType": "RockDebris2"
+    },
+    {
+      "density": 21,
+      "objectType": "Skull"
+    }
+  ],
+  "regionType": "Plateau"
+}
+

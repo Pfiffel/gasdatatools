@@ -1,0 +1,8 @@
+{
+  "name": "Teleport Leave",
+  "sounds": [
+    "UI_Teleport_Leave"
+  ],
+  "volume": 100
+}
+

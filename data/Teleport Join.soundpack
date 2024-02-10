@@ -1,0 +1,8 @@
+{
+  "name": "Teleport Join",
+  "sounds": [
+    "UI_Teleport_Join"
+  ],
+  "volume": 100
+}
+

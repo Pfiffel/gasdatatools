@@ -1,0 +1,37 @@
+{
+  "name": "Lamb",
+  "portrait": "Lamb",
+  "quoteLists": [
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I wreak destruction!",
+          "volume": 50
+        }
+      ],
+      "tag": "Equip"
+    },
+    {
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I rain down vengeance!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I drive my enemies before me!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "There is no escape from my wrath!",
+          "volume": 50
+        }
+      ],
+      "tag": "Spawn"
+    }
+  ]
+}
+

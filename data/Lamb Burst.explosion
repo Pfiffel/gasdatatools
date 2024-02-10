@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 100,
+      "maxDistPercent": 100,
+      "minDistPercent": 97,
+      "particleType": "Lamb Burst",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Lamb Burst",
+  "sound": "",
+  "volume": 80
+}
+

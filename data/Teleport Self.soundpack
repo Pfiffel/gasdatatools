@@ -1,0 +1,8 @@
+{
+  "name": "Teleport Self",
+  "sounds": [
+    "UI_Teleport_Self"
+  ],
+  "volume": 100
+}
+

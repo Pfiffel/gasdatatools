@@ -1,0 +1,88 @@
+{
+  "description": "Lamb wreaks vengeance and destruction upon his foes.",
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 20,
+            "duration": 5000,
+            "emitterType": "",
+            "glyphCount": 0,
+            "glyphOrientation": 0,
+            "glyphRadius": 0,
+            "glyphType": "",
+            "maxStacks": 0,
+            "statType": 0,
+            "tag": ""
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 20,
+            "duration": 5000,
+            "emitterType": "",
+            "glyphCount": 0,
+            "glyphOrientation": 0,
+            "glyphRadius": 0,
+            "glyphType": "",
+            "maxStacks": 0,
+            "statType": 5,
+            "tag": ""
+          },
+          "tag": "StatBoostTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "params": {
+          "data": {
+            "amount": 0,
+            "explosionType": "Lamb Burst",
+            "powers": [
+              {
+                "data": {
+                  "amount": 30,
+                  "caption": "",
+                  "duration": 5000,
+                  "emitterType": "Lamb",
+                  "statType": 0
+                },
+                "tag": "StatPower"
+              },
+              {
+                "data": {
+                  "amount": 30,
+                  "caption": "",
+                  "duration": 5000,
+                  "emitterType": "",
+                  "statType": 5
+                },
+                "tag": "StatPower"
+              }
+            ],
+            "radius": 400,
+            "tag": ""
+          },
+          "tag": "AreaHealTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Lamb",
+  "tier": 3
+}
+

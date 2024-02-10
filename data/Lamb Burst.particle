@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 750,
+      "value": 16711680
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 350,
+  "minLifetime": 300,
+  "name": "Lamb Burst",
+  "objectType": "Small Four Star",
+  "positionTweenType": "QUADOUT",
+  "scalePoints": [
+    {
+      "frac": 50,
+      "value": 500
+    },
+    {
+      "frac": 900,
+      "value": 500
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 16711680,
+  "startScale": 10,
+  "stayLow": 0
+}
+

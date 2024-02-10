@@ -40,7 +40,10 @@
   ],
   "name": "Globals",
   "playerDeathSoundPack": "Player Death",
+  "selfTeleportSoundPack": "Teleport Self",
   "shieldHitsSoundPack": "Shield Hits",
+  "teleportJoinSoundPack": "Teleport Join",
+  "teleportLeaveSoundPack": "Teleport Leave",
   "tieredItemLimits": [
     {
       "limit": 12,
