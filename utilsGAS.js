@@ -621,7 +621,7 @@ function GetTriggeredEffectString(tag, data, delayArray)
 	}
 	else if(tag == "AreaHealTrigger"){
 		if(data.amount > 0) s += printKeyAndData("Repair Amount", data.amount, "heal");
-		s += printKeyAndData("Radius", data.radius);
+		s += printKeyAndData("Effect Burst: Radius", data.radius);
 		s += MakePowerText(data);
 	}
 	else if(tag == "ShieldRefillTrigger"){
