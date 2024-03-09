@@ -3,7 +3,7 @@ var TIERS = 6;
 var SYMBIOTE_DROPPERS = [];
 var tableOutput = document.getElementById("tableOutput");
 
-var datatypes = ["symbiote","monster","object","speaker"]; // for utilGAS to load files, calls parseData once completed
+var datatypes = ["symbiote","monster","object","speaker","globals"]; // for utilGAS to load files, calls parseData once completed
 loadGasData();
 
 var header = document.getElementById("header");
@@ -13,9 +13,13 @@ var showDroppers = makeInputCheckbox("Show Source Enemies", RefreshLists, filter
 var showPortraits = makeInputCheckbox("Show Portraits", RefreshLists, filters, true);
 var showDescriptions = makeInputCheckbox("Show Descriptions", RefreshLists, filters, true);
 var showQuotes = makeInputCheckbox("Show Quotes", RefreshLists, filters, false);
+var showOnlyDefault = makeInputCheckbox("Only Show Default Symbiotes", RefreshLists, filters, false);
+
+var defaultSymbiotes;
 
 function parseData()
 {
+	defaultSymbiotes = GetGlobals().defaultSymbiotes;
 	RefreshLists();
 }
 function RefreshLists()
@@ -87,6 +91,7 @@ function parseTierList(t)
 	{
 		var symb = gasData["symbiote"][i];
 		if(symb.tier != t) continue;
+		if(showOnlyDefault.checked && !IsStarter(symb)) continue;
 		var cont = document.createElement('div');
 		var tbl = MakeStatsTable(symb, symb.tier, true, showPortraits.checked, showDescriptions.checked, showQuotes.checked);
 		/*
@@ -99,4 +104,11 @@ function parseTierList(t)
 		div.appendChild(cont);
 	}
 	return div;
+}
+function IsStarter(symb)
+{
+	for (let i in defaultSymbiotes){
+		if(defaultSymbiotes[i] == symb.name) return true;
+	}
+	return false;
 }
