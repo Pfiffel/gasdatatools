@@ -47,7 +47,7 @@ function RefreshLists()
 		if(map.name != "Quagmire") continue;
 		var mapSize = Math.pow(map.mapRadius*2,2);
 		var h2 = document.createElement("h2");
-		h2.textContent = map.name + " (" + mil(mapSize) + " total size)";
+		h2.textContent = map.name + " (" + mil(mapSize) + " total size, " + map.miniBossSpawns.length + " nest spawns)";
 		divMaps.appendChild(h2);
 		var drawn = DrawMap(map.name, 0.01);
 		drawn.style.display = "inline";
@@ -88,11 +88,18 @@ function RefreshLists()
 			// TODO a bit hacky since these aren't actually guaranteed to relate, determine which regions are in which field mathematically instead
 			var monsterFieldAssignedRegion = (decor == "Swamp Green") ? "Swamp" : decor;
 			var wallSize = regionSizes[monsterFieldAssignedRegion];
-			info += "Walls: " + mil(wallSize) + " (" + round((wallSize/fieldSize)*100,2) + "% of Field)";
+			info += "Walls: " + mil(wallSize) + " (" + round((wallSize/fieldSize)*100,2) + "% of Field)" + "<br/>";
+			var miniBossSpawns = 0;
+			if(map.miniBossSpawns != undefined) for (let i = 0; i < map.miniBossSpawns.length; i++)
+			{
+				var miniBossPoint = map.miniBossSpawns[i];
+				if(IsPointInsidePoly(miniBossPoint, monsterField.poly)) miniBossSpawns++;
+			}
+			info += "Nest spawns: " + miniBossSpawns;
 			var cName = makeCell(info, tr, "name");
 			cName.style.backgroundColor = numberToHex(lair.color);
 			var monsterDiv = document.createElement('div');
-			
+
 			/*var densityDiv = document.createElement('div');
 			densityDiv.classList.add("inline");
 			densityDiv.innerHTML += "monsterSquareSide: " + lair.monsterSquareSide;
@@ -113,6 +120,19 @@ function RefreshLists()
 		divMaps.appendChild(tbl);
 	}
 	tableOutput.appendChild(divMaps);
+}
+function IsPointInsidePoly(point, vs) {
+	var x = point.x, y = point.y;
+	var inside = false;
+	for (var i = 0, j = vs.length - 1; i < vs.length; j = i++) {
+		var xi = vs[i].x, yi = vs[i].y;
+		var xj = vs[j].x, yj = vs[j].y;
+		
+		var intersect = ((yi > y) != (yj > y))
+				&& (x < (xj - xi) * (y - yi) / (yj - yi) + xi);
+		if (intersect) inside = !inside;
+	}
+	return inside;
 }
 function mil(value)
 {

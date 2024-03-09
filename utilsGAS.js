@@ -1210,13 +1210,15 @@ function ClosePoly(ctx, scale, color){
 function DrawMap(name, scale, bPrev = false)
 {
 	var canvas = document.createElement('canvas');
-	canvas.width = MAP_CANVAS_SIZE;
-	canvas.height = MAP_CANVAS_SIZE;
+	var data = bPrev ? gasDataPrev["map"] : gasData["map"];
+	var map = GetMap(data, name);
+	canvas.width = map.mapRadius / 50;
+	canvas.height = map.mapRadius / 50;
 	if (canvas.getContext)
 	{
 		var ctx = canvas.getContext('2d');
 		ctx.scale(scale, scale);
-		MakeMap(ctx, scale, name, bPrev ? gasDataPrev["map"] : gasData["map"]);
+		MakeMap(ctx, scale, map);
 	}
 	return canvas;
 }
@@ -1241,39 +1243,41 @@ function DrawLane(ctx, scale, points, offset, color)
 	ctx.strokeStyle = color;
 	ctx.stroke();
 }
-function MakeMap(ctx, scale, mapName, data)
+function GetMap(data, name)
 {
 	for (let m = 0; m < data.length; m++)
 	{
 		var map = data[m];
-		if(map.name != mapName) continue;
-	
-		for (let i = 0; i < map.regions.length; i++)
-		{
-			var region = map.regions[i];
-			var color = GetRegion(region.regionType).mapColor;
-			DrawPoly(ctx, scale, region.poly, map.mapRadius, numberToHex(color));
-		}
-		/*for (let i = 0; i < map.beacons.length; i++)
-		{
-			var beacon = map.beacons[i];
-			DrawCircle(ctx, scale, beacon, 3, map.mapRadius, "#00FFFF");//66EEEE
-		}*/
-		for (let i = 0; i < map.spawnPoints.length; i++)
-		{
-			var spawnPoint = map.spawnPoints[i];
-			DrawCircle(ctx, scale, spawnPoint, 3, map.mapRadius, "#00FF00");//78E810
-		}
-		if(map.miniBossSpawns != undefined) for (let i = 0; i < map.miniBossSpawns.length; i++)
-		{
-			var miniBoss = map.miniBossSpawns[i];
-			DrawCircle(ctx, scale, miniBoss, 2, map.mapRadius, "#AA4400");
-		}
-		for (let i = 0; i < map.lanes.length; i++)
-		{
-			var lane = map.lanes[i];
-			var color = GetLane(lane.laneType).color;
-			DrawLane(ctx, scale, lane.waypoints, map.mapRadius, "#553333");
-		}
+		if(map.name == name) return map;
+	}
+}
+function MakeMap(ctx, scale, map)
+{
+	for (let i = 0; i < map.regions.length; i++)
+	{
+		var region = map.regions[i];
+		var color = GetRegion(region.regionType).mapColor;
+		DrawPoly(ctx, scale, region.poly, map.mapRadius, numberToHex(color));
+	}
+	/*for (let i = 0; i < map.beacons.length; i++)
+	{
+		var beacon = map.beacons[i];
+		DrawCircle(ctx, scale, beacon, 3, map.mapRadius, "#00FFFF");//66EEEE
+	}*/
+	for (let i = 0; i < map.spawnPoints.length; i++)
+	{
+		var spawnPoint = map.spawnPoints[i];
+		DrawCircle(ctx, scale, spawnPoint, 3, map.mapRadius, "#00FF00");//78E810
+	}
+	if(map.miniBossSpawns != undefined) for (let i = 0; i < map.miniBossSpawns.length; i++)
+	{
+		var miniBoss = map.miniBossSpawns[i];
+		DrawCircle(ctx, scale, miniBoss, 2, map.mapRadius, "#AA4400");
+	}
+	for (let i = 0; i < map.lanes.length; i++)
+	{
+		var lane = map.lanes[i];
+		var color = GetLane(lane.laneType).color;
+		DrawLane(ctx, scale, lane.waypoints, map.mapRadius, "#553333");
 	}
 }
