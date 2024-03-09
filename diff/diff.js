@@ -13,6 +13,7 @@ function parseIDs() // make super duper recursive id checker?
 {
 
 }
+var listOfChangedKeys = {};
 var changedSymbs = {};
 var changedItems = {};
 var changedObjects = {};
@@ -76,13 +77,13 @@ function parseData()
 	}
 	for (let entity in changedSymbs)
 	{
-		divList.appendChild(MakeGraphicCompareBlock(entity + " changes",
+		divList.appendChild(MakeGraphicCompareBlock(entity + " changes" + GetKeyChangeList(entity),
 		MakeStatsTable(GetPrevEntity("symbiote", entity), 0), 
 		MakeStatsTable(GetNewEntity("symbiote", entity), 0)));
 	}
 	for (let entity in changedItems)
 	{
-		divList.appendChild(MakeGraphicCompareBlock(entity + " changes",
+		divList.appendChild(MakeGraphicCompareBlock(entity + " changes" + GetKeyChangeList(entity),
 		MakeStatsTable(GetPrevEntity("item", entity), 0, false), 
 		MakeStatsTable(GetNewEntity("item", entity), 0, false)));
 	}
@@ -193,13 +194,22 @@ function CompareJSON(entity, entityPrev, superParent, fileType, parentStringList
 			{
 				if(fileType == "object") {changedObjects[superParent] = true; continue;}
 				if(fileType == "map" && (key == "x" || key == "y" || key == "tag" || key == "regionType")) {changedMaps[superParent] = true; continue;}
-				if(fileType == "symbiote") {changedSymbs[superParent] = true; continue;}
-				if(fileType == "item") {changedItems[superParent] = true; continue;}
+				if(fileType == "symbiote") {changedSymbs[superParent] = true; AddKeyToChangeList(superParent, key); continue;}
+				if(fileType == "item") {changedItems[superParent] = true; AddKeyToChangeList(superParent, key); continue;}
 				if(IsNewButDefaultValue(entityPrev, entity, key)) continue;
 				MakeChangeEntry(header, key, entityPrev[key], entity[key], divList);
 			}
 		}
 	}
+}
+function AddKeyToChangeList(superParent, key)
+{
+	if(listOfChangedKeys[superParent] == undefined) listOfChangedKeys[superParent] = [];
+	listOfChangedKeys[superParent].push(key);
+}
+function GetKeyChangeList(superParent)
+{
+	return " (" + listOfChangedKeys[superParent].toString() + ")";
 }
 function IsNewButDefaultValue(entityPrev, entity, key)
 {
