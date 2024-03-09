@@ -158,7 +158,7 @@
     {
       "f": 0,
       "label": "",
-      "note": "Spawn: Xenofrog General, Xenofrog King",
+      "note": "Spawn: Xenofrog King",
       "objectType": "Invisible Marker",
       "p": {
         "x": 0,
@@ -221,15 +221,15 @@
       "note": "Spawn: Xenofrog Dire Warrior",
       "objectType": "Invisible Marker",
       "p": {
-        "x": 297,
-        "y": -35
+        "x": 317,
+        "y": -15
       }
     }
   ],
   "mapRadius": 500,
   "miniBossSpawns": [],
   "monsterFields": [],
-  "name": "Frog Lair",
+  "name": "Frog Lair King",
   "overworld": 0,
   "patches": [
     {

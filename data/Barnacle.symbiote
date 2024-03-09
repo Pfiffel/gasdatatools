@@ -32,6 +32,10 @@
         "statType": 0
       },
       "tag": "ItemStat"
+    },
+    {
+      "data": {},
+      "tag": "DisableGeneralAutoEquip"
     }
   ],
   "enemies": [],

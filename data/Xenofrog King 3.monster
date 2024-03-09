@@ -1,0 +1,234 @@
+{
+  "armor": 0,
+  "boss": 1,
+  "burrowDetectRange": 0,
+  "collisionRadius": 80,
+  "consolationItemPack": "Tier 5 Common",
+  "deathCrySoundPack": "Xenofrog Defender Death Cries",
+  "fixedFacing": 0,
+  "healRate": 0,
+  "hp": 8000,
+  "idleAnimation": "Xenofrog Idle",
+  "itemPackDrops": [
+    {
+      "itemPack": "Precursor Techs",
+      "micros": 150000
+    }
+  ],
+  "maxMoveDistance": 200,
+  "name": "Xenofrog King 3",
+  "objectType": "Xenofrog King",
+  "onDamageSoundPack": "Xenofrog Hits",
+  "pauseBetweenMovements": 900,
+  "resistant": 0,
+  "runAnimation": "Xenofrog Leap",
+  "runAnimationDuration": 700,
+  "runSpeed": 280,
+  "shields": [
+    {
+      "additionalRadius": 20,
+      "angle": 1800,
+      "color": 2673852,
+      "halfArc": 1200,
+      "percentProtection": 80,
+      "thickness": 20
+    }
+  ],
+  "successorInvulnerability": 1,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "",
+      "cooldown": 200,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "emitterType": "",
+          "explosionType": "",
+          "guardian": 0,
+          "lifetime": 0,
+          "maxCount": 4,
+          "monsterName": "Xenofrog Dire Defender",
+          "movement": {
+            "data": {
+              "radius": 200
+            },
+            "tag": "OrbitMovement"
+          },
+          "noCollide": 0,
+          "noRespawn": 1,
+          "projectileType": "Xenofrog Dire Defender",
+          "range": 200,
+          "sound": "",
+          "speed": 200,
+          "volume": 50
+        },
+        "tag": "MinionParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "RandomTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "",
+      "cooldown": 200,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "emitterType": "",
+          "explosionType": "",
+          "guardian": 0,
+          "lifetime": 0,
+          "maxCount": 4,
+          "monsterName": "Xenofrog Dire Soldier",
+          "movement": {
+            "data": {
+              "playerPolicy": 1,
+              "radius": 500
+            },
+            "tag": "RandomMovement"
+          },
+          "noCollide": 0,
+          "noRespawn": 1,
+          "projectileType": "Xenofrog Dire Soldier",
+          "range": 300,
+          "sound": "",
+          "speed": 200,
+          "volume": 50
+        },
+        "tag": "MinionParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "RandomTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "Mouth",
+      "cooldown": 3000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "bulletRange": 800,
+                "delay": 250,
+                "glyphType": "Barrage Glyph",
+                "gunBulletType": "Xenofrog Dire Defender Spit",
+                "numBullets": 5,
+                "range": 800,
+                "salvoes": [
+                  {
+                    "angle": 0,
+                    "mirror": 0
+                  },
+                  {
+                    "angle": 120,
+                    "mirror": 1
+                  },
+                  {
+                    "angle": 240,
+                    "mirror": 1
+                  },
+                  {
+                    "angle": 120,
+                    "mirror": 1
+                  },
+                  {
+                    "angle": 240,
+                    "mirror": 1
+                  }
+                ]
+              },
+              "tag": "BarrageParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 1
+        },
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "Mouth",
+      "cooldown": 2000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "blastSeries": [
+                  {
+                    "blasts": [
+                      {
+                        "angleOffset": 400,
+                        "delay": 0,
+                        "mirror": 1
+                      }
+                    ],
+                    "params": {
+                      "damage": 300,
+                      "delay": 1000,
+                      "explosionType": "Xenofrog Defender Shotgun",
+                      "halfArc": 200,
+                      "lockMovement": 0,
+                      "powers": [
+                        {
+                          "data": {},
+                          "tag": "ShieldBreakPower"
+                        }
+                      ],
+                      "range": 600,
+                      "triggerSound": "Enemy_XenofrogDefender_Shotgun_Telegraph",
+                      "triggerVolume": 50
+                    }
+                  }
+                ]
+              },
+              "tag": "ShotgunBarrageParams"
+            },
+            {
+              "data": {
+                "extraRange": 400,
+                "range": 400,
+                "speed": 400
+              },
+              "tag": "ChargeParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 1
+        },
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 100
+}
+

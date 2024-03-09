@@ -9,7 +9,7 @@
     }
   ],
   "name": "Lamb Burst",
-  "sound": "",
-  "volume": 80
+  "sound": "Symbiote_Effect_Lamb_Explode",
+  "volume": 100
 }
 

@@ -218,6 +218,16 @@
           "sound": "",
           "text": "For...the...win! Galactic Assault Squad!",
           "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "There's no kill like overkill! Galactic Assault Squad!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Rack up another win for Galactic Assault Squad!",
+          "volume": 50
         }
       ],
       "tag": "Quest Boss Victory"
