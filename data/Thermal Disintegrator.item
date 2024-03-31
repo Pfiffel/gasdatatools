@@ -6,7 +6,8 @@
     {
       "data": {
         "cooldown": 525,
-        "damage": 25,
+        "damage": 20,
+        "displayName": "",
         "emitterType": "Thermal Disintegrator Trail",
         "f": 0,
         "halfArc": 150,

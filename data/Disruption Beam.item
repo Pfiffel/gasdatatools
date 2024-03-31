@@ -1,0 +1,50 @@
+{
+  "boon": 1,
+  "credits": 5,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "range": 280,
+        "reticleColor": 5335124,
+        "statusEffects": [
+          {
+            "data": {
+              "duration": 2500
+            },
+            "tag": "SusceptibleEffect"
+          },
+          {
+            "data": {
+              "arcOffset": 0,
+              "halfArc": 1800,
+              "maxDist": 10,
+              "minDist": 0,
+              "particleType": "Cataract Effect Line",
+              "spacing": 15
+            },
+            "tag": "ParticleLineEffect"
+          },
+          {
+            "data": {
+              "sound": "retro_laser_01",
+              "volume": 100
+            },
+            "tag": "PlaySoundEffect"
+          }
+        ],
+        "targets": 1,
+        "when": 8
+      },
+      "tag": "TriggeredRandomTargetEffect"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Disruption Beam",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 1
+}
+

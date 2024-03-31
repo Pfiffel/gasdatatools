@@ -1,0 +1,51 @@
+{
+  "boon": 1,
+  "credits": 5,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 14,
+        "cooldown": 1000,
+        "params": [
+          {
+            "data": {
+              "autoAim": 1,
+              "damage": 50,
+              "delay": 0,
+              "drawReticle": 0,
+              "drawTooltip": 1,
+              "explosionType": "Plume Divertor Burst",
+              "facing": 0,
+              "halfArc": 75,
+              "mirror": 0,
+              "offset": {
+                "x": 0,
+                "y": 0
+              },
+              "range": 315,
+              "reticleColor": 11184810,
+              "statusEffects": [],
+              "tag": "",
+              "targetingDelay": 0,
+              "tooltip": ""
+            },
+            "tag": "ShotgunTrigger"
+          }
+        ],
+        "percentChance": 100,
+        "reticleColor": 1858356,
+        "targetingRange": 315
+      },
+      "tag": "PeriodicTriggerEffect"
+    }
+  ],
+  "engines": 1,
+  "guns": 0,
+  "name": "Plume Divertor",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 0
+}
+

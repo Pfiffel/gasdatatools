@@ -6,7 +6,8 @@
     {
       "data": {
         "cooldown": 500,
-        "damage": 45,
+        "damage": 36,
+        "displayName": "",
         "emitterType": "Picolaser Trail",
         "f": 0,
         "halfArc": 75,

@@ -19,7 +19,7 @@
           },
           "tag": "HealOverTimeTrigger"
         },
-        "when": 4
+        "when": 3
       },
       "tag": "TriggeredTriggerEffect"
     }
@@ -28,7 +28,6 @@
   "guns": 0,
   "name": "Nanoassembler",
   "overworldDrop": 1,
-  "plusEffects": [],
   "precursorTech": 0,
   "rare": 1,
   "triggers": 0

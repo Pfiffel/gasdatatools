@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 100,
+      "maxDistPercent": 100,
+      "minDistPercent": 20,
+      "particleType": "Xenofrog Warlord Explosion",
+      "uniformAngles": 0
+    },
+    {
+      "angularDensity": 50,
+      "maxDistPercent": 100,
+      "minDistPercent": 90,
+      "particleType": "Xenofrog Warlord Explosion",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Xenofrog Warlord Explosion",
+  "sound": "Enemy_XenofrogGrenadier_Bomb_Explosion_01",
+  "volume": 100
+}
+

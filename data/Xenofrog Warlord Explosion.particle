@@ -1,0 +1,40 @@
+{
+  "colorPoints": [
+    {
+      "frac": 200,
+      "value": 1660592
+    },
+    {
+      "frac": 900,
+      "value": 1990075
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 500,
+  "minLifetime": 400,
+  "name": "Xenofrog Warlord Explosion",
+  "objectType": "Xenofrog Grenadier Particle",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 50,
+      "value": 1000
+    },
+    {
+      "frac": 900,
+      "value": 1000
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 8071684,
+  "startScale": 10,
+  "stayLow": 1
+}
+

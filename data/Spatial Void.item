@@ -1,0 +1,23 @@
+{
+  "boon": 1,
+  "credits": 5,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 13,
+        "amount": -15,
+        "statType": 10
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "engines": 1,
+  "guns": 0,
+  "name": "Spatial Void",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 0
+}
+

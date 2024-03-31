@@ -1,0 +1,47 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Xenofrog Tongue Projectile",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 15957919,
+      "height": -1,
+      "mirror": 1,
+      "name": "Glyph",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 85,
+          "y": 14
+        },
+        {
+          "x": 64,
+          "y": 35
+        },
+        {
+          "x": 42,
+          "y": 39
+        },
+        {
+          "x": 15,
+          "y": 22
+        },
+        {
+          "x": -59,
+          "y": 26
+        },
+        {
+          "x": -75,
+          "y": 14
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

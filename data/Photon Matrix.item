@@ -8,9 +8,10 @@
         "activeWhile": 0,
         "shield": {
           "color": 6862952,
+          "displayName": "",
           "left": -1800,
           "level": 0,
-          "maxStrength": 100,
+          "maxStrength": 80,
           "right": 1800
         }
       },
@@ -21,7 +22,6 @@
   "guns": 0,
   "name": "Photon Matrix",
   "overworldDrop": 1,
-  "plusEffects": [],
   "precursorTech": 0,
   "rare": 1,
   "triggers": 0

@@ -1,0 +1,34 @@
+{
+  "boon": 1,
+  "credits": 5,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 13,
+        "gunTag": "",
+        "maxProcsPerSecond": 10,
+        "percentChance": 100,
+        "statusEffects": [
+          {
+            "data": {
+              "appliesToMana": 0,
+              "healing": 6
+            },
+            "tag": "VampEffect"
+          }
+        ],
+        "tooltipGunDescription": "gun"
+      },
+      "tag": "GunProcs"
+    }
+  ],
+  "engines": 1,
+  "guns": 0,
+  "name": "Replating Reactor",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 0
+}
+

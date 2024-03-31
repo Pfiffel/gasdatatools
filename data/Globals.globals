@@ -1,4 +1,10 @@
 {
+  "bossDifficultyFactors": {
+    "perAccoladeMicros": 3000,
+    "perBossKillMicros": 3000,
+    "perExtraPlayerMicros": 100000,
+    "perUnlockedSlotMicros": 3000
+  },
   "defaultSymbiotes": [
     "Barnacle",
     "Forest Mother",
@@ -96,6 +102,7 @@
       "tier": 8
     }
   ],
+  "triggerErrorSoundPack": "Trigger Error",
   "uiColors": {
     "abilityHighlightColor": 3531257,
     "abilityTitleColor": 4364026

@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 40,
+      "maxDistPercent": 100,
+      "minDistPercent": 90,
+      "particleType": "Xenofrog Tongue",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Xenofrog Warlord Bomb",
+  "sound": "Symbiote_Effect_Tentacle_Zap",
+  "volume": 100
+}
+
