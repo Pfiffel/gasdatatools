@@ -13,12 +13,17 @@ body
 	color: #DDD;
 	font-size: 12px;
 	font-family: Fira Mono, sans-serif;
-
+	/*
+	-webkit-text-stroke: 2px #000;
+	paint-order: stroke fill;
+	*/
+	/*
 	text-shadow:
 	-1px    -1px	0   #000,
 	1px     -1px	0   #000,
 	-1px    1px		0   #000,
 	1px     1px		0   #000;
+	*/
 }
 table
 {
