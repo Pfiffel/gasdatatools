@@ -77,7 +77,7 @@ class Monster
 					damageMT += wD.salvoes[j].bombCount * damageST;
                     total += wD.salvoes[j].bombCount;
 				}
-				this._mortars[tag+wD.damage+wD.bombRadius] = {"damage": wD.damage, "radius": wD.bombRadius, "salvoes": total, "wD": wD};
+				this._mortars[tag+wD.damage+wD.bombRadius] = {"damage": wD.damage, "radius": wD.bombRadius, "salvoes": total, "powers": wD.powers, "wD": wD};
 				break;
 			case "MortarParams":
 				damageST = wD.damage;
@@ -240,10 +240,24 @@ class Monster
 						if(power.tag == "SizzlePower"){
 							s += power.data.dps + " dps";
 						}
+						else if(power.tag == "DisablePower"){
+							var aDisabled = [];
+							if(power.data.engines) aDisabled.push("engines");
+							if(power.data.guns) aDisabled.push("guns");
+							if(power.data.health) aDisabled.push("health regen");
+							if(power.data.mana) aDisabled.push("mana regen");
+							if(power.data.rotation) aDisabled.push("rotation");
+							if(power.data.scoot) aDisabled.push("scoot");
+							if(power.data.shield) aDisabled.push("shield");
+							if(power.data.triggers) aDisabled.push("triggers");
+							var duration = " " + round(power.data.duration/1000, 2) + "s";
+							var cap = (power.data.caption != undefined && power.data.caption != "") ? power.data.caption : power.tag;
+							s += cap + " (disables " + aDisabled.toString() + ") " + duration;
+						}
             else if(power.data.duration != undefined){
                 var damage = (power.data.damage != undefined) ? " <b>" + power.data.damage + "</b>" : "";
                 var duration = " " + round(power.data.duration/1000, 2) + "s";
-                var cap = power.data.caption != undefined ? power.data.caption : power.tag;
+                var cap = (power.data.caption != undefined && power.data.caption != "") ? power.data.caption : power.tag;
                 s += cap + damage + duration;
             }
             else 
