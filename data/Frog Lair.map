@@ -1,35 +1,5 @@
 {
   "decorateSpawnPoints": 0,
-  "groundPoints": [
-    {
-      "color": 10754586,
-      "p": {
-        "x": -6450,
-        "y": -6727
-      }
-    },
-    {
-      "color": 2000384,
-      "p": {
-        "x": 6750,
-        "y": -6529
-      }
-    },
-    {
-      "color": 12096002,
-      "p": {
-        "x": 6666,
-        "y": 6810
-      }
-    },
-    {
-      "color": 7481548,
-      "p": {
-        "x": -6675,
-        "y": 6445
-      }
-    }
-  ],
   "groundTexturePainterName": "froglair",
   "groundZones": [
     {
@@ -158,7 +128,7 @@
     {
       "f": 0,
       "label": "",
-      "note": "Spawn: Xenofrog General, Xenofrog King, Xenofrog Warlord",
+      "note": "Spawn: Xenofrog General, Xenofrog King, Xenofrog Warlord, Xenofrog Queen",
       "objectType": "Invisible Marker",
       "p": {
         "x": 0,

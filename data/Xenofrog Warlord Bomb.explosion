@@ -9,7 +9,7 @@
     }
   ],
   "name": "Xenofrog Warlord Bomb",
-  "sound": "Symbiote_Effect_Tentacle_Zap",
-  "volume": 100
+  "sound": "Enemy_XenofrogGeneral_Tongue_Blast",
+  "volume": 150
 }
 

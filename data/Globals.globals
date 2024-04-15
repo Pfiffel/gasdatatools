@@ -105,7 +105,8 @@
   "triggerErrorSoundPack": "Trigger Error",
   "uiColors": {
     "abilityHighlightColor": 3531257,
-    "abilityTitleColor": 4364026
+    "abilityTitleColor": 4364026,
+    "priorityTargetColor": 16742144
   }
 }
 

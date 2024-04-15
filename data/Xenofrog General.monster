@@ -4,7 +4,7 @@
   "burrowDetectRange": 0,
   "collisionRadius": 70,
   "consolationItemPack": "",
-  "deathCrySoundPack": "Xenofrog Defender Death Cries",
+  "deathCrySoundPack": "Xenofrog General Enrage 2",
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 8000,
@@ -169,6 +169,7 @@
                         {
                           "data": {
                             "finalDistance": 50,
+                            "killVelocity": 0,
                             "particleLine": {
                               "arcOffset": 0,
                               "halfArc": 20,
@@ -177,14 +178,15 @@
                               "particleType": "Xenofrog Tongue",
                               "spacing": 50
                             },
-                            "speed": 700
+                            "speed": 700,
+                            "useShooterPosition": 0
                           },
                           "tag": "ReelInPower"
                         }
                       ],
                       "range": 600,
-                      "triggerSound": "Enemy_XenofrogDefender_Shotgun_Telegraph",
-                      "triggerVolume": 50
+                      "triggerSound": "Enemy_XenofrogGeneral_Tongue_Telegraph",
+                      "triggerVolume": 200
                     }
                   }
                 ]

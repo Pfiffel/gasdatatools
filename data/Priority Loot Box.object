@@ -1,0 +1,131 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Priority Loot Box",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16742144,
+      "height": 1,
+      "mirror": 1,
+      "name": "Body",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -37,
+          "y": 19
+        },
+        {
+          "x": -19,
+          "y": 37
+        },
+        {
+          "x": 19,
+          "y": 37
+        },
+        {
+          "x": 37,
+          "y": 19
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 15652550,
+      "height": 2,
+      "mirror": 1,
+      "name": "Gear",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -29,
+          "y": 5
+        },
+        {
+          "x": -17,
+          "y": 6
+        },
+        {
+          "x": -15,
+          "y": 12
+        },
+        {
+          "x": -22,
+          "y": 23
+        },
+        {
+          "x": -12,
+          "y": 29
+        },
+        {
+          "x": -5,
+          "y": 17
+        },
+        {
+          "x": 5,
+          "y": 17
+        },
+        {
+          "x": 12,
+          "y": 29
+        },
+        {
+          "x": 22,
+          "y": 23
+        },
+        {
+          "x": 15,
+          "y": 12
+        },
+        {
+          "x": 17,
+          "y": 6
+        },
+        {
+          "x": 29,
+          "y": 5
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16742144,
+      "height": 3,
+      "mirror": 1,
+      "name": "Dot",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 7,
+          "y": 2
+        },
+        {
+          "x": 2,
+          "y": 7
+        },
+        {
+          "x": -2,
+          "y": 7
+        },
+        {
+          "x": -7,
+          "y": 2
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

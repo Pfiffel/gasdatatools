@@ -1,0 +1,353 @@
+{
+  "armor": 0,
+  "boss": 1,
+  "burrowDetectRange": 0,
+  "collisionRadius": 65,
+  "consolationItemPack": "Tier 5 Common",
+  "deathCrySoundPack": "Xenofrog General Death Cries",
+  "fixedFacing": 0,
+  "healRate": 0,
+  "hp": 8000,
+  "idleAnimation": "Xenofrog Idle",
+  "itemPackDrops": [
+    {
+      "itemPack": "Precursor Techs",
+      "micros": 150000
+    }
+  ],
+  "maxMoveDistance": 200,
+  "name": "Xenofrog Queen 3",
+  "objectType": "Xenofrog Queen",
+  "onDamageSoundPack": "Xenofrog Hits",
+  "pauseBetweenMovements": 700,
+  "resistant": 0,
+  "runAnimation": "Xenofrog Leap",
+  "runAnimationDuration": 700,
+  "runSpeed": 240,
+  "shields": [],
+  "successorInvulnerability": 1,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "",
+      "cooldown": 200,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "emitterType": "",
+          "explosionType": "",
+          "guardian": 0,
+          "lifetime": 0,
+          "maxCount": 5,
+          "monsterName": "Xenofrog Dire Warrior",
+          "movement": {
+            "data": {
+              "playerPolicy": 0,
+              "radius": 600
+            },
+            "tag": "RandomMovement"
+          },
+          "noCollide": 0,
+          "noRespawn": 1,
+          "projectileType": "Xenofrog Dire Warrior",
+          "range": 500,
+          "sound": "",
+          "speed": 300,
+          "volume": 50
+        },
+        "tag": "MinionParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "RandomTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "",
+      "cooldown": 200,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "emitterType": "",
+          "explosionType": "",
+          "guardian": 0,
+          "lifetime": 0,
+          "maxCount": 4,
+          "monsterName": "Xenofrog Dire Worker",
+          "movement": {
+            "data": {
+              "playerPolicy": 0,
+              "radius": 400
+            },
+            "tag": "RandomMovement"
+          },
+          "noCollide": 0,
+          "noRespawn": 1,
+          "projectileType": "Xenofrog Dire Worker",
+          "range": 350,
+          "sound": "",
+          "speed": 300,
+          "volume": 50
+        },
+        "tag": "MinionParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "RandomTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "Turret Right",
+      "cooldown": 1200,
+      "extraTargetingArc": 1200,
+      "halfArc": 600,
+      "objectType": "Xenofrog Queen Turret",
+      "params": {
+        "data": {
+          "gunBulletType": "Xenofrog Dire Defender Spit",
+          "range": 600
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 1
+        },
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "Turret Left",
+      "cooldown": 1100,
+      "extraTargetingArc": 1200,
+      "halfArc": 600,
+      "objectType": "Xenofrog Queen Turret",
+      "params": {
+        "data": {
+          "gunBulletType": "Xenofrog Dire Defender Spit",
+          "range": 600
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 1
+        },
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "Turret Back",
+      "cooldown": 1000,
+      "extraTargetingArc": 1200,
+      "halfArc": 600,
+      "objectType": "Xenofrog Queen Turret",
+      "params": {
+        "data": {
+          "gunBulletType": "Xenofrog Dire Defender Spit",
+          "range": 600
+        },
+        "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 1
+        },
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "Mouth",
+      "cooldown": 4000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "random": 0,
+          "weapons": [
+            {
+              "data": {
+                "blastSeries": [
+                  {
+                    "blasts": [
+                      {
+                        "angleOffset": -240,
+                        "delay": 0,
+                        "mirror": 0
+                      },
+                      {
+                        "angleOffset": -120,
+                        "delay": 500,
+                        "mirror": 0
+                      },
+                      {
+                        "angleOffset": 0,
+                        "delay": 1000,
+                        "mirror": 0
+                      },
+                      {
+                        "angleOffset": 120,
+                        "delay": 1500,
+                        "mirror": 0
+                      },
+                      {
+                        "angleOffset": 240,
+                        "delay": 2000,
+                        "mirror": 0
+                      }
+                    ],
+                    "params": {
+                      "damage": 0,
+                      "delay": 1000,
+                      "explosionType": "Xenofrog General Shotgun",
+                      "halfArc": 60,
+                      "lockMovement": 0,
+                      "powers": [
+                        {
+                          "data": {
+                            "finalDistance": 100,
+                            "killVelocity": 1,
+                            "particleLine": {
+                              "arcOffset": 0,
+                              "halfArc": 20,
+                              "maxDist": 6,
+                              "minDist": 3,
+                              "particleType": "Xenofrog Tongue",
+                              "spacing": 50
+                            },
+                            "speed": 800,
+                            "useShooterPosition": 1
+                          },
+                          "tag": "ReelInPower"
+                        },
+                        {
+                          "data": {
+                            "caption": "Caught",
+                            "duration": 500,
+                            "engines": 1,
+                            "guns": 0,
+                            "health": 0,
+                            "mana": 0,
+                            "rotation": 0,
+                            "scoot": 1,
+                            "shield": 0,
+                            "triggers": 0
+                          },
+                          "tag": "DisablePower"
+                        }
+                      ],
+                      "range": 700,
+                      "triggerSound": "Enemy_XenofrogGeneral_Tongue_Telegraph",
+                      "triggerVolume": 200
+                    }
+                  }
+                ]
+              },
+              "tag": "ShotgunBarrageParams"
+            }
+          ]
+        },
+        "tag": "CompoundParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 1
+        },
+        "tag": "PlayerTargeting"
+      }
+    },
+    {
+      "attachmentPoint": "Mouth",
+      "cooldown": 2500,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "bombRadius": 140,
+          "damage": 50,
+          "delay": 500,
+          "emitterType": "Xenofrog Trail Acidic",
+          "explosionType": "Xenofrog Queen Bomb",
+          "flightTime": 1500,
+          "objectType": "Xenofrog Queen Acid Projectile",
+          "powers": [
+            {
+              "data": {
+                "caption": "Acid",
+                "damage": 250,
+                "duration": 5000,
+                "emitterType": "Power DoT"
+              },
+              "tag": "DoTPower"
+            },
+            {
+              "data": {
+                "caption": "",
+                "duration": 5000,
+                "engines": 0,
+                "guns": 0,
+                "health": 1,
+                "mana": 0,
+                "rotation": 0,
+                "scoot": 0,
+                "shield": 0,
+                "triggers": 0
+              },
+              "tag": "DisablePower"
+            }
+          ],
+          "range": 700,
+          "salvoes": [
+            {
+              "angle": 0,
+              "bombCount": 1,
+              "radius": 350
+            },
+            {
+              "angle": 720,
+              "bombCount": 1,
+              "radius": 350
+            },
+            {
+              "angle": 1440,
+              "bombCount": 1,
+              "radius": 350
+            },
+            {
+              "angle": 2160,
+              "bombCount": 1,
+              "radius": 350
+            },
+            {
+              "angle": 2880,
+              "bombCount": 1,
+              "radius": 350
+            }
+          ],
+          "shootSound": "Enemy_XenofrogGrenadier_Bomb_Launch_01",
+          "shootVolume": 80
+        },
+        "tag": "MortarBarrageParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 1
+        },
+        "tag": "PlayerTargeting"
+      }
+    }
+  ],
+  "xp": 100
+}
+

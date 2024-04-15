@@ -4,7 +4,7 @@
   "burrowDetectRange": 0,
   "collisionRadius": 70,
   "consolationItemPack": "",
-  "deathCrySoundPack": "Xenofrog Defender Death Cries",
+  "deathCrySoundPack": "Xenofrog General Enrage 2",
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 8000,
@@ -153,9 +153,9 @@
                 ],
                 "radius": 200,
                 "range": 600,
-                "shootSound": "",
-                "shootVolume": 50,
-                "speed": 400,
+                "shootSound": "Enemy_XenofrogGeneral_Tongue_Telegraph",
+                "shootVolume": 200,
+                "speed": 600,
                 "tweenType": "EXPOIN"
               },
               "tag": "MortarParams"

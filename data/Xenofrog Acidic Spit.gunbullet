@@ -22,13 +22,14 @@
         "health": 1,
         "mana": 0,
         "rotation": 0,
+        "scoot": 0,
         "shield": 0,
         "triggers": 0
       },
       "tag": "DisablePower"
     }
   ],
-  "soundPack": "Xenofrog Defender Bullet",
+  "soundPack": "Xenofrog Fusilier Bullet",
   "speed": 140
 }
 

@@ -4,7 +4,7 @@
   "burrowDetectRange": 0,
   "collisionRadius": 80,
   "consolationItemPack": "",
-  "deathCrySoundPack": "Xenofrog Defender Death Cries",
+  "deathCrySoundPack": "Xenofrog General Enrage 2",
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 8000,
@@ -197,7 +197,7 @@
                       ],
                       "range": 600,
                       "triggerSound": "Enemy_XenofrogDefender_Shotgun_Telegraph",
-                      "triggerVolume": 50
+                      "triggerVolume": 200
                     }
                   }
                 ]
