@@ -126,10 +126,11 @@ function makeAccoladeCell(container, player)
 		divTable.appendChild(MakeStatsTable(accolade, 0));
 		container.appendChild(divTable);
 	}
-	var totalCost = CalculateAccoladeCost(accolades.length);
-	accHeader.innerHTML = "<b>" + player.name + " Accolade Bonuses" + "</b> (" + accolades.length + " total, " + totalCost + " total Accolade cost: " + totalCost*100 + " boss kills & " + totalCost*350 + " Glory)";
+	var maxAccolades = Math.min(9, accolades.length);
+	var totalCost = CalculateAccoladeCost(maxAccolades);
+	accHeader.innerHTML = "<b>" + player.name + " Accolade Bonuses" + "</b> (" + accolades.length + " total, " + maxAccolades + " max, " + totalCost + " total Accolade cost: " + totalCost*100 + " boss kills & " + totalCost*350 + " Glory)";
 	if(miniProgressionTable[player.name] == undefined) miniProgressionTable[player.name] = {};
-	miniProgressionTable[player.name].bonuses = accolades.length;
+	miniProgressionTable[player.name].bonuses = maxAccolades;
 	miniProgressionTable[player.name].accolades = totalCost;
 }
 function CalculateAccoladeCost(amount)
