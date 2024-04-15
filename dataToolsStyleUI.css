@@ -1,48 +1,51 @@
-input, select
-{
+input,
+select {
 	margin: 2px 6px 2px 0;
 	background-color: #272830;
 	color: #FFF;
 	font-weight: bold;
 	text-shadow:
-	-1px    -1px	0   #000,
-	1px     -1px	0   #000,
-	-1px    1px		0   #000,
-	1px     1px		0   #000;
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
+
 input:disabled {
-  background: #ccc;
+	background: #ccc;
 }
+
 .tab_button {
 	width: 160px;
 	height: 40px;
 	padding: 6px 6px;
 	font-size: 16px;
 }
-select
-{
+
+select {
 	background-color: #272830;
 	padding: 2px 0 2px 0px;
 	cursor: pointer;
 	font-weight: bold;
 }
-.radioCont
-{
+
+.radioCont {
 	display: inline-block;
 	padding: 0 6px 0 0;
 }
-option
-{
+
+option {
 	background-color: #272830;
 	font-weight: bold;
 }
-input[type="number"]
-{
+
+input[type="number"] {
 	padding: 1px 0 1px 4px;
 	width: 30px;
 }
-input[type="checkbox"], input[type="radio"]
-{
+
+input[type="checkbox"],
+input[type="radio"] {
 	margin: 0px 3px 0px 0px;
 	vertical-align: text-bottom;
 }
@@ -50,13 +53,13 @@ input[type="checkbox"], input[type="radio"]
 input[type=text] {
 	padding: 1px 0 1px 4px;
 }
-input[type="button"]
-{
+
+input[type="button"] {
 	padding: 2px 2px;
 	cursor: pointer;
 }
-button
-{
+
+button {
 	margin: 4px 2px 4px 0;
 	padding: 2px 2px;
 	cursor: pointer;

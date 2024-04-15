@@ -3,7 +3,7 @@ var TIERS = 6;
 var SYMBIOTE_DROPPERS = [];
 var tableOutput = document.getElementById("tableOutput");
 
-var datatypes = ["symbiote","monster","object","speaker","globals"]; // for utilGAS to load files, calls parseData once completed
+var datatypes = ["symbiote", "monster", "object", "speaker", "globals"]; // for utilGAS to load files, calls parseData once completed
 loadGasData();
 
 var header = document.getElementById("header");
@@ -17,52 +17,44 @@ var showOnlyDefault = makeInputCheckbox("Only Show Default Symbiotes", RefreshLi
 
 var defaultSymbiotes;
 
-function parseData()
-{
+function parseData() {
 	defaultSymbiotes = GetGlobals().defaultSymbiotes;
 	RefreshLists();
 }
-function RefreshLists()
-{
+function RefreshLists() {
 	tableOutput.innerHTML = "";
 	header.innerHTML = "";
 	var tbl = document.createElement('table');
 	let th = tbl.insertRow();
-	
-	for (let t = 1; t < TIERS+1; t++)
-	{
+
+	for (let t = 1; t < TIERS + 1; t++) {
 		SYMBIOTE_DROPPERS[t] = [];
 	}
-	for (let m = 0; m < gasData["monster"].length; m++)
-	{
+	for (let m = 0; m < gasData["monster"].length; m++) {
 		var monster = gasData["monster"][m];
-		if(monsterSkip[monster.name] != true && !monster.name.includes("Nest") && isSymbioteDropper(monster))
-			SYMBIOTE_DROPPERS[getTier(monster.xp)-2].push(monster);
+		if (monsterSkip[monster.name] != true && !monster.name.includes("Nest") && isSymbioteDropper(monster))
+			SYMBIOTE_DROPPERS[getTier(monster.xp) - 2].push(monster);
 	}
 	var totalAmount = 0;
 	var combinations = 1;
-	for (let t = 1; t < TIERS+1; t++)
-	{
+	for (let t = 1; t < TIERS + 1; t++) {
 		var amount = GetSymbAmount(t);
 		combinations *= amount;
 		totalAmount += amount;
 		var headerCell = makeHeaderCell("Tier " + t + " - " + colorWrap(TIER_NAMES[t] + " Symbiotes", TIER_COLORS[t]) + " - " + amount + " total", th);
-		
-		if(showDroppers.checked)
-		{
+
+		if (showDroppers.checked) {
 			headerCell.innerHTML += "<br/>From: ";
-			for (let i = 0; i < SYMBIOTE_DROPPERS[t].length; i++)
-			{
+			for (let i = 0; i < SYMBIOTE_DROPPERS[t].length; i++) {
 				var divSprite = document.createElement('div');
 				divSprite.classList.add("inline");
-				divSprite.appendChild(draw(SYMBIOTE_DROPPERS[t][i],0.25));
+				divSprite.appendChild(draw(SYMBIOTE_DROPPERS[t][i], 0.25));
 				headerCell.appendChild(divSprite);
 			}
 		}
 	}
 	let tr = tbl.insertRow();
-	for (let t = 1; t < TIERS+1; t++)
-	{
+	for (let t = 1; t < TIERS + 1; t++) {
 		var cell = makeCell("", tr);
 		cell.appendChild(parseTierList(t));
 	}
@@ -73,25 +65,21 @@ function RefreshLists()
 	tableOutput.appendChild(showUsage(ACTIVE_WHILE_NAMES));
 	tableOutput.appendChild(showUsage(TRIGGERED_TRIGGER_EFFECTS));
 }
-function GetSymbAmount(t)
-{
+function GetSymbAmount(t) {
 	var amount = 0;
-	for (var i = 0; i < gasData["symbiote"].length; i++)
-	{
+	for (var i = 0; i < gasData["symbiote"].length; i++) {
 		var symb = gasData["symbiote"][i];
-		if(symb.tier != t) continue;
+		if (symb.tier != t) continue;
 		amount++;
 	}
 	return amount;
 }
-function parseTierList(t)
-{
+function parseTierList(t) {
 	var div = document.createElement('div');
-	for (var i = 0; i < gasData["symbiote"].length; i++)
-	{
+	for (var i = 0; i < gasData["symbiote"].length; i++) {
 		var symb = gasData["symbiote"][i];
-		if(symb.tier != t) continue;
-		if(showOnlyDefault.checked && !IsStarter(symb)) continue;
+		if (symb.tier != t) continue;
+		if (showOnlyDefault.checked && !IsStarter(symb)) continue;
 		var cont = document.createElement('div');
 		var tbl = MakeStatsTable(symb, symb.tier, true, showPortraits.checked, showDescriptions.checked, showQuotes.checked);
 		/*
@@ -105,10 +93,9 @@ function parseTierList(t)
 	}
 	return div;
 }
-function IsStarter(symb)
-{
-	for (let i in defaultSymbiotes){
-		if(defaultSymbiotes[i] == symb.name) return true;
+function IsStarter(symb) {
+	for (let i in defaultSymbiotes) {
+		if (defaultSymbiotes[i] == symb.name) return true;
 	}
 	return false;
 }

@@ -1,4 +1,4 @@
-function makeInputText(id, callback, container, value, size, eventType, className){
+function makeInputText(id, callback, container, value, size, eventType, className) {
 	eventType = typeof eventType !== 'undefined' ? eventType : "keypress";
 	size = typeof size !== 'undefined' ? size : 5;
 	var inputText = document.createElement('input');
@@ -7,7 +7,7 @@ function makeInputText(id, callback, container, value, size, eventType, classNam
 	inputText.size = size;
 	inputText.value = value != undefined ? value : "";
 	inputText.type = "text";
-	if(className != undefined) inputText.classList.add(className);
+	if (className != undefined) inputText.classList.add(className);
 	//inputText.addEventListener('keyup', callback);
 	inputText.addEventListener('keypress', function (e) {
 		if ((e.which || e.keyCode) === 13) callback();
@@ -15,7 +15,7 @@ function makeInputText(id, callback, container, value, size, eventType, classNam
 	container.appendChild(inputText);
 	return inputText;
 }
-function makeInputCheckbox(id, callback, container, checked){
+function makeInputCheckbox(id, callback, container, checked) {
 	var cbcont = document.createElement('div');
 	cbcont.classList.add("checkbox_container");
 	var input = document.createElement('input');
@@ -32,11 +32,10 @@ function makeInputCheckbox(id, callback, container, checked){
 	container.appendChild(cbcont);
 	return input;
 }
-function makeInputRadios(name, buttons, callback, container){
+function makeInputRadios(name, buttons, callback, container) {
 	var cbcont = document.createElement('div');
 	cbcont.classList.add("checkbox_container");
-	for (var btn in buttons)
-	{
+	for (var btn in buttons) {
 		var radioCont = document.createElement('div');
 		radioCont.classList.add("radioCont");
 		var input = document.createElement('input');
@@ -59,7 +58,7 @@ function makeInputRadios(name, buttons, callback, container){
 	return cbcont;
 }
 
-function makeInputNumstep(id, callback, container, step, min, max, value){
+function makeInputNumstep(id, callback, container, step, min, max, value) {
 	var input = document.createElement('input');
 	input.id = id;
 	input.type = "number";
@@ -76,44 +75,44 @@ function makeInputNumstep(id, callback, container, step, min, max, value){
 	container.appendChild(newlabel);
 	return input;
 }
-function makeButton(id, callback, container, className){
+function makeButton(id, callback, container, className) {
 	var input = document.createElement('input');
 	input.id = id;
-	if(className != undefined) input.classList.add(className);
+	if (className != undefined) input.classList.add(className);
 	input.type = "button";
 	input.value = id;
 	input.addEventListener('click', callback);
-	container.appendChild(input); 
+	container.appendChild(input);
 }
-function makeDividerH(html, width, container){
+function makeDividerH(html, width, container) {
 	var div = document.createElement("div");
-	div.style.display = "inline-block"; 
-	div.style.width = width + "px"; 
+	div.style.display = "inline-block";
+	div.style.width = width + "px";
 	div.innerHTML = html;
 	container.appendChild(div);
 }
-function makeDividerV(html, height, container){
+function makeDividerV(html, height, container) {
 	var div = document.createElement("div");
-	div.style.display = "block"; 
-	div.style.height = height + "px"; 
+	div.style.display = "block";
+	div.style.height = height + "px";
 	div.innerHTML = html;
 	container.appendChild(div);
 }
-function makeAudio(container, type, path, volume){
-	var sound      = document.createElement('audio');
-	sound.id       = 'audio-player';
+function makeAudio(container, type, path, volume) {
+	var sound = document.createElement('audio');
+	sound.id = 'audio-player';
 	sound.controls = 'controls';
-	sound.src      = path;
-	sound.type     = 'audio/ogg';
-	sound.volume = volume/400;
+	sound.src = path;
+	sound.type = 'audio/ogg';
+	sound.volume = volume / 400;
 	//sound.style.scale="0.5"
 	//sound.style.width="50%";
 	var newlabel = document.createElement("div");
-	
-	newlabel.innerHTML = type+" ("+volume+"): ";
+
+	newlabel.innerHTML = type + " (" + volume + "): ";
 	var cont = document.createElement("div");
-	cont.appendChild(newlabel); 
+	cont.appendChild(newlabel);
 	//if(className != undefined) input.classList.add(className);
-	cont.appendChild(sound); 
-	container.appendChild(cont); 
+	cont.appendChild(sound);
+	container.appendChild(cont);
 }
