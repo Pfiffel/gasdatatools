@@ -136,7 +136,7 @@ function MakeList() {
 	makeHeaderCell("Sound Type", th);
 	makeHeaderCell("Using", th);
 	for (let entityType in soundList) {
-		if (entityType != "item") continue;
+		//if(entityType != "item") continue;
 		var soundRoots = soundList[entityType];
 		for (let soundRoot in soundRoots) {
 			if (soundRoot.includes("Dagger")) continue;
@@ -145,7 +145,8 @@ function MakeList() {
 			if (soundRoot.includes("Testank")) continue;
 			if (soundRoot.includes("Wasptest")) continue;
 			var soundTypes = soundRoots[soundRoot];
-			//if(!soundRoot.includes("Xenofrog")) continue;
+			if (!soundRoot.includes("Xenofrog")) continue;
+			if (soundRoot.includes("Nest")) continue;
 			//if(!soundRoot.includes("Royal")) continue;
 			//if(/[2-9]/.test(soundRoot)) continue;
 			for (let tag in soundTypes) {
@@ -257,6 +258,13 @@ function CheckWeapon(monster, weapon, compound, index) {
 	if (tag == "ShotgunParams") {
 		soundList["monster"][monster.data.name][add + "Shotgun Trigger"] = wD.triggerSound;
 		soundList["monster"][monster.data.name][add + "Shotgun Explosion"] = getExplosionSound(wD.explosionType);// == "" ? "empty" : data.explosionType;
+	}
+	if (tag == "ShotgunBarrageParams") {
+		for (var iB in wD.blastSeries) {
+			blastSeriesParams = wD.blastSeries[iB].params;
+			soundList["monster"][monster.data.name][add + "Shotgun Trigger"] = blastSeriesParams.triggerSound;
+			soundList["monster"][monster.data.name][add + "Shotgun Explosion"] = getExplosionSound(blastSeriesParams.explosionType);
+		}
 	}
 	if (tag == "MortarParams" || tag == "MortarBarrageParams") {
 		soundList["monster"][monster.data.name][add + "Mortar Shoot"] = wD.shootSound;
