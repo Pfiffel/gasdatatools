@@ -36,8 +36,11 @@
           "explosionType": "",
           "guardian": 0,
           "lifetime": 0,
-          "maxCount": 4,
-          "monsterName": "Xenofrog Dire Pustulant",
+          "maxCount": 2,
+          "monsterName": "",
+          "monsterNames": [
+            "Xenofrog Dire Pustulant"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 0,
@@ -74,8 +77,11 @@
           "explosionType": "",
           "guardian": 0,
           "lifetime": 0,
-          "maxCount": 3,
-          "monsterName": "Xenofrog Dire Grenadier",
+          "maxCount": 2,
+          "monsterName": "",
+          "monsterNames": [
+            "Xenofrog Dire Grenadier"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 0,
@@ -102,7 +108,7 @@
     },
     {
       "attachmentPoint": "Mouth",
-      "cooldown": 1250,
+      "cooldown": 1450,
       "extraTargetingArc": 0,
       "halfArc": 1800,
       "objectType": "",
@@ -151,7 +157,7 @@
                     "tag": "DisablePower"
                   }
                 ],
-                "radius": 200,
+                "radius": 150,
                 "range": 600,
                 "shootSound": "Enemy_XenofrogGeneral_Tongue_Telegraph",
                 "shootVolume": 200,
@@ -163,16 +169,7 @@
             {
               "data": {
                 "angleBetweenProjectiles": 300,
-                "gunBulletType": "Xenofrog Dire Defender Spit",
-                "numProjectiles": 5,
-                "range": 600
-              },
-              "tag": "GunParams"
-            },
-            {
-              "data": {
-                "angleBetweenProjectiles": 300,
-                "gunBulletType": "Xenofrog Dire Defender Spit",
+                "gunBulletType": "Xenofrog King Spit",
                 "numProjectiles": 5,
                 "range": 600
               },
@@ -191,7 +188,7 @@
     },
     {
       "attachmentPoint": "",
-      "cooldown": 6000,
+      "cooldown": 9000,
       "extraTargetingArc": 0,
       "halfArc": 1800,
       "objectType": "",
@@ -210,18 +207,28 @@
                         "mirror": 0
                       },
                       {
-                        "angleOffset": 900,
+                        "angleOffset": 600,
                         "delay": 1500,
                         "mirror": 0
                       },
                       {
-                        "angleOffset": 1800,
+                        "angleOffset": 1200,
                         "delay": 3000,
                         "mirror": 0
                       },
                       {
-                        "angleOffset": 2700,
+                        "angleOffset": 1800,
                         "delay": 4500,
+                        "mirror": 0
+                      },
+                      {
+                        "angleOffset": 2400,
+                        "delay": 6000,
+                        "mirror": 0
+                      },
+                      {
+                        "angleOffset": 3000,
+                        "delay": 7500,
                         "mirror": 0
                       }
                     ],
@@ -229,10 +236,10 @@
                       "damage": 300,
                       "delay": 1000,
                       "explosionType": "Xenofrog Warlord Explosion",
-                      "halfArc": 450,
+                      "halfArc": 300,
                       "lockMovement": 0,
                       "powers": [],
-                      "range": 450,
+                      "range": 400,
                       "triggerSound": "Enemy_XenofrogDefender_Shotgun_Telegraph",
                       "triggerVolume": 50
                     }
@@ -249,12 +256,12 @@
         "data": {
           "alsoTargetDematerialized": 0
         },
-        "tag": "PlayerTargeting"
+        "tag": "NorthTargeting"
       }
     },
     {
       "attachmentPoint": "",
-      "cooldown": 3000,
+      "cooldown": 3600,
       "extraTargetingArc": 0,
       "halfArc": 1800,
       "objectType": "",
@@ -267,7 +274,7 @@
                 "bulletRange": 800,
                 "delay": 750,
                 "glyphType": "Barrage Glyph",
-                "gunBulletType": "Xenofrog Dire Worker Spit",
+                "gunBulletType": "Xenofrog Dire Defender Spit",
                 "numBullets": 5,
                 "range": 800,
                 "salvoes": [

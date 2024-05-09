@@ -37,7 +37,10 @@
           "guardian": 0,
           "lifetime": 0,
           "maxCount": 4,
-          "monsterName": "Xenofrog Soldier",
+          "monsterName": "",
+          "monsterNames": [
+            "Xenofrog Soldier"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 1,
@@ -75,7 +78,10 @@
           "guardian": 0,
           "lifetime": 0,
           "maxCount": 6,
-          "monsterName": "Xenofrog Grenadier",
+          "monsterName": "",
+          "monsterNames": [
+            "Xenofrog Grenadier"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 0,
@@ -101,7 +107,6 @@
       }
     }
   ],
-  "xp": 16,
-  "xpLevelCap": 19
+  "xp": 16
 }
 

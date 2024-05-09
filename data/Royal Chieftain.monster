@@ -1,18 +1,21 @@
 {
+  "armor": 0,
   "boss": 0,
   "burrowDetectRange": 0,
   "collisionRadius": 38,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Royal Chieftain Death Cries",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 380,
   "idleAnimation": "Royal Windsor",
+  "itemPackDrops": [],
   "maxMoveDistance": 500,
   "name": "Royal Chieftain",
   "objectType": "Royal Chieftain",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "Royal Windsor",
   "runAnimationDuration": 200,
   "runSpeed": 60,
@@ -31,14 +34,15 @@
         "data": {
           "angleBetweenProjectiles": 150,
           "gunBulletType": "Royal Britannia",
-          "leading": 0,
           "numProjectiles": 1,
           "range": 600
         },
         "tag": "GunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -55,7 +59,10 @@
           "guardian": 0,
           "lifetime": 60000,
           "maxCount": 3,
-          "monsterName": "Royal Comet",
+          "monsterName": "",
+          "monsterNames": [
+            "Royal Comet"
+          ],
           "movement": {
             "data": {
               "radius": 100
@@ -73,12 +80,13 @@
         "tag": "MinionParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }
   ],
-  "xp": 16,
-  "xpLevelCap": 19
+  "xp": 16
 }
 

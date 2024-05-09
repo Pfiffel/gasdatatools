@@ -4,9 +4,7 @@
   "burrowDetectRange": 0,
   "collisionRadius": 35,
   "consolationItemPack": "",
-  "consolationPrizes": [],
   "deathCrySoundPack": "Iron Hammer Death Cries",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 8,
   "hp": 8000,
@@ -53,7 +51,6 @@
               "data": {
                 "angleBetweenProjectiles": 150,
                 "gunBulletType": "Iron Protector",
-                "leading": 0,
                 "numProjectiles": 1,
                 "range": 700
               },
@@ -92,7 +89,6 @@
               "data": {
                 "angleBetweenProjectiles": 150,
                 "gunBulletType": "Iron Protector",
-                "leading": 0,
                 "numProjectiles": 1,
                 "range": 700
               },
@@ -122,7 +118,10 @@
           "guardian": 0,
           "lifetime": 5000,
           "maxCount": 3,
-          "monsterName": "Iron Lieutenant Adler Mine",
+          "monsterName": "",
+          "monsterNames": [
+            "Iron Lieutenant Adler Mine"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 0,
@@ -169,7 +168,6 @@
               "data": {
                 "angleBetweenProjectiles": 300,
                 "gunBulletType": "Iron Bulwark",
-                "leading": 0,
                 "numProjectiles": 5,
                 "range": 850
               },
@@ -203,7 +201,6 @@
       }
     }
   ],
-  "xp": 50,
-  "xpLevelCap": 19
+  "xp": 50
 }
 

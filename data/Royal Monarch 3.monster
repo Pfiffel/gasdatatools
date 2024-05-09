@@ -4,9 +4,7 @@
   "burrowDetectRange": 0,
   "collisionRadius": 100,
   "consolationItemPack": "Tier 5 Common",
-  "consolationPrizes": [],
   "deathCrySoundPack": "Royal Monarch Death Cries",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 6000,
@@ -42,13 +40,15 @@
           "damage": 200,
           "emitterType": "Royal Grenadier Grenade Trail",
           "explosionType": "Royal Grenadier Grenade",
+          "fixedFlightTime": 0,
           "objectType": "Royal Monarch Bomb",
           "powers": [],
           "radius": 120,
           "range": 500,
           "shootSound": "Enemy_Grenade_Medium_Launch",
           "shootVolume": 50,
-          "speed": 220
+          "speed": 220,
+          "tweenType": "LINEAR"
         },
         "tag": "MortarParams"
       },
@@ -72,7 +72,10 @@
           "guardian": 0,
           "lifetime": 30000,
           "maxCount": 3,
-          "monsterName": "Royal Sentinel",
+          "monsterName": "",
+          "monsterNames": [
+            "Royal Sentinel"
+          ],
           "movement": {
             "data": {
               "radius": 200
@@ -128,6 +131,7 @@
           "delay": 1000,
           "explosionType": "Royal Monarch Shotgun",
           "halfArc": 80,
+          "lockMovement": 0,
           "powers": [
             {
               "data": {
@@ -151,7 +155,6 @@
       }
     }
   ],
-  "xp": 100,
-  "xpLevelCap": 19
+  "xp": 100
 }
 

@@ -4,9 +4,7 @@
   "burrowDetectRange": 0,
   "collisionRadius": 115,
   "consolationItemPack": "Tier 5 Common",
-  "consolationPrizes": [],
   "deathCrySoundPack": "Iron Colossus Death Cries",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 6000,
@@ -84,7 +82,10 @@
           "guardian": 0,
           "lifetime": 10000,
           "maxCount": 3,
-          "monsterName": "Iron Colossus Station",
+          "monsterName": "",
+          "monsterNames": [
+            "Iron Colossus Station"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 0,
@@ -207,7 +208,6 @@
       }
     }
   ],
-  "xp": 100,
-  "xpLevelCap": 19
+  "xp": 100
 }
 

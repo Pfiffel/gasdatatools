@@ -41,8 +41,13 @@
           "explosionType": "",
           "guardian": 0,
           "lifetime": 0,
-          "maxCount": 3,
-          "monsterName": "Xenofrog Dire Acidic Fusilier",
+          "maxCount": 6,
+          "monsterName": "",
+          "monsterNames": [
+            "Xenofrog Dire Acidic Fusilier",
+            "Xenofrog Dire Caustic Fusilier",
+            "Xenofrog Dire Volatile Fusilier"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 0,
@@ -52,83 +57,7 @@
           },
           "noCollide": 0,
           "noRespawn": 1,
-          "projectileType": "Xenofrog Dire Acidic Fusilier",
-          "range": 350,
-          "sound": "",
-          "speed": 300,
-          "volume": 50
-        },
-        "tag": "MinionParams"
-      },
-      "targeting": {
-        "data": {
-          "alsoTargetDematerialized": 0
-        },
-        "tag": "RandomTargeting"
-      }
-    },
-    {
-      "attachmentPoint": "",
-      "cooldown": 200,
-      "extraTargetingArc": 0,
-      "halfArc": 1800,
-      "objectType": "",
-      "params": {
-        "data": {
-          "emitterType": "",
-          "explosionType": "",
-          "guardian": 0,
-          "lifetime": 0,
-          "maxCount": 3,
-          "monsterName": "Xenofrog Dire Caustic Fusilier",
-          "movement": {
-            "data": {
-              "playerPolicy": 0,
-              "radius": 400
-            },
-            "tag": "RandomMovement"
-          },
-          "noCollide": 0,
-          "noRespawn": 1,
-          "projectileType": "Xenofrog Dire Caustic Fusilier",
-          "range": 350,
-          "sound": "",
-          "speed": 300,
-          "volume": 50
-        },
-        "tag": "MinionParams"
-      },
-      "targeting": {
-        "data": {
-          "alsoTargetDematerialized": 0
-        },
-        "tag": "RandomTargeting"
-      }
-    },
-    {
-      "attachmentPoint": "",
-      "cooldown": 200,
-      "extraTargetingArc": 0,
-      "halfArc": 1800,
-      "objectType": "",
-      "params": {
-        "data": {
-          "emitterType": "",
-          "explosionType": "",
-          "guardian": 0,
-          "lifetime": 0,
-          "maxCount": 3,
-          "monsterName": "Xenofrog Dire Volatile Fusilier",
-          "movement": {
-            "data": {
-              "playerPolicy": 0,
-              "radius": 400
-            },
-            "tag": "RandomMovement"
-          },
-          "noCollide": 0,
-          "noRespawn": 1,
-          "projectileType": "Xenofrog Dire Volatile Fusilier",
+          "projectileType": "Xenofrog Egg",
           "range": 350,
           "sound": "",
           "speed": 300,
@@ -168,13 +97,13 @@
                       "damage": 0,
                       "delay": 1000,
                       "explosionType": "Xenofrog General Shotgun",
-                      "halfArc": 220,
+                      "halfArc": 150,
                       "lockMovement": 0,
                       "powers": [
                         {
                           "data": {
-                            "finalDistance": 50,
-                            "killVelocity": 0,
+                            "finalDistance": 100,
+                            "killVelocity": 1,
                             "particleLine": {
                               "arcOffset": 0,
                               "halfArc": 20,
@@ -183,10 +112,25 @@
                               "particleType": "Xenofrog Tongue",
                               "spacing": 50
                             },
-                            "speed": 700,
-                            "useShooterPosition": 0
+                            "speed": 800,
+                            "useShooterPosition": 1
                           },
                           "tag": "ReelInPower"
+                        },
+                        {
+                          "data": {
+                            "caption": "Caught",
+                            "duration": 500,
+                            "engines": 1,
+                            "guns": 0,
+                            "health": 0,
+                            "mana": 0,
+                            "rotation": 0,
+                            "scoot": 1,
+                            "shield": 0,
+                            "triggers": 0
+                          },
+                          "tag": "DisablePower"
                         }
                       ],
                       "range": 600,
@@ -201,7 +145,7 @@
             {
               "data": {
                 "angleBetweenProjectiles": 200,
-                "gunBulletType": "Xenofrog Dire Worker Spit",
+                "gunBulletType": "Xenofrog Dire Defender Spit",
                 "numProjectiles": 6,
                 "range": 600
               },
@@ -209,8 +153,68 @@
             },
             {
               "data": {
+                "blastSeries": [
+                  {
+                    "blasts": [
+                      {
+                        "angleOffset": 0,
+                        "delay": 0,
+                        "mirror": 0
+                      }
+                    ],
+                    "params": {
+                      "damage": 0,
+                      "delay": 1000,
+                      "explosionType": "Xenofrog General Shotgun",
+                      "halfArc": 150,
+                      "lockMovement": 0,
+                      "powers": [
+                        {
+                          "data": {
+                            "finalDistance": 100,
+                            "killVelocity": 1,
+                            "particleLine": {
+                              "arcOffset": 0,
+                              "halfArc": 20,
+                              "maxDist": 6,
+                              "minDist": 3,
+                              "particleType": "Xenofrog Tongue",
+                              "spacing": 50
+                            },
+                            "speed": 800,
+                            "useShooterPosition": 1
+                          },
+                          "tag": "ReelInPower"
+                        },
+                        {
+                          "data": {
+                            "caption": "Caught",
+                            "duration": 500,
+                            "engines": 1,
+                            "guns": 0,
+                            "health": 0,
+                            "mana": 0,
+                            "rotation": 0,
+                            "scoot": 1,
+                            "shield": 0,
+                            "triggers": 0
+                          },
+                          "tag": "DisablePower"
+                        }
+                      ],
+                      "range": 600,
+                      "triggerSound": "Enemy_XenofrogGeneral_Tongue_Telegraph",
+                      "triggerVolume": 200
+                    }
+                  }
+                ]
+              },
+              "tag": "ShotgunBarrageParams"
+            },
+            {
+              "data": {
                 "angleBetweenProjectiles": 200,
-                "gunBulletType": "Xenofrog Dire Worker Spit",
+                "gunBulletType": "Xenofrog Dire Defender Spit",
                 "numProjectiles": 6,
                 "range": 600
               },
@@ -288,14 +292,14 @@
     },
     {
       "attachmentPoint": "Acidic1",
-      "cooldown": 600,
+      "cooldown": 800,
       "extraTargetingArc": 0,
       "halfArc": 1800,
       "objectType": "",
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Xenofrog Dire Acidic Spit",
+          "gunBulletType": "Xenofrog General Acidic Spit",
           "numProjectiles": 1,
           "range": 800
         },
@@ -311,14 +315,14 @@
     },
     {
       "attachmentPoint": "Acidic2",
-      "cooldown": 600,
+      "cooldown": 800,
       "extraTargetingArc": 0,
       "halfArc": 1800,
       "objectType": "",
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Xenofrog Dire Acidic Spit",
+          "gunBulletType": "Xenofrog General Acidic Spit",
           "numProjectiles": 1,
           "range": 800
         },
@@ -334,14 +338,14 @@
     },
     {
       "attachmentPoint": "Volatile1",
-      "cooldown": 600,
+      "cooldown": 800,
       "extraTargetingArc": 0,
       "halfArc": 1800,
       "objectType": "",
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Xenofrog Dire Volatile Spit",
+          "gunBulletType": "Xenofrog General Volatile Spit",
           "numProjectiles": 1,
           "range": 800
         },
@@ -357,14 +361,14 @@
     },
     {
       "attachmentPoint": "Volatile2",
-      "cooldown": 600,
+      "cooldown": 800,
       "extraTargetingArc": 0,
       "halfArc": 1800,
       "objectType": "",
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Xenofrog Dire Volatile Spit",
+          "gunBulletType": "Xenofrog General Volatile Spit",
           "numProjectiles": 1,
           "range": 800
         },
@@ -380,14 +384,14 @@
     },
     {
       "attachmentPoint": "Caustic1",
-      "cooldown": 600,
+      "cooldown": 800,
       "extraTargetingArc": 0,
       "halfArc": 1800,
       "objectType": "",
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Xenofrog Dire Caustic Spit",
+          "gunBulletType": "Xenofrog General Caustic Spit",
           "numProjectiles": 1,
           "range": 800
         },
@@ -403,14 +407,14 @@
     },
     {
       "attachmentPoint": "Caustic2",
-      "cooldown": 600,
+      "cooldown": 800,
       "extraTargetingArc": 0,
       "halfArc": 1800,
       "objectType": "",
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Xenofrog Dire Caustic Spit",
+          "gunBulletType": "Xenofrog General Caustic Spit",
           "numProjectiles": 1,
           "range": 800
         },

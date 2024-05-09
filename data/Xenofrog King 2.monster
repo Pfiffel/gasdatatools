@@ -45,8 +45,11 @@
           "explosionType": "",
           "guardian": 0,
           "lifetime": 0,
-          "maxCount": 3,
-          "monsterName": "Xenofrog Dire Defender",
+          "maxCount": 2,
+          "monsterName": "",
+          "monsterNames": [
+            "Xenofrog Dire Defender"
+          ],
           "movement": {
             "data": {
               "radius": 200
@@ -82,8 +85,11 @@
           "explosionType": "",
           "guardian": 0,
           "lifetime": 0,
-          "maxCount": 3,
-          "monsterName": "Xenofrog Dire Soldier",
+          "maxCount": 2,
+          "monsterName": "",
+          "monsterNames": [
+            "Xenofrog Dire Soldier"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 1,
@@ -121,9 +127,9 @@
             {
               "data": {
                 "bulletRange": 800,
-                "delay": 250,
+                "delay": 400,
                 "glyphType": "Barrage Glyph",
-                "gunBulletType": "Xenofrog Dire Defender Spit",
+                "gunBulletType": "Xenofrog King Spit",
                 "numBullets": 4,
                 "range": 800,
                 "salvoes": [
@@ -178,16 +184,21 @@
                   {
                     "blasts": [
                       {
-                        "angleOffset": 400,
+                        "angleOffset": 500,
                         "delay": 0,
                         "mirror": 1
+                      },
+                      {
+                        "angleOffset": 0,
+                        "delay": 0,
+                        "mirror": 0
                       }
                     ],
                     "params": {
                       "damage": 300,
                       "delay": 1000,
                       "explosionType": "Xenofrog Defender Shotgun",
-                      "halfArc": 200,
+                      "halfArc": 100,
                       "lockMovement": 0,
                       "powers": [
                         {

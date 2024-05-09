@@ -4,9 +4,7 @@
   "burrowDetectRange": 0,
   "collisionRadius": 100,
   "consolationItemPack": "Tier 5 Common",
-  "consolationPrizes": [],
   "deathCrySoundPack": "Iron Leviathan Death Cries",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 6000,
@@ -44,7 +42,10 @@
           "guardian": 0,
           "lifetime": 60000,
           "maxCount": 3,
-          "monsterName": "Iron Tortugon",
+          "monsterName": "",
+          "monsterNames": [
+            "Iron Tortugon"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 0,
@@ -125,7 +126,6 @@
         "data": {
           "angleBetweenProjectiles": 150,
           "gunBulletType": "Iron Leviathan",
-          "leading": 0,
           "numProjectiles": 3,
           "range": 800
         },
@@ -150,6 +150,7 @@
           "delay": 1000,
           "explosionType": "Iron Leviathan Shotgun",
           "halfArc": 100,
+          "lockMovement": 0,
           "powers": [],
           "range": 600,
           "triggerSound": "Enemy_IronLeviathan_Shotgun_Telegraph",
@@ -165,7 +166,6 @@
       }
     }
   ],
-  "xp": 100,
-  "xpLevelCap": 19
+  "xp": 100
 }
 

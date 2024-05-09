@@ -1,22 +1,34 @@
 {
+  "armor": 0,
   "boss": 1,
+  "burrowDetectRange": 0,
   "collisionRadius": 115,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Iron Colossus Enrage 3",
-  "drops": [],
+  "fixedFacing": 0,
   "healRate": 0,
   "hp": 6000,
   "idleAnimation": "BaseArcher Idle",
+  "itemPackDrops": [],
+  "maxMoveDistance": 500,
   "name": "Iron Colossus 2",
   "objectType": "Iron Colossus",
+  "onDamageSoundPack": "",
+  "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "Iron Colossus Run",
+  "runAnimationDuration": 700,
   "runSpeed": 100,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "Iron Colossus 3",
   "weaponType": "",
   "weapons": [
     {
       "attachmentPoint": "Turret Left",
       "cooldown": 500,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "Iron Colossus Turret",
       "params": {
         "data": {
@@ -24,11 +36,19 @@
           "range": 800
         },
         "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "Turret Right",
       "cooldown": 500,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "Iron Colossus Turret",
       "params": {
         "data": {
@@ -36,20 +56,40 @@
           "range": 800
         },
         "tag": "MultiBarrelGunParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "",
       "cooldown": 500,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "",
       "params": {
         "data": {
           "emitterType": "",
           "explosionType": "",
+          "guardian": 0,
           "lifetime": 10000,
           "maxCount": 3,
-          "monsterName": "Iron Colossus Station",
+          "monsterName": "",
+          "monsterNames": [
+            "Iron Colossus Station"
+          ],
+          "movement": {
+            "data": {
+              "playerPolicy": 0,
+              "radius": 200
+            },
+            "tag": "RandomMovement"
+          },
           "noCollide": 0,
+          "noRespawn": 0,
           "projectileType": "Iron Tortugon Capsule",
           "range": 800,
           "sound": "Enemy_IronColossus_GunStation_Spawn_01",
@@ -57,10 +97,15 @@
           "volume": 200
         },
         "tag": "MinionParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     }
   ],
-  "xp": 100,
-  "xpLevelCap": 19
+  "xp": 100
 }
 

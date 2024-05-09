@@ -37,7 +37,10 @@
           "guardian": 0,
           "lifetime": 0,
           "maxCount": 4,
-          "monsterName": "Xenofrog Caustic Fusilier",
+          "monsterName": "",
+          "monsterNames": [
+            "Xenofrog Caustic Fusilier"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 0,
@@ -75,7 +78,10 @@
           "guardian": 0,
           "lifetime": 0,
           "maxCount": 4,
-          "monsterName": "Xenofrog Volatile Fusilier",
+          "monsterName": "",
+          "monsterNames": [
+            "Xenofrog Volatile Fusilier"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 0,
@@ -113,7 +119,10 @@
           "guardian": 0,
           "lifetime": 0,
           "maxCount": 6,
-          "monsterName": "Xenofrog Dire Acidic Fusilier",
+          "monsterName": "",
+          "monsterNames": [
+            "Xenofrog Dire Acidic Fusilier"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 0,
@@ -139,7 +148,6 @@
       }
     }
   ],
-  "xp": 81,
-  "xpLevelCap": 19
+  "xp": 81
 }
 

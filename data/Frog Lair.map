@@ -138,61 +138,41 @@
     {
       "f": 0,
       "label": "",
-      "note": "Spawn: Xenofrog Dire Warrior",
+      "note": "Spawn: Xenofrog Dire Worker, Xenofrog Dire Soldier, Xenofrog Dire Grenadier, Xenofrog Dire Warrior, Xenofrog Dire Pustulant, Xenofrog Dire Acidic Fusilier, Xenofrog Dire Volatile Fusilier, Xenofrog Dire Caustic Fusilier, Xenofrog Dire Defender",
       "objectType": "Invisible Marker",
       "p": {
-        "x": -215,
-        "y": -242
+        "x": -205,
+        "y": -201
       }
     },
     {
       "f": 0,
       "label": "",
-      "note": "Spawn: Xenofrog Dire Acidic Fusilier",
+      "note": "Spawn: Xenofrog Dire Worker, Xenofrog Dire Soldier, Xenofrog Dire Grenadier, Xenofrog Dire Warrior, Xenofrog Dire Pustulant, Xenofrog Dire Acidic Fusilier, Xenofrog Dire Volatile Fusilier, Xenofrog Dire Caustic Fusilier, Xenofrog Dire Defender",
       "objectType": "Invisible Marker",
       "p": {
-        "x": 130,
-        "y": -318
+        "x": 192,
+        "y": -201
       }
     },
     {
       "f": 0,
       "label": "",
-      "note": "Spawn: Xenofrog Dire Volatile Fusilier",
+      "note": "Spawn: Xenofrog Dire Worker, Xenofrog Dire Soldier, Xenofrog Dire Grenadier, Xenofrog Dire Warrior, Xenofrog Dire Pustulant, Xenofrog Dire Acidic Fusilier, Xenofrog Dire Volatile Fusilier, Xenofrog Dire Caustic Fusilier, Xenofrog Dire Defender",
       "objectType": "Invisible Marker",
       "p": {
-        "x": 245,
-        "y": 274
+        "x": 197,
+        "y": 196
       }
     },
     {
       "f": 0,
       "label": "",
-      "note": "Spawn: Xenofrog Dire Caustic Fusilier",
+      "note": "Spawn: Xenofrog Dire Worker, Xenofrog Dire Soldier, Xenofrog Dire Grenadier, Xenofrog Dire Warrior, Xenofrog Dire Pustulant, Xenofrog Dire Acidic Fusilier, Xenofrog Dire Volatile Fusilier, Xenofrog Dire Caustic Fusilier, Xenofrog Dire Defender",
       "objectType": "Invisible Marker",
       "p": {
-        "x": -345,
-        "y": 136
-      }
-    },
-    {
-      "f": 0,
-      "label": "",
-      "note": "Spawn: Xenofrog Dire Warrior",
-      "objectType": "Invisible Marker",
-      "p": {
-        "x": -84,
-        "y": 276
-      }
-    },
-    {
-      "f": 0,
-      "label": "",
-      "note": "Spawn: Xenofrog Dire Warrior",
-      "objectType": "Invisible Marker",
-      "p": {
-        "x": 297,
-        "y": -35
+        "x": -196,
+        "y": 198
       }
     }
   ],

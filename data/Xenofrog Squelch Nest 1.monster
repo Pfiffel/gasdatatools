@@ -37,7 +37,10 @@
           "guardian": 0,
           "lifetime": 0,
           "maxCount": 8,
-          "monsterName": "Xenofrog Acidic Fusilier",
+          "monsterName": "",
+          "monsterNames": [
+            "Xenofrog Acidic Fusilier"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 0,
@@ -75,7 +78,10 @@
           "guardian": 0,
           "lifetime": 0,
           "maxCount": 4,
-          "monsterName": "Xenofrog Warrior",
+          "monsterName": "",
+          "monsterNames": [
+            "Xenofrog Warrior"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 1,
@@ -101,7 +107,6 @@
       }
     }
   ],
-  "xp": 25,
-  "xpLevelCap": 19
+  "xp": 25
 }
 

@@ -1,0 +1,21 @@
+{
+  "damage": 400,
+  "emitterType": "Xenofrog Trail Caustic",
+  "name": "Xenofrog General Caustic Spit",
+  "objectType": "Xenofrog General Caustic Bullet",
+  "powers": [
+    {
+      "data": {
+        "amount": -75,
+        "caption": "Gun Damage -75%",
+        "duration": 6000,
+        "emitterType": "Power Gun Damage Down",
+        "statType": 0
+      },
+      "tag": "StatPower"
+    }
+  ],
+  "soundPack": "Xenofrog Dire Defender Bullet",
+  "speed": 140
+}
+

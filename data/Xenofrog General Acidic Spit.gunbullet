@@ -1,0 +1,35 @@
+{
+  "damage": 150,
+  "emitterType": "Xenofrog Trail Acidic",
+  "name": "Xenofrog General Acidic Spit",
+  "objectType": "Xenofrog General Acidic Bullet",
+  "powers": [
+    {
+      "data": {
+        "caption": "Acid",
+        "damage": 250,
+        "duration": 5000,
+        "emitterType": "Power DoT"
+      },
+      "tag": "DoTPower"
+    },
+    {
+      "data": {
+        "caption": "",
+        "duration": 5000,
+        "engines": 0,
+        "guns": 0,
+        "health": 1,
+        "mana": 0,
+        "rotation": 0,
+        "scoot": 0,
+        "shield": 0,
+        "triggers": 0
+      },
+      "tag": "DisablePower"
+    }
+  ],
+  "soundPack": "Xenofrog Fusilier Bullet",
+  "speed": 140
+}
+

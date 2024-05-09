@@ -37,7 +37,10 @@
           "guardian": 0,
           "lifetime": 0,
           "maxCount": 10,
-          "monsterName": "Xenofrog Volatile Fusilier",
+          "monsterName": "",
+          "monsterNames": [
+            "Xenofrog Volatile Fusilier"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 0,
@@ -63,7 +66,6 @@
       }
     }
   ],
-  "xp": 49,
-  "xpLevelCap": 19
+  "xp": 49
 }
 

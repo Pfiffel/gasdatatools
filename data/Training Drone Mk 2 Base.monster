@@ -1,19 +1,26 @@
 {
+  "armor": 0,
   "boss": 0,
+  "burrowDetectRange": 0,
   "collisionRadius": 55,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Enemy Hits",
-  "drops": [],
+  "fixedFacing": 0,
   "healRate": 4,
   "hp": 80,
   "idleAnimation": "BaseArcher Idle",
+  "itemPackDrops": [],
   "maxMoveDistance": 500,
   "name": "Training Drone Mk 2 Base",
   "objectType": "Training Drone Base Station",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "",
   "runAnimationDuration": 700,
   "runSpeed": 0,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "",
   "weaponType": "",
   "weapons": [
@@ -30,7 +37,10 @@
           "guardian": 0,
           "lifetime": 0,
           "maxCount": 10,
-          "monsterName": "Training Drone Mk 2",
+          "monsterName": "",
+          "monsterNames": [
+            "Training Drone Mk 2"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 0,
@@ -49,12 +59,13 @@
         "tag": "MinionParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }
   ],
-  "xp": 1,
-  "xpLevelCap": 19
+  "xp": 1
 }
 

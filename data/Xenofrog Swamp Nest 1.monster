@@ -37,7 +37,10 @@
           "guardian": 0,
           "lifetime": 0,
           "maxCount": 2,
-          "monsterName": "Xenofrog Dire Worker",
+          "monsterName": "",
+          "monsterNames": [
+            "Xenofrog Dire Worker"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 0,
@@ -75,7 +78,10 @@
           "guardian": 0,
           "lifetime": 0,
           "maxCount": 10,
-          "monsterName": "Xenofrog Dire Soldier",
+          "monsterName": "",
+          "monsterNames": [
+            "Xenofrog Dire Soldier"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 1,
@@ -101,7 +107,6 @@
       }
     }
   ],
-  "xp": 64,
-  "xpLevelCap": 19
+  "xp": 64
 }
 

@@ -3,13 +3,13 @@
   "boss": 1,
   "burrowDetectRange": 0,
   "collisionRadius": 100,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Royal Monarch Enrage 2",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 6000,
   "idleAnimation": "Royal Monarch",
+  "itemPackDrops": [],
   "maxMoveDistance": 500,
   "name": "Lord Protector Cromwell 3",
   "objectType": "Lord Protector Cromwell",
@@ -112,7 +112,6 @@
               "data": {
                 "angleBetweenProjectiles": 200,
                 "gunBulletType": "Royal Albion",
-                "leading": 0,
                 "numProjectiles": 9,
                 "range": 800
               },
@@ -227,7 +226,10 @@
           "guardian": 1,
           "lifetime": 0,
           "maxCount": 1,
-          "monsterName": "Sir Archibald",
+          "monsterName": "",
+          "monsterNames": [
+            "Sir Archibald"
+          ],
           "movement": {
             "data": {
               "radius": 400
@@ -252,7 +254,6 @@
       }
     }
   ],
-  "xp": 100,
-  "xpLevelCap": 19
+  "xp": 100
 }
 

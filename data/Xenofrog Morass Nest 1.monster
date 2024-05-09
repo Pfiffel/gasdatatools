@@ -37,7 +37,10 @@
           "guardian": 0,
           "lifetime": 0,
           "maxCount": 12,
-          "monsterName": "Xenofrog Caustic Fusilier",
+          "monsterName": "",
+          "monsterNames": [
+            "Xenofrog Caustic Fusilier"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 0,
@@ -63,7 +66,6 @@
       }
     }
   ],
-  "xp": 36,
-  "xpLevelCap": 19
+  "xp": 36
 }
 

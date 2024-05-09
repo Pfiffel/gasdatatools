@@ -1,0 +1,10 @@
+{
+  "damage": 350,
+  "emitterType": "Xenofrog Trail Worker",
+  "name": "Xenofrog King Spit",
+  "objectType": "Xenofrog King Bullet",
+  "powers": [],
+  "soundPack": "Xenofrog Dire Defender Bullet",
+  "speed": 150
+}
+

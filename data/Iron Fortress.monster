@@ -1,19 +1,26 @@
 {
+  "armor": 0,
   "boss": 0,
+  "burrowDetectRange": 0,
   "collisionRadius": 47,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Iron Fortress Death Cries",
-  "drops": [],
+  "fixedFacing": 0,
   "healRate": 0,
   "hp": 750,
   "idleAnimation": "BaseArcher Idle",
+  "itemPackDrops": [],
   "maxMoveDistance": 500,
   "name": "Iron Fortress",
   "objectType": "Iron Fortress",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "Iron Bulwark Run",
   "runAnimationDuration": 700,
   "runSpeed": 75,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "",
   "weaponType": "",
   "weapons": [
@@ -30,7 +37,10 @@
           "guardian": 0,
           "lifetime": 15000,
           "maxCount": 3,
-          "monsterName": "Iron Redoubt",
+          "monsterName": "",
+          "monsterNames": [
+            "Iron Redoubt"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 0,
@@ -49,7 +59,9 @@
         "tag": "MinionParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -63,19 +75,19 @@
         "data": {
           "angleBetweenProjectiles": 150,
           "gunBulletType": "Iron Bulwark",
-          "leading": 0,
           "numProjectiles": 1,
           "range": 800
         },
         "tag": "GunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }
   ],
-  "xp": 49,
-  "xpLevelCap": 19
+  "xp": 49
 }
 

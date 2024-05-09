@@ -37,7 +37,10 @@
           "guardian": 0,
           "lifetime": 0,
           "maxCount": 6,
-          "monsterName": "Xenofrog Dire Caustic Fusilier",
+          "monsterName": "",
+          "monsterNames": [
+            "Xenofrog Dire Caustic Fusilier"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 0,
@@ -75,7 +78,10 @@
           "guardian": 0,
           "lifetime": 0,
           "maxCount": 4,
-          "monsterName": "Xenofrog Dire Defender",
+          "monsterName": "",
+          "monsterNames": [
+            "Xenofrog Dire Defender"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 1,
@@ -101,7 +107,6 @@
       }
     }
   ],
-  "xp": 100,
-  "xpLevelCap": 19
+  "xp": 100
 }
 

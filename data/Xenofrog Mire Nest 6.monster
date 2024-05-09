@@ -37,7 +37,10 @@
           "guardian": 0,
           "lifetime": 0,
           "maxCount": 10,
-          "monsterName": "Xenofrog Dire Warrior",
+          "monsterName": "",
+          "monsterNames": [
+            "Xenofrog Dire Warrior"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 1,
@@ -63,7 +66,6 @@
       }
     }
   ],
-  "xp": 81,
-  "xpLevelCap": 19
+  "xp": 81
 }
 

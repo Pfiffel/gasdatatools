@@ -1,19 +1,26 @@
 {
+  "armor": 0,
   "boss": 0,
+  "burrowDetectRange": 0,
   "collisionRadius": 35,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Iron Centurian Death Cries",
-  "drops": [],
+  "fixedFacing": 0,
   "healRate": 0,
   "hp": 600,
   "idleAnimation": "BaseArcher Idle",
+  "itemPackDrops": [],
   "maxMoveDistance": 500,
   "name": "Iron Centurion",
   "objectType": "Iron Centurion",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "BaseArcher Run",
   "runAnimationDuration": 700,
   "runSpeed": 100,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "",
   "weaponType": "",
   "weapons": [
@@ -30,7 +37,10 @@
           "guardian": 0,
           "lifetime": 60000,
           "maxCount": 2,
-          "monsterName": "Iron Fist",
+          "monsterName": "",
+          "monsterNames": [
+            "Iron Fist"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 0,
@@ -49,7 +59,9 @@
         "tag": "MinionParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -63,19 +75,19 @@
         "data": {
           "angleBetweenProjectiles": 150,
           "gunBulletType": "Iron Bulwark",
-          "leading": 0,
           "numProjectiles": 1,
           "range": 600
         },
         "tag": "GunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }
   ],
-  "xp": 36,
-  "xpLevelCap": 19
+  "xp": 36
 }
 

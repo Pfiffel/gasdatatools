@@ -1,0 +1,21 @@
+{
+  "damage": 400,
+  "emitterType": "Xenofrog Trail Volatile",
+  "name": "Xenofrog General Volatile Spit",
+  "objectType": "Xenofrog General Volatile Bullet",
+  "powers": [
+    {
+      "data": {
+        "amount": -75,
+        "caption": "Trigger Rate of Fire -75%",
+        "duration": 6000,
+        "emitterType": "Power Energy Production Down",
+        "statType": 6
+      },
+      "tag": "StatPower"
+    }
+  ],
+  "soundPack": "Xenofrog Fusilier Bullet",
+  "speed": 140
+}
+

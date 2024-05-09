@@ -41,8 +41,11 @@
           "explosionType": "",
           "guardian": 0,
           "lifetime": 0,
-          "maxCount": 5,
-          "monsterName": "Xenofrog Dire Warrior",
+          "maxCount": 3,
+          "monsterName": "",
+          "monsterNames": [
+            "Xenofrog Dire Warrior"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 0,
@@ -79,8 +82,11 @@
           "explosionType": "",
           "guardian": 0,
           "lifetime": 0,
-          "maxCount": 4,
-          "monsterName": "Xenofrog Dire Worker",
+          "maxCount": 3,
+          "monsterName": "",
+          "monsterNames": [
+            "Xenofrog Dire Worker"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 0,
@@ -167,7 +173,7 @@
     },
     {
       "attachmentPoint": "Mouth",
-      "cooldown": 4000,
+      "cooldown": 3000,
       "extraTargetingArc": 0,
       "halfArc": 1800,
       "objectType": "",

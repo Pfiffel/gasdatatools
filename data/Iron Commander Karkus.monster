@@ -3,13 +3,13 @@
   "boss": 1,
   "burrowDetectRange": 0,
   "collisionRadius": 70,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Iron Acropolis Death Cries",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 8000,
   "idleAnimation": "BaseArcher Idle",
+  "itemPackDrops": [],
   "maxMoveDistance": 500,
   "name": "Iron Commander Karkus",
   "objectType": "Iron Commander Karkus",
@@ -37,7 +37,10 @@
           "guardian": 1,
           "lifetime": 0,
           "maxCount": 1,
-          "monsterName": "Iron Lieutenant Adler",
+          "monsterName": "",
+          "monsterNames": [
+            "Iron Lieutenant Adler"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 0,
@@ -75,7 +78,10 @@
           "guardian": 1,
           "lifetime": 0,
           "maxCount": 1,
-          "monsterName": "Iron Lieutenant Molotok",
+          "monsterName": "",
+          "monsterNames": [
+            "Iron Lieutenant Molotok"
+          ],
           "movement": {
             "data": {
               "playerPolicy": 0,
@@ -113,7 +119,10 @@
           "guardian": 1,
           "lifetime": 0,
           "maxCount": 1,
-          "monsterName": "Iron Lieutenant Scut",
+          "monsterName": "",
+          "monsterNames": [
+            "Iron Lieutenant Scut"
+          ],
           "movement": {
             "data": {
               "radius": 250
@@ -188,7 +197,6 @@
               "data": {
                 "angleBetweenProjectiles": 200,
                 "gunBulletType": "Iron Triumph",
-                "leading": 0,
                 "numProjectiles": 9,
                 "range": 800
               },
@@ -235,7 +243,6 @@
               "data": {
                 "angleBetweenProjectiles": 200,
                 "gunBulletType": "Iron Triumph",
-                "leading": 0,
                 "numProjectiles": 9,
                 "range": 800
               },
@@ -253,7 +260,6 @@
       }
     }
   ],
-  "xp": 0,
-  "xpLevelCap": 19
+  "xp": 0
 }
 
