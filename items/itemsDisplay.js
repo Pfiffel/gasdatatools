@@ -48,7 +48,7 @@ function MakeList() {
 	tableOutput.appendChild(MakeAddonTable());
 	tableOutput.appendChild(MakeTextDiv("<h2>Damage Types</h2>"));
 	tableOutput.appendChild(DamageTypeTable());
-	tableOutput.appendChild(MakeTextDiv("<h2>Enhancement Modules</h2>"));
+	tableOutput.appendChild(MakeTextDiv("<h2>Enhancement Modules / Mission Rewards</h2>"));
 	tableOutput.appendChild(MakeSpecificTable(0, -1, 0, -1, 1, 0));
 	tableOutput.appendChild(MakeTextDiv("<h2>Usage Stats</h2>"));
 	tableOutput.appendChild(showUsage(STAT_TYPES));
