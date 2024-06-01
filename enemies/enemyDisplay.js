@@ -1,5 +1,5 @@
 var tableOutput = document.getElementById("tableOutput");
-var datatypes = ["map", "lair", "monster", "gunbullet", "object", "item", "soundpack", "explosion", "itempack"]; // for utilGAS to load files, calls parseData once completed
+var datatypes = ["map", "lair", "monster", "gunbullet", "object", "item", "soundpack", "explosion", "itempack", "globals"]; // for utilGAS to load files, calls parseData once completed
 loadGasData();
 
 var header = document.getElementById("header");
@@ -26,12 +26,11 @@ function RefreshLists() {
 }
 
 function parseData() {
+	SetTierColorsFromGlobals();
 	sortedMonsters = gasData["monster"];
 	sortedMonsters.sort((a, b) => monsterSort(a, b));
 	var totalAmount = 0;
 	for (let i = 0; i < sortedMonsters.length; i++) {
-		var monsterData = sortedMonsters[i];
-		if (monsterSkip[monsterData.name] == true) continue;
 		totalAmount++;
 	}
 	var h1List = document.createElement("h1");
@@ -43,7 +42,8 @@ function MakeMonsterList() {
 	var divList = document.createElement("div");
 	for (let i = 0; i < sortedMonsters.length; i++) {
 		var monsterData = sortedMonsters[i];
-		if (monsterSkip[monsterData.name] == true) continue;
+		if(SkipCheck(monsterData)) continue;
+		
 		var selName = document.querySelector('input[name="' + FILTER_NAME + '"]:checked').value;
 		var nameFound = selName == "Xenofrog" ? monsterData.name.includes(selName) & !monsterData.name.includes("Nest") : monsterData.name.includes(selName);
 		if (selName != "All" && !nameFound) continue;

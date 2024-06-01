@@ -102,8 +102,8 @@ function padHex(s) {
 function unCaps(s) {
 	return s.charAt(0) + s.substr(1).toLowerCase();
 }
-function amountToString(i) {
-	return BonusPrefix(i) + "% ";
+function amountToString(i, isBase = false) {
+	return BonusPrefix(i) + (isBase ? " " : "% ");
 }
 function BonusPrefix(i) {
 	return (i >= 0 ? "+" + i : i);

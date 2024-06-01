@@ -109,7 +109,11 @@ class Monster {
 				this._charges[tag + wD.range + wD.extraRange + wD.speed] = { "range": wD.range, "extraRange": wD.extraRange, "speed": wD.speed, "wD": wD };
 				break;
 			case "MinionParams":
-				this._minions[wD.monsterName] = { "maxCount": wD.maxCount };
+				/*for (let j = 0; j < wD.monsterNames.length; j++) {
+					this._minions[wD.monsterNames[j]] = { "maxCount": wD.maxCount };
+				}*/
+				var minionList = wD.monsterNames.length != 1 ? "(" + wD.monsterNames.toString() + ")" : wD.monsterNames[0];
+				this._minions[minionList] = { "maxCount": wD.maxCount };
 				break;
 			case "MinionBarrageParams":
 				for (let j = 0; j < wD.salvoes.length; j++) {
@@ -134,7 +138,8 @@ class Monster {
 		for (let i = 0; i < this.data.weapons.length; i++) {
 			var weapon = this.data.weapons[i];
 			if (weapon.params.tag == "MinionParams") {
-				var name = weapon.params.data.monsterName;
+				// TODO, parse list instead
+				var name = weapon.params.data.monsterNames.toString();
 				var minionHp = getMonster(name)._hp; // oh dear
 				var policy = weapon.params.data.movement != undefined ? weapon.params.data.movement.data.playerPolicy : undefined;
 				var radius = weapon.params.data.movement != undefined ? weapon.params.data.movement.data.radius : undefined;
@@ -369,7 +374,7 @@ class Monster {
 			let mainData = getItem(itemName);
 			if (mainData == undefined) continue;
 			let tier = mainData.credits;
-			list += "<b>" + colorWrap(mainData.name, TIER_COLORS[tier]) + "</b>";
+			list += "<b>" + colorWrap(mainData.name, GetTierColor(tier)) + "</b>";
 		}
 		return list;
 	}
@@ -390,7 +395,7 @@ class Monster {
 		var dropsSymbiote = (t > 0 && t <= 6) && hasGlobalDrops;
 		if (!dropsSymbiote && !givesXP && !hasGlobalDrops) return "";
 		var xpphp = round(this._xp / (this._hp / 100), 2);
-		var symbDrop = dropsSymbiote ? "<br>Drops " + colorWrap("<b>" + TIER_NAMES[t] + "</b> Symbiote", TIER_COLORS[t]) : "";
+		var symbDrop = dropsSymbiote ? "<br>Drops " + colorWrap("<b>" + TIER_NAMES[t] + "</b> Symbiote", GetTierColor(t)) : "";
 		return "<b>" + xpphp + "</b> XP per 100 HP" + symbDrop;
 	}
 }

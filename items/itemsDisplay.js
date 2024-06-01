@@ -3,7 +3,7 @@ var TIERS = 10;
 var ITEM_DROPPERS = [];
 var tableOutput = document.getElementById("tableOutput");
 
-var datatypes = ["item", "addon", "monster", "object", "globals", "symbiote", "champion"]; // for utilGAS to load files, calls parseData once completed
+var datatypes = ["item", "addon", "monster", "object", "globals", "symbiote", "champion", "globals"]; // for utilGAS to load files, calls parseData once completed
 loadGasData();
 
 var header = document.getElementById("header");
@@ -28,6 +28,7 @@ function RefreshLists() {
 	MakeList();
 }
 function parseData() {
+	SetTierColorsFromGlobals();
 	var h1List = document.createElement("h1");
 	h1List.textContent = "Items (" + gasData["item"].length + " total)";
 	header.appendChild(h1List);
@@ -203,7 +204,7 @@ function MakeItemLimitTable() {
 	for (let i = 0; i < limits.length; i++) {
 		var type = limits[i];
 		let trE = tbl.insertRow();
-		makeCell(colorWrap("Tier " + type.tier, TIER_COLORS[type.tier]), trE);
+		makeCell(colorWrap("Tier " + type.tier, GetTierColor(type.tier)), trE);
 		makeCell(type.limit, trE);
 	}
 	return tbl;
@@ -236,7 +237,7 @@ function MakeSpecificTable(startTier, statAmount, precursor, rare, boon, inline,
 	for (let t = startTier; t < TIERS + 1; t++) {
 		var amount = GetItemAmount(t, statAmount, precursor, rare, boon, overworld);
 		if (amount == 0) continue;
-		makeHeaderCell(colorWrap("Tier " + t, TIER_COLORS[t]) + ((boon == 1) ? (" - " + MODULE_CREDITS[t] + " Credits") : "") + " - " + amount + " total<br/>", th);
+		makeHeaderCell(colorWrap("Tier " + t, GetTierColor(t)) + ((boon == 1) ? (" - " + MODULE_CREDITS[t] + " Credits") : "") + " - " + amount + " total<br/>", th);
 		var cell = makeCell("", tr);
 		cell.appendChild(MakeSpecificItemList(t, statAmount, precursor, rare, boon, inline, overworld));
 	}
@@ -286,7 +287,7 @@ function MakeAddonTable() {
 	for (let t = 0; t < TIERS; t++) {
 		var amount = GetAddonAmount(t);
 		if (amount == 0) continue;
-		makeHeaderCell(colorWrap("Tier " + (t + 1) + " - " + ADDON_TIER_NAMES[t], TIER_COLORS[t + 1]) + " - " + amount + " total<br/>", th);
+		makeHeaderCell(colorWrap("Tier " + (t + 1) + " - " + ADDON_TIER_NAMES[t], GetTierColor(t + 1)) + " - " + amount + " total<br/>", th);
 		var cell = makeCell("", tr);
 		cell.appendChild(MakeAddonList(t));
 	}

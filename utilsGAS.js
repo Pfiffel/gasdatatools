@@ -1,9 +1,7 @@
 const SCALE_STANDARD = 0.5;
 const SCALE_SMALL = 0.25;
 const MAP_CANVAS_SIZE = 600;
-const monsterSkip = { "Iron Justiciar": true, "Test Event Boss 2": true, "Test Event Boss": true, "Test Event Minion": true };
 
-const TIER_COLORS = ["", "#FF7777", "#77CC77", "#9999FF", "#77DDDD", "#FFFF77", "#EB98CB", "#F5A849", "#C162F5", "#FFFFFF", "#8EC726"];
 const TIER_NAMES = ["", "Alpha", "Beta", "Gamma", "Delta", "Epsilon", "Omega", "", "", "", "Precursor Tech"];
 const MODULE_CREDITS = [0, 5, 10, 25, 50, 100, 250, 500, 1000];
 const MAX_LEVEL = 20;
@@ -32,30 +30,38 @@ const STATS = {
 	MISSILE_DAMAGE: 23,
 }
 const STAT_TYPES = {
-	"0": ["DAMAGE", "Gun Damage"],
-	"1": ["HEAL_RATE", "Repair Rate"],
-	"2": ["MANA_RATE", "Energy Production"],
-	"3": ["HEALTH", "Hull Strength"],
-	"4": ["MANA", "Energy"],
-	"5": ["GUN_FIRE_RATE", "Gun Rate of Fire"],
-	"6": ["TRIGGER_FIRE_RATE", "Trigger Rate of Fire"],
-	"7": ["SHIELD_RATE", "Shield Recovery Rate"],
-	"8": ["GUN_RANGE", "Gun Range"],
-	"9": ["SHIELD_STRENGTH", "Shield Strength"],
-	"10": ["RADIUS", "Hull Radius"],
-	"11": ["TRIGGER_COST", "Trigger Energy Cost"],
-	"12": ["ULT_FIRE_RATE", "Trigger 4 Rate of Fire"],
-	"13": ["TOP_SPEED", "Top Speed"],
-	"14": ["GUN_ARC", "Gun Arc"],
-	"15": ["DAMAGE_VS_BURNING", "Damage vs Burning"],
-	"16": ["ACCELERATION", "Acceleration"],
-	"17": ["SCOOT_RATE", "Scoot Rate"],
-	"18": ["TURN_RATE", "Turn Rate"],
-	"19": ["XP_RATE", "XP Bonus"],
-	"20": ["DAMAGE_VS_FROZEN", "Damage vs Frozen/Chilled"],
-	"21": ["BLAST_DAMAGE", "Blast Damage"],
-	"22": ["BOMB_DAMAGE", "Bomb Damage"],
-	"23": ["MISSILE_DAMAGE", "Missile Damage"]
+	"0": ["DAMAGE", "Gun Damage", false],
+	"1": ["HEAL_RATE", "Repair Rate", false],
+	"2": ["MANA_RATE", "Energy Production", false],
+	"3": ["HEALTH", "Hull Strength", false],
+	"4": ["MANA", "Energy", false],
+	"5": ["GUN_FIRE_RATE", "Gun Rate of Fire", false],
+	"6": ["TRIGGER_FIRE_RATE", "Trigger Rate of Fire", false],
+	"7": ["SHIELD_RATE", "Shield Recovery Rate", false],
+	"8": ["GUN_RANGE", "Gun Range", false],
+	"9": ["SHIELD_STRENGTH", "Shield Strength", false],
+	"10": ["RADIUS", "Hull Radius", false],
+	"11": ["TRIGGER_COST", "Trigger Energy Cost", false],
+	"12": ["ULT_FIRE_RATE", "Trigger 4 Rate of Fire", false],
+	"13": ["TOP_SPEED", "Top Speed", false],
+	"14": ["GUN_ARC", "Gun Arc", false],
+	"15": ["DAMAGE_VS_BURNING", "Damage vs Burning", false],
+	"16": ["ACCELERATION", "Acceleration", false],
+	"17": ["SCOOT_RATE", "Scoot Rate", false],
+	"18": ["TURN_RATE", "Turn Rate", false],
+	"19": ["XP_RATE", "XP Bonus", false],
+	"20": ["DAMAGE_VS_FROZEN", "Damage vs Frozen/Chilled", false],
+	"21": ["BLAST_DAMAGE", "Blast Damage", false],
+	"22": ["BOMB_DAMAGE", "Bomb Damage", false],
+	"23": ["MISSILE_DAMAGE", "Missile Damage", false],
+	"24": ["MISSILE_DAMAGE", "Base Hull Strength", true],
+	"25": ["MISSILE_DAMAGE", "Base Gun Damage", true],
+	"26": ["MISSILE_DAMAGE", "Base Shield Strength", true],
+	"27": ["MISSILE_DAMAGE", "Base Blast Damage", true],
+	"28": ["MISSILE_DAMAGE", "Base Bomb Damage", true],
+	"29": ["MISSILE_DAMAGE", "Base Missile Damage", true],
+	"30": ["MISSILE_DAMAGE", "Missile Salvo Size", true],
+	"31": ["MISSILE_DAMAGE", "Base Repair Rate", true]
 };
 const ACTIVE_WHILE_NAMES = {
 	"0": ["ALWAYS", "always"],
@@ -241,7 +247,7 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 	var name = mainData.displayName != undefined ? mainData.displayName : mainData.name;
 	if (mainData.championName != undefined) name = name + " (" + mainData.championName + ")";
 	if (mainData.mana != undefined) name = name + " - " + classWrap(mainData.mana, "energy");
-	makeHeaderCell(colorWrap(name, TIER_COLORS[tier]), th);
+	makeHeaderCell(colorWrap(name, GetTierColor(tier)), th);
 
 	var slotTypes = SlotTypeToText(mainData);
 	if (slotTypes != "") {
@@ -280,19 +286,19 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 				if (!prevRepeat) try { s += "While " + classWrap(ACTIVE_WHILE_NAMES[activeWhile][1], "cKeyValue") + ":<br/>"; }
 					catch (e) { console.log("while " + activeWhile + " not found"); }
 				prevCondition = activeWhile;
-				if (ACTIVE_WHILE_NAMES[activeWhile][2] == undefined) ACTIVE_WHILE_NAMES[activeWhile][2] = 0;
-				ACTIVE_WHILE_NAMES[activeWhile][2]++;
-				if (ACTIVE_WHILE_NAMES[activeWhile][3] == undefined) ACTIVE_WHILE_NAMES[activeWhile][3] = {};
-				ACTIVE_WHILE_NAMES[activeWhile][3][mainData.name] = 1;
+				if (ACTIVE_WHILE_NAMES[activeWhile][10] == undefined) ACTIVE_WHILE_NAMES[activeWhile][10] = 0;
+				ACTIVE_WHILE_NAMES[activeWhile][10]++;
+				if (ACTIVE_WHILE_NAMES[activeWhile][11] == undefined) ACTIVE_WHILE_NAMES[activeWhile][11] = {};
+				ACTIVE_WHILE_NAMES[activeWhile][11][mainData.name] = 1;
 			}
 			if (mainTag == "ItemStat") {
 				var amount = data.amount;
 				var statType = data.statType;
-				s += classWrap(amountToString(amount), "cKeyValue") + GetStat(statType, 1) + "<br/>";
-				if (STAT_TYPES[statType][2] == undefined) STAT_TYPES[statType][2] = 0;
-				STAT_TYPES[statType][2]++;
-				if (STAT_TYPES[statType][3] == undefined) STAT_TYPES[statType][3] = {};
-				STAT_TYPES[statType][3][mainData.name] = 1;
+				s += classWrap(amountToString(amount, GetStat(statType, 2)), "cKeyValue") + GetStat(statType, 1) + "<br/>";
+				if (STAT_TYPES[statType][10] == undefined) STAT_TYPES[statType][10] = 0;
+				STAT_TYPES[statType][10]++;
+				if (STAT_TYPES[statType][11] == undefined) STAT_TYPES[statType][11] = {};
+				STAT_TYPES[statType][11][mainData.name] = 1;
 			}
 			else if (mainTag == "ItemShield") {
 				var hex = numberToHex(data.shield.color);
@@ -307,10 +313,10 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 				catch (e) { console.log("when " + data.when + " not found"); }
 			prevCondition = data.when;
 
-			if (TRIGGERED_TRIGGER_EFFECTS[data.when][2] == undefined) TRIGGERED_TRIGGER_EFFECTS[data.when][2] = 0;
-			TRIGGERED_TRIGGER_EFFECTS[data.when][2]++;
-			if (TRIGGERED_TRIGGER_EFFECTS[data.when][3] == undefined) TRIGGERED_TRIGGER_EFFECTS[data.when][3] = {};
-			TRIGGERED_TRIGGER_EFFECTS[data.when][3][mainData.name] = 1;
+			if (TRIGGERED_TRIGGER_EFFECTS[data.when][10] == undefined) TRIGGERED_TRIGGER_EFFECTS[data.when][10] = 0;
+			TRIGGERED_TRIGGER_EFFECTS[data.when][10]++;
+			if (TRIGGERED_TRIGGER_EFFECTS[data.when][11] == undefined) TRIGGERED_TRIGGER_EFFECTS[data.when][11] = {};
+			TRIGGERED_TRIGGER_EFFECTS[data.when][11][mainData.name] = 1;
 
 			if (mainTag == "TriggeredTriggerEffect") {
 				let o = GetTriggeredEffectString(data.params.tag, data.params.data, delayArray);
@@ -422,7 +428,7 @@ function MakePowerText(data) {
 			let powerData = data.powers[i].data;
 			let power = data.powers[i].tag;
 			if (power == "StatPower") {
-				s += printKeyAndData(GetStat(powerData.statType, 1), BonusPrefix(powerData.amount) + "%");
+				s += printKeyAndData(GetStat(powerData.statType, 1), amountToString(powerData.amount, GetStat(powerData.statType, 2)));
 				s += printKeyAndData("Duration", ToTime(powerData.duration));
 			}
 			else if (power == "ShieldRechargePower") {
@@ -573,7 +579,7 @@ function GetTriggeredEffectString(tag, data, delayArray) {
 		s += printKeyAndData((data.applyToMana == 1 ? "Energy Recharge" : "Repair") + " Amount", data.healAmount + (data.asPercentage == 1 ? "%" : ""), data.applyToMana == 1 ? "energy" : "heal");
 	}
 	else if (tag == "StatBoostTrigger") {
-		s += printKeyAndData(GetStat(data.statType, 1), data.amount + "%");
+		s += printKeyAndData(GetStat(data.statType, 1), amountToString(data.amount, GetStat(data.statType, 2)));
 		s += printKeyAndData("Duration", ToTime(data.duration));
 		if (data.maxStacks > 0) s += printKeyAndData("Max Stacks", data.maxStacks);
 	}
@@ -654,7 +660,7 @@ function GetBonusEffectString(tag, data) {
 		if (data.healAmount != 0) s += printKeyAndDataBonus("Repair Amount", BonusPrefix(data.healAmount) + (data.usePercentInTooltip == 1 ? "%" : ""), data.applyToMana == 1 ? "energy" : "heal");
 	}
 	else if (tag == "StatBoostTriggerBonus") {
-		if (data.amount != 0) s += printKeyAndDataBonus((data.statType != undefined) ? GetStat(data.statType, 1) : "Boost Amount", BonusPrefix(data.amount) + "%");
+		if (data.amount != 0) s += printKeyAndDataBonus((data.statType != undefined) ? GetStat(data.statType, 1) : "Boost Amount", amountToString(data.amount, GetStat(data.statType, 2)));
 		if (data.duration != 0) s += printKeyAndDataBonus("Duration", BonusPrefixToTime(data.duration));
 	}
 	else if (tag == "DematerializeTriggerBonus") {
@@ -701,9 +707,9 @@ function showUsage(data) {
 		makeCell(key, tr);
 		makeCell(data[key][0], tr);
 		makeCell(data[key][1], tr);
-		var usage = data[key][2];
+		var usage = data[key][10];
 		makeCell(usage != undefined ? usage : "", tr);
-		var list = data[key][3];
+		var list = data[key][11];
 		var sList = "";
 		var uniqueUsage = 0;
 		for (let entity in list) {
@@ -884,6 +890,17 @@ function GetGlobals() {
 	}
 	console.log(type + " globals not found");
 }
+var tierColors = [];//"", "#FF7777", "#77CC77", "#9999FF", "#77DDDD", "#FFFF77", "#EB98CB", "#F5A849", "#C162F5", "#FFFFFF", "#8EC726"];
+function SetTierColorsFromGlobals() {
+	for (var i in GetGlobals().itemTierColors) {
+		var colorPair = GetGlobals().itemTierColors[i];
+		var hex = numberToHex(colorPair.color);
+		tierColors[colorPair.tier] = hex;
+	}
+}
+function GetTierColor(tier) {
+	return tierColors[tier];
+}
 function GetSpeaker(type) {
 	for (let i = 0; i < gasData["speaker"].length; i++) {
 		var speaker = gasData["speaker"][i];
@@ -902,6 +919,15 @@ function GetLane(type) {
 		var lane = gasData["lane"][i];
 		if (type == lane.name) return lane;
 	}
+}
+const globalSkip = true;
+const globalSkipSearch = ["Cactus", "Dune"];
+function SkipCheck(entity) {
+	for (let i = 0; i < globalSkipSearch.length; i++) {
+		var toSkip = globalSkipSearch[i];
+		if (entity.name.includes(toSkip)) return true;
+	}
+	return false;
 }
 // Drawing Stuff
 function getMaxFromShapes(object, x, y, max) {

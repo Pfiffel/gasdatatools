@@ -19,6 +19,7 @@ var defaultSymbiotes;
 
 function parseData() {
 	defaultSymbiotes = GetGlobals().defaultSymbiotes;
+	SetTierColorsFromGlobals();
 	RefreshLists();
 }
 function RefreshLists() {
@@ -32,7 +33,8 @@ function RefreshLists() {
 	}
 	for (let m = 0; m < gasData["monster"].length; m++) {
 		var monster = gasData["monster"][m];
-		if (monsterSkip[monster.name] != true && !monster.name.includes("Nest") && isSymbioteDropper(monster))
+		if(SkipCheck(monster)) continue;
+		if (!monster.name.includes("Nest") && isSymbioteDropper(monster))
 			SYMBIOTE_DROPPERS[getTier(monster.xp) - 2].push(monster);
 	}
 	var totalAmount = 0;
@@ -41,7 +43,7 @@ function RefreshLists() {
 		var amount = GetSymbAmount(t);
 		combinations *= amount;
 		totalAmount += amount;
-		var headerCell = makeHeaderCell("Tier " + t + " - " + colorWrap(TIER_NAMES[t] + " Symbiotes", TIER_COLORS[t]) + " - " + amount + " total", th);
+		var headerCell = makeHeaderCell("Tier " + t + " - " + colorWrap(TIER_NAMES[t] + " Symbiotes", GetTierColor(t)) + " - " + amount + " total", th);
 
 		if (showDroppers.checked) {
 			headerCell.innerHTML += "<br/>From: ";

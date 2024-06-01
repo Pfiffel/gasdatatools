@@ -1,5 +1,5 @@
 var tableOutput = document.getElementById("tableOutput");
-var datatypes = ["accolade", "animation", "champion", "decor", "emitter", "explosion", "gunbullet", "item", "lair", "lane", "map", "monster", "object", "particle", "region", "soundpack", "speaker", "symbiote"]; // for utilGAS to load files, calls parseData once completed
+var datatypes = ["accolade", "animation", "champion", "decor", "emitter", "explosion", "gunbullet", "item", "lair", "lane", "map", "monster", "object", "particle", "region", "soundpack", "speaker", "symbiote", "globals"]; // for utilGAS to load files, calls parseData once completed
 var datatypesPrev = datatypes;
 loadGasData();
 var errorLogs = document.createElement('div');
@@ -19,6 +19,7 @@ var changedObjects = {};
 var changedMaps = {};
 let divList = document.createElement('div');
 function parseData() {
+	SetTierColorsFromGlobals();
 	var h1List = document.createElement("h1");
 	h1List.textContent = "Build " + BUILD + " Diff";
 	divList.appendChild(h1List);
@@ -29,6 +30,7 @@ function parseData() {
 		let file = datatypes[f];
 		for (let i = 0; i < gasData[file].length; i++) {
 			let entity = gasData[file][i];
+			if(SkipCheck(entity)) continue;
 			let entityPrev = GetPrevEntity(file, entity.name);
 			if (entityPrev == null) {
 				if (file == "symbiote" || file == "item" || file == "accolade") {
@@ -61,6 +63,7 @@ function parseData() {
 		let file = datatypes[f];
 		for (let i = 0; i < gasData[file].length; i++) {
 			let entity = gasData[file][i];
+			if(SkipCheck(entity)) continue;
 			let entityPrev = GetPrevEntity(file, entity.name);
 			if (entityPrev != null)
 				CompareJSON(entity, entityPrev, entity.name, file, "");
