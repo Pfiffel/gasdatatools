@@ -1,7 +1,9 @@
 {
   "name": "Xenofrog Fusilier Bullet",
   "sounds": [
-    "Enemy_XenofrogFusilier_Gun_01"
+    "Enemy_XenofrogAcidicFusilier_Gun_01",
+    "Enemy_XenofrogCausticFusilier_Gun_01",
+    "Enemy_XenofrogVolatileFusilier_Gun_01"
   ],
   "volume": 100
 }

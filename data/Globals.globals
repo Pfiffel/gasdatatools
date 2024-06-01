@@ -43,7 +43,6 @@
     "Snap",
     "Storm Crow"
   ],
-  "hullHitsSoundPack": "Hull Hits",
   "itemTierColors": [
     {
       "color": 16742263,
@@ -83,11 +82,17 @@
     }
   ],
   "name": "Globals",
-  "playerDeathSoundPack": "Player Death",
-  "selfTeleportSoundPack": "Teleport Self",
-  "shieldHitsSoundPack": "Shield Hits",
-  "teleportJoinSoundPack": "Teleport Join",
-  "teleportLeaveSoundPack": "Teleport Leave",
+  "soundPacks": {
+    "hullHits": "Hull Hits",
+    "playerDeath": "Player Death",
+    "priorityTargetAcquired": "Priority Target Acquired",
+    "priorityTargetDestroyed": "Priority Target Destroyed",
+    "selfTeleport": "Teleport Self",
+    "shieldHits": "Shield Hits",
+    "teleportJoin": "Teleport Join",
+    "teleportLeave": "Teleport Leave",
+    "triggerError": "Trigger Error"
+  },
   "tieredItemLimits": [
     {
       "limit": 12,
@@ -102,7 +107,6 @@
       "tier": 8
     }
   ],
-  "triggerErrorSoundPack": "Trigger Error",
   "uiColors": {
     "abilityHighlightColor": 3531257,
     "abilityTitleColor": 4364026,

@@ -18,7 +18,7 @@
             "speed": 300,
             "statusEffects": [],
             "tag": "",
-            "timeGap": 0,
+            "timeGap": 250,
             "tweenType": "CUBICIN",
             "volume": 50
           },

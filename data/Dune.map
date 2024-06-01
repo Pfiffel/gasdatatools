@@ -1,5 +1,5 @@
 {
-  "groundPoints": [],
+  "decorateSpawnPoints": 1,
   "groundTexturePainterName": "dune",
   "groundZones": [
     {
@@ -3274,7 +3274,7 @@
       "localFauna": [
         {
           "count": 50,
-          "name": "Bogweed"
+          "name": "Cactus 1"
         }
       ],
       "mapGridDesignator": "Planet Draco-F902-Pi-12",
@@ -3306,7 +3306,7 @@
       "localFauna": [
         {
           "count": 75,
-          "name": "Bogweed"
+          "name": "Cactus 1"
         }
       ],
       "mapGridDesignator": "Sector QX-17",
@@ -3338,7 +3338,7 @@
       "localFauna": [
         {
           "count": 75,
-          "name": "Bogweed Archer"
+          "name": "Cactus 2"
         }
       ],
       "mapGridDesignator": "Sector PH-91",
@@ -3375,7 +3375,7 @@
       "localFauna": [
         {
           "count": 75,
-          "name": "Bogweed Mephitic"
+          "name": "Cactus 3"
         }
       ],
       "mapGridDesignator": "Sector KZ-83",
@@ -3412,7 +3412,7 @@
       "localFauna": [
         {
           "count": 75,
-          "name": "Bogweed Burrower"
+          "name": "Cactus 4"
         }
       ],
       "mapGridDesignator": "Sector VN-39",
@@ -3449,7 +3449,7 @@
       "localFauna": [
         {
           "count": 75,
-          "name": "Bogweed Ambusher"
+          "name": "Cactus 5"
         }
       ],
       "mapGridDesignator": "Sector RD-12",
@@ -3487,7 +3487,7 @@
       "localFauna": [
         {
           "count": 75,
-          "name": "Bogweed Noxiant"
+          "name": "Cactus 6"
         }
       ],
       "mapGridDesignator": "Sector XB-50",
@@ -3525,7 +3525,7 @@
       "localFauna": [
         {
           "count": 75,
-          "name": "Bogweed Acidic"
+          "name": "Cactus 7"
         }
       ],
       "mapGridDesignator": "Sector LP-77",
@@ -3564,7 +3564,7 @@
       "localFauna": [
         {
           "count": 75,
-          "name": "Bogweed Necrophant"
+          "name": "Cactus 8"
         }
       ],
       "mapGridDesignator": "Sector AV-10",

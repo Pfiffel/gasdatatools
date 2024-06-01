@@ -1,5 +1,5 @@
 {
-  "boon": 1,
+  "boon": 0,
   "credits": 7,
   "defenses": 0,
   "effects": [
@@ -15,19 +15,10 @@
   "engines": 0,
   "guns": 0,
   "name": "Atomic Charger",
-  "overworldDrop": 1,
-  "plusEffects": [
-    {
-      "data": {
-        "activeWhile": 0,
-        "amount": 4,
-        "statType": 2
-      },
-      "tag": "ItemStat"
-    }
-  ],
+  "overworldDrop": 0,
   "precursorTech": 0,
   "rare": 0,
+  "requiresMissiles": 0,
   "triggers": 1
 }
 

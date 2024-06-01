@@ -1,5 +1,5 @@
 {
-  "boon": 1,
+  "boon": 0,
   "credits": 8,
   "defenses": 1,
   "effects": [
@@ -25,6 +25,8 @@
   "name": "Karkus Stabilizer",
   "overworldDrop": 0,
   "precursorTech": 0,
+  "rare": 0,
+  "requiresMissiles": 0,
   "triggers": 1
 }
 

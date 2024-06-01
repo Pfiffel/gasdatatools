@@ -9,6 +9,7 @@
     {
       "cooldown": 350,
       "damage": 8,
+      "displayName": "",
       "emitterType": "Hercules Guns",
       "f": 0,
       "halfArc": 1800,
@@ -23,6 +24,7 @@
     {
       "cooldown": 425,
       "damage": 15,
+      "displayName": "",
       "emitterType": "Hercules Guns",
       "f": 0,
       "halfArc": 600,
@@ -37,6 +39,7 @@
     {
       "cooldown": 850,
       "damage": 50,
+      "displayName": "",
       "emitterType": "Hercules Guns",
       "f": 0,
       "halfArc": 200,
@@ -63,6 +66,7 @@
             "duration": 10000,
             "emitterType": "",
             "glyphCount": 0,
+            "glyphOrientation": 0,
             "glyphRadius": 0,
             "glyphType": "",
             "maxStacks": 100,
@@ -82,6 +86,7 @@
   "shields": [
     {
       "color": 3355647,
+      "displayName": "",
       "left": -200,
       "level": 1,
       "maxStrength": 120,
@@ -89,6 +94,7 @@
     },
     {
       "color": 3355647,
+      "displayName": "",
       "left": -600,
       "level": 1,
       "maxStrength": 120,
@@ -96,6 +102,7 @@
     },
     {
       "color": 3355647,
+      "displayName": "",
       "left": 200,
       "level": 1,
       "maxStrength": 120,
@@ -103,6 +110,7 @@
     },
     {
       "color": 3355647,
+      "displayName": "",
       "left": 600,
       "level": 1,
       "maxStrength": 120,
@@ -110,6 +118,7 @@
     },
     {
       "color": 3355647,
+      "displayName": "",
       "left": -1800,
       "level": 0,
       "maxStrength": 120,
@@ -181,6 +190,7 @@
             "duration": 3000,
             "emitterType": "",
             "glyphCount": 2,
+            "glyphOrientation": 0,
             "glyphRadius": 40,
             "glyphType": "Gun RoF Glyph",
             "maxStacks": 0,
@@ -473,6 +483,7 @@
             "duration": 5000,
             "stats": {
               "color": 15387922,
+              "displayName": "",
               "left": -1800,
               "level": 0,
               "maxStrength": 1000,

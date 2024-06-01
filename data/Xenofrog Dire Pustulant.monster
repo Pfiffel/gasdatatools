@@ -3,18 +3,19 @@
   "boss": 0,
   "burrowDetectRange": 0,
   "collisionRadius": 23,
-  "consolationPrizes": [],
-  "deathCrySoundPack": "Xenofrog Defender Death Cries",
-  "drops": [],
+  "consolationItemPack": "",
+  "deathCrySoundPack": "Xenofrog Pustulant Death Cries",
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 750,
   "idleAnimation": "Xenofrog Idle",
+  "itemPackDrops": [],
   "maxMoveDistance": 200,
   "name": "Xenofrog Dire Pustulant",
   "objectType": "Xenofrog Dire Pustulant",
   "onDamageSoundPack": "Xenofrog Hits",
   "pauseBetweenMovements": 600,
+  "resistant": 0,
   "runAnimation": "Xenofrog Leap",
   "runAnimationDuration": 700,
   "runSpeed": 275,
@@ -39,10 +40,11 @@
                 "delay": 1000,
                 "explosionType": "Xenofrog Pustulant Explosion",
                 "halfArc": 1800,
+                "lockMovement": 0,
                 "powers": [],
                 "range": 180,
-                "triggerSound": "Enemy_XenofrogDefender_Shotgun_Telegraph",
-                "triggerVolume": 50
+                "triggerSound": "Enemy_XenofrogPustulant_Shotgun_Telegraph",
+                "triggerVolume": 100
               },
               "tag": "ShotgunParams"
             }
@@ -58,7 +60,6 @@
       }
     }
   ],
-  "xp": 49,
-  "xpLevelCap": 19
+  "xp": 49
 }
 

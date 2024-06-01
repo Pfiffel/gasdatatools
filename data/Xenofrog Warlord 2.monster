@@ -4,7 +4,7 @@
   "burrowDetectRange": 0,
   "collisionRadius": 70,
   "consolationItemPack": "",
-  "deathCrySoundPack": "Xenofrog General Enrage 3",
+  "deathCrySoundPack": "Xenofrog Warlord Enrage 3",
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 8000,
@@ -37,7 +37,6 @@
           "guardian": 0,
           "lifetime": 0,
           "maxCount": 2,
-          "monsterName": "",
           "monsterNames": [
             "Xenofrog Dire Pustulant"
           ],
@@ -78,7 +77,6 @@
           "guardian": 0,
           "lifetime": 0,
           "maxCount": 2,
-          "monsterName": "",
           "monsterNames": [
             "Xenofrog Dire Grenadier"
           ],
@@ -240,7 +238,7 @@
                       "lockMovement": 0,
                       "powers": [],
                       "range": 400,
-                      "triggerSound": "Enemy_XenofrogDefender_Shotgun_Telegraph",
+                      "triggerSound": "Enemy_XenofrogWarlord_Shotgun_Telegraph",
                       "triggerVolume": 50
                     }
                   }

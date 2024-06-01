@@ -4,7 +4,7 @@
   "burrowDetectRange": 0,
   "collisionRadius": 65,
   "consolationItemPack": "",
-  "deathCrySoundPack": "Xenofrog General Enrage 2",
+  "deathCrySoundPack": "Xenofrog Queen Enrage 2",
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 8000,
@@ -37,7 +37,6 @@
           "guardian": 0,
           "lifetime": 0,
           "maxCount": 1,
-          "monsterName": "",
           "monsterNames": [
             "Xenofrog Dire Warrior"
           ],
@@ -78,7 +77,6 @@
           "guardian": 0,
           "lifetime": 0,
           "maxCount": 1,
-          "monsterName": "",
           "monsterNames": [
             "Xenofrog Dire Worker"
           ],

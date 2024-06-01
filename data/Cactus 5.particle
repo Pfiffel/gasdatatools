@@ -1,0 +1,27 @@
+{
+  "colorPoints": [],
+  "facing": 1,
+  "maxLifetime": 500,
+  "minLifetime": 500,
+  "name": "Cactus 5",
+  "objectType": "Cactus 5 Bullet",
+  "positionTweenType": "EXPOIN",
+  "scalePoints": [
+    {
+      "frac": 200,
+      "value": 400
+    },
+    {
+      "frac": 500,
+      "value": 400
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 5257068,
+  "startScale": 10,
+  "stayLow": 1
+}
+

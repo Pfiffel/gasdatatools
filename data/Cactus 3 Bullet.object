@@ -1,0 +1,73 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Attack 1",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 80,
+          "y": 0
+        }
+      }
+    },
+    {
+      "height": 0,
+      "name": "Attack 2",
+      "pos": {
+        "f": 450,
+        "p": {
+          "x": 60,
+          "y": 20
+        }
+      }
+    },
+    {
+      "height": 0,
+      "name": "Attack 3",
+      "pos": {
+        "f": -450,
+        "p": {
+          "x": 60,
+          "y": -20
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Cactus 3 Bullet",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16723502,
+      "height": 80,
+      "mirror": 1,
+      "name": "Thorn 1",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 41,
+          "y": 0
+        },
+        {
+          "x": -2,
+          "y": 7
+        },
+        {
+          "x": -20,
+          "y": 7
+        },
+        {
+          "x": -30,
+          "y": 3
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

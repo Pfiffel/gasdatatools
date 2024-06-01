@@ -1,0 +1,10 @@
+{
+  "damage": 75,
+  "emitterType": "Cactus 2 Bullet",
+  "name": "Cactus 2 Bullet",
+  "objectType": "Cactus 2 Bullet",
+  "powers": [],
+  "soundPack": "Bogweed Low Bullet",
+  "speed": 160
+}
+

@@ -16,9 +16,9 @@
   "guns": 0,
   "name": "Hypermatter Warhead",
   "overworldDrop": 1,
-  "plusEffects": [],
   "precursorTech": 0,
   "rare": 0,
+  "requiresMissiles": 1,
   "triggers": 1
 }
 

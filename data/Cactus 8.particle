@@ -1,0 +1,27 @@
+{
+  "colorPoints": [],
+  "facing": 1,
+  "maxLifetime": 500,
+  "minLifetime": 500,
+  "name": "Cactus 8",
+  "objectType": "Cactus 8 Bullet",
+  "positionTweenType": "EXPOIN",
+  "scalePoints": [
+    {
+      "frac": 200,
+      "value": 400
+    },
+    {
+      "frac": 500,
+      "value": 400
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 1907971,
+  "startScale": 10,
+  "stayLow": 1
+}
+

@@ -4,7 +4,7 @@
   "burrowDetectRange": 0,
   "collisionRadius": 80,
   "consolationItemPack": "Tier 5 Common",
-  "deathCrySoundPack": "Xenofrog General Death Cries",
+  "deathCrySoundPack": "Xenofrog King Death Cries",
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 8000,
@@ -51,7 +51,6 @@
           "guardian": 0,
           "lifetime": 0,
           "maxCount": 3,
-          "monsterName": "",
           "monsterNames": [
             "Xenofrog Dire Defender"
           ],
@@ -91,7 +90,6 @@
           "guardian": 0,
           "lifetime": 0,
           "maxCount": 3,
-          "monsterName": "",
           "monsterNames": [
             "Xenofrog Dire Soldier"
           ],

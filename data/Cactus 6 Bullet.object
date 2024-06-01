@@ -1,0 +1,35 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Cactus 6 Bullet",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 14335232,
+      "height": 80,
+      "mirror": 1,
+      "name": "Thorn",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 34,
+          "y": 0
+        },
+        {
+          "x": -2,
+          "y": 18
+        },
+        {
+          "x": -18,
+          "y": 7
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

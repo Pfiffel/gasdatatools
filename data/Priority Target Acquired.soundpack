@@ -1,0 +1,8 @@
+{
+  "name": "Priority Target Acquired",
+  "sounds": [
+    "UI_Target_Acquired"
+  ],
+  "volume": 200
+}
+

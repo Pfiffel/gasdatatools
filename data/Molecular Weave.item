@@ -1,0 +1,23 @@
+{
+  "boon": 1,
+  "credits": 6,
+  "defenses": 1,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 50,
+        "statType": 24
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Molecular Weave",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 0
+}
+

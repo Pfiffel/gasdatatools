@@ -23,7 +23,7 @@
               }
             ],
             "tag": "",
-            "timeGap": 0,
+            "timeGap": 250,
             "tweenType": "QUADIN",
             "volume": 150
           },

@@ -1,0 +1,8 @@
+{
+  "name": "Priority Target Destroyed",
+  "sounds": [
+    "UI_Target_Destroyed"
+  ],
+  "volume": 200
+}
+

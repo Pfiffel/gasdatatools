@@ -16,7 +16,7 @@
     }
   ],
   "name": "Xenofrog Pustulant Explosion",
-  "sound": "Enemy_XenofrogGrenadier_Bomb_Explosion_01",
+  "sound": "Enemy_XenofrogPustulant_Shotgun_Blast",
   "volume": 100
 }
 

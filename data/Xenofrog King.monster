@@ -4,7 +4,7 @@
   "burrowDetectRange": 0,
   "collisionRadius": 80,
   "consolationItemPack": "",
-  "deathCrySoundPack": "Xenofrog General Enrage 2",
+  "deathCrySoundPack": "Xenofrog King Enrage 2",
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 8000,
@@ -46,7 +46,6 @@
           "guardian": 0,
           "lifetime": 0,
           "maxCount": 1,
-          "monsterName": "",
           "monsterNames": [
             "Xenofrog Dire Defender"
           ],
@@ -86,7 +85,6 @@
           "guardian": 0,
           "lifetime": 0,
           "maxCount": 1,
-          "monsterName": "",
           "monsterNames": [
             "Xenofrog Dire Soldier"
           ],
