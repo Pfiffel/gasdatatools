@@ -66,6 +66,7 @@ function RefreshLists() {
 	tableOutput.appendChild(showUsage(STAT_TYPES));
 	tableOutput.appendChild(showUsage(ACTIVE_WHILE_NAMES));
 	tableOutput.appendChild(showUsage(TRIGGERED_TRIGGER_EFFECTS));
+	//tableOutput.appendChild(FullSymbioteTable());
 }
 function GetSymbAmount(t) {
 	var amount = 0;
@@ -94,6 +95,22 @@ function parseTierList(t) {
 		div.appendChild(cont);
 	}
 	return div;
+}
+function FullSymbioteTable()
+{
+	var tbl = document.createElement('table');
+	let th = tbl.insertRow();
+	makeHeaderCell("Effects", th);
+	for (let t = 1; t < TIERS + 1; t++) {
+		for (var i = 0; i < gasData["symbiote"].length; i++) {
+			var symb = gasData["symbiote"][i];
+			if (symb.tier != t) continue;
+			let tr = tbl.insertRow();
+			var string = MakeStatsTable(symb, symb.tier, true, false, false, false, -1, true);
+			var cell = makeCell(string, tr);
+		}
+	}
+	return tbl;
 }
 function IsStarter(symb) {
 	for (let i in defaultSymbiotes) {

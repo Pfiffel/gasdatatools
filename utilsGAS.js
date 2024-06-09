@@ -229,7 +229,7 @@ function SlotTypeToText(data) {
 
 	return s;
 }
-function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bDescription = true, bSpeaker = false, idxTrigger = -1) {
+function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bDescription = true, bSpeaker = false, idxTrigger = -1, bJustGimmeStatStringHack = false) {
 	if (tier == 0) tier = mainData.tier;
 	if (mainData.credits != undefined) tier = mainData.credits;
 	else if (mainData.rarity != undefined) tier = mainData.rarity + 1;
@@ -266,6 +266,9 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 	let prevRepeat = false;
 	let delayArray = [];
 	let dps = 0;
+
+	// wrapping it in ="" because google sheets will be confused by leading pluses
+	let justGimmeStatString = "=\"";
 	if (mainData.effects == undefined && idxTrigger != -1) // is trigger
 	{
 		var tempTriggers = mainData.params;
@@ -396,6 +399,10 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 				s += printKeyAndData(key, iterEffect.data[key]);
 			}
 		}
+		if(bJustGimmeStatStringHack)
+		{
+			justGimmeStatString += s + "";
+		}
 		if (prevRepeat)
 			prevCell.innerHTML += s;
 		else {
@@ -411,6 +418,8 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 		var dpsCell = makeCell(printKeyAndData("DPS", round(dps, 2)), tbl.insertRow());
 		dpsCell.colSpan = 2;
 	}
+	if(bJustGimmeStatStringHack)
+		return justGimmeStatString.substring(0,justGimmeStatString.length-5) + "\"";
 	return tbl;
 }
 function MakePickupPackText(data) {
