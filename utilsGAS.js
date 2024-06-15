@@ -595,7 +595,12 @@ function GetTriggeredEffectString(tag, data, delayArray) {
 		s += "Zap up to " + getPluralIrregular(data.targets, "nearby enemy", "nearby enemies") + "<br/>";
 		s += printKeyAndData("Range", data.range, "", AddReticle(data.reticleColor));
 		s += printKeyAndData("Zap Damage", data.damage);
-		s += AddEffectsText(data);
+		for (var effects in data.statusEffects) {
+			var effect = data.statusEffects[effects];
+			let o = ShowStatusEffect(effect);
+			s += o.s;
+			damage += o.damage;
+		}
 		damage += data.damage;
 	}
 	else if (tag == "MineTrigger") {
@@ -658,6 +663,7 @@ function GetTriggeredEffectString(tag, data, delayArray) {
 			var effect = data.statusEffects[effects];
 			let o = ShowStatusEffect(effect);
 			s += o.s;
+			damage += o.damage;
 		}
 		damage += data.damage * data.count;
 	}
