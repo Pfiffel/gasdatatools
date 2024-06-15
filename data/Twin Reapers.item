@@ -7,7 +7,10 @@
       "data": {
         "cooldown": 300,
         "damage": 18,
+        "displayName": "",
+        "drawStatsInTooltip": 1,
         "emitterType": "Twin Reapers Trail",
+        "extraText": "2x ",
         "f": 350,
         "halfArc": 50,
         "objectType": "Twin Reapers Bullet",
@@ -24,7 +27,10 @@
       "data": {
         "cooldown": 300,
         "damage": 18,
+        "displayName": "",
+        "drawStatsInTooltip": 0,
         "emitterType": "Twin Reapers Trail",
+        "extraText": "",
         "f": -350,
         "halfArc": 50,
         "objectType": "Twin Reapers Bullet",
@@ -42,9 +48,13 @@
   "guns": 1,
   "name": "Twin Reapers",
   "overworldDrop": 1,
-  "plusEffects": [],
   "precursorTech": 0,
   "rare": 1,
+  "requiresBlast": 0,
+  "requiresBomb": 0,
+  "requiresBurning": 0,
+  "requiresFreezeChill": 0,
+  "requiresMissiles": 0,
   "triggers": 0
 }
 

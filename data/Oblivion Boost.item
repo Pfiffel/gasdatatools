@@ -1,28 +1,30 @@
 {
   "boon": 1,
-  "credits": 5,
+  "credits": 8,
   "defenses": 0,
   "effects": [
     {
       "data": {
-        "activeWhile": 0,
-        "amount": 30,
-        "statType": 15
+        "activeWhile": 22,
+        "amount": 25,
+        "statType": 0
       },
       "tag": "ItemStat"
     }
   ],
   "engines": 0,
   "guns": 1,
-  "name": "Hades Unit",
+  "name": "Oblivion Boost",
   "overworldDrop": 1,
   "precursorTech": 0,
   "rare": 1,
   "requiresBlast": 0,
   "requiresBomb": 0,
-  "requiresBurning": 1,
+  "requiresBurning": 0,
+  "requiresDematerialize": 1,
   "requiresFreezeChill": 0,
   "requiresMissiles": 0,
+  "requiresZap": 0,
   "triggers": 0
 }
 

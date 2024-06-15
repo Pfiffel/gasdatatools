@@ -5,31 +5,32 @@
   "effects": [
     {
       "data": {
-        "range": 280,
-        "reticleColor": 7602035,
-        "statusEffects": [
-          {
-            "data": {
-              "arcOffset": 0,
-              "halfArc": 1,
-              "maxDist": 10,
-              "minDist": 10,
-              "particleType": "Byllis Zap",
-              "spacing": 20
-            },
-            "tag": "ParticleLineEffect"
+        "params": {
+          "data": {
+            "damage": 100,
+            "range": 280,
+            "reticleColor": 7602035,
+            "statusEffects": [
+              {
+                "data": {
+                  "arcOffset": 0,
+                  "halfArc": 1,
+                  "maxDist": 10,
+                  "minDist": 10,
+                  "particleType": "Byllis Zap",
+                  "spacing": 20
+                },
+                "tag": "ParticleLineEffect"
+              }
+            ],
+            "tag": "",
+            "targets": 1
           },
-          {
-            "data": {
-              "damage": 90
-            },
-            "tag": "DamageEffect"
-          }
-        ],
-        "targets": 1,
+          "tag": "ZapTrigger"
+        },
         "when": 5
       },
-      "tag": "TriggeredRandomTargetEffect"
+      "tag": "TriggeredTriggerEffect"
     }
   ],
   "engines": 0,
@@ -38,6 +39,12 @@
   "overworldDrop": 0,
   "precursorTech": 1,
   "rare": 0,
+  "requiresBlast": 0,
+  "requiresBomb": 0,
+  "requiresBurning": 0,
+  "requiresFreezeChill": 0,
+  "requiresMissiles": 0,
+  "requiresZap": 0,
   "triggers": 0
 }
 

@@ -3,37 +3,51 @@
   "effects": [
     {
       "data": {
+        "activeWhile": 0,
         "cooldown": 5000,
-        "range": 300,
-        "reticleColor": 1350354,
-        "statusEffects": [
+        "params": [
           {
             "data": {
-              "duration": 4000
+              "damage": 25,
+              "range": 300,
+              "reticleColor": 1350354,
+              "statusEffects": [
+                {
+                  "data": {
+                    "duration": 4000
+                  },
+                  "tag": "FreezeEffect"
+                },
+                {
+                  "data": {
+                    "arcOffset": 0,
+                    "halfArc": 1800,
+                    "maxDist": 10,
+                    "minDist": 0,
+                    "particleType": "Glacier Effect Line",
+                    "spacing": 15
+                  },
+                  "tag": "ParticleLineEffect"
+                },
+                {
+                  "data": {
+                    "sound": "Symbiote_Effect_Glacier_Zap",
+                    "volume": 150
+                  },
+                  "tag": "PlaySoundEffect"
+                }
+              ],
+              "tag": "",
+              "targets": 1
             },
-            "tag": "FreezeEffect"
-          },
-          {
-            "data": {
-              "arcOffset": 0,
-              "halfArc": 1800,
-              "maxDist": 10,
-              "minDist": 0,
-              "particleType": "Glacier Effect Line",
-              "spacing": 15
-            },
-            "tag": "ParticleLineEffect"
-          },
-          {
-            "data": {
-              "sound": "Symbiote_Effect_Glacier_Zap",
-              "volume": 150
-            },
-            "tag": "PlaySoundEffect"
+            "tag": "ZapTrigger"
           }
-        ]
+        ],
+        "percentChance": 100,
+        "reticleColor": 11184810,
+        "targetingRange": 0
       },
-      "tag": "RandomTargetEffect"
+      "tag": "PeriodicTriggerEffect"
     }
   ],
   "enemies": [],

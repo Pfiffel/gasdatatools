@@ -3,38 +3,45 @@
   "effects": [
     {
       "data": {
-        "range": 295,
-        "reticleColor": 4276545,
-        "statusEffects": [
-          {
-            "data": {
-              "duration": 3000
-            },
-            "tag": "SusceptibleEffect"
+        "params": {
+          "data": {
+            "damage": 25,
+            "range": 295,
+            "reticleColor": 4276545,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 3000
+                },
+                "tag": "SusceptibleEffect"
+              },
+              {
+                "data": {
+                  "arcOffset": 0,
+                  "halfArc": 1800,
+                  "maxDist": 10,
+                  "minDist": 0,
+                  "particleType": "Grave Effect Line",
+                  "spacing": 35
+                },
+                "tag": "ParticleLineEffect"
+              },
+              {
+                "data": {
+                  "sound": "Symbiote_Effect_Grave_Zap",
+                  "volume": 125
+                },
+                "tag": "PlaySoundEffect"
+              }
+            ],
+            "tag": "",
+            "targets": 1
           },
-          {
-            "data": {
-              "arcOffset": 0,
-              "halfArc": 1800,
-              "maxDist": 10,
-              "minDist": 0,
-              "particleType": "Grave Effect Line",
-              "spacing": 35
-            },
-            "tag": "ParticleLineEffect"
-          },
-          {
-            "data": {
-              "sound": "Symbiote_Effect_Grave_Zap",
-              "volume": 125
-            },
-            "tag": "PlaySoundEffect"
-          }
-        ],
-        "targets": 1,
+          "tag": "ZapTrigger"
+        },
         "when": 7
       },
-      "tag": "TriggeredRandomTargetEffect"
+      "tag": "TriggeredTriggerEffect"
     }
   ],
   "enemies": [],

@@ -1,0 +1,53 @@
+{
+  "boon": 1,
+  "credits": 6,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 22,
+        "cooldown": 500,
+        "params": [
+          {
+            "data": {
+              "count": 1,
+              "damage": 150,
+              "emitterType": "Dark Star Launcher Trail",
+              "objectType": "Dark Star Launcher Missile",
+              "range": 260,
+              "reticleColor": 6250335,
+              "sound": "Hercules Missile",
+              "soundPack": "",
+              "speed": 300,
+              "statusEffects": [],
+              "tag": "",
+              "timeGap": 200,
+              "tweenType": "CUBICIN",
+              "volume": 75
+            },
+            "tag": "SharkletTrigger"
+          }
+        ],
+        "percentChance": 100,
+        "reticleColor": 6250335,
+        "targetingRange": 0
+      },
+      "tag": "PeriodicTriggerEffect"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Dark Star Launcher",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "rare": 1,
+  "requiresBlast": 0,
+  "requiresBomb": 0,
+  "requiresBurning": 0,
+  "requiresDematerialize": 1,
+  "requiresFreezeChill": 0,
+  "requiresMissiles": 0,
+  "requiresZap": 0,
+  "triggers": 1
+}
+

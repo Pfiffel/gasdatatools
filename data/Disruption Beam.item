@@ -5,38 +5,45 @@
   "effects": [
     {
       "data": {
-        "range": 280,
-        "reticleColor": 5335124,
-        "statusEffects": [
-          {
-            "data": {
-              "duration": 2500
-            },
-            "tag": "SusceptibleEffect"
+        "params": {
+          "data": {
+            "damage": 25,
+            "range": 280,
+            "reticleColor": 5335124,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 2500
+                },
+                "tag": "SusceptibleEffect"
+              },
+              {
+                "data": {
+                  "arcOffset": 0,
+                  "halfArc": 1800,
+                  "maxDist": 10,
+                  "minDist": 0,
+                  "particleType": "Cataract Effect Line",
+                  "spacing": 15
+                },
+                "tag": "ParticleLineEffect"
+              },
+              {
+                "data": {
+                  "sound": "retro_laser_01",
+                  "volume": 100
+                },
+                "tag": "PlaySoundEffect"
+              }
+            ],
+            "tag": "",
+            "targets": 1
           },
-          {
-            "data": {
-              "arcOffset": 0,
-              "halfArc": 1800,
-              "maxDist": 10,
-              "minDist": 0,
-              "particleType": "Cataract Effect Line",
-              "spacing": 15
-            },
-            "tag": "ParticleLineEffect"
-          },
-          {
-            "data": {
-              "sound": "retro_laser_01",
-              "volume": 100
-            },
-            "tag": "PlaySoundEffect"
-          }
-        ],
-        "targets": 1,
+          "tag": "ZapTrigger"
+        },
         "when": 8
       },
-      "tag": "TriggeredRandomTargetEffect"
+      "tag": "TriggeredTriggerEffect"
     }
   ],
   "engines": 0,
@@ -45,6 +52,12 @@
   "overworldDrop": 1,
   "precursorTech": 0,
   "rare": 1,
+  "requiresBlast": 0,
+  "requiresBomb": 0,
+  "requiresBurning": 0,
+  "requiresFreezeChill": 0,
+  "requiresMissiles": 0,
+  "requiresZap": 0,
   "triggers": 1
 }
 

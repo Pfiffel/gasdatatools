@@ -3,45 +3,53 @@
   "effects": [
     {
       "data": {
+        "activeWhile": 0,
         "cooldown": 2500,
-        "range": 240,
-        "reticleColor": 10001405,
-        "statusEffects": [
+        "params": [
           {
             "data": {
-              "damage": 100
+              "damage": 125,
+              "range": 240,
+              "reticleColor": 10001405,
+              "statusEffects": [
+                {
+                  "data": {
+                    "arcOffset": 0,
+                    "halfArc": 100,
+                    "maxDist": 30,
+                    "minDist": 10,
+                    "particleType": "Thunderhead Zap",
+                    "spacing": 20
+                  },
+                  "tag": "ParticleLineEffect"
+                },
+                {
+                  "data": {
+                    "damage": 50,
+                    "explosionType": "Thunderhead Zap",
+                    "radius": 250
+                  },
+                  "tag": "BlastEffect"
+                },
+                {
+                  "data": {
+                    "sound": "Symbiote_Effect_Thunderhead_Zap",
+                    "volume": 200
+                  },
+                  "tag": "PlaySoundEffect"
+                }
+              ],
+              "tag": "",
+              "targets": 1
             },
-            "tag": "DamageEffect"
-          },
-          {
-            "data": {
-              "arcOffset": 0,
-              "halfArc": 100,
-              "maxDist": 30,
-              "minDist": 10,
-              "particleType": "Thunderhead Zap",
-              "spacing": 20
-            },
-            "tag": "ParticleLineEffect"
-          },
-          {
-            "data": {
-              "damage": 50,
-              "explosionType": "Thunderhead Zap",
-              "radius": 250
-            },
-            "tag": "BlastEffect"
-          },
-          {
-            "data": {
-              "sound": "Symbiote_Effect_Thunderhead_Zap",
-              "volume": 200
-            },
-            "tag": "PlaySoundEffect"
+            "tag": "ZapTrigger"
           }
-        ]
+        ],
+        "percentChance": 100,
+        "reticleColor": 11184810,
+        "targetingRange": 0
       },
-      "tag": "RandomTargetEffect"
+      "tag": "PeriodicTriggerEffect"
     }
   ],
   "enemies": [],

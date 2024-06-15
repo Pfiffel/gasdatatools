@@ -7,7 +7,10 @@
       "data": {
         "cooldown": 550,
         "damage": 12,
+        "displayName": "",
+        "drawStatsInTooltip": 1,
         "emitterType": "Gemini Laser Trail",
+        "extraText": "2x ",
         "f": 450,
         "halfArc": 300,
         "objectType": "Gemini Laser Bullet",
@@ -24,7 +27,10 @@
       "data": {
         "cooldown": 550,
         "damage": 12,
+        "displayName": "",
+        "drawStatsInTooltip": 0,
         "emitterType": "Gemini Laser Trail",
+        "extraText": "",
         "f": -450,
         "halfArc": 300,
         "objectType": "Gemini Laser Bullet",
@@ -44,6 +50,11 @@
   "overworldDrop": 1,
   "precursorTech": 0,
   "rare": 1,
+  "requiresBlast": 0,
+  "requiresBomb": 0,
+  "requiresBurning": 0,
+  "requiresFreezeChill": 0,
+  "requiresMissiles": 0,
   "triggers": 0
 }
 

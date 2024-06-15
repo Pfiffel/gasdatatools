@@ -1,0 +1,47 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Dark Star Launcher Missile",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 602981,
+      "height": 60,
+      "mirror": 1,
+      "name": "Star",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 68,
+          "y": 0
+        },
+        {
+          "x": 18,
+          "y": 14
+        },
+        {
+          "x": 18,
+          "y": 62
+        },
+        {
+          "x": -10,
+          "y": 24
+        },
+        {
+          "x": -56,
+          "y": 40
+        },
+        {
+          "x": -24,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

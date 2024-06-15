@@ -3,55 +3,56 @@
   "effects": [
     {
       "data": {
-        "range": 280,
-        "reticleColor": 2788898,
-        "statusEffects": [
-          {
-            "data": {
-              "damage": 30
-            },
-            "tag": "DamageEffect"
+        "params": {
+          "data": {
+            "damage": 40,
+            "range": 280,
+            "reticleColor": 2788898,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 1000
+                },
+                "tag": "StunEffect"
+              },
+              {
+                "data": {
+                  "arcOffset": 0,
+                  "halfArc": 300,
+                  "maxDist": 6,
+                  "minDist": 3,
+                  "particleType": "Tentacle Zap",
+                  "spacing": 20
+                },
+                "tag": "ParticleLineEffect"
+              },
+              {
+                "data": {
+                  "arcOffset": 0,
+                  "halfArc": 100,
+                  "maxDist": 6,
+                  "minDist": 3,
+                  "particleType": "Tentacle Zap 2",
+                  "spacing": 50
+                },
+                "tag": "ParticleLineEffect"
+              },
+              {
+                "data": {
+                  "sound": "Symbiote_Effect_Tentacle_Zap",
+                  "volume": 300
+                },
+                "tag": "PlaySoundEffect"
+              }
+            ],
+            "tag": "",
+            "targets": 3
           },
-          {
-            "data": {
-              "duration": 1000
-            },
-            "tag": "StunEffect"
-          },
-          {
-            "data": {
-              "arcOffset": 0,
-              "halfArc": 300,
-              "maxDist": 6,
-              "minDist": 3,
-              "particleType": "Tentacle Zap",
-              "spacing": 20
-            },
-            "tag": "ParticleLineEffect"
-          },
-          {
-            "data": {
-              "arcOffset": 0,
-              "halfArc": 100,
-              "maxDist": 6,
-              "minDist": 3,
-              "particleType": "Tentacle Zap 2",
-              "spacing": 50
-            },
-            "tag": "ParticleLineEffect"
-          },
-          {
-            "data": {
-              "sound": "Symbiote_Effect_Tentacle_Zap",
-              "volume": 300
-            },
-            "tag": "PlaySoundEffect"
-          }
-        ],
-        "targets": 1,
+          "tag": "ZapTrigger"
+        },
         "when": 11
       },
-      "tag": "TriggeredRandomTargetEffect"
+      "tag": "TriggeredTriggerEffect"
     }
   ],
   "enemies": [],

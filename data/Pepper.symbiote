@@ -3,38 +3,39 @@
   "effects": [
     {
       "data": {
-        "range": 305,
-        "reticleColor": 12850589,
-        "statusEffects": [
-          {
-            "data": {
-              "damage": 150
-            },
-            "tag": "DamageEffect"
+        "params": {
+          "data": {
+            "damage": 175,
+            "range": 305,
+            "reticleColor": 12850589,
+            "statusEffects": [
+              {
+                "data": {
+                  "arcOffset": 0,
+                  "halfArc": 1800,
+                  "maxDist": 10,
+                  "minDist": 0,
+                  "particleType": "Pepper Effect Line",
+                  "spacing": 15
+                },
+                "tag": "ParticleLineEffect"
+              },
+              {
+                "data": {
+                  "sound": "Symbiote_Effect_Pepper_Zap",
+                  "volume": 200
+                },
+                "tag": "PlaySoundEffect"
+              }
+            ],
+            "tag": "",
+            "targets": 1
           },
-          {
-            "data": {
-              "arcOffset": 0,
-              "halfArc": 1800,
-              "maxDist": 10,
-              "minDist": 0,
-              "particleType": "Pepper Effect Line",
-              "spacing": 15
-            },
-            "tag": "ParticleLineEffect"
-          },
-          {
-            "data": {
-              "sound": "Symbiote_Effect_Pepper_Zap",
-              "volume": 200
-            },
-            "tag": "PlaySoundEffect"
-          }
-        ],
-        "targets": 1,
+          "tag": "ZapTrigger"
+        },
         "when": 6
       },
-      "tag": "TriggeredRandomTargetEffect"
+      "tag": "TriggeredTriggerEffect"
     }
   ],
   "enemies": [],

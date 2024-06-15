@@ -59,7 +59,7 @@
       "points": [
         {
           "x": 20,
-          "y": 23
+          "y": 24
         },
         {
           "x": 20,
@@ -75,61 +75,7 @@
         },
         {
           "x": -33,
-          "y": 23
-        }
-      ],
-      "useBoneMirror": 1
-    },
-    {
-      "bone": "Turret",
-      "clones": [],
-      "closed": 1,
-      "collider": 0,
-      "color": 11373142,
-      "height": 5,
-      "mirror": 1,
-      "name": "Tank",
-      "noDraw": 0,
-      "points": [
-        {
-          "x": 4,
-          "y": 2
-        },
-        {
-          "x": 9,
-          "y": 6
-        },
-        {
-          "x": 9,
-          "y": 13
-        },
-        {
-          "x": 4,
-          "y": 16
-        },
-        {
-          "x": -14,
-          "y": 16
-        },
-        {
-          "x": -14,
           "y": 24
-        },
-        {
-          "x": -20,
-          "y": 30
-        },
-        {
-          "x": -27,
-          "y": 30
-        },
-        {
-          "x": -27,
-          "y": 9
-        },
-        {
-          "x": -20,
-          "y": 2
         }
       ],
       "useBoneMirror": 1
@@ -178,6 +124,74 @@
         {
           "x": 52,
           "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 5,
+      "mirror": 1,
+      "name": "Tank",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 14,
+          "y": 4
+        },
+        {
+          "x": 19,
+          "y": 8
+        },
+        {
+          "x": 19,
+          "y": 15
+        },
+        {
+          "x": 14,
+          "y": 18
+        },
+        {
+          "x": -28,
+          "y": 18
+        },
+        {
+          "x": -27,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 11373142,
+      "height": 5,
+      "mirror": 1,
+      "name": "Tank",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -12,
+          "y": 2
+        },
+        {
+          "x": -12,
+          "y": 20
+        },
+        {
+          "x": -29,
+          "y": 20
+        },
+        {
+          "x": -29,
+          "y": 2
         }
       ],
       "useBoneMirror": 1

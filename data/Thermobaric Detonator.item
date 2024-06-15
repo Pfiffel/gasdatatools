@@ -16,9 +16,11 @@
   "guns": 0,
   "name": "Thermobaric Detonator",
   "overworldDrop": 1,
-  "plusEffects": [],
   "precursorTech": 0,
   "rare": 0,
+  "requiresBlast": 0,
+  "requiresBomb": 1,
+  "requiresMissiles": 0,
   "triggers": 1
 }
 

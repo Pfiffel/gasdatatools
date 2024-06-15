@@ -5,31 +5,38 @@
   "effects": [
     {
       "data": {
-        "range": 265,
-        "reticleColor": 6316128,
-        "statusEffects": [
-          {
-            "data": {
-              "duration": 4000
-            },
-            "tag": "StunEffect"
+        "params": {
+          "data": {
+            "damage": 25,
+            "range": 265,
+            "reticleColor": 6316128,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 4000
+                },
+                "tag": "StunEffect"
+              },
+              {
+                "data": {
+                  "arcOffset": 0,
+                  "halfArc": 1800,
+                  "maxDist": 10,
+                  "minDist": 0,
+                  "particleType": "Cataract Effect Line",
+                  "spacing": 15
+                },
+                "tag": "ParticleLineEffect"
+              }
+            ],
+            "tag": "",
+            "targets": 1
           },
-          {
-            "data": {
-              "arcOffset": 0,
-              "halfArc": 1800,
-              "maxDist": 10,
-              "minDist": 0,
-              "particleType": "Cataract Effect Line",
-              "spacing": 15
-            },
-            "tag": "ParticleLineEffect"
-          }
-        ],
-        "targets": 1,
+          "tag": "ZapTrigger"
+        },
         "when": 9
       },
-      "tag": "TriggeredRandomTargetEffect"
+      "tag": "TriggeredTriggerEffect"
     }
   ],
   "engines": 0,
@@ -38,6 +45,12 @@
   "overworldDrop": 0,
   "precursorTech": 1,
   "rare": 0,
+  "requiresBlast": 0,
+  "requiresBomb": 0,
+  "requiresBurning": 0,
+  "requiresFreezeChill": 0,
+  "requiresMissiles": 0,
+  "requiresZap": 0,
   "triggers": 0
 }
 

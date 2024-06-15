@@ -3,55 +3,70 @@
   "effects": [
     {
       "data": {
+        "activeWhile": 0,
         "cooldown": 3000,
-        "range": 300,
-        "reticleColor": 4672588,
-        "statusEffects": [
+        "params": [
           {
             "data": {
-              "duration": 2000
+              "damage": 25,
+              "range": 300,
+              "reticleColor": 4672588,
+              "statusEffects": [
+                {
+                  "data": {
+                    "duration": 2000
+                  },
+                  "tag": "StunEffect"
+                },
+                {
+                  "data": {
+                    "dps": 20,
+                    "duration": 2000,
+                    "reducedDurationOnBoss": 1,
+                    "stack": 0
+                  },
+                  "tag": "DoTEffect"
+                },
+                {
+                  "data": {
+                    "duration": 2000,
+                    "glyphCount": 5,
+                    "glyphType": "Cataract Stun",
+                    "radius": 30,
+                    "reducedDurationOnBoss": 1
+                  },
+                  "tag": "GlyphCircleEffect"
+                },
+                {
+                  "data": {
+                    "arcOffset": 0,
+                    "halfArc": 1800,
+                    "maxDist": 10,
+                    "minDist": 0,
+                    "particleType": "Cataract Effect Line",
+                    "spacing": 15
+                  },
+                  "tag": "ParticleLineEffect"
+                },
+                {
+                  "data": {
+                    "sound": "Symbiote_Effect_Cataract_Zap",
+                    "volume": 125
+                  },
+                  "tag": "PlaySoundEffect"
+                }
+              ],
+              "tag": "",
+              "targets": 1
             },
-            "tag": "StunEffect"
-          },
-          {
-            "data": {
-              "dps": 20,
-              "duration": 2000,
-              "reducedDurationOnBoss": 1
-            },
-            "tag": "DoTEffect"
-          },
-          {
-            "data": {
-              "duration": 2000,
-              "glyphCount": 5,
-              "glyphType": "Cataract Stun",
-              "radius": 30,
-              "reducedDurationOnBoss": 1
-            },
-            "tag": "GlyphCircleEffect"
-          },
-          {
-            "data": {
-              "arcOffset": 0,
-              "halfArc": 1800,
-              "maxDist": 10,
-              "minDist": 0,
-              "particleType": "Cataract Effect Line",
-              "spacing": 15
-            },
-            "tag": "ParticleLineEffect"
-          },
-          {
-            "data": {
-              "sound": "Symbiote_Effect_Cataract_Zap",
-              "volume": 125
-            },
-            "tag": "PlaySoundEffect"
+            "tag": "ZapTrigger"
           }
-        ]
+        ],
+        "percentChance": 100,
+        "reticleColor": 11184810,
+        "targetingRange": 0
       },
-      "tag": "RandomTargetEffect"
+      "tag": "PeriodicTriggerEffect"
     }
   ],
   "enemies": [],

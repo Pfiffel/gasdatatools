@@ -16,9 +16,10 @@
   "guns": 0,
   "name": "Nitro Blaster",
   "overworldDrop": 1,
-  "plusEffects": [],
   "precursorTech": 0,
   "rare": 0,
+  "requiresBlast": 1,
+  "requiresMissiles": 0,
   "triggers": 1
 }
 

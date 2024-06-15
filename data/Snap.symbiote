@@ -3,44 +3,45 @@
   "effects": [
     {
       "data": {
-        "range": 375,
-        "reticleColor": 4117716,
-        "statusEffects": [
-          {
-            "data": {
-              "duration": 3000
-            },
-            "tag": "FreezeEffect"
+        "params": {
+          "data": {
+            "damage": 50,
+            "range": 375,
+            "reticleColor": 4117716,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 3000
+                },
+                "tag": "FreezeEffect"
+              },
+              {
+                "data": {
+                  "arcOffset": 0,
+                  "halfArc": 1800,
+                  "maxDist": 100,
+                  "minDist": 0,
+                  "particleType": "Snap Effect Line",
+                  "spacing": 25
+                },
+                "tag": "ParticleLineEffect"
+              },
+              {
+                "data": {
+                  "sound": "Symbiote_Effect_Snap_Zap",
+                  "volume": 200
+                },
+                "tag": "PlaySoundEffect"
+              }
+            ],
+            "tag": "",
+            "targets": 5
           },
-          {
-            "data": {
-              "damage": 25
-            },
-            "tag": "DamageEffect"
-          },
-          {
-            "data": {
-              "arcOffset": 0,
-              "halfArc": 1800,
-              "maxDist": 100,
-              "minDist": 0,
-              "particleType": "Snap Effect Line",
-              "spacing": 25
-            },
-            "tag": "ParticleLineEffect"
-          },
-          {
-            "data": {
-              "sound": "Symbiote_Effect_Snap_Zap",
-              "volume": 200
-            },
-            "tag": "PlaySoundEffect"
-          }
-        ],
-        "targets": 5,
+          "tag": "ZapTrigger"
+        },
         "when": 8
       },
-      "tag": "TriggeredRandomTargetEffect"
+      "tag": "TriggeredTriggerEffect"
     }
   ],
   "enemies": [],
