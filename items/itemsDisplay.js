@@ -62,8 +62,10 @@ function DamageTypeTable() {
 	makeHeaderCell(STAT_TYPES[STATS.BLAST_DAMAGE][1], th);
 	makeHeaderCell(STAT_TYPES[STATS.BOMB_DAMAGE][1], th);
 	makeHeaderCell(STAT_TYPES[STATS.MISSILE_DAMAGE][1], th);
+	makeHeaderCell(STAT_TYPES[STATS.ZAP_DAMAGE][1], th);
 	let tr = tbl.insertRow();
-	for (let i = STATS.BLAST_DAMAGE; i <= STATS.MISSILE_DAMAGE; i++) {
+	for (var stat in STATS) {
+		let i = STATS[stat];
 		let cell = makeCell("", tr);
 		cell.appendChild(MakeTriggerList(i));
 	}
@@ -74,12 +76,14 @@ function DamageTypeTable() {
 		cell.appendChild(MakePassiveList(i));
 	}*/
 	let tr3 = tbl.insertRow();
-	for (let i = STATS.BLAST_DAMAGE; i <= STATS.MISSILE_DAMAGE; i++) {
+	for (var stat in STATS) {
+		let i = STATS[stat];
 		let cell = makeCell("", tr3);
 		cell.appendChild(MakeSymbioteItemList(gasData.symbiote, i));
 	}
 	let tr4 = tbl.insertRow();
-	for (let i = STATS.BLAST_DAMAGE; i <= STATS.MISSILE_DAMAGE; i++) {
+	for (var stat in STATS) {
+		let i = STATS[stat];
 		let cell = makeCell("", tr4);
 		cell.appendChild(MakeSymbioteItemList(gasData.item, i));
 	}
@@ -175,7 +179,8 @@ function DataHasEffect(effect, stat) {
 		if (
 			(IsBlast(params) && stat == STATS.BLAST_DAMAGE) ||
 			(IsBomb(params) && stat == STATS.BOMB_DAMAGE) ||
-			(IsMissile(params) && stat == STATS.MISSILE_DAMAGE)
+			(IsMissile(params) && stat == STATS.MISSILE_DAMAGE) ||
+			(IsZap(params) && stat == STATS.ZAP_DAMAGE)
 		) {
 			return true;
 		}
@@ -188,7 +193,8 @@ function DataHasEffectTrigger(data, stat) {
 		if (
 			(IsBlast(params) && stat == STATS.BLAST_DAMAGE) ||
 			(IsBomb(params) && stat == STATS.BOMB_DAMAGE) ||
-			(IsMissile(params) && stat == STATS.MISSILE_DAMAGE)
+			(IsMissile(params) && stat == STATS.MISSILE_DAMAGE) ||
+			(IsZap(params) && stat == STATS.ZAP_DAMAGE)
 		) {
 			return true;
 		}

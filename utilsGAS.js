@@ -2,6 +2,7 @@ const SCALE_STANDARD = 0.5;
 const SCALE_SMALL = 0.25;
 const MAP_CANVAS_SIZE = 600;
 
+const ZONE_COLORS = ["#FB7575","#11B75F","#BB60ED","#FDFD76","#F0A549","#A3A3A3"];
 const TIER_NAMES = ["", "Alpha", "Beta", "Gamma", "Delta", "Epsilon", "Omega", "", "", "", "Precursor Tech"];
 const MODULE_CREDITS = [0, 5, 10, 25, 50, 100, 250, 500, 1000];
 const MAX_LEVEL = 20;
@@ -28,6 +29,7 @@ const STATS = {
 	BLAST_DAMAGE: 21,
 	BOMB_DAMAGE: 22,
 	MISSILE_DAMAGE: 23,
+	ZAP_DAMAGE: 32,
 }
 const STAT_TYPES = {
 	"0": ["DAMAGE", "Gun Damage", false],
@@ -54,14 +56,17 @@ const STAT_TYPES = {
 	"21": ["BLAST_DAMAGE", "Blast Damage", false],
 	"22": ["BOMB_DAMAGE", "Bomb Damage", false],
 	"23": ["MISSILE_DAMAGE", "Missile Damage", false],
-	"24": ["MISSILE_DAMAGE", "Base Hull Strength", true],
-	"25": ["MISSILE_DAMAGE", "Base Gun Damage", true],
-	"26": ["MISSILE_DAMAGE", "Base Shield Strength", true],
-	"27": ["MISSILE_DAMAGE", "Base Blast Damage", true],
-	"28": ["MISSILE_DAMAGE", "Base Bomb Damage", true],
-	"29": ["MISSILE_DAMAGE", "Base Missile Damage", true],
-	"30": ["MISSILE_DAMAGE", "Missile Salvo Size", true],
-	"31": ["MISSILE_DAMAGE", "Base Repair Rate", true]
+	"24": ["HULL_PLUS", "Base Hull Strength", true],
+	"25": ["GUN_DAMAGE_PLUS", "Base Gun Damage", true],
+	"26": ["SHIELD_STRENGTH_PLUS", "Base Shield Strength", true],
+	"27": ["BLAST_DAMAGE_PLUS", "Base Blast Damage", true],
+	"28": ["BOMB_DAMAGE_PLUS", "Base Bomb Damage", true],
+	"29": ["MISSILE_DAMAGE_PLUS", "Base Missile Damage", true],
+	"30": ["MISSILE_COUNT_PLUS", "Missile Salvo Size", true],
+	"31": ["REPAIR_RATE_PLUS", "Base Repair Rate", true],
+	"32": ["ZAP_DAMAGE", "Zap Damage", false],
+	"33": ["ZAP_DAMAGE_PLUS", "Base Zap Damage", true],
+	"34": ["ZAP_TARGETS_PLUS", "Zap Target Count", true]
 };
 const ACTIVE_WHILE_NAMES = {
 	"0": ["ALWAYS", "always"],
@@ -85,7 +90,8 @@ const ACTIVE_WHILE_NAMES = {
 	"18": ["ROTATING", "rotating"],
 	"19": ["NOT_ROTATING", "not rotating"],
 	"20": ["OUT_OF_COMBAT", "out of combat"],
-	"21": ["NEW_CHARACTER", "on new character"]
+	"21": ["NEW_CHARACTER", "on new character"],
+	"22": ["DEMATERIALIZED", "dematerialized"]
 };
 const TRIGGER_TO_WHEN = [1, 7, 8, 4];
 const TRIGGERED_TRIGGER_EFFECTS = {
@@ -204,6 +210,15 @@ function IsMissile(params) {
 	}
 	return false;
 }
+function IsZap(params) {
+	if (!Array.isArray(params) && params.tag == "ZapTrigger")
+		return true;
+	for (var p in params) {
+		if (params[p].tag == "ZapTrigger")
+			return true;
+	}
+	return false;
+}
 function HasNoOffset(data) {
 	if (data.offset.x == 0 && data.offset.y == 0) return true;
 	return false;
@@ -247,7 +262,7 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 	var name = mainData.displayName != undefined ? mainData.displayName : mainData.name;
 	if (mainData.championName != undefined) name = name + " (" + mainData.championName + ")";
 	if (mainData.mana != undefined) name = name + " - " + classWrap(mainData.mana, "energy");
-	makeHeaderCell(colorWrap(name, GetTierColor(tier)), th);
+	makeHeaderCell(colorWrap(name, bSymbiote ? GetZoneColor(tier-1) : GetTierColor(tier)), th);
 
 	var slotTypes = SlotTypeToText(mainData);
 	if (slotTypes != "") {
@@ -341,14 +356,19 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 		}
 		else if (mainTag == "PlayerGunStats") {
 			let gundps = round(1000 * data.damage / data.cooldown, 2);
-			s += MakeGunStats(data);
+			if(data.drawStatsInTooltip != undefined && !data.drawStatsInTooltip) 
+				{
+					prevRepeat = true;
+				}
+				else
+					s += MakeGunStats(data);
 			dps += gundps;
 		}
 		else if (mainTag == "PeriodicTriggerEffect") {
 			var chanceTo = "";
 			if (data.percentChance != undefined && data.percentChance != 100)
 				chanceTo = ", " + classWrap(data.percentChance + "%", "cKeyValue") + " to";
-			var condition = activeWhile != undefined ? ("While " + classWrap(ACTIVE_WHILE_NAMES[activeWhile][1], "cKeyValue") + ", every ") : "Every ";
+			var condition = (activeWhile != undefined && activeWhile != 0) ? ("While " + classWrap(ACTIVE_WHILE_NAMES[activeWhile][1], "cKeyValue") + ", every ") : "Every ";
 			s += condition + classWrap(ToTime(data.cooldown), "cKeyValue") + chanceTo + ":<br/>";
 			let cooldownAndChanceMult = (10 / data.cooldown) * data.percentChance;
 
@@ -452,7 +472,8 @@ function MakePowerText(data) {
 function MakeGunStats(data) {
 	var s = "";
 	let gundps = round(1000 * data.damage / data.cooldown, 2);
-	s += printKeyAndData("Gun", gundps + " DPS");
+	let extra = data.extraText != undefined ? data.extraText : "";
+	s += printKeyAndData(extra + "Gun", gundps + " DPS");
 	s += printKeyAndData("├ Damage", data.damage);
 	s += printKeyAndData("├ RoF", round(1000 / data.cooldown, 2), "", "/s");
 	s += printKeyAndData("├ Range", data.range, "", AddReticle(data.reticleColor));
@@ -569,6 +590,13 @@ function GetTriggeredEffectString(tag, data, delayArray) {
 	}
 	else if (tag == "PickupPackTrigger") {
 		s += MakePickupPackText(data);
+	}
+	else if (tag == "ZapTrigger") {
+		s += "Zap up to " + getPluralIrregular(data.targets, "nearby enemy", "nearby enemies") + "<br/>";
+		s += printKeyAndData("Range", data.range, "", AddReticle(data.reticleColor));
+		s += printKeyAndData("Zap Damage", data.damage);
+		s += AddEffectsText(data);
+		damage += data.damage;
 	}
 	else if (tag == "MineTrigger") {
 		s += printKeyAndData("Bomb Damage", data.damage);
@@ -909,6 +937,9 @@ function SetTierColorsFromGlobals() {
 }
 function GetTierColor(tier) {
 	return tierColors[tier];
+}
+function GetZoneColor(tier) {
+	return ZONE_COLORS[tier];
 }
 function GetSpeaker(type) {
 	for (let i = 0; i < gasData["speaker"].length; i++) {

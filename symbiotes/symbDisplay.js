@@ -43,7 +43,7 @@ function RefreshLists() {
 		var amount = GetSymbAmount(t);
 		combinations *= amount;
 		totalAmount += amount;
-		var headerCell = makeHeaderCell("Tier " + t + " - " + colorWrap(TIER_NAMES[t] + " Symbiotes", GetTierColor(t)) + " - " + amount + " total", th);
+		var headerCell = makeHeaderCell("Tier " + t + " - " + colorWrap(TIER_NAMES[t] + " Symbiotes", GetZoneColor(t-1)) + " - " + amount + " total", th);
 
 		if (showDroppers.checked) {
 			headerCell.innerHTML += "<br/>From: ";

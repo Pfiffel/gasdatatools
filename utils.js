@@ -77,6 +77,12 @@ function getPluralUnitOnly(amount, unit) {
 	else
 		return s;
 }
+function getPluralIrregular(amount, unitSingle, unitPlural) {
+	if (amount != 1)
+		return amount  + " " + unitPlural;
+	else
+		return amount + " " + unitSingle;
+}
 function opBonusMalus(amount) {
 	return (amount > 0) ? "+" + amount : amount;
 }
