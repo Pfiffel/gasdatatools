@@ -38,6 +38,13 @@ function DamageTypeTable() {
 		let cell = makeCell("", tr);
 		cell.appendChild(MakeTriggerList(i));
 	}
+	let tr2 = tbl.insertRow();
+	makeHeaderCell("Accolade Bonuses", tr2);
+	for (var stat in STATS) {
+		let i = STATS[stat];
+		let cell = makeCell("", tr2);
+		cell.appendChild(MakeSymbioteItemList(gasData.accolade, i));
+	}
 	let tr3 = tbl.insertRow();
 	makeHeaderCell("Symbiotes", tr3);
 	for (var stat in STATS) {
@@ -51,6 +58,13 @@ function DamageTypeTable() {
 		let i = STATS[stat];
 		let cell = makeCell("", tr4);
 		cell.appendChild(MakeSymbioteItemList(gasData.item, i));
+	}
+	let tr5 = tbl.insertRow();
+	makeHeaderCell("Addons", tr5);
+	for (var stat in STATS) {
+		let i = STATS[stat];
+		let cell = makeCell("", tr5);
+		cell.appendChild(MakeSymbioteItemList(gasData.addon, i));
 	}
 	return tbl;
 }
@@ -91,6 +105,13 @@ function DamageTypeBoostersTable() {
 		let i = STATS[stat];
 		let cell = makeCell("", tr5);
 		cell.appendChild(MakeSymbioteItemListBoosters(gasData.item, i, true));
+	}
+	let tr6 = tbl.insertRow();
+	makeHeaderCell("Addons", tr6);
+	for (var stat in STATS) {
+		let i = STATS[stat];
+		let cell = makeCell("", tr6);
+		cell.appendChild(MakeSymbioteItemListBoosters(gasData.addon, i));
 	}
 	return tbl;
 }
@@ -144,6 +165,8 @@ function MakeSymbioteItemListBoosters(type, stat, isRare) {
 					tbl = MakeStatsTable(thing, thing.credits);
 				else if (type == gasData.item && !isRare && thing.rare == 0)
 					tbl = MakeStatsTable(thing, thing.credits);
+				else if (type == gasData.addon)
+					tbl = MakeStatsTable(thing);
 				tbl.classList.add("inline");
 				div.appendChild(tbl);
 				continue;
@@ -164,10 +187,14 @@ function MakeSymbioteItemList(type, stat) {
 			var hasEffect = DataHasEffect(thing.effects, stat);
 			if (hasEffect) {
 				let tbl;
-				if (type == gasData.symbiote)
+				if (type == gasData.accolade)
+					tbl = MakeStatsTable(thing, 0, false, false, false, false, false, false, true);
+				else if (type == gasData.symbiote)
 					tbl = MakeStatsTable(thing, thing.tier, true, false, false);
-				else
+				else if (type == gasData.item)
 					tbl = MakeStatsTable(thing, thing.credits);
+				else if (type == gasData.addon)
+					tbl = MakeStatsTable(thing);
 				tbl.classList.add("inline");
 				div.appendChild(tbl);
 				continue;
