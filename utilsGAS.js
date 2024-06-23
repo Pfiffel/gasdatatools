@@ -601,6 +601,13 @@ function GetTriggeredEffectString(tag, data, delayArray) {
 			s += o.s;
 			damage += o.damage;
 		}
+		for (var sg in data.shotguns) {
+			var shotgun = data.shotguns[sg];
+			if(shotgun.damage == 0) continue; // skip if shotgun is just there for the explosion effect (Silverwitch)
+			let o = GetTriggeredEffectString("ShotgunTrigger", shotgun, delayArray);
+			s += o.s;
+			damage += o.damage;
+		}
 		damage += data.damage;
 	}
 	else if (tag == "MineTrigger") {
