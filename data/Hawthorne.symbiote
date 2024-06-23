@@ -6,47 +6,38 @@
         "params": {
           "data": {
             "damage": 50,
+            "particleLines": [
+              {
+                "arcOffset": 0,
+                "halfArc": 300,
+                "maxDist": 6,
+                "minDist": 3,
+                "particleType": "Hawthorne Zap",
+                "spacing": 20
+              },
+              {
+                "arcOffset": 0,
+                "halfArc": 100,
+                "maxDist": 6,
+                "minDist": 3,
+                "particleType": "Hawthorne Zap 2",
+                "spacing": 50
+              }
+            ],
             "range": 300,
             "reticleColor": 9723392,
+            "sound": "Symbiote_Effect_Hawthorne_Zap",
             "statusEffects": [
               {
                 "data": {
                   "duration": 1500
                 },
                 "tag": "StunEffect"
-              },
-              {
-                "data": {
-                  "arcOffset": 0,
-                  "halfArc": 300,
-                  "maxDist": 6,
-                  "minDist": 3,
-                  "particleType": "Hawthorne Zap",
-                  "spacing": 20
-                },
-                "tag": "ParticleLineEffect"
-              },
-              {
-                "data": {
-                  "arcOffset": 0,
-                  "halfArc": 100,
-                  "maxDist": 6,
-                  "minDist": 3,
-                  "particleType": "Hawthorne Zap 2",
-                  "spacing": 50
-                },
-                "tag": "ParticleLineEffect"
-              },
-              {
-                "data": {
-                  "sound": "Symbiote_Effect_Hawthorne_Zap",
-                  "volume": 275
-                },
-                "tag": "PlaySoundEffect"
               }
             ],
             "tag": "",
-            "targets": 3
+            "targets": 3,
+            "volume": 275
           },
           "tag": "ZapTrigger"
         },

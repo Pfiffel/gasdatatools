@@ -9,38 +9,47 @@
           {
             "data": {
               "damage": 125,
-              "range": 320,
-              "reticleColor": 11660796,
-              "statusEffects": [
+              "particleLines": [
                 {
-                  "data": {
-                    "arcOffset": 0,
-                    "halfArc": 100,
-                    "maxDist": 30,
-                    "minDist": 10,
-                    "particleType": "Silverwitch Zap",
-                    "spacing": 20
-                  },
-                  "tag": "ParticleLineEffect"
-                },
-                {
-                  "data": {
-                    "damage": 0,
-                    "explosionType": "Silverwitch Zap",
-                    "radius": 55
-                  },
-                  "tag": "BlastEffect"
-                },
-                {
-                  "data": {
-                    "sound": "Symbiote_Effect_Silverwitch_Zap",
-                    "volume": 125
-                  },
-                  "tag": "PlaySoundEffect"
+                  "arcOffset": 0,
+                  "halfArc": 100,
+                  "maxDist": 30,
+                  "minDist": 10,
+                  "particleType": "Silverwitch Zap",
+                  "spacing": 20
                 }
               ],
+              "range": 320,
+              "reticleColor": 11660796,
+              "shotguns": [
+                {
+                  "autoAim": 0,
+                  "damage": 0,
+                  "delay": 0,
+                  "drawPictureInTooltip": 0,
+                  "drawReticle": 0,
+                  "drawTooltip": 0,
+                  "explosionType": "Silverwitch Zap",
+                  "facing": 0,
+                  "halfArc": 1800,
+                  "mirror": 0,
+                  "offset": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "range": 55,
+                  "reticleColor": 11184810,
+                  "statusEffects": [],
+                  "tag": "",
+                  "targetingDelay": 0,
+                  "tooltip": ""
+                }
+              ],
+              "sound": "Symbiote_Effect_Silverwitch_Zap",
+              "statusEffects": [],
               "tag": "",
-              "targets": 1
+              "targets": 1,
+              "volume": 125
             },
             "tag": "ZapTrigger"
           }

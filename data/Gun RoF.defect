@@ -1,0 +1,16 @@
+{
+  "displayName": "Reduced Gun Fire Rate",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": -15,
+        "statType": 5
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "maxCount": 6,
+  "name": "Gun RoF"
+}
+

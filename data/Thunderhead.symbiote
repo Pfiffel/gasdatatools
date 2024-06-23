@@ -9,38 +9,47 @@
           {
             "data": {
               "damage": 125,
-              "range": 240,
-              "reticleColor": 10001405,
-              "statusEffects": [
+              "particleLines": [
                 {
-                  "data": {
-                    "arcOffset": 0,
-                    "halfArc": 100,
-                    "maxDist": 30,
-                    "minDist": 10,
-                    "particleType": "Thunderhead Zap",
-                    "spacing": 20
-                  },
-                  "tag": "ParticleLineEffect"
-                },
-                {
-                  "data": {
-                    "damage": 50,
-                    "explosionType": "Thunderhead Zap",
-                    "radius": 250
-                  },
-                  "tag": "BlastEffect"
-                },
-                {
-                  "data": {
-                    "sound": "Symbiote_Effect_Thunderhead_Zap",
-                    "volume": 200
-                  },
-                  "tag": "PlaySoundEffect"
+                  "arcOffset": 0,
+                  "halfArc": 100,
+                  "maxDist": 30,
+                  "minDist": 10,
+                  "particleType": "Thunderhead Zap",
+                  "spacing": 20
                 }
               ],
+              "range": 240,
+              "reticleColor": 10001405,
+              "shotguns": [
+                {
+                  "autoAim": 0,
+                  "damage": 50,
+                  "delay": 0,
+                  "drawPictureInTooltip": 0,
+                  "drawReticle": 0,
+                  "drawTooltip": 1,
+                  "explosionType": "Thunderhead Zap",
+                  "facing": 0,
+                  "halfArc": 1800,
+                  "mirror": 0,
+                  "offset": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "range": 250,
+                  "reticleColor": 11184810,
+                  "statusEffects": [],
+                  "tag": "",
+                  "targetingDelay": 0,
+                  "tooltip": "Thunderous Burst"
+                }
+              ],
+              "sound": "Symbiote_Effect_Thunderhead_Zap",
+              "statusEffects": [],
               "tag": "",
-              "targets": 1
+              "targets": 1,
+              "volume": 200
             },
             "tag": "ZapTrigger"
           }

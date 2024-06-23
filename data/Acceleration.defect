@@ -1,0 +1,16 @@
+{
+  "displayName": "Reduced Acceleration",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": -20,
+        "statType": 16
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "maxCount": 4,
+  "name": "Acceleration"
+}
+

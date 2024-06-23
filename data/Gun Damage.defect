@@ -1,0 +1,16 @@
+{
+  "displayName": "Reduced Gun Damage",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": -15,
+        "statType": 0
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "maxCount": 6,
+  "name": "Gun Damage"
+}
+

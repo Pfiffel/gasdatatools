@@ -8,21 +8,19 @@
         "params": {
           "data": {
             "damage": 100,
-            "range": 280,
-            "reticleColor": 7602035,
-            "statusEffects": [
+            "particleLines": [
               {
-                "data": {
-                  "arcOffset": 0,
-                  "halfArc": 1,
-                  "maxDist": 10,
-                  "minDist": 10,
-                  "particleType": "Byllis Zap",
-                  "spacing": 20
-                },
-                "tag": "ParticleLineEffect"
+                "arcOffset": 0,
+                "halfArc": 1,
+                "maxDist": 10,
+                "minDist": 10,
+                "particleType": "Byllis Zap",
+                "spacing": 20
               }
             ],
+            "range": 280,
+            "reticleColor": 7602035,
+            "statusEffects": [],
             "tag": "",
             "targets": 1
           },
@@ -42,6 +40,7 @@
   "requiresBlast": 0,
   "requiresBomb": 0,
   "requiresBurning": 0,
+  "requiresDematerialize": 0,
   "requiresFreezeChill": 0,
   "requiresMissiles": 0,
   "requiresZap": 0,

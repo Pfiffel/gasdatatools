@@ -1,0 +1,16 @@
+{
+  "displayName": "Reduced Shield Strength",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": -30,
+        "statType": 9
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "maxCount": 3,
+  "name": "Shield Strength"
+}
+

@@ -1,0 +1,16 @@
+{
+  "displayName": "Reduced Scoot Rate",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": -15,
+        "statType": 17
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "maxCount": 4,
+  "name": "Scoot Rate"
+}
+

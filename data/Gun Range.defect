@@ -1,0 +1,16 @@
+{
+  "displayName": "Reduced Gun Range",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": -15,
+        "statType": 8
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "maxCount": 6,
+  "name": "Gun Range"
+}
+

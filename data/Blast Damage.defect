@@ -1,0 +1,16 @@
+{
+  "displayName": "Reduced Blast Damage",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": -20,
+        "statType": 21
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "maxCount": 4,
+  "name": "Blast Damage"
+}
+

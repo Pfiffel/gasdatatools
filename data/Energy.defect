@@ -1,0 +1,16 @@
+{
+  "displayName": "Reduced Energy",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": -15,
+        "statType": 4
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "maxCount": 6,
+  "name": "Energy"
+}
+

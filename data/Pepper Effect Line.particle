@@ -2,11 +2,11 @@
   "colorPoints": [
     {
       "frac": 200,
-      "value": 12850589
+      "value": 10658466
     },
     {
       "frac": 750,
-      "value": 12850589
+      "value": 10658466
     },
     {
       "frac": 1000,
@@ -14,19 +14,23 @@
     }
   ],
   "facing": 1,
-  "maxLifetime": 1500,
-  "minLifetime": 600,
+  "maxLifetime": 1800,
+  "minLifetime": 300,
   "name": "Pepper Effect Line",
-  "objectType": "Small Six Star",
-  "positionTweenType": "EXPOIN",
+  "objectType": "Cloud Puff",
+  "positionTweenType": "CUBICIN",
   "scalePoints": [
     {
       "frac": 100,
+      "value": 300
+    },
+    {
+      "frac": 500,
       "value": 500
     },
     {
       "frac": 900,
-      "value": 500
+      "value": 700
     },
     {
       "frac": 1000,
@@ -35,6 +39,6 @@
   ],
   "startColor": 16776958,
   "startScale": 10,
-  "stayLow": 1
+  "stayLow": 0
 }
 

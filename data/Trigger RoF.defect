@@ -1,0 +1,16 @@
+{
+  "displayName": "Reduced Trigger Fire Rate",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": -15,
+        "statType": 6
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "maxCount": 6,
+  "name": "Trigger RoF"
+}
+

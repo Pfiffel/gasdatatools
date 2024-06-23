@@ -1,0 +1,16 @@
+{
+  "displayName": "Reduced Hull Strength",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": -20,
+        "statType": 3
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "maxCount": 4,
+  "name": "Hull"
+}
+

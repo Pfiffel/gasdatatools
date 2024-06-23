@@ -1,0 +1,16 @@
+{
+  "displayName": "Increased Hull Size",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 20,
+        "statType": 10
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "maxCount": 5,
+  "name": "Hull Size"
+}
+
