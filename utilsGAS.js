@@ -31,6 +31,12 @@ const STATS = {
 	MISSILE_DAMAGE: 23,
 	ZAP_DAMAGE: 32,
 }
+const STATS_BOOSTERS = {
+	21: [21,27],
+	22: [22,28],
+	23: [23,29,30],
+	32: [32,33,34],
+}
 const STAT_TYPES = {
 	"0": ["DAMAGE", "Gun Damage", false],
 	"1": ["HEAL_RATE", "Repair Rate", false],
@@ -178,6 +184,24 @@ function isSymbioteDropper(monster) {
 	var t = getTier(monster.xp) - 2;
 	return (t > 0 && t <= 6) && hasGlobalDrops;
 }
+function IsBoosterFor(effects, stat) {
+	console.log(effects, stat)
+	if (!Array.isArray(effects) && IsPermaBoost(effects, stat)) return true;
+	if (!Array.isArray(effects) && IsTempBoost(effects, stat)) return true;
+	for (var p in effects) {
+		if(IsPermaBoost(effects[p], stat)) return true;
+		if(IsTempBoost(effects[p], stat)) return true;
+	}
+	return false;
+}
+function IsPermaBoost(effect, stat)
+{
+	return (effect.tag == "ItemStat" && (effect.data.statType == stat));
+}
+function IsTempBoost(effect, stat)
+{
+	return (effect.tag == "TriggeredTriggerEffect" && (effect.data.params.tag == "StatBoostTrigger") && effect.data.params.data.statType == stat);
+}
 function IsBlast(params) {
 	if (IsShotgun(params, true))
 		return true;
@@ -244,7 +268,8 @@ function SlotTypeToText(data) {
 
 	return s;
 }
-function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bDescription = true, bSpeaker = false, idxTrigger = -1, bJustGimmeStatStringHack = false) {
+// TODO make bSymbiote and bAccolade an enum or sth
+function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bDescription = true, bSpeaker = false, idxTrigger = -1, bJustGimmeStatStringHack = false, bAccoladeOrigin = false) {
 	if (tier == 0) tier = mainData.tier;
 	if (mainData.credits != undefined) tier = mainData.credits;
 	else if (mainData.rarity != undefined) tier = mainData.rarity + 1;
@@ -261,6 +286,7 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 
 	var name = mainData.displayName != undefined ? mainData.displayName : mainData.name;
 	if (mainData.championName != undefined) name = name + " (" + mainData.championName + ")";
+	if (mainData.champion != undefined && bAccoladeOrigin) name = name + " (" + mainData.champion + ")";
 	if (mainData.mana != undefined) name = name + " - " + classWrap(mainData.mana, "energy");
 	makeHeaderCell(colorWrap(name, bSymbiote ? GetZoneColor(tier-1) : GetTierColor(tier)), th);
 
