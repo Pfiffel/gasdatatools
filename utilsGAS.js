@@ -2,7 +2,7 @@ const SCALE_STANDARD = 0.5;
 const SCALE_SMALL = 0.25;
 const MAP_CANVAS_SIZE = 600;
 
-const ZONE_COLORS = ["#FB7575","#11B75F","#BB60ED","#FDFD76","#F0A549","#A3A3A3"];
+const ZONE_COLORS = ["#FB7575", "#11B75F", "#BB60ED", "#FDFD76", "#F0A549", "#A3A3A3"];
 const TIER_NAMES = ["", "Alpha", "Beta", "Gamma", "Delta", "Epsilon", "Omega", "", "", "", "Precursor Tech"];
 const MODULE_CREDITS = [0, 5, 10, 25, 50, 100, 250, 500, 1000];
 const MAX_LEVEL = 20;
@@ -27,15 +27,21 @@ const ADDON_TIER_NAMES = {
 }
 const STATS = {
 	BLAST_DAMAGE: 21,
-	BOMB_DAMAGE: 22,
+	//BOMB_DAMAGE: 22,
 	MISSILE_DAMAGE: 23,
 	ZAP_DAMAGE: 32,
 }
 const STATS_BOOSTERS = {
-	21: [21,27],
-	22: [22,28],
-	23: [23,29,30],
-	32: [32,33,34],
+	21: [21, 27],
+	22: [22, 28],
+	23: [23, 29, 30],
+	32: [32, 33, 34],
+	15: [15],
+	20: [20],
+}
+const STATS_ELEMENTAL = {
+	DAMAGE_VS_BURNING: 15,
+	DAMAGE_VS_FROZEN: 20,
 }
 const STAT_TYPES = {
 	"0": ["DAMAGE", "Gun Damage", false],
@@ -156,11 +162,12 @@ const ITEM_SORTING_INDEX =
 	"Charger": 7,
 	"Capacitor": 8,
 	"Displacer": 9,
-	"Rotator": 10,
 	"Accelerator": 11,
 	"Blaster": 12,
 	"Detonator": 13,
 	"Warhead": 14,
+	"Zapper": 15,
+	"Rotator": 16,
 }
 function GetItemSortingIndex(item) {
 	for (let category in ITEM_SORTING_INDEX) {
@@ -185,33 +192,33 @@ function isSymbioteDropper(monster) {
 	return (t > 0 && t <= 6) && hasGlobalDrops;
 }
 function IsBoosterFor(effects, stat) {
-	console.log(effects, stat)
+	//console.log(effects, stat)
 	if (!Array.isArray(effects) && IsPermaBoost(effects, stat)) return true;
 	if (!Array.isArray(effects) && IsTempBoost(effects, stat)) return true;
 	for (var p in effects) {
-		if(IsPermaBoost(effects[p], stat)) return true;
-		if(IsTempBoost(effects[p], stat)) return true;
+		if (IsPermaBoost(effects[p], stat)) return true;
+		if (IsTempBoost(effects[p], stat)) return true;
 	}
 	return false;
 }
-function IsPermaBoost(effect, stat)
-{
+function IsPermaBoost(effect, stat) {
 	return (effect.tag == "ItemStat" && (effect.data.statType == stat));
 }
-function IsTempBoost(effect, stat)
-{
+function IsTempBoost(effect, stat) {
 	return (effect.tag == "TriggeredTriggerEffect" && (effect.data.params.tag == "StatBoostTrigger") && effect.data.params.data.statType == stat);
 }
 function IsBlast(params) {
-	if (IsShotgun(params, true))
+	if (IsShotgun(params, true) || IsShotgun(params, false))
 		return true;
 	return false;
 }
 function IsBomb(params) {
-	if (IsShotgun(params, false))
-		return true;
 	return false;
+	//if (IsShotgun(params, false))
+	//	return true;
+	//return false;
 }
+// TODO consolidate this, Array check is there for triggers specifically which have a different json structure
 function IsShotgun(params, bHasNoOffset) {
 	if (!Array.isArray(params) && params.tag == "MineTrigger" && (params.data.damage > 0) && !bHasNoOffset)
 		return true;
@@ -240,6 +247,49 @@ function IsZap(params) {
 	for (var p in params) {
 		if (params[p].tag == "ZapTrigger")
 			return true;
+	}
+	return false;
+}
+function IsFire(params) {
+	if (!Array.isArray(params) && IsFireParams(params))
+		return true;
+	for (var p in params) {
+		if (IsFireParams(params[p]))
+			return true;
+	}
+	return false;
+}
+function IsFireParams(params)
+{
+	if(params.data != undefined && params.data.statusEffects != undefined && IsFireEffects(params.data.statusEffects)) return true;
+	return false;
+}
+function IsFireEffects(effects)
+{
+	for (let i = 0; i < effects.length; i++) {
+		if(effects[i].tag == "BurningEffect") return true;
+	}
+	return false;
+}
+function IsFrost(params) {
+	if (!Array.isArray(params) && IsFrostParams(params))
+		return true;
+	for (var p in params) {
+		if (IsFrostParams(params[p]))
+			return true;
+	}
+	return false;
+}
+function IsFrostParams(params)
+{
+	if(params.data != undefined && params.data.statusEffects != undefined && IsFrostEffects(params.data.statusEffects)) return true;
+	return false;
+}
+function IsFrostEffects(effects)
+{
+	for (let i = 0; i < effects.length; i++) {
+		if(effects[i].tag == "ChillEffect") return true;
+		if(effects[i].tag == "FreezeEffect") return true;
 	}
 	return false;
 }
@@ -288,7 +338,7 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 	if (mainData.championName != undefined) name = name + " (" + mainData.championName + ")";
 	if (mainData.champion != undefined && bAccoladeOrigin) name = name + " (" + mainData.champion + ")";
 	if (mainData.mana != undefined) name = name + " - " + classWrap(mainData.mana, "energy");
-	makeHeaderCell(colorWrap(name, bSymbiote ? GetZoneColor(tier-1) : GetTierColor(tier)), th);
+	makeHeaderCell(colorWrap(name, bSymbiote ? GetZoneColor(tier - 1) : GetTierColor(tier)), th);
 
 	var slotTypes = SlotTypeToText(mainData);
 	if (slotTypes != "") {
@@ -374,7 +424,11 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 		else if (mainTag == "GunProcs") {
 			s += data.percentChance != 100 ? (classWrap(data.percentChance + "%", "cKeyValue") + " to affect gun shots:<br/>") : "Affects gun shots:<br/>";
 			s += AddEffectsText(data);
-			if (data.maxProcsPerSecond != undefined && data.maxProcsPerSecond != 0) s += "Maximum " + data.maxProcsPerSecond + " applications per second";
+			if (data.maxProcsPerSecond != undefined && data.maxProcsPerSecond != 0) {
+				s += "Maximum " + data.maxProcsPerSecond + " applications per second<br/>";
+				let spsToCap = data.maxProcsPerSecond / (data.percentChance / 100);
+				if(spsToCap != data.maxProcsPerSecond) s += "(" + spsToCap + " shots per second to cap)"
+			}
 		}
 		else if (mainTag == "GunCharger") {
 			s += "Every " + ToTime(data.cooldown) + " double gun damage for next shot<br/>";
@@ -382,12 +436,11 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 		}
 		else if (mainTag == "PlayerGunStats") {
 			let gundps = round(1000 * data.damage / data.cooldown, 2);
-			if(data.drawStatsInTooltip != undefined && !data.drawStatsInTooltip) 
-				{
-					prevRepeat = true;
-				}
-				else
-					s += MakeGunStats(data);
+			if (data.drawStatsInTooltip != undefined && !data.drawStatsInTooltip) {
+				prevRepeat = true;
+			}
+			else
+				s += MakeGunStats(data);
 			dps += gundps;
 		}
 		else if (mainTag == "PeriodicTriggerEffect") {
@@ -445,8 +498,7 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 				s += printKeyAndData(key, iterEffect.data[key]);
 			}
 		}
-		if(bJustGimmeStatStringHack)
-		{
+		if (bJustGimmeStatStringHack) {
 			justGimmeStatString += s + "";
 		}
 		if (prevRepeat)
@@ -464,8 +516,8 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 		var dpsCell = makeCell(printKeyAndData("DPS", round(dps, 2)), tbl.insertRow());
 		dpsCell.colSpan = 2;
 	}
-	if(bJustGimmeStatStringHack)
-		return justGimmeStatString.substring(0,justGimmeStatString.length-5) + "\"";
+	if (bJustGimmeStatStringHack)
+		return justGimmeStatString.substring(0, justGimmeStatString.length - 5) + "\"";
 	return tbl;
 }
 function MakePickupPackText(data) {
@@ -564,7 +616,8 @@ function GetTriggeredEffectDelayArray(array) {
 	return string == "" ? "" : printKeyAndData(actualDelays > 1 ? "Delays" : "Delay", string);
 }
 function GetBlastOrBombString(data) {
-	return (HasNoOffset(data) ? "Blast" : "Bomb");
+	return "Blast";
+	//return (HasNoOffset(data) ? "Blast" : "Bomb");
 }
 function GetTriggeredEffectString(tag, data, delayArray) {
 	var s = ""; var damage = 0;
@@ -629,7 +682,7 @@ function GetTriggeredEffectString(tag, data, delayArray) {
 		}
 		for (var sg in data.shotguns) {
 			var shotgun = data.shotguns[sg];
-			if(shotgun.damage == 0) continue; // skip if shotgun is just there for the explosion effect (Silverwitch)
+			if (shotgun.damage == 0) continue; // skip if shotgun is just there for the explosion effect (Silverwitch)
 			let o = GetTriggeredEffectString("ShotgunTrigger", shotgun, delayArray);
 			s += o.s;
 			damage += o.damage;
@@ -637,7 +690,7 @@ function GetTriggeredEffectString(tag, data, delayArray) {
 		damage += data.damage;
 	}
 	else if (tag == "MineTrigger") {
-		s += printKeyAndData("Bomb Damage", data.damage);
+		s += printKeyAndData("Blast Damage", data.damage);
 		s += printKeyAndData("Range", data.burstRadius);
 		s += printKeyAndData("Duration", ToTime(data.duration));
 		damage += data.damage;
@@ -721,7 +774,7 @@ function GetBonusEffectString(tag, data) {
 	}
 	if (tag == "MineTriggerBonus") {
 		// TODO duration, armingTime
-		if (data.damage != 0) s += printKeyAndDataBonus("Bomb Damage", BonusPrefix(data.damage));
+		if (data.damage != 0) s += printKeyAndDataBonus("Blast Damage", BonusPrefix(data.damage));
 		if (data.burstRadius != 0) s += printKeyAndDataBonus("Burst Radius", BonusPrefix(data.burstRadius));
 		if (data.sensitivityRadius != 0) s += printKeyAndDataBonus("Sensitivity Radius", BonusPrefix(data.sensitivityRadius));
 	}

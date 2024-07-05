@@ -36,7 +36,7 @@ function parseData() {
 				if (file == "symbiote" || file == "item" || file == "accolade") {
 					var forChamp = (entity.champion != undefined) ? entity.champion + " " : "";
 					addLine("New " + forChamp + file, divList);
-					divList.appendChild(MakeStatsTable(entity, file == "item" ? entity.credits : file == "accolade" ? 0 : entity.tier));
+					divList.appendChild(MakeStatsTable(entity, file == "item" ? entity.credits : file == "accolade" ? 0 : entity.tier, file == "symbiote"));
 				}
 				else if (file == "monster" || file == "gunbullet" || file == "champion") {
 					addLine("New " + file + ": <b>" + entity.name + "</b>", divList);
@@ -71,8 +71,8 @@ function parseData() {
 	}
 	for (let entity in changedSymbs) {
 		divList.appendChild(MakeGraphicCompareBlock(entity + " changes" + GetKeyChangeList(entity),
-			MakeStatsTable(GetPrevEntity("symbiote", entity), 0),
-			MakeStatsTable(GetNewEntity("symbiote", entity), 0)));
+			MakeStatsTable(GetPrevEntity("symbiote", entity), 0, true),
+			MakeStatsTable(GetNewEntity("symbiote", entity), 0, true)));
 	}
 	for (let entity in changedItems) {
 		divList.appendChild(MakeGraphicCompareBlock(entity + " changes" + GetKeyChangeList(entity),
@@ -157,7 +157,7 @@ function FindObjectUsage(list) {
 }
 function CompareJSON(entity, entityPrev, superParent, fileType, parentStringList) {
 	for (let key in entity) {
-		if (entityPrev != undefined && entity[key] != "") {
+		if ((entityPrev != undefined) && (entity[key] !== "")) {
 			var name = entity.name != undefined ? entity.name : "";
 			var header = parentStringList + " " + name;
 			if (key == "consolationPrizes") {

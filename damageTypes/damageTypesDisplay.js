@@ -22,13 +22,98 @@ function MakeList() {
 	tableOutput.appendChild(DamageTypeBoostersTable());
 	tableOutput.appendChild(MakeTextDiv("<h2>Damage Types and Where to Find Them</h2>"));
 	tableOutput.appendChild(DamageTypeTable());
+	tableOutput.appendChild(MakeTextDiv("<h2>Elemental Enhancers"));
+	tableOutput.appendChild(ElementalBoostersTable());
+	tableOutput.appendChild(MakeTextDiv("<h2>Elemental Initiators"));
+	tableOutput.appendChild(ElementalTable());
+}
+function ElementalTable() {
+	var tbl = document.createElement('table');
+	let th = tbl.insertRow();
+	makeHeaderCell("", th);
+	makeHeaderCell("Burning", th);
+	makeHeaderCell("Chilled/Frozen", th);
+	let tr = tbl.insertRow();
+	makeHeaderCell("Triggers & Passives", tr);
+	for (var stat in STATS_ELEMENTAL) {
+		let i = STATS_ELEMENTAL[stat];
+		let cell = makeCell("", tr);
+		cell.appendChild(MakeTriggerList(i));
+	}
+	/*
+	let tr2 = tbl.insertRow();
+	makeHeaderCell("Accolade Bonuses", tr2);
+	for (var stat in STATS_ELEMENTAL) {
+		let i = STATS_ELEMENTAL[stat];
+		let cell = makeCell("", tr2);
+		cell.appendChild(MakeSymbioteItemList(gasData.accolade, i));
+	}*/
+	let tr3 = tbl.insertRow();
+	makeHeaderCell("Symbiotes", tr3);
+	for (var stat in STATS_ELEMENTAL) {
+		let i = STATS_ELEMENTAL[stat];
+		let cell = makeCell("", tr3);
+		cell.appendChild(MakeSymbioteItemList(gasData.symbiote, i));
+	}
+	let tr4 = tbl.insertRow();
+	makeHeaderCell("Items", tr4);
+	for (var stat in STATS_ELEMENTAL) {
+		let i = STATS_ELEMENTAL[stat];
+		let cell = makeCell("", tr4);
+		cell.appendChild(MakeSymbioteItemList(gasData.item, i));
+	}
+	let tr5 = tbl.insertRow();
+	makeHeaderCell("Addons", tr5);
+	for (var stat in STATS_ELEMENTAL) {
+		let i = STATS_ELEMENTAL[stat];
+		let cell = makeCell("", tr5);
+		cell.appendChild(MakeSymbioteItemList(gasData.addon, i));
+	}
+	return tbl;
+}
+function ElementalBoostersTable() {
+	var tbl = document.createElement('table');
+	let th = tbl.insertRow();
+	makeHeaderCell("", th);
+	makeHeaderCell(STAT_TYPES[STATS_ELEMENTAL.DAMAGE_VS_BURNING][1], th);
+	makeHeaderCell(STAT_TYPES[STATS_ELEMENTAL.DAMAGE_VS_FROZEN][1], th);
+	let tr2 = tbl.insertRow();
+	makeHeaderCell("Accolade Bonuses", tr2);
+	for (var stat in STATS_ELEMENTAL) {
+		let i = STATS_ELEMENTAL[stat];
+		let cell = makeCell("", tr2);
+		cell.appendChild(MakeSymbioteItemListBoosters(gasData.accolade, i));
+	}
+	/*
+	let tr4 = tbl.insertRow();
+	makeHeaderCell("Tiered Items", tr4);
+	for (var stat in STATS_ELEMENTAL) {
+		let i = STATS_ELEMENTAL[stat];
+		let cell = makeCell("", tr4);
+		cell.appendChild(MakeSymbioteItemListBoosters(gasData.item, i, false));
+	}*/
+	let tr5 = tbl.insertRow();
+	makeHeaderCell("Items", tr5);
+	for (var stat in STATS_ELEMENTAL) {
+		let i = STATS_ELEMENTAL[stat];
+		let cell = makeCell("", tr5);
+		cell.appendChild(MakeSymbioteItemListBoosters(gasData.item, i));
+	}
+	let tr6 = tbl.insertRow();
+	makeHeaderCell("Addons", tr6);
+	for (var stat in STATS_ELEMENTAL) {
+		let i = STATS_ELEMENTAL[stat];
+		let cell = makeCell("", tr6);
+		cell.appendChild(MakeSymbioteItemListBoosters(gasData.addon, i));
+	}
+	return tbl;
 }
 function DamageTypeTable() {
 	var tbl = document.createElement('table');
 	let th = tbl.insertRow();
 	makeHeaderCell("", th);
 	makeHeaderCell(STAT_TYPES[STATS.BLAST_DAMAGE][1], th);
-	makeHeaderCell(STAT_TYPES[STATS.BOMB_DAMAGE][1], th);
+	//makeHeaderCell(STAT_TYPES[STATS.BOMB_DAMAGE][1], th);
 	makeHeaderCell(STAT_TYPES[STATS.MISSILE_DAMAGE][1], th);
 	makeHeaderCell(STAT_TYPES[STATS.ZAP_DAMAGE][1], th);
 	let tr = tbl.insertRow();
@@ -73,7 +158,7 @@ function DamageTypeBoostersTable() {
 	let th = tbl.insertRow();
 	makeHeaderCell("", th);
 	makeHeaderCell(STAT_TYPES[STATS.BLAST_DAMAGE][1], th);
-	makeHeaderCell(STAT_TYPES[STATS.BOMB_DAMAGE][1], th);
+	//makeHeaderCell(STAT_TYPES[STATS.BOMB_DAMAGE][1], th);
 	makeHeaderCell(STAT_TYPES[STATS.MISSILE_DAMAGE][1], th);
 	makeHeaderCell(STAT_TYPES[STATS.ZAP_DAMAGE][1], th);
 	let tr2 = tbl.insertRow();
@@ -153,9 +238,11 @@ function MakeSymbioteItemListBoosters(type, stat, isRare) {
 	for (let i = 0; i < type.length; i++) {
 		var thing = type[i];
 		try {
-			console.log(thing.name, stat)
-			var hasEffect = DataHasEffectBooster(thing.effects, stat);
+			//console.log(thing.name, stat)
+			// TODO check trigger specific boosters and add those as well (IsBooster -> ShotgunTriggerBonus, etc.)
+			var hasEffect = DataHasEffectBooster(thing.effects, stat);// || DataHasEffect(thing.effects, stat);
 			if (hasEffect) {
+				//console.log(type == gasData.item, thing.rare, isRare, )
 				let tbl;
 				if (type == gasData.accolade)
 					tbl = MakeStatsTable(thing, 0, false, false, false, false, false, false, true);
@@ -165,8 +252,11 @@ function MakeSymbioteItemListBoosters(type, stat, isRare) {
 					tbl = MakeStatsTable(thing, thing.credits);
 				else if (type == gasData.item && !isRare && thing.rare == 0)
 					tbl = MakeStatsTable(thing, thing.credits);
+				else if (type == gasData.item && isRare == undefined)
+					tbl = MakeStatsTable(thing, thing.credits);
 				else if (type == gasData.addon)
 					tbl = MakeStatsTable(thing);
+				if(tbl == undefined) continue;
 				tbl.classList.add("inline");
 				div.appendChild(tbl);
 				continue;
@@ -184,8 +274,10 @@ function MakeSymbioteItemList(type, stat) {
 	for (let i = 0; i < type.length; i++) {
 		var thing = type[i];
 		try {
+			
 			var hasEffect = DataHasEffect(thing.effects, stat);
 			if (hasEffect) {
+				//console.log(thing.name, stat)
 				let tbl;
 				if (type == gasData.accolade)
 					tbl = MakeStatsTable(thing, 0, false, false, false, false, false, false, true);
@@ -207,18 +299,28 @@ function MakeSymbioteItemList(type, stat) {
 	}
 	return div;
 }
+function CheckParams(params, stat)
+{
+	if (
+		(IsBlast(params) && stat == STATS.BLAST_DAMAGE) ||
+		(IsBomb(params) && stat == STATS.BOMB_DAMAGE) ||
+		(IsMissile(params) && stat == STATS.MISSILE_DAMAGE) ||
+		(IsZap(params) && stat == STATS.ZAP_DAMAGE) ||
+		(IsFire(params) && stat == STATS_ELEMENTAL.DAMAGE_VS_BURNING) ||
+		(IsFrost(params) && stat == STATS_ELEMENTAL.DAMAGE_VS_FROZEN)
+	) {
+		return true;
+	}
+	return false;
+}
 function DataHasEffect(effect, stat) {
 	for (let p = 0; p < effect.length; p++) {
+		if (CheckParams(effect[p], stat))
+			return true;
 		var params = effect[p].data.params;
 		if (params == undefined) return false;
-		if (
-			(IsBlast(params) && stat == STATS.BLAST_DAMAGE) ||
-			(IsBomb(params) && stat == STATS.BOMB_DAMAGE) ||
-			(IsMissile(params) && stat == STATS.MISSILE_DAMAGE) ||
-			(IsZap(params) && stat == STATS.ZAP_DAMAGE)
-		) {
+		if (CheckParams(params, stat))
 			return true;
-		}
 	}
 	return false;
 }
@@ -226,27 +328,15 @@ function DataHasEffectBooster(effects, stat) {
 	var stats = STATS_BOOSTERS[stat];
 	for (var iS in stats) {
 		let i = stats[iS];
-		if(IsBoosterFor(effects, i)) return true;
-	}
-	for (let p = 0; p < effect.length; p++) {
-		var params = effect[p].data.params;
-		if (params == undefined) return false;
-		
-		
+		if (IsBoosterFor(effects, i)) return true;
 	}
 	return false;
 }
 function DataHasEffectTrigger(data, stat) {
 	for (let p = 0; p < data.params.length; p++) {
 		var params = data.params[p];
-		if (
-			(IsBlast(params) && stat == STATS.BLAST_DAMAGE) ||
-			(IsBomb(params) && stat == STATS.BOMB_DAMAGE) ||
-			(IsMissile(params) && stat == STATS.MISSILE_DAMAGE) ||
-			(IsZap(params) && stat == STATS.ZAP_DAMAGE)
-		) {
+		if (CheckParams(params, stat))
 			return true;
-		}
 	}
 	return false;
 }
