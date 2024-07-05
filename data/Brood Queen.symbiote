@@ -6,7 +6,7 @@
         "params": {
           "data": {
             "count": 1,
-            "damage": 150,
+            "damage": 100,
             "emitterType": "",
             "objectType": "Brood Maggot",
             "range": 310,
@@ -27,6 +27,6 @@
   ],
   "enemies": [],
   "name": "Brood Queen",
-  "tier": 6
+  "tier": 4
 }
 

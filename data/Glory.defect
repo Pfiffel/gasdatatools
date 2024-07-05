@@ -1,0 +1,16 @@
+{
+  "displayName": "Increased Accolade Glory",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 50,
+        "statType": 35
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "maxCount": 5,
+  "name": "Glory"
+}
+

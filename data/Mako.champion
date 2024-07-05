@@ -9,7 +9,10 @@
     {
       "cooldown": 227,
       "damage": 12,
+      "displayName": "",
+      "drawStatsInTooltip": 1,
       "emitterType": "Mako Guns",
+      "extraText": "",
       "f": 0,
       "halfArc": 450,
       "objectType": "Mako Long Bullet",
@@ -23,7 +26,10 @@
     {
       "cooldown": 250,
       "damage": 50,
+      "displayName": "",
+      "drawStatsInTooltip": 1,
       "emitterType": "Mako Guns",
+      "extraText": "",
       "f": 0,
       "halfArc": 450,
       "objectType": "Mako Short Bullet",
@@ -43,6 +49,7 @@
   "passives": [
     {
       "data": {
+        "activeWhile": 0,
         "gunTag": "Mako Short Gun",
         "maxProcsPerSecond": 0,
         "percentChance": 100,
@@ -66,6 +73,7 @@
   "shields": [
     {
       "color": 6656181,
+      "displayName": "",
       "left": -1200,
       "level": 0,
       "maxStrength": 250,
@@ -112,6 +120,7 @@
             "autoAim": 0,
             "damage": 180,
             "delay": 0,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Mako Laser Beams Blast",
@@ -175,8 +184,8 @@
       "params": [
         {
           "data": {
-            "count": 16,
-            "damage": 30,
+            "count": 10,
+            "damage": 48,
             "emitterType": "Mako Sharklets",
             "objectType": "Sharklet",
             "range": 290,
@@ -208,6 +217,7 @@
             "autoAim": 0,
             "damage": 25,
             "delay": 0,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Mako Blood Frenzy",
@@ -240,6 +250,7 @@
             "duration": 5000,
             "emitterType": "Mako Blood Frenzy",
             "glyphCount": 16,
+            "glyphOrientation": 0,
             "glyphRadius": 50,
             "glyphType": "Mako Blood Frenzy Glyph",
             "maxStacks": 0,

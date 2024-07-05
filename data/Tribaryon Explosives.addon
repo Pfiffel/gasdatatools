@@ -3,16 +3,16 @@
     {
       "data": {
         "activeWhile": 0,
-        "amount": 2,
-        "statType": 21
+        "amount": 5,
+        "statType": 23
       },
       "tag": "ItemStat"
     },
     {
       "data": {
         "activeWhile": 0,
-        "amount": 4,
-        "statType": 22
+        "amount": 5,
+        "statType": 32
       },
       "tag": "ItemStat"
     }

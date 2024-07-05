@@ -4,11 +4,11 @@
     {
       "data": {
         "activeWhile": 0,
-        "cooldown": 5000,
+        "cooldown": 4000,
         "params": [
           {
             "data": {
-              "damage": 25,
+              "damage": 80,
               "particleLines": [
                 {
                   "arcOffset": 0,
@@ -21,6 +21,7 @@
               ],
               "range": 300,
               "reticleColor": 1350354,
+              "shotguns": [],
               "sound": "Symbiote_Effect_Glacier_Zap",
               "statusEffects": [
                 {
@@ -31,7 +32,7 @@
                 }
               ],
               "tag": "",
-              "targets": 1,
+              "targets": 3,
               "volume": 150
             },
             "tag": "ZapTrigger"

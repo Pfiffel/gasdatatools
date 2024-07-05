@@ -7,7 +7,7 @@
         "bonus": {
           "data": {
             "count": 0,
-            "damage": 6,
+            "damage": 10,
             "range": 0,
             "speed": 0,
             "timeGap": 0

@@ -7,7 +7,7 @@
         "params": {
           "data": {
             "count": 1,
-            "damage": 30,
+            "damage": 48,
             "emitterType": "Mako Sharklets",
             "objectType": "Sharklet",
             "range": 290,

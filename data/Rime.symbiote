@@ -5,7 +5,7 @@
       "data": {
         "activeWhile": 0,
         "gunTag": "",
-        "maxProcsPerSecond": 0,
+        "maxProcsPerSecond": 8,
         "percentChance": 25,
         "statusEffects": [
           {
@@ -16,7 +16,7 @@
           },
           {
             "data": {
-              "dps": 20,
+              "dps": 10,
               "duration": 3000,
               "reducedDurationOnBoss": 0,
               "stack": 1
@@ -31,6 +31,6 @@
   ],
   "enemies": [],
   "name": "Rime",
-  "tier": 3
+  "tier": 6
 }
 

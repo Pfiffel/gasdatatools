@@ -3,17 +3,21 @@
   "effects": [
     {
       "data": {
+        "activeWhile": 0,
+        "gunTag": "",
+        "maxProcsPerSecond": 8,
         "percentChance": 20,
         "statusEffects": [
           {
             "data": {
-              "dps": 50,
+              "dps": 40,
               "duration": 1000,
               "reducedDurationOnBoss": 0
             },
             "tag": "BurningEffect"
           }
-        ]
+        ],
+        "tooltipGunDescription": "gun"
       },
       "tag": "GunProcs"
     }

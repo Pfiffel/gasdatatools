@@ -8,6 +8,7 @@
             "autoAim": 0,
             "damage": 50,
             "delay": 200,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Flamebringer Grenade",
@@ -23,7 +24,7 @@
             "statusEffects": [
               {
                 "data": {
-                  "dps": 60,
+                  "dps": 30,
                   "duration": 5000,
                   "reducedDurationOnBoss": 0
                 },
@@ -47,6 +48,7 @@
             "autoAim": 0,
             "damage": 50,
             "delay": 350,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 0,
             "explosionType": "Flamebringer Grenade",
@@ -62,7 +64,7 @@
             "statusEffects": [
               {
                 "data": {
-                  "dps": 60,
+                  "dps": 30,
                   "duration": 5000,
                   "reducedDurationOnBoss": 0
                 },
@@ -86,6 +88,7 @@
             "autoAim": 0,
             "damage": 50,
             "delay": 500,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 0,
             "explosionType": "Flamebringer Grenade",
@@ -101,7 +104,7 @@
             "statusEffects": [
               {
                 "data": {
-                  "dps": 60,
+                  "dps": 30,
                   "duration": 5000,
                   "reducedDurationOnBoss": 0
                 },
@@ -125,6 +128,7 @@
             "autoAim": 0,
             "damage": 50,
             "delay": 650,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 0,
             "explosionType": "Flamebringer Grenade",
@@ -140,7 +144,7 @@
             "statusEffects": [
               {
                 "data": {
-                  "dps": 60,
+                  "dps": 30,
                   "duration": 5000,
                   "reducedDurationOnBoss": 0
                 },

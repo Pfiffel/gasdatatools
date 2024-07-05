@@ -29,13 +29,13 @@
           },
           "tag": "SharkletTrigger"
         },
-        "when": 4
+        "when": 3
       },
       "tag": "TriggeredTriggerEffect"
     }
   ],
   "enemies": [],
   "name": "Comet",
-  "tier": 4
+  "tier": 2
 }
 

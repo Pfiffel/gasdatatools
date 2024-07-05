@@ -6,8 +6,9 @@
         "params": {
           "data": {
             "autoAim": 0,
-            "damage": 100,
+            "damage": 300,
             "delay": 0,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Hiberna Blast",

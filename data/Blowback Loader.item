@@ -1,20 +1,20 @@
 {
-  "boon": 0,
-  "credits": 8,
+  "boon": 1,
+  "credits": 1,
   "defenses": 0,
   "effects": [
     {
       "data": {
         "activeWhile": 0,
-        "amount": 48,
-        "statType": 22
+        "amount": 5,
+        "statType": 5
       },
       "tag": "ItemStat"
     }
   ],
   "engines": 0,
-  "guns": 0,
-  "name": "Parsec Detonator",
+  "guns": 1,
+  "name": "Blowback Loader",
   "overworldDrop": 0,
   "precursorTech": 0,
   "rare": 0,
@@ -24,6 +24,6 @@
   "requiresFreezeChill": 0,
   "requiresMissiles": 0,
   "requiresZap": 0,
-  "triggers": 1
+  "triggers": 0
 }
 

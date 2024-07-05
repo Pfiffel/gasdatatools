@@ -3,13 +3,17 @@
   "effects": [
     {
       "data": {
+        "activeWhile": 0,
+        "gunTag": "",
+        "maxProcsPerSecond": 8,
         "percentChance": 16,
         "statusEffects": [
           {
             "data": {
               "dps": 50,
               "duration": 2000,
-              "reducedDurationOnBoss": 0
+              "reducedDurationOnBoss": 0,
+              "stack": 0
             },
             "tag": "DoTEffect"
           },
@@ -25,7 +29,8 @@
             },
             "tag": "DamageEffect"
           }
-        ]
+        ],
+        "tooltipGunDescription": "gun"
       },
       "tag": "GunProcs"
     }

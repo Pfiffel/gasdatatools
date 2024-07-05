@@ -1,5 +1,5 @@
 {
-  "boon": 1,
+  "boon": 0,
   "credits": 7,
   "defenses": 0,
   "effects": [
@@ -15,12 +15,15 @@
   "engines": 0,
   "guns": 0,
   "name": "Megawave Detonator",
-  "overworldDrop": 1,
+  "overworldDrop": 0,
   "precursorTech": 0,
   "rare": 0,
   "requiresBlast": 0,
-  "requiresBomb": 1,
+  "requiresBurning": 0,
+  "requiresDematerialize": 0,
+  "requiresFreezeChill": 0,
   "requiresMissiles": 0,
+  "requiresZap": 0,
   "triggers": 1
 }
 

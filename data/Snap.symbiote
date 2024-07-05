@@ -5,7 +5,7 @@
       "data": {
         "params": {
           "data": {
-            "damage": 50,
+            "damage": 150,
             "particleLines": [
               {
                 "arcOffset": 0,
@@ -28,7 +28,7 @@
               }
             ],
             "tag": "",
-            "targets": 5,
+            "targets": 4,
             "volume": 200
           },
           "tag": "ZapTrigger"
@@ -40,6 +40,6 @@
   ],
   "enemies": [],
   "name": "Snap",
-  "tier": 6
+  "tier": 3
 }
 

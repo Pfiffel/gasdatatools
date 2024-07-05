@@ -1,13 +1,16 @@
 {
   "boon": 1,
-  "credits": 5,
+  "credits": 6,
   "defenses": 0,
   "effects": [
     {
       "data": {
         "cooldown": 400,
         "damage": 11,
+        "displayName": "",
+        "drawStatsInTooltip": 1,
         "emitterType": "Sonic Wave Gun Trail",
+        "extraText": "",
         "f": 0,
         "halfArc": 1800,
         "objectType": "Sonic Wave Gun Bullet",
@@ -25,9 +28,15 @@
   "guns": 1,
   "name": "Sonic Wave Gun",
   "overworldDrop": 1,
-  "plusEffects": [],
   "precursorTech": 0,
   "rare": 1,
+  "requiresBlast": 0,
+  "requiresBomb": 0,
+  "requiresBurning": 0,
+  "requiresDematerialize": 0,
+  "requiresFreezeChill": 0,
+  "requiresMissiles": 0,
+  "requiresZap": 0,
   "triggers": 0
 }
 

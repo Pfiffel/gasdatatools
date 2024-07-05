@@ -2,7 +2,6 @@
   "items": [
     "Axial Displacer",
     "Boson Plate",
-    "Cyclonic Rotator",
     "Darkmatter Booster",
     "Inertial Accelerator",
     "Muon Capacitor",
@@ -11,7 +10,6 @@
     "Tesla Generator",
     "Tripolar Fixer",
     "Hypermatter Warhead",
-    "Megawave Detonator",
     "Pluton Blaster"
   ],
   "name": "Tier 7 Common"
