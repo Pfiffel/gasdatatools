@@ -107,20 +107,22 @@ const ACTIVE_WHILE_NAMES = {
 };
 const TRIGGER_TO_WHEN = [1, 7, 8, 4];
 const TRIGGERED_TRIGGER_EFFECTS = {
-	"0": ["TRIGGER1234", "any trigger"],
-	"1": ["TRIGGER1", "trigger 1"],
-	"2": ["TRIGGER234", "trigger 2, 3 or 4"],
-	"3": ["TRIGGER34", "trigger 3 or 4"],
-	"4": ["TRIGGER4", "trigger 4"],
-	"5": ["TRIGGER12", "trigger 1 or 2"],
-	"6": ["SCOOT", "scoot"],
-	"7": ["TRIGGER2", "trigger 2"],
-	"8": ["TRIGGER3", "trigger 3"],
-	"9": ["TRIGGER23", "trigger 2 or 3"],
-	"10": ["TRIGGER123", "trigger 1, 2 or 3"],
-	"11": ["ON_DAMAGE", "damage taken"],
-	"12": ["ON_ITEM_PICKUP", "item picked up"],
-	"13": ["ON_SHOOT", "shot hit"],
+	"0": ["TRIGGER1234", "On any trigger"],
+	"1": ["TRIGGER1", "On trigger 1"],
+	"2": ["TRIGGER234", "On trigger 2, 3 or 4"],
+	"3": ["TRIGGER34", "On trigger 3 or 4"],
+	"4": ["TRIGGER4", "On trigger 4"],
+	"5": ["TRIGGER12", "On trigger 1 or 2"],
+	"6": ["SCOOT", "On scoot"],
+	"7": ["TRIGGER2", "On trigger 2"],
+	"8": ["TRIGGER3", "On trigger 3"],
+	"9": ["TRIGGER23", "On trigger 2 or 3"],
+	"10": ["TRIGGER123", "On trigger 1, 2 or 3"],
+	"11": ["ON_DAMAGE", "On damage taken"],
+	"12": ["ON_ITEM_PICKUP", "On item picked up"],
+	"13": ["ON_SHOOT", "On shot hit"],
+	"14": ["ON_PICKUP_PACK_PICKUP", "When taking a pickup pack"],
+	"15": ["ON_PICKUP_PACK_CREATE", "When creating a pickup pack"],
 };
 const PLAYER_POLICIES = {
 	"0": ["IGNORE", "Ignore"],
@@ -130,7 +132,7 @@ const PLAYER_POLICIES = {
 // Helpers
 function GetArcShield(data) {
 	var arc = -(data.left - data.right) / 10;
-	if (arc < 0) arc += 360;
+	if (arc <= 0) arc += 360;
 	return arc + "°";
 }
 function GetStat(i, j) {
@@ -343,7 +345,14 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 	var slotTypes = SlotTypeToText(mainData);
 	if (slotTypes != "") {
 		let th2 = tbl.insertRow();
-		makeHeaderCell(trimListBy(slotTypes, 2), th2);
+		let slotTypeList = trimListBy(slotTypes, 2);
+		// TODO don't think it's guaranteed by structure that all items have a slot type and maybe i should check this somewhere else, but it's currently the case
+		let requirements = GetDropRequirements(mainData);
+		if(requirements != "") {
+			tbl.title = requirements;
+			slotTypeList += " *";
+		}
+		makeHeaderCell(slotTypeList, th2);
 	}
 
 	if (bDescription && mainData.description != undefined && mainData.description != "") {
@@ -403,7 +412,7 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 		}
 		else if (mainTag == "TriggeredTriggerEffect" || mainTag == "TriggeredHealMineBurst") {
 			if (prevCondition != undefined && prevCondition == data.when) prevRepeat = true; else prevRepeat = false;
-			if (!prevRepeat) try { s += "On " + classWrap(TRIGGERED_TRIGGER_EFFECTS[data.when][1], "cKeyValue") + ":<br/>"; }
+			if (!prevRepeat) try { s += classWrap(TRIGGERED_TRIGGER_EFFECTS[data.when][1], "cKeyValue") + ":<br/>"; }
 				catch (e) { console.log("when " + data.when + " not found"); }
 			prevCondition = data.when;
 
@@ -418,7 +427,7 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 				//dps += o.damage;
 			}
 			else if (mainTag == "TriggeredHealMineBurst") {
-				s += MakePickupPackText(data);
+				s += MakePickupPackText(data, delayArray);
 			}
 		}
 		else if (mainTag == "GunProcs") {
@@ -461,7 +470,7 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 		else if (mainTag == "RandomTargetEffect" || mainTag == "TriggeredRandomTargetEffect") {
 			if (data.when != undefined) {
 				if (prevCondition != undefined && prevCondition == data.when) prevRepeat = true; else prevRepeat = false;
-				if (!prevRepeat) s += "On " + classWrap(TRIGGERED_TRIGGER_EFFECTS[data.when][1], "cKeyValue") + ":<br/>";
+				if (!prevRepeat) s += classWrap(TRIGGERED_TRIGGER_EFFECTS[data.when][1], "cKeyValue") + ":<br/>";
 				prevCondition = data.when;
 				s += "Targets nearby enemies with these effects:<br/>";
 			}
@@ -520,12 +529,17 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bD
 		return justGimmeStatString.substring(0, justGimmeStatString.length - 5) + "\"";
 	return tbl;
 }
-function MakePickupPackText(data) {
+function MakePickupPackText(data, delayArray) {
 	var s = "";
 	s += "Create <b>" + data.mineCount + "</b> pickup pack" + (data.mineCount != 1 ? "s" : "") + "<br/>";
 	if (data.healing > 0) s += printKeyAndData("Repair Amount", data.healing, "heal");
 	s += printKeyAndData("Duration", ToTime(data.duration));
 	s += MakePowerText(data);
+	if(data.triggers != undefined) for (let i = 0; i < data.triggers.length; i++) {
+		let tData = data.triggers[i].data;
+		let tTag = data.triggers[i].tag;
+		s += GetTriggeredEffectString(tTag, tData, delayArray).s;
+	}
 	return s;
 }
 function MakePowerText(data) {
@@ -668,7 +682,7 @@ function GetTriggeredEffectString(tag, data, delayArray) {
 		s += "Destroy enemy projectiles within radius of <b>" + data.radius + "</b>" + "<br/>";
 	}
 	else if (tag == "PickupPackTrigger") {
-		s += MakePickupPackText(data);
+		s += MakePickupPackText(data, delayArray);
 	}
 	else if (tag == "ZapTrigger") {
 		s += "Zap up to " + getPluralIrregular(data.targets, "nearby enemy", "nearby enemies") + "<br/>";
@@ -690,10 +704,18 @@ function GetTriggeredEffectString(tag, data, delayArray) {
 		damage += data.damage;
 	}
 	else if (tag == "MineTrigger") {
+		let count = data.count == undefined ? 1 : data.count;
+		s += "Drop " + getPluralIrregular(count, "mine", "mines") + "<br/>";
 		s += printKeyAndData("Blast Damage", data.damage);
 		s += printKeyAndData("Range", data.burstRadius);
 		s += printKeyAndData("Duration", ToTime(data.duration));
-		damage += data.damage;
+		for (var effects in data.statusEffects) {
+			var effect = data.statusEffects[effects];
+			let o = ShowStatusEffect(effect);
+			s += o.s;
+			damage += o.damage;
+		}
+		damage += data.damage * count;
 	}
 	else if (tag == "AreaHealTrigger") {
 		if (data.amount > 0) s += printKeyAndData("Repair Amount", data.amount, "heal");
@@ -866,6 +888,18 @@ function printKeyAndDataBonus(key, data, cssClass = "") {
 }
 function AddReticle(color) {
 	return colorWrap(" &#9711;", numberToHex(color));
+}
+function GetDropRequirements(item)
+{
+	let s = "";
+	if(item.requiresBlast != undefined && item.requiresBlast == 1) s += "Requires Blast";
+	if(item.requiresBurning != undefined && item.requiresBurning == 1) s += "Requires Burning";
+	if(item.requiresDematerialize != undefined && item.requiresDematerialize == 1) s += "Requires Dematerialize";
+	if(item.requiresFreezeChill != undefined && item.requiresFreezeChill == 1) s += "Requires Freeze or Chilled";
+	if(item.requiresMissiles != undefined && item.requiresMissiles == 1) s += "Requires Missiles";
+	if(item.requiresPickupPackCreate != undefined && item.requiresPickupPackCreate == 1) s += "Requires Pickup pack creation";
+	if(item.requiresZap != undefined && item.requiresZap == 1) s += "Requires Zap";
+	return s;
 }
 // Loading Stuff
 var gasData = {};

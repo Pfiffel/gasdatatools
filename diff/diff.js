@@ -1,5 +1,5 @@
 var tableOutput = document.getElementById("tableOutput");
-var datatypes = ["accolade", "animation", "champion", "decor", "emitter", "explosion", "gunbullet", "item", "lair", "lane", "map", "monster", "object", "particle", "region", "soundpack", "speaker", "symbiote", "globals", "defect"]; // for utilGAS to load files, calls parseData once completed
+var datatypes = ["accolade", "animation", "champion", "decor", "emitter", "explosion", "gunbullet", "item", "addon", "lair", "lane", "map", "monster", "object", "particle", "region", "soundpack", "speaker", "symbiote", "globals", "defect"]; // for utilGAS to load files, calls parseData once completed
 var datatypesPrev = datatypes;
 loadGasData();
 var errorLogs = document.createElement('div');
@@ -33,10 +33,15 @@ function parseData() {
 			if(SkipCheck(entity)) continue;
 			let entityPrev = GetPrevEntity(file, entity.name);
 			if (entityPrev == null) {
-				if (file == "symbiote" || file == "item" || file == "accolade") {
+				if (file == "symbiote" || file == "item" || file == "accolade" || file == "addon") {
+					let listItem = document.createElement('div');
+					listItem.classList.add("inline");
 					var forChamp = (entity.champion != undefined) ? entity.champion + " " : "";
-					addLine("New " + forChamp + file, divList);
-					divList.appendChild(MakeStatsTable(entity, file == "item" ? entity.credits : file == "accolade" ? 0 : entity.tier, file == "symbiote"));
+					let line = addLine("New " + forChamp + file, divList);
+					listItem.appendChild(line);
+					let statsTable = MakeStatsTable(entity, file == "item" ? entity.credits : file == "accolade" ? 0 : entity.tier, file == "symbiote");
+					listItem.appendChild(statsTable);
+					divList.appendChild(listItem);
 				}
 				else if (file == "monster" || file == "gunbullet" || file == "champion") {
 					addLine("New " + file + ": <b>" + entity.name + "</b>", divList);
@@ -48,8 +53,23 @@ function parseData() {
 				}
 				else if (file == "object") {
 					addLine("New " + file + ": <b>" + entity.name + "</b>", divList);
+					let tempEntity = {};
+					tempEntity.objectType = entity.name;
 					changedObjects[entity.name] = true;
-					// TODO make draw function for just objects
+					let divSprite = document.createElement('div');
+					divSprite.style.display = "table-cell";
+					divSprite.style.verticalAlign = "middle";
+					divSprite.appendChild(draw(tempEntity, 0.4, false));
+					divList.appendChild(divSprite);
+				}
+				else if (file == "particle") {
+					addLine("New " + file + ": <b>" + entity.name + "</b>", divList);
+					changedObjects[entity.name] = true;
+					let divSprite = document.createElement('div');
+					divSprite.style.display = "table-cell";
+					divSprite.style.verticalAlign = "middle";
+					divSprite.appendChild(draw(entity, 0.4, false));
+					divList.appendChild(divSprite);
 				}
 				else
 					addLine("New " + file + ": <b>" + entity.name + "</b>", divList);
@@ -173,6 +193,7 @@ function CompareJSON(entity, entityPrev, superParent, fileType, parentStringList
 				if (fileType == "map" && (key == "x" || key == "y" || key == "tag" || key == "regionType")) { changedMaps[superParent] = true; continue; }
 				if (fileType == "symbiote") { changedSymbs[superParent] = true; AddKeyToChangeList(superParent, key); continue; }
 				if (fileType == "item") { changedItems[superParent] = true; AddKeyToChangeList(superParent, key); continue; }
+				if (fileType == "addon") { changedItems[superParent] = true; AddKeyToChangeList(superParent, key); continue; }
 				if (IsNewButDefaultValue(entityPrev, entity, key)) continue;
 				MakeChangeEntry(header, key, entityPrev[key], entity[key], divList);
 			}
