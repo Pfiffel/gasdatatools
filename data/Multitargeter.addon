@@ -1,0 +1,71 @@
+{
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "cooldown": 10000,
+        "params": [
+          {
+            "data": {
+              "angleOffset": 0,
+              "armingTime": 1500,
+              "creationSound": "UI_Misc_01",
+              "creationVolume": 30,
+              "duration": 15000,
+              "emitterType": "Multitargeter Mine",
+              "expiryExplosion": "Multitargeter Mine Expiry",
+              "healing": 0,
+              "mineCount": 1,
+              "objectType": "Multitargeter Glyph",
+              "pickupExplosion": "Multitargeter Mine Pickup",
+              "powers": [],
+              "radius": 50,
+              "ringRadius": 0,
+              "tag": "",
+              "triggers": [
+                {
+                  "data": {
+                    "amount": 2,
+                    "duration": 8000,
+                    "emitterType": "",
+                    "glyphCount": 2,
+                    "glyphOrientation": 0,
+                    "glyphRadius": 50,
+                    "glyphType": "Multitargeter Glyph Small",
+                    "maxStacks": 0,
+                    "statType": 30,
+                    "tag": ""
+                  },
+                  "tag": "StatBoostTrigger"
+                },
+                {
+                  "data": {
+                    "amount": 2,
+                    "duration": 8000,
+                    "emitterType": "",
+                    "glyphCount": 0,
+                    "glyphOrientation": 0,
+                    "glyphRadius": 0,
+                    "glyphType": "",
+                    "maxStacks": 0,
+                    "statType": 34,
+                    "tag": ""
+                  },
+                  "tag": "StatBoostTrigger"
+                }
+              ]
+            },
+            "tag": "PickupPackTrigger"
+          }
+        ],
+        "percentChance": 100,
+        "reticleColor": 14870811,
+        "targetingRange": 0
+      },
+      "tag": "PeriodicTriggerEffect"
+    }
+  ],
+  "name": "Multitargeter",
+  "rarity": 4
+}
+

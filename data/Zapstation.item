@@ -1,0 +1,97 @@
+{
+  "boon": 1,
+  "credits": 5,
+  "defenses": 0,
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "angleOffset": 900,
+            "armingTime": 1000,
+            "creationSound": "UI_Misc_01",
+            "creationVolume": 30,
+            "duration": 15000,
+            "emitterType": "Zapstation Mine",
+            "expiryExplosion": "Zapstation Mine Expiry",
+            "healing": 0,
+            "mineCount": 1,
+            "objectType": "Zap Glyph",
+            "pickupExplosion": "Zapstation Mine Pickup",
+            "powers": [],
+            "radius": 40,
+            "ringRadius": 80,
+            "tag": "",
+            "triggers": [
+              {
+                "data": {
+                  "damage": 30,
+                  "particleLines": [
+                    {
+                      "arcOffset": 0,
+                      "halfArc": 100,
+                      "maxDist": 20,
+                      "minDist": 10,
+                      "particleType": "Zapstation Zap",
+                      "spacing": 25
+                    }
+                  ],
+                  "range": 350,
+                  "reticleColor": 11184810,
+                  "shotguns": [
+                    {
+                      "autoAim": 0,
+                      "damage": 0,
+                      "delay": 0,
+                      "drawPictureInTooltip": 0,
+                      "drawReticle": 0,
+                      "drawTooltip": 0,
+                      "explosionType": "Zapstation Zap",
+                      "facing": 0,
+                      "halfArc": 1800,
+                      "mirror": 0,
+                      "offset": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "range": 40,
+                      "reticleColor": 11184810,
+                      "statusEffects": [],
+                      "tag": "",
+                      "targetingDelay": 0,
+                      "tooltip": ""
+                    }
+                  ],
+                  "sound": "Symbiote_Effect_Silverwitch_Zap",
+                  "statusEffects": [],
+                  "tag": "",
+                  "targets": 3,
+                  "volume": 50
+                },
+                "tag": "ZapTrigger"
+              }
+            ]
+          },
+          "tag": "PickupPackTrigger"
+        },
+        "when": 7
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Zapstation",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "rare": 1,
+  "requiresBlast": 0,
+  "requiresBurning": 0,
+  "requiresDematerialize": 0,
+  "requiresFreezeChill": 0,
+  "requiresMissiles": 0,
+  "requiresPickupPackCreate": 0,
+  "requiresZap": 0,
+  "triggers": 1
+}
+

@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 120,
+      "maxDistPercent": 100,
+      "minDistPercent": 100,
+      "particleType": "Astrohail Blast",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 400,
+      "maxDistPercent": 90,
+      "minDistPercent": 30,
+      "particleType": "Astrohail Blast Inner",
+      "uniformAngles": 0
+    }
+  ],
+  "name": "Astrohail Blast",
+  "sound": "Symbiote_Effect_Hiberna_Explode",
+  "volume": 150
+}
+

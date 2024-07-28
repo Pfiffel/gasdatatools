@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 9,
+      "maxDistPercent": 100,
+      "minDistPercent": 10,
+      "particleType": "Zapstation Zap",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Zapstation Zap",
+  "sound": "",
+  "volume": 100
+}
+

@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 12,
+      "maxDistPercent": 150,
+      "minDistPercent": 150,
+      "particleType": "Gun RoF Mine",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Gun RoF Mine Pickup",
+  "sound": "Effect_Gun_Damage_Boost",
+  "volume": 150
+}
+

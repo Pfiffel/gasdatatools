@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 12,
+      "maxDistPercent": 150,
+      "minDistPercent": 150,
+      "particleType": "EMP Fabricator Mine",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "EMP Fabricator Mine Pickup",
+  "sound": "",
+  "volume": 150
+}
+

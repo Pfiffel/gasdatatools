@@ -1,0 +1,117 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Perga Missile",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 6821912,
+      "height": 99,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 36,
+          "y": 8
+        },
+        {
+          "x": -40,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16726329,
+      "height": 100,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 63,
+          "y": 5
+        },
+        {
+          "x": 22,
+          "y": 19
+        },
+        {
+          "x": 33,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16726329,
+      "height": 100,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 11,
+          "y": 8
+        },
+        {
+          "x": 5,
+          "y": 12
+        },
+        {
+          "x": -9,
+          "y": 12
+        },
+        {
+          "x": -13,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16726329,
+      "height": 100,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -33,
+          "y": 8
+        },
+        {
+          "x": -46,
+          "y": 21
+        },
+        {
+          "x": -54,
+          "y": 21
+        },
+        {
+          "x": -42,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

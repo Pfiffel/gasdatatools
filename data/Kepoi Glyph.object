@@ -1,0 +1,43 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Kepoi Glyph",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 3684246,
+      "height": 0,
+      "mirror": 1,
+      "name": "Glyph",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 24,
+          "y": 5
+        },
+        {
+          "x": -9,
+          "y": 5
+        },
+        {
+          "x": -1,
+          "y": 13
+        },
+        {
+          "x": -7,
+          "y": 19
+        },
+        {
+          "x": -26,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

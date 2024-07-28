@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 120,
+      "maxDistPercent": 100,
+      "minDistPercent": 100,
+      "particleType": "EMP Fabricator Blast",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 120,
+      "maxDistPercent": 90,
+      "minDistPercent": 40,
+      "particleType": "EMP Fabricator Blast",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "EMP Fabricator Blast",
+  "sound": "Enemy_RoyalKnight_Shotgun_Blast",
+  "volume": 70
+}
+

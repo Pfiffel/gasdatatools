@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 24,
+      "maxDistPercent": 150,
+      "minDistPercent": 150,
+      "particleType": "Perga Generic",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Perga Generic Mine Pickup",
+  "sound": "",
+  "volume": 150
+}
+

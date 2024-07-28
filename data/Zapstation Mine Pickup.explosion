@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 12,
+      "maxDistPercent": 150,
+      "minDistPercent": 150,
+      "particleType": "Zapstation Mine",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Zapstation Mine Pickup",
+  "sound": "",
+  "volume": 150
+}
+

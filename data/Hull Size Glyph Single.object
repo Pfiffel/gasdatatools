@@ -1,0 +1,39 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Hull Size Glyph Single",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 3684246,
+      "height": 0,
+      "mirror": 1,
+      "name": "Glyph",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 19,
+          "y": 5
+        },
+        {
+          "x": -1,
+          "y": 5
+        },
+        {
+          "x": -1,
+          "y": 14
+        },
+        {
+          "x": -22,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

@@ -1,0 +1,111 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Hull Size Glyph",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 3684246,
+      "height": 0,
+      "mirror": 1,
+      "name": "Glyph",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -50,
+          "y": 5
+        },
+        {
+          "x": -30,
+          "y": 5
+        },
+        {
+          "x": -30,
+          "y": 14
+        },
+        {
+          "x": -9,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 3684246,
+      "height": 0,
+      "mirror": 1,
+      "name": "Glyph",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 50,
+          "y": 5
+        },
+        {
+          "x": 30,
+          "y": 5
+        },
+        {
+          "x": 30,
+          "y": 14
+        },
+        {
+          "x": 9,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 3684246,
+      "height": 0,
+      "mirror": 1,
+      "name": "Glyph",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 5,
+          "y": -50
+        },
+        {
+          "x": 5,
+          "y": -30
+        },
+        {
+          "x": 14,
+          "y": -30
+        },
+        {
+          "x": 0,
+          "y": -9
+        },
+        {
+          "x": -14,
+          "y": -30
+        },
+        {
+          "x": -5,
+          "y": -30
+        },
+        {
+          "x": -5,
+          "y": -50
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

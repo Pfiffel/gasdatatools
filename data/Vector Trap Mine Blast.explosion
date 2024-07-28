@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 40,
+      "maxDistPercent": 100,
+      "minDistPercent": 100,
+      "particleType": "Vector Trap Mine Blast",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 40,
+      "maxDistPercent": 85,
+      "minDistPercent": 85,
+      "particleType": "Vector Trap Mine Blast",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Vector Trap Mine Blast",
+  "sound": "Player_Wasp_PosTorpedo_Explosion",
+  "volume": 50
+}
+

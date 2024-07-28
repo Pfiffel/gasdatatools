@@ -1,0 +1,40 @@
+{
+  "colorPoints": [
+    {
+      "frac": 500,
+      "value": 14361596
+    },
+    {
+      "frac": 900,
+      "value": 13379761
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 500,
+  "minLifetime": 300,
+  "name": "Volos Grenade Burst",
+  "objectType": "Small Hex",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 50,
+      "value": 500
+    },
+    {
+      "frac": 500,
+      "value": 600
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 14361596,
+  "startScale": 10,
+  "stayLow": 0
+}
+

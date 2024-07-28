@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 12,
+      "maxDistPercent": 150,
+      "minDistPercent": 150,
+      "particleType": "Volos Mine",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Volos Mine Pickup",
+  "sound": "",
+  "volume": 100
+}
+

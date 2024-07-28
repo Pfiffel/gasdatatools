@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 240,
+      "maxDistPercent": 100,
+      "minDistPercent": 100,
+      "particleType": "Perga Mine Burst",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 120,
+      "maxDistPercent": 90,
+      "minDistPercent": 40,
+      "particleType": "Perga Generic",
+      "uniformAngles": 0
+    }
+  ],
+  "name": "Perga Mine Blast",
+  "sound": "explosion2",
+  "volume": 150
+}
+

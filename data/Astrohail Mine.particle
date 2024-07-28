@@ -1,0 +1,40 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 6804194
+    },
+    {
+      "frac": 750,
+      "value": 6804194
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 2,
+  "maxLifetime": 600,
+  "minLifetime": 400,
+  "name": "Astrohail Mine",
+  "objectType": "Astrohail Mine Glyph",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 200
+    },
+    {
+      "frac": 750,
+      "value": 200
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 16776958,
+  "startScale": 10,
+  "stayLow": 1
+}
+

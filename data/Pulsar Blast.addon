@@ -1,0 +1,38 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "autoAim": 0,
+            "damage": 90,
+            "delay": 0,
+            "drawPictureInTooltip": 1,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Pulsar Blast Burst",
+            "facing": 0,
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "range": 150,
+            "reticleColor": 2570219,
+            "statusEffects": [],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": ""
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "when": 14
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Pulsar Blast",
+  "rarity": 1
+}
+

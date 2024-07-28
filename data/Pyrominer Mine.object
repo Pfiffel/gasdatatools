@@ -1,0 +1,113 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Pyrominer Mine",
+  "shapes": [
+    {
+      "bone": "Hand",
+      "clones": [
+        {
+          "pos": {
+            "f": 900,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 1800,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "pos": {
+            "f": 2700,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 1,
+      "collider": 0,
+      "color": 15220003,
+      "height": 2,
+      "mirror": 0,
+      "name": "Legs",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -17,
+          "y": 0
+        },
+        {
+          "x": -28,
+          "y": 14
+        },
+        {
+          "x": -31,
+          "y": 21
+        },
+        {
+          "x": -28,
+          "y": 28
+        },
+        {
+          "x": -22,
+          "y": 31
+        },
+        {
+          "x": -15,
+          "y": 28
+        },
+        {
+          "x": 0,
+          "y": 17
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Hand",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16750080,
+      "height": 10,
+      "mirror": 1,
+      "name": "Body",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -17,
+          "y": 0
+        },
+        {
+          "x": -12,
+          "y": 12
+        },
+        {
+          "x": 0,
+          "y": 17
+        },
+        {
+          "x": 12,
+          "y": 12
+        },
+        {
+          "x": 17,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

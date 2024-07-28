@@ -1,0 +1,71 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Multitargeter Glyph Small",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 14144543,
+      "height": 0,
+      "mirror": 0,
+      "name": "Glyph",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 4,
+          "y": -17
+        },
+        {
+          "x": 4,
+          "y": -4
+        },
+        {
+          "x": 17,
+          "y": -4
+        },
+        {
+          "x": 17,
+          "y": 4
+        },
+        {
+          "x": 4,
+          "y": 4
+        },
+        {
+          "x": 4,
+          "y": 17
+        },
+        {
+          "x": -4,
+          "y": 17
+        },
+        {
+          "x": -4,
+          "y": 4
+        },
+        {
+          "x": -17,
+          "y": 4
+        },
+        {
+          "x": -17,
+          "y": -4
+        },
+        {
+          "x": -4,
+          "y": -4
+        },
+        {
+          "x": -4,
+          "y": -17
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

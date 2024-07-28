@@ -1,0 +1,20 @@
+{
+  "arcOffset": 0,
+  "cooldown": 250,
+  "endSound": "",
+  "endVolume": 50,
+  "halfArc": 1800,
+  "loopSound": "",
+  "loopVolume": 50,
+  "maxDist": 30,
+  "minDist": 10,
+  "mirror": 0,
+  "name": "Gun RoF Mine",
+  "particleCount": 1,
+  "particleTypes": [
+    "Gun RoF Mine"
+  ],
+  "startSound": "",
+  "startVolume": 50
+}
+

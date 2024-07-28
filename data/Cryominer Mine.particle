@@ -1,0 +1,40 @@
+{
+  "colorPoints": [
+    {
+      "frac": 500,
+      "value": 2608599
+    },
+    {
+      "frac": 750,
+      "value": 2608599
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 800,
+  "minLifetime": 600,
+  "name": "Cryominer Mine",
+  "objectType": "Snowflake",
+  "positionTweenType": "CIRCINOUT",
+  "scalePoints": [
+    {
+      "frac": 50,
+      "value": 100
+    },
+    {
+      "frac": 500,
+      "value": 300
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 16776958,
+  "startScale": 10,
+  "stayLow": 0
+}
+

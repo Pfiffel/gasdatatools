@@ -1,0 +1,291 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "angleOffset": 0,
+            "armingTime": 2000,
+            "creationSound": "UI_Misc_01",
+            "creationVolume": 30,
+            "duration": 15000,
+            "emitterType": "Astrohail Mine",
+            "expiryExplosion": "Astrohail Mine Expiry",
+            "healing": 0,
+            "mineCount": 1,
+            "objectType": "Astrohail Mine Glyph",
+            "pickupExplosion": "Astrohail Mine Pickup",
+            "powers": [],
+            "radius": 50,
+            "ringRadius": 0,
+            "tag": "",
+            "triggers": [
+              {
+                "data": {
+                  "autoAim": 1,
+                  "damage": 160,
+                  "delay": 0,
+                  "drawPictureInTooltip": 1,
+                  "drawReticle": 1,
+                  "drawTooltip": 1,
+                  "explosionType": "Astrohail Blast",
+                  "facing": 0,
+                  "halfArc": 90,
+                  "mirror": 0,
+                  "offset": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "range": 400,
+                  "reticleColor": 6804194,
+                  "statusEffects": [
+                    {
+                      "data": {
+                        "duration": 1000
+                      },
+                      "tag": "FreezeEffect"
+                    }
+                  ],
+                  "tag": "",
+                  "targetingDelay": 0,
+                  "tooltip": "8x Freezing Bursts"
+                },
+                "tag": "ShotgunTrigger"
+              },
+              {
+                "data": {
+                  "autoAim": 1,
+                  "damage": 160,
+                  "delay": 0,
+                  "drawPictureInTooltip": 0,
+                  "drawReticle": 0,
+                  "drawTooltip": 0,
+                  "explosionType": "Astrohail Blast",
+                  "facing": 0,
+                  "halfArc": 90,
+                  "mirror": 0,
+                  "offset": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "range": 400,
+                  "reticleColor": 6804194,
+                  "statusEffects": [
+                    {
+                      "data": {
+                        "duration": 1000
+                      },
+                      "tag": "FreezeEffect"
+                    }
+                  ],
+                  "tag": "",
+                  "targetingDelay": 600,
+                  "tooltip": ""
+                },
+                "tag": "ShotgunTrigger"
+              },
+              {
+                "data": {
+                  "autoAim": 1,
+                  "damage": 160,
+                  "delay": 0,
+                  "drawPictureInTooltip": 0,
+                  "drawReticle": 0,
+                  "drawTooltip": 0,
+                  "explosionType": "Astrohail Blast",
+                  "facing": 0,
+                  "halfArc": 90,
+                  "mirror": 0,
+                  "offset": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "range": 400,
+                  "reticleColor": 6804194,
+                  "statusEffects": [
+                    {
+                      "data": {
+                        "duration": 1000
+                      },
+                      "tag": "FreezeEffect"
+                    }
+                  ],
+                  "tag": "",
+                  "targetingDelay": 1200,
+                  "tooltip": ""
+                },
+                "tag": "ShotgunTrigger"
+              },
+              {
+                "data": {
+                  "autoAim": 1,
+                  "damage": 160,
+                  "delay": 0,
+                  "drawPictureInTooltip": 0,
+                  "drawReticle": 0,
+                  "drawTooltip": 0,
+                  "explosionType": "Astrohail Blast",
+                  "facing": 0,
+                  "halfArc": 90,
+                  "mirror": 0,
+                  "offset": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "range": 400,
+                  "reticleColor": 6804194,
+                  "statusEffects": [
+                    {
+                      "data": {
+                        "duration": 1000
+                      },
+                      "tag": "FreezeEffect"
+                    }
+                  ],
+                  "tag": "",
+                  "targetingDelay": 1800,
+                  "tooltip": ""
+                },
+                "tag": "ShotgunTrigger"
+              },
+              {
+                "data": {
+                  "autoAim": 1,
+                  "damage": 160,
+                  "delay": 0,
+                  "drawPictureInTooltip": 0,
+                  "drawReticle": 0,
+                  "drawTooltip": 0,
+                  "explosionType": "Astrohail Blast",
+                  "facing": 0,
+                  "halfArc": 90,
+                  "mirror": 0,
+                  "offset": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "range": 400,
+                  "reticleColor": 6804194,
+                  "statusEffects": [
+                    {
+                      "data": {
+                        "duration": 1000
+                      },
+                      "tag": "FreezeEffect"
+                    }
+                  ],
+                  "tag": "",
+                  "targetingDelay": 2400,
+                  "tooltip": ""
+                },
+                "tag": "ShotgunTrigger"
+              },
+              {
+                "data": {
+                  "autoAim": 1,
+                  "damage": 160,
+                  "delay": 0,
+                  "drawPictureInTooltip": 0,
+                  "drawReticle": 0,
+                  "drawTooltip": 0,
+                  "explosionType": "Astrohail Blast",
+                  "facing": 0,
+                  "halfArc": 90,
+                  "mirror": 0,
+                  "offset": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "range": 400,
+                  "reticleColor": 6804194,
+                  "statusEffects": [
+                    {
+                      "data": {
+                        "duration": 1000
+                      },
+                      "tag": "FreezeEffect"
+                    }
+                  ],
+                  "tag": "",
+                  "targetingDelay": 3000,
+                  "tooltip": ""
+                },
+                "tag": "ShotgunTrigger"
+              },
+              {
+                "data": {
+                  "autoAim": 1,
+                  "damage": 160,
+                  "delay": 0,
+                  "drawPictureInTooltip": 0,
+                  "drawReticle": 0,
+                  "drawTooltip": 0,
+                  "explosionType": "Astrohail Blast",
+                  "facing": 0,
+                  "halfArc": 90,
+                  "mirror": 0,
+                  "offset": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "range": 400,
+                  "reticleColor": 6804194,
+                  "statusEffects": [
+                    {
+                      "data": {
+                        "duration": 1000
+                      },
+                      "tag": "FreezeEffect"
+                    }
+                  ],
+                  "tag": "",
+                  "targetingDelay": 3600,
+                  "tooltip": ""
+                },
+                "tag": "ShotgunTrigger"
+              },
+              {
+                "data": {
+                  "autoAim": 1,
+                  "damage": 160,
+                  "delay": 0,
+                  "drawPictureInTooltip": 0,
+                  "drawReticle": 0,
+                  "drawTooltip": 0,
+                  "explosionType": "Astrohail Blast",
+                  "facing": 0,
+                  "halfArc": 90,
+                  "mirror": 0,
+                  "offset": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "range": 400,
+                  "reticleColor": 6804194,
+                  "statusEffects": [
+                    {
+                      "data": {
+                        "duration": 1000
+                      },
+                      "tag": "FreezeEffect"
+                    }
+                  ],
+                  "tag": "",
+                  "targetingDelay": 4200,
+                  "tooltip": ""
+                },
+                "tag": "ShotgunTrigger"
+              }
+            ]
+          },
+          "tag": "PickupPackTrigger"
+        },
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Astrohail Station",
+  "rarity": 5
+}
+

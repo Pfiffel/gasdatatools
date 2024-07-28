@@ -1,0 +1,39 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "armingTime": 700,
+            "burstRadius": 160,
+            "damage": 140,
+            "duration": 7000,
+            "emitterType": "Pyrominer Mine",
+            "explosionType": "Pyrominer Mine Blast",
+            "objectType": "Pyrominer Mine",
+            "scatterHalfArc": 1800,
+            "scatterRadius": 200,
+            "sensitivityRadius": 160,
+            "statusEffects": [
+              {
+                "data": {
+                  "dps": 35,
+                  "duration": 4000,
+                  "reducedDurationOnBoss": 0
+                },
+                "tag": "BurningEffect"
+              }
+            ],
+            "tag": ""
+          },
+          "tag": "MineTrigger"
+        },
+        "when": 15
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Pyrominer",
+  "rarity": 3
+}
+

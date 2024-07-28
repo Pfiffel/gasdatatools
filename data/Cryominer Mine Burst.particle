@@ -1,0 +1,40 @@
+{
+  "colorPoints": [
+    {
+      "frac": 500,
+      "value": 2608599
+    },
+    {
+      "frac": 900,
+      "value": 2608599
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 500,
+  "minLifetime": 300,
+  "name": "Cryominer Mine Burst",
+  "objectType": "Snowflake",
+  "positionTweenType": "BACKOUT",
+  "scalePoints": [
+    {
+      "frac": 50,
+      "value": 400
+    },
+    {
+      "frac": 500,
+      "value": 400
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 16776958,
+  "startScale": 10,
+  "stayLow": 0
+}
+

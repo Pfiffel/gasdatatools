@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 40,
+      "maxDistPercent": 100,
+      "minDistPercent": 100,
+      "particleType": "IED Forge Burst",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 30,
+      "maxDistPercent": 60,
+      "minDistPercent": 10,
+      "particleType": "IED Forge Burst",
+      "uniformAngles": 0
+    }
+  ],
+  "name": "IED Forge Burst",
+  "sound": "explosion4",
+  "volume": 150
+}
+

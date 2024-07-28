@@ -1,0 +1,85 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "IED Forge Projectile",
+  "shapes": [
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 14070441,
+      "height": 40,
+      "mirror": 0,
+      "name": "Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -10,
+          "y": -9
+        },
+        {
+          "x": -31,
+          "y": -6
+        },
+        {
+          "x": -40,
+          "y": 0
+        },
+        {
+          "x": -8,
+          "y": -3
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Red",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 13740629,
+      "height": 50,
+      "mirror": 0,
+      "name": "Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -2,
+          "y": -14
+        },
+        {
+          "x": -9,
+          "y": -15
+        },
+        {
+          "x": -12,
+          "y": -10
+        },
+        {
+          "x": -8,
+          "y": 8
+        },
+        {
+          "x": 0,
+          "y": 21
+        },
+        {
+          "x": 7,
+          "y": 21
+        },
+        {
+          "x": 11,
+          "y": 15
+        },
+        {
+          "x": 6,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

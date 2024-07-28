@@ -1,0 +1,71 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Perga Missile Glyph",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16726329,
+      "height": 0,
+      "mirror": 0,
+      "name": "Glyph",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 37,
+          "y": -37
+        },
+        {
+          "x": 29,
+          "y": -5
+        },
+        {
+          "x": 16,
+          "y": -5
+        },
+        {
+          "x": -3,
+          "y": 14
+        },
+        {
+          "x": -5,
+          "y": 31
+        },
+        {
+          "x": -14,
+          "y": 40
+        },
+        {
+          "x": -20,
+          "y": 20
+        },
+        {
+          "x": -40,
+          "y": 14
+        },
+        {
+          "x": -31,
+          "y": 5
+        },
+        {
+          "x": -14,
+          "y": 3
+        },
+        {
+          "x": 5,
+          "y": -16
+        },
+        {
+          "x": 5,
+          "y": -29
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

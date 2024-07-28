@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 12,
+      "maxDistPercent": 150,
+      "minDistPercent": 150,
+      "particleType": "Multitargeter Mine",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Multitargeter Mine Expiry",
+  "sound": "Effect_Pickup_Expire",
+  "volume": 40
+}
+

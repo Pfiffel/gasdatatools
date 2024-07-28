@@ -1,0 +1,113 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Hydra Missile",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 8327762,
+      "height": 99,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 77,
+          "y": 10
+        },
+        {
+          "x": -13,
+          "y": 10
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 15958974,
+      "height": 100,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 120,
+          "y": 0
+        },
+        {
+          "x": 105,
+          "y": 15
+        },
+        {
+          "x": 77,
+          "y": 19
+        },
+        {
+          "x": 69,
+          "y": 10
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 15958974,
+      "height": 100,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 51,
+          "y": 10
+        },
+        {
+          "x": 33,
+          "y": 21
+        },
+        {
+          "x": 33,
+          "y": 10
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 15958974,
+      "height": 100,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -12,
+          "y": 5
+        },
+        {
+          "x": 19,
+          "y": 5
+        },
+        {
+          "x": -24,
+          "y": 32
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

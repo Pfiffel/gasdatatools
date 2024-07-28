@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 12,
+      "maxDistPercent": 150,
+      "minDistPercent": 150,
+      "particleType": "Hull Size Mine",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Hull Size Mine Pickup",
+  "sound": "",
+  "volume": 100
+}
+

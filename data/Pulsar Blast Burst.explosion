@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 30,
+      "maxDistPercent": 100,
+      "minDistPercent": 90,
+      "particleType": "Pulsar Blast Burst",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Pulsar Blast Burst",
+  "sound": "explosion1",
+  "volume": 50
+}
+

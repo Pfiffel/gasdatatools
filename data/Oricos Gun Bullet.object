@@ -1,0 +1,47 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Oricos Gun Bullet",
+  "shapes": [
+    {
+      "bone": "Orange",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 6476444,
+      "height": 58,
+      "mirror": 1,
+      "name": "Orange",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 38,
+          "y": 3
+        },
+        {
+          "x": 32,
+          "y": 10
+        },
+        {
+          "x": 21,
+          "y": 14
+        },
+        {
+          "x": 5,
+          "y": 14
+        },
+        {
+          "x": -32,
+          "y": 14
+        },
+        {
+          "x": -36,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

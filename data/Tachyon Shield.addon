@@ -1,0 +1,28 @@
+{
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "duration": 3000,
+            "stats": {
+              "color": 16728045,
+              "displayName": "",
+              "left": 0,
+              "level": 100,
+              "maxStrength": 100,
+              "right": 0
+            },
+            "tag": ""
+          },
+          "tag": "ExtraShieldTrigger"
+        },
+        "when": 14
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "name": "Tachyon Shield",
+  "rarity": 2
+}
+
