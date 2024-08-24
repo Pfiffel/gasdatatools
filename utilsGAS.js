@@ -321,17 +321,18 @@ function SlotTypeToText(data) {
 	return s;
 }
 // TODO make bSymbiote and bAccolade an enum or sth
-function MakeStatsTable(mainData, tier, bSymbiote = false, bPortrait = false, bDescription = true, bSpeaker = false, idxTrigger = -1, bJustGimmeStatStringHack = false, bAccoladeOrigin = false) {
+function MakeStatsTable(mainData, tier, bSymbiote = false, iPortrait = 0, bDescription = true, bSpeaker = false, idxTrigger = -1, bJustGimmeStatStringHack = false, bAccoladeOrigin = false) {
 	if (tier == 0) tier = mainData.tier;
 	if (mainData.credits != undefined) tier = mainData.credits;
 	else if (mainData.rarity != undefined) tier = mainData.rarity + 1;
 	var tbl = document.createElement('table');
 	let th = tbl.insertRow();
-
-	if (bSymbiote && bPortrait) {
+	console.log(mainData.credits + " " + iPortrait)
+	if (iPortrait != 0 && (bSymbiote || mainData.credits != undefined)) {
 		var image = new Image();
-		image.src = "https://gasgame.net/portrait/" + mainData.name + ".png";
-		//image.height = "64";
+		var url = bSymbiote ? "https://gasgame.net/portrait/" : "https://gasgame.net/icon/";
+		image.src = url + mainData.name + ".png";
+		image.height = iPortrait;
 		var img = makeCellE(image, th);
 		img.rowSpan = 10;
 	}

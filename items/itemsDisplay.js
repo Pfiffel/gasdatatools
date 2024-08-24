@@ -15,6 +15,14 @@ for (var i in SLOT_TYPES) {
 	var type = SLOT_TYPES[i];
 	itemTypeCB[i] = makeInputCheckbox(type[1], RefreshLists, filters, true);
 }
+//var showPortraits = makeInputCheckbox("Show Art", RefreshLists, filters, true);
+const FILTER_IMAGE_RESOLUTION = "Resolution";
+var portraitResolutions = [0,16,32,48,64,80,96,112,128];
+var head = document.createElement("div");
+head.textContent = "Icon Resolution";
+filters.appendChild(head);
+makeInputRadios(FILTER_IMAGE_RESOLUTION, portraitResolutions, RefreshLists, filters);
+
 function FilterCheck(item) {
 	for (var i in itemTypeCB) {
 		var cb = itemTypeCB[i];
@@ -53,6 +61,7 @@ function MakeList() {
 	tableOutput.appendChild(showUsage(STAT_TYPES));
 	tableOutput.appendChild(showUsage(TRIGGERED_TRIGGER_EFFECTS));
 	//tableOutput.appendChild(showUsage(ACTIVE_WHILE_NAMES));
+	//tableOutput.appendChild(FullAddonTable());
 }
 function MakeItemLimitTable() {
 	let limits = GetGlobals().tieredItemLimits;
@@ -114,7 +123,8 @@ function MakeSpecificItemList(tier, statAmount, precursor, rare, boon, inline, o
 	tempItems.sort((a, b) => ItemSort(a, b));
 	for (var i = 0; i < tempItems.length; i++) {
 		var item = tempItems[i];
-		var tbl = MakeStatsTable(item, item.credits);
+		iPortrait = document.querySelector('input[name="' + FILTER_IMAGE_RESOLUTION + '"]:checked').value;
+		var tbl = MakeStatsTable(item, item.credits, false, iPortrait);
 		if (inline) tbl.classList.add("inline");
 		div.appendChild(tbl);
 	}
@@ -171,4 +181,22 @@ function MakeAddonList(tier) {
 		div.appendChild(tbl);
 	}
 	return div;
+}
+function FullAddonTable()
+{
+	var tbl = document.createElement('table');
+	let th = tbl.insertRow();
+	makeHeaderCell("Addon", th);
+	makeHeaderCell("Effects", th);
+	//for (let t = 1; t < TIERS + 1; t++) {
+		for (var i = 0; i < gasData["addon"].length; i++) {
+			var item = gasData["addon"][i];
+			if (item.rarity != 1) continue;
+			let tr = tbl.insertRow();
+			var string = MakeStatsTable(item, item.tier, true, false, false, false, -1, true);
+			makeCell(item.name, tr);
+			makeCell(string, tr);
+		}
+	//}
+	return tbl;
 }

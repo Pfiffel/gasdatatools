@@ -84,7 +84,7 @@ function parseTierList(t) {
 		if (symb.tier != t) continue;
 		if (showOnlyDefault.checked && !IsStarter(symb)) continue;
 		var cont = document.createElement('div');
-		var tbl = MakeStatsTable(symb, symb.tier, true, showPortraits.checked, showDescriptions.checked, showQuotes.checked);
+		var tbl = MakeStatsTable(symb, symb.tier, true, showPortraits.checked ? 128 : 0, showDescriptions.checked, showQuotes.checked);
 		/*
 		tbl.classList.add("inline");
 		var image = new Image();
