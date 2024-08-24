@@ -9,6 +9,7 @@
             "duration": 5000,
             "stats": {
               "color": 10888979,
+              "displayName": "Protective Lid",
               "left": -1800,
               "level": 0,
               "maxStrength": 200,

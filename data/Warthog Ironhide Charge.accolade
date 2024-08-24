@@ -9,6 +9,7 @@
             "duration": 2000,
             "stats": {
               "color": 11300931,
+              "displayName": "Ironhide Charge",
               "left": -1800,
               "level": 0,
               "maxStrength": 300,
