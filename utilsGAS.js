@@ -322,12 +322,13 @@ function SlotTypeToText(data) {
 }
 // TODO make bSymbiote and bAccolade an enum or sth
 function MakeStatsTable(mainData, tier, bSymbiote = false, iPortrait = 0, bDescription = true, bSpeaker = false, idxTrigger = -1, bJustGimmeStatStringHack = false, bAccoladeOrigin = false) {
+	if (mainData == undefined) {var div = document.createElement('div'); div.textContent = "something went seriously wrong"; return div;}
 	if (tier == 0) tier = mainData.tier;
 	if (mainData.credits != undefined) tier = mainData.credits;
 	else if (mainData.rarity != undefined) tier = mainData.rarity + 1;
 	var tbl = document.createElement('table');
 	let th = tbl.insertRow();
-	console.log(mainData.credits + " " + iPortrait)
+
 	if (iPortrait != 0 && (bSymbiote || mainData.credits != undefined)) {
 		var image = new Image();
 		var url = bSymbiote ? "https://gasgame.net/portrait/" : "https://gasgame.net/icon/";

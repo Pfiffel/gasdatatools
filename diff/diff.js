@@ -15,6 +15,7 @@ function parseIDs() // make super duper recursive id checker?
 var listOfChangedKeys = {};
 var changedSymbs = {};
 var changedItems = {};
+var changedAddons = {};
 var changedObjects = {};
 var changedMaps = {};
 let divList = document.createElement('div');
@@ -98,6 +99,11 @@ function parseData() {
 		divList.appendChild(MakeGraphicCompareBlock(entity + " changes" + GetKeyChangeList(entity),
 			MakeStatsTable(GetPrevEntity("item", entity), 0, false),
 			MakeStatsTable(GetNewEntity("item", entity), 0, false)));
+	}
+	for (let entity in changedAddons) {
+		divList.appendChild(MakeGraphicCompareBlock(entity + " changes" + GetKeyChangeList(entity),
+			MakeStatsTable(GetPrevEntity("addon", entity), 0, false),
+			MakeStatsTable(GetNewEntity("addon", entity), 0, false)));
 	}
 	var entitySpriteChanged = FindObjectUsage(changedObjects);
 	for (let entity in entitySpriteChanged) {
@@ -189,11 +195,12 @@ function CompareJSON(entity, entityPrev, superParent, fileType, parentStringList
 			else if (typeof entity[key] == 'object')
 				CompareJSON(entity[key], entityPrev[key], superParent, fileType, header + " " + key);
 			else if (entity[key] != entityPrev[key]) {
+				//console.log(superParent + ": " + entityPrev + "[" + key + "] " + entity + " " + "[" + key + "]");
 				if (fileType == "object") { changedObjects[superParent] = true; continue; }
 				if (fileType == "map" && (key == "x" || key == "y" || key == "tag" || key == "regionType")) { changedMaps[superParent] = true; continue; }
 				if (fileType == "symbiote") { changedSymbs[superParent] = true; AddKeyToChangeList(superParent, key); continue; }
 				if (fileType == "item") { changedItems[superParent] = true; AddKeyToChangeList(superParent, key); continue; }
-				if (fileType == "addon") { changedItems[superParent] = true; AddKeyToChangeList(superParent, key); continue; }
+				if (fileType == "addon") { changedAddons[superParent] = true; AddKeyToChangeList(superParent, key); continue; }
 				if (IsNewButDefaultValue(entityPrev, entity, key)) continue;
 				MakeChangeEntry(header, key, entityPrev[key], entity[key], divList);
 			}
@@ -201,6 +208,7 @@ function CompareJSON(entity, entityPrev, superParent, fileType, parentStringList
 	}
 }
 function AddKeyToChangeList(superParent, key) {
+	//console.log(superParent + " " + typeof superParent + " " + key + " " + typeof key);
 	if (listOfChangedKeys[superParent] == undefined) listOfChangedKeys[superParent] = [];
 	listOfChangedKeys[superParent].push(key);
 }
