@@ -10,7 +10,9 @@
       "cooldown": 350,
       "damage": 8,
       "displayName": "",
+      "drawStatsInTooltip": 1,
       "emitterType": "Hercules Guns",
+      "extraText": "",
       "f": 0,
       "halfArc": 1800,
       "objectType": "Hercules Aux Bullet",
@@ -25,7 +27,9 @@
       "cooldown": 425,
       "damage": 15,
       "displayName": "",
+      "drawStatsInTooltip": 1,
       "emitterType": "Hercules Guns",
+      "extraText": "",
       "f": 0,
       "halfArc": 600,
       "objectType": "Hercules Secondary Bullet",
@@ -40,7 +44,9 @@
       "cooldown": 850,
       "damage": 50,
       "displayName": "",
+      "drawStatsInTooltip": 1,
       "emitterType": "Hercules Guns",
+      "extraText": "",
       "f": 0,
       "halfArc": 200,
       "objectType": "Hercules Bullet",
@@ -127,28 +133,196 @@
   ],
   "slotLimits": [
     {
+      "labelPos": {
+        "x": 206,
+        "y": 134
+      },
       "maxSlots": 4,
-      "minSlots": 1
+      "minSlots": 1,
+      "slotPositions": [
+        {
+          "x": 155,
+          "y": 152
+        },
+        {
+          "x": 226,
+          "y": 152
+        },
+        {
+          "x": 155,
+          "y": 223
+        },
+        {
+          "x": 226,
+          "y": 223
+        }
+      ]
     },
     {
+      "labelPos": {
+        "x": 195,
+        "y": 27
+      },
       "maxSlots": 9,
-      "minSlots": 3
+      "minSlots": 3,
+      "slotPositions": [
+        {
+          "x": 152,
+          "y": 47
+        },
+        {
+          "x": 222,
+          "y": 47
+        },
+        {
+          "x": 81,
+          "y": 47
+        },
+        {
+          "x": 292,
+          "y": 47
+        },
+        {
+          "x": 12,
+          "y": 47
+        },
+        {
+          "x": 363,
+          "y": 47
+        },
+        {
+          "x": 363,
+          "y": 118
+        },
+        {
+          "x": 12,
+          "y": 118
+        },
+        {
+          "x": 363,
+          "y": 189
+        }
+      ]
     },
     {
+      "labelPos": {
+        "x": 22,
+        "y": 218
+      },
       "maxSlots": 6,
-      "minSlots": 1
+      "minSlots": 1,
+      "slotPositions": [
+        {
+          "x": 17,
+          "y": 237
+        },
+        {
+          "x": 17,
+          "y": 305
+        },
+        {
+          "x": 17,
+          "y": 372
+        },
+        {
+          "x": 17,
+          "y": 439
+        },
+        {
+          "x": 17,
+          "y": 506
+        },
+        {
+          "x": 17,
+          "y": 574
+        }
+      ]
     },
     {
+      "labelPos": {
+        "x": 202,
+        "y": 512
+      },
       "maxSlots": 4,
-      "minSlots": 1
+      "minSlots": 1,
+      "slotPositions": [
+        {
+          "x": 156,
+          "y": 533
+        },
+        {
+          "x": 227,
+          "y": 533
+        },
+        {
+          "x": 156,
+          "y": 602
+        },
+        {
+          "x": 227,
+          "y": 602
+        }
+      ]
     },
     {
+      "labelPos": {
+        "x": 343,
+        "y": 295
+      },
       "maxSlots": 4,
-      "minSlots": 0
+      "minSlots": 0,
+      "slotPositions": [
+        {
+          "x": 362,
+          "y": 316
+        },
+        {
+          "x": 362,
+          "y": 386
+        },
+        {
+          "x": 362,
+          "y": 456
+        },
+        {
+          "x": 362,
+          "y": 526
+        }
+      ]
     },
     {
+      "labelPos": {
+        "x": 189,
+        "y": 322
+      },
       "maxSlots": 6,
-      "minSlots": 2
+      "minSlots": 2,
+      "slotPositions": [
+        {
+          "x": 190,
+          "y": 344
+        },
+        {
+          "x": 119,
+          "y": 344
+        },
+        {
+          "x": 261,
+          "y": 344
+        },
+        {
+          "x": 190,
+          "y": 414
+        },
+        {
+          "x": 119,
+          "y": 414
+        },
+        {
+          "x": 261,
+          "y": 414
+        }
+      ]
     }
   ],
   "speedLimit": 230,
@@ -165,6 +339,7 @@
             "autoAim": 0,
             "damage": 95,
             "delay": 0,
+            "drawPictureInTooltip": 1,
             "drawReticle": 0,
             "drawTooltip": 1,
             "explosionType": "Hercules Burst",
@@ -215,6 +390,7 @@
             "autoAim": 0,
             "damage": 200,
             "delay": 0,
+            "drawPictureInTooltip": 1,
             "drawReticle": 0,
             "drawTooltip": 1,
             "explosionType": "Hercules Shotgun",
@@ -250,6 +426,7 @@
             "autoAim": 0,
             "damage": 75,
             "delay": 300,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Hercules Zeon Burst",
@@ -274,6 +451,7 @@
             "autoAim": 0,
             "damage": 75,
             "delay": 700,
+            "drawPictureInTooltip": 1,
             "drawReticle": 0,
             "drawTooltip": 0,
             "explosionType": "Hercules Zeon Burst",
@@ -298,6 +476,7 @@
             "autoAim": 0,
             "damage": 75,
             "delay": 1100,
+            "drawPictureInTooltip": 1,
             "drawReticle": 0,
             "drawTooltip": 0,
             "explosionType": "Hercules Zeon Burst",
@@ -322,6 +501,7 @@
             "autoAim": 0,
             "damage": 75,
             "delay": 1500,
+            "drawPictureInTooltip": 1,
             "drawReticle": 0,
             "drawTooltip": 0,
             "explosionType": "Hercules Zeon Burst",
@@ -346,6 +526,7 @@
             "autoAim": 0,
             "damage": 75,
             "delay": 1900,
+            "drawPictureInTooltip": 1,
             "drawReticle": 0,
             "drawTooltip": 0,
             "explosionType": "Hercules Zeon Burst",
@@ -498,6 +679,7 @@
             "autoAim": 0,
             "damage": 300,
             "delay": 0,
+            "drawPictureInTooltip": 1,
             "drawReticle": 0,
             "drawTooltip": 1,
             "explosionType": "Hercules Zeon Burst",

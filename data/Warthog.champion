@@ -9,7 +9,10 @@
     {
       "cooldown": 250,
       "damage": 50,
+      "displayName": "",
+      "drawStatsInTooltip": 1,
       "emitterType": "Warthog Guns",
+      "extraText": "",
       "f": 0,
       "halfArc": 1800,
       "objectType": "Mustang Bullet",
@@ -76,6 +79,7 @@
   "shields": [
     {
       "color": 16771535,
+      "displayName": "",
       "left": -1800,
       "level": 0,
       "maxStrength": 200,
@@ -84,28 +88,196 @@
   ],
   "slotLimits": [
     {
+      "labelPos": {
+        "x": 198,
+        "y": 148
+      },
       "maxSlots": 7,
-      "minSlots": 2
+      "minSlots": 2,
+      "slotPositions": [
+        {
+          "x": 183,
+          "y": 168
+        },
+        {
+          "x": 113,
+          "y": 168
+        },
+        {
+          "x": 253,
+          "y": 168
+        },
+        {
+          "x": 183,
+          "y": 238
+        },
+        {
+          "x": 113,
+          "y": 238
+        },
+        {
+          "x": 253,
+          "y": 238
+        },
+        {
+          "x": 183,
+          "y": 308
+        }
+      ]
     },
     {
+      "labelPos": {
+        "x": 182,
+        "y": 44
+      },
       "maxSlots": 5,
-      "minSlots": 1
+      "minSlots": 1,
+      "slotPositions": [
+        {
+          "x": 182,
+          "y": 62
+        },
+        {
+          "x": 111,
+          "y": 62
+        },
+        {
+          "x": 253,
+          "y": 62
+        },
+        {
+          "x": 324,
+          "y": 62
+        },
+        {
+          "x": 39,
+          "y": 62
+        }
+      ]
     },
     {
+      "labelPos": {
+        "x": 13,
+        "y": 142
+      },
       "maxSlots": 7,
-      "minSlots": 2
+      "minSlots": 2,
+      "slotPositions": [
+        {
+          "x": 10,
+          "y": 162
+        },
+        {
+          "x": 10,
+          "y": 230
+        },
+        {
+          "x": 10,
+          "y": 297
+        },
+        {
+          "x": 10,
+          "y": 364
+        },
+        {
+          "x": 10,
+          "y": 431
+        },
+        {
+          "x": 10,
+          "y": 499
+        },
+        {
+          "x": 10,
+          "y": 567
+        }
+      ]
     },
     {
+      "labelPos": {
+        "x": 216,
+        "y": 590
+      },
       "maxSlots": 4,
-      "minSlots": 1
+      "minSlots": 1,
+      "slotPositions": [
+        {
+          "x": 174,
+          "y": 609
+        },
+        {
+          "x": 246,
+          "y": 609
+        },
+        {
+          "x": 101,
+          "y": 609
+        },
+        {
+          "x": 318,
+          "y": 609
+        }
+      ]
     },
     {
+      "labelPos": {
+        "x": 338,
+        "y": 207
+      },
       "maxSlots": 4,
-      "minSlots": 0
+      "minSlots": 0,
+      "slotPositions": [
+        {
+          "x": 353,
+          "y": 227
+        },
+        {
+          "x": 353,
+          "y": 297
+        },
+        {
+          "x": 353,
+          "y": 367
+        },
+        {
+          "x": 353,
+          "y": 437
+        }
+      ]
     },
     {
+      "labelPos": {
+        "x": 183,
+        "y": 402
+      },
       "maxSlots": 6,
-      "minSlots": 2
+      "minSlots": 2,
+      "slotPositions": [
+        {
+          "x": 184,
+          "y": 421
+        },
+        {
+          "x": 113,
+          "y": 421
+        },
+        {
+          "x": 255,
+          "y": 421
+        },
+        {
+          "x": 185,
+          "y": 491
+        },
+        {
+          "x": 113,
+          "y": 491
+        },
+        {
+          "x": 256,
+          "y": 491
+        }
+      ]
     }
   ],
   "speedLimit": 240,
@@ -122,6 +294,7 @@
             "autoAim": 0,
             "damage": 200,
             "delay": 0,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Warthog Blast",
@@ -177,6 +350,7 @@
             "autoAim": 0,
             "damage": 10,
             "delay": 0,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Warthog Stun",

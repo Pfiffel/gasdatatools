@@ -9,7 +9,10 @@
     {
       "cooldown": 250,
       "damage": 48,
+      "displayName": "",
+      "drawStatsInTooltip": 1,
       "emitterType": "Cyclops Guns",
+      "extraText": "",
       "f": 0,
       "halfArc": 75,
       "objectType": "Cyclops Bullet",
@@ -49,6 +52,7 @@
   "shields": [
     {
       "color": 16771535,
+      "displayName": "",
       "left": -1800,
       "level": 0,
       "maxStrength": 300,
@@ -57,28 +61,196 @@
   ],
   "slotLimits": [
     {
+      "labelPos": {
+        "x": 211,
+        "y": 154
+      },
       "maxSlots": 6,
-      "minSlots": 2
+      "minSlots": 2,
+      "slotPositions": [
+        {
+          "x": 194,
+          "y": 172
+        },
+        {
+          "x": 127,
+          "y": 172
+        },
+        {
+          "x": 262,
+          "y": 172
+        },
+        {
+          "x": 194,
+          "y": 239
+        },
+        {
+          "x": 127,
+          "y": 239
+        },
+        {
+          "x": 262,
+          "y": 239
+        }
+      ]
     },
     {
+      "labelPos": {
+        "x": 199,
+        "y": 38
+      },
       "maxSlots": 5,
-      "minSlots": 1
+      "minSlots": 1,
+      "slotPositions": [
+        {
+          "x": 194,
+          "y": 60
+        },
+        {
+          "x": 127,
+          "y": 60
+        },
+        {
+          "x": 262,
+          "y": 60
+        },
+        {
+          "x": 59,
+          "y": 77
+        },
+        {
+          "x": 330,
+          "y": 77
+        }
+      ]
     },
     {
+      "labelPos": {
+        "x": 32,
+        "y": 198
+      },
       "maxSlots": 8,
-      "minSlots": 2
+      "minSlots": 2,
+      "slotPositions": [
+        {
+          "x": 24,
+          "y": 220
+        },
+        {
+          "x": 16,
+          "y": 287
+        },
+        {
+          "x": 16,
+          "y": 354
+        },
+        {
+          "x": 85,
+          "y": 354
+        },
+        {
+          "x": 16,
+          "y": 422
+        },
+        {
+          "x": 85,
+          "y": 422
+        },
+        {
+          "x": 24,
+          "y": 490
+        },
+        {
+          "x": 93,
+          "y": 490
+        }
+      ]
     },
     {
+      "labelPos": {
+        "x": 199,
+        "y": 586
+      },
       "maxSlots": 4,
-      "minSlots": 1
+      "minSlots": 1,
+      "slotPositions": [
+        {
+          "x": 160,
+          "y": 611
+        },
+        {
+          "x": 230,
+          "y": 611
+        },
+        {
+          "x": 91,
+          "y": 591
+        },
+        {
+          "x": 299,
+          "y": 591
+        }
+      ]
     },
     {
+      "labelPos": {
+        "x": 344,
+        "y": 218
+      },
       "maxSlots": 4,
-      "minSlots": 0
+      "minSlots": 0,
+      "slotPositions": [
+        {
+          "x": 358,
+          "y": 241
+        },
+        {
+          "x": 367,
+          "y": 308
+        },
+        {
+          "x": 367,
+          "y": 376
+        },
+        {
+          "x": 358,
+          "y": 443
+        }
+      ]
     },
     {
+      "labelPos": {
+        "x": 217,
+        "y": 332
+      },
       "maxSlots": 6,
-      "minSlots": 2
+      "minSlots": 2,
+      "slotPositions": [
+        {
+          "x": 184,
+          "y": 354
+        },
+        {
+          "x": 252,
+          "y": 354
+        },
+        {
+          "x": 190,
+          "y": 420
+        },
+        {
+          "x": 258,
+          "y": 420
+        },
+        {
+          "x": 196,
+          "y": 487
+        },
+        {
+          "x": 264,
+          "y": 487
+        }
+      ]
     }
   ],
   "speedLimit": 240,
@@ -95,6 +267,7 @@
             "autoAim": 0,
             "damage": 175,
             "delay": 0,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Cyclops Cone Blast",
@@ -186,6 +359,7 @@
             "autoAim": 0,
             "damage": 500,
             "delay": 0,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Cyclops Laser Beam",
@@ -256,6 +430,7 @@
             "duration": 5000,
             "emitterType": "Cyclops Overload",
             "glyphCount": 0,
+            "glyphOrientation": 0,
             "glyphRadius": 0,
             "glyphType": "",
             "maxStacks": 0,

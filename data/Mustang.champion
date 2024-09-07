@@ -9,7 +9,10 @@
     {
       "cooldown": 600,
       "damage": 50,
+      "displayName": "",
+      "drawStatsInTooltip": 1,
       "emitterType": "Mustang Guns",
+      "extraText": "",
       "f": 0,
       "halfArc": 600,
       "objectType": "Mustang Bullet",
@@ -23,7 +26,10 @@
     {
       "cooldown": 300,
       "damage": 9,
+      "displayName": "",
+      "drawStatsInTooltip": 1,
       "emitterType": "Mustang Guns",
+      "extraText": "",
       "f": 0,
       "halfArc": 1800,
       "objectType": "Mustang Aux Bullet",
@@ -50,6 +56,7 @@
             "data": {
               "armingTime": 500,
               "burstRadius": 125,
+              "count": 1,
               "damage": 75,
               "duration": 2500,
               "emitterType": "",
@@ -77,6 +84,7 @@
   "shields": [
     {
       "color": 255,
+      "displayName": "",
       "left": -600,
       "level": 1,
       "maxStrength": 200,
@@ -84,6 +92,7 @@
     },
     {
       "color": 3355647,
+      "displayName": "",
       "left": -1800,
       "level": 0,
       "maxStrength": 120,
@@ -92,28 +101,196 @@
   ],
   "slotLimits": [
     {
+      "labelPos": {
+        "x": 198,
+        "y": 154
+      },
       "maxSlots": 6,
-      "minSlots": 2
+      "minSlots": 2,
+      "slotPositions": [
+        {
+          "x": 183,
+          "y": 174
+        },
+        {
+          "x": 113,
+          "y": 174
+        },
+        {
+          "x": 253,
+          "y": 174
+        },
+        {
+          "x": 183,
+          "y": 244
+        },
+        {
+          "x": 113,
+          "y": 244
+        },
+        {
+          "x": 253,
+          "y": 244
+        }
+      ]
     },
     {
+      "labelPos": {
+        "x": 191,
+        "y": 50
+      },
       "maxSlots": 4,
-      "minSlots": 1
+      "minSlots": 1,
+      "slotPositions": [
+        {
+          "x": 220,
+          "y": 68
+        },
+        {
+          "x": 149,
+          "y": 68
+        },
+        {
+          "x": 290,
+          "y": 68
+        },
+        {
+          "x": 78,
+          "y": 68
+        }
+      ]
     },
     {
+      "labelPos": {
+        "x": 13,
+        "y": 146
+      },
       "maxSlots": 6,
-      "minSlots": 1
+      "minSlots": 1,
+      "slotPositions": [
+        {
+          "x": 10,
+          "y": 166
+        },
+        {
+          "x": 10,
+          "y": 234
+        },
+        {
+          "x": 10,
+          "y": 301
+        },
+        {
+          "x": 10,
+          "y": 368
+        },
+        {
+          "x": 10,
+          "y": 435
+        },
+        {
+          "x": 10,
+          "y": 503
+        }
+      ]
     },
     {
+      "labelPos": {
+        "x": 196,
+        "y": 503
+      },
       "maxSlots": 7,
-      "minSlots": 2
+      "minSlots": 2,
+      "slotPositions": [
+        {
+          "x": 113,
+          "y": 524
+        },
+        {
+          "x": 186,
+          "y": 524
+        },
+        {
+          "x": 258,
+          "y": 524
+        },
+        {
+          "x": 75,
+          "y": 596
+        },
+        {
+          "x": 147,
+          "y": 596
+        },
+        {
+          "x": 219,
+          "y": 596
+        },
+        {
+          "x": 294,
+          "y": 596
+        }
+      ]
     },
     {
+      "labelPos": {
+        "x": 338,
+        "y": 207
+      },
       "maxSlots": 4,
-      "minSlots": 0
+      "minSlots": 0,
+      "slotPositions": [
+        {
+          "x": 353,
+          "y": 227
+        },
+        {
+          "x": 353,
+          "y": 297
+        },
+        {
+          "x": 353,
+          "y": 367
+        },
+        {
+          "x": 353,
+          "y": 437
+        }
+      ]
     },
     {
+      "labelPos": {
+        "x": 183,
+        "y": 327
+      },
       "maxSlots": 6,
-      "minSlots": 2
+      "minSlots": 2,
+      "slotPositions": [
+        {
+          "x": 184,
+          "y": 346
+        },
+        {
+          "x": 113,
+          "y": 346
+        },
+        {
+          "x": 254,
+          "y": 346
+        },
+        {
+          "x": 184,
+          "y": 416
+        },
+        {
+          "x": 113,
+          "y": 416
+        },
+        {
+          "x": 254,
+          "y": 416
+        }
+      ]
     }
   ],
   "speedLimit": 240,
@@ -148,6 +325,7 @@
             "autoAim": 0,
             "damage": 100,
             "delay": 350,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Mustang Grenade",
@@ -207,7 +385,8 @@
             "powers": [],
             "radius": 45,
             "ringRadius": 110,
-            "tag": ""
+            "tag": "",
+            "triggers": []
           },
           "tag": "PickupPackTrigger"
         }
@@ -227,6 +406,7 @@
             "autoAim": 0,
             "damage": 25,
             "delay": 0,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Mustang Fireburst",
@@ -271,6 +451,7 @@
             "autoAim": 0,
             "damage": 550,
             "delay": 0,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Mustang Ion Burst",

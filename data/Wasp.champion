@@ -9,7 +9,10 @@
     {
       "cooldown": 218,
       "damage": 22,
+      "displayName": "",
+      "drawStatsInTooltip": 1,
       "emitterType": "Wasp Guns",
+      "extraText": "",
       "f": 0,
       "halfArc": 1800,
       "objectType": "Wasp Bullet",
@@ -29,6 +32,7 @@
   "passives": [
     {
       "data": {
+        "activeWhile": 0,
         "gunTag": "",
         "maxProcsPerSecond": 0,
         "percentChance": 100,
@@ -54,6 +58,7 @@
   "shields": [
     {
       "color": 14663747,
+      "displayName": "",
       "left": -1800,
       "level": 0,
       "maxStrength": 200,
@@ -62,28 +67,196 @@
   ],
   "slotLimits": [
     {
+      "labelPos": {
+        "x": 201,
+        "y": 142
+      },
       "maxSlots": 4,
-      "minSlots": 1
+      "minSlots": 1,
+      "slotPositions": [
+        {
+          "x": 152,
+          "y": 162
+        },
+        {
+          "x": 223,
+          "y": 162
+        },
+        {
+          "x": 152,
+          "y": 232
+        },
+        {
+          "x": 223,
+          "y": 232
+        }
+      ]
     },
     {
+      "labelPos": {
+        "x": 190,
+        "y": 36
+      },
       "maxSlots": 7,
-      "minSlots": 2
+      "minSlots": 2,
+      "slotPositions": [
+        {
+          "x": 185,
+          "y": 57
+        },
+        {
+          "x": 115,
+          "y": 57
+        },
+        {
+          "x": 254,
+          "y": 57
+        },
+        {
+          "x": 45,
+          "y": 57
+        },
+        {
+          "x": 324,
+          "y": 57
+        },
+        {
+          "x": 23,
+          "y": 127
+        },
+        {
+          "x": 346,
+          "y": 127
+        }
+      ]
     },
     {
+      "labelPos": {
+        "x": 27,
+        "y": 231
+      },
       "maxSlots": 5,
-      "minSlots": 1
+      "minSlots": 1,
+      "slotPositions": [
+        {
+          "x": 22,
+          "y": 251
+        },
+        {
+          "x": 22,
+          "y": 321
+        },
+        {
+          "x": 22,
+          "y": 392
+        },
+        {
+          "x": 22,
+          "y": 462
+        },
+        {
+          "x": 22,
+          "y": 532
+        }
+      ]
     },
     {
+      "labelPos": {
+        "x": 198,
+        "y": 530
+      },
       "maxSlots": 7,
-      "minSlots": 2
+      "minSlots": 2,
+      "slotPositions": [
+        {
+          "x": 155,
+          "y": 551
+        },
+        {
+          "x": 228,
+          "y": 551
+        },
+        {
+          "x": 192,
+          "y": 624
+        },
+        {
+          "x": 119,
+          "y": 624
+        },
+        {
+          "x": 265,
+          "y": 624
+        },
+        {
+          "x": 47,
+          "y": 624
+        },
+        {
+          "x": 338,
+          "y": 624
+        }
+      ]
     },
     {
+      "labelPos": {
+        "x": 334,
+        "y": 257
+      },
       "maxSlots": 4,
-      "minSlots": 0
+      "minSlots": 0,
+      "slotPositions": [
+        {
+          "x": 357,
+          "y": 281
+        },
+        {
+          "x": 357,
+          "y": 352
+        },
+        {
+          "x": 357,
+          "y": 423
+        },
+        {
+          "x": 357,
+          "y": 493
+        }
+      ]
     },
     {
+      "labelPos": {
+        "x": 191,
+        "y": 332
+      },
       "maxSlots": 6,
-      "minSlots": 2
+      "minSlots": 2,
+      "slotPositions": [
+        {
+          "x": 190,
+          "y": 354
+        },
+        {
+          "x": 261,
+          "y": 354
+        },
+        {
+          "x": 117,
+          "y": 354
+        },
+        {
+          "x": 190,
+          "y": 425
+        },
+        {
+          "x": 261,
+          "y": 425
+        },
+        {
+          "x": 117,
+          "y": 425
+        }
+      ]
     }
   ],
   "speedLimit": 250,
@@ -100,6 +273,7 @@
             "autoAim": 0,
             "damage": 50,
             "delay": 500,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 0,
             "explosionType": "Wasp Grenade",
@@ -124,6 +298,7 @@
             "autoAim": 0,
             "damage": 50,
             "delay": 500,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Wasp Grenade",
@@ -195,6 +370,7 @@
             "autoAim": 0,
             "damage": 100,
             "delay": 0,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Wasp Quark Blast",
@@ -264,6 +440,7 @@
             "duration": 6500,
             "emitterType": "",
             "glyphCount": 0,
+            "glyphOrientation": 0,
             "glyphRadius": 0,
             "glyphType": "",
             "maxStacks": 0,
@@ -278,6 +455,7 @@
             "duration": 6500,
             "emitterType": "Wasp Overload",
             "glyphCount": 8,
+            "glyphOrientation": 0,
             "glyphRadius": 35,
             "glyphType": "Wasp Venom Glyph",
             "maxStacks": 0,
