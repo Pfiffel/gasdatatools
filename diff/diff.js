@@ -196,12 +196,12 @@ function CompareJSON(entity, entityPrev, superParent, fileType, parentStringList
 				CompareJSON(entity[key], entityPrev[key], superParent, fileType, header + " " + key);
 			else if (entity[key] != entityPrev[key]) {
 				//console.log(superParent + ": " + entityPrev + "[" + key + "] " + entity + " " + "[" + key + "]");
+				if (IsNewButDefaultValue(entityPrev, entity, key)) continue;
 				if (fileType == "object") { changedObjects[superParent] = true; continue; }
 				if (fileType == "map" && (key == "x" || key == "y" || key == "tag" || key == "regionType")) { changedMaps[superParent] = true; continue; }
 				if (fileType == "symbiote") { changedSymbs[superParent] = true; AddKeyToChangeList(superParent, key); continue; }
 				if (fileType == "item") { changedItems[superParent] = true; AddKeyToChangeList(superParent, key); continue; }
 				if (fileType == "addon") { changedAddons[superParent] = true; AddKeyToChangeList(superParent, key); continue; }
-				if (IsNewButDefaultValue(entityPrev, entity, key)) continue;
 				MakeChangeEntry(header, key, entityPrev[key], entity[key], divList);
 			}
 		}
@@ -222,6 +222,16 @@ function IsNewButDefaultValue(entityPrev, entity, key) {
 		else if (key == "runAnimationDuration" && entity[key] == 700) return true;
 		else if (key == "halfArc" && entity[key] == 1800) return true;
 		else if (key == "angleBetweenProjectiles" && entity[key] == 150) return true;
+		else if (key == "drawPictureInTooltip" && entity[key] == 1) return true;
+		else if (key == "facing" && entity[key] == 0) return true;
+		else if (key == "autoAim" && entity[key] == 0) return true;
+		else if (key == "requiresBlast" && entity[key] == 0) return true;
+		else if (key == "requiresBurning" && entity[key] == 0) return true;
+		else if (key == "requiresDematerialize" && entity[key] == 0) return true;
+		else if (key == "requiresFreezeChill" && entity[key] == 0) return true;
+		else if (key == "requiresMissiles" && entity[key] == 0) return true;
+		else if (key == "requiresPickupPackCreate" && entity[key] == 0) return true;
+		else if (key == "requiresZap" && entity[key] == 0) return true;
 	return false;
 }
 function MakeChangeEntry(header, key, prev, curr, container) {
