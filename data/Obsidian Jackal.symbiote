@@ -6,8 +6,9 @@
         "params": {
           "data": {
             "autoAim": 0,
-            "damage": 150,
+            "damage": 300,
             "delay": 0,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Obsidian Jackal Blast",
@@ -23,7 +24,7 @@
             "statusEffects": [
               {
                 "data": {
-                  "duration": 3000
+                  "duration": 6000
                 },
                 "tag": "DisarmEffect"
               }

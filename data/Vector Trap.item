@@ -10,7 +10,7 @@
             "armingTime": 800,
             "burstRadius": 140,
             "count": 3,
-            "damage": 30,
+            "damage": 60,
             "duration": 10000,
             "emitterType": "Vector Trap Mine",
             "explosionType": "Vector Trap Mine Blast",
