@@ -31,7 +31,7 @@ function parseData() {
 		let file = datatypes[f];
 		for (let i = 0; i < gasData[file].length; i++) {
 			let entity = gasData[file][i];
-			if(SkipCheck(entity)) continue;
+			if (SkipCheck(entity)) continue;
 			let entityPrev = GetPrevEntity(file, entity.name);
 			if (entityPrev == null) {
 				if (file == "symbiote" || file == "item" || file == "accolade" || file == "addon") {
@@ -72,6 +72,17 @@ function parseData() {
 					divSprite.appendChild(draw(entity, 0.4, false));
 					divList.appendChild(divSprite);
 				}
+				else if (file == "map") {
+					addLine("New " + file + ": <b>" + entity.name + "</b>", divList);
+					let tempEntity = {};
+					tempEntity.objectType = entity.name;
+					changedObjects[entity.name] = true;
+					let divSprite = document.createElement('div');
+					divSprite.style.display = "table-cell";
+					divSprite.style.verticalAlign = "middle";
+					divSprite.appendChild(DrawMap(entity.name, 0.01));
+					divList.appendChild(divSprite);
+				}
 				else
 					addLine("New " + file + ": <b>" + entity.name + "</b>", divList);
 			}
@@ -84,7 +95,7 @@ function parseData() {
 		let file = datatypes[f];
 		for (let i = 0; i < gasData[file].length; i++) {
 			let entity = gasData[file][i];
-			if(SkipCheck(entity)) continue;
+			if (SkipCheck(entity)) continue;
 			let entityPrev = GetPrevEntity(file, entity.name);
 			if (entityPrev != null)
 				CompareJSON(entity, entityPrev, entity.name, file, "");
