@@ -1,9 +1,9 @@
 {
   "facingJitter": 10,
   "gap": 100,
-  "groundColor": 2696471,
-  "mapColor": 11374632,
-  "name": "Plateau",
+  "groundColor": 3365687,
+  "mapColor": 5328643,
+  "name": "Desert Black",
   "polyDecorations": [
     {
       "gap": 50,

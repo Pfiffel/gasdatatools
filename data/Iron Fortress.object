@@ -35,6 +35,7 @@
       "bone": "Foot",
       "clones": [],
       "closed": 1,
+      "collider": 0,
       "color": 4802889,
       "height": 0,
       "mirror": 1,
@@ -88,6 +89,7 @@
       "bone": "Foot",
       "clones": [],
       "closed": 1,
+      "collider": 0,
       "color": 4802889,
       "height": 0,
       "mirror": 1,
@@ -141,6 +143,7 @@
       "bone": "Foot",
       "clones": [],
       "closed": 1,
+      "collider": 0,
       "color": 6229512,
       "height": 6,
       "mirror": 1,
@@ -198,6 +201,7 @@
       "bone": "Foot",
       "clones": [],
       "closed": 1,
+      "collider": 0,
       "color": 6229512,
       "height": 6,
       "mirror": 1,
@@ -255,6 +259,7 @@
       "bone": "Foot",
       "clones": [],
       "closed": 1,
+      "collider": 0,
       "color": 4802889,
       "height": 9,
       "mirror": 1,
@@ -300,6 +305,7 @@
       "bone": "Foot",
       "clones": [],
       "closed": 1,
+      "collider": 0,
       "color": 4802889,
       "height": 9,
       "mirror": 1,
@@ -345,6 +351,7 @@
       "bone": "Hull",
       "clones": [],
       "closed": 0,
+      "collider": 0,
       "color": 2894387,
       "height": 28,
       "mirror": 1,
@@ -389,21 +396,14 @@
     {
       "bone": "Hull",
       "clones": [],
-      "closed": 1,
+      "closed": 0,
+      "collider": 0,
       "color": 2894387,
       "height": 30,
       "mirror": 1,
       "name": "Outer Hull",
       "noDraw": 0,
       "points": [
-        {
-          "x": 65,
-          "y": 42
-        },
-        {
-          "x": 81,
-          "y": 22
-        },
         {
           "x": 98,
           "y": 24
@@ -455,6 +455,14 @@
         {
           "x": 45,
           "y": 51
+        },
+        {
+          "x": 65,
+          "y": 42
+        },
+        {
+          "x": 81,
+          "y": 22
         }
       ],
       "useBoneMirror": 1

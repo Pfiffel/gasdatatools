@@ -166,7 +166,7 @@
                   "statusEffects": [],
                   "tag": "",
                   "targetingDelay": 0,
-                  "tooltip": ""
+                  "tooltip": "Aimed Energy Burst"
                 },
                 "tag": "ShotgunTrigger"
               }

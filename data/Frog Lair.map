@@ -1,5 +1,6 @@
 {
   "decorateSpawnPoints": 0,
+  "fog": 1,
   "groundTexturePainterName": "froglair",
   "groundZones": [
     {
@@ -234,7 +235,7 @@
           "y": 432
         }
       ],
-      "regionType": "Swamp Black"
+      "regionType": "Frog Lair"
     },
     {
       "poly": [
@@ -271,7 +272,7 @@
           "y": 306
         }
       ],
-      "regionType": "Swamp Black"
+      "regionType": "Frog Lair"
     },
     {
       "poly": [
@@ -308,7 +309,7 @@
           "y": -426
         }
       ],
-      "regionType": "Swamp Black"
+      "regionType": "Frog Lair"
     },
     {
       "poly": [
@@ -345,7 +346,7 @@
           "y": -302
         }
       ],
-      "regionType": "Swamp Black"
+      "regionType": "Frog Lair"
     }
   ],
   "spawnPoints": [

@@ -2,17 +2,17 @@
   "facingJitter": 10,
   "gap": 100,
   "groundColor": 2696471,
-  "mapColor": 11374632,
-  "name": "Plateau",
+  "mapColor": 2661037,
+  "name": "Desert Blue",
   "polyDecorations": [
     {
       "gap": 50,
-      "objectType": "PlateauCenter"
+      "objectType": "PlateauCenter Blue"
     }
   ],
   "positionJitter": 20,
   "segmentObjects": [
-    "PlateauEdge"
+    "PlateauEdge Blue"
   ]
 }
 

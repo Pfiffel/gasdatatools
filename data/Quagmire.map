@@ -1,5 +1,6 @@
 {
-  "groundPoints": [],
+  "decorateSpawnPoints": 1,
+  "fog": 1,
   "groundTexturePainterName": "groundtexture",
   "groundZones": [
     {
@@ -3370,7 +3371,8 @@
         }
       ],
       "sectorName": "QUAGMIRE",
-      "tag": "Zone 0"
+      "tag": "Zone 0",
+      "zoneName": ""
     },
     {
       "decorType": "Swamp Green",
@@ -3402,7 +3404,8 @@
         }
       ],
       "sectorName": "The Muck",
-      "tag": "Zone 1"
+      "tag": "Zone 1",
+      "zoneName": ""
     },
     {
       "decorType": "Swamp Blue",
@@ -3439,7 +3442,8 @@
         }
       ],
       "sectorName": "The Azure Bog",
-      "tag": "Zone 2"
+      "tag": "Zone 2",
+      "zoneName": ""
     },
     {
       "decorType": "Swamp Red",
@@ -3476,7 +3480,8 @@
         }
       ],
       "sectorName": "The Red Squelch",
-      "tag": "Zone 3"
+      "tag": "Zone 3",
+      "zoneName": "RED ZONE"
     },
     {
       "decorType": "Swamp Dank",
@@ -3513,7 +3518,8 @@
         }
       ],
       "sectorName": "The Dank Morass",
-      "tag": "Zone 4"
+      "tag": "Zone 4",
+      "zoneName": "GREEN ZONE"
     },
     {
       "decorType": "Swamp Purple",
@@ -3551,7 +3557,8 @@
         }
       ],
       "sectorName": "The Tyrian Sludge",
-      "tag": "Zone 5"
+      "tag": "Zone 5",
+      "zoneName": "PURPLE ZONE"
     },
     {
       "decorType": "Swamp Yellow",
@@ -3589,7 +3596,8 @@
         }
       ],
       "sectorName": "The Sulfur Swamp",
-      "tag": "Zone 6"
+      "tag": "Zone 6",
+      "zoneName": "YELLOW ZONE"
     },
     {
       "decorType": "Swamp Orange",
@@ -3628,7 +3636,8 @@
         }
       ],
       "sectorName": "The Acid Mire",
-      "tag": "Zone 7"
+      "tag": "Zone 7",
+      "zoneName": "ORANGE ZONE"
     },
     {
       "decorType": "Swamp Black",
@@ -3670,11 +3679,12 @@
         }
       ],
       "sectorName": "The Black Cesspit",
-      "tag": "Zone 8"
+      "tag": "Zone 8",
+      "zoneName": "BLACK ZONE"
     }
   ],
   "name": "Quagmire",
-  "overworld": 1,
+  "overworld": 0,
   "patches": [],
   "quest": {
     "bossKillTime": 300000,

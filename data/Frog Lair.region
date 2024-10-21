@@ -1,0 +1,18 @@
+{
+  "facingJitter": 300,
+  "gap": 70,
+  "groundColor": 6838064,
+  "mapColor": 6836784,
+  "name": "Frog Lair",
+  "polyDecorations": [
+    {
+      "gap": 60,
+      "objectType": "Swamp Mangrove Brown"
+    }
+  ],
+  "positionJitter": 20,
+  "segmentObjects": [
+    "Swamp Mangrove Brown"
+  ]
+}
+
