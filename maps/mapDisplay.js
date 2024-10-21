@@ -38,10 +38,10 @@ function RefreshLists() {
 	divMaps.appendChild(h1Maps);
 	for (let i = 0; i < gasData["map"].length; i++) {
 		var map = gasData["map"][i];
-		if (map.name != "Quagmire") continue;
+		if (!(map.name == "Quagmire" || map.name == "Quagmire Remix")) continue;
 		var mapSize = Math.pow(map.mapRadius * 2, 2);
 		var h2 = document.createElement("h2");
-		h2.textContent = map.name + " (" + mil(mapSize) + " total size, " + map.miniBossSpawns.length + " nest spawns)";
+		h2.textContent = ((map.overworld != 1) ? "(INACTIVE) " : "") + map.name + " (" + mil(mapSize) + " total size, " + map.miniBossSpawns.length + " nest spawns)";
 		divMaps.appendChild(h2);
 		var drawn = DrawMap(map.name, 0.01);
 		drawn.style.display = "inline";
@@ -73,7 +73,9 @@ function RefreshLists() {
 			var faction = document.querySelector('input[name="' + FILTER_FACTION + '"]:checked').value;
 			var lair = getLairForFaction(faction, tag);
 			var info = monsterField.sectorName + "<br/>";
-			info += monsterField.mapGridDesignator + "<br/><br/>";
+			info += monsterField.mapGridDesignator + "<br/>";
+			if(monsterField.zoneName != undefined && monsterField.zoneName != "") info += monsterField.zoneName + "<br/>";
+			info += "<br/>";
 			info += "monsterSquareSide: " + lair.monsterSquareSide + "<br/>";
 			info += "Field Size: " + mil(fieldSize) + " (" + round((fieldSize / mapSize) * 100, 2) + "% of Map)" + "<br/>";
 			var decor = monsterField.decorType;
