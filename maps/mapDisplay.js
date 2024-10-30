@@ -65,8 +65,6 @@ function AddMapSimple(map, divMaps) {
 	var cellZones = makeCell("", th);
 	
 	var monsterDiv = document.createElement('div');
-	var tblZones = document.createElement('table');
-	cellZones.appendChild(tblZones);
 	let zoneCells = [];
 	for (let mF = 0; mF < map.monsterFields.length; mF++) {
 		var zoneDiv = document.createElement('div');
