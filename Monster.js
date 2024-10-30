@@ -151,7 +151,15 @@ class Monster {
 		}
 		return minions;
 	}
-
+	outputSimple()
+	{
+		let div = document.createElement('div');
+		div.classList.add("inline");
+		var divSprite = document.createElement('div');
+		divSprite.appendChild(draw(this.data, SCALE_SMALL));
+		div.appendChild(divSprite);
+		return div;
+	}
 	output(bRow, scale = SCALE_STANDARD, bDrawRadius = false, bDrawShield = false, bShowSounds = false) {
 		let div = document.createElement('div');
 		div.classList.add("inline");

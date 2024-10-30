@@ -1331,6 +1331,33 @@ function GetMap(data, name) {
 		if (map.name == name) return map;
 	}
 }
+function IsPointInsidePoly(point, vs) {
+	var x = point.x, y = point.y;
+	var inside = false;
+	for (var i = 0, j = vs.length - 1; i < vs.length; j = i++) {
+		var xi = vs[i].x, yi = vs[i].y;
+		var xj = vs[j].x, yj = vs[j].y;
+
+		var intersect = ((yi > y) != (yj > y))
+			&& (x < (xj - xi) * (y - yi) / (yj - yi) + xi);
+		if (intersect) inside = !inside;
+	}
+	return inside;
+}
+function FieldIsNoobZone(field)
+{
+	return (field.tag == "Zone 0" || field.tag == "Zone 1");
+}
+function IsMiniBossSpawnInNoobZone(point, fields)
+{
+	var inside = false;
+	for (let i = 0; i < fields.length; i++) {
+		var monsterField = fields[i];
+		if(FieldIsNoobZone(monsterField) && IsPointInsidePoly(point, monsterField.poly))
+			inside = true
+	}
+	return inside;
+}
 function MakeMap(ctx, scale, map) {
 	for (let i = 0; i < map.regions.length; i++) {
 		var region = map.regions[i];
@@ -1348,7 +1375,8 @@ function MakeMap(ctx, scale, map) {
 	}
 	if (map.miniBossSpawns != undefined) for (let i = 0; i < map.miniBossSpawns.length; i++) {
 		var miniBoss = map.miniBossSpawns[i];
-		DrawCircle(ctx, scale, miniBoss, 2, map.mapRadius, "#AA4400");
+		if(!IsMiniBossSpawnInNoobZone(miniBoss, map.monsterFields))
+			DrawCircle(ctx, scale, miniBoss, 2, map.mapRadius, "#AA4400");
 	}
 	for (let i = 0; i < map.lanes.length; i++) {
 		var lane = map.lanes[i];
