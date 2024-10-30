@@ -91,6 +91,8 @@ function parseData() {
 	var hChanged = document.createElement("h2");
 	hChanged.textContent = "Changed";
 	divList.appendChild(hChanged);
+	let divPrio = document.createElement('div');
+	divList.appendChild(divPrio);
 	for (let f = 0; f < datatypes.length; f++) {
 		let file = datatypes[f];
 		for (let i = 0; i < gasData[file].length; i++) {
@@ -102,17 +104,17 @@ function parseData() {
 		}
 	}
 	for (let entity in changedSymbs) {
-		divList.appendChild(MakeGraphicCompareBlock(entity + " changes" + GetKeyChangeList(entity),
+		divPrio.appendChild(MakeGraphicCompareBlock(entity + " changes" + GetKeyChangeList(entity),
 			MakeStatsTable(GetPrevEntity("symbiote", entity), 0, true),
 			MakeStatsTable(GetNewEntity("symbiote", entity), 0, true)));
 	}
 	for (let entity in changedItems) {
-		divList.appendChild(MakeGraphicCompareBlock(entity + " changes" + GetKeyChangeList(entity),
+		divPrio.appendChild(MakeGraphicCompareBlock(entity + " changes" + GetKeyChangeList(entity),
 			MakeStatsTable(GetPrevEntity("item", entity), 0, false),
 			MakeStatsTable(GetNewEntity("item", entity), 0, false)));
 	}
 	for (let entity in changedAddons) {
-		divList.appendChild(MakeGraphicCompareBlock(entity + " changes" + GetKeyChangeList(entity),
+		divPrio.appendChild(MakeGraphicCompareBlock(entity + " changes" + GetKeyChangeList(entity),
 			MakeStatsTable(GetPrevEntity("addon", entity), 0, false),
 			MakeStatsTable(GetNewEntity("addon", entity), 0, false)));
 	}
@@ -120,12 +122,12 @@ function parseData() {
 	for (let entity in entitySpriteChanged) {
 		var prevMonster = GetPrevEntity("monster", entity);
 		if (prevMonster == undefined) continue;
-		divList.appendChild(MakeGraphicCompareBlock(entity + " graphics",
+		divPrio.appendChild(MakeGraphicCompareBlock(entity + " graphics",
 			draw(prevMonster, 0.4, true),
 			draw(GetNewEntity("monster", entity), 0.4, false)));
 	}
 	for (let entity in changedMaps) {
-		divList.appendChild(MakeGraphicCompareBlock(entity,
+		divPrio.appendChild(MakeGraphicCompareBlock(entity,
 			DrawMap(entity, 0.01, true),
 			DrawMap(entity, 0.01, false)));
 	}
