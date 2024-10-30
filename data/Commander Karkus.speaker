@@ -185,6 +185,150 @@
         }
       ],
       "tag": "Periodic"
+    },    {
+      "quotes": [
+        {
+          "sound": "Karkus_Periodic_IRefineHumanity",
+          "text": "I refine humanity; mercy is weakness!",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_IProtectHumanity",
+          "text": "I protect humanity with a shield of iron!",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_IMeetExternalThreats",
+          "text": "I meet external threats with internal steel!",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_IBurnOut",
+          "text": "I burn out the impurities of the human race!",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_ISteelUs",
+          "text": "I steel us all for the struggle to come.",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_AllMustObey",
+          "text": "All must obey the leader!",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_AllWillObey",
+          "text": "All will obey the Iron Commander!",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_IAmTheShield",
+          "text": "I am the shield of humanity. I alone!",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_ItIsMyDestiny",
+          "text": "It is my destiny to command the armies of humanity.",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_OnlyTheFittest",
+          "text": "Only the fittest shall survive!",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_ICullIForge",
+          "text": "I cull the weak, I forge the steel!",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_ICullIStrengthen",
+          "text": "I cull the weak, I strengthen the bloodlines!",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_IForgeTheSteel",
+          "text": "I forge the steel, I protect the bloodlines!",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_IPurgeWeakness",
+          "text": "I purge weakness, I hammer the iron!",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_IPurgeTheUnfit",
+          "text": "I purge the unfit; I advance the human race!",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_ForHumanityITake",
+          "text": "For humanity, I take the necessary actions.",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_SteelYourHearts",
+          "text": "Steel your hearts with courage and resolve!",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_HiltAndPommel",
+          "text": "Hilt and pommel, guard and blade!",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_ShieldAndSword",
+          "text": "Shield and sword, breastplate and greaves!",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_ThroughFire",
+          "text": "Through fire I refine the human race.",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_ForTheSake",
+          "text": "For the sake of humanity, none must oppose me!",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_IRuleToProtect",
+          "text": "I rule to protect humanity from external threats.",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_ToProtectUs",
+          "text": "To protect us, I must purify the human race!",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_IAloneShall",
+          "text": "I alone shall rule the world!",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_HumanityIsWeak",
+          "text": "Humanity is weak; I alone can fix it!",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_IRegret",
+          "text": "I regret to announce that I must crush the Galactic Assault Squad.",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_SurelyByNow",
+          "text": "Galactic Assault Squad, surely by now you realize there is no escape.",
+          "volume": 200
+        },
+        {
+          "sound": "Karkus_Periodic_GarfieldIHate",
+          "text": "Garfield, I hate Mondays too!",
+          "volume": 200
+        }
+      ],
+      "tag": "Quest Boss Fight Periodic"
     },
     {
       "quotes": [
