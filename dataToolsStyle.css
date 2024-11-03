@@ -175,6 +175,7 @@ a.current {
 }
 
 .glossary_term {
+	font-weight: bold;
 	color: #0098FF;
 	font-size: 16px;
 	margin: 4px 4px;
@@ -182,6 +183,7 @@ a.current {
 
 .glossary_definition {
 	font-size: 16px;
-	margin: 4px 20px;
-	width: 50%;
+	margin: 8px 20px;
+	width: 728px;
+	line-height: 120%;
 }

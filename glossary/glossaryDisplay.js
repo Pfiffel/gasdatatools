@@ -9,7 +9,7 @@ function parseData() {
 	let glossary = GetGlobals().glossary;
 	for (let i = 0; i < glossary.length; i++) {
 		var entry = glossary[i];
-		let divT = makeDiv("<b>"+entry.term+"</b>", tableOutput);
+		let divT = makeDiv(entry.term, tableOutput);
 		divT.classList.add("glossary_term");
 		let divD = makeDiv(entry.definition.replace(/(?:\r\n|\r|\n)/g, '<br>'), tableOutput);
 		divD.classList.add("glossary_definition");
