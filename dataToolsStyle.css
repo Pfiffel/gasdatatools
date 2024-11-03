@@ -173,3 +173,15 @@ a.current {
 	color: #444;
 	text-decoration: none;
 }
+
+.glossary_term {
+	color: #0098FF;
+	font-size: 16px;
+	margin: 4px 4px;
+}
+
+.glossary_definition {
+	font-size: 16px;
+	margin: 4px 20px;
+	width: 50%;
+}
