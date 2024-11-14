@@ -13,11 +13,15 @@ function RefreshLists() {
 function parseData() {
 	SetTierColorsFromGlobals();
 	var h1List = document.createElement("h1");
-	h1List.textContent = "Damage Types";
+	h1List.textContent = "Timed Effects and Damage Types";
 	header.appendChild(h1List);
 	RefreshLists();
 }
 function MakeList() {
+	tableOutput.appendChild(MakeTextDiv("<h2>Timed Effect Enhancers"));
+	tableOutput.appendChild(TimedEffectBoostersTable());
+	tableOutput.appendChild(MakeTextDiv("<h2>Timed Effect Sources"));
+	tableOutput.appendChild(TimedEffectTable());
 	tableOutput.appendChild(MakeTextDiv("<h2>Damage Type Enhancers"));
 	tableOutput.appendChild(DamageTypeBoostersTable());
 	tableOutput.appendChild(MakeTextDiv("<h2>Damage Types and Where to Find Them</h2>"));
@@ -26,6 +30,86 @@ function MakeList() {
 	tableOutput.appendChild(ElementalBoostersTable());
 	tableOutput.appendChild(MakeTextDiv("<h2>Elemental Initiators"));
 	tableOutput.appendChild(ElementalTable());
+}
+function TimedEffectBoostersTable() {
+	var tbl = document.createElement('table');
+	let th = tbl.insertRow();
+	makeHeaderCell("", th);
+	makeHeaderCell(STAT_TYPES[STATS_TIMED.TIMED_EFFECT_FIRE_RATE][1], th);
+	let tr2 = tbl.insertRow();
+	/*
+	makeHeaderCell("Accolade Bonuses", tr2);
+	for (var stat in STATS_TIMED) {
+		let i = STATS_TIMED[stat];
+		let cell = makeCell("", tr2);
+		cell.appendChild(MakeSymbioteItemListBoosters(gasData.accolade, i));
+	}
+	let tr4 = tbl.insertRow();
+	makeHeaderCell("Tiered Items", tr4);
+	for (var stat in STATS_TIMED) {
+		let i = STATS_TIMED[stat];
+		let cell = makeCell("", tr4);
+		cell.appendChild(MakeSymbioteItemListBoosters(gasData.item, i, false));
+	}*/
+	let tr5 = tbl.insertRow();
+	makeHeaderCell("Items", tr5);
+	for (var stat in STATS_TIMED) {
+		let i = STATS_TIMED[stat];
+		let cell = makeCell("", tr5);
+		cell.appendChild(MakeSymbioteItemListBoosters(gasData.item, i));
+	}
+	/*
+	let tr6 = tbl.insertRow();
+	makeHeaderCell("Addons", tr6);
+	for (var stat in STATS_TIMED) {
+		let i = STATS_TIMED[stat];
+		let cell = makeCell("", tr6);
+		cell.appendChild(MakeSymbioteItemListBoosters(gasData.addon, i));
+	}*/
+	return tbl;
+}
+function TimedEffectTable() {
+	var tbl = document.createElement('table');
+	let th = tbl.insertRow();
+	makeHeaderCell("", th);
+	makeHeaderCell("Timed Effect", th);
+	let tr = tbl.insertRow();
+	makeHeaderCell("Triggers & Passives", tr);
+	for (var stat in STATS_TIMED) {
+		let i = STATS_TIMED[stat];
+		let cell = makeCell("", tr);
+		cell.appendChild(MakeTriggerList(i));
+	}
+	/*
+	let tr2 = tbl.insertRow();
+	makeHeaderCell("Accolade Bonuses", tr2);
+	for (var stat in STATS_TIMED) {
+		let i = STATS_TIMED[stat];
+		let cell = makeCell("", tr2);
+		cell.appendChild(MakeSymbioteItemList(gasData.accolade, i));
+	}*/
+	let tr3 = tbl.insertRow();
+	makeHeaderCell("Symbiotes", tr3);
+	for (var stat in STATS_TIMED) {
+		let i = STATS_TIMED[stat];
+		let cell = makeCell("", tr3);
+		cell.appendChild(MakeSymbioteItemList(gasData.symbiote, i));
+	}
+	let tr4 = tbl.insertRow();
+	makeHeaderCell("Items", tr4);
+	for (var stat in STATS_TIMED) {
+		let i = STATS_TIMED[stat];
+		let cell = makeCell("", tr4);
+		cell.appendChild(MakeSymbioteItemList(gasData.item, i));
+	}
+	let tr5 = tbl.insertRow();
+	makeHeaderCell("Addons", tr5);
+	for (var stat in STATS_TIMED) {
+		let i = STATS_TIMED[stat];
+		let cell = makeCell("", tr5);
+		cell.appendChild(MakeSymbioteItemList(gasData.addon, i));
+	}
+	return tbl;
 }
 function ElementalTable() {
 	var tbl = document.createElement('table');
@@ -256,7 +340,7 @@ function MakeSymbioteItemListBoosters(type, stat, isRare) {
 					tbl = MakeStatsTable(thing, thing.credits);
 				else if (type == gasData.addon)
 					tbl = MakeStatsTable(thing);
-				if(tbl == undefined) continue;
+				if (tbl == undefined) continue;
 				tbl.classList.add("inline");
 				div.appendChild(tbl);
 				continue;
@@ -274,7 +358,7 @@ function MakeSymbioteItemList(type, stat) {
 	for (let i = 0; i < type.length; i++) {
 		var thing = type[i];
 		try {
-			
+
 			var hasEffect = DataHasEffect(thing.effects, stat);
 			if (hasEffect) {
 				//console.log(thing.name, stat)
@@ -299,15 +383,15 @@ function MakeSymbioteItemList(type, stat) {
 	}
 	return div;
 }
-function CheckParams(params, stat)
-{
+function CheckParams(params, stat) {
 	if (
 		(IsBlast(params) && stat == STATS.BLAST_DAMAGE) ||
 		(IsBomb(params) && stat == STATS.BOMB_DAMAGE) ||
 		(IsMissile(params) && stat == STATS.MISSILE_DAMAGE) ||
 		(IsZap(params) && stat == STATS.ZAP_DAMAGE) ||
 		(IsFire(params) && stat == STATS_ELEMENTAL.DAMAGE_VS_BURNING) ||
-		(IsFrost(params) && stat == STATS_ELEMENTAL.DAMAGE_VS_FROZEN)
+		(IsFrost(params) && stat == STATS_ELEMENTAL.DAMAGE_VS_FROZEN) ||
+		(IsPeriodic(params) && stat == STATS_TIMED.TIMED_EFFECT_FIRE_RATE)
 	) {
 		return true;
 	}
