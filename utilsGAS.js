@@ -137,7 +137,50 @@ const PLAYER_POLICIES = {
 	"0": ["IGNORE", "Ignore"],
 	"1": ["APPROACH", "Approach"],
 };
-
+const MAX_MEDAL_COST_REF = 40;
+const MEDAL_GLORY_COSTS = {
+	0: 0,
+	1: 5,
+	2: 10,
+	3: 15,
+	4: 20,
+	5: 24,
+	6: 28,
+	7: 32,
+	8: 36,
+	9: 40,
+	10: 43,
+	11: 46,
+	12: 49,
+	13: 52,
+	14: 55,
+	15: 58,
+	16: 60,
+	17: 62,
+	18: 64,
+	19: 66,
+	20: 68,
+	21: 70,
+	22: 72,
+	23: 73,
+	24: 74,
+	25: 75,
+	26: 76,
+	27: 77,
+	28: 78,
+	29: 79,
+	30: 80,
+	31: 81,
+	32: 82,
+	33: 83,
+	34: 84,
+	35: 85,
+	36: 86,
+	37: 87,
+	38: 88,
+	39: 89,
+	40: 90,
+}
 // Helpers
 function GetArcShield(data) {
 	var arc = -(data.left - data.right) / 10;
@@ -280,15 +323,13 @@ function IsFire(params) {
 	}
 	return false;
 }
-function IsFireParams(params)
-{
-	if(params.data != undefined && params.data.statusEffects != undefined && IsFireEffects(params.data.statusEffects)) return true;
+function IsFireParams(params) {
+	if (params.data != undefined && params.data.statusEffects != undefined && IsFireEffects(params.data.statusEffects)) return true;
 	return false;
 }
-function IsFireEffects(effects)
-{
+function IsFireEffects(effects) {
 	for (let i = 0; i < effects.length; i++) {
-		if(effects[i].tag == "BurningEffect") return true;
+		if (effects[i].tag == "BurningEffect") return true;
 	}
 	return false;
 }
@@ -301,16 +342,14 @@ function IsFrost(params) {
 	}
 	return false;
 }
-function IsFrostParams(params)
-{
-	if(params.data != undefined && params.data.statusEffects != undefined && IsFrostEffects(params.data.statusEffects)) return true;
+function IsFrostParams(params) {
+	if (params.data != undefined && params.data.statusEffects != undefined && IsFrostEffects(params.data.statusEffects)) return true;
 	return false;
 }
-function IsFrostEffects(effects)
-{
+function IsFrostEffects(effects) {
 	for (let i = 0; i < effects.length; i++) {
-		if(effects[i].tag == "ChillEffect") return true;
-		if(effects[i].tag == "FreezeEffect") return true;
+		if (effects[i].tag == "ChillEffect") return true;
+		if (effects[i].tag == "FreezeEffect") return true;
 	}
 	return false;
 }
@@ -341,7 +380,7 @@ function SlotTypeToText(data) {
 }
 // TODO make bSymbiote and bAccolade an enum or sth
 function MakeStatsTable(mainData, tier, bSymbiote = false, iPortrait = 0, bDescription = true, bSpeaker = false, idxTrigger = -1, bJustGimmeStatStringHack = false, bAccoladeOrigin = false) {
-	if (mainData == undefined) {var div = document.createElement('div'); div.textContent = "something went seriously wrong"; return div;}
+	if (mainData == undefined) { var div = document.createElement('div'); div.textContent = "something went seriously wrong"; return div; }
 	if (tier == 0) tier = mainData.tier;
 	if (mainData.credits != undefined) tier = mainData.credits;
 	else if (mainData.rarity != undefined) tier = mainData.rarity + 1;
@@ -369,7 +408,7 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, iPortrait = 0, bDescr
 		let slotTypeList = trimListBy(slotTypes, 2);
 		// TODO don't think it's guaranteed by structure that all items have a slot type and maybe i should check this somewhere else, but it's currently the case
 		let requirements = GetDropRequirements(mainData);
-		if(requirements != "") {
+		if (requirements != "") {
 			tbl.title = requirements;
 			slotTypeList += " *";
 		}
@@ -457,7 +496,7 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, iPortrait = 0, bDescr
 			if (data.maxProcsPerSecond != undefined && data.maxProcsPerSecond != 0) {
 				s += "Maximum " + data.maxProcsPerSecond + " applications per second<br/>";
 				let spsToCap = data.maxProcsPerSecond / (data.percentChance / 100);
-				if(spsToCap != data.maxProcsPerSecond) s += "(" + spsToCap + " shots per second to cap)"
+				if (spsToCap != data.maxProcsPerSecond) s += "(" + spsToCap + " shots per second to cap)"
 			}
 		}
 		else if (mainTag == "GunCharger") {
@@ -556,7 +595,7 @@ function MakePickupPackText(data, delayArray) {
 	if (data.healing > 0) s += printKeyAndData("Repair Amount", data.healing, "heal");
 	s += printKeyAndData("Duration", ToTime(data.duration));
 	s += MakePowerText(data);
-	if(data.triggers != undefined) for (let i = 0; i < data.triggers.length; i++) {
+	if (data.triggers != undefined) for (let i = 0; i < data.triggers.length; i++) {
 		let tData = data.triggers[i].data;
 		let tTag = data.triggers[i].tag;
 		s += GetTriggeredEffectString(tTag, tData, delayArray).s;
@@ -910,17 +949,16 @@ function printKeyAndDataBonus(key, data, cssClass = "") {
 function AddReticle(color) {
 	return colorWrap(" &#9711;", numberToHex(color));
 }
-function GetDropRequirements(item)
-{
+function GetDropRequirements(item) {
 	let s = "";
-	if(item.requiresBlast != undefined && item.requiresBlast == 1) s += "Requires Blast";
-	if(item.requiresBurning != undefined && item.requiresBurning == 1) s += "Requires Burning";
-	if(item.requiresDematerialize != undefined && item.requiresDematerialize == 1) s += "Requires Dematerialize";
-	if(item.requiresFreezeChill != undefined && item.requiresFreezeChill == 1) s += "Requires Freeze or Chilled";
-	if(item.requiresMissiles != undefined && item.requiresMissiles == 1) s += "Requires Missiles";
-	if(item.requiresPickupPackCreate != undefined && item.requiresPickupPackCreate == 1) s += "Requires Pickup pack creation";
-	if(item.requiresZap != undefined && item.requiresZap == 1) s += "Requires Zap";
-	if(item.requiresPeriodic != undefined && item.requiresPeriodic == 1) s += "Requires Timed Effect";
+	if (item.requiresBlast != undefined && item.requiresBlast == 1) s += "Requires Blast";
+	if (item.requiresBurning != undefined && item.requiresBurning == 1) s += "Requires Burning";
+	if (item.requiresDematerialize != undefined && item.requiresDematerialize == 1) s += "Requires Dematerialize";
+	if (item.requiresFreezeChill != undefined && item.requiresFreezeChill == 1) s += "Requires Freeze or Chilled";
+	if (item.requiresMissiles != undefined && item.requiresMissiles == 1) s += "Requires Missiles";
+	if (item.requiresPickupPackCreate != undefined && item.requiresPickupPackCreate == 1) s += "Requires Pickup pack creation";
+	if (item.requiresZap != undefined && item.requiresZap == 1) s += "Requires Zap";
+	if (item.requiresPeriodic != undefined && item.requiresPeriodic == 1) s += "Requires Timed Effect";
 	return s;
 }
 // Loading Stuff
@@ -1364,16 +1402,14 @@ function IsPointInsidePoly(point, vs) {
 	}
 	return inside;
 }
-function FieldIsNoobZone(field)
-{
+function FieldIsNoobZone(field) {
 	return (field.tag == "Zone 0" || field.tag == "Zone 1");
 }
-function IsMiniBossSpawnInNoobZone(point, fields)
-{
+function IsMiniBossSpawnInNoobZone(point, fields) {
 	var inside = false;
 	for (let i = 0; i < fields.length; i++) {
 		var monsterField = fields[i];
-		if(FieldIsNoobZone(monsterField) && IsPointInsidePoly(point, monsterField.poly))
+		if (FieldIsNoobZone(monsterField) && IsPointInsidePoly(point, monsterField.poly))
 			inside = true
 	}
 	return inside;
@@ -1395,7 +1431,7 @@ function MakeMap(ctx, scale, map) {
 	}
 	if (map.miniBossSpawns != undefined) for (let i = 0; i < map.miniBossSpawns.length; i++) {
 		var miniBoss = map.miniBossSpawns[i];
-		if(!IsMiniBossSpawnInNoobZone(miniBoss, map.monsterFields))
+		if (!IsMiniBossSpawnInNoobZone(miniBoss, map.monsterFields))
 			DrawCircle(ctx, scale, miniBoss, 2, map.mapRadius, "#AA4400");
 	}
 	for (let i = 0; i < map.lanes.length; i++) {

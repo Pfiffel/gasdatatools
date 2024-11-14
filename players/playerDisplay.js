@@ -187,7 +187,7 @@ function makeMiniProgressionTable(container) {
 		makeCell(data.bonuses, tr);
 		makeCell(data.medals, tr);
 		makeCell(data.accolades, tr);
-		var medals = (data.medals - 1) * (data.medals + 4) / 2 * 5;
+		var medals = GetTotalMedalCost(data.medals);
 		makeCell(medals, tr);
 		makeCell(data.accolades * 350, tr);
 		makeCell(medals + data.accolades * 350, tr);
@@ -213,6 +213,17 @@ function makeHullCell(container, player) {
 	var tilFull = round(player.hp / player.healRate, 2);
 	statRow(moveTable, "until full", tilFull + "s");
 	container.appendChild(moveTable);
+}
+function GetTotalMedalCost(unlocks)
+{
+	let total = 0;
+	for (let i = 0; i <= unlocks; i++) {
+		if(i <= MAX_MEDAL_COST_REF)
+			total += MEDAL_GLORY_COSTS[i];
+		else
+			total += MEDAL_GLORY_COSTS[MAX_MEDAL_COST_REF] + (i-MAX_MEDAL_COST_REF) * 1;
+	}
+	return total;
 }
 function makeEquipmentCell(container, player) {
 	var eqTable = document.createElement('table');
