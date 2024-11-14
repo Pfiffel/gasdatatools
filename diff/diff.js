@@ -1,5 +1,5 @@
 var tableOutput = document.getElementById("tableOutput");
-var datatypes = ["accolade", "animation", "champion", "decor", "emitter", "explosion", "gunbullet", "item", "addon", "lair", "lane", "map", "monster", "object", "particle", "region", "soundpack", "speaker", "symbiote", "globals", "defect"]; // for utilGAS to load files, calls parseData once completed
+var datatypes = ["accolade", "animation", "champion", "decor", "emitter", "explosion", "gunbullet", "item", "itempack", "addon", "lair", "lane", "map", "monster", "object", "particle", "region", "soundpack", "speaker", "symbiote", "globals", "defect"]; // for utilGAS to load files, calls parseData once completed
 var datatypesPrev = datatypes;
 loadGasData();
 var errorLogs = document.createElement('div');
@@ -245,6 +245,7 @@ function IsNewButDefaultValue(entityPrev, entity, key) {
 		else if (key == "requiresMissiles" && entity[key] == 0) return true;
 		else if (key == "requiresPickupPackCreate" && entity[key] == 0) return true;
 		else if (key == "requiresZap" && entity[key] == 0) return true;
+		else if (key == "requiresPeriodic" && entity[key] == 0) return true;
 	return false;
 }
 function MakeChangeEntry(header, key, prev, curr, container) {

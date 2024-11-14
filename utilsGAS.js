@@ -38,10 +38,14 @@ const STATS_BOOSTERS = {
 	32: [32, 33, 34],
 	15: [15],
 	20: [20],
+	39: [39],
 }
 const STATS_ELEMENTAL = {
 	DAMAGE_VS_BURNING: 15,
 	DAMAGE_VS_FROZEN: 20,
+}
+const STATS_TIMED = {
+	TIMED_EFFECT_FIRE_RATE: 39,
 }
 const STAT_TYPES = {
 	"0": ["DAMAGE", "Gun Damage", false],
@@ -78,7 +82,12 @@ const STAT_TYPES = {
 	"31": ["REPAIR_RATE_PLUS", "Base Repair Rate", true],
 	"32": ["ZAP_DAMAGE", "Zap Damage", false],
 	"33": ["ZAP_DAMAGE_PLUS", "Base Zap Damage", true],
-	"34": ["ZAP_TARGETS_PLUS", "Zap Target Count", true]
+	"34": ["ZAP_TARGETS_PLUS", "Zap Target Count", true],
+	"35": ["ACCOLADE_GLORY_PLUS", "Increased Accolade Glory", true],
+	"36": ["TRIGGER_1_FIRE_RATE", "Trigger 1 Rate of Fire", false],
+	"37": ["TRIGGER_2_FIRE_RATE", "Trigger 2 Rate of Fire", false],
+	"38": ["TRIGGER_3_FIRE_RATE", "Trigger 3 Rate of Fire", false],
+	"39": ["TIMED_EFFECT_FIRE_RATE", "Timed Effect Fire Rate", false],
 };
 const ACTIVE_WHILE_NAMES = {
 	"0": ["ALWAYS", "always"],
@@ -103,7 +112,7 @@ const ACTIVE_WHILE_NAMES = {
 	"19": ["NOT_ROTATING", "not rotating"],
 	"20": ["OUT_OF_COMBAT", "out of combat"],
 	"21": ["NEW_CHARACTER", "on new character"],
-	"22": ["DEMATERIALIZED", "dematerialized"]
+	"22": ["DEMATERIALIZED", "dematerialized"],
 };
 const TRIGGER_TO_WHEN = [1, 7, 8, 4];
 const TRIGGERED_TRIGGER_EFFECTS = {
@@ -169,7 +178,8 @@ const ITEM_SORTING_INDEX =
 	"Detonator": 13,
 	"Warhead": 14,
 	"Zapper": 15,
-	"Rotator": 16,
+	"Cooler": 16,
+	"Rotator": 17,
 }
 function GetItemSortingIndex(item) {
 	for (let category in ITEM_SORTING_INDEX) {
@@ -248,6 +258,15 @@ function IsZap(params) {
 		return true;
 	for (var p in params) {
 		if (params[p].tag == "ZapTrigger")
+			return true;
+	}
+	return false;
+}
+function IsPeriodic(params) {
+	if (!Array.isArray(params) && params.tag == "PeriodicTriggerEffect")
+		return true;
+	for (var p in params) {
+		if (params[p].tag == "PeriodicTriggerEffect")
 			return true;
 	}
 	return false;
@@ -901,6 +920,7 @@ function GetDropRequirements(item)
 	if(item.requiresMissiles != undefined && item.requiresMissiles == 1) s += "Requires Missiles";
 	if(item.requiresPickupPackCreate != undefined && item.requiresPickupPackCreate == 1) s += "Requires Pickup pack creation";
 	if(item.requiresZap != undefined && item.requiresZap == 1) s += "Requires Zap";
+	if(item.requiresPeriodic != undefined && item.requiresPeriodic == 1) s += "Requires Timed Effect";
 	return s;
 }
 // Loading Stuff
