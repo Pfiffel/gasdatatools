@@ -8,7 +8,7 @@
         "params": [
           {
             "data": {
-              "damage": 125,
+              "damage": 100,
               "particleLines": [
                 {
                   "arcOffset": 0,

@@ -8,7 +8,7 @@
         "params": [
           {
             "data": {
-              "damage": 125,
+              "damage": 75,
               "particleLines": [
                 {
                   "arcOffset": 0,
@@ -24,7 +24,7 @@
               "shotguns": [
                 {
                   "autoAim": 0,
-                  "damage": 50,
+                  "damage": 100,
                   "delay": 0,
                   "drawPictureInTooltip": 0,
                   "drawReticle": 0,
