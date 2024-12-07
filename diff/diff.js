@@ -244,6 +244,7 @@ function IsNewButDefaultValue(entityPrev, entity, key) {
 		else if (key == "drawPictureInTooltip" && entity[key] == 1) return true;
 		else if (key == "facing" && entity[key] == 0) return true;
 		else if (key == "autoAim" && entity[key] == 0) return true;
+		else if (key == "rare" && entity[key] == 0) return true;
 		else if (key == "requiresBlast" && entity[key] == 0) return true;
 		else if (key == "requiresBurning" && entity[key] == 0) return true;
 		else if (key == "requiresDematerialize" && entity[key] == 0) return true;
