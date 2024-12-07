@@ -224,18 +224,18 @@ const ITEM_SORTING_INDEX =
 	"Cooler": 16,
 	"Rotator": 17,
 }
-function GetItemSortingIndex(item) {
+function GetItemSortingIndexByName(item) {
 	for (let category in ITEM_SORTING_INDEX) {
 		if (item.name.includes(category))
 			return ITEM_SORTING_INDEX[category];
 	}
 	return 0;
 }
-function ItemSort(a, b) {
-	if (GetItemSortingIndex(a) > GetItemSortingIndex(b))
-		return 1;
-	else
-		return -1;
+function ItemSortByName(a, b) {
+	return (GetItemSortingIndexByName(a) - GetItemSortingIndexByName(b));
+}
+function ItemSortByTier(a, b) {
+	return a.credits - b.credits;
 }
 function getTier(xp) {
 	return parseInt(Math.sqrt(xp));

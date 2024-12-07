@@ -108,10 +108,16 @@ function parseData() {
 			MakeStatsTable(GetPrevEntity("symbiote", entity), 0, true),
 			MakeStatsTable(GetNewEntity("symbiote", entity), 0, true)));
 	}
+	let items = [];
 	for (let entity in changedItems) {
+		items.push(GetNewEntity("item", entity));
+	}
+	items.sort((a, b) => (ItemSortByName(a, b) || ItemSortByTier(a, b)));
+	for (let i in items) {
+		let entity = items[i].name;
 		divPrio.appendChild(MakeGraphicCompareBlock(entity + " changes" + GetKeyChangeList(entity),
 			MakeStatsTable(GetPrevEntity("item", entity), 0, false),
-			MakeStatsTable(GetNewEntity("item", entity), 0, false)));
+			MakeStatsTable(items[i], 0, false)));
 	}
 	for (let entity in changedAddons) {
 		divPrio.appendChild(MakeGraphicCompareBlock(entity + " changes" + GetKeyChangeList(entity),

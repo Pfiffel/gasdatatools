@@ -120,7 +120,7 @@ function MakeSpecificItemList(tier, statAmount, precursor, rare, boon, inline, o
 		if (ItemIsNot(item, tier, statAmount, precursor, rare, boon, overworld)) continue;
 		tempItems.push(item);
 	}
-	tempItems.sort((a, b) => ItemSort(a, b));
+	tempItems.sort((a, b) => ItemSortByName(a, b));
 	for (var i = 0; i < tempItems.length; i++) {
 		var item = tempItems[i];
 		iPortrait = document.querySelector('input[name="' + FILTER_IMAGE_RESOLUTION + '"]:checked').value;
