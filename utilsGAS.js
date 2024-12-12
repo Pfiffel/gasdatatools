@@ -682,8 +682,8 @@ function ShowStatusEffect(effect) {
 	else if (effect.tag == "StunEffect") s += printKeyAndData("Stun Duration", ToTime(effect.data.duration));
 	else if (effect.tag == "DisarmEffect") s += printKeyAndData("Disarm Duration", ToTime(effect.data.duration));
 	else if (effect.tag == "SusceptibleEffect") s += printKeyAndData("Susceptibility Duration", ToTime(effect.data.duration));
-	else if (effect.tag == "BurningEffect") { dotTotal = effect.data.dps * effect.data.duration / 1000; s += printKeyAndData("Burn Damage", dotTotal + " over " + ToTime(effect.data.duration)); damage += dotTotal; }
-	else if (effect.tag == "DoTEffect") { dotTotal = effect.data.dps * effect.data.duration / 1000; s += printKeyAndData("DoT", dotTotal + " over " + ToTime(effect.data.duration)); damage += dotTotal; }
+	else if (effect.tag == "BurningEffect") { dotTotal = effect.data.dps * effect.data.duration / 1000; s += printKeyAndData("Burn Damage", dotTotal + " over " + ToTime(effect.data.duration) + " (" + effect.data.dps + " dps)"); damage += dotTotal; }
+	else if (effect.tag == "DoTEffect") { dotTotal = effect.data.dps * effect.data.duration / 1000; s += printKeyAndData("DoT", dotTotal + " over " + ToTime(effect.data.duration) + " (" + effect.data.dps + " dps)"); damage += dotTotal; }
 	else if (effect.tag == "ChillEffect") s += printKeyAndData("Chill Duration", ToTime(effect.data.duration));
 	else if (effect.tag == "GlyphCircleEffect") bSkipExtraInfo = true;
 	else if (effect.tag == "ParticleLineEffect");
