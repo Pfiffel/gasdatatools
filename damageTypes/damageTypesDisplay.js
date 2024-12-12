@@ -124,14 +124,13 @@ function ElementalTable() {
 		let cell = makeCell("", tr);
 		cell.appendChild(MakeTriggerList(i));
 	}
-	/*
 	let tr2 = tbl.insertRow();
 	makeHeaderCell("Accolade Bonuses", tr2);
 	for (var stat in STATS_ELEMENTAL) {
 		let i = STATS_ELEMENTAL[stat];
 		let cell = makeCell("", tr2);
 		cell.appendChild(MakeSymbioteItemList(gasData.accolade, i));
-	}*/
+	}
 	let tr3 = tbl.insertRow();
 	makeHeaderCell("Symbiotes", tr3);
 	for (var stat in STATS_ELEMENTAL) {
@@ -200,6 +199,7 @@ function DamageTypeTable() {
 	//makeHeaderCell(STAT_TYPES[STATS.BOMB_DAMAGE][1], th);
 	makeHeaderCell(STAT_TYPES[STATS.MISSILE_DAMAGE][1], th);
 	makeHeaderCell(STAT_TYPES[STATS.ZAP_DAMAGE][1], th);
+	makeHeaderCell(STAT_TYPES[STATS.DOT_DAMAGE][1], th);
 	let tr = tbl.insertRow();
 	makeHeaderCell("Triggers & Passives", tr);
 	for (var stat in STATS) {
@@ -245,6 +245,7 @@ function DamageTypeBoostersTable() {
 	//makeHeaderCell(STAT_TYPES[STATS.BOMB_DAMAGE][1], th);
 	makeHeaderCell(STAT_TYPES[STATS.MISSILE_DAMAGE][1], th);
 	makeHeaderCell(STAT_TYPES[STATS.ZAP_DAMAGE][1], th);
+	makeHeaderCell(STAT_TYPES[STATS.DOT_DAMAGE][1], th);
 	let tr2 = tbl.insertRow();
 	makeHeaderCell("Accolade Bonuses", tr2);
 	for (var stat in STATS) {
@@ -389,6 +390,7 @@ function CheckParams(params, stat) {
 		(IsBomb(params) && stat == STATS.BOMB_DAMAGE) ||
 		(IsMissile(params) && stat == STATS.MISSILE_DAMAGE) ||
 		(IsZap(params) && stat == STATS.ZAP_DAMAGE) ||
+		(IsDoT(params) && stat == STATS.DOT_DAMAGE) ||
 		(IsFire(params) && stat == STATS_ELEMENTAL.DAMAGE_VS_BURNING) ||
 		(IsFrost(params) && stat == STATS_ELEMENTAL.DAMAGE_VS_FROZEN) ||
 		(IsPeriodic(params) && stat == STATS_TIMED.TIMED_EFFECT_FIRE_RATE)

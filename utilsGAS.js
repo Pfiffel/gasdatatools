@@ -30,6 +30,7 @@ const STATS = {
 	//BOMB_DAMAGE: 22,
 	MISSILE_DAMAGE: 23,
 	ZAP_DAMAGE: 32,
+	DOT_DAMAGE: 40,
 }
 const STATS_BOOSTERS = {
 	21: [21, 27],
@@ -39,6 +40,7 @@ const STATS_BOOSTERS = {
 	15: [15],
 	20: [20],
 	39: [39],
+	40: [40],
 }
 const STATS_ELEMENTAL = {
 	DAMAGE_VS_BURNING: 15,
@@ -84,10 +86,11 @@ const STAT_TYPES = {
 	"33": ["ZAP_DAMAGE_PLUS", "Base Zap Damage", true],
 	"34": ["ZAP_TARGETS_PLUS", "Zap Target Count", true],
 	"35": ["ACCOLADE_GLORY_PLUS", "Increased Accolade Glory", true],
-	"36": ["TRIGGER_1_FIRE_RATE", "Trigger 1 Rate of Fire", false],
+	"36": ["TRIGGER_3_FIRE_RATE", "Trigger 3 Rate of Fire", false],
 	"37": ["TRIGGER_2_FIRE_RATE", "Trigger 2 Rate of Fire", false],
-	"38": ["TRIGGER_3_FIRE_RATE", "Trigger 3 Rate of Fire", false],
+	"38": ["TRIGGER_1_FIRE_RATE", "Trigger 1 Rate of Fire", false],
 	"39": ["TIMED_EFFECT_FIRE_RATE", "Timed Effect Fire Rate", false],
+	"40": ["DOT_DAMAGE", "Damage Over Time", false],
 };
 const ACTIVE_WHILE_NAMES = {
 	"0": ["ALWAYS", "always"],
@@ -222,7 +225,7 @@ const ITEM_SORTING_INDEX =
 	"Warhead": 14,
 	"Zapper": 15,
 	"Cooler": 16,
-	"Rotator": 17,
+	"Catalyst": 17,
 }
 function GetItemSortingIndexByName(item) {
 	for (let category in ITEM_SORTING_INDEX) {
@@ -275,44 +278,44 @@ function IsBomb(params) {
 }
 // TODO consolidate this, Array check is there for triggers specifically which have a different json structure
 function IsShotgun(params, bHasNoOffset) {
-	if (!Array.isArray(params) && params.tag == "MineTrigger" && (params.data.damage > 0) && !bHasNoOffset)
+	if (!Array.isArray(params) && IsAoETag(params, "MineTrigger", !bHasNoOffset)) return true;
+	if (!Array.isArray(params) && IsAoETag(params, "ShotgunTrigger", bHasNoOffset)) return true;
+	for (var p in params) {
+		if(IsAoETag(params[p], "MineTrigger", !bHasNoOffset)) return true;
+		if(IsAoETag(params[p], "ShotgunTrigger", bHasNoOffset)) return true;
+	}
+	return false;
+}
+function IsAoETag(params, tag, bHasNoOffset)
+{
+	if (params.tag == tag && (params.data.damage > 0) && (HasNoOffset(params.data) == bHasNoOffset))
 		return true;
-	if (!Array.isArray(params) && params.tag == "ShotgunTrigger" && (params.data.damage > 0) && (HasNoOffset(params.data) == bHasNoOffset))
+	if (params.bonus != undefined && params.bonus.tag == (tag + "Bonus") && (params.bonus.data.damage > 0) && (HasNoOffset(params.bonus.data) == bHasNoOffset))
+		return true;
+	return false;
+}
+function IsTag(params, tag)
+{
+	if (!Array.isArray(params) && params.tag == tag)
+		return true;
+	if (!Array.isArray(params) && params.bonus != undefined && params.bonus.tag == (tag + "Bonus"))
 		return true;
 	for (var p in params) {
-		if (params[p].tag == "MineTrigger" && (params[p].data.damage > 0) && !bHasNoOffset)
+		if (params[p].tag == tag)
 			return true;
-		if (params[p].tag == "ShotgunTrigger" && (params[p].data.damage > 0) && (HasNoOffset(params[p].data) == bHasNoOffset))
+		if (params[p].bonus != undefined && params[p].bonus.tag == (tag + "Bonus"))
 			return true;
 	}
 	return false;
 }
 function IsMissile(params) {
-	if (!Array.isArray(params) && params.tag == "SharkletTrigger")
-		return true;
-	for (var p in params) {
-		if (params[p].tag == "SharkletTrigger")
-			return true;
-	}
-	return false;
+	return IsTag(params, "SharkletTrigger");
 }
 function IsZap(params) {
-	if (!Array.isArray(params) && params.tag == "ZapTrigger")
-		return true;
-	for (var p in params) {
-		if (params[p].tag == "ZapTrigger")
-			return true;
-	}
-	return false;
+	return IsTag(params, "ZapTrigger");
 }
 function IsPeriodic(params) {
-	if (!Array.isArray(params) && params.tag == "PeriodicTriggerEffect")
-		return true;
-	for (var p in params) {
-		if (params[p].tag == "PeriodicTriggerEffect")
-			return true;
-	}
-	return false;
+	return IsTag(params, "PeriodicTriggerEffect");
 }
 function IsFire(params) {
 	if (!Array.isArray(params) && IsFireParams(params))
@@ -324,12 +327,40 @@ function IsFire(params) {
 	return false;
 }
 function IsFireParams(params) {
-	if (params.data != undefined && params.data.statusEffects != undefined && IsFireEffects(params.data.statusEffects)) return true;
+	if (params.data != undefined)
+		{
+			if(params.data.statusEffects != undefined && IsFireEffects(params.data.statusEffects)) return true;
+			if(params.data.bonus != undefined && params.data.bonus.data.statusEffects != undefined && IsFireEffects(params.data.bonus.data.statusEffects)) return true;
+		}
 	return false;
 }
 function IsFireEffects(effects) {
 	for (let i = 0; i < effects.length; i++) {
 		if (effects[i].tag == "BurningEffect") return true;
+	}
+	return false;
+}
+function IsDoT(params) {
+	if (!Array.isArray(params) && IsDoTParams(params))
+		return true;
+	for (var p in params) {
+		if (IsDoTParams(params[p]))
+			return true;
+	}
+	return false;
+}
+function IsDoTParams(params) {
+	if (params.data != undefined)
+		{
+			if(params.data.statusEffects != undefined && IsDoTEffects(params.data.statusEffects)) return true;
+			if(params.data.bonus != undefined && params.data.bonus.data.statusEffects != undefined && IsDoTEffects(params.data.bonus.data.statusEffects)) return true;
+		}
+	return false;
+}
+function IsDoTEffects(effects) {
+	for (let i = 0; i < effects.length; i++) {
+		if (effects[i].tag == "BurningEffect") return true;
+		if (effects[i].tag == "DoTEffect") return true;
 	}
 	return false;
 }
@@ -343,7 +374,11 @@ function IsFrost(params) {
 	return false;
 }
 function IsFrostParams(params) {
-	if (params.data != undefined && params.data.statusEffects != undefined && IsFrostEffects(params.data.statusEffects)) return true;
+	if (params.data != undefined)
+		{
+			if(params.data.statusEffects != undefined && IsFrostEffects(params.data.statusEffects)) return true;
+			if(params.data.bonus != undefined && params.data.bonus.data.statusEffects != undefined && IsFrostEffects(params.data.bonus.data.statusEffects)) return true;
+		}
 	return false;
 }
 function IsFrostEffects(effects) {
@@ -354,6 +389,8 @@ function IsFrostEffects(effects) {
 	return false;
 }
 function HasNoOffset(data) {
+	// no offset means it's MineTrigger in this case
+	if(data.offset == undefined) return false;
 	if (data.offset.x == 0 && data.offset.y == 0) return true;
 	return false;
 }
@@ -651,7 +688,7 @@ function ShowStatusEffect(effect) {
 	else if (effect.tag == "GlyphCircleEffect") bSkipExtraInfo = true;
 	else if (effect.tag == "ParticleLineEffect");
 	else if (effect.tag == "PlaySoundEffect");
-	else if (effect.tag == "BlastEffect") { s += printKeyAndData("AoE Damage", effect.data.damage); s += printKeyAndData("Radius", effect.data.radius); damage += effect.data.damage; }
+	else if (effect.tag == "BlastEffect") { s += printKeyAndData("Blast Damage", effect.data.damage); s += printKeyAndData("Radius", effect.data.radius); damage += effect.data.damage; }
 	else if (effect.tag == "DamageEffect") { s += printKeyAndData("Damage", effect.data.damage); damage += effect.data.damage; }
 	else if (effect.tag == "VampEffect") s += printKeyAndData((effect.data.appliesToMana == 1 ? "Energy Recharge" : "Vampiric Repair") + " per hit", effect.data.healing, (effect.data.appliesToMana == 1 ? "energy" : "heal"));
 	else console.log("uncaught effect: " + effect.tag);
@@ -848,7 +885,7 @@ function GetBonusEffectString(tag, data) {
 	}*/
 	if (tag == "ShotgunTriggerBonus") {
 		// TODO pass in raw data value to function, handle the prefix there, pass in category (amount, time, percentage)
-		if (data.damage != 0) s += printKeyAndDataBonus("AoE Damage", BonusPrefix(data.damage));
+		if (data.damage != 0) s += printKeyAndDataBonus("Blast Damage", BonusPrefix(data.damage));
 		if (data.range != 0) s += printKeyAndDataBonus("Range", BonusPrefix(data.range));
 		if (data.halfArc != 0) s += printKeyAndDataBonus("Arc", BonusPrefix(data.halfArc * 0.2) + "°");
 		if (data.targetingDelay != 0) s += printKeyAndDataBonus("Targeting Delay", BonusPrefixToTime(data.targetingDelay));
