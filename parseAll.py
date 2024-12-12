@@ -11,7 +11,7 @@ for subdir, dirs, files in os.walk(dir):
 		extension = os.path.splitext(file)[1][1:]
 		relativePath = dir + file
 		print(relativePath)
-		if(extension != "png" and extension != "jpeg"):
+		if(extension != "png" and extension != "jpeg" and file != ".DS_Store"):
 			with open(relativePath, encoding="utf8") as json_target:
 				targetData = json.load(json_target)
 				if extension not in data:
