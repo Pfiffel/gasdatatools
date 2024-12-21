@@ -556,7 +556,7 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, iPortrait = 0, bDescr
 			var condition = (activeWhile != undefined && activeWhile != 0) ? ("While " + classWrap(ACTIVE_WHILE_NAMES[activeWhile][1], "cKeyValue") + ", every ") : "Every ";
 			s += condition + classWrap(ToTime(data.cooldown), "cKeyValue") + chanceTo + ":<br/>";
 			let cooldownAndChanceMult = (10 / data.cooldown) * data.percentChance;
-
+			if(data.targetingRange != 0) s += printKeyAndData("Activation Range", data.targetingRange, "", AddReticle(data.reticleColor));
 			for (var p in data.params) {
 				var effect = data.params[p];
 				let o = GetTriggeredEffectString(effect.tag, effect.data, delayArray);
