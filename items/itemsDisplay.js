@@ -48,7 +48,7 @@ function MakeList() {
 	tableOutput.appendChild(MakeTextDiv("<h2>Tiered</h2>"));
 	tableOutput.appendChild(MakeSpecificTable(1, -1, 0, 0, -1, 0, 1));
 	tableOutput.appendChild(MakeTextDiv("<h2>Rare</h2>"));
-	tableOutput.appendChild(MakeSpecificTable(1, -1, 0, 1, -1, 1));
+	tableOutput.appendChild(MakeSpecificTable(1, -1, 0, 1, -1, 1, 1));
 	tableOutput.appendChild(MakeTextDiv("<h2>2-Statted Boss Loot</h2>"));
 	tableOutput.appendChild(MakeSpecificTable(7, 2, 0, 0, -1, 1, 0));
 	tableOutput.appendChild(MakeTextDiv("<h2>Precursor Tech</h2>"));
