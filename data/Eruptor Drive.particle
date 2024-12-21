@@ -1,0 +1,40 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 16007726
+    },
+    {
+      "frac": 900,
+      "value": 16007726
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 400,
+  "minLifetime": 350,
+  "name": "Eruptor Drive",
+  "objectType": "Small Crescent",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 50,
+      "value": 500
+    },
+    {
+      "frac": 500,
+      "value": 600
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 16754289,
+  "startScale": 10,
+  "stayLow": 1
+}
+

@@ -1,0 +1,63 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Zeus Halo Bolt",
+  "shapes": [
+    {
+      "bone": "Yellow",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16776958,
+      "height": 120,
+      "mirror": 0,
+      "name": "Yellow",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -13,
+          "y": 0
+        },
+        {
+          "x": 24,
+          "y": -12
+        },
+        {
+          "x": 24,
+          "y": 6
+        },
+        {
+          "x": 78,
+          "y": -6
+        },
+        {
+          "x": 13,
+          "y": 21
+        },
+        {
+          "x": 13,
+          "y": 0
+        },
+        {
+          "x": -24,
+          "y": 12
+        },
+        {
+          "x": -24,
+          "y": -6
+        },
+        {
+          "x": -78,
+          "y": 6
+        },
+        {
+          "x": -13,
+          "y": -21
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

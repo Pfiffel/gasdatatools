@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 850,
+      "value": 6728470
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 1000,
+  "minLifetime": 600,
+  "name": "Acidic Ray Zap Bubbles",
+  "objectType": "Small Hex",
+  "positionTweenType": "SINEIN",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 250
+    },
+    {
+      "frac": 900,
+      "value": 400
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 11534160,
+  "startScale": 10,
+  "stayLow": 0
+}
+

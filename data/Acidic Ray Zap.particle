@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 850,
+      "value": 15662959
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 800,
+  "minLifetime": 800,
+  "name": "Acidic Ray Zap",
+  "objectType": "Ray Particle",
+  "positionTweenType": "EXPOIN",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 600
+    },
+    {
+      "frac": 900,
+      "value": 600
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 11534160,
+  "startScale": 10,
+  "stayLow": 1
+}
+

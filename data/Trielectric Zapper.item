@@ -6,7 +6,7 @@
     {
       "data": {
         "activeWhile": 0,
-        "amount": 120,
+        "amount": 100,
         "statType": 32
       },
       "tag": "ItemStat"

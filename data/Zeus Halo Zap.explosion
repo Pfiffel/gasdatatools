@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 7,
+      "maxDistPercent": 100,
+      "minDistPercent": 90,
+      "particleType": "Zeus Halo Zap",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Zeus Halo Zap",
+  "sound": "",
+  "volume": 100
+}
+

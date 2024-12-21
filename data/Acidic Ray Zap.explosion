@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 15,
+      "maxDistPercent": 100,
+      "minDistPercent": 30,
+      "particleType": "Acidic Ray Zap Bubbles",
+      "uniformAngles": 0
+    }
+  ],
+  "name": "Acidic Ray Zap",
+  "sound": "",
+  "volume": 100
+}
+
