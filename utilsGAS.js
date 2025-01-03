@@ -1442,6 +1442,21 @@ function IsPointInsidePoly(point, vs) {
 function FieldIsNoobZone(field) {
 	return (field.tag == "Zone 0" || field.tag == "Zone 1");
 }
+function GetFieldTier(field){
+	switch(field.tag)
+	{
+		case "Zone 0": return 0;
+		case "Zone 1": return 1;
+		case "Zone 2": return 2;
+		case "Zone 3": return 3;
+		case "Zone 4": return 4;
+		case "Zone 5": return 5;
+		case "Zone 6": return 6;
+		case "Zone 7": return 7;
+		case "Zone 8": return 8;
+	}
+	return -1;
+}
 function IsMiniBossSpawnInNoobZone(point, fields) {
 	var inside = false;
 	for (let i = 0; i < fields.length; i++) {
@@ -1468,8 +1483,13 @@ function MakeMap(ctx, scale, map) {
 	}
 	if (map.miniBossSpawns != undefined) for (let i = 0; i < map.miniBossSpawns.length; i++) {
 		var miniBoss = map.miniBossSpawns[i];
+		//let iCurrentZone = 0;
 		if (!IsMiniBossSpawnInNoobZone(miniBoss, map.monsterFields))
+		{
+			//iCurrentZone++;
+			//console.log(map.miniBossSpawns.length)
 			DrawCircle(ctx, scale, miniBoss, 2, map.mapRadius, "#AA4400");
+		}
 	}
 	for (let i = 0; i < map.lanes.length; i++) {
 		var lane = map.lanes[i];
