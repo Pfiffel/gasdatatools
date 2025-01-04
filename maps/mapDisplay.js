@@ -63,7 +63,7 @@ function AddMapSimple(map, divMaps) {
 	var cellMap = makeCell("", th);
 	MakeMapAndTitle(map, cellMap);
 	var cellZones = makeCell("", th);
-	
+
 	var monsterDiv = document.createElement('div');
 	let zoneCells = [];
 	for (let mF = 0; mF < map.monsterFields.length; mF++) {
@@ -87,7 +87,7 @@ function AddMapSimple(map, divMaps) {
 			let monster = getMonster(m.name);
 			monsterDiv.appendChild(monster.outputSimple());
 		}
-		zoneCells[map.monsterFields.length-mF-1].appendChild(monsterDiv);
+		zoneCells[map.monsterFields.length - mF - 1].appendChild(monsterDiv);
 	}
 	divMaps.appendChild(tbl);
 	divMaps.appendChild(tbl);
@@ -164,8 +164,7 @@ function AddMap(map, divMaps) {
 	divMaps.appendChild(tbl);
 }
 // TODO fix redundancy with the miniBossSpawns count above, also this is horribly optimized
-function GetTotalBossSpawns(map)
-{
+function GetTotalBossSpawns(map) {
 	let total = 0;
 	for (let i = 0; i < map.monsterFields.length; i++) {
 		var monsterField = map.monsterFields[i];

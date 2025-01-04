@@ -214,14 +214,13 @@ function makeHullCell(container, player) {
 	statRow(moveTable, "until full", tilFull + "s");
 	container.appendChild(moveTable);
 }
-function GetTotalMedalCost(unlocks)
-{
+function GetTotalMedalCost(unlocks) {
 	let total = 0;
 	for (let i = 0; i <= unlocks; i++) {
-		if(i <= MAX_MEDAL_COST_REF)
+		if (i <= MAX_MEDAL_COST_REF)
 			total += MEDAL_GLORY_COSTS[i];
 		else
-			total += MEDAL_GLORY_COSTS[MAX_MEDAL_COST_REF] + (i-MAX_MEDAL_COST_REF) * 1;
+			total += MEDAL_GLORY_COSTS[MAX_MEDAL_COST_REF] + (i - MAX_MEDAL_COST_REF) * 1;
 	}
 	return total;
 }

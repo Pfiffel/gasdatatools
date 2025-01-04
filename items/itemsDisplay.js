@@ -17,7 +17,7 @@ for (var i in SLOT_TYPES) {
 }
 //var showPortraits = makeInputCheckbox("Show Art", RefreshLists, filters, true);
 const FILTER_IMAGE_RESOLUTION = "Resolution";
-var portraitResolutions = [0,16,32,48,64,80,96,112,128];
+var portraitResolutions = [0, 16, 32, 48, 64, 80, 96, 112, 128];
 var head = document.createElement("div");
 head.textContent = "Icon Resolution";
 filters.appendChild(head);
@@ -182,21 +182,20 @@ function MakeAddonList(tier) {
 	}
 	return div;
 }
-function FullAddonTable()
-{
+function FullAddonTable() {
 	var tbl = document.createElement('table');
 	let th = tbl.insertRow();
 	makeHeaderCell("Addon", th);
 	makeHeaderCell("Effects", th);
 	//for (let t = 1; t < TIERS + 1; t++) {
-		for (var i = 0; i < gasData["addon"].length; i++) {
-			var item = gasData["addon"][i];
-			if (item.rarity != 1) continue;
-			let tr = tbl.insertRow();
-			var string = MakeStatsTable(item, item.tier, true, false, false, false, -1, true);
-			makeCell(item.name, tr);
-			makeCell(string, tr);
-		}
+	for (var i = 0; i < gasData["addon"].length; i++) {
+		var item = gasData["addon"][i];
+		if (item.rarity != 1) continue;
+		let tr = tbl.insertRow();
+		var string = MakeStatsTable(item, item.tier, true, false, false, false, -1, true);
+		makeCell(item.name, tr);
+		makeCell(string, tr);
+	}
 	//}
 	return tbl;
 }

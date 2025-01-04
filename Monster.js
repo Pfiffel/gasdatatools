@@ -151,8 +151,7 @@ class Monster {
 		}
 		return minions;
 	}
-	outputSimple()
-	{
+	outputSimple() {
 		let div = document.createElement('div');
 		div.classList.add("inline");
 		var divSprite = document.createElement('div');

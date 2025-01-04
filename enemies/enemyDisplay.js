@@ -42,8 +42,8 @@ function MakeMonsterList() {
 	var divList = document.createElement("div");
 	for (let i = 0; i < sortedMonsters.length; i++) {
 		var monsterData = sortedMonsters[i];
-		if(SkipCheck(monsterData)) continue;
-		
+		if (SkipCheck(monsterData)) continue;
+
 		var selName = document.querySelector('input[name="' + FILTER_NAME + '"]:checked').value;
 		var nameFound = selName == "Xenofrog" ? monsterData.name.includes(selName) & !monsterData.name.includes("Nest") : monsterData.name.includes(selName);
 		if (selName != "All" && !nameFound) continue;

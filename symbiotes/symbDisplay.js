@@ -33,7 +33,7 @@ function RefreshLists() {
 	}
 	for (let m = 0; m < gasData["monster"].length; m++) {
 		var monster = gasData["monster"][m];
-		if(SkipCheck(monster)) continue;
+		if (SkipCheck(monster)) continue;
 		if (!monster.name.includes("Nest") && isSymbioteDropper(monster))
 			SYMBIOTE_DROPPERS[getTier(monster.xp) - 2].push(monster);
 	}
@@ -43,7 +43,7 @@ function RefreshLists() {
 		var amount = GetSymbAmount(t);
 		combinations *= amount;
 		totalAmount += amount;
-		var headerCell = makeHeaderCell("Tier " + t + " - " + colorWrap(TIER_NAMES[t] + " Symbiotes", GetZoneColor(t-1)) + " - " + amount + " total", th);
+		var headerCell = makeHeaderCell("Tier " + t + " - " + colorWrap(TIER_NAMES[t] + " Symbiotes", GetZoneColor(t - 1)) + " - " + amount + " total", th);
 
 		if (showDroppers.checked) {
 			headerCell.innerHTML += "<br/>From: ";
@@ -96,8 +96,7 @@ function parseTierList(t) {
 	}
 	return div;
 }
-function FullSymbioteTable()
-{
+function FullSymbioteTable() {
 	var tbl = document.createElement('table');
 	let th = tbl.insertRow();
 	makeHeaderCell("Effects", th);

@@ -268,28 +268,26 @@ function IsPermaBoostFor(effect, stat) {
 }
 function IsTempBoostFor(effect, stat) {
 	// TODO need to expand this if we get a periodic stat boost effect
-	return (effect.tag == "StatBoostTrigger" && effect.data.statType == stat) || 
-	(effect.tag == "TriggeredTriggerEffect" && effect.data.params.tag == "StatBoostTrigger" && effect.data.params.data.statType == stat) || 
-	//(effect.tag == "PeriodicTriggerEffect" && effect.data.params[0].tag == "StatBoostTrigger" && effect.data.params[0].data.statType == stat) || 
-	(effect.tag == "TriggeredTriggerEffect" && IsBoostingPackFor(effect.data.params, stat)) || 
-	(effect.tag == "PeriodicTriggerEffect" && IsBoostingPackFor(effect.data.params, stat));
+	return (effect.tag == "StatBoostTrigger" && effect.data.statType == stat) ||
+		(effect.tag == "TriggeredTriggerEffect" && effect.data.params.tag == "StatBoostTrigger" && effect.data.params.data.statType == stat) ||
+		//(effect.tag == "PeriodicTriggerEffect" && effect.data.params[0].tag == "StatBoostTrigger" && effect.data.params[0].data.statType == stat) || 
+		(effect.tag == "TriggeredTriggerEffect" && IsBoostingPackFor(effect.data.params, stat)) ||
+		(effect.tag == "PeriodicTriggerEffect" && IsBoostingPackFor(effect.data.params, stat));
 }
-function IsBoostingPackFor(params, stat)
-{
+function IsBoostingPackFor(params, stat) {
 	let tempParams = []; if (!Array.isArray(params)) tempParams.push(params); else tempParams = params;
 	for (var p in tempParams) {
 		let params = tempParams[p];
-		if(params.tag == "PickupPackTrigger" && PowerListHasStatBoostFor(params.data, stat)) return true;
+		if (params.tag == "PickupPackTrigger" && PowerListHasStatBoostFor(params.data, stat)) return true;
 	}
 	return false;
 }
-function PowerListHasStatBoostFor(data, stat)
-{
+function PowerListHasStatBoostFor(data, stat) {
 	for (var t in data.triggers) {
-		if(data.triggers[t].tag == "StatBoostTrigger" && data.triggers[t].data.statType == stat) return true;
+		if (data.triggers[t].tag == "StatBoostTrigger" && data.triggers[t].data.statType == stat) return true;
 	}
 	for (var p in data.powers) {
-		if(data.powers[p].tag == "StatPower" && data.powers[p].data.statType == stat) return true;
+		if (data.powers[p].tag == "StatPower" && data.powers[p].data.statType == stat) return true;
 	}
 	return false;
 }
@@ -301,22 +299,20 @@ function IsTempBooster(effects) {
 	return false;
 }
 function IsTempBoost(effect) {
-	return (effect.tag == "StatBoostTrigger") || 
-	(effect.tag == "TriggeredTriggerEffect" && effect.data.params.tag == "StatBoostTrigger") || 
-	(effect.tag == "TriggeredTriggerEffect" && IsBoostingPack(effect.data.params));
+	return (effect.tag == "StatBoostTrigger") ||
+		(effect.tag == "TriggeredTriggerEffect" && effect.data.params.tag == "StatBoostTrigger") ||
+		(effect.tag == "TriggeredTriggerEffect" && IsBoostingPack(effect.data.params));
 }
-function IsBoostingPack(params)
-{
-	if(params.tag == "PickupPackTrigger" && PowerListHasStatBoost(params.data)) return true;
+function IsBoostingPack(params) {
+	if (params.tag == "PickupPackTrigger" && PowerListHasStatBoost(params.data)) return true;
 	return false;
 }
-function PowerListHasStatBoost(data)
-{
+function PowerListHasStatBoost(data) {
 	for (var t in data.triggers) {
-		if(data.triggers[t].tag == "StatBoostTrigger") return true;
+		if (data.triggers[t].tag == "StatBoostTrigger") return true;
 	}
 	for (var p in data.powers) {
-		if(data.powers[p].tag == "StatPower") return true;
+		if (data.powers[p].tag == "StatPower") return true;
 	}
 	return false;
 }
@@ -336,21 +332,19 @@ function IsShotgun(params, bHasNoOffset) {
 	if (!Array.isArray(params) && IsAoETag(params, "MineTrigger", !bHasNoOffset)) return true;
 	if (!Array.isArray(params) && IsAoETag(params, "ShotgunTrigger", bHasNoOffset)) return true;
 	for (var p in params) {
-		if(IsAoETag(params[p], "MineTrigger", !bHasNoOffset)) return true;
-		if(IsAoETag(params[p], "ShotgunTrigger", bHasNoOffset)) return true;
+		if (IsAoETag(params[p], "MineTrigger", !bHasNoOffset)) return true;
+		if (IsAoETag(params[p], "ShotgunTrigger", bHasNoOffset)) return true;
 	}
 	return false;
 }
-function IsAoETag(params, tag, bHasNoOffset)
-{
+function IsAoETag(params, tag, bHasNoOffset) {
 	if (params.tag == tag && (params.data.damage > 0) && (HasNoOffset(params.data) == bHasNoOffset))
 		return true;
 	if (params.bonus != undefined && params.bonus.tag == (tag + "Bonus") && (params.bonus.data.damage > 0) && (HasNoOffset(params.bonus.data) == bHasNoOffset))
 		return true;
 	return false;
 }
-function IsTag(params, tag)
-{
+function IsTag(params, tag) {
 	if (!Array.isArray(params) && params.tag == tag)
 		return true;
 	if (!Array.isArray(params) && params.bonus != undefined && params.bonus.tag == (tag + "Bonus"))
@@ -363,8 +357,7 @@ function IsTag(params, tag)
 	}
 	return false;
 }
-function GetTag(params, tag)
-{
+function GetTag(params, tag) {
 	let tempParams = []; if (!Array.isArray(params)) tempParams.push(params); else tempParams = params;
 	for (var p in tempParams) {
 		if (tempParams[p].tag == tag)
@@ -393,11 +386,10 @@ function IsFire(params) {
 	return false;
 }
 function IsFireParams(params) {
-	if (params.data != undefined)
-		{
-			if(params.data.statusEffects != undefined && IsFireEffects(params.data.statusEffects)) return true;
-			if(params.data.bonus != undefined && params.data.bonus.data.statusEffects != undefined && IsFireEffects(params.data.bonus.data.statusEffects)) return true;
-		}
+	if (params.data != undefined) {
+		if (params.data.statusEffects != undefined && IsFireEffects(params.data.statusEffects)) return true;
+		if (params.data.bonus != undefined && params.data.bonus.data.statusEffects != undefined && IsFireEffects(params.data.bonus.data.statusEffects)) return true;
+	}
 	return false;
 }
 function IsFireEffects(effects) {
@@ -406,39 +398,38 @@ function IsFireEffects(effects) {
 	}
 	return false;
 }
-function IsDuration(effects, name)
-{
+function IsDuration(effects, name) {
 	// TODO clean up this garbo
 	// TODO should i just recursively check for "duration" keys?
 
 	// i catch some pickups here but then do separate checks below...
-	if(IsTempBooster(effects)) return true;
+	if (IsTempBooster(effects)) return true;
 	//if(IsTag(effects, "StatBoostTrigger")) return true;
 
-	if(IsTag(effects, "DematerializeTrigger")) return true;
-	if(IsTag(effects, "HealOverTimeTrigger")) return true;
-	if(IsTag(effects, "MineTrigger")) return true;
-	if(IsTag(effects, "ExtraGunTrigger")) return true;
-	if(IsTag(effects, "ExtraShieldTrigger")) return true;
-	if(IsTag(effects, "GunProcTrigger")) return true;
+	if (IsTag(effects, "DematerializeTrigger")) return true;
+	if (IsTag(effects, "HealOverTimeTrigger")) return true;
+	if (IsTag(effects, "MineTrigger")) return true;
+	if (IsTag(effects, "ExtraGunTrigger")) return true;
+	if (IsTag(effects, "ExtraShieldTrigger")) return true;
+	if (IsTag(effects, "GunProcTrigger")) return true;
 
 	let tempEffects = [];
 	if (!Array.isArray(effects)) tempEffects.push(effects); else tempEffects = effects;
 	//console.log(tempEffects.length, name);
 	for (var e in tempEffects) {
 		let effect = tempEffects[e];
-		if(IsDurationEffectParams(effect)) return true;
-		if(effect.tag == "TriggeredTriggerEffect" && effect.data.params.tag == "PickupPackTrigger")
+		if (IsDurationEffectParams(effect)) return true;
+		if (effect.tag == "TriggeredTriggerEffect" && effect.data.params.tag == "PickupPackTrigger")
 			for (var t in effect.data.params.data.triggers) {
 				var trigger = effect.data.params.data.triggers[t];
-				if(IsDurationEffectParams(trigger)) return true;
-				if(IsDuration(trigger)) return true;
+				if (IsDurationEffectParams(trigger)) return true;
+				if (IsDuration(trigger)) return true;
 			}
 		if (effect.tag == "PeriodicTriggerEffect")
 			for (var p in effect.data.params) {
 				var params = effect.data.params[p];
-				if(IsBoostingPack(params)) return true;
-				if(IsDuration(params)) return true;
+				if (IsBoostingPack(params)) return true;
+				if (IsDuration(params)) return true;
 			}
 	}
 	return false;
@@ -453,11 +444,10 @@ function IsDoT(params) {
 	return false;
 }
 function IsDoTParams(params) {
-	if (params.data != undefined)
-		{
-			if(params.data.statusEffects != undefined && IsDoTEffects(params.data.statusEffects)) return true;
-			if(params.data.bonus != undefined && params.data.bonus.data.statusEffects != undefined && IsDoTEffects(params.data.bonus.data.statusEffects)) return true;
-		}
+	if (params.data != undefined) {
+		if (params.data.statusEffects != undefined && IsDoTEffects(params.data.statusEffects)) return true;
+		if (params.data.bonus != undefined && params.data.bonus.data.statusEffects != undefined && IsDoTEffects(params.data.bonus.data.statusEffects)) return true;
+	}
 	return false;
 }
 function IsDoTEffects(effects) {
@@ -468,11 +458,10 @@ function IsDoTEffects(effects) {
 	return false;
 }
 function IsDurationEffectParams(params) {
-	if (params.data != undefined)
-		{
-			if(params.data.statusEffects != undefined && IsDurationEffects(params.data.statusEffects)) return true;
-			if(params.data.bonus != undefined && params.data.bonus.data.statusEffects != undefined && IsDurationEffects(params.data.bonus.data.statusEffects)) return true;
-		}
+	if (params.data != undefined) {
+		if (params.data.statusEffects != undefined && IsDurationEffects(params.data.statusEffects)) return true;
+		if (params.data.bonus != undefined && params.data.bonus.data.statusEffects != undefined && IsDurationEffects(params.data.bonus.data.statusEffects)) return true;
+	}
 	return false;
 }
 function IsDurationEffects(effects) {
@@ -491,11 +480,10 @@ function IsFrost(params) {
 	return false;
 }
 function IsFrostParams(params) {
-	if (params.data != undefined)
-		{
-			if(params.data.statusEffects != undefined && IsFrostEffects(params.data.statusEffects)) return true;
-			if(params.data.bonus != undefined && params.data.bonus.data.statusEffects != undefined && IsFrostEffects(params.data.bonus.data.statusEffects)) return true;
-		}
+	if (params.data != undefined) {
+		if (params.data.statusEffects != undefined && IsFrostEffects(params.data.statusEffects)) return true;
+		if (params.data.bonus != undefined && params.data.bonus.data.statusEffects != undefined && IsFrostEffects(params.data.bonus.data.statusEffects)) return true;
+	}
 	return false;
 }
 function IsFrostEffects(effects) {
@@ -507,7 +495,7 @@ function IsFrostEffects(effects) {
 }
 function HasNoOffset(data) {
 	// no offset means it's MineTrigger in this case
-	if(data.offset == undefined) return false;
+	if (data.offset == undefined) return false;
 	if (data.offset.x == 0 && data.offset.y == 0) return true;
 	return false;
 }
@@ -673,7 +661,7 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, iPortrait = 0, bDescr
 			var condition = (activeWhile != undefined && activeWhile != 0) ? ("While " + classWrap(ACTIVE_WHILE_NAMES[activeWhile][1], "cKeyValue") + ", every ") : "Every ";
 			s += condition + classWrap(ToTime(data.cooldown), "cKeyValue") + chanceTo + ":<br/>";
 			let cooldownAndChanceMult = (10 / data.cooldown) * data.percentChance;
-			if(data.targetingRange != 0) s += printKeyAndData("Activation Range", data.targetingRange, "", AddReticle(data.reticleColor));
+			if (data.targetingRange != 0) s += printKeyAndData("Activation Range", data.targetingRange, "", AddReticle(data.reticleColor));
 			for (var p in data.params) {
 				var effect = data.params[p];
 				let o = GetTriggeredEffectString(effect.tag, effect.data, delayArray);
@@ -1559,9 +1547,8 @@ function IsPointInsidePoly(point, vs) {
 function FieldIsNoobZone(field) {
 	return (field.tag == "Zone 0" || field.tag == "Zone 1");
 }
-function GetFieldTier(field){
-	switch(field.tag)
-	{
+function GetFieldTier(field) {
+	switch (field.tag) {
 		case "Zone 0": return 0;
 		case "Zone 1": return 1;
 		case "Zone 2": return 2;
@@ -1601,8 +1588,7 @@ function MakeMap(ctx, scale, map) {
 	if (map.miniBossSpawns != undefined) for (let i = 0; i < map.miniBossSpawns.length; i++) {
 		var miniBoss = map.miniBossSpawns[i];
 		//let iCurrentZone = 0;
-		if (!IsMiniBossSpawnInNoobZone(miniBoss, map.monsterFields))
-		{
+		if (!IsMiniBossSpawnInNoobZone(miniBoss, map.monsterFields)) {
 			//iCurrentZone++;
 			//console.log(map.miniBossSpawns.length)
 			DrawCircle(ctx, scale, miniBoss, 2, map.mapRadius, "#AA4400");
