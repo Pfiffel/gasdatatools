@@ -20,7 +20,7 @@ function parseData() {
 function MakeList() {
 	tableOutput.appendChild(MakeTextDiv("<h2>Timed Effect Enhancers"));
 	tableOutput.appendChild(TimedEffectBoostersTable());
-	tableOutput.appendChild(MakeTextDiv("<h2>Timed Effect Sources"));
+	tableOutput.appendChild(MakeTextDiv("<h2>Timed Effect and Duration Sources"));
 	tableOutput.appendChild(TimedEffectTable());
 	tableOutput.appendChild(MakeTextDiv("<h2>Damage Type Enhancers"));
 	tableOutput.appendChild(DamageTypeBoostersTable());
@@ -36,6 +36,7 @@ function TimedEffectBoostersTable() {
 	let th = tbl.insertRow();
 	makeHeaderCell("", th);
 	makeHeaderCell(STAT_TYPES[STATS_TIMED.TIMED_EFFECT_FIRE_RATE][1], th);
+	makeHeaderCell(STAT_TYPES[STATS_TIMED.DURATION][1], th);
 	let tr2 = tbl.insertRow();
 	/*
 	makeHeaderCell("Accolade Bonuses", tr2);
@@ -73,6 +74,7 @@ function TimedEffectTable() {
 	let th = tbl.insertRow();
 	makeHeaderCell("", th);
 	makeHeaderCell("Timed Effect", th);
+	makeHeaderCell("Effect Duration", th);
 	let tr = tbl.insertRow();
 	makeHeaderCell("Triggers & Passives", tr);
 	for (var stat in STATS_TIMED) {
@@ -80,14 +82,13 @@ function TimedEffectTable() {
 		let cell = makeCell("", tr);
 		cell.appendChild(MakeTriggerList(i));
 	}
-	/*
 	let tr2 = tbl.insertRow();
 	makeHeaderCell("Accolade Bonuses", tr2);
 	for (var stat in STATS_TIMED) {
 		let i = STATS_TIMED[stat];
 		let cell = makeCell("", tr2);
 		cell.appendChild(MakeSymbioteItemList(gasData.accolade, i));
-	}*/
+	}
 	let tr3 = tbl.insertRow();
 	makeHeaderCell("Symbiotes", tr3);
 	for (var stat in STATS_TIMED) {
@@ -359,8 +360,7 @@ function MakeSymbioteItemList(type, stat) {
 	for (let i = 0; i < type.length; i++) {
 		var thing = type[i];
 		try {
-
-			var hasEffect = DataHasEffect(thing.effects, stat);
+			var hasEffect = DataHasEffect(thing.effects, stat, thing.name);
 			if (hasEffect) {
 				//console.log(thing.name, stat)
 				let tbl;
@@ -384,7 +384,7 @@ function MakeSymbioteItemList(type, stat) {
 	}
 	return div;
 }
-function CheckParams(params, stat) {
+function CheckParams(params, stat, name = "") {
 	if (
 		(IsBlast(params) && stat == STATS.BLAST_DAMAGE) ||
 		(IsBomb(params) && stat == STATS.BOMB_DAMAGE) ||
@@ -393,19 +393,22 @@ function CheckParams(params, stat) {
 		(IsDoT(params) && stat == STATS.DOT_DAMAGE) ||
 		(IsFire(params) && stat == STATS_ELEMENTAL.DAMAGE_VS_BURNING) ||
 		(IsFrost(params) && stat == STATS_ELEMENTAL.DAMAGE_VS_FROZEN) ||
-		(IsPeriodic(params) && stat == STATS_TIMED.TIMED_EFFECT_FIRE_RATE)
+		(IsPeriodic(params) && stat == STATS_TIMED.TIMED_EFFECT_FIRE_RATE) ||
+		(IsDuration(params, name) && stat == STATS_TIMED.DURATION)
 	) {
 		return true;
 	}
 	return false;
 }
-function DataHasEffect(effect, stat) {
+function DataHasEffect(effect, stat, name = "") {
 	for (let p = 0; p < effect.length; p++) {
-		if (CheckParams(effect[p], stat))
+		if (CheckParams(effect[p], stat, name))
 			return true;
+	}
+	for (let p = 0; p < effect.length; p++) {
 		var params = effect[p].data.params;
 		if (params == undefined) return false;
-		if (CheckParams(params, stat))
+		if (CheckParams(params, stat, name))
 			return true;
 	}
 	return false;

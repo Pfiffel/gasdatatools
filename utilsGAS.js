@@ -41,6 +41,7 @@ const STATS_BOOSTERS = {
 	20: [20],
 	39: [39],
 	40: [40],
+	41: [41],
 }
 const STATS_ELEMENTAL = {
 	DAMAGE_VS_BURNING: 15,
@@ -48,6 +49,7 @@ const STATS_ELEMENTAL = {
 }
 const STATS_TIMED = {
 	TIMED_EFFECT_FIRE_RATE: 39,
+	DURATION: 41,
 }
 const STAT_TYPES = {
 	"0": ["DAMAGE", "Gun Damage", false],
@@ -91,6 +93,7 @@ const STAT_TYPES = {
 	"38": ["TRIGGER_1_FIRE_RATE", "Trigger 1 Rate of Fire", false],
 	"39": ["TIMED_EFFECT_FIRE_RATE", "Timed Effect Fire Rate", false],
 	"40": ["DOT_DAMAGE", "Damage Over Time", false],
+	"41": ["DURATION", "Effect Duration", false],
 };
 const ACTIVE_WHILE_NAMES = {
 	"0": ["ALWAYS", "always"],
@@ -226,6 +229,7 @@ const ITEM_SORTING_INDEX =
 	"Zapper": 15,
 	"Cooler": 16,
 	"Catalyst": 17,
+	"Extender": 18,
 }
 function GetItemSortingIndexByName(item) {
 	for (let category in ITEM_SORTING_INDEX) {
@@ -251,19 +255,70 @@ function isSymbioteDropper(monster) {
 }
 function IsBoosterFor(effects, stat) {
 	//console.log(effects, stat)
-	if (!Array.isArray(effects) && IsPermaBoost(effects, stat)) return true;
-	if (!Array.isArray(effects) && IsTempBoost(effects, stat)) return true;
+	if (!Array.isArray(effects) && IsPermaBoostFor(effects, stat)) return true;
+	if (!Array.isArray(effects) && IsTempBoostFor(effects, stat)) return true;
 	for (var p in effects) {
-		if (IsPermaBoost(effects[p], stat)) return true;
-		if (IsTempBoost(effects[p], stat)) return true;
+		if (IsPermaBoostFor(effects[p], stat)) return true;
+		if (IsTempBoostFor(effects[p], stat)) return true;
 	}
 	return false;
 }
-function IsPermaBoost(effect, stat) {
+function IsPermaBoostFor(effect, stat) {
 	return (effect.tag == "ItemStat" && (effect.data.statType == stat));
 }
-function IsTempBoost(effect, stat) {
-	return (effect.tag == "TriggeredTriggerEffect" && (effect.data.params.tag == "StatBoostTrigger") && effect.data.params.data.statType == stat);
+function IsTempBoostFor(effect, stat) {
+	// TODO need to expand this if we get a periodic stat boost effect
+	return (effect.tag == "StatBoostTrigger" && effect.data.statType == stat) || 
+	(effect.tag == "TriggeredTriggerEffect" && effect.data.params.tag == "StatBoostTrigger" && effect.data.params.data.statType == stat) || 
+	//(effect.tag == "PeriodicTriggerEffect" && effect.data.params[0].tag == "StatBoostTrigger" && effect.data.params[0].data.statType == stat) || 
+	(effect.tag == "TriggeredTriggerEffect" && IsBoostingPackFor(effect.data.params, stat)) || 
+	(effect.tag == "PeriodicTriggerEffect" && IsBoostingPackFor(effect.data.params, stat));
+}
+function IsBoostingPackFor(params, stat)
+{
+	let tempParams = []; if (!Array.isArray(params)) tempParams.push(params); else tempParams = params;
+	for (var p in tempParams) {
+		let params = tempParams[p];
+		if(params.tag == "PickupPackTrigger" && PowerListHasStatBoostFor(params.data, stat)) return true;
+	}
+	return false;
+}
+function PowerListHasStatBoostFor(data, stat)
+{
+	for (var t in data.triggers) {
+		if(data.triggers[t].tag == "StatBoostTrigger" && data.triggers[t].data.statType == stat) return true;
+	}
+	for (var p in data.powers) {
+		if(data.powers[p].tag == "StatPower" && data.powers[p].data.statType == stat) return true;
+	}
+	return false;
+}
+function IsTempBooster(effects) {
+	if (!Array.isArray(effects) && IsTempBoost(effects)) return true;
+	for (var p in effects) {
+		if (IsTempBoost(effects[p])) return true;
+	}
+	return false;
+}
+function IsTempBoost(effect) {
+	return (effect.tag == "StatBoostTrigger") || 
+	(effect.tag == "TriggeredTriggerEffect" && effect.data.params.tag == "StatBoostTrigger") || 
+	(effect.tag == "TriggeredTriggerEffect" && IsBoostingPack(effect.data.params));
+}
+function IsBoostingPack(params)
+{
+	if(params.tag == "PickupPackTrigger" && PowerListHasStatBoost(params.data)) return true;
+	return false;
+}
+function PowerListHasStatBoost(data)
+{
+	for (var t in data.triggers) {
+		if(data.triggers[t].tag == "StatBoostTrigger") return true;
+	}
+	for (var p in data.powers) {
+		if(data.powers[p].tag == "StatPower") return true;
+	}
+	return false;
 }
 function IsBlast(params) {
 	if (IsShotgun(params, true) || IsShotgun(params, false))
@@ -308,6 +363,17 @@ function IsTag(params, tag)
 	}
 	return false;
 }
+function GetTag(params, tag)
+{
+	let tempParams = []; if (!Array.isArray(params)) tempParams.push(params); else tempParams = params;
+	for (var p in tempParams) {
+		if (tempParams[p].tag == tag)
+			return tempParams[p];
+		if (tempParams[p].bonus != undefined && tempParams[p].bonus.tag == (tag + "Bonus"))
+			return tempParams[p];
+	}
+	return null;
+}
 function IsMissile(params) {
 	return IsTag(params, "SharkletTrigger");
 }
@@ -340,6 +406,43 @@ function IsFireEffects(effects) {
 	}
 	return false;
 }
+function IsDuration(effects, name)
+{
+	// TODO clean up this garbo
+	// TODO should i just recursively check for "duration" keys?
+
+	// i catch some pickups here but then do separate checks below...
+	if(IsTempBooster(effects)) return true;
+	//if(IsTag(effects, "StatBoostTrigger")) return true;
+
+	if(IsTag(effects, "DematerializeTrigger")) return true;
+	if(IsTag(effects, "HealOverTimeTrigger")) return true;
+	if(IsTag(effects, "MineTrigger")) return true;
+	if(IsTag(effects, "ExtraGunTrigger")) return true;
+	if(IsTag(effects, "ExtraShieldTrigger")) return true;
+	if(IsTag(effects, "GunProcTrigger")) return true;
+
+	let tempEffects = [];
+	if (!Array.isArray(effects)) tempEffects.push(effects); else tempEffects = effects;
+	//console.log(tempEffects.length, name);
+	for (var e in tempEffects) {
+		let effect = tempEffects[e];
+		if(IsDurationEffectParams(effect)) return true;
+		if(effect.tag == "TriggeredTriggerEffect" && effect.data.params.tag == "PickupPackTrigger")
+			for (var t in effect.data.params.data.triggers) {
+				var trigger = effect.data.params.data.triggers[t];
+				if(IsDurationEffectParams(trigger)) return true;
+				if(IsDuration(trigger)) return true;
+			}
+		if (effect.tag == "PeriodicTriggerEffect")
+			for (var p in effect.data.params) {
+				var params = effect.data.params[p];
+				if(IsBoostingPack(params)) return true;
+				if(IsDuration(params)) return true;
+			}
+	}
+	return false;
+}
 function IsDoT(params) {
 	if (!Array.isArray(params) && IsDoTParams(params))
 		return true;
@@ -361,6 +464,20 @@ function IsDoTEffects(effects) {
 	for (let i = 0; i < effects.length; i++) {
 		if (effects[i].tag == "BurningEffect") return true;
 		if (effects[i].tag == "DoTEffect") return true;
+	}
+	return false;
+}
+function IsDurationEffectParams(params) {
+	if (params.data != undefined)
+		{
+			if(params.data.statusEffects != undefined && IsDurationEffects(params.data.statusEffects)) return true;
+			if(params.data.bonus != undefined && params.data.bonus.data.statusEffects != undefined && IsDurationEffects(params.data.bonus.data.statusEffects)) return true;
+		}
+	return false;
+}
+function IsDurationEffects(effects) {
+	for (let i = 0; i < effects.length; i++) {
+		if (effects[i].data.duration != undefined) return true;
 	}
 	return false;
 }
