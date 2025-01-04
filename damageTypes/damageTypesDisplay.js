@@ -288,6 +288,7 @@ function DamageTypeBoostersTable() {
 }
 function MakeTriggerList(stat) {
 	var div = document.createElement('div');
+	//var currentPlayer = "";
 	// TODO fix redundancy in playerDisplay
 	for (let i = 0; i < gasData.champion.length; i++) {
 		var player = gasData.champion[i];
@@ -316,11 +317,19 @@ function MakeTriggerList(stat) {
 				continue;
 			}
 		}
+		/*
+		if (currentPlayer != player.name) {
+			currentPlayer = player.name;
+			// TODO only linebreak if previous tank had any entries...
+			div.appendChild(document.createElement('br'));
+		}
+		*/
 	}
 	return div;
 }
 function MakeSymbioteItemListBoosters(type, stat, isRare) {
 	var div = document.createElement('div');
+	let entries = [];
 	for (let i = 0; i < type.length; i++) {
 		var thing = type[i];
 		try {
@@ -330,21 +339,34 @@ function MakeSymbioteItemListBoosters(type, stat, isRare) {
 			if (hasEffect) {
 				//console.log(type == gasData.item, thing.rare, isRare, )
 				let tbl;
-				if (type == gasData.accolade)
+				let sortObj = {};
+				if (type == gasData.accolade) {
 					tbl = MakeStatsTable(thing, 0, false, false, false, false, false, false, true);
-				else if (type == gasData.symbiote)
+				}
+				else if (type == gasData.symbiote) {
 					tbl = MakeStatsTable(thing, thing.tier, true, false, false);
-				else if (type == gasData.item && isRare && thing.rare == 1)
+					sortObj.t = thing.tier;
+				}
+				else if (type == gasData.item && isRare && thing.rare == 1) {
 					tbl = MakeStatsTable(thing, thing.credits);
-				else if (type == gasData.item && !isRare && thing.rare == 0)
+					sortObj.t = thing.credits;
+				}
+				else if (type == gasData.item && !isRare && thing.rare == 0) {
 					tbl = MakeStatsTable(thing, thing.credits);
-				else if (type == gasData.item && isRare == undefined)
+					sortObj.t = thing.credits;
+				}
+				else if (type == gasData.item && isRare == undefined) {
 					tbl = MakeStatsTable(thing, thing.credits);
-				else if (type == gasData.addon)
+					sortObj.t = thing.credits;
+				}
+				else if (type == gasData.addon) {
 					tbl = MakeStatsTable(thing);
+					sortObj.t = thing.rarity;
+				}
 				if (tbl == undefined) continue;
 				tbl.classList.add("inline");
-				div.appendChild(tbl);
+				sortObj.e = tbl;
+				entries.push(sortObj);
 				continue;
 			}
 		}
@@ -353,10 +375,15 @@ function MakeSymbioteItemListBoosters(type, stat, isRare) {
 			console.log(e);
 		}
 	}
+	entries.sort((a, b) => (a.t - b.t));
+	for (let i in entries) {
+		div.appendChild(entries[i].e);
+	}
 	return div;
 }
 function MakeSymbioteItemList(type, stat) {
 	var div = document.createElement('div');
+	let entries = [];
 	for (let i = 0; i < type.length; i++) {
 		var thing = type[i];
 		try {
@@ -364,16 +391,25 @@ function MakeSymbioteItemList(type, stat) {
 			if (hasEffect) {
 				//console.log(thing.name, stat)
 				let tbl;
-				if (type == gasData.accolade)
+				let sortObj = {};
+				if (type == gasData.accolade) {
 					tbl = MakeStatsTable(thing, 0, false, false, false, false, false, false, true);
-				else if (type == gasData.symbiote)
+				}
+				else if (type == gasData.symbiote) {
 					tbl = MakeStatsTable(thing, thing.tier, true, false, false);
-				else if (type == gasData.item)
+					sortObj.t = thing.tier;
+				}
+				else if (type == gasData.item) {
 					tbl = MakeStatsTable(thing, thing.credits);
-				else if (type == gasData.addon)
+					sortObj.t = thing.credits;
+				}
+				else if (type == gasData.addon) {
 					tbl = MakeStatsTable(thing);
+					sortObj.t = thing.rarity;
+				}
 				tbl.classList.add("inline");
-				div.appendChild(tbl);
+				sortObj.e = tbl;
+				entries.push(sortObj);
 				continue;
 			}
 		}
@@ -381,6 +417,17 @@ function MakeSymbioteItemList(type, stat) {
 			console.log(thing.name);
 			console.log(e);
 		}
+	}
+	entries.sort((a, b) => (a.t - b.t));
+	//let tempT = -1;
+	for (let i in entries) {
+		/*
+		if (tempT != entries[i].t) {
+			tempT = entries[i].t;
+			div.appendChild(document.createElement('br'));
+		}
+		*/
+		div.appendChild(entries[i].e);
 	}
 	return div;
 }
