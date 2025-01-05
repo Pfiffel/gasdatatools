@@ -5,6 +5,7 @@ var datatypes = ["item", "addon", "monster", "object", "globals", "symbiote", "c
 loadGasData();
 
 var header = document.getElementById("header");
+var tankIndex = {};
 
 function RefreshLists() {
 	tableOutput.innerHTML = "";
@@ -12,6 +13,10 @@ function RefreshLists() {
 }
 function parseData() {
 	SetTierColorsFromGlobals();
+	for (let i = 0; i < gasData.champion.length; i++) {
+		var player = gasData.champion[i];
+		tankIndex[player.name] = i;
+	}
 	var h1List = document.createElement("h1");
 	h1List.textContent = "Timed Effects and Damage Types";
 	header.appendChild(h1List);
@@ -342,6 +347,7 @@ function MakeSymbioteItemListBoosters(type, stat, isRare) {
 				let sortObj = {};
 				if (type == gasData.accolade) {
 					tbl = MakeStatsTable(thing, 0, false, false, false, false, false, false, true);
+					sortObj.t = tankIndex[thing.champion];
 				}
 				else if (type == gasData.symbiote) {
 					tbl = MakeStatsTable(thing, thing.tier, true, false, false);
@@ -394,6 +400,7 @@ function MakeSymbioteItemList(type, stat) {
 				let sortObj = {};
 				if (type == gasData.accolade) {
 					tbl = MakeStatsTable(thing, 0, false, false, false, false, false, false, true);
+					sortObj.t = tankIndex[thing.champion];
 				}
 				else if (type == gasData.symbiote) {
 					tbl = MakeStatsTable(thing, thing.tier, true, false, false);
