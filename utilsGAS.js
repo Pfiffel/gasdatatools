@@ -958,6 +958,9 @@ function GetTriggeredEffectString(tag, data, delayArray) {
 		s += o.s;
 		damage += o.damage;
 	}
+	else if (tag == "GunChargeTrigger") {
+		s += "Double the damage of the next shot of each gun" + "<br/>";
+	}
 	else if (tag == "LeapTrigger") {
 		s += printKeyAndData("Leap Distance", data.range);
 		if (data.collisionSettings.vamp) s += "Collision Heals<br/>";
