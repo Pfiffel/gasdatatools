@@ -231,6 +231,7 @@ function makeEquipmentCell(container, player) {
 	makeHeaderCell("Start", thE);
 	makeHeaderCell("Max", thE);
 	makeHeaderCell("Medals", thE);
+	var totalSlots = 0;
 	var totalMedals = 0;
 	var totalUnlocks = 0;
 	for (let i = 0; i < player.slotLimits.length; i++) {
@@ -244,8 +245,10 @@ function makeEquipmentCell(container, player) {
 		var totalCost = (unlocks * (unlocks + 1)) / 2;
 		totalMedals += totalCost;
 		makeCell(totalCost, trE);
+		totalSlots += type.maxSlots;
 	}
 	container.appendChild(eqTable);
+	//container.innerHTML += "Total Slots: <b>" + totalSlots + "</b><br/>";
 	container.innerHTML += "Total Medals: <b>" + totalMedals + "</b>";
 	if (miniProgressionTable[player.name] == undefined) miniProgressionTable[player.name] = {};
 	miniProgressionTable[player.name].slots = totalUnlocks;
