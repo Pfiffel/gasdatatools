@@ -19,7 +19,7 @@ const NOTES_GUN_DPS = {
 	"Wasp": "Does not consider passive",
 	"Yeti": "Does not consider passive"
 };
-var datatypes = ["champion", "object", "accolade"]; // for utilGAS to load files, calls parseData once completed
+var datatypes = ["champion", "object", "accolade", "defect"]; // for utilGAS to load files, calls parseData once completed
 loadGasData();
 function Refresh() {
 	let tbl = document.createElement('table');
@@ -102,6 +102,7 @@ function Refresh() {
 	tableOutput.appendChild(tbl);
 	makeMiniDPSTable(tableOutput);
 	makeMiniProgressionTable(tableOutput);
+	makeDefectsTable(tableOutput);
 }
 function parseData() {
 	header.innerHTML = "<h1>Player Tanks</h1>";
@@ -539,4 +540,28 @@ function drawShields(shieldDrawData, strengthPerLevel) {
 		}
 	}
 	return canvas;
+}
+function makeDefectsTable(container) {
+	tbl = document.createElement('table');
+	let th = tbl.insertRow();
+	makeHeaderCell("Defect Name", th);
+	makeHeaderCell("Max Amount", th);
+	makeHeaderCell("Effect", th);
+	makeHeaderCell("Max Effect", th);
+	let total = 0;
+	for (let i = 0; i < gasData.defect.length; i++) {
+		var defect = gasData.defect[i];
+		let tr = tbl.insertRow();
+		makeCell(defect.name, tr, "name");
+		total += defect.maxCount;
+		makeCell(defect.maxCount, tr);
+		let statType = defect.effects[0].data.statType;
+		let amount = defect.effects[0].data.amount;
+		makeCell(classWrap(amountToString(amount, GetStat(statType, 2)), "cKeyValue") + GetStat(statType, 1), tr);
+		makeCell(classWrap(amountToString(defect.maxCount * amount, GetStat(statType, 2)), "cKeyValue") + GetStat(statType, 1), tr);
+	}
+	var div = document.createElement('div');
+	div.innerHTML += "Defects (total types " + gasData.defect.length + ", total applicable " + total + ")";
+	container.appendChild(div);
+	container.appendChild(tbl);
 }
