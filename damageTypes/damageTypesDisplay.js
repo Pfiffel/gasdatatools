@@ -23,7 +23,7 @@ function parseData() {
 	RefreshLists();
 }
 function MakeList() {
-	tableOutput.appendChild(MakeTextDiv("<h2>Timed Effect Enhancers"));
+	tableOutput.appendChild(MakeTextDiv("<h2>Timed Effect and Duration Enhancers"));
 	tableOutput.appendChild(TimedEffectBoostersTable());
 	tableOutput.appendChild(MakeTextDiv("<h2>Timed Effect and Duration Sources"));
 	tableOutput.appendChild(TimedEffectTable());
