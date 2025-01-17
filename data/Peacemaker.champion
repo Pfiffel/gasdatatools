@@ -32,9 +32,19 @@
   "passives": [
     {
       "data": {
-        "cooldown": 1000
+        "activeWhile": 0,
+        "cooldown": 1000,
+        "params": [
+          {
+            "data": {},
+            "tag": "GunChargeTrigger"
+          }
+        ],
+        "percentChance": 100,
+        "reticleColor": 11184810,
+        "targetingRange": 0
       },
-      "tag": "GunCharger"
+      "tag": "PeriodicTriggerEffect"
     }
   ],
   "radius": 20,

@@ -197,6 +197,9 @@
     "shieldHits": "Shield Hits",
     "teleportJoin": "Teleport Join",
     "teleportLeave": "Teleport Leave",
+    "teleportableBeacon": "Beacon Event",
+    "teleportableConvoyBoss": "Convoy Boss Event",
+    "teleportableMiniBoss": "Mini Boss Event",
     "triggerError": "Trigger Error"
   },
   "tieredItemLimits": [

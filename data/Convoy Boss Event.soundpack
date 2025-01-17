@@ -1,0 +1,8 @@
+{
+  "name": "Convoy Boss Event",
+  "sounds": [
+    "UI_Convoy_Boss_Engaged"
+  ],
+  "volume": 200
+}
+

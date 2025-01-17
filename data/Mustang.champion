@@ -49,7 +49,7 @@
   "passives": [
     {
       "data": {
-        "activeWhile": 15,
+        "activeWhile": 13,
         "cooldown": 350,
         "params": [
           {
@@ -375,7 +375,6 @@
             "armingTime": 750,
             "creationSound": "",
             "creationVolume": 50,
-            "duration": 15000,
             "emitterType": "Heal Mine",
             "expiryExplosion": "Heal Mine Expiry",
             "healing": 85,

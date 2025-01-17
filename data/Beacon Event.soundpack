@@ -1,0 +1,7 @@
+{
+  "name": "Beacon Event",
+  "sounds": [
+    "UI_Beacon_Discovered"
+  ],
+  "volume": 200
+}

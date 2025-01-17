@@ -52,7 +52,7 @@
                 "tooltip": ""
               }
             ],
-            "sound": "retro_laser_01",
+            "sound": "Item_Effect_Acidic_Ray_Zap",
             "statusEffects": [
               {
                 "data": {

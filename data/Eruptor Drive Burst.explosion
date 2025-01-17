@@ -16,7 +16,7 @@
     }
   ],
   "name": "Eruptor Drive Burst",
-  "sound": "Player_Warthog_PolaricDetonation",
-  "volume": 50
+  "sound": "Item_Effect_Eruptor_Drive_Explode",
+  "volume": 100
 }
 

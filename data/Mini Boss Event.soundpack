@@ -1,0 +1,8 @@
+{
+  "name": "Mini Boss Event",
+  "sounds": [
+    "UI_Mini_Boss_Engaged"
+  ],
+  "volume": 200
+}
+
