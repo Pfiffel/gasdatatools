@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 900,
+      "value": 16777215
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 2,
+  "maxLifetime": 700,
+  "minLifetime": 600,
+  "name": "Paragon Purge Inner",
+  "objectType": "Paragon Five Star",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 50,
+      "value": 800
+    },
+    {
+      "frac": 900,
+      "value": 800
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 16777215,
+  "startScale": 10,
+  "stayLow": 1
+}
+

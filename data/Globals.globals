@@ -57,6 +57,10 @@
       "term": "Addon"
     },
     {
+      "definition": "This reinforced protective plating reduces incoming hull damage, to a minimum of 1. However, it does not affect acid damage.",
+      "term": "Armor"
+    },
+    {
       "definition": "A teleportation node. GAS placed these here in years past, but native fauna seems highly attracted to them, and their nests and other constructions dull the signals. They can't be used until the critters have been cleared out.\nGAS HQ offers a standing reward for finding these in the wild, and another for bringing them online. Once activated, any tank can teleport to a beacon with a click on the map.",
       "term": "Beacon"
     },
@@ -202,6 +206,140 @@
     "teleportableMiniBoss": "Mini Boss Event",
     "triggerError": "Trigger Error"
   },
+  "statExplanations": [
+    {
+      "definition": "Increases acceleration, decreasing the time it takes the tank to reach its maximum speed.",
+      "term": "Acceleration"
+    },
+    {
+      "definition": "Increases armor. Always additive.",
+      "term": "Armor"
+    },
+    {
+      "definition": "Increases damage dealt by blasts. Can be additive or multiplicative.",
+      "term": "Blast Damage"
+    },
+    {
+      "definition": "Increases total energy, and therefore increases energy regeneration rate, because energy regeneration rate is a fixed percentage of the total energy pool.",
+      "term": "Energy"
+    },
+    {
+      "definition": "Increases DPS dealt by damage over time effects and burn effects, without changing duration.",
+      "term": "Damage Over Time"
+    },
+    {
+      "definition": "Increases the duration of all effects that have a duration.",
+      "term": "Effect Duration"
+    },
+    {
+      "definition": "Increases the glory needed to earn an accolade. Always additive.",
+      "term": "Glory Required for Accolade"
+    },
+    {
+      "definition": "Increases the rotational swivel range of all guns.",
+      "term": "Gun Arc"
+    },
+    {
+      "definition": "Increases damage dealt by guns. Can be additive or multiplicative.",
+      "term": "Gun Damage"
+    },
+    {
+      "definition": "Increases damage dealt by guns to targets which are already undergoing burn damage.",
+      "term": "Gun Damage vs Burning"
+    },
+    {
+      "definition": "Increases damage dealt by guns to targets which are frozen or chilled.",
+      "term": "Gun Damage vs Chilled"
+    },
+    {
+      "definition": "Increases the radius at which guns fire.",
+      "term": "Gun Range "
+    },
+    {
+      "definition": "Increases number of gun shots per time unit.",
+      "term": "Gun Rate of Fire"
+    },
+    {
+      "definition": "Increases radius of the tank's hitbox. Can shrink radius if negative, to a minimum of -75%.",
+      "term": "Hull Radius"
+    },
+    {
+      "definition": "Increases hull points. Can be additive or multiplicative.",
+      "term": "Hull Strength"
+    },
+    {
+      "definition": "Increases damage dealt by missiles. Can be additive or multiplicative.",
+      "term": "Missile Damage"
+    },
+    {
+      "definition": "Increases the number of missiles fired per volley. Always additive.",
+      "term": "Missile Salvo Size"
+    },
+    {
+      "definition": "Increases automatic self-repair, received instant repair and repair over time. Can be additive or multiplicative.",
+      "term": "Repair Rate"
+    },
+    {
+      "definition": "Increases the number of scoots per time unit.",
+      "term": "Scoot Rate"
+    },
+    {
+      "definition": "Increases the speed at which shield strength is recovered. Also reduces the delay before shield recovery begins.",
+      "term": "Shield Recovery Rate"
+    },
+    {
+      "definition": "Increases the thickness of shields. Can be additive or multiplicative.",
+      "term": "Shield Strength"
+    },
+    {
+      "definition": "Increases activations per time unit of timed effects.",
+      "term": "Timed Effect Fire Rate"
+    },
+    {
+      "definition": "Increases activations per time unit for all triggers.",
+      "term": "Trigger Rate of Fire"
+    },
+    {
+      "definition": "Increases activations per time unit for trigger 1.",
+      "term": "Trigger 1 Rate of Fire"
+    },
+    {
+      "definition": "Increases activations per time unit for trigger 2.",
+      "term": "Trigger 2 Rate of Fire"
+    },
+    {
+      "definition": "Increases activations per time unit for trigger 3.",
+      "term": "Trigger 3 Rate of Fire"
+    },
+    {
+      "definition": "Increases activations per time unit for trigger 4.",
+      "term": "Trigger 4 Rate of Fire"
+    },
+    {
+      "definition": "Increases the energy used by all triggers. Can reduce cost if negative, to a minimum of -75%.",
+      "term": "Trigger Energy Cost"
+    },
+    {
+      "definition": "Increases maximum speed of the tank.",
+      "term": "Top Speed"
+    },
+    {
+      "definition": "Increases the rotation speed of the tank.",
+      "term": "Turn Rate"
+    },
+    {
+      "definition": "Increases the amount of XP granted by destroying enemies.",
+      "term": "XP Bonus"
+    },
+    {
+      "definition": "Increases the maximum number of targets of zap attacks. Always additive.",
+      "term": "Zap Targets"
+    },
+    {
+      "definition": "Increases damage dealt by zaps. Can be additive or multiplicative.",
+      "term": "Zap Damage"
+    }
+  ],
   "tieredItemLimits": [
     {
       "limit": 12,

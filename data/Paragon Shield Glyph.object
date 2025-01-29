@@ -1,0 +1,47 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Paragon Shield Glyph",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 1279978,
+      "height": 0,
+      "mirror": 1,
+      "name": "Glyph",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -18,
+          "y": 0
+        },
+        {
+          "x": -13,
+          "y": 6
+        },
+        {
+          "x": 0,
+          "y": 15
+        },
+        {
+          "x": 14,
+          "y": 20
+        },
+        {
+          "x": 30,
+          "y": 21
+        },
+        {
+          "x": 27,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

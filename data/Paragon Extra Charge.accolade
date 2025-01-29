@@ -1,5 +1,6 @@
 {
-  "description": "Daybreak radiates power on all.",
+  "champion": "Paragon",
+  "displayName": "Extra Charge",
   "effects": [
     {
       "data": {
@@ -8,10 +9,10 @@
             "autoAim": 0,
             "damage": 0,
             "delay": 0,
-            "drawPictureInTooltip": 1,
-            "drawReticle": 1,
+            "drawPictureInTooltip": 0,
+            "drawReticle": 0,
             "drawTooltip": 1,
-            "explosionType": "Daybreak Blast",
+            "explosionType": "Paragon Purge Blast",
             "facing": 0,
             "halfArc": 1800,
             "mirror": 0,
@@ -20,7 +21,7 @@
               "y": 0
             },
             "purgeProjectiles": 1,
-            "range": 350,
+            "range": 300,
             "reticleColor": 11184810,
             "statusEffects": [
               {
@@ -30,19 +31,17 @@
                 "tag": "DisarmEffect"
               }
             ],
-            "tag": "",
-            "targetingDelay": 0,
-            "tooltip": "Blinding Sunburst"
+            "tag": "Paragon Extra Charge Purge",
+            "targetingDelay": 2500,
+            "tooltip": "Additional Supercharge Blast after 2.5s"
           },
           "tag": "ShotgunTrigger"
         },
-        "when": 8
+        "when": 4
       },
       "tag": "TriggeredTriggerEffect"
     }
   ],
-  "enemies": [],
-  "name": "Daybreak",
-  "tier": 6
+  "name": "Paragon Extra Charge"
 }
 

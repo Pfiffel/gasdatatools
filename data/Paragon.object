@@ -1,0 +1,270 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Turret Muzzle",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 45,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "bonePivots": [
+    {
+      "name": "Turret",
+      "p": {
+        "x": 8,
+        "y": 0
+      }
+    },
+    {
+      "name": "Aux Turret",
+      "p": {
+        "x": 2,
+        "y": 0
+      }
+    }
+  ],
+  "floppiness": 0,
+  "name": "Paragon",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11646398,
+      "height": 14,
+      "mirror": 1,
+      "name": "Lower Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 28,
+          "y": 13
+        },
+        {
+          "x": 10,
+          "y": 49
+        },
+        {
+          "x": -21,
+          "y": 49
+        },
+        {
+          "x": -15,
+          "y": 41
+        },
+        {
+          "x": -23,
+          "y": 15
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 15075080,
+      "height": 16,
+      "mirror": 1,
+      "name": "Nacelle",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 25,
+          "y": 32
+        },
+        {
+          "x": 27,
+          "y": 34
+        },
+        {
+          "x": 27,
+          "y": 36
+        },
+        {
+          "x": 25,
+          "y": 38
+        },
+        {
+          "x": -1,
+          "y": 38
+        },
+        {
+          "x": -3,
+          "y": 36
+        },
+        {
+          "x": -3,
+          "y": 34
+        },
+        {
+          "x": -1,
+          "y": 32
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 15075080,
+      "height": 16,
+      "mirror": 1,
+      "name": "Nacelle Outer",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 11,
+          "y": 48
+        },
+        {
+          "x": 13,
+          "y": 50
+        },
+        {
+          "x": 13,
+          "y": 53
+        },
+        {
+          "x": -24,
+          "y": 56
+        },
+        {
+          "x": -25,
+          "y": 52
+        },
+        {
+          "x": -22,
+          "y": 48
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11646398,
+      "height": 25,
+      "mirror": 1,
+      "name": "Engine",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -28,
+          "y": 11
+        },
+        {
+          "x": -43,
+          "y": 15
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 15075080,
+      "height": 26,
+      "mirror": 1,
+      "name": "Upper Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 75,
+          "y": 0
+        },
+        {
+          "x": 57,
+          "y": 13
+        },
+        {
+          "x": 28,
+          "y": 14
+        },
+        {
+          "x": 24,
+          "y": 21
+        },
+        {
+          "x": -29,
+          "y": 15
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 1279978,
+      "height": 29,
+      "mirror": 1,
+      "name": "Main Gun",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 36,
+          "y": 4
+        },
+        {
+          "x": 14,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Turret",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 11646398,
+      "height": 30,
+      "mirror": 1,
+      "name": "Main Turret",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 16,
+          "y": 2
+        },
+        {
+          "x": 14,
+          "y": 6
+        },
+        {
+          "x": 10,
+          "y": 8
+        },
+        {
+          "x": 5,
+          "y": 8
+        },
+        {
+          "x": 2,
+          "y": 6
+        },
+        {
+          "x": 0,
+          "y": 2
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+
