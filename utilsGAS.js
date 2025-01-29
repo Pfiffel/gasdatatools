@@ -94,6 +94,7 @@ const STAT_TYPES = {
 	"39": ["TIMED_EFFECT_FIRE_RATE", "Timed Effect Fire Rate", false],
 	"40": ["DOT_DAMAGE", "Damage Over Time", false],
 	"41": ["DURATION", "Effect Duration", false],
+	"42": ["ARMOR", "Armor", true],
 };
 const ACTIVE_WHILE_NAMES = {
 	"0": ["ALWAYS", "always"],
@@ -230,6 +231,7 @@ const ITEM_SORTING_INDEX =
 	"Cooler": 16,
 	"Catalyst": 17,
 	"Extender": 18,
+	"Armor": 19,
 }
 function GetItemSortingIndexByName(item) {
 	for (let category in ITEM_SORTING_INDEX) {
@@ -799,6 +801,11 @@ function GetBonusEffectString(tag, data) {
 	else if (tag == "SharkletTriggerBonus") {
 		if (data.count != 0) s += printKeyAndDataBonus("Missile Count", BonusPrefix(data.count));
 		if (data.damage != 0) s += printKeyAndDataBonus("Damage", BonusPrefix(data.damage));
+		if (data.range != 0) s += printKeyAndDataBonus("Range", BonusPrefix(data.range));
+	}
+	else if (tag == "ZapTriggerBonus") {
+		if (data.damage != 0) s += printKeyAndDataBonus("Damage", BonusPrefix(data.damage));
+		if (data.targets != 0) s += printKeyAndDataBonus("Target", BonusPrefix(data.targets));
 		if (data.range != 0) s += printKeyAndDataBonus("Range", BonusPrefix(data.range));
 	}
 	return s;
