@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 50,
+      "maxDistPercent": 100,
+      "minDistPercent": 80,
+      "particleType": "Paragon Burst",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Paragon Grenade",
+  "sound": "Player_Paragon_Bomb_Explode",
+  "volume": 100
+}
+

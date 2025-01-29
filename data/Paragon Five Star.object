@@ -1,0 +1,47 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Paragon Five Star",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16777215,
+      "height": 16,
+      "mirror": 1,
+      "name": "Upper Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 40,
+          "y": 0
+        },
+        {
+          "x": 14,
+          "y": 12
+        },
+        {
+          "x": 9,
+          "y": 39
+        },
+        {
+          "x": -9,
+          "y": 20
+        },
+        {
+          "x": -35,
+          "y": 24
+        },
+        {
+          "x": -22,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

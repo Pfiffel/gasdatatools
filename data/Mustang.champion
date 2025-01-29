@@ -1,7 +1,7 @@
 {
   "acceleration": 850,
   "angularAccel": 84,
-  "blurb": "Versatile medium tank",
+  "blurb": "Versatile minelayer tank",
   "choosable": 1,
   "equipment": [],
   "forwardThrustEmitter": "Mustang Main Thruster",
@@ -336,6 +336,7 @@
               "x": 250,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 150,
             "reticleColor": 11184810,
             "statusEffects": [],
@@ -416,6 +417,7 @@
               "x": 0,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 265,
             "reticleColor": 11184810,
             "statusEffects": [
@@ -461,6 +463,7 @@
               "x": 0,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 300,
             "reticleColor": 11184810,
             "statusEffects": [],

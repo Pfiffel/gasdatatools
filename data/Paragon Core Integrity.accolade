@@ -1,0 +1,23 @@
+{
+  "champion": "Paragon",
+  "displayName": "Core Integrity",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "healAmount": 10,
+            "usePercentInTooltip": 1
+          },
+          "tag": "HealTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Paragon 1 Heal",
+        "tooltip": "On Virtuon Blast:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Paragon Core Integrity"
+}
+

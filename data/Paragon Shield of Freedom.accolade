@@ -1,0 +1,22 @@
+{
+  "champion": "Paragon",
+  "displayName": "Shield of Freedom",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "refillPercentage": 25
+          },
+          "tag": "ShieldRefillTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Paragon 3 ShieldRefill",
+        "tooltip": "On Atomic Ray:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Paragon Shield of Freedom"
+}
+

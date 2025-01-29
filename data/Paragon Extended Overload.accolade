@@ -1,0 +1,23 @@
+{
+  "champion": "Paragon",
+  "displayName": "Extended Overload",
+  "effects": [
+    {
+      "data": {
+        "bonus": {
+          "data": {
+            "amount": 0,
+            "duration": 2000
+          },
+          "tag": "StatBoostTriggerBonus"
+        },
+        "showTooltipStats": 1,
+        "tag": "Paragon 4 StatBoost",
+        "tooltip": "On Supercharge:"
+      },
+      "tag": "TaggedTriggerBonus"
+    }
+  ],
+  "name": "Paragon Extended Overload"
+}
+

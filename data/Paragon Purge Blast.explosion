@@ -1,0 +1,50 @@
+{
+  "layers": [
+    {
+      "angularDensity": 20,
+      "maxDistPercent": 100,
+      "minDistPercent": 100,
+      "particleType": "Paragon Purge Outer",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 5,
+      "maxDistPercent": 80,
+      "minDistPercent": 80,
+      "particleType": "Paragon Purge Mid",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 5,
+      "maxDistPercent": 60,
+      "minDistPercent": 60,
+      "particleType": "Paragon Purge Mid",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 5,
+      "maxDistPercent": 40,
+      "minDistPercent": 40,
+      "particleType": "Paragon Purge Mid",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 5,
+      "maxDistPercent": 20,
+      "minDistPercent": 20,
+      "particleType": "Paragon Purge Mid",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 1,
+      "maxDistPercent": 0,
+      "minDistPercent": 0,
+      "particleType": "Paragon Purge Inner",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Paragon Purge Blast",
+  "sound": "Player_Paragon_Supercharge_Purge",
+  "volume": 120
+}
+

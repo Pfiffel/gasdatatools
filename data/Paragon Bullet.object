@@ -1,0 +1,47 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Paragon Bullet",
+  "shapes": [
+    {
+      "bone": "Main",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 1279978,
+      "height": 58,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 35,
+          "y": 3
+        },
+        {
+          "x": 27,
+          "y": 11
+        },
+        {
+          "x": 10,
+          "y": 14
+        },
+        {
+          "x": -16,
+          "y": 14
+        },
+        {
+          "x": -46,
+          "y": 7
+        },
+        {
+          "x": -65,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

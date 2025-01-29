@@ -1,0 +1,560 @@
+{
+  "acceleration": 900,
+  "angularAccel": 90,
+  "blurb": "Well-rounded starter tank",
+  "choosable": 1,
+  "equipment": [],
+  "forwardThrustEmitter": "Paragon Main Thruster",
+  "guns": [
+    {
+      "cooldown": 240,
+      "damage": 25,
+      "displayName": "",
+      "drawStatsInTooltip": 1,
+      "emitterType": "Paragon Guns",
+      "extraText": "",
+      "f": 0,
+      "halfArc": 1800,
+      "objectType": "Paragon Bullet",
+      "range": 300,
+      "reticleColor": 11184810,
+      "soundPack": "Paragon Guns",
+      "speed": 1200,
+      "tag": "",
+      "turretBone": "Turret"
+    }
+  ],
+  "healRate": 1,
+  "hp": 750,
+  "name": "Paragon",
+  "objectType": "Paragon",
+  "passiveName": "Valor",
+  "passives": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 40,
+        "statType": 0
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 40,
+        "statType": 21
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 40,
+        "statType": 32
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "radius": 20,
+  "reverseThrustEmitter": "Paragon Reverse Thruster",
+  "rotationDecay": 32,
+  "shields": [
+    {
+      "color": 1279978,
+      "displayName": "",
+      "left": -1800,
+      "level": 0,
+      "maxStrength": 250,
+      "right": 1800
+    }
+  ],
+  "slotLimits": [
+    {
+      "labelPos": {
+        "x": 207,
+        "y": 148
+      },
+      "maxSlots": 6,
+      "minSlots": 2,
+      "slotPositions": [
+        {
+          "x": 190,
+          "y": 172
+        },
+        {
+          "x": 120,
+          "y": 172
+        },
+        {
+          "x": 260,
+          "y": 172
+        },
+        {
+          "x": 190,
+          "y": 242
+        },
+        {
+          "x": 120,
+          "y": 242
+        },
+        {
+          "x": 260,
+          "y": 242
+        }
+      ]
+    },
+    {
+      "labelPos": {
+        "x": 194,
+        "y": 36
+      },
+      "maxSlots": 6,
+      "minSlots": 2,
+      "slotPositions": [
+        {
+          "x": 156,
+          "y": 57
+        },
+        {
+          "x": 223,
+          "y": 57
+        },
+        {
+          "x": 89,
+          "y": 57
+        },
+        {
+          "x": 290,
+          "y": 57
+        },
+        {
+          "x": 22,
+          "y": 57
+        },
+        {
+          "x": 357,
+          "y": 57
+        }
+      ]
+    },
+    {
+      "labelPos": {
+        "x": 28,
+        "y": 148
+      },
+      "maxSlots": 6,
+      "minSlots": 1,
+      "slotPositions": [
+        {
+          "x": 22,
+          "y": 172
+        },
+        {
+          "x": 22,
+          "y": 242
+        },
+        {
+          "x": 22,
+          "y": 312
+        },
+        {
+          "x": 22,
+          "y": 382
+        },
+        {
+          "x": 22,
+          "y": 452
+        },
+        {
+          "x": 22,
+          "y": 522
+        }
+      ]
+    },
+    {
+      "labelPos": {
+        "x": 198,
+        "y": 518
+      },
+      "maxSlots": 5,
+      "minSlots": 1,
+      "slotPositions": [
+        {
+          "x": 156,
+          "y": 540
+        },
+        {
+          "x": 226,
+          "y": 540
+        },
+        {
+          "x": 190,
+          "y": 610
+        },
+        {
+          "x": 120,
+          "y": 610
+        },
+        {
+          "x": 260,
+          "y": 610
+        }
+      ]
+    },
+    {
+      "labelPos": {
+        "x": 336,
+        "y": 148
+      },
+      "maxSlots": 4,
+      "minSlots": 0,
+      "slotPositions": [
+        {
+          "x": 357,
+          "y": 172
+        },
+        {
+          "x": 357,
+          "y": 242
+        },
+        {
+          "x": 357,
+          "y": 312
+        },
+        {
+          "x": 357,
+          "y": 382
+        }
+      ]
+    },
+    {
+      "labelPos": {
+        "x": 191,
+        "y": 332
+      },
+      "maxSlots": 6,
+      "minSlots": 2,
+      "slotPositions": [
+        {
+          "x": 190,
+          "y": 354
+        },
+        {
+          "x": 260,
+          "y": 354
+        },
+        {
+          "x": 120,
+          "y": 354
+        },
+        {
+          "x": 190,
+          "y": 425
+        },
+        {
+          "x": 260,
+          "y": 425
+        },
+        {
+          "x": 120,
+          "y": 425
+        }
+      ]
+    }
+  ],
+  "speedLimit": 235,
+  "triggers": [
+    {
+      "cooldown": 1000,
+      "description": "Damages nearby enemies with a burst of self-repairing virtuon particles",
+      "icon": "spiky-explosion",
+      "mana": 15,
+      "name": "Virtuon Blast",
+      "params": [
+        {
+          "data": {
+            "autoAim": 0,
+            "damage": 80,
+            "delay": 0,
+            "drawPictureInTooltip": 1,
+            "drawReticle": 0,
+            "drawTooltip": 1,
+            "explosionType": "Paragon Blast",
+            "facing": 0,
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "purgeProjectiles": 0,
+            "range": 300,
+            "reticleColor": 11184810,
+            "statusEffects": [],
+            "tag": "Paragon 1 Shotgun",
+            "targetingDelay": 0,
+            "tooltip": "Particle Discharge"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "applyToMana": 0,
+            "asPercentage": 1,
+            "glyphCount": 2,
+            "glyphDuration": 500,
+            "glyphRadius": 50,
+            "glyphType": "Heal Indicator",
+            "healAmount": 15,
+            "tag": "Paragon 1 Heal"
+          },
+          "tag": "HealTrigger"
+        }
+      ],
+      "sound": "",
+      "volume": 50
+    },
+    {
+      "cooldown": 5000,
+      "description": "Fires a trio of grenades while performing a self-repair protocol",
+      "icon": "striking-balls",
+      "mana": 15,
+      "name": "Justice Barrage",
+      "params": [
+        {
+          "data": {
+            "autoAim": 0,
+            "damage": 80,
+            "delay": 500,
+            "drawPictureInTooltip": 1,
+            "drawReticle": 1,
+            "drawTooltip": 0,
+            "explosionType": "Paragon Grenade",
+            "facing": 0,
+            "halfArc": 1800,
+            "mirror": 1,
+            "offset": {
+              "x": 230,
+              "y": 60
+            },
+            "purgeProjectiles": 0,
+            "range": 78,
+            "reticleColor": 11184810,
+            "statusEffects": [],
+            "tag": "Paragon 2 Shotgun 1",
+            "targetingDelay": 0,
+            "tooltip": ""
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "delay": 0,
+            "duration": 500,
+            "emitterType": "Paragon Bomb Trail",
+            "facing": 0,
+            "mirror": 1,
+            "objectType": "Paragon Bomb",
+            "sound": "",
+            "tag": "Paragon 2 Shotgun 1 Slug",
+            "target": {
+              "x": 230,
+              "y": 60
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        },
+        {
+          "data": {
+            "autoAim": 0,
+            "damage": 80,
+            "delay": 500,
+            "drawPictureInTooltip": 1,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Paragon Grenade",
+            "facing": 0,
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 190,
+              "y": 0
+            },
+            "purgeProjectiles": 0,
+            "range": 78,
+            "reticleColor": 11184810,
+            "statusEffects": [],
+            "tag": "Paragon 2 Shotgun 2",
+            "targetingDelay": 0,
+            "tooltip": "Triple Detonation"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "delay": 0,
+            "duration": 500,
+            "emitterType": "Paragon Bomb Trail",
+            "facing": 0,
+            "mirror": 0,
+            "objectType": "Paragon Bomb",
+            "sound": "",
+            "tag": "Paragon 2 Shotgun 2 Slug",
+            "target": {
+              "x": 190,
+              "y": 0
+            },
+            "volume": 50
+          },
+          "tag": "SlugTrigger"
+        },
+        {
+          "data": {
+            "applyToMana": 0,
+            "asPercentage": 1,
+            "glyphCount": 2,
+            "glyphDuration": 500,
+            "glyphRadius": 50,
+            "glyphType": "Heal Indicator",
+            "healAmount": 25,
+            "tag": "Paragon 2 Heal"
+          },
+          "tag": "HealTrigger"
+        }
+      ],
+      "sound": "Player_Paragon_Bomb_Launch",
+      "volume": 100
+    },
+    {
+      "cooldown": 10000,
+      "description": "Zaps a nearby target with a searing ray of atomic energy, recharging shields with overflow power",
+      "icon": "sinusoidal-beam",
+      "mana": 15,
+      "name": "Atomic Ray",
+      "params": [
+        {
+          "data": {
+            "damage": 300,
+            "particleLines": [
+              {
+                "arcOffset": 0,
+                "halfArc": 0,
+                "maxDist": 10,
+                "minDist": 5,
+                "particleType": "Paragon Zap",
+                "spacing": 25
+              }
+            ],
+            "range": 300,
+            "reticleColor": 11184810,
+            "shotguns": [
+              {
+                "autoAim": 0,
+                "damage": 0,
+                "delay": 0,
+                "drawPictureInTooltip": 0,
+                "drawReticle": 0,
+                "drawTooltip": 0,
+                "explosionType": "Paragon Zap",
+                "facing": 0,
+                "halfArc": 1800,
+                "mirror": 0,
+                "offset": {
+                  "x": 0,
+                  "y": 0
+                },
+                "range": 50,
+                "reticleColor": 11184810,
+                "statusEffects": [],
+                "tag": "",
+                "targetingDelay": 0,
+                "tooltip": ""
+              }
+            ],
+            "sound": "",
+            "statusEffects": [],
+            "tag": "Paragon 3 Zap",
+            "targets": 1,
+            "volume": 120
+          },
+          "tag": "ZapTrigger"
+        },
+        {
+          "data": {
+            "glyphCount": 8,
+            "glyphDuration": 500,
+            "glyphRadius": 70,
+            "glyphType": "Paragon Shield Glyph",
+            "refillPercentage": 50,
+            "shieldIndex": -1,
+            "tag": "Paragon 3 ShieldRefill"
+          },
+          "tag": "ShieldRefillTrigger"
+        }
+      ],
+      "sound": "Player_Paragon_AtomicRay_Zap",
+      "volume": 120
+    },
+    {
+      "cooldown": 30000,
+      "description": "Blasts away nearby enemy projectiles, temporarily boosting gun fire rate",
+      "icon": "teleport",
+      "mana": 15,
+      "name": "Supercharge",
+      "params": [
+        {
+          "data": {
+            "autoAim": 0,
+            "damage": 0,
+            "delay": 0,
+            "drawPictureInTooltip": 0,
+            "drawReticle": 0,
+            "drawTooltip": 1,
+            "explosionType": "Paragon Purge Blast",
+            "facing": 0,
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "purgeProjectiles": 1,
+            "range": 300,
+            "reticleColor": 11184810,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 1000
+                },
+                "tag": "DisarmEffect"
+              }
+            ],
+            "tag": "Paragon 4 Purge",
+            "targetingDelay": 0,
+            "tooltip": "Supercharge Blast"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        {
+          "data": {
+            "amount": 150,
+            "duration": 5000,
+            "emitterType": "Paragon Boost",
+            "glyphCount": 8,
+            "glyphOrientation": 0,
+            "glyphRadius": 80,
+            "glyphType": "Paragon RoF Glyph",
+            "maxStacks": 0,
+            "statType": 5,
+            "tag": "Paragon 4 StatBoost"
+          },
+          "tag": "StatBoostTrigger"
+        }
+      ],
+      "sound": "",
+      "volume": 100
+    }
+  ]
+}
+

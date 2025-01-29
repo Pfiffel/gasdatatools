@@ -1,0 +1,21 @@
+{
+  "arcOffset": 400,
+  "cooldown": 40,
+  "endSound": "Player_Paragon_Movement_End",
+  "endVolume": 20,
+  "halfArc": 50,
+  "loopSound": "Player_Paragon_Movement_Loop",
+  "loopVolume": 20,
+  "maxDist": 50,
+  "minDist": 25,
+  "mirror": 1,
+  "name": "Paragon Reverse Thruster",
+  "particleCount": 1,
+  "particleTypes": [
+    "Paragon Thruster",
+    "Paragon Thruster 2"
+  ],
+  "startSound": "Player_Paragon_Movement_Start",
+  "startVolume": 20
+}
+
