@@ -8,7 +8,6 @@
       "bone": "Hand",
       "clones": [],
       "closed": 0,
-      "collider": 0,
       "color": 14663747,
       "height": 10,
       "mirror": 1,
@@ -16,16 +15,16 @@
       "noDraw": 0,
       "points": [
         {
-          "x": -14,
-          "y": 7
+          "x": -12,
+          "y": 6
         },
         {
           "x": 0,
-          "y": 16
+          "y": 14
         },
         {
-          "x": 14,
-          "y": 7
+          "x": 12,
+          "y": 6
         }
       ],
       "useBoneMirror": 1

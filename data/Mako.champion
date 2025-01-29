@@ -299,7 +299,6 @@
               "x": 0,
               "y": 0
             },
-            "purgeProjectiles": 0,
             "range": 290,
             "reticleColor": 11184810,
             "statusEffects": [],
@@ -315,7 +314,7 @@
     },
     {
       "cooldown": 5000,
-      "description": "Lunges forward to attack with plasma jaws, restoring hull and cooldown on a hit",
+      "description": "Lunges forward to attack with plasma jaws, restoring hull and cooldown on a hit.",
       "icon": "shark-jaws",
       "mana": 18,
       "name": "Jaws",
@@ -397,7 +396,6 @@
               "x": 0,
               "y": 0
             },
-            "purgeProjectiles": 0,
             "range": 290,
             "reticleColor": 11184810,
             "statusEffects": [

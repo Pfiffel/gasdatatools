@@ -25,7 +25,7 @@
         "bonus": {
           "data": {
             "count": 0,
-            "damage": 10,
+            "damage": 6,
             "range": 0,
             "speed": 0,
             "timeGap": 0
