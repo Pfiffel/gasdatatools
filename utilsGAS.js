@@ -603,6 +603,7 @@ function GetTriggeredEffectString(tag, data, delayArray) {
 		if (hashAoE != newHashAoE) {
 			if (data.tooltip != "") s += data.tooltip + "<br/>";
 			if (data.damage > 0) s += printKeyAndData(GetBlastOrBombString(data) + " Damage", data.damage);
+			if (data.purgeProjectiles == 1) s += "Destroys Enemy Projecties<br/>";
 			s += printKeyAndData("Range", data.range, "", AddReticle(data.reticleColor));
 			//if(data.delay > 0) s += printKeyAndData("First Delay", ToTime(data.delay));
 			s += printKeyAndData("Arc", (data.halfArc * 0.2) + "°");
