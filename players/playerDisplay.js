@@ -10,14 +10,16 @@ const CHECKBOX_ACCOLADES = "Show Accolades";
 const NOTES_DPS = {
 	"Mustang": "Does not consider passive",
 	"Wasp": "Assumes you always hit all Trigger 1 projectiles",
-	"Mako": "Does not consider Trigger 2 cooldown and energy resets\nDoes not consider extra output during Trigger 4 debuff"
+	"Mako": "Does not consider Trigger 2 cooldown and energy resets\nDoes not consider extra output during Trigger 4 debuff",
+	"Paragon": "Does not consider passive",
 };
 const NOTES_GUN_DPS = {
 	"Hercules": "Does not consider passive",
 	"Peacemaker": "Does not consider passive",
 	"Warthog": "Does not consider passive",
 	"Wasp": "Does not consider passive",
-	"Yeti": "Does not consider passive"
+	"Yeti": "Does not consider passive",
+	"Paragon": "Does not consider passive",
 };
 var datatypes = ["champion", "object", "accolade", "defect"]; // for utilGAS to load files, calls parseData once completed
 loadGasData();
@@ -330,6 +332,7 @@ function makeTriggerCell(container, player) {
 			if (params.tag == "ShotgunTrigger") damage += params.data.damage * (params.data.mirror + 1);
 			if (params.tag == "LeapTrigger") damage += params.data.collisionSettings.damage;
 			if (params.tag == "SharkletTrigger") damage += params.data.count * params.data.damage;
+			if (params.tag == "ZapTrigger") damage += params.data.damage;
 			// TODO make this more correcterer for when a trigger has BOTH FireRateBoostTrigger and DamageBoostTrigger
 			if (params.tag == "FireRateBoostTrigger") {
 				let totalBonusDPS = 0;
