@@ -104,7 +104,7 @@ function MakeList() {
 	}
 	for (let i = 0; i < gasData["monster"].length; i++) {
 		var monsterData = gasData["monster"][i];
-		if (monsterSkip[monsterData.name] == true) continue;
+		//if (monsterSkip[monsterData.name] == true) continue;
 		var monster = new Monster(monsterData);
 		CountObject(monster.data, monster.data.objectType);
 		CheckAnimation(monster.data, monster.data, "idleAnimation");
@@ -251,7 +251,11 @@ function CheckWeapon(monster, weapon, compound, index) {
 	var wD = compound ? weapon.data : weapon.params.data;
 	var tag = compound ? weapon.tag : weapon.params.tag;
 	if (wD.gunBulletType != undefined) CheckBullet(monster.data, wD, "gunBulletType");
-	if (wD.monsterName != undefined) CheckMonster(monster.data, wD, "monsterName");
+	if (wD.monsterNames != undefined && wD.monsterNames.length != 0) 
+		for (var m in wD.monsterNames) {
+			let minion = wD.monsterNames[m]
+			CheckMonster(monster.data, minion);
+		}
 	if (weapon.objectType != undefined && weapon.objectType != "") CountObject(monster.data, weapon.objectType);
 	if (wD.objectType != undefined && wD.objectType != "") CountObject(monster.data, wD.objectType);
 	var add = index + " ";
@@ -312,9 +316,9 @@ function CheckBullet(root, data, tag) {
 	var bullet = getBullet(data[tag]);
 	if (bullet == null) MakeError(root.name + ": " + tag + " <b>" + data[tag] + "</b> not found!");
 }
-function CheckMonster(root, data, tag) {
-	var monster = getMonster(data[tag]);
-	if (monster == null) MakeError(root.name + ": " + tag + " <b>" + data[tag] + "</b> not found!");
+function CheckMonster(root, name) {
+	var monster = getMonster(name);
+	if (monster == null) MakeError(root.name + ": <b>" + name + "</b> not found!");
 }
 function MakeError(text) {
 	let div = document.createElement('div');
