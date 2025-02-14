@@ -235,7 +235,7 @@ function CheckTriggeredEffect(origin, name, tag, data) {
 		soundList[origin][name]["ProjectilePurge"] = getExplosionSound(data.explosionType);
 	}
 	else if (tag == "PickupPackTrigger") {
-		soundList[origin][name]["Pickup Create"] = data.creationSound;
+		if(data.creationSound !== "") soundList[origin][name]["Pickup Create"] = data.creationSound;
 		soundList[origin][name]["Pickup Pickup"] = getExplosionSound(data.pickupExplosion);
 		soundList[origin][name]["Pickup Expire"] = getExplosionSound(data.expiryExplosion);
 	}
