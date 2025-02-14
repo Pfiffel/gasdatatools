@@ -1054,7 +1054,7 @@ function GetLane(type) {
 	}
 }
 const globalSkip = true;
-const globalSkipSearch = ["Cactus", "Dune", "Desert", "Blue"];
+const globalSkipSearch = ["Cactus", "Dune", "Desert", "Saguaro"];
 function SkipCheck(entity) {
 	for (let i = 0; i < globalSkipSearch.length; i++) {
 		var toSkip = globalSkipSearch[i];
