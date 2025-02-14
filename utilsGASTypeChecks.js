@@ -145,7 +145,7 @@ function IsFireEffects(effects) {
 }
 function IsDuration(effects, name) {
 	// TODO clean up this garbo
-	// TODO should i just recursively check for "duration" keys?
+	// TODO should i just recursively check for "duration" and "dematerialTime" keys?
 
 	// i catch some pickups here but then do separate checks below...
 	if (IsTempBooster(effects)) return true;
@@ -157,6 +157,7 @@ function IsDuration(effects, name) {
 	if (IsTag(effects, "ExtraGunTrigger")) return true;
 	if (IsTag(effects, "ExtraShieldTrigger")) return true;
 	if (IsTag(effects, "GunProcTrigger")) return true;
+	if (IsTag(effects, "LeapTrigger")) return true;
 
 	let tempEffects = [];
 	if (!Array.isArray(effects)) tempEffects.push(effects); else tempEffects = effects;
