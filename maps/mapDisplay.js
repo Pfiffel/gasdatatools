@@ -252,7 +252,19 @@ function convoyBossesTable(lair) {
 	var cd = lair.convoyPeriodSeconds / 60;
 	if (lair.convoyBosses.length) div.innerHTML += "Convoy every " + round(cd, 2) + " minutes (" + round((1 / cd) * 60, 2) + "/h)<br/>Difficulty: " + lair.convoyDifficulty + "<br/><br/>";
 	for (let i = 0; i < lair.convoyBosses.length; i++) {
-		div.innerHTML += getMonster(lair.convoyBosses[i]).printBasic(lair.convoyDifficulty / 3) + "<br/>";
+		div.innerHTML += getMonster(lair.convoyBosses[i]).printBasic(GetHPScale(lair.convoyDifficulty)) + "<br/>";
 	}
 	return div;
+}
+const MAX_CONVOY_DIFFICULTY = 6;
+function GetHPScale(convoyDifficulty) {
+	switch (convoyDifficulty) {
+		case 1: return .333;                     // 1/3
+		case 2: return .5;                       // 1/2
+		case 3: return .75;                      // 3/4
+		case 4: return 1.333;                    // 4/3
+		case 5: return 2.0;                      // 2/1
+		case MAX_CONVOY_DIFFICULTY: return 3.0;  // 3/1
+		default: return 1.0;
+	}
 }
