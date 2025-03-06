@@ -258,7 +258,8 @@ class Monster {
 		return "<span class=\"power\">" + s + "</span>";
 	}
 	damageInfo(damage) {
-		let armorInfo = "(min <b>" + parseInt(damage * (1 - 0.75)) + "</b>) ";
+		let min = parseInt(damage * (1 - 0.75));
+		let armorInfo = "(min <b>" + min + "</b>, " + (damage-min) + " armor) ";
 		return damage == 0 ? "" : ("<b>" + damage + "</b> damage " + armorInfo);
 	}
 	outputAttacks(scale = SCALE_STANDARD, bShowSounds = false) {
