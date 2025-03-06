@@ -1,0 +1,18 @@
+{
+  "arcOffset": 0,
+  "cooldown": 0,
+  "endSound": "",
+  "endVolume": 50,
+  "halfArc": 0,
+  "loopSound": "",
+  "loopVolume": 50,
+  "maxDist": 0,
+  "minDist": 0,
+  "mirror": 0,
+  "name": "Skylark Cloak",
+  "particleCount": 0,
+  "particleTypes": [],
+  "startSound": "Symbiote_Effect_Skylark_Cloak",
+  "startVolume": 100
+}
+

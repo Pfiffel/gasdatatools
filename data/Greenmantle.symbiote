@@ -11,10 +11,14 @@
             "glyphDuration": 500,
             "glyphRadius": 50,
             "glyphType": "",
-            "healAmount": 60
+            "healAmount": 60,
+            "tag": ""
           },
           "tag": "HealTrigger"
         },
+        "sound": "Symbiote_Effect_Greenmantle_Refill",
+        "soundPack": "",
+        "volume": 150,
         "when": 4
       },
       "tag": "TriggeredTriggerEffect"

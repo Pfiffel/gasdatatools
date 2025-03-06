@@ -5,13 +5,18 @@
       "data": {
         "cooldown": 800,
         "damage": 24,
+        "displayName": "",
+        "drawStatsInTooltip": 1,
         "emitterType": "Goblin Trail",
+        "extraText": "",
         "f": 0,
         "halfArc": 1100,
         "objectType": "Goblin Bullet",
         "range": 290,
-        "soundPack": "Wasp Guns",
+        "reticleColor": 11184810,
+        "soundPack": "Goblin Guns",
         "speed": 800,
+        "tag": "",
         "turretBone": ""
       },
       "tag": "PlayerGunStats"

@@ -9,6 +9,7 @@
             "duration": 3000,
             "emitterType": "",
             "glyphCount": 8,
+            "glyphOrientation": 0,
             "glyphRadius": 80,
             "glyphType": "Ephesus Glyph",
             "maxStacks": 1,
@@ -17,6 +18,9 @@
           },
           "tag": "StatBoostTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 11
       },
       "tag": "TriggeredTriggerEffect"
@@ -35,6 +39,9 @@
           },
           "tag": "ShieldRefillTrigger"
         },
+        "sound": "",
+        "soundPack": "Scarab Refill",
+        "volume": 50,
         "when": 11
       },
       "tag": "TriggeredTriggerEffect"

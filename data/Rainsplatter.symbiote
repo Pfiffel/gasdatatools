@@ -17,6 +17,9 @@
           },
           "tag": "HealOverTimeTrigger"
         },
+        "sound": "Symbiote_Effect_Rainsplatter_Heal",
+        "soundPack": "",
+        "volume": 100,
         "when": 5
       },
       "tag": "TriggeredTriggerEffect"

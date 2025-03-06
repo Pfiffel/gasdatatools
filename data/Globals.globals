@@ -1,9 +1,9 @@
 {
   "bossDifficultyFactors": {
-    "perAccoladeMicros": 3000,
-    "perBossKillMicros": 3000,
-    "perExtraPlayerMicros": 100000,
-    "perUnlockedSlotMicros": 3000
+    "perAccoladeMicros": 10000,
+    "perBossKillMicros": 10000,
+    "perExtraPlayerMicros": 80000,
+    "perUnlockedSlotMicros": 10000
   },
   "defaultSymbiotes": [
     "Barnacle",
@@ -117,12 +117,20 @@
       "term": "Medal"
     },
     {
+      "definition": "These larger enemies have twice the hull points but provide twice the XP and ten times the loot of the ordinary versions.",
+      "term": "Mk2 Enemy"
+    },
+    {
       "definition": "Very few planets in the galaxy have high concentrations of symbiotes, precursor techs and elder AIs. These places must be defended from the forces of evil.\nQuagmire is a stinking, festering swamp, overgrown with acidic carnivorous plants called Bogweeds and overrun with invasive, aggressive, ill-tempered amphibians called Xenofrogs.\nGAS HQ is currently calculating jump coordinates for an arid, inhospitable desert world known to the troops as Sandpit.\nThese planets, worthless for human habitation but invaluable for their resources, are where GAS must do its work.",
       "term": "Planet"
     },
     {
       "definition": "Built by an unknown elder civilization, these ancient devices can interface with modern military equipment to provide strong bonuses and enhancements.\nNot every tank can accept precursor techs, but decorated pilots may choose to activate special sockets into which they may be installed.\nOnce installed, precursor techs bind with the host tank and cannot be removed nondestructively. Therefore, discretion must be used when installing these devices in the field.\nPrecursor techs have another unique property: no pair of identical precursor techs can be installed on the same tank.",
       "term": "Precursor Tech"
+    },
+    {
+      "definition": "GAS HQ designates certain Mk2 enemies for immediate priority destruction, for triple their normal XP.",
+      "term": "Priority Target"
     },
     {
       "definition": "After a tank reaches level 20, it can and should be retired back to GAS HQ for distribution to the front-line troops. Retirement can happen immediately upon reaching level 20, or later if the pilot wishes to pursue a medal, or even an accolade.\nRetiring powerful tanks is the primary job of a GAS pilot.",
@@ -193,6 +201,7 @@
   ],
   "name": "Globals",
   "soundPacks": {
+    "armorClanks": "Armor Clanks",
     "hullHits": "Hull Hits",
     "playerDeath": "Player Death",
     "priorityTargetAcquired": "Priority Target Acquired",

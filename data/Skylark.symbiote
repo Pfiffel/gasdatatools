@@ -6,12 +6,15 @@
         "params": {
           "data": {
             "duration": 750,
-            "emitterType": "",
+            "emitterType": "Skylark Cloak",
             "percentChance": 67,
             "tag": ""
           },
           "tag": "DematerializeTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 0
       },
       "tag": "TriggeredTriggerEffect"

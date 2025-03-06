@@ -9,6 +9,7 @@
             "duration": 5000,
             "emitterType": "",
             "glyphCount": 6,
+            "glyphOrientation": 0,
             "glyphRadius": 45,
             "glyphType": "Lionheart Glyph",
             "maxStacks": 0,
@@ -17,6 +18,9 @@
           },
           "tag": "StatBoostTrigger"
         },
+        "sound": "",
+        "soundPack": "Lionheart Boost",
+        "volume": 50,
         "when": 11
       },
       "tag": "TriggeredTriggerEffect"

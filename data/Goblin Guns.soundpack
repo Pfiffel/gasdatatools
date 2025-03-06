@@ -1,0 +1,13 @@
+{
+  "name": "Goblin Guns",
+  "sounds": [
+    "Symbiote_Effect_Goblin_Gun_01",
+    "Symbiote_Effect_Goblin_Gun_02",
+    "Symbiote_Effect_Goblin_Gun_03",
+    "Symbiote_Effect_Goblin_Gun_04",
+    "Symbiote_Effect_Goblin_Gun_05",
+    "Symbiote_Effect_Goblin_Gun_06"
+  ],
+  "volume": 50
+}
+

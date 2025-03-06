@@ -1,0 +1,10 @@
+{
+  "name": "Armor Clanks",
+  "sounds": [
+    "Player_ArmorHit_01",
+    "Player_ArmorHit_02",
+    "Player_ArmorHit_03"
+  ],
+  "volume": 100
+}
+

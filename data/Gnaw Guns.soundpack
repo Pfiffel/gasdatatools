@@ -1,0 +1,10 @@
+{
+  "name": "Gnaw Guns",
+  "sounds": [
+    "Symbiote_Effect_Gnaw_Gun_01",
+    "Symbiote_Effect_Gnaw_Gun_04",
+    "Symbiote_Effect_Gnaw_Gun_05"
+  ],
+  "volume": 150
+}
+

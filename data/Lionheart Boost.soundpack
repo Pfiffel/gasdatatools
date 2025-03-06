@@ -1,0 +1,10 @@
+{
+  "name": "Lionheart Boost",
+  "sounds": [
+    "Symbiote_Effect_Lionheart_Boost_01",
+    "Symbiote_Effect_Lionheart_Boost_02",
+    "Symbiote_Effect_Lionheart_Boost_03"
+  ],
+  "volume": 150
+}
+

@@ -9,14 +9,18 @@
             "duration": 1500,
             "emitterType": "",
             "glyphCount": 12,
+            "glyphOrientation": 0,
             "glyphRadius": 90,
             "glyphType": "Shrike Glyph",
-            "noStack": 0,
+            "maxStacks": 0,
             "statType": 5,
             "tag": ""
           },
           "tag": "StatBoostTrigger"
         },
+        "sound": "Symbiote_Effect_Shrike_Boost",
+        "soundPack": "",
+        "volume": 100,
         "when": 7
       },
       "tag": "TriggeredTriggerEffect"
@@ -29,14 +33,18 @@
             "duration": 1500,
             "emitterType": "",
             "glyphCount": 0,
+            "glyphOrientation": 0,
             "glyphRadius": 0,
             "glyphType": "",
-            "noStack": 0,
+            "maxStacks": 0,
             "statType": 0,
             "tag": ""
           },
           "tag": "StatBoostTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 7
       },
       "tag": "TriggeredTriggerEffect"

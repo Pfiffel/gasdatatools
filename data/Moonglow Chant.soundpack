@@ -1,0 +1,12 @@
+{
+  "name": "Moonglow Chant",
+  "sounds": [
+    "Symbiote_Effect_Moonglow_Heal_01",
+    "Symbiote_Effect_Moonglow_Heal_02",
+    "Symbiote_Effect_Moonglow_Heal_03",
+    "Symbiote_Effect_Moonglow_Heal_04",
+    "Symbiote_Effect_Moonglow_Heal_05"
+  ],
+  "volume": 50
+}
+

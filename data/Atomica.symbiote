@@ -9,6 +9,7 @@
             "duration": 5000,
             "emitterType": "",
             "glyphCount": 0,
+            "glyphOrientation": 0,
             "glyphRadius": 0,
             "glyphType": "",
             "maxStacks": 1,
@@ -17,6 +18,9 @@
           },
           "tag": "StatBoostTrigger"
         },
+        "sound": "Symbiote_Effect_Atomica_Boost",
+        "soundPack": "",
+        "volume": 50,
         "when": 11
       },
       "tag": "TriggeredTriggerEffect"

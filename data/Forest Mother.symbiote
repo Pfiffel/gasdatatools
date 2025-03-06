@@ -17,6 +17,9 @@
           },
           "tag": "HealOverTimeTrigger"
         },
+        "sound": "",
+        "soundPack": "Forest Mother Heal",
+        "volume": 50,
         "when": 11
       },
       "tag": "TriggeredTriggerEffect"

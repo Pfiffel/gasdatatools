@@ -1,0 +1,10 @@
+{
+  "name": "Forest Mother Heal",
+  "sounds": [
+    "Symbiote_Effect_ForestMother_Heal_01",
+    "Symbiote_Effect_ForestMother_Heal_02",
+    "Symbiote_Effect_ForestMother_Heal_03"
+  ],
+  "volume": 50
+}
+

@@ -16,6 +16,9 @@
           },
           "tag": "HealTrigger"
         },
+        "sound": "Symbiote_Effect_Midsummer_Heal",
+        "soundPack": "",
+        "volume": 50,
         "when": 6
       },
       "tag": "TriggeredTriggerEffect"

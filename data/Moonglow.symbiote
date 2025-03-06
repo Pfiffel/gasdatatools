@@ -16,6 +16,9 @@
           },
           "tag": "HealTrigger"
         },
+        "sound": "",
+        "soundPack": "Moonglow Chant",
+        "volume": 50,
         "when": 0
       },
       "tag": "TriggeredTriggerEffect"

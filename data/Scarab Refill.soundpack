@@ -1,0 +1,10 @@
+{
+  "name": "Scarab Refill",
+  "sounds": [
+    "Symbiote_Effect_Scarab_Refill_01",
+    "Symbiote_Effect_Scarab_Refill_02",
+    "Symbiote_Effect_Scarab_Refill_03"
+  ],
+  "volume": 150
+}
+
