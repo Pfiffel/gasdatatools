@@ -257,6 +257,10 @@ class Monster {
 		}
 		return "<span class=\"power\">" + s + "</span>";
 	}
+	damageInfo(damage) {
+		let armorInfo = "(min <b>" + parseInt(damage * (1 - 0.75)) + "</b>) ";
+		return damage == 0 ? "" : ("<b>" + damage + "</b> damage " + armorInfo);
+	}
 	outputAttacks(scale = SCALE_STANDARD, bShowSounds = false) {
 		this.getDPS(); // just to populate attacks
 		let div = document.createElement('div');
@@ -273,7 +277,7 @@ class Monster {
 			spriteDiv.appendChild(draw(jsonBullet, scale));
 			let infoDiv = document.createElement('div');
 			infoDiv.classList.add("inline");
-			infoDiv.innerHTML = "<b>" + jsonBullet.damage + "</b> damage " +
+			infoDiv.innerHTML = this.damageInfo(jsonBullet.damage) +
 				"<b>" + jsonBullet.speed + "</b> speed " +
 				"<b>" + this._bullets[bullet].range + "</b> range" + this.convertPowersToString(jsonBullet.powers);
 			attackDiv.appendChild(spriteDiv);
@@ -287,7 +291,7 @@ class Monster {
 			let letCurrentData = this._shotguns[shotgun];
 			let attackDiv = document.createElement('div');
 			var powers = this.convertPowersToString(letCurrentData.powers);
-			attackDiv.innerHTML = "Shotgun: <b>" + letCurrentData.damage + "</b> damage, " + GetArc(letCurrentData.halfArc) + ", <b>" + letCurrentData.range + "</b> range" + powers;
+			attackDiv.innerHTML = "Shotgun: " + this.damageInfo(letCurrentData.damage) + ", " + GetArc(letCurrentData.halfArc) + ", <b>" + letCurrentData.range + "</b> range" + powers;
 			if (bShowSounds) {
 				// TODO lol hack, just attached the whole data object (wD) to these
 				this.parseSound(attackDiv, "Telegraph", letCurrentData.wD.triggerSound, letCurrentData.wD.triggerVolume)
@@ -308,7 +312,7 @@ class Monster {
 			let letCurrentData = this._mortars[mortar];
 			let attackDiv = document.createElement('div');
 			var num = letCurrentData.salvoes;
-			attackDiv.innerHTML = (num != undefined ? num + " Mortars" : "Mortar") + ": <b>" + letCurrentData.damage + "</b> damage, <b>" + letCurrentData.radius + "</b> radius" + this.convertPowersToString(letCurrentData.powers);
+			attackDiv.innerHTML = (num != undefined ? num + " Mortars" : "Mortar") + ": " + this.damageInfo(letCurrentData.damage) + ", <b>" + letCurrentData.radius + "</b> radius" + this.convertPowersToString(letCurrentData.powers);
 			if (bShowSounds) {
 				// TODO lol hack, just attached the whole data object (wD) to these
 				this.parseSound(attackDiv, "Launch", letCurrentData.wD.shootSound, letCurrentData.wD.shootVolume)
@@ -320,7 +324,7 @@ class Monster {
 		for (let mine in this._mines) {
 			let attackDiv = document.createElement('div');
 			let dmg = this._mines[mine].damage;
-			attackDiv.innerHTML = "Mine: " + (dmg != 0 ? "<b>" + dmg + "</b> damage, " : "") + "<b>" + this._mines[mine].radius + "</b> radius" + this.convertPowersToString(this._mines[mine].powers);
+			attackDiv.innerHTML = "Mine: " + this.damageInfo(dmg) + "<b>" + this._mines[mine].radius + "</b> radius" + this.convertPowersToString(this._mines[mine].powers);
 			div.appendChild(attackDiv);
 		}
 		for (let charge in this._charges) {
