@@ -984,6 +984,7 @@ function getBullet(type) {
 	return null;
 }
 function getObject(type, bPrev = false) {
+	if(type == "") return null;
 	var data = bPrev ? gasDataPrev["object"] : gasData["object"];
 	for (let i = 0; i < data.length; i++) {
 		var object = data[i];
@@ -1053,13 +1054,14 @@ function GetLane(type) {
 		if (type == lane.name) return lane;
 	}
 }
-const globalSkip = true;
+const globalSkip = false;
 const globalSkipSearch = ["Cactus", "Dune", "Desert", "Saguaro"];
 function SkipCheck(entity) {
-	for (let i = 0; i < globalSkipSearch.length; i++) {
-		var toSkip = globalSkipSearch[i];
-		if (entity.name.includes(toSkip)) return true;
-	}
+	if(globalSkip)
+		for (let i = 0; i < globalSkipSearch.length; i++) {
+			var toSkip = globalSkipSearch[i];
+			if (entity.name.includes(toSkip)) return true;
+		}
 	return false;
 }
 // Drawing Stuff
@@ -1107,15 +1109,22 @@ function getObjectResolution(object, weapons, shields, radius, scale) {
 	if (weapons != undefined)
 		for (let i = 0; i < weapons.length; i++) {
 			var turret = weapons[i].objectType;
-			if (turret != "") {
-				var offset = [0, 0, 0];
-				var attach = weapons[i].attachmentPoint;
-				// TODO offset[0] which is facing
-				if (attach != "") offset = this.getAttachmentPoint(object, attach);
-				//var angle = offset[0];
-				//var xRotated = offset[1] * Math.cos(angle) - offset[2] * Math.sin(angle);
-				//var yRotated = offset[1] * Math.sin(angle) + offset[2] * Math.cos(angle);
-				max = this.getMaxFromShapes(getObject(turret), offset[1], offset[2], max);
+			var object = getObject(turret);
+			if (turret != "" && object != null) {
+				try{
+					var offset = [0, 0, 0];
+					var attach = weapons[i].attachmentPoint;
+					// TODO offset[0] which is facing
+					if (attach != "") offset = this.getAttachmentPoint(object, attach);
+					//var angle = offset[0];
+					//var xRotated = offset[1] * Math.cos(angle) - offset[2] * Math.sin(angle);
+					//var yRotated = offset[1] * Math.sin(angle) + offset[2] * Math.cos(angle);
+					max = this.getMaxFromShapes(object, offset[1], offset[2], max);
+				}
+				catch(e){
+					console.log(object.name + ": " + turret);
+					console.error(e);
+				}
 			}
 		}
 	return [max[2] - max[0], max[3] - max[1], -(max[0] + (max[2] - max[0]) / 2), -(max[1] + (max[3] - max[1]) / 2)];
@@ -1125,6 +1134,7 @@ function getAttachmentPoint(object, name) {
 		var point = object.attachmentPoints[i];
 		if (point.name == name) return [degToRad(point.pos.f / 10), point.pos.p.x, point.pos.p.y];
 	}
+	return [0, 0, 0];
 }
 function drawShapes(ctx, scale, x, y, object, angle = 0) {
 	for (let i = 0; i < object.shapes.length; i++) {
@@ -1207,11 +1217,12 @@ function draw(data, scale = 0.4, bPrev = false, bDrawRadius = false, bDrawShield
 		if (data.weapons != undefined)
 			for (let i = 0; i < data.weapons.length; i++) {
 				var turret = data.weapons[i].objectType;
-				if (turret != "") {
+				var object = getObject(turret, bPrev);
+				if (turret != "" && object != null) {
 					var offset = [0, 0, 0];
 					var attach = data.weapons[i].attachmentPoint;
 					if (attach != "") offset = getAttachmentPoint(object, attach);
-					drawShapes(ctx, scale, x + offset[1], y + offset[2], getObject(turret, bPrev), offset[0]);
+					drawShapes(ctx, scale, x + offset[1], y + offset[2], object, offset[0]);
 				}
 			}
 		if (bDrawRadius) DrawCollisionRadius(radius / scale, ctx, scale, x, y);
