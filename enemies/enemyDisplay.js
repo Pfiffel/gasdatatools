@@ -14,7 +14,7 @@ var drawShieldsCB = makeInputCheckbox("Show Shields", RefreshLists, filters, tru
 var showSoundsCB = {}; showSoundsCB.checked = false;
 
 const FILTER_NAME = "Name";
-makeInputRadios(FILTER_NAME, ["All", "Iron", "Royal", "Xenofrog", "Nest", "Bogweed", "Duneclaw", "Dunespike", "Training"], RefreshLists, filters);
+makeInputRadios(FILTER_NAME, ["All", "Iron", "Royal", "Xenofrog", "Nest", "Bogweed", "Dunespike", "Training"], RefreshLists, filters);
 const FILTER_SUCCESSOR = "Successor";
 makeInputRadios(FILTER_SUCCESSOR, ["Any", "Has Successor", "Has no Successor"], RefreshLists, filters);
 const FILTER_BOSS = "Boss";
