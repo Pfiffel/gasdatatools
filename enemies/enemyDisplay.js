@@ -6,6 +6,8 @@ var header = document.getElementById("header");
 var filters = document.getElementById("filters");
 var sortedMonsters;
 
+var showOnlyGFX = makeInputCheckbox("Show Graphics Only", RefreshLists, filters, false);
+
 var drawRadiusCB = makeInputCheckbox("Show Collision Radius", RefreshLists, filters, false);
 var drawShieldsCB = makeInputCheckbox("Show Shields", RefreshLists, filters, true);
 //var showSoundsCB = makeInputCheckbox("Show Sounds", RefreshLists, filters, true);
@@ -63,7 +65,10 @@ function MakeMonsterList() {
 
 		let monsterDiv = document.createElement('div');
 		monsterDiv.classList.add("monsterBlock");
-		monsterDiv.appendChild(monster.output(false, SCALE_STANDARD, drawRadiusCB.checked, drawShieldsCB.checked, showSoundsCB.checked));
+		if(showOnlyGFX.checked)
+			monsterDiv.appendChild(monster.outputGFX(false, SCALE_STANDARD, drawRadiusCB.checked, drawShieldsCB.checked, showSoundsCB.checked));
+		else
+			monsterDiv.appendChild(monster.output(false, SCALE_STANDARD, drawRadiusCB.checked, drawShieldsCB.checked, showSoundsCB.checked));
 		divList.appendChild(monsterDiv);
 	}
 	return divList;

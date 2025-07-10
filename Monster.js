@@ -50,10 +50,15 @@ class Monster {
 				this._bullets[bulletHash] = { "bullet": wD.gunBulletType, "range": wD.range };
 				break;
 			case "GunParams":
-				damageST = getBullet(wD.gunBulletType).damage;
+				let tempDmg = 0;
+				for (let j = 0; j < wD.gunBulletTypes.length; j++) {
+					let b = wD.gunBulletTypes[j];
+					tempDmg += getBullet(b).damage;
+					bulletHash = b + wD.range;
+					this._bullets[bulletHash] = { "bullet": b, "range": wD.range };
+				}
+				damageST = tempDmg/wD.gunBulletTypes.length;
 				damageMT = wD.numProjectiles * damageST;
-				bulletHash = wD.gunBulletType + wD.range;
-				this._bullets[bulletHash] = { "bullet": wD.gunBulletType, "range": wD.range };
 				break;
 			case "BarrageParams":
 				for (let j = 0; j < wD.salvoes.length; j++) {
@@ -157,6 +162,27 @@ class Monster {
 		var divSprite = document.createElement('div');
 		divSprite.appendChild(draw(this.data, SCALE_SMALL));
 		div.appendChild(divSprite);
+		return div;
+	}
+	outputGFX(bRow, scale = SCALE_STANDARD, bDrawRadius = false, bDrawShield = false, bShowSounds = false) {
+		let div = document.createElement('div');
+		div.classList.add("inline");
+		var divSprite = document.createElement('div');
+		divSprite.appendChild(draw(this.data, scale, false, bDrawRadius, bDrawShield));
+		let span = document.createElement('span');
+		span.innerHTML = this._name;
+		divSprite.appendChild(span)
+		var divAttacks = document.createElement('div');
+		this.getDPS(); // just to populate attacks
+		for (let bullet in this._bullets) {
+			var jsonBullet = getBullet(this._bullets[bullet].bullet);
+			let spriteDiv = document.createElement('div');
+			spriteDiv.classList.add("inline");
+			spriteDiv.appendChild(draw(jsonBullet, scale));
+			divAttacks.appendChild(spriteDiv);
+		}
+		div.appendChild(divSprite);
+		div.appendChild(divAttacks);
 		return div;
 	}
 	output(bRow, scale = SCALE_STANDARD, bDrawRadius = false, bDrawShield = false, bShowSounds = false) {
