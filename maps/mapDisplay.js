@@ -1,5 +1,5 @@
 var tableOutput = document.getElementById("tableOutput");
-var datatypes = ["map", "faction", "lair", "region", "lane", "monster", "gunbullet", "object", "item"]; // for utilGAS to load files, calls parseData once completed
+var datatypes = ["map", "faction", "lair", "region", "lane", "monster", "gunbullet", "object", "item", "planet", "globals"]; // for utilGAS to load files, calls parseData once completed
 loadGasData();
 var errorLogs = document.createElement('div');
 tableOutput.appendChild(errorLogs);
@@ -10,6 +10,7 @@ function LogError(text) {
 var header = document.getElementById("header");
 var filters = document.getElementById("filters");
 var showSimple = makeInputCheckbox("Simplified View", RefreshLists, filters, true);
+const FILTER_PLANET = "Planet";
 const FILTER_FACTION = "Faction";
 
 function RefreshLists() {
@@ -17,12 +18,21 @@ function RefreshLists() {
 	tableOutput.appendChild(MakeMonsterList());
 	//tableOutput.appendChild(MakeCompactMonsterTable());
 }
-
+var globals = {};
 function parseData() {
+	globals = GetGlobals();
+	var planets = [];
+	for (let i = 0; i < globals.enabledPlanets.length; i++) {
+		planets.push(globals.enabledPlanets[i]);
+	}
 	var factions = [];
 	for (let i = 0; i < gasData["faction"].length; i++) {
 		factions.push(gasData["faction"][i].name);
 	}
+	var head = document.createElement("h2");
+	head.textContent = "Active Planets";
+	filters.appendChild(head);
+	makeInputRadios(FILTER_PLANET, planets, RefreshLists, filters);
 	var head = document.createElement("h2");
 	head.textContent = "Active Faction";
 	filters.appendChild(head);
@@ -37,9 +47,10 @@ function RefreshLists() {
 	var h1Maps = document.createElement("h1");
 	h1Maps.textContent = "Maps";
 	divMaps.appendChild(h1Maps);
+
 	for (let i = 0; i < gasData["map"].length; i++) {
 		var map = gasData["map"][i];
-		if (!map.name.includes("Quagmire")) continue;
+		if (!globals.enabledOverworldMaps.includes(map.name)) continue;
 		if (showSimple.checked)
 			AddMapSimple(map, divMaps);
 		else
@@ -50,7 +61,7 @@ function RefreshLists() {
 function MakeMapAndTitle(map, divMaps) {
 	var mapSize = Math.pow(map.mapRadius * 2, 2);
 	var h2 = document.createElement("h2");
-	h2.textContent = ((map.overworld != 1) ? "(INACTIVE) " : "") + map.name + " (" + mil(mapSize) + " total size, " + GetTotalBossSpawns(map) + " nest spawns, " + map.regions.length + " terrain)";
+	h2.textContent = map.name + " (" + mil(mapSize) + " total size, " + GetTotalBossSpawns(map) + " nest spawns, " + map.regions.length + " terrain)";
 	divMaps.appendChild(h2);
 	var drawn = DrawMap(map.name, 0.01);
 	drawn.style.display = "inline";
@@ -75,6 +86,7 @@ function AddMapSimple(map, divMaps) {
 
 		var monsterField = map.monsterFields[mF];
 		var tag = monsterField.tag;
+
 		var lair = getLairForFaction(faction, tag);
 		var monsterDiv = document.createElement('div');
 		for (let i = 0; i < lair.monsters.length; i++) {
@@ -82,8 +94,9 @@ function AddMapSimple(map, divMaps) {
 			let monster = getMonster(m.name);
 			monsterDiv.appendChild(monster.outputSimple());
 		}
-		for (let i = 0; i < monsterField.localFauna.length; i++) {
-			var m = monsterField.localFauna[i];
+		var monsterFieldP = GetPlanetMF(tag);
+		for (let i = 0; i < monsterFieldP.localFauna.length; i++) {
+			var m = monsterFieldP.localFauna[i];
 			let monster = getMonster(m.name);
 			monsterDiv.appendChild(monster.outputSimple());
 		}
@@ -92,7 +105,16 @@ function AddMapSimple(map, divMaps) {
 	divMaps.appendChild(tbl);
 	divMaps.appendChild(tbl);
 }
+function GetPlanetMF(tag) {
+	var planet = GetPlanet(document.querySelector('input[name="' + FILTER_PLANET + '"]:checked').value);
+	for (let mF = 0; mF < planet.monsterFields.length; mF++) {
+		var monsterField = planet.monsterFields[mF];
+		if (monsterField.monsterFieldTag == tag) return monsterField;
+	}
+	console.log(tag + " monsterField not found in " + planet.name);
+}
 function AddMap(map, divMaps) {
+	var faction = document.querySelector('input[name="' + FILTER_FACTION + '"]:checked').value;
 	var mapSize = Math.pow(map.mapRadius * 2, 2);
 	MakeMapAndTitle(map, divMaps);
 	if (showSimple.checked) return;
@@ -120,16 +142,17 @@ function AddMap(map, divMaps) {
 		let tr = tbl.insertRow();
 		//var type = monsterField.lairType;
 		var tag = monsterField.tag;
+		var monsterFieldP = GetPlanetMF(tag);
 		var fieldSize = getPolyArea(monsterField.poly);
-		var faction = document.querySelector('input[name="' + FILTER_FACTION + '"]:checked').value;
+
 		var lair = getLairForFaction(faction, tag);
-		var info = monsterField.sectorName + "<br/>";
-		info += monsterField.mapGridDesignator + "<br/>";
+		var info = monsterFieldP.sectorName + "<br/>";
+		info += monsterFieldP.mapGridDesignator + "<br/>";
 		if (monsterField.zoneName != undefined && monsterField.zoneName != "") info += monsterField.zoneName + "<br/>";
 		info += "<br/>";
 		info += "monsterSquareSide: " + lair.monsterSquareSide + "<br/>";
 		info += "Field Size: " + mil(fieldSize) + " (" + round((fieldSize / mapSize) * 100, 2) + "% of Map)" + "<br/>";
-		var decor = monsterField.decorType;
+		var decor = monsterFieldP.decorType;
 		// TODO a bit hacky since these aren't actually guaranteed to relate, determine which regions are in which field mathematically instead
 		var monsterFieldAssignedRegion = (decor == "Swamp Green") ? "Swamp" : decor;
 		var wallSize = regionSizes[monsterFieldAssignedRegion];
@@ -151,7 +174,7 @@ function AddMap(map, divMaps) {
 		densityDiv.innerHTML += "<br/>Avg Monster Amount: " + round(monsterAmount, 2);*/
 
 		var monsterAmount = fieldSize / Math.pow(lair.monsterSquareSide, 2);
-		var mTable = monsterTable(lair.monsters, monsterField.localFauna, monsterAmount);
+		var mTable = monsterTable(lair.monsters, monsterFieldP.localFauna, monsterAmount);
 		mTable.classList.add("inline");
 		monsterDiv.appendChild(mTable);
 		//monsterDiv.appendChild(densityDiv);

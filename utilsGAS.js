@@ -1021,6 +1021,12 @@ function GetGlobals() {
 	}
 	console.log(type + " globals not found");
 }
+function GetPlanet(type) {
+	for (let i = 0; i < gasData["planet"].length; i++) {
+		var planet = gasData["planet"][i];
+		if (type == planet.name) return planet;
+	}
+}
 var tierColors = [];//"", "#FF7777", "#77CC77", "#9999FF", "#77DDDD", "#FFFF77", "#EB98CB", "#F5A849", "#C162F5", "#FFFFFF", "#8EC726"];
 function SetTierColorsFromGlobals() {
 	for (var i in GetGlobals().itemTierColors) {

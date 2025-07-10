@@ -257,6 +257,22 @@ function IsNewButDefaultValue(entityPrev, entity, key) {
 		else if (key == "maxStacks" && entity[key] == 0) return true;
 		else if (key == "drawStatsInTooltip" && entity[key] == 1) return true;
 		else if (key == "volume" && entity[key] == 50) return true;
+		// some new ones from enemies, should really serialize this properly
+		else if (key == "armor" && entity[key] == 0) return true;
+		else if (key == "boss" && entity[key] == 0) return true;
+		else if (key == "burrowDetectRange" && entity[key] == 0) return true;
+		else if (key == "fixedFacing" && entity[key] == 0) return true;
+		else if (key == "resistant" && entity[key] == 0) return true;
+		else if (key == "successorInvulnerability" && entity[key] == 1) return true;
+		else if (key == "gunBulletBehavior" && entity[key] == 0) return true;
+		else if (key == "lockMovement" && entity[key] == 0) return true;
+		else if (key == "alsoTargetDematerialized" && entity[key] == 0) return true;
+		else if (key == "pauseBetweenMovements" && entity[key] == 0) return true;
+		else if (key == "playerTargetingRange" && entity[key] == 0) return true;
+		else if (key == "extraTargetingArc" && entity[key] == 0) return true;
+		else if (key == "ccw" && entity[key] == 0) return true;
+		else if (key == "persist" && entity[key] == 0) return true;
+		else if (key == "maxDistanceFromMaster" && entity[key] == 0) return true;
 	return false;
 }
 function MakeChangeEntry(header, key, prev, curr, container) {
