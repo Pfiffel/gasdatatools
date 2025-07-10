@@ -1,35 +1,56 @@
 {
+  "armor": 0,
+  "boss": 0,
+  "burrowDetectRange": 0,
   "collisionRadius": 15,
+  "consolationItemPack": "",
   "deathCrySoundPack": "Iron Soldier Death Cries",
-  "drops": [],
+  "fixedFacing": 0,
   "healRate": 0,
   "hp": 45,
   "idleAnimation": "BaseArcher Idle",
+  "itemPackDrops": [],
+  "maxMoveDistance": 500,
   "name": "Iron Soldier",
   "objectType": "Iron Soldier",
+  "onDamageSoundPack": "",
+  "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "BaseArcher Run",
+  "runAnimationDuration": 700,
   "runSpeed": 75,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "",
   "weaponType": "",
   "weapons": [
     {
       "attachmentPoint": "Turret",
       "cooldown": 1000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "Iron Soldier Turret",
       "params": {
         "data": {
-          "aimed": 1,
-          "cooldown": 1500,
-          "gunBulletType": "Iron Shield",
-          "leading": 0,
+          "angleBetweenProjectiles": 150,
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Iron Shield"
+          ],
           "numProjectiles": 1,
           "range": 600
         },
         "tag": "GunParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     }
   ],
-  "xp": 1,
-  "xpLevelCap": 19
+  "xp": 1
 }
 

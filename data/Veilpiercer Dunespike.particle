@@ -1,0 +1,27 @@
+{
+  "colorPoints": [],
+  "facing": 0,
+  "maxLifetime": 500,
+  "minLifetime": 500,
+  "name": "Veilpiercer Dunespike",
+  "objectType": "Cactus Trail",
+  "positionTweenType": "EXPOIN",
+  "scalePoints": [
+    {
+      "frac": 333,
+      "value": 400
+    },
+    {
+      "frac": 500,
+      "value": 400
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 3957257,
+  "startScale": 10,
+  "stayLow": 1
+}
+

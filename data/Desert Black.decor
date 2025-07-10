@@ -1,0 +1,32 @@
+{
+  "color": 2499846,
+  "name": "Desert Black",
+  "objects": [
+    {
+      "density": 5,
+      "objectType": "SkeletonLizard"
+    },
+    {
+      "density": 31,
+      "objectType": "Skull"
+    },
+    {
+      "density": 113,
+      "objectType": "Bone Shard"
+    },
+    {
+      "density": 82,
+      "objectType": "Bone Shard2"
+    },
+    {
+      "density": 10,
+      "objectType": "Big Skull"
+    },
+    {
+      "density": 67,
+      "objectType": "Bone Shard Scatter"
+    }
+  ],
+  "regionType": "Desert Black"
+}
+

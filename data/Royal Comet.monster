@@ -1,18 +1,21 @@
 {
+  "armor": 0,
   "boss": 0,
   "burrowDetectRange": 0,
   "collisionRadius": 20,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Royal Comet Death Cries",
-  "drops": [],
   "fixedFacing": 1,
   "healRate": 0,
   "hp": 120,
   "idleAnimation": "Royal Sentinel",
+  "itemPackDrops": [],
   "maxMoveDistance": 500,
   "name": "Royal Comet",
   "objectType": "Royal Comet",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "",
   "runAnimationDuration": 700,
   "runSpeed": 140,
@@ -30,20 +33,24 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Royal Dominion",
-          "leading": 0,
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Royal Dominion"
+          ],
           "numProjectiles": 1,
           "range": 600
         },
         "tag": "GunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }
   ],
-  "xp": 0,
-  "xpLevelCap": 19
+  "xp": 0
 }
 

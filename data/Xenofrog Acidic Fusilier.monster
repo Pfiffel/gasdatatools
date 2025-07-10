@@ -3,18 +3,19 @@
   "boss": 0,
   "burrowDetectRange": 0,
   "collisionRadius": 18,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Xenofrog Worker Death Cries",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 250,
   "idleAnimation": "Xenofrog Idle",
+  "itemPackDrops": [],
   "maxMoveDistance": 150,
   "name": "Xenofrog Acidic Fusilier",
   "objectType": "Xenofrog Acidic Fusilier",
   "onDamageSoundPack": "Xenofrog Hits",
   "pauseBetweenMovements": 700,
+  "resistant": 0,
   "runAnimation": "Xenofrog Leap",
   "runAnimationDuration": 700,
   "runSpeed": 260,
@@ -36,8 +37,11 @@
             {
               "data": {
                 "angleBetweenProjectiles": 150,
-                "gunBulletType": "Xenofrog Acidic Spit",
-                "leading": 0,
+                "gunBulletBehavior": 0,
+                "gunBulletType": "",
+                "gunBulletTypes": [
+                  "Xenofrog Acidic Spit"
+                ],
                 "numProjectiles": 1,
                 "range": 600
               },
@@ -55,7 +59,6 @@
       }
     }
   ],
-  "xp": 9,
-  "xpLevelCap": 19
+  "xp": 9
 }
 

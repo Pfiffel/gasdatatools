@@ -1,19 +1,26 @@
 {
+  "armor": 0,
   "boss": 0,
+  "burrowDetectRange": 0,
   "collisionRadius": 40,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Iron Anvil Death Cries",
-  "drops": [],
+  "fixedFacing": 0,
   "healRate": 0,
   "hp": 180,
   "idleAnimation": "BaseArcher Idle",
+  "itemPackDrops": [],
   "maxMoveDistance": 500,
   "name": "Iron Anvil",
   "objectType": "Iron Anvil",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "Iron Anvil Run",
   "runAnimationDuration": 700,
   "runSpeed": 75,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "",
   "weaponType": "",
   "weapons": [
@@ -26,15 +33,20 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Iron Protector",
-          "leading": 0,
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Iron Protector"
+          ],
           "numProjectiles": 1,
           "range": 500
         },
         "tag": "GunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -47,20 +59,24 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Iron Shield",
-          "leading": 0,
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Iron Shield"
+          ],
           "numProjectiles": 1,
           "range": 600
         },
         "tag": "GunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }
   ],
-  "xp": 4,
-  "xpLevelCap": 19
+  "xp": 4
 }
 

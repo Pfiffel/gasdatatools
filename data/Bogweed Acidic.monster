@@ -3,18 +3,19 @@
   "boss": 0,
   "burrowDetectRange": 0,
   "collisionRadius": 30,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Bogweed High Death Cries",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 750,
   "idleAnimation": "BaseArcher Idle",
+  "itemPackDrops": [],
   "maxMoveDistance": 0,
   "name": "Bogweed Acidic",
   "objectType": "Bogweed",
   "onDamageSoundPack": "Xenofrog Nest Hits",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "",
   "runAnimationDuration": 700,
   "runSpeed": 0,
@@ -36,8 +37,11 @@
             {
               "data": {
                 "angleBetweenProjectiles": 500,
-                "gunBulletType": "Bogweed Acidic Bullet",
-                "leading": 0,
+                "gunBulletBehavior": 0,
+                "gunBulletType": "",
+                "gunBulletTypes": [
+                  "Bogweed Acidic Bullet"
+                ],
                 "numProjectiles": 3,
                 "range": 500
               },
@@ -46,8 +50,11 @@
             {
               "data": {
                 "angleBetweenProjectiles": 500,
-                "gunBulletType": "Bogweed Acidic Bullet",
-                "leading": 0,
+                "gunBulletBehavior": 0,
+                "gunBulletType": "",
+                "gunBulletTypes": [
+                  "Bogweed Acidic Bullet"
+                ],
                 "numProjectiles": 3,
                 "range": 500
               },
@@ -56,8 +63,11 @@
             {
               "data": {
                 "angleBetweenProjectiles": 500,
-                "gunBulletType": "Bogweed Acidic Bullet",
-                "leading": 0,
+                "gunBulletBehavior": 0,
+                "gunBulletType": "",
+                "gunBulletTypes": [
+                  "Bogweed Acidic Bullet"
+                ],
                 "numProjectiles": 3,
                 "range": 500
               },
@@ -87,7 +97,6 @@
       }
     }
   ],
-  "xp": 49,
-  "xpLevelCap": 19
+  "xp": 49
 }
 

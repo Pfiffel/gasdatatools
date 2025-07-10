@@ -37,7 +37,6 @@
           "guardian": 1,
           "lifetime": 0,
           "maxCount": 1,
-          "monsterName": "",
           "monsterNames": [
             "Iron Lieutenant Adler"
           ],
@@ -50,6 +49,7 @@
           },
           "noCollide": 1,
           "noRespawn": 1,
+          "playerTargetingRange": 0,
           "projectileType": "",
           "range": 0,
           "sound": "",
@@ -78,7 +78,6 @@
           "guardian": 1,
           "lifetime": 0,
           "maxCount": 1,
-          "monsterName": "",
           "monsterNames": [
             "Iron Lieutenant Molotok"
           ],
@@ -91,6 +90,7 @@
           },
           "noCollide": 0,
           "noRespawn": 1,
+          "playerTargetingRange": 0,
           "projectileType": "",
           "range": 0,
           "sound": "",
@@ -119,18 +119,19 @@
           "guardian": 1,
           "lifetime": 0,
           "maxCount": 1,
-          "monsterName": "",
           "monsterNames": [
             "Iron Lieutenant Scut"
           ],
           "movement": {
             "data": {
+              "ccw": 0,
               "radius": 250
             },
             "tag": "OrbitMovement"
           },
           "noCollide": 0,
           "noRespawn": 1,
+          "playerTargetingRange": 0,
           "projectileType": "",
           "range": 0,
           "sound": "",
@@ -196,7 +197,11 @@
             {
               "data": {
                 "angleBetweenProjectiles": 200,
-                "gunBulletType": "Iron Triumph",
+                "gunBulletBehavior": 0,
+                "gunBulletType": "",
+                "gunBulletTypes": [
+                  "Iron Triumph"
+                ],
                 "numProjectiles": 9,
                 "range": 800
               },
@@ -242,7 +247,11 @@
             {
               "data": {
                 "angleBetweenProjectiles": 200,
-                "gunBulletType": "Iron Triumph",
+                "gunBulletBehavior": 0,
+                "gunBulletType": "",
+                "gunBulletTypes": [
+                  "Iron Triumph"
+                ],
                 "numProjectiles": 9,
                 "range": 800
               },

@@ -7,12 +7,12 @@
   "polyDecorations": [
     {
       "gap": 50,
-      "objectType": "PlateauCenter"
+      "objectType": "Green Saguaro"
     }
   ],
   "positionJitter": 20,
   "segmentObjects": [
-    "PlateauEdge"
+    "Green Saguaro"
   ]
 }
 

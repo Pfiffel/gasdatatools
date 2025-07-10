@@ -42,7 +42,6 @@
           "guardian": 0,
           "lifetime": 0,
           "maxCount": 6,
-          "monsterName": "",
           "monsterNames": [
             "Xenofrog Dire Acidic Fusilier",
             "Xenofrog Dire Caustic Fusilier",
@@ -57,6 +56,7 @@
           },
           "noCollide": 0,
           "noRespawn": 1,
+          "playerTargetingRange": 0,
           "projectileType": "Xenofrog Egg",
           "range": 350,
           "sound": "",
@@ -145,7 +145,11 @@
             {
               "data": {
                 "angleBetweenProjectiles": 200,
-                "gunBulletType": "Xenofrog Dire Defender Spit",
+                "gunBulletBehavior": 0,
+                "gunBulletType": "",
+                "gunBulletTypes": [
+                  "Xenofrog Dire Defender Spit"
+                ],
                 "numProjectiles": 6,
                 "range": 600
               },
@@ -214,7 +218,11 @@
             {
               "data": {
                 "angleBetweenProjectiles": 200,
-                "gunBulletType": "Xenofrog Dire Defender Spit",
+                "gunBulletBehavior": 0,
+                "gunBulletType": "",
+                "gunBulletTypes": [
+                  "Xenofrog Dire Defender Spit"
+                ],
                 "numProjectiles": 6,
                 "range": 600
               },
@@ -299,7 +307,11 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Xenofrog General Acidic Spit",
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Xenofrog General Acidic Spit"
+          ],
           "numProjectiles": 1,
           "range": 800
         },
@@ -322,7 +334,11 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Xenofrog General Acidic Spit",
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Xenofrog General Acidic Spit"
+          ],
           "numProjectiles": 1,
           "range": 800
         },
@@ -345,7 +361,11 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Xenofrog General Volatile Spit",
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Xenofrog General Volatile Spit"
+          ],
           "numProjectiles": 1,
           "range": 800
         },
@@ -368,7 +388,11 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Xenofrog General Volatile Spit",
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Xenofrog General Volatile Spit"
+          ],
           "numProjectiles": 1,
           "range": 800
         },
@@ -391,7 +415,11 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Xenofrog General Caustic Spit",
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Xenofrog General Caustic Spit"
+          ],
           "numProjectiles": 1,
           "range": 800
         },
@@ -414,7 +442,11 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Xenofrog General Caustic Spit",
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Xenofrog General Caustic Spit"
+          ],
           "numProjectiles": 1,
           "range": 800
         },

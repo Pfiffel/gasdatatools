@@ -1,0 +1,18 @@
+{
+  "damage": 150,
+  "emitterType": "Withering Dunespike Bullet",
+  "name": "Withering Dunespike Bullet",
+  "objectType": "Withering Dunespike Bullet",
+  "piercing": 0,
+  "powers": [
+    {
+      "data": {
+        "energyDamage": 20
+      },
+      "tag": "EnergyDamagePower"
+    }
+  ],
+  "soundPack": "Bogweed High Bullet",
+  "speed": 200
+}
+

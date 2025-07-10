@@ -1,0 +1,36 @@
+{
+  "color": 2511898,
+  "name": "Desert Dank",
+  "objects": [
+    {
+      "density": 1,
+      "objectType": "SkeletonLizard"
+    },
+    {
+      "density": 52,
+      "objectType": "RockDebris Green"
+    },
+    {
+      "density": 10,
+      "objectType": "Bone Shard"
+    },
+    {
+      "density": 10,
+      "objectType": "Bone Shard2"
+    },
+    {
+      "density": 67,
+      "objectType": "RockDebris2 Green"
+    },
+    {
+      "density": 1,
+      "objectType": "Skull"
+    },
+    {
+      "density": 26,
+      "objectType": "Green Saguaro"
+    }
+  ],
+  "regionType": "Desert Dank"
+}
+

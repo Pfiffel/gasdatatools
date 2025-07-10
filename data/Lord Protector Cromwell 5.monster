@@ -3,9 +3,8 @@
   "boss": 1,
   "burrowDetectRange": 0,
   "collisionRadius": 100,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Royal Monarch Enrage 2",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 6000,
@@ -137,8 +136,11 @@
             {
               "data": {
                 "angleBetweenProjectiles": 200,
-                "gunBulletType": "Royal Albion",
-                "leading": 0,
+                "gunBulletBehavior": 0,
+                "gunBulletType": "",
+                "gunBulletTypes": [
+                  "Royal Albion"
+                ],
                 "numProjectiles": 9,
                 "range": 800
               },
@@ -211,6 +213,7 @@
                 "delay": 500,
                 "explosionType": "",
                 "halfArc": 200,
+                "lockMovement": 0,
                 "powers": [],
                 "range": 500,
                 "triggerSound": "",
@@ -231,7 +234,6 @@
       }
     }
   ],
-  "xp": 100,
-  "xpLevelCap": 19
+  "xp": 100
 }
 

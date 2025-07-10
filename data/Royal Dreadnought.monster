@@ -1,18 +1,21 @@
 {
+  "armor": 0,
   "boss": 0,
   "burrowDetectRange": 0,
   "collisionRadius": 55,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Royal Dreadnought Death Cries",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 1300,
   "idleAnimation": "Royal Windsor",
+  "itemPackDrops": [],
   "maxMoveDistance": 500,
   "name": "Royal Dreadnought",
   "objectType": "Royal Dreadnought",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "Royal Windsor",
   "runAnimationDuration": 200,
   "runSpeed": 75,
@@ -35,7 +38,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -53,7 +58,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -71,6 +78,7 @@
           "explosionType": "Empty",
           "objectType": "Royal Dreadnought Mine",
           "persist": 1,
+          "playerTargetingRange": 500,
           "powers": [
             {
               "data": {
@@ -80,18 +88,19 @@
             }
           ],
           "radius": 80,
-          "range": 500,
-          "speed": 250
+          "speed": 250,
+          "throwRange": 500
         },
         "tag": "MinelayerParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }
   ],
-  "xp": 64,
-  "xpLevelCap": 19
+  "xp": 64
 }
 

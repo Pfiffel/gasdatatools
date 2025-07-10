@@ -4,9 +4,7 @@
   "burrowDetectRange": 0,
   "collisionRadius": 115,
   "consolationItemPack": "Tier 5 Common",
-  "consolationPrizes": [],
   "deathCrySoundPack": "Royal Dynasty Death Cries",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 6000,
@@ -45,6 +43,7 @@
           "explosionType": "Empty",
           "objectType": "Royal Dynasty Mine",
           "persist": 1,
+          "playerTargetingRange": 400,
           "powers": [
             {
               "data": {
@@ -54,8 +53,8 @@
             }
           ],
           "radius": 90,
-          "range": 400,
-          "speed": 400
+          "speed": 400,
+          "throwRange": 400
         },
         "tag": "MinelayerParams"
       },
@@ -81,6 +80,7 @@
           "explosionType": "Empty",
           "objectType": "Royal Dynasty Mine",
           "persist": 1,
+          "playerTargetingRange": 400,
           "powers": [
             {
               "data": {
@@ -90,8 +90,8 @@
             }
           ],
           "radius": 90,
-          "range": 400,
-          "speed": 400
+          "speed": 400,
+          "throwRange": 400
         },
         "tag": "MinelayerParams"
       },
@@ -197,6 +197,7 @@
           "explosionType": "Empty",
           "objectType": "Royal Dynasty Mine",
           "persist": 1,
+          "playerTargetingRange": 600,
           "powers": [
             {
               "data": {
@@ -206,8 +207,8 @@
             }
           ],
           "radius": 90,
-          "range": 600,
-          "speed": 400
+          "speed": 400,
+          "throwRange": 600
         },
         "tag": "MinelayerParams"
       },
@@ -266,7 +267,6 @@
       }
     }
   ],
-  "xp": 100,
-  "xpLevelCap": 19
+  "xp": 100
 }
 

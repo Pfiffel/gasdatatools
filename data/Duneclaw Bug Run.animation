@@ -1,0 +1,46 @@
+{
+  "keyFrames": [
+    {
+      "bonePositions": [
+        {
+          "bone": "Foot",
+          "rot": 0,
+          "x": 8,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Foot Mirror",
+          "rot": 0,
+          "x": -8,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 0,
+      "tag": ""
+    },
+    {
+      "bonePositions": [
+        {
+          "bone": "Foot",
+          "rot": 0,
+          "x": -8,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "bone": "Foot Mirror",
+          "rot": 0,
+          "x": 8,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "frac": 500,
+      "tag": ""
+    }
+  ],
+  "name": "Duneclaw Bug Run"
+}
+

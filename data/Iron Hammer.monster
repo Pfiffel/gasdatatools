@@ -1,19 +1,26 @@
 {
+  "armor": 0,
   "boss": 0,
+  "burrowDetectRange": 0,
   "collisionRadius": 35,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Iron Hammer Death Cries",
-  "drops": [],
+  "fixedFacing": 0,
   "healRate": 0,
   "hp": 300,
   "idleAnimation": "",
+  "itemPackDrops": [],
   "maxMoveDistance": 500,
   "name": "Iron Hammer",
   "objectType": "Iron Hammer",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "",
   "runAnimationDuration": 700,
   "runSpeed": 75,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "",
   "weaponType": "",
   "weapons": [
@@ -26,15 +33,20 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Iron Hammer",
-          "leading": 0,
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Iron Hammer"
+          ],
           "numProjectiles": 1,
           "range": 600
         },
         "tag": "GunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -47,15 +59,20 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Iron Hammer",
-          "leading": 0,
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Iron Hammer"
+          ],
           "numProjectiles": 1,
           "range": 600
         },
         "tag": "GunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -68,20 +85,24 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Iron Hammer",
-          "leading": 0,
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Iron Hammer"
+          ],
           "numProjectiles": 1,
           "range": 600
         },
         "tag": "GunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }
   ],
-  "xp": 9,
-  "xpLevelCap": 19
+  "xp": 9
 }
 

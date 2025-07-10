@@ -1,55 +1,86 @@
 {
+  "armor": 0,
   "boss": 0,
+  "burrowDetectRange": 0,
   "collisionRadius": 35,
+  "consolationItemPack": "",
   "deathCrySoundPack": "Iron Gladiator Death Cries",
-  "drops": [],
+  "fixedFacing": 0,
   "healRate": 0,
   "hp": 650,
   "idleAnimation": "BaseArcher Idle",
+  "itemPackDrops": [],
+  "maxMoveDistance": 500,
   "name": "Iron Gladiator",
   "objectType": "Iron Gladiator",
+  "onDamageSoundPack": "",
+  "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "BaseArcher Run",
+  "runAnimationDuration": 700,
   "runSpeed": 100,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "",
   "weaponType": "",
   "weapons": [
     {
       "attachmentPoint": "",
       "cooldown": 1500,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "",
       "params": {
         "data": {
           "damage": 100,
           "emitterType": "Iron Protector",
           "explosionType": "Iron Centurion Grenade",
+          "fixedFlightTime": 0,
           "objectType": "Fireball",
+          "powers": [],
           "radius": 120,
           "range": 600,
           "shootSound": "Enemy_Grenade_Medium_Launch",
           "shootVolume": 75,
-          "speed": 250
+          "speed": 250,
+          "tweenType": "LINEAR"
         },
         "tag": "MortarParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     },
     {
       "attachmentPoint": "",
       "cooldown": 1333,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "",
       "params": {
         "data": {
-          "aimed": 1,
-          "cooldown": 1500,
-          "gunBulletType": "Iron Bulwark",
-          "leading": 0,
+          "angleBetweenProjectiles": 150,
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Iron Bulwark"
+          ],
           "numProjectiles": 3,
           "range": 500
         },
         "tag": "GunParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     }
   ],
-  "xp": 25,
-  "xpLevelCap": 19
+  "xp": 25
 }
 

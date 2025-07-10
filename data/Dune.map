@@ -3270,15 +3270,7 @@
   ],
   "monsterFields": [
     {
-      "decorType": "Badlands",
       "lairType": "Swamp 0 Noob",
-      "localFauna": [
-        {
-          "count": 50,
-          "name": "Cactus 1"
-        }
-      ],
-      "mapGridDesignator": "Planet Draco-F902-Pi-12",
       "miniBosses": [],
       "poly": [
         {
@@ -3298,20 +3290,11 @@
           "y": 30000
         }
       ],
-      "sectorName": "DUNE",
       "tag": "Zone 0",
       "zoneName": ""
     },
     {
-      "decorType": "Badlands",
       "lairType": "Swamp 1 Green",
-      "localFauna": [
-        {
-          "count": 75,
-          "name": "Cactus 1"
-        }
-      ],
-      "mapGridDesignator": "Sector QX-17",
       "miniBosses": [],
       "poly": [
         {
@@ -3331,20 +3314,11 @@
           "y": 22500
         }
       ],
-      "sectorName": "The Wastes",
       "tag": "Zone 1",
       "zoneName": ""
     },
     {
-      "decorType": "Desert Blue",
       "lairType": "Swamp 2 Blue",
-      "localFauna": [
-        {
-          "count": 75,
-          "name": "Cactus 2"
-        }
-      ],
-      "mapGridDesignator": "Sector PH-91",
       "miniBosses": [
         "Xenofrog Bog Nest 1",
         "Xenofrog Bog Nest 2",
@@ -3369,20 +3343,11 @@
           "y": 15000
         }
       ],
-      "sectorName": "The Sands",
       "tag": "Zone 2",
       "zoneName": ""
     },
     {
-      "decorType": "Badlands",
       "lairType": "Swamp 3 Red",
-      "localFauna": [
-        {
-          "count": 75,
-          "name": "Cactus 3"
-        }
-      ],
-      "mapGridDesignator": "Sector KZ-83",
       "miniBosses": [
         "Xenofrog Squelch Nest 1",
         "Xenofrog Squelch Nest 2",
@@ -3407,20 +3372,11 @@
           "y": 7500
         }
       ],
-      "sectorName": "The Desert",
       "tag": "Zone 3",
       "zoneName": "RED ZONE"
     },
     {
-      "decorType": "Badlands",
       "lairType": "Swamp 4 Dank",
-      "localFauna": [
-        {
-          "count": 75,
-          "name": "Cactus 4"
-        }
-      ],
-      "mapGridDesignator": "Sector VN-39",
       "miniBosses": [
         "Xenofrog Morass Nest 1",
         "Xenofrog Morass Nest 2",
@@ -3445,20 +3401,11 @@
           "y": 0
         }
       ],
-      "sectorName": "The Rocks",
       "tag": "Zone 4",
       "zoneName": "BLUE ZONE"
     },
     {
-      "decorType": "Badlands",
       "lairType": "Swamp 5 Purple",
-      "localFauna": [
-        {
-          "count": 75,
-          "name": "Cactus 5"
-        }
-      ],
-      "mapGridDesignator": "Sector RD-12",
       "miniBosses": [
         "Xenofrog Sludge Nest 1",
         "Xenofrog Sludge Nest 2",
@@ -3484,20 +3431,11 @@
           "y": -7500
         }
       ],
-      "sectorName": "The Dunes",
       "tag": "Zone 5",
       "zoneName": "PURPLE ZONE"
     },
     {
-      "decorType": "Badlands",
       "lairType": "Swamp 6 Yellow",
-      "localFauna": [
-        {
-          "count": 75,
-          "name": "Cactus 6"
-        }
-      ],
-      "mapGridDesignator": "Sector XB-50",
       "miniBosses": [
         "Xenofrog Swamp Nest 1",
         "Xenofrog Swamp Nest 2",
@@ -3523,20 +3461,11 @@
           "y": -15000
         }
       ],
-      "sectorName": "The Parch",
       "tag": "Zone 6",
       "zoneName": "YELLOW ZONE"
     },
     {
-      "decorType": "Badlands",
       "lairType": "Swamp 7 Orange",
-      "localFauna": [
-        {
-          "count": 75,
-          "name": "Cactus 7"
-        }
-      ],
-      "mapGridDesignator": "Sector LP-77",
       "miniBosses": [
         "Xenofrog Mire Nest 1",
         "Xenofrog Mire Nest 2",
@@ -3563,20 +3492,11 @@
           "y": -22500
         }
       ],
-      "sectorName": "The Dustbowl",
       "tag": "Zone 7",
       "zoneName": "ORANGE ZONE"
     },
     {
-      "decorType": "Badlands",
       "lairType": "Swamp 8 Black",
-      "localFauna": [
-        {
-          "count": 75,
-          "name": "Cactus 8"
-        }
-      ],
-      "mapGridDesignator": "Sector AV-10",
       "miniBosses": [
         "Xenofrog Cesspit Nest 1",
         "Xenofrog Cesspit Nest 2",
@@ -3606,13 +3526,11 @@
           "y": -30000
         }
       ],
-      "sectorName": "The Barrens",
       "tag": "Zone 8",
       "zoneName": "BLACK ZONE"
     }
   ],
   "name": "Dune",
-  "overworld": 0,
   "patches": [],
   "quest": {
     "bossKillTime": 300000,

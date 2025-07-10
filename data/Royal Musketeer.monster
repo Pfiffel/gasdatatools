@@ -1,18 +1,21 @@
 {
+  "armor": 0,
   "boss": 0,
   "burrowDetectRange": 0,
   "collisionRadius": 20,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Royal Musketeer Death Cries",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 80,
   "idleAnimation": "",
+  "itemPackDrops": [],
   "maxMoveDistance": 500,
   "name": "Royal Musketeer",
   "objectType": "Royal Musketeer",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "BaseArcher Run",
   "runAnimationDuration": 700,
   "runSpeed": 75,
@@ -30,20 +33,24 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 180,
-          "gunBulletType": "Royal Redcoat",
-          "leading": 0,
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Royal Redcoat"
+          ],
           "numProjectiles": 3,
           "range": 600
         },
         "tag": "GunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }
   ],
-  "xp": 4,
-  "xpLevelCap": 19
+  "xp": 4
 }
 

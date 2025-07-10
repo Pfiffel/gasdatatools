@@ -3,18 +3,19 @@
   "boss": 0,
   "burrowDetectRange": 0,
   "collisionRadius": 19,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Xenofrog Worker Death Cries",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 500,
   "idleAnimation": "Xenofrog Idle",
+  "itemPackDrops": [],
   "maxMoveDistance": 200,
   "name": "Xenofrog Dire Worker",
   "objectType": "Xenofrog Dire Worker",
   "onDamageSoundPack": "Xenofrog Hits",
   "pauseBetweenMovements": 500,
+  "resistant": 0,
   "runAnimation": "Xenofrog Leap",
   "runAnimationDuration": 700,
   "runSpeed": 250,
@@ -36,8 +37,11 @@
             {
               "data": {
                 "angleBetweenProjectiles": 600,
-                "gunBulletType": "Xenofrog Dire Worker Spit",
-                "leading": 0,
+                "gunBulletBehavior": 0,
+                "gunBulletType": "",
+                "gunBulletTypes": [
+                  "Xenofrog Dire Worker Spit"
+                ],
                 "numProjectiles": 2,
                 "range": 600
               },
@@ -46,8 +50,11 @@
             {
               "data": {
                 "angleBetweenProjectiles": 600,
-                "gunBulletType": "Xenofrog Dire Worker Spit",
-                "leading": 0,
+                "gunBulletBehavior": 0,
+                "gunBulletType": "",
+                "gunBulletTypes": [
+                  "Xenofrog Dire Worker Spit"
+                ],
                 "numProjectiles": 3,
                 "range": 600
               },
@@ -65,7 +72,6 @@
       }
     }
   ],
-  "xp": 25,
-  "xpLevelCap": 19
+  "xp": 25
 }
 

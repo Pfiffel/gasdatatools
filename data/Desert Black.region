@@ -1,18 +1,40 @@
 {
-  "facingJitter": 10,
+  "facingJitter": 200,
   "gap": 100,
   "groundColor": 3365687,
   "mapColor": 5328643,
   "name": "Desert Black",
   "polyDecorations": [
     {
-      "gap": 50,
-      "objectType": "PlateauCenter"
+      "gap": 100,
+      "objectType": "Bone Pile"
+    },
+    {
+      "gap": 100,
+      "objectType": "Bone Pile 2"
+    },
+    {
+      "gap": 300,
+      "objectType": "SkeletonLizard"
+    },
+    {
+      "gap": 150,
+      "objectType": "Skull"
+    },
+    {
+      "gap": 300,
+      "objectType": "Big Skull"
+    },
+    {
+      "gap": 300,
+      "objectType": "Lizard Skull"
     }
   ],
-  "positionJitter": 20,
+  "positionJitter": 10,
   "segmentObjects": [
-    "PlateauEdge"
+    "Bone Pile Border",
+    "Bone Pile Border 2",
+    "Bone Pile Border 3"
   ]
 }
 

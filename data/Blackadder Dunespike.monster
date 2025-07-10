@@ -1,0 +1,73 @@
+{
+  "armor": 0,
+  "boss": 0,
+  "burrowDetectRange": 0,
+  "collisionRadius": 45,
+  "consolationItemPack": "",
+  "deathCrySoundPack": "Bogweed High Death Cries",
+  "fixedFacing": 0,
+  "healRate": 0,
+  "hp": 1300,
+  "idleAnimation": "BaseArcher Idle",
+  "itemPackDrops": [],
+  "maxMoveDistance": 0,
+  "name": "Blackadder Dunespike",
+  "objectType": "Blackadder Dunespike",
+  "onDamageSoundPack": "Xenofrog Nest Hits",
+  "pauseBetweenMovements": 0,
+  "resistant": 0,
+  "runAnimation": "",
+  "runAnimationDuration": 700,
+  "runSpeed": 0,
+  "shields": [],
+  "successorInvulnerability": 1,
+  "successorMonster": "",
+  "weaponType": "",
+  "weapons": [
+    {
+      "attachmentPoint": "Turret",
+      "cooldown": 2600,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
+      "objectType": "",
+      "params": {
+        "data": {
+          "bulletRange": 600,
+          "delay": 500,
+          "glyphType": "Barrage Glyph",
+          "gunBulletType": "Blackadder Dunespike Bullet",
+          "numBullets": 6,
+          "range": 600,
+          "salvoes": [
+            {
+              "angle": 0,
+              "mirror": 0
+            },
+            {
+              "angle": 300,
+              "mirror": 0
+            },
+            {
+              "angle": 0,
+              "mirror": 1
+            },
+            {
+              "angle": -100,
+              "mirror": 1
+            }
+          ]
+        },
+        "tag": "BarrageParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 1,
+          "plusAngle": 0
+        },
+        "tag": "FixedTargeting"
+      }
+    }
+  ],
+  "xp": 64
+}
+

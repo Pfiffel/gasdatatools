@@ -3,18 +3,19 @@
   "boss": 0,
   "burrowDetectRange": 0,
   "collisionRadius": 25,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Xenofrog Defender Death Cries",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 700,
   "idleAnimation": "Xenofrog Idle",
+  "itemPackDrops": [],
   "maxMoveDistance": 200,
   "name": "Xenofrog Dire Acidic Fusilier",
   "objectType": "Xenofrog Dire Acidic Fusilier",
   "onDamageSoundPack": "Xenofrog Hits",
   "pauseBetweenMovements": 700,
+  "resistant": 0,
   "runAnimation": "Xenofrog Leap",
   "runAnimationDuration": 700,
   "runSpeed": 260,
@@ -36,8 +37,11 @@
             {
               "data": {
                 "angleBetweenProjectiles": 600,
-                "gunBulletType": "Xenofrog Dire Acidic Spit",
-                "leading": 0,
+                "gunBulletBehavior": 0,
+                "gunBulletType": "",
+                "gunBulletTypes": [
+                  "Xenofrog Dire Acidic Spit"
+                ],
                 "numProjectiles": 3,
                 "range": 600
               },
@@ -46,8 +50,11 @@
             {
               "data": {
                 "angleBetweenProjectiles": 600,
-                "gunBulletType": "Xenofrog Dire Acidic Spit",
-                "leading": 0,
+                "gunBulletBehavior": 0,
+                "gunBulletType": "",
+                "gunBulletTypes": [
+                  "Xenofrog Dire Acidic Spit"
+                ],
                 "numProjectiles": 3,
                 "range": 600
               },
@@ -65,7 +72,6 @@
       }
     }
   ],
-  "xp": 49,
-  "xpLevelCap": 19
+  "xp": 49
 }
 

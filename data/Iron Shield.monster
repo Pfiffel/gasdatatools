@@ -1,35 +1,56 @@
 {
+  "armor": 0,
+  "boss": 0,
+  "burrowDetectRange": 0,
   "collisionRadius": 20,
+  "consolationItemPack": "",
   "deathCrySoundPack": "Iron Shield Death Cries",
-  "drops": [],
+  "fixedFacing": 0,
   "healRate": 0,
   "hp": 45,
   "idleAnimation": "",
+  "itemPackDrops": [],
+  "maxMoveDistance": 500,
   "name": "Iron Shield",
   "objectType": "Iron Shield",
+  "onDamageSoundPack": "",
+  "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "",
+  "runAnimationDuration": 700,
   "runSpeed": 75,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "",
   "weaponType": "",
   "weapons": [
     {
       "attachmentPoint": "Turret",
       "cooldown": 1000,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "Iron Shield Turret",
       "params": {
         "data": {
-          "aimed": 1,
-          "cooldown": 1500,
-          "gunBulletType": "Iron Shield",
-          "leading": 0,
+          "angleBetweenProjectiles": 150,
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Iron Shield"
+          ],
           "numProjectiles": 1,
           "range": 600
         },
         "tag": "GunParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     }
   ],
-  "xp": 1,
-  "xpLevelCap": 19
+  "xp": 1
 }
 

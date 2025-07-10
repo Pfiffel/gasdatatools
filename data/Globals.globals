@@ -43,6 +43,14 @@
     "Rime",
     "Storm Crow"
   ],
+  "enabledOverworldMaps": [
+    "Quagmire Remix",
+    "Quagmire",
+    "Quagmire2"
+  ],
+  "enabledPlanets": [
+    "Quagmire"
+  ],
   "glossary": [
     {
       "definition": "An advanced decoration given to the most elite of GAS tankers, not to be attempted by any but savvy veteran pilots. The requirements to earn an accolade are astronomically high: at least 350 glory earned before the 100 boss kill limit effectively deactivates the tank.\nBonuses for earned accolades are allocated on subsequent tanks of that class. Defects are required to earn accolades after the first, one defect per previously earned accolade.",

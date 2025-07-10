@@ -1,35 +1,56 @@
 {
+  "armor": 0,
+  "boss": 0,
+  "burrowDetectRange": 0,
   "collisionRadius": 25,
+  "consolationItemPack": "",
   "deathCrySoundPack": "Iron Legionnaire Death Cries",
-  "drops": [],
+  "fixedFacing": 0,
   "healRate": 0,
   "hp": 240,
   "idleAnimation": "BaseArcher Idle",
+  "itemPackDrops": [],
+  "maxMoveDistance": 500,
   "name": "Iron Legionnaire",
   "objectType": "Iron Legionnaire",
+  "onDamageSoundPack": "",
+  "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "BaseArcher Run",
+  "runAnimationDuration": 700,
   "runSpeed": 75,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "",
   "weaponType": "",
   "weapons": [
     {
       "attachmentPoint": "Turret",
       "cooldown": 750,
+      "extraTargetingArc": 0,
+      "halfArc": 1800,
       "objectType": "Iron Legionnaire Turret",
       "params": {
         "data": {
-          "aimed": 1,
-          "cooldown": 1500,
-          "gunBulletType": "Iron Protector",
-          "leading": 0,
+          "angleBetweenProjectiles": 150,
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Iron Protector"
+          ],
           "numProjectiles": 1,
           "range": 500
         },
         "tag": "GunParams"
+      },
+      "targeting": {
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
+        "tag": "PlayerTargeting"
       }
     }
   ],
-  "xp": 9,
-  "xpLevelCap": 19
+  "xp": 9
 }
 

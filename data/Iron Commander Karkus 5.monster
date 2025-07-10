@@ -3,9 +3,8 @@
   "boss": 1,
   "burrowDetectRange": 0,
   "collisionRadius": 70,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Iron Acropolis Death Cries",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 10000,
@@ -68,10 +67,11 @@
                 "explosionType": "Iron Triumph Burst",
                 "objectType": "Iron Commander Karkus Mine",
                 "persist": 0,
+                "playerTargetingRange": 700,
                 "powers": [],
                 "radius": 150,
-                "range": 700,
-                "speed": 300
+                "speed": 300,
+                "throwRange": 700
               },
               "tag": "MinelayerParams"
             },
@@ -83,10 +83,11 @@
                 "explosionType": "Iron Triumph Burst",
                 "objectType": "Iron Commander Karkus Mine",
                 "persist": 0,
+                "playerTargetingRange": 700,
                 "powers": [],
                 "radius": 150,
-                "range": 700,
-                "speed": 300
+                "speed": 300,
+                "throwRange": 700
               },
               "tag": "MinelayerParams"
             }
@@ -151,8 +152,10 @@
             {
               "data": {
                 "angleBetweenProjectiles": 200,
-                "gunBulletType": "Iron Triumph",
-                "leading": 0,
+                "gunBulletBehavior": 0,
+                "gunBulletTypes": [
+                  "Iron Triumph"
+                ],
                 "numProjectiles": 9,
                 "range": 800
               },
@@ -198,8 +201,10 @@
             {
               "data": {
                 "angleBetweenProjectiles": 200,
-                "gunBulletType": "Iron Triumph",
-                "leading": 0,
+                "gunBulletBehavior": 0,
+                "gunBulletTypes": [
+                  "Iron Triumph"
+                ],
                 "numProjectiles": 9,
                 "range": 800
               },
@@ -247,6 +252,7 @@
                       "delay": 1000,
                       "explosionType": "Iron Lance Shotgun",
                       "halfArc": 65,
+                      "lockMovement": 0,
                       "powers": [],
                       "range": 750,
                       "triggerSound": "Enemy_IronLance_Shotgun_Long_Telegraph",
@@ -278,6 +284,7 @@
                       "delay": 1000,
                       "explosionType": "Iron Lance Shotgun",
                       "halfArc": 65,
+                      "lockMovement": 0,
                       "powers": [],
                       "range": 750,
                       "triggerSound": "Enemy_IronLance_Shotgun_Long_Telegraph",
@@ -309,6 +316,7 @@
                       "delay": 1000,
                       "explosionType": "Iron Lance Shotgun",
                       "halfArc": 65,
+                      "lockMovement": 0,
                       "powers": [],
                       "range": 750,
                       "triggerSound": "Enemy_IronLance_Shotgun_Long_Telegraph",
@@ -322,6 +330,7 @@
             {
               "data": {
                 "extraRange": 0,
+                "maxDistanceFromMaster": 0,
                 "range": 400,
                 "speed": 400
               },
@@ -396,7 +405,6 @@
       }
     }
   ],
-  "xp": 100,
-  "xpLevelCap": 19
+  "xp": 100
 }
 

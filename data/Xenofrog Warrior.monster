@@ -3,18 +3,19 @@
   "boss": 0,
   "burrowDetectRange": 0,
   "collisionRadius": 18,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Xenofrog Warrior Death Cries",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 340,
   "idleAnimation": "Xenofrog Idle",
+  "itemPackDrops": [],
   "maxMoveDistance": 150,
   "name": "Xenofrog Warrior",
   "objectType": "Xenofrog Warrior",
   "onDamageSoundPack": "Xenofrog Hits",
   "pauseBetweenMovements": 1000,
+  "resistant": 0,
   "runAnimation": "Xenofrog Leap",
   "runAnimationDuration": 700,
   "runSpeed": 300,
@@ -36,8 +37,11 @@
             {
               "data": {
                 "angleBetweenProjectiles": 400,
-                "gunBulletType": "Xenofrog Defender Spit",
-                "leading": 0,
+                "gunBulletBehavior": 0,
+                "gunBulletType": "",
+                "gunBulletTypes": [
+                  "Xenofrog Defender Spit"
+                ],
                 "numProjectiles": 3,
                 "range": 500
               },
@@ -46,8 +50,11 @@
             {
               "data": {
                 "angleBetweenProjectiles": 400,
-                "gunBulletType": "Xenofrog Worker Spit",
-                "leading": 0,
+                "gunBulletBehavior": 0,
+                "gunBulletType": "",
+                "gunBulletTypes": [
+                  "Xenofrog Worker Spit"
+                ],
                 "numProjectiles": 2,
                 "range": 600
               },
@@ -65,7 +72,6 @@
       }
     }
   ],
-  "xp": 9,
-  "xpLevelCap": 19
+  "xp": 9
 }
 

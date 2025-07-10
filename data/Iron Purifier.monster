@@ -1,19 +1,26 @@
 {
+  "armor": 0,
   "boss": 0,
+  "burrowDetectRange": 0,
   "collisionRadius": 22,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Iron Purifier Death Cries",
-  "drops": [],
+  "fixedFacing": 0,
   "healRate": 0,
   "hp": 650,
   "idleAnimation": "BaseArcher Idle",
+  "itemPackDrops": [],
   "maxMoveDistance": 500,
   "name": "Iron Purifier",
   "objectType": "Iron Purifier",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "",
   "runAnimationDuration": 700,
   "runSpeed": 75,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "",
   "weaponType": "",
   "weapons": [
@@ -30,15 +37,19 @@
           "emitterType": "Iron Purifier",
           "explosionType": "Iron Purifier Burst",
           "objectType": "Iron Purifier Mine",
+          "persist": 0,
+          "playerTargetingRange": 500,
           "powers": [],
           "radius": 70,
-          "range": 500,
-          "speed": 250
+          "speed": 250,
+          "throwRange": 500
         },
         "tag": "MinelayerParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -70,12 +81,13 @@
         "tag": "BarrageParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }
   ],
-  "xp": 36,
-  "xpLevelCap": 19
+  "xp": 36
 }
 

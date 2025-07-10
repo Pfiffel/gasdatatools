@@ -1,18 +1,21 @@
 {
+  "armor": 0,
   "boss": 0,
   "burrowDetectRange": 0,
   "collisionRadius": 40,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Royal Britannia Death Cries",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 650,
   "idleAnimation": "Royal Windsor",
+  "itemPackDrops": [],
   "maxMoveDistance": 500,
   "name": "Royal Britannia",
   "objectType": "Royal Britannia",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "Royal Windsor",
   "runAnimationDuration": 200,
   "runSpeed": 75,
@@ -33,6 +36,7 @@
           "delay": 1000,
           "explosionType": "Royal Britannia Shotgun",
           "halfArc": 150,
+          "lockMovement": 0,
           "powers": [],
           "range": 450,
           "triggerSound": "Enemy_IronLance_Shotgun_Long_Telegraph",
@@ -41,7 +45,9 @@
         "tag": "ShotgunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -54,15 +60,20 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Royal Britannia",
-          "leading": 0,
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Royal Britannia"
+          ],
           "numProjectiles": 1,
           "range": 700
         },
         "tag": "GunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -75,20 +86,24 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Royal Britannia",
-          "leading": 0,
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Royal Britannia"
+          ],
           "numProjectiles": 1,
           "range": 700
         },
         "tag": "GunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }
   ],
-  "xp": 36,
-  "xpLevelCap": 19
+  "xp": 36
 }
 

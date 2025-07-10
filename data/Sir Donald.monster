@@ -4,9 +4,7 @@
   "burrowDetectRange": 0,
   "collisionRadius": 34,
   "consolationItemPack": "Tier 5 Common",
-  "consolationPrizes": [],
   "deathCrySoundPack": "Royal Knight Death Cries",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 6000,
@@ -63,6 +61,7 @@
                 "delay": 1000,
                 "explosionType": "Royal Knight Shotgun",
                 "halfArc": 250,
+                "lockMovement": 0,
                 "powers": [],
                 "range": 300,
                 "triggerSound": "Enemy_RoyalKnight_Shotgun_Telegraph",
@@ -76,6 +75,7 @@
                 "delay": 1000,
                 "explosionType": "Royal Knight Shotgun",
                 "halfArc": 250,
+                "lockMovement": 0,
                 "powers": [],
                 "range": 400,
                 "triggerSound": "Enemy_RoyalKnight_Shotgun_Telegraph",
@@ -107,8 +107,11 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 250,
-          "gunBulletType": "Royal Monarch",
-          "leading": 0,
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Royal Monarch"
+          ],
           "numProjectiles": 5,
           "range": 600
         },
@@ -122,7 +125,6 @@
       }
     }
   ],
-  "xp": 49,
-  "xpLevelCap": 19
+  "xp": 49
 }
 

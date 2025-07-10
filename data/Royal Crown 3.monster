@@ -4,9 +4,7 @@
   "burrowDetectRange": 0,
   "collisionRadius": 100,
   "consolationItemPack": "Tier 5 Common",
-  "consolationPrizes": [],
   "deathCrySoundPack": "Royal Crown Death Cries",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 6000,
@@ -88,8 +86,11 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Royal Albion",
-          "leading": 0,
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Royal Albion"
+          ],
           "numProjectiles": 1,
           "range": 700
         },
@@ -111,8 +112,11 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Royal Albion",
-          "leading": 0,
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Royal Albion"
+          ],
           "numProjectiles": 1,
           "range": 700
         },
@@ -134,8 +138,11 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Royal Albion",
-          "leading": 0,
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Royal Albion"
+          ],
           "numProjectiles": 1,
           "range": 700
         },
@@ -160,6 +167,7 @@
           "delay": 1000,
           "explosionType": "Royal Crown Shotgun",
           "halfArc": 300,
+          "lockMovement": 0,
           "powers": [
             {
               "data": {
@@ -198,6 +206,7 @@
           "delay": 1000,
           "explosionType": "Royal Crown Shotgun",
           "halfArc": 300,
+          "lockMovement": 0,
           "powers": [
             {
               "data": {
@@ -225,7 +234,6 @@
       }
     }
   ],
-  "xp": 100,
-  "xpLevelCap": 19
+  "xp": 100
 }
 

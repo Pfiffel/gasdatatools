@@ -1,18 +1,21 @@
 {
+  "armor": 0,
   "boss": 1,
   "burrowDetectRange": 0,
   "collisionRadius": 100,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Royal Crown Enrage 2",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 6000,
   "idleAnimation": "Royal Monarch",
+  "itemPackDrops": [],
   "maxMoveDistance": 500,
   "name": "Royal Crown",
   "objectType": "Royal Crown",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "Royal Monarch",
   "runAnimationDuration": 200,
   "runSpeed": 100,
@@ -54,7 +57,9 @@
         "tag": "BarrageParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -67,15 +72,20 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Royal Albion",
-          "leading": 0,
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Royal Albion"
+          ],
           "numProjectiles": 1,
           "range": 700
         },
         "tag": "GunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -88,15 +98,20 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Royal Albion",
-          "leading": 0,
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Royal Albion"
+          ],
           "numProjectiles": 1,
           "range": 700
         },
         "tag": "GunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -109,20 +124,24 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Royal Albion",
-          "leading": 0,
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Royal Albion"
+          ],
           "numProjectiles": 1,
           "range": 700
         },
         "tag": "GunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }
   ],
-  "xp": 100,
-  "xpLevelCap": 19
+  "xp": 100
 }
 

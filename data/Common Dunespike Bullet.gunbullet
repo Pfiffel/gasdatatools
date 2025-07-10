@@ -1,0 +1,10 @@
+{
+  "damage": 25,
+  "emitterType": "Common Dunespike Bullet",
+  "name": "Common Dunespike Bullet",
+  "objectType": "Common Dunespike Bullet",
+  "powers": [],
+  "soundPack": "Bogweed Low Bullet",
+  "speed": 160
+}
+

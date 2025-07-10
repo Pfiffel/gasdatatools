@@ -1,0 +1,11 @@
+{
+  "damage": 100,
+  "emitterType": "Veilpiercer Dunespike Bullet",
+  "name": "Veilpiercer Dunespike Bullet",
+  "objectType": "Veilpiercer Dunespike Bullet",
+  "piercing": 1,
+  "powers": [],
+  "soundPack": "Bogweed Low Bullet",
+  "speed": 200
+}
+

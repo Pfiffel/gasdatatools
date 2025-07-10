@@ -103,7 +103,11 @@
             {
               "data": {
                 "angleBetweenProjectiles": 200,
-                "gunBulletType": "Royal Albion",
+                "gunBulletBehavior": 0,
+                "gunBulletType": "",
+                "gunBulletTypes": [
+                  "Royal Albion"
+                ],
                 "numProjectiles": 9,
                 "range": 800
               },
@@ -173,7 +177,6 @@
           "guardian": 1,
           "lifetime": 0,
           "maxCount": 1,
-          "monsterName": "",
           "monsterNames": [
             "Sir Reginald"
           ],
@@ -186,6 +189,7 @@
           },
           "noCollide": 1,
           "noRespawn": 1,
+          "playerTargetingRange": 0,
           "projectileType": "",
           "range": 0,
           "sound": "",

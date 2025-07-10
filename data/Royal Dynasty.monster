@@ -1,18 +1,21 @@
 {
+  "armor": 0,
   "boss": 1,
   "burrowDetectRange": 0,
   "collisionRadius": 115,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Royal Dynasty Enrage 2",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 6000,
   "idleAnimation": "Royal Monarch",
+  "itemPackDrops": [],
   "maxMoveDistance": 500,
   "name": "Royal Dynasty",
   "objectType": "Royal Dynasty",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "Royal Monarch",
   "runAnimationDuration": 200,
   "runSpeed": 100,
@@ -35,7 +38,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -53,7 +58,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -71,7 +78,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -89,7 +98,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -107,6 +118,7 @@
           "explosionType": "Empty",
           "objectType": "Royal Dynasty Mine",
           "persist": 1,
+          "playerTargetingRange": 600,
           "powers": [
             {
               "data": {
@@ -116,13 +128,15 @@
             }
           ],
           "radius": 90,
-          "range": 600,
-          "speed": 400
+          "speed": 400,
+          "throwRange": 600
         },
         "tag": "MinelayerParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -151,13 +165,13 @@
       },
       "targeting": {
         "data": {
+          "alsoTargetDematerialized": 0,
           "plusAngle": 0
         },
         "tag": "FixedTargeting"
       }
     }
   ],
-  "xp": 100,
-  "xpLevelCap": 19
+  "xp": 100
 }
 

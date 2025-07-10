@@ -1,0 +1,1139 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Duneclaw Bug",
+  "shapes": [
+    {
+      "bone": "Foot",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6804194,
+      "height": 10,
+      "mirror": 1,
+      "name": "Back Foot",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -51,
+          "y": 31
+        },
+        {
+          "x": -53,
+          "y": 26
+        },
+        {
+          "x": -56,
+          "y": 28
+        },
+        {
+          "x": -61,
+          "y": 30
+        },
+        {
+          "x": -68,
+          "y": 28
+        },
+        {
+          "x": -62,
+          "y": 34
+        },
+        {
+          "x": -57,
+          "y": 35
+        },
+        {
+          "x": -52,
+          "y": 35
+        },
+        {
+          "x": -49,
+          "y": 34
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Foot",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6804194,
+      "height": 10,
+      "mirror": 1,
+      "name": "Middle Foot",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -25,
+          "y": -47
+        },
+        {
+          "x": -31,
+          "y": -42
+        },
+        {
+          "x": -32,
+          "y": -47
+        },
+        {
+          "x": -37,
+          "y": -52
+        },
+        {
+          "x": -43,
+          "y": -55
+        },
+        {
+          "x": -34,
+          "y": -56
+        },
+        {
+          "x": -27,
+          "y": -54
+        },
+        {
+          "x": -21,
+          "y": -49
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Foot",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6804194,
+      "height": 10,
+      "mirror": 1,
+      "name": "Front Foot",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 6,
+          "y": 54
+        },
+        {
+          "x": -1,
+          "y": 53
+        },
+        {
+          "x": 0,
+          "y": 55
+        },
+        {
+          "x": 0,
+          "y": 58
+        },
+        {
+          "x": -1,
+          "y": 63
+        },
+        {
+          "x": -5,
+          "y": 70
+        },
+        {
+          "x": 4,
+          "y": 67
+        },
+        {
+          "x": 10,
+          "y": 60
+        },
+        {
+          "x": 12,
+          "y": 53
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Foot",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6804194,
+      "height": 11,
+      "mirror": 1,
+      "name": "Front Leg",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 6,
+          "y": 20
+        },
+        {
+          "x": 1,
+          "y": 24
+        },
+        {
+          "x": 0,
+          "y": 35
+        },
+        {
+          "x": 1,
+          "y": 40
+        },
+        {
+          "x": 1,
+          "y": 47
+        },
+        {
+          "x": -2,
+          "y": 53
+        },
+        {
+          "x": 3,
+          "y": 56
+        },
+        {
+          "x": 9,
+          "y": 56
+        },
+        {
+          "x": 13,
+          "y": 54
+        },
+        {
+          "x": 8,
+          "y": 45
+        },
+        {
+          "x": 7,
+          "y": 37
+        },
+        {
+          "x": 10,
+          "y": 29
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Foot",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6804194,
+      "height": 11,
+      "mirror": 1,
+      "name": "Middle Leg",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -9,
+          "y": -17
+        },
+        {
+          "x": -15,
+          "y": -18
+        },
+        {
+          "x": -22,
+          "y": -27
+        },
+        {
+          "x": -23,
+          "y": -32
+        },
+        {
+          "x": -28,
+          "y": -39
+        },
+        {
+          "x": -32,
+          "y": -42
+        },
+        {
+          "x": -31,
+          "y": -46
+        },
+        {
+          "x": -25,
+          "y": -50
+        },
+        {
+          "x": -20,
+          "y": -50
+        },
+        {
+          "x": -20,
+          "y": -40
+        },
+        {
+          "x": -17,
+          "y": -33
+        },
+        {
+          "x": -10,
+          "y": -27
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Foot",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6804194,
+      "height": 11,
+      "mirror": 1,
+      "name": "Back Leg",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -30,
+          "y": 20
+        },
+        {
+          "x": -32,
+          "y": 16
+        },
+        {
+          "x": -41,
+          "y": 19
+        },
+        {
+          "x": -43,
+          "y": 22
+        },
+        {
+          "x": -49,
+          "y": 25
+        },
+        {
+          "x": -53,
+          "y": 25
+        },
+        {
+          "x": -54,
+          "y": 28
+        },
+        {
+          "x": -52,
+          "y": 33
+        },
+        {
+          "x": -50,
+          "y": 35
+        },
+        {
+          "x": -47,
+          "y": 35
+        },
+        {
+          "x": -44,
+          "y": 30
+        },
+        {
+          "x": -39,
+          "y": 26
+        },
+        {
+          "x": -32,
+          "y": 23
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6804194,
+      "height": 14,
+      "mirror": 1,
+      "name": "Back Lower Spike",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -33,
+          "y": 19
+        },
+        {
+          "x": -33,
+          "y": 31
+        },
+        {
+          "x": -28,
+          "y": 27
+        },
+        {
+          "x": -24,
+          "y": 23
+        },
+        {
+          "x": -24,
+          "y": 22
+        },
+        {
+          "x": -27,
+          "y": 19
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6804194,
+      "height": 14,
+      "mirror": 1,
+      "name": "Front Lower Spike",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -18,
+          "y": 24
+        },
+        {
+          "x": -15,
+          "y": 36
+        },
+        {
+          "x": -11,
+          "y": 30
+        },
+        {
+          "x": -9,
+          "y": 25
+        },
+        {
+          "x": -9,
+          "y": 24
+        },
+        {
+          "x": -13,
+          "y": 23
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6804194,
+      "height": 14,
+      "mirror": 1,
+      "name": "Rear Jaw",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -42,
+          "y": 3
+        },
+        {
+          "x": -46,
+          "y": 9
+        },
+        {
+          "x": -51,
+          "y": 12
+        },
+        {
+          "x": -58,
+          "y": 11
+        },
+        {
+          "x": -55,
+          "y": 14
+        },
+        {
+          "x": -50,
+          "y": 17
+        },
+        {
+          "x": -44,
+          "y": 17
+        },
+        {
+          "x": -39,
+          "y": 14
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Upper Arm",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6804194,
+      "height": 16,
+      "mirror": 1,
+      "name": "Upper Arm",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 16,
+          "y": 24
+        },
+        {
+          "x": 15,
+          "y": 30
+        },
+        {
+          "x": 15,
+          "y": 37
+        },
+        {
+          "x": 17,
+          "y": 46
+        },
+        {
+          "x": 20,
+          "y": 48
+        },
+        {
+          "x": 24,
+          "y": 45
+        },
+        {
+          "x": 24,
+          "y": 31
+        },
+        {
+          "x": 22,
+          "y": 25
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "Forearm",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6804194,
+      "height": 16,
+      "mirror": 1,
+      "name": "Forerm",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 65,
+          "y": 32
+        },
+        {
+          "x": 61,
+          "y": 34
+        },
+        {
+          "x": 57,
+          "y": 38
+        },
+        {
+          "x": 51,
+          "y": 41
+        },
+        {
+          "x": 46,
+          "y": 40
+        },
+        {
+          "x": 35,
+          "y": 37
+        },
+        {
+          "x": 28,
+          "y": 38
+        },
+        {
+          "x": 24,
+          "y": 42
+        },
+        {
+          "x": 21,
+          "y": 49
+        },
+        {
+          "x": 25,
+          "y": 52
+        },
+        {
+          "x": 39,
+          "y": 52
+        },
+        {
+          "x": 49,
+          "y": 47
+        },
+        {
+          "x": 60,
+          "y": 42
+        },
+        {
+          "x": 65,
+          "y": 37
+        },
+        {
+          "x": 69,
+          "y": 32
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 6804194,
+      "height": 16,
+      "mirror": 1,
+      "name": "Body 3",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -43,
+          "y": 3
+        },
+        {
+          "x": -42,
+          "y": 12
+        },
+        {
+          "x": -37,
+          "y": 20
+        },
+        {
+          "x": -21,
+          "y": 27
+        },
+        {
+          "x": -28,
+          "y": 2
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 6804194,
+      "height": 17,
+      "mirror": 1,
+      "name": "Body 2",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -29,
+          "y": 4
+        },
+        {
+          "x": -27,
+          "y": 17
+        },
+        {
+          "x": -24,
+          "y": 26
+        },
+        {
+          "x": -20,
+          "y": 27
+        },
+        {
+          "x": -17,
+          "y": 29
+        },
+        {
+          "x": -5,
+          "y": 30
+        },
+        {
+          "x": -8,
+          "y": 8
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 6804194,
+      "height": 17,
+      "mirror": 1,
+      "name": "Head",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 13,
+          "y": 5
+        },
+        {
+          "x": 16,
+          "y": 20
+        },
+        {
+          "x": 24,
+          "y": 23
+        },
+        {
+          "x": 30,
+          "y": 20
+        },
+        {
+          "x": 32,
+          "y": 15
+        },
+        {
+          "x": 33,
+          "y": 5
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6804194,
+      "height": 18,
+      "mirror": 1,
+      "name": "Outer Tooth",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 36,
+          "y": 7
+        },
+        {
+          "x": 32,
+          "y": 7
+        },
+        {
+          "x": 31,
+          "y": 15
+        },
+        {
+          "x": 36,
+          "y": 12
+        },
+        {
+          "x": 39,
+          "y": 8
+        },
+        {
+          "x": 39,
+          "y": 3
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 6804194,
+      "height": 18,
+      "mirror": 1,
+      "name": "Body 1",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -12,
+          "y": 20
+        },
+        {
+          "x": -9,
+          "y": 30
+        },
+        {
+          "x": -5,
+          "y": 29
+        },
+        {
+          "x": 0,
+          "y": 33
+        },
+        {
+          "x": 6,
+          "y": 32
+        },
+        {
+          "x": 12,
+          "y": 29
+        },
+        {
+          "x": 4,
+          "y": 5
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6804194,
+      "height": 18,
+      "mirror": 1,
+      "name": "Eyes",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 27,
+          "y": 8
+        },
+        {
+          "x": 24,
+          "y": 10
+        },
+        {
+          "x": 23,
+          "y": 15
+        },
+        {
+          "x": 26,
+          "y": 18
+        },
+        {
+          "x": 29,
+          "y": 16
+        },
+        {
+          "x": 30,
+          "y": 13
+        },
+        {
+          "x": 30,
+          "y": 10
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6804194,
+      "height": 18,
+      "mirror": 1,
+      "name": "Inner Tooth",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 29,
+          "y": 3
+        },
+        {
+          "x": 32,
+          "y": 6
+        },
+        {
+          "x": 34,
+          "y": 4
+        },
+        {
+          "x": 36,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6804194,
+      "height": 18,
+      "mirror": 1,
+      "name": "Front Outer Spike",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -3,
+          "y": 18
+        },
+        {
+          "x": -7,
+          "y": 20
+        },
+        {
+          "x": -8,
+          "y": 24
+        },
+        {
+          "x": -7,
+          "y": 33
+        },
+        {
+          "x": -6,
+          "y": 41
+        },
+        {
+          "x": 0,
+          "y": 33
+        },
+        {
+          "x": 5,
+          "y": 26
+        },
+        {
+          "x": 3,
+          "y": 20
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6804194,
+      "height": 18,
+      "mirror": 1,
+      "name": "Middle Outer Spike",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -23,
+          "y": 15
+        },
+        {
+          "x": -24,
+          "y": 19
+        },
+        {
+          "x": -23,
+          "y": 25
+        },
+        {
+          "x": -23,
+          "y": 31
+        },
+        {
+          "x": -18,
+          "y": 26
+        },
+        {
+          "x": -13,
+          "y": 22
+        },
+        {
+          "x": -13,
+          "y": 17
+        },
+        {
+          "x": -16,
+          "y": 15
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 6804194,
+      "height": 18,
+      "mirror": 1,
+      "name": "Back Outer Spike",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -38,
+          "y": 11
+        },
+        {
+          "x": -38,
+          "y": 23
+        },
+        {
+          "x": -33,
+          "y": 19
+        },
+        {
+          "x": -29,
+          "y": 15
+        },
+        {
+          "x": -29,
+          "y": 14
+        },
+        {
+          "x": -32,
+          "y": 11
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 6804194,
+      "height": 19,
+      "mirror": 1,
+      "name": "Middle Spike",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -28,
+          "y": 1
+        },
+        {
+          "x": -27,
+          "y": 5
+        },
+        {
+          "x": -23,
+          "y": 7
+        },
+        {
+          "x": -18,
+          "y": 6
+        },
+        {
+          "x": -16,
+          "y": 3
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 6804194,
+      "height": 19,
+      "mirror": 1,
+      "name": "Back Spike",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -42,
+          "y": 1
+        },
+        {
+          "x": -39,
+          "y": 5
+        },
+        {
+          "x": -35,
+          "y": 5
+        },
+        {
+          "x": -32,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 6804194,
+      "height": 19,
+      "mirror": 1,
+      "name": "Front Spike",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -11,
+          "y": 3
+        },
+        {
+          "x": -9,
+          "y": 7
+        },
+        {
+          "x": -5,
+          "y": 9
+        },
+        {
+          "x": 0,
+          "y": 8
+        },
+        {
+          "x": 2,
+          "y": 5
+        },
+        {
+          "x": 2,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 6804194,
+      "height": 20,
+      "mirror": 1,
+      "name": "Collar",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 11
+        },
+        {
+          "x": 6,
+          "y": 29
+        },
+        {
+          "x": 16,
+          "y": 33
+        },
+        {
+          "x": 20,
+          "y": 31
+        },
+        {
+          "x": 22,
+          "y": 27
+        },
+        {
+          "x": 22,
+          "y": 24
+        },
+        {
+          "x": 17,
+          "y": 21
+        },
+        {
+          "x": 15,
+          "y": 14
+        },
+        {
+          "x": 14,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

@@ -33,7 +33,11 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Royal Britannia",
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Royal Britannia"
+          ],
           "numProjectiles": 1,
           "range": 600
         },
@@ -59,18 +63,19 @@
           "guardian": 0,
           "lifetime": 60000,
           "maxCount": 3,
-          "monsterName": "",
           "monsterNames": [
             "Royal Comet"
           ],
           "movement": {
             "data": {
+              "ccw": 0,
               "radius": 100
             },
             "tag": "OrbitMovement"
           },
           "noCollide": 0,
           "noRespawn": 0,
+          "playerTargetingRange": 0,
           "projectileType": "",
           "range": 0,
           "sound": "",

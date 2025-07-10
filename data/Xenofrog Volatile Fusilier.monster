@@ -3,18 +3,19 @@
   "boss": 0,
   "burrowDetectRange": 0,
   "collisionRadius": 19,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Xenofrog Worker Death Cries",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 500,
   "idleAnimation": "Xenofrog Idle",
+  "itemPackDrops": [],
   "maxMoveDistance": 150,
   "name": "Xenofrog Volatile Fusilier",
   "objectType": "Xenofrog Volatile Fusilier",
   "onDamageSoundPack": "Xenofrog Hits",
   "pauseBetweenMovements": 700,
+  "resistant": 0,
   "runAnimation": "Xenofrog Leap",
   "runAnimationDuration": 700,
   "runSpeed": 260,
@@ -36,8 +37,11 @@
             {
               "data": {
                 "angleBetweenProjectiles": 150,
-                "gunBulletType": "Xenofrog Volatile Spit",
-                "leading": 0,
+                "gunBulletBehavior": 0,
+                "gunBulletType": "",
+                "gunBulletTypes": [
+                  "Xenofrog Volatile Spit"
+                ],
                 "numProjectiles": 1,
                 "range": 700
               },
@@ -55,7 +59,6 @@
       }
     }
   ],
-  "xp": 25,
-  "xpLevelCap": 19
+  "xp": 25
 }
 

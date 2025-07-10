@@ -2424,15 +2424,7 @@
   ],
   "monsterFields": [
     {
-      "decorType": "Swamp Green",
       "lairType": "Swamp 0 Noob",
-      "localFauna": [
-        {
-          "count": 50,
-          "name": "Bogweed"
-        }
-      ],
-      "mapGridDesignator": "Planet Orion-Q154-Beta-5",
       "miniBosses": [],
       "poly": [
         {
@@ -2452,20 +2444,11 @@
           "y": 30000
         }
       ],
-      "sectorName": "QUAGMIRE",
       "tag": "Zone 0",
       "zoneName": ""
     },
     {
-      "decorType": "Swamp Green",
       "lairType": "Swamp 1 Green",
-      "localFauna": [
-        {
-          "count": 75,
-          "name": "Bogweed"
-        }
-      ],
-      "mapGridDesignator": "Sector QX-17",
       "miniBosses": [],
       "poly": [
         {
@@ -2485,20 +2468,11 @@
           "y": 22500
         }
       ],
-      "sectorName": "The Muck",
       "tag": "Zone 1",
       "zoneName": ""
     },
     {
-      "decorType": "Swamp Blue",
       "lairType": "Swamp 2 Blue",
-      "localFauna": [
-        {
-          "count": 75,
-          "name": "Bogweed Archer"
-        }
-      ],
-      "mapGridDesignator": "Sector PH-91",
       "miniBosses": [
         "Xenofrog Bog Nest 1",
         "Xenofrog Bog Nest 2",
@@ -2523,20 +2497,11 @@
           "y": 15000
         }
       ],
-      "sectorName": "The Azure Bog",
       "tag": "Zone 2",
       "zoneName": ""
     },
     {
-      "decorType": "Swamp Red",
       "lairType": "Swamp 3 Red",
-      "localFauna": [
-        {
-          "count": 75,
-          "name": "Bogweed Mephitic"
-        }
-      ],
-      "mapGridDesignator": "Sector KZ-83",
       "miniBosses": [
         "Xenofrog Squelch Nest 1",
         "Xenofrog Squelch Nest 2",
@@ -2561,20 +2526,11 @@
           "y": 7500
         }
       ],
-      "sectorName": "The Red Squelch",
       "tag": "Zone 3",
       "zoneName": "RED ZONE"
     },
     {
-      "decorType": "Swamp Dank",
       "lairType": "Swamp 4 Dank",
-      "localFauna": [
-        {
-          "count": 75,
-          "name": "Bogweed Burrower"
-        }
-      ],
-      "mapGridDesignator": "Sector VN-39",
       "miniBosses": [
         "Xenofrog Morass Nest 1",
         "Xenofrog Morass Nest 2",
@@ -2599,20 +2555,11 @@
           "y": 0
         }
       ],
-      "sectorName": "The Dank Morass",
       "tag": "Zone 4",
       "zoneName": "GREEN ZONE"
     },
     {
-      "decorType": "Swamp Purple",
       "lairType": "Swamp 5 Purple",
-      "localFauna": [
-        {
-          "count": 75,
-          "name": "Bogweed Ambusher"
-        }
-      ],
-      "mapGridDesignator": "Sector RD-12",
       "miniBosses": [
         "Xenofrog Sludge Nest 1",
         "Xenofrog Sludge Nest 2",
@@ -2638,20 +2585,11 @@
           "y": -7500
         }
       ],
-      "sectorName": "The Tyrian Sludge",
       "tag": "Zone 5",
       "zoneName": "PURPLE ZONE"
     },
     {
-      "decorType": "Swamp Yellow",
       "lairType": "Swamp 6 Yellow",
-      "localFauna": [
-        {
-          "count": 75,
-          "name": "Bogweed Noxiant"
-        }
-      ],
-      "mapGridDesignator": "Sector XB-50",
       "miniBosses": [
         "Xenofrog Swamp Nest 1",
         "Xenofrog Swamp Nest 2",
@@ -2677,20 +2615,11 @@
           "y": -15000
         }
       ],
-      "sectorName": "The Sulfur Swamp",
       "tag": "Zone 6",
       "zoneName": "YELLOW ZONE"
     },
     {
-      "decorType": "Swamp Orange",
       "lairType": "Swamp 7 Orange",
-      "localFauna": [
-        {
-          "count": 75,
-          "name": "Bogweed Acidic"
-        }
-      ],
-      "mapGridDesignator": "Sector LP-77",
       "miniBosses": [
         "Xenofrog Mire Nest 1",
         "Xenofrog Mire Nest 2",
@@ -2717,20 +2646,11 @@
           "y": -22500
         }
       ],
-      "sectorName": "The Acid Mire",
       "tag": "Zone 7",
       "zoneName": "ORANGE ZONE"
     },
     {
-      "decorType": "Swamp Black",
       "lairType": "Swamp 8 Black",
-      "localFauna": [
-        {
-          "count": 75,
-          "name": "Bogweed Necrophant"
-        }
-      ],
-      "mapGridDesignator": "Sector AV-10",
       "miniBosses": [
         "Xenofrog Cesspit Nest 1",
         "Xenofrog Cesspit Nest 2",
@@ -2760,13 +2680,11 @@
           "y": -30000
         }
       ],
-      "sectorName": "The Black Cesspit",
       "tag": "Zone 8",
       "zoneName": "BLACK ZONE"
     }
   ],
   "name": "Quagmire",
-  "overworld": 1,
   "patches": [],
   "quest": {
     "bossKillTime": 300000,

@@ -3,18 +3,19 @@
   "boss": 0,
   "burrowDetectRange": 0,
   "collisionRadius": 29,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Xenofrog Defender Death Cries",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 1600,
   "idleAnimation": "Xenofrog Idle",
+  "itemPackDrops": [],
   "maxMoveDistance": 200,
   "name": "Xenofrog Dire Defender",
   "objectType": "Xenofrog Dire Defender",
   "onDamageSoundPack": "Xenofrog Hits",
   "pauseBetweenMovements": 900,
+  "resistant": 0,
   "runAnimation": "Xenofrog Leap",
   "runAnimationDuration": 700,
   "runSpeed": 280,
@@ -36,8 +37,11 @@
             {
               "data": {
                 "angleBetweenProjectiles": 450,
-                "gunBulletType": "Xenofrog Dire Defender Spit",
-                "leading": 0,
+                "gunBulletBehavior": 0,
+                "gunBulletType": "",
+                "gunBulletTypes": [
+                  "Xenofrog Dire Defender Spit"
+                ],
                 "numProjectiles": 5,
                 "range": 350
               },
@@ -49,6 +53,7 @@
                 "delay": 1000,
                 "explosionType": "Xenofrog Defender Shotgun",
                 "halfArc": 250,
+                "lockMovement": 0,
                 "powers": [
                   {
                     "data": {
@@ -79,7 +84,6 @@
       }
     }
   ],
-  "xp": 81,
-  "xpLevelCap": 19
+  "xp": 81
 }
 

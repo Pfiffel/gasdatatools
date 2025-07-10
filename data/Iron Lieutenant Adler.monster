@@ -50,7 +50,11 @@
             {
               "data": {
                 "angleBetweenProjectiles": 150,
-                "gunBulletType": "Iron Protector",
+                "gunBulletBehavior": 0,
+                "gunBulletType": "",
+                "gunBulletTypes": [
+                  "Iron Protector"
+                ],
                 "numProjectiles": 1,
                 "range": 700
               },
@@ -88,7 +92,11 @@
             {
               "data": {
                 "angleBetweenProjectiles": 150,
-                "gunBulletType": "Iron Protector",
+                "gunBulletBehavior": 0,
+                "gunBulletType": "",
+                "gunBulletTypes": [
+                  "Iron Protector"
+                ],
                 "numProjectiles": 1,
                 "range": 700
               },
@@ -118,7 +126,6 @@
           "guardian": 0,
           "lifetime": 5000,
           "maxCount": 3,
-          "monsterName": "",
           "monsterNames": [
             "Iron Lieutenant Adler Mine"
           ],
@@ -131,6 +138,7 @@
           },
           "noCollide": 1,
           "noRespawn": 0,
+          "playerTargetingRange": 0,
           "projectileType": "",
           "range": 0,
           "sound": "Enemy_IronRedoubt_Conqueror_Spawn",
@@ -167,7 +175,11 @@
             {
               "data": {
                 "angleBetweenProjectiles": 300,
-                "gunBulletType": "Iron Bulwark",
+                "gunBulletBehavior": 0,
+                "gunBulletType": "",
+                "gunBulletTypes": [
+                  "Iron Bulwark"
+                ],
                 "numProjectiles": 5,
                 "range": 850
               },

@@ -1,34 +1,5 @@
 {
-  "groundPoints": [
-    {
-      "color": 10754586,
-      "p": {
-        "x": -6450,
-        "y": -6727
-      }
-    },
-    {
-      "color": 2000384,
-      "p": {
-        "x": 6750,
-        "y": -6529
-      }
-    },
-    {
-      "color": 12096002,
-      "p": {
-        "x": 6666,
-        "y": 6810
-      }
-    },
-    {
-      "color": 7481548,
-      "p": {
-        "x": -6675,
-        "y": 6445
-      }
-    }
-  ],
+  "decorateSpawnPoints": 1,
   "groundTexturePainterName": "groundtexture",
   "groundZones": [
     {
@@ -155,6 +126,7 @@
   "lanes": [],
   "mapObjects": [
     {
+      "f": 0,
       "label": "Welcome to Galactic Assault Squad!",
       "note": "",
       "objectType": "Invisible Marker",
@@ -164,6 +136,7 @@
       }
     },
     {
+      "f": 0,
       "label": "Use W A S D to drive your hovertank",
       "note": "",
       "objectType": "Invisible Marker",
@@ -173,6 +146,7 @@
       }
     },
     {
+      "f": 0,
       "label": "Use R to instantly escape to safety",
       "note": "",
       "objectType": "Invisible Marker",
@@ -182,6 +156,7 @@
       }
     },
     {
+      "f": 0,
       "label": "Try it now!",
       "note": "",
       "objectType": "Invisible Marker",
@@ -191,6 +166,7 @@
       }
     },
     {
+      "f": 0,
       "label": "Come this way!",
       "note": "",
       "objectType": "Invisible Marker",
@@ -200,6 +176,7 @@
       }
     },
     {
+      "f": 0,
       "label": "Training drones ahead!",
       "note": "",
       "objectType": "Invisible Marker",
@@ -209,6 +186,7 @@
       }
     },
     {
+      "f": 0,
       "label": "Awesome job!",
       "note": "",
       "objectType": "Invisible Marker",
@@ -218,6 +196,7 @@
       }
     },
     {
+      "f": 0,
       "label": "",
       "note": "Overworld Warp",
       "objectType": "Portal",
@@ -227,6 +206,7 @@
       }
     },
     {
+      "f": 0,
       "label": "Use Q & E to scoot left or right",
       "note": "",
       "objectType": "Invisible Marker",
@@ -236,6 +216,7 @@
       }
     },
     {
+      "f": 0,
       "label": "Nice!",
       "note": "",
       "objectType": "Invisible Marker",
@@ -245,6 +226,7 @@
       }
     },
     {
+      "f": 0,
       "label": "Autofire!",
       "note": "",
       "objectType": "Invisible Marker",
@@ -254,6 +236,7 @@
       }
     },
     {
+      "f": 0,
       "label": "Lots  of drones ahead!",
       "note": "",
       "objectType": "Invisible Marker",
@@ -263,6 +246,7 @@
       }
     },
     {
+      "f": 0,
       "label": "",
       "note": "Spawn: Training Drone Mk 1 Base",
       "objectType": "Invisible Marker",
@@ -272,6 +256,7 @@
       }
     },
     {
+      "f": 0,
       "label": "",
       "note": "Spawn: Training Drone Mk 2 Base",
       "objectType": "Invisible Marker",
@@ -281,6 +266,7 @@
       }
     },
     {
+      "f": 0,
       "label": "Drive over the teleporter ahead!",
       "note": "",
       "objectType": "Invisible Marker",
@@ -290,6 +276,7 @@
       }
     },
     {
+      "f": 0,
       "label": "Teleport to Planet Quagmire",
       "note": "",
       "objectType": "Invisible Marker",
@@ -299,6 +286,7 @@
       }
     },
     {
+      "f": 0,
       "label": "Come this way!",
       "note": "",
       "objectType": "Invisible Marker",
@@ -308,6 +296,7 @@
       }
     },
     {
+      "f": 0,
       "label": "Pick up XP packs!",
       "note": "",
       "objectType": "Invisible Marker",
@@ -317,6 +306,7 @@
       }
     },
     {
+      "f": 0,
       "label": "Excellent work!",
       "note": "",
       "objectType": "Invisible Marker",
@@ -326,6 +316,7 @@
       }
     },
     {
+      "f": 0,
       "label": "Blast em!",
       "note": "",
       "objectType": "Invisible Marker",
@@ -335,6 +326,7 @@
       }
     },
     {
+      "f": 0,
       "label": "Hit F to pause anytime",
       "note": "",
       "objectType": "Invisible Marker",
@@ -344,6 +336,7 @@
       }
     },
     {
+      "f": 0,
       "label": "Try it now!",
       "note": "",
       "objectType": "Invisible Marker",
@@ -353,6 +346,7 @@
       }
     },
     {
+      "f": 0,
       "label": "",
       "note": "Spawn: Training Drone Mk 3 Base",
       "objectType": "Invisible Marker",
@@ -362,6 +356,7 @@
       }
     },
     {
+      "f": 0,
       "label": "Come this way!",
       "note": "",
       "objectType": "Invisible Marker",
@@ -371,6 +366,7 @@
       }
     },
     {
+      "f": 0,
       "label": "More drones ahead!",
       "note": "",
       "objectType": "Invisible Marker",
@@ -380,6 +376,7 @@
       }
     },
     {
+      "f": 0,
       "label": "There is nothing up here!",
       "note": "",
       "objectType": "Invisible Marker",
@@ -389,6 +386,7 @@
       }
     },
     {
+      "f": 0,
       "label": "Wrong way!",
       "note": "",
       "objectType": "Invisible Marker",
@@ -402,35 +400,72 @@
   "miniBossSpawns": [],
   "monsterFields": [],
   "name": "Tutorial",
-  "patches": [],
+  "patches": [
+    {
+      "decorType": "Swamp Purple",
+      "p": {
+        "x": -72,
+        "y": 5414
+      },
+      "radius": 2076
+    },
+    {
+      "decorType": "Swamp Purple",
+      "p": {
+        "x": 22,
+        "y": 3437
+      },
+      "radius": 2076
+    },
+    {
+      "decorType": "Swamp Purple",
+      "p": {
+        "x": -51,
+        "y": 1438
+      },
+      "radius": 2076
+    },
+    {
+      "decorType": "Swamp Purple",
+      "p": {
+        "x": 75,
+        "y": -526
+      },
+      "radius": 2076
+    },
+    {
+      "decorType": "Swamp Purple",
+      "p": {
+        "x": -57,
+        "y": -2299
+      },
+      "radius": 2076
+    },
+    {
+      "decorType": "Swamp Purple",
+      "p": {
+        "x": 645,
+        "y": -4057
+      },
+      "radius": 2076
+    },
+    {
+      "decorType": "Swamp Purple",
+      "p": {
+        "x": 822,
+        "y": -5761
+      },
+      "radius": 2076
+    }
+  ],
   "quest": {
     "bossKillTime": 300000,
+    "bossRoamingRadius": 400,
+    "clearedRadius": 800,
     "postKillBaskTime": 60000,
-    "spawnAreaRadius": 800,
     "spawnPoints": []
   },
   "regions": [
-    {
-      "poly": [
-        {
-          "x": -6685,
-          "y": 7976
-        },
-        {
-          "x": -6418,
-          "y": 8072
-        },
-        {
-          "x": -6690,
-          "y": 8312
-        },
-        {
-          "x": -7041,
-          "y": 8208
-        }
-      ],
-      "regionType": "Swamp"
-    },
     {
       "poly": [
         {

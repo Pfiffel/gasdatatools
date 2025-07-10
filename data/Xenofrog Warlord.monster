@@ -49,6 +49,7 @@
           },
           "noCollide": 0,
           "noRespawn": 1,
+          "playerTargetingRange": 0,
           "projectileType": "Xenofrog Dire Pustulant",
           "range": 500,
           "sound": "",
@@ -89,6 +90,7 @@
           },
           "noCollide": 0,
           "noRespawn": 1,
+          "playerTargetingRange": 0,
           "projectileType": "Xenofrog Dire Grenadier",
           "range": 350,
           "sound": "",
@@ -167,7 +169,11 @@
             {
               "data": {
                 "angleBetweenProjectiles": 300,
-                "gunBulletType": "Xenofrog King Spit",
+                "gunBulletBehavior": 0,
+                "gunBulletType": "",
+                "gunBulletTypes": [
+                  "Xenofrog King Spit"
+                ],
                 "numProjectiles": 5,
                 "range": 600
               },

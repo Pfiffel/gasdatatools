@@ -5,6 +5,7 @@
   "name": "PlateauEdge",
   "shapes": [
     {
+      "addProceduralTexturing": 0,
       "bone": "",
       "clones": [],
       "closed": 0,
@@ -39,6 +40,7 @@
       "useBoneMirror": 1
     },
     {
+      "addProceduralTexturing": 0,
       "bone": "",
       "clones": [],
       "closed": 0,
@@ -77,6 +79,7 @@
       "useBoneMirror": 1
     },
     {
+      "addProceduralTexturing": 0,
       "bone": "",
       "clones": [],
       "closed": 0,
@@ -111,6 +114,7 @@
       "useBoneMirror": 1
     },
     {
+      "addProceduralTexturing": 0,
       "bone": "",
       "clones": [],
       "closed": 0,
@@ -157,6 +161,7 @@
       "useBoneMirror": 1
     },
     {
+      "addProceduralTexturing": 0,
       "bone": "",
       "clones": [],
       "closed": 0,
@@ -211,6 +216,7 @@
       "useBoneMirror": 1
     },
     {
+      "addProceduralTexturing": 0,
       "bone": "",
       "clones": [],
       "closed": 0,
@@ -261,6 +267,7 @@
       "useBoneMirror": 1
     },
     {
+      "addProceduralTexturing": 0,
       "bone": "",
       "clones": [],
       "closed": 0,
@@ -315,6 +322,7 @@
       "useBoneMirror": 1
     },
     {
+      "addProceduralTexturing": 0,
       "bone": "",
       "clones": [],
       "closed": 0,
@@ -365,6 +373,7 @@
       "useBoneMirror": 1
     },
     {
+      "addProceduralTexturing": 0,
       "bone": "",
       "clones": [],
       "closed": 0,
@@ -415,6 +424,7 @@
       "useBoneMirror": 1
     },
     {
+      "addProceduralTexturing": 0,
       "bone": "",
       "clones": [],
       "closed": 0,
@@ -465,6 +475,7 @@
       "useBoneMirror": 1
     },
     {
+      "addProceduralTexturing": 0,
       "bone": "",
       "clones": [],
       "closed": 0,
@@ -515,6 +526,7 @@
       "useBoneMirror": 1
     },
     {
+      "addProceduralTexturing": 0,
       "bone": "",
       "clones": [],
       "closed": 0,
@@ -565,6 +577,7 @@
       "useBoneMirror": 1
     },
     {
+      "addProceduralTexturing": 0,
       "bone": "",
       "clones": [],
       "closed": 0,
@@ -679,6 +692,7 @@
       "useBoneMirror": 1
     },
     {
+      "addProceduralTexturing": 1,
       "bone": "",
       "clones": [],
       "closed": 0,
@@ -733,6 +747,7 @@
       "useBoneMirror": 1
     },
     {
+      "addProceduralTexturing": 1,
       "bone": "",
       "clones": [],
       "closed": 0,
@@ -795,6 +810,7 @@
       "useBoneMirror": 1
     },
     {
+      "addProceduralTexturing": 1,
       "bone": "",
       "clones": [],
       "closed": 0,
@@ -845,6 +861,7 @@
       "useBoneMirror": 1
     },
     {
+      "addProceduralTexturing": 0,
       "bone": "",
       "clones": [],
       "closed": 0,

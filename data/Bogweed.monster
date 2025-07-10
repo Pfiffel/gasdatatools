@@ -3,18 +3,19 @@
   "boss": 0,
   "burrowDetectRange": 0,
   "collisionRadius": 36,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Bogweed Low Death Cries",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 50,
   "idleAnimation": "BaseArcher Idle",
+  "itemPackDrops": [],
   "maxMoveDistance": 0,
   "name": "Bogweed",
   "objectType": "Bogweed",
   "onDamageSoundPack": "Xenofrog Nest Hits",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "",
   "runAnimationDuration": 700,
   "runSpeed": 0,
@@ -32,8 +33,11 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Bogweed Bullet",
-          "leading": 0,
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Bogweed Bullet"
+          ],
           "numProjectiles": 1,
           "range": 500
         },
@@ -47,7 +51,6 @@
       }
     }
   ],
-  "xp": 1,
-  "xpLevelCap": 19
+  "xp": 1
 }
 

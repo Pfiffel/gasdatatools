@@ -1,0 +1,73 @@
+{
+  "attachmentPoints": [
+    {
+      "height": 0,
+      "name": "Attack 1",
+      "pos": {
+        "f": 0,
+        "p": {
+          "x": 144,
+          "y": 0
+        }
+      }
+    },
+    {
+      "height": 0,
+      "name": "Attack 2",
+      "pos": {
+        "f": 450,
+        "p": {
+          "x": 108,
+          "y": 36
+        }
+      }
+    },
+    {
+      "height": 0,
+      "name": "Attack 3",
+      "pos": {
+        "f": -450,
+        "p": {
+          "x": 108,
+          "y": -36
+        }
+      }
+    }
+  ],
+  "bonePivots": [],
+  "floppiness": 200,
+  "name": "Azure Dunespike Bullet",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 6207639,
+      "height": 80,
+      "mirror": 1,
+      "name": "Thorns 1",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 33,
+          "y": 0
+        },
+        {
+          "x": -9,
+          "y": 8
+        },
+        {
+          "x": -21,
+          "y": 6
+        },
+        {
+          "x": -24,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

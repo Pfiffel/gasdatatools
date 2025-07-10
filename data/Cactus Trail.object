@@ -1,0 +1,35 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Cactus Trail",
+  "shapes": [
+    {
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16777215,
+      "height": 50,
+      "mirror": 1,
+      "name": "Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -13,
+          "y": 7
+        },
+        {
+          "x": 0,
+          "y": 15
+        },
+        {
+          "x": 13,
+          "y": 7
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

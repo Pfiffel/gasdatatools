@@ -3,13 +3,13 @@
   "boss": 0,
   "burrowDetectRange": 0,
   "collisionRadius": 50,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Iron Acropolis Death Cries",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 1600,
   "idleAnimation": "BaseArcher Idle",
+  "itemPackDrops": [],
   "maxMoveDistance": 500,
   "name": "Iron Acropolis",
   "objectType": "Iron Acropolis",
@@ -33,8 +33,11 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Iron Triumph",
-          "leading": 0,
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Iron Triumph"
+          ],
           "numProjectiles": 1,
           "range": 500
         },
@@ -56,8 +59,11 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Iron Triumph",
-          "leading": 0,
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Iron Triumph"
+          ],
           "numProjectiles": 1,
           "range": 600
         },
@@ -79,8 +85,11 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Iron Triumph",
-          "leading": 0,
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Iron Triumph"
+          ],
           "numProjectiles": 1,
           "range": 600
         },
@@ -102,8 +111,11 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Iron Triumph",
-          "leading": 0,
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Iron Triumph"
+          ],
           "numProjectiles": 1,
           "range": 600
         },
@@ -155,7 +167,6 @@
       }
     }
   ],
-  "xp": 81,
-  "xpLevelCap": 19
+  "xp": 81
 }
 

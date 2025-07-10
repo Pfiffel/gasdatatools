@@ -1,19 +1,26 @@
 {
+  "armor": 0,
   "boss": 1,
+  "burrowDetectRange": 0,
   "collisionRadius": 108,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Iron Leviathan Enrage 3",
-  "drops": [],
+  "fixedFacing": 0,
   "healRate": 0,
   "hp": 6000,
   "idleAnimation": "BaseArcher Idle",
+  "itemPackDrops": [],
   "maxMoveDistance": 500,
   "name": "Iron Juggernaut 2",
   "objectType": "Iron Juggernaut",
+  "onDamageSoundPack": "",
   "pauseBetweenMovements": 0,
+  "resistant": 0,
   "runAnimation": "Iron Behemoth Run",
   "runAnimationDuration": 814,
   "runSpeed": 86,
+  "shields": [],
+  "successorInvulnerability": 1,
   "successorMonster": "Iron Juggernaut 3",
   "weaponType": "",
   "weapons": [
@@ -31,7 +38,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -49,7 +58,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -66,15 +77,19 @@
           "emitterType": "",
           "explosionType": "Iron Juggernaut Mine Blast",
           "objectType": "Iron Juggernaut Mine",
+          "persist": 0,
+          "playerTargetingRange": 400,
           "powers": [],
           "radius": 108,
-          "range": 400,
-          "speed": 250
+          "speed": 250,
+          "throwRange": 400
         },
         "tag": "MinelayerParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -92,7 +107,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -110,7 +127,9 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -128,6 +147,7 @@
               "data": {
                 "bulletRange": 900,
                 "delay": 500,
+                "glyphType": "",
                 "gunBulletType": "Iron Leviathan",
                 "numBullets": 5,
                 "range": 1000,
@@ -169,7 +189,9 @@
         "tag": "CompoundParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     },
@@ -187,12 +209,13 @@
         "tag": "MultiBarrelGunParams"
       },
       "targeting": {
-        "data": {},
+        "data": {
+          "alsoTargetDematerialized": 0
+        },
         "tag": "PlayerTargeting"
       }
     }
   ],
-  "xp": 100,
-  "xpLevelCap": 19
+  "xp": 100
 }
 

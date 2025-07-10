@@ -1,0 +1,11 @@
+{
+  "damage": 250,
+  "emitterType": "Blackadder Dunespike Bullet",
+  "name": "Blackadder Dunespike Bullet",
+  "objectType": "Blackadder Dunespike Bullet",
+  "piercing": 1,
+  "powers": [],
+  "soundPack": "Bogweed High Bullet",
+  "speed": 160
+}
+

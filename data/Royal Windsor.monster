@@ -3,13 +3,13 @@
   "boss": 0,
   "burrowDetectRange": 0,
   "collisionRadius": 48,
-  "consolationPrizes": [],
+  "consolationItemPack": "",
   "deathCrySoundPack": "Royal Windsor Death Cries",
-  "drops": [],
   "fixedFacing": 0,
   "healRate": 0,
   "hp": 1600,
   "idleAnimation": "Royal Windsor",
+  "itemPackDrops": [],
   "maxMoveDistance": 500,
   "name": "Royal Windsor",
   "objectType": "Royal Windsor",
@@ -53,8 +53,11 @@
       "params": {
         "data": {
           "angleBetweenProjectiles": 150,
-          "gunBulletType": "Royal Albion",
-          "leading": 0,
+          "gunBulletBehavior": 0,
+          "gunBulletType": "",
+          "gunBulletTypes": [
+            "Royal Albion"
+          ],
           "numProjectiles": 1,
           "range": 600
         },
@@ -68,7 +71,6 @@
       }
     }
   ],
-  "xp": 81,
-  "xpLevelCap": 19
+  "xp": 81
 }
 
