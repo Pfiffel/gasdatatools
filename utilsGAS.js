@@ -1115,8 +1115,8 @@ function getObjectResolution(object, weapons, shields, radius, scale) {
 	if (weapons != undefined)
 		for (let i = 0; i < weapons.length; i++) {
 			var turret = weapons[i].objectType;
-			var object = getObject(turret);
-			if (turret != "" && object != null) {
+			var objectAttach = getObject(turret);
+			if (objectAttach != null) {
 				try{
 					var offset = [0, 0, 0];
 					var attach = weapons[i].attachmentPoint;
@@ -1125,7 +1125,7 @@ function getObjectResolution(object, weapons, shields, radius, scale) {
 					//var angle = offset[0];
 					//var xRotated = offset[1] * Math.cos(angle) - offset[2] * Math.sin(angle);
 					//var yRotated = offset[1] * Math.sin(angle) + offset[2] * Math.cos(angle);
-					max = this.getMaxFromShapes(object, offset[1], offset[2], max);
+					max = this.getMaxFromShapes(objectAttach, offset[1], offset[2], max);
 				}
 				catch(e){
 					console.log(object.name + ": " + turret);
@@ -1223,12 +1223,12 @@ function draw(data, scale = 0.4, bPrev = false, bDrawRadius = false, bDrawShield
 		if (data.weapons != undefined)
 			for (let i = 0; i < data.weapons.length; i++) {
 				var turret = data.weapons[i].objectType;
-				var object = getObject(turret, bPrev);
-				if (turret != "" && object != null) {
+				var objectAttach = getObject(turret, bPrev);
+				if (objectAttach != null) {
 					var offset = [0, 0, 0];
 					var attach = data.weapons[i].attachmentPoint;
 					if (attach != "") offset = getAttachmentPoint(object, attach);
-					drawShapes(ctx, scale, x + offset[1], y + offset[2], object, offset[0]);
+					drawShapes(ctx, scale, x + offset[1], y + offset[2], objectAttach, offset[0]);
 				}
 			}
 		if (bDrawRadius) DrawCollisionRadius(radius / scale, ctx, scale, x, y);
