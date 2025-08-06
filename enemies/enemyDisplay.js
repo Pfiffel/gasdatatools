@@ -6,15 +6,16 @@ var header = document.getElementById("header");
 var filters = document.getElementById("filters");
 var sortedMonsters;
 
+var showBullets = makeInputCheckbox("Show Bullet List", RefreshLists, filters, false);
 var showOnlyGFX = makeInputCheckbox("Show Graphics Only", RefreshLists, filters, false);
-
 var drawRadiusCB = makeInputCheckbox("Show Collision Radius", RefreshLists, filters, false);
 var drawShieldsCB = makeInputCheckbox("Show Shields", RefreshLists, filters, true);
+var tableMode = makeInputCheckbox("Table Mode Override", RefreshLists, filters, false);
 //var showSoundsCB = makeInputCheckbox("Show Sounds", RefreshLists, filters, true);
 var showSoundsCB = {}; showSoundsCB.checked = false;
 
 const FILTER_NAME = "Name";
-makeInputRadios(FILTER_NAME, ["All", "Iron", "Royal", "Xenofrog", "Nest", "Bogweed", "Dunespike", "Training"], RefreshLists, filters);
+makeInputRadios(FILTER_NAME, ["All", "Iron", "Royal", "Xenofrog", "Xenofrog Nest", "Bogweed", "Duneclaw", "Duneclaw Nest", "Dunespike", "Training"], RefreshLists, filters);
 const FILTER_SUCCESSOR = "Successor";
 makeInputRadios(FILTER_SUCCESSOR, ["Any", "Has Successor", "Has no Successor"], RefreshLists, filters);
 const FILTER_BOSS = "Boss";
@@ -40,15 +41,54 @@ function parseData() {
 	header.appendChild(h1List);
 	RefreshLists();
 }
+function FilterCheck(name)
+{
+	var selName = document.querySelector('input[name="' + FILTER_NAME + '"]:checked').value;
+	nameFound = name.includes(selName);
+	if (selName == "Xenofrog") nameFound = nameFound & !name.includes("Nest");
+	if (selName == "Xenofrog Nest") nameFound = name.includes("Xenofrog") & name.includes("Nest");
+	if (selName == "Duneclaw") nameFound = nameFound & !name.includes("Nest");
+	if (selName == "Duneclaw Nest") nameFound = name.includes("Duneclaw") & name.includes("Nest");
+	if (selName != "All" && !nameFound) return false;
+	else return true;
+}
 function MakeMonsterList() {
 	var divList = document.createElement("div");
+	let tbl = document.createElement('table');
+	let th = tbl.insertRow();
+	makeHeaderCell("Monster", th);
+	makeHeaderCell("Tier", th);
+	makeHeaderCell("HP", th);
+	makeHeaderCell("Heal", th);
+	makeHeaderCell("Armor", th);
+	makeHeaderCell("XP", th);
+	makeHeaderCell("Spd", th);
+	makeHeaderCell("Radius", th);
+
+	if(showBullets.checked)
+		for (let i = 0; i < gasData["gunbullet"].length; i++) {
+			var bullet = gasData["gunbullet"][i];
+			if (SkipCheck(bullet)) continue;
+			if (!FilterCheck(bullet.name)) continue;
+			let attackDiv = document.createElement('div');
+			let spriteDiv = document.createElement('div');
+			spriteDiv.classList.add("inline");
+			spriteDiv.appendChild(draw(bullet));
+			let infoDiv = document.createElement('div');
+			infoDiv.classList.add("inline");
+			infoDiv.innerHTML = bullet.name + " " +
+				bullet.damage + " damage " +
+				bullet.speed + " speed " +
+				convertPowersToString(bullet.powers);
+			attackDiv.appendChild(spriteDiv);
+			attackDiv.appendChild(infoDiv);
+			divList.appendChild(attackDiv);
+		}
+
 	for (let i = 0; i < sortedMonsters.length; i++) {
 		var monsterData = sortedMonsters[i];
 		if (SkipCheck(monsterData)) continue;
-
-		var selName = document.querySelector('input[name="' + FILTER_NAME + '"]:checked').value;
-		var nameFound = selName == "Xenofrog" ? monsterData.name.includes(selName) & !monsterData.name.includes("Nest") : monsterData.name.includes(selName);
-		if (selName != "All" && !nameFound) continue;
+		if (!FilterCheck(monsterData.name)) continue;
 
 		var monster = new Monster(monsterData);
 
@@ -70,8 +110,12 @@ function MakeMonsterList() {
 		else
 			monsterDiv.appendChild(monster.output(false, SCALE_STANDARD, drawRadiusCB.checked, drawShieldsCB.checked, showSoundsCB.checked));
 		divList.appendChild(monsterDiv);
+		monster.MakeTableRow(tbl);
 	}
-	return divList;
+	if(tableMode.checked)
+		return tbl;
+	else
+		return divList;
 }
 function MakeCompactMonsterTable() {
 	var tbl = document.createElement('table');

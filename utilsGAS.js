@@ -211,6 +211,9 @@ function monsterSort(a, b) {
 	else
 		return -1;
 }
+function bulletSort(a, b) {
+	return a.damage - b.damage;
+}
 // TODO use stat idx of first stat instead of string category
 const ITEM_SORTING_INDEX =
 {

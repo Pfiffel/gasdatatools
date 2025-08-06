@@ -421,10 +421,24 @@ class Monster {
 		var move = Boolean(this.data.pauseBetweenMovements) ? "<b>" + this.data.runSpeed + "</b> spd <b>" + this.data.pauseBetweenMovements + "</b> pause " : "<b>" + this.data.runSpeed + "</b> spd";
 		var heal = (this.data.healRate != 0) ? "<b>" + this.data.healRate + "</b> heal " : "";
 		var hull = "<span class=\"hull\"><b>" + parseInt(this._hp * hpMult) + "</b> HP " + heal + "</span>";
-
+		var armor = (this.data.armor != undefined && this.data.armor != 0) ? "<span class=\"armor\"><b>" + this.data.armor + "</b> A </span>" : "";
+		var resistant = "<span class=\"resistant\"><b>" + (this.data.resistant === 1 ? "Res " : "") + "</b></span>";
+		var boss = "<span class=\"boss\"><b>" + (this.data.boss === 1 ? "Boss " : "") + "</b></span>";
+		
 		return this._name + " - T<b>" + this.getTier() + "</b>" + "<br/>" +
-			hull + "<b>" + this._xp + "</b> XP " + "<br/>" +
+			hull + armor + resistant + boss + "<b>" + this._xp + "</b> XP " + "<br/>" +
 			move + " <b>" + this.data.collisionRadius + "</b> rad";// - " + this.getDPS();
+	}
+	MakeTableRow(tbl) {
+		let tr = tbl.insertRow();
+		makeCleanCell(this._name, tr, "name");
+		makeCleanCell(this.getTier(), tr);
+		makeCleanCell(this._xp, tr);
+		makeCleanCell(this._hp, tr);
+		makeCleanCell(this.data.healRate, tr);
+		makeCleanCell(this.data.armor, tr);
+		makeCleanCell(this.data.runSpeed, tr);
+		makeCleanCell(this.data.collisionRadius, tr);
 	}
 	printRewards() {
 		// TODO maybe use isSymbioteDropper(monster) here
@@ -437,4 +451,39 @@ class Monster {
 		var symbDrop = dropsSymbiote ? "<br>Drops " + colorWrap("<b>" + TIER_NAMES[t] + "</b> Symbiote", GetTierColor(t)) : "";
 		return "<b>" + xpphp + "</b> XP per 100 HP" + symbDrop;
 	}
+}
+
+function convertPowersToString(powers) {
+	if (powers == undefined) return "";
+	var s = "";
+	for (let p in powers) {
+		var power = powers[p];
+		s += " | ";
+		if (power.tag == "SizzlePower") {
+			s += power.data.dps + " dps";
+		}
+		else if (power.tag == "DisablePower") {
+			var aDisabled = [];
+			if (power.data.engines) aDisabled.push("engines");
+			if (power.data.guns) aDisabled.push("guns");
+			if (power.data.health) aDisabled.push("health regen");
+			if (power.data.mana) aDisabled.push("mana regen");
+			if (power.data.rotation) aDisabled.push("rotation");
+			if (power.data.scoot) aDisabled.push("scoot");
+			if (power.data.shield) aDisabled.push("shield");
+			if (power.data.triggers) aDisabled.push("triggers");
+			var duration = " " + round(power.data.duration / 1000, 2) + "s";
+			var cap = (power.data.caption != undefined && power.data.caption != "") ? power.data.caption : power.tag;
+			s += cap + " (disables " + aDisabled.toString() + ") " + duration;
+		}
+		else if (power.data.duration != undefined) {
+			var damage = (power.data.damage != undefined) ? " <b>" + power.data.damage + "</b>" : "";
+			var duration = " " + round(power.data.duration / 1000, 2) + "s";
+			var cap = (power.data.caption != undefined && power.data.caption != "") ? power.data.caption : power.tag;
+			s += cap + damage + duration;
+		}
+		else
+			s += power.tag;
+	}
+	return "<span class=\"power\">" + s + "</span>";
 }

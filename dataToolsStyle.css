@@ -99,6 +99,12 @@ th {
 .hull {
 	color: #33B333;
 }
+.armor {
+	color: #a2a2a2;
+}
+.resistant {
+	font-style: italic;
+}
 
 span.heal {
 	/*color: #34E20F;*/
