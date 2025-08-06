@@ -81,6 +81,9 @@
           },
           "tag": "StatBoostTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 13
       },
       "tag": "TriggeredTriggerEffect"
@@ -135,7 +138,7 @@
     {
       "labelPos": {
         "x": 206,
-        "y": 134
+        "y": 132
       },
       "maxSlots": 4,
       "minSlots": 1,
@@ -160,7 +163,7 @@
     },
     {
       "labelPos": {
-        "x": 195,
+        "x": 184,
         "y": 27
       },
       "maxSlots": 9,
@@ -206,7 +209,7 @@
     },
     {
       "labelPos": {
-        "x": 22,
+        "x": 18,
         "y": 218
       },
       "maxSlots": 6,
@@ -240,7 +243,7 @@
     },
     {
       "labelPos": {
-        "x": 202,
+        "x": 195,
         "y": 512
       },
       "maxSlots": 4,
@@ -266,7 +269,7 @@
     },
     {
       "labelPos": {
-        "x": 343,
+        "x": 329,
         "y": 295
       },
       "maxSlots": 4,
@@ -292,7 +295,7 @@
     },
     {
       "labelPos": {
-        "x": 189,
+        "x": 184,
         "y": 322
       },
       "maxSlots": 6,
@@ -350,6 +353,7 @@
               "x": 0,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 265,
             "reticleColor": 11184810,
             "statusEffects": [],
@@ -401,6 +405,7 @@
               "x": 0,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 335,
             "reticleColor": 11184810,
             "statusEffects": [],
@@ -437,6 +442,7 @@
               "x": 250,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 160,
             "reticleColor": 11184810,
             "statusEffects": [],
@@ -462,6 +468,7 @@
               "x": 250,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 160,
             "reticleColor": 11184810,
             "statusEffects": [],
@@ -487,6 +494,7 @@
               "x": 250,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 160,
             "reticleColor": 11184810,
             "statusEffects": [],
@@ -512,6 +520,7 @@
               "x": 250,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 160,
             "reticleColor": 11184810,
             "statusEffects": [],
@@ -537,6 +546,7 @@
               "x": 250,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 160,
             "reticleColor": 11184810,
             "statusEffects": [],
@@ -690,6 +700,7 @@
               "x": 0,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 265,
             "reticleColor": 11184810,
             "statusEffects": [],

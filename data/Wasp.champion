@@ -94,7 +94,7 @@
     },
     {
       "labelPos": {
-        "x": 190,
+        "x": 184,
         "y": 36
       },
       "maxSlots": 7,
@@ -132,8 +132,8 @@
     },
     {
       "labelPos": {
-        "x": 27,
-        "y": 231
+        "x": 23,
+        "y": 230
       },
       "maxSlots": 5,
       "minSlots": 1,
@@ -162,7 +162,7 @@
     },
     {
       "labelPos": {
-        "x": 198,
+        "x": 196,
         "y": 530
       },
       "maxSlots": 7,
@@ -200,7 +200,7 @@
     },
     {
       "labelPos": {
-        "x": 334,
+        "x": 330,
         "y": 257
       },
       "maxSlots": 4,
@@ -226,7 +226,7 @@
     },
     {
       "labelPos": {
-        "x": 191,
+        "x": 184,
         "y": 332
       },
       "maxSlots": 6,
@@ -284,6 +284,7 @@
               "x": 220,
               "y": 130
             },
+            "purgeProjectiles": 0,
             "range": 115,
             "reticleColor": 11184810,
             "statusEffects": [],
@@ -309,6 +310,7 @@
               "x": 250,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 120,
             "reticleColor": 11184810,
             "statusEffects": [],
@@ -381,6 +383,7 @@
               "x": 0,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 250,
             "reticleColor": 11184810,
             "statusEffects": [],

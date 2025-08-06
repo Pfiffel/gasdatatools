@@ -105,7 +105,7 @@
     },
     {
       "labelPos": {
-        "x": 194,
+        "x": 188,
         "y": 36
       },
       "maxSlots": 6,
@@ -139,7 +139,7 @@
     },
     {
       "labelPos": {
-        "x": 28,
+        "x": 24,
         "y": 148
       },
       "maxSlots": 6,
@@ -173,7 +173,7 @@
     },
     {
       "labelPos": {
-        "x": 198,
+        "x": 194,
         "y": 518
       },
       "maxSlots": 5,
@@ -203,7 +203,7 @@
     },
     {
       "labelPos": {
-        "x": 336,
+        "x": 333,
         "y": 148
       },
       "maxSlots": 4,
@@ -229,7 +229,7 @@
     },
     {
       "labelPos": {
-        "x": 191,
+        "x": 186,
         "y": 332
       },
       "maxSlots": 6,
@@ -464,6 +464,7 @@
                   "x": 0,
                   "y": 0
                 },
+                "purgeProjectiles": 0,
                 "range": 50,
                 "reticleColor": 11184810,
                 "statusEffects": [],

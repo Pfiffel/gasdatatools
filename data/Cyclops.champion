@@ -41,6 +41,9 @@
           },
           "tag": "DematerializeTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 11
       },
       "tag": "TriggeredTriggerEffect"
@@ -63,7 +66,7 @@
     {
       "labelPos": {
         "x": 211,
-        "y": 154
+        "y": 151
       },
       "maxSlots": 6,
       "minSlots": 2,
@@ -96,7 +99,7 @@
     },
     {
       "labelPos": {
-        "x": 199,
+        "x": 192,
         "y": 38
       },
       "maxSlots": 5,
@@ -126,7 +129,7 @@
     },
     {
       "labelPos": {
-        "x": 32,
+        "x": 26,
         "y": 198
       },
       "maxSlots": 8,
@@ -194,7 +197,7 @@
     },
     {
       "labelPos": {
-        "x": 344,
+        "x": 330,
         "y": 218
       },
       "maxSlots": 4,
@@ -220,7 +223,7 @@
     },
     {
       "labelPos": {
-        "x": 217,
+        "x": 210,
         "y": 332
       },
       "maxSlots": 6,
@@ -278,6 +281,7 @@
               "x": 0,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 400,
             "reticleColor": 11184810,
             "statusEffects": [],
@@ -370,6 +374,7 @@
               "x": 0,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 400,
             "reticleColor": 11184810,
             "statusEffects": [],
