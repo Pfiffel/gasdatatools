@@ -15,7 +15,7 @@ var tableMode = makeInputCheckbox("Table Mode Override", RefreshLists, filters, 
 var showSoundsCB = {}; showSoundsCB.checked = false;
 
 const FILTER_NAME = "Name";
-makeInputRadios(FILTER_NAME, ["All", "Iron", "Royal", "Xenofrog", "Xenofrog Nest", "Bogweed", "Duneclaw", "Duneclaw Nest", "Dunespike", "Training"], RefreshLists, filters);
+makeInputRadios(FILTER_NAME, ["All", "Iron", "Royal", "Xenofrog", "Xenofrog Nest", "Bogweed", "Dunespike", "Training"], RefreshLists, filters);
 const FILTER_SUCCESSOR = "Successor";
 makeInputRadios(FILTER_SUCCESSOR, ["Any", "Has Successor", "Has no Successor"], RefreshLists, filters);
 const FILTER_BOSS = "Boss";
