@@ -11,6 +11,8 @@ class Monster {
 		this._mines = {};
 		this._charges = {};
 		this._minions = {};
+		this._transform = {};
+		this._gravity = {};
 	}
 	getTier() {
 		return parseInt(Math.sqrt(this._xp));
@@ -22,7 +24,8 @@ class Monster {
 			var weapon = this.data.weapons[i];
 			var cd = weapon.cooldown;
 			dpsST += this.getDamage(weapon, weapon, true, false) * (1000 / cd);
-			dpsMT += this.getDamage(weapon, weapon, false, false) * (1000 / cd);
+			// TODO temp fix for proper minion counts, need to separate logic for setting up weapons from calculation
+			//dpsMT += this.getDamage(weapon, weapon, false, false) * (1000 / cd);
 		}
 		return "<b>" + round(dpsST, 2) + (dpsST == dpsMT ? "" : "-" + round(dpsMT, 2)) + "</b> DPS";
 	}
@@ -37,7 +40,7 @@ class Monster {
 			case "CompoundParams":
 				for (let j = 0; j < wD.weapons.length; j++) {
 					damageST += this.getDamage(wD.weapons[j], weapon, true, true) / wD.weapons.length;
-					damageMT += this.getDamage(wD.weapons[j], weapon, false, true) / wD.weapons.length;
+					//damageMT += this.getDamage(wD.weapons[j], weapon, false, true) / wD.weapons.length;
 				}
 				break;
 			case "MultiBarrelGunParams":
@@ -118,13 +121,21 @@ class Monster {
 					this._minions[wD.monsterNames[j]] = { "maxCount": wD.maxCount };
 				}*/
 				var minionList = wD.monsterNames.length != 1 ? "(" + wD.monsterNames.toString() + ")" : wD.monsterNames[0];
-				this._minions[minionList] = { "maxCount": wD.maxCount };
+				if(this._minions[minionList] == undefined) 
+					this._minions[minionList] = { "maxCount": 0 };
+				this._minions[minionList]["maxCount"] += wD.maxCount;
 				break;
 			case "MinionBarrageParams":
 				for (let j = 0; j < wD.salvoes.length; j++) {
 					let salvo = wD.salvoes[j];
 					this._minions[salvo.monsterName] = { "maxCount": salvo.count };
 				}
+				break;
+			case "TransformParams":
+				this._transform[wD.monsterName] = { "delay": wD.delay };
+				break;
+			case "GravityParams":
+				this._gravity[wD.range + wD.accel] = { "range": wD.range, "accel": wD.accel };
 				break;
 			case "NullParams":
 				break;
@@ -370,6 +381,16 @@ class Monster {
 			let extraDiv = document.createElement('div');
 			extraDiv.innerHTML = "Spawns Minions: " + minionList;
 			div.appendChild(extraDiv);
+		}
+		for (let trans in this._transform) {
+			let attackDiv = document.createElement('div');
+			attackDiv.innerHTML = "Transforms into <b>" + trans + "</b> after " + ToTime(this._transform[trans].delay);
+			div.appendChild(attackDiv);
+		}
+		for (let grav in this._gravity) {
+			let attackDiv = document.createElement('div');
+			attackDiv.innerHTML = "Gravity: <b>" + this._gravity[grav].range + "</b> range, " + this._gravity[grav].accel + " accel";
+			div.appendChild(attackDiv);
 		}
 		for (var sh in this.data.shields) {
 			var shield = this.data.shields[sh];
