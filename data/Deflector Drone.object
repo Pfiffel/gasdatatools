@@ -1,0 +1,374 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Deflector Drone",
+  "shapes": [
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 8334380,
+      "height": 61,
+      "mirror": 1,
+      "name": "Main Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -66,
+          "y": 0
+        },
+        {
+          "x": -66,
+          "y": 7
+        },
+        {
+          "x": -59,
+          "y": 8
+        },
+        {
+          "x": -37,
+          "y": 20
+        },
+        {
+          "x": -26,
+          "y": 32
+        },
+        {
+          "x": -10,
+          "y": 56
+        },
+        {
+          "x": -7,
+          "y": 63
+        },
+        {
+          "x": 7,
+          "y": 63
+        },
+        {
+          "x": 10,
+          "y": 56
+        },
+        {
+          "x": 26,
+          "y": 32
+        },
+        {
+          "x": 37,
+          "y": 20
+        },
+        {
+          "x": 59,
+          "y": 8
+        },
+        {
+          "x": 66,
+          "y": 7
+        },
+        {
+          "x": 66,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 4745077,
+      "height": 65,
+      "mirror": 1,
+      "name": "Edge Detail Left",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -32,
+          "y": 13
+        },
+        {
+          "x": -43,
+          "y": 24
+        },
+        {
+          "x": -40,
+          "y": 31
+        },
+        {
+          "x": -29,
+          "y": 39
+        },
+        {
+          "x": -18,
+          "y": 28
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 3822430,
+      "height": 65,
+      "mirror": 1,
+      "name": "NewShape",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -55,
+          "y": 0
+        },
+        {
+          "x": -54,
+          "y": 4
+        },
+        {
+          "x": -35,
+          "y": 5
+        },
+        {
+          "x": -15,
+          "y": 5
+        },
+        {
+          "x": -5,
+          "y": 12
+        },
+        {
+          "x": -6,
+          "y": 35
+        },
+        {
+          "x": -5,
+          "y": 54
+        },
+        {
+          "x": 0,
+          "y": 55
+        },
+        {
+          "x": 5,
+          "y": 54
+        },
+        {
+          "x": 6,
+          "y": 35
+        },
+        {
+          "x": 5,
+          "y": 12
+        },
+        {
+          "x": 15,
+          "y": 5
+        },
+        {
+          "x": 35,
+          "y": 5
+        },
+        {
+          "x": 54,
+          "y": 4
+        },
+        {
+          "x": 55,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 4745077,
+      "height": 65,
+      "mirror": 1,
+      "name": "Edge Detail Right",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 32,
+          "y": 13
+        },
+        {
+          "x": 43,
+          "y": 24
+        },
+        {
+          "x": 40,
+          "y": 31
+        },
+        {
+          "x": 29,
+          "y": 39
+        },
+        {
+          "x": 18,
+          "y": 28
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 3822430,
+      "height": 68,
+      "mirror": 1,
+      "name": "Outer Circle",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -31,
+          "y": 2
+        },
+        {
+          "x": -29,
+          "y": 11
+        },
+        {
+          "x": -24,
+          "y": 17
+        },
+        {
+          "x": -17,
+          "y": 22
+        },
+        {
+          "x": -10,
+          "y": 26
+        },
+        {
+          "x": 0,
+          "y": 28
+        },
+        {
+          "x": 0,
+          "y": 28
+        },
+        {
+          "x": 10,
+          "y": 26
+        },
+        {
+          "x": 17,
+          "y": 22
+        },
+        {
+          "x": 24,
+          "y": 17
+        },
+        {
+          "x": 29,
+          "y": 11
+        },
+        {
+          "x": 31,
+          "y": 2
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 8334380,
+      "height": 71,
+      "mirror": 1,
+      "name": "Inner Circle",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -20,
+          "y": 4
+        },
+        {
+          "x": -16,
+          "y": 11
+        },
+        {
+          "x": -11,
+          "y": 15
+        },
+        {
+          "x": -5,
+          "y": 18
+        },
+        {
+          "x": 5,
+          "y": 18
+        },
+        {
+          "x": 11,
+          "y": 15
+        },
+        {
+          "x": 16,
+          "y": 11
+        },
+        {
+          "x": 20,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 4745077,
+      "height": 77,
+      "mirror": 1,
+      "name": "Hub",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -8,
+          "y": 1
+        },
+        {
+          "x": -6,
+          "y": 5
+        },
+        {
+          "x": -2,
+          "y": 8
+        },
+        {
+          "x": 2,
+          "y": 8
+        },
+        {
+          "x": 6,
+          "y": 5
+        },
+        {
+          "x": 8,
+          "y": 1
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

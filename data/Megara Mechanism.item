@@ -1,5 +1,8 @@
 {
+  "boon": 0,
   "credits": 10,
+  "defenses": 0,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
@@ -10,17 +13,25 @@
             "glyphRadius": 100,
             "glyphType": "Axeraider Unstoppable Glyph",
             "refillPercentage": 30,
-            "shieldIndex": -1
+            "shieldIndex": -1,
+            "tag": ""
           },
           "tag": "ShieldRefillTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 7
       },
       "tag": "TriggeredTriggerEffect"
     }
   ],
+  "engines": 0,
+  "guns": 0,
   "name": "Megara Mechanism",
   "overworldDrop": 0,
-  "precursorTech": 1
+  "precursorTech": 1,
+  "rare": 0,
+  "triggers": 0
 }
 

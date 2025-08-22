@@ -2,6 +2,7 @@
   "boon": 0,
   "credits": 10,
   "defenses": 0,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
@@ -24,6 +25,9 @@
           },
           "tag": "SharkletTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 8
       },
       "tag": "TriggeredTriggerEffect"

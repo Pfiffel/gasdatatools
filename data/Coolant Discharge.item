@@ -1,0 +1,59 @@
+{
+  "boon": 1,
+  "credits": 6,
+  "defenses": 0,
+  "dropRequirements": [],
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "dps": 0,
+            "duration": 2000,
+            "endSound": "Enemy_RoyalDragoon_Flamethrower_End",
+            "endVolume": 130,
+            "halfArc": 300,
+            "loopSound": "Enemy_RoyalDragoon_Flamethrower_Loop",
+            "loopVolume": 130,
+            "particles": [
+              {
+                "cooldown": 10,
+                "maxDistPercent": 100,
+                "minDistPercent": 50,
+                "particleType": "Coolant Discharge"
+              }
+            ],
+            "range": 300,
+            "reticleColor": 5367008,
+            "startSound": "Enemy_RoyalDragoon_Flamethrower_Start",
+            "startVolume": 130,
+            "statusEffects": [
+              {
+                "data": {
+                  "duration": 2000
+                },
+                "tag": "FreezeEffect"
+              }
+            ],
+            "tag": "",
+            "tooltip": "Icy Efflusion"
+          },
+          "tag": "DoTConeTrigger"
+        },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Coolant Discharge",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 1
+}
+

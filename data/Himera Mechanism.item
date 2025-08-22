@@ -2,6 +2,7 @@
   "boon": 0,
   "credits": 10,
   "defenses": 0,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
@@ -11,7 +12,6 @@
             "armingTime": 1000,
             "creationSound": "",
             "creationVolume": 50,
-            "duration": 15000,
             "emitterType": "Heal Shield Mine",
             "expiryExplosion": "Heal Mine Expiry",
             "healing": 80,
@@ -29,10 +29,14 @@
             ],
             "radius": 35,
             "ringRadius": 70,
-            "tag": ""
+            "tag": "",
+            "triggers": []
           },
           "tag": "PickupPackTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 3
       },
       "tag": "TriggeredTriggerEffect"

@@ -2,6 +2,7 @@
   "boon": 1,
   "credits": 5,
   "defenses": 0,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
@@ -10,6 +11,7 @@
             "autoAim": 0,
             "damage": 50,
             "delay": 300,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Plasma Rose",
@@ -20,6 +22,7 @@
               "x": 210,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 80,
             "reticleColor": 7083655,
             "statusEffects": [],
@@ -29,6 +32,9 @@
           },
           "tag": "ShotgunTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 1
       },
       "tag": "TriggeredTriggerEffect"
@@ -40,6 +46,7 @@
             "autoAim": 0,
             "damage": 50,
             "delay": 300,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 0,
             "explosionType": "Plasma Rose",
@@ -50,6 +57,7 @@
               "x": 210,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 80,
             "reticleColor": 7083655,
             "statusEffects": [],
@@ -59,6 +67,9 @@
           },
           "tag": "ShotgunTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 1
       },
       "tag": "TriggeredTriggerEffect"
@@ -70,6 +81,7 @@
             "autoAim": 0,
             "damage": 50,
             "delay": 300,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 0,
             "explosionType": "Plasma Rose",
@@ -80,6 +92,7 @@
               "x": 210,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 80,
             "reticleColor": 7083655,
             "statusEffects": [],
@@ -89,6 +102,9 @@
           },
           "tag": "ShotgunTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 1
       },
       "tag": "TriggeredTriggerEffect"
@@ -100,6 +116,7 @@
             "autoAim": 0,
             "damage": 50,
             "delay": 300,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 0,
             "explosionType": "Plasma Rose",
@@ -110,6 +127,7 @@
               "x": 210,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 80,
             "reticleColor": 7083655,
             "statusEffects": [],
@@ -119,6 +137,9 @@
           },
           "tag": "ShotgunTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 1
       },
       "tag": "TriggeredTriggerEffect"
@@ -143,6 +164,9 @@
           },
           "tag": "SlugTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 1
       },
       "tag": "TriggeredTriggerEffect"
@@ -167,6 +191,9 @@
           },
           "tag": "SlugTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 1
       },
       "tag": "TriggeredTriggerEffect"
@@ -191,6 +218,9 @@
           },
           "tag": "SlugTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 1
       },
       "tag": "TriggeredTriggerEffect"
@@ -215,6 +245,9 @@
           },
           "tag": "SlugTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 1
       },
       "tag": "TriggeredTriggerEffect"

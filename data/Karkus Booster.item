@@ -2,6 +2,7 @@
   "boon": 1,
   "credits": 8,
   "defenses": 1,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
@@ -25,6 +26,7 @@
   "name": "Karkus Booster",
   "overworldDrop": 0,
   "precursorTech": 0,
+  "rare": 0,
   "triggers": 0
 }
 

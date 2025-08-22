@@ -2,6 +2,7 @@
   "boon": 1,
   "credits": 7,
   "defenses": 1,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {

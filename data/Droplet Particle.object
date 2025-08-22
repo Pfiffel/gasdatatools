@@ -1,0 +1,60 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Droplet Particle",
+  "shapes": [
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16776958,
+      "height": 0,
+      "mirror": 1,
+      "name": "Flame",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -30,
+          "y": 0
+        },
+        {
+          "x": -22,
+          "y": 3
+        },
+        {
+          "x": -14,
+          "y": 6
+        },
+        {
+          "x": -9,
+          "y": 8
+        },
+        {
+          "x": -4,
+          "y": 9
+        },
+        {
+          "x": 5,
+          "y": 9
+        },
+        {
+          "x": 10,
+          "y": 8
+        },
+        {
+          "x": 13,
+          "y": 6
+        },
+        {
+          "x": 15,
+          "y": 2
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

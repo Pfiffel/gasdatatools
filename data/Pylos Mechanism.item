@@ -1,5 +1,8 @@
 {
+  "boon": 0,
   "credits": 10,
+  "defenses": 0,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
@@ -7,17 +10,25 @@
           "data": {
             "duration": 2000,
             "emitterType": "",
-            "percentChance": 100
+            "percentChance": 100,
+            "tag": ""
           },
           "tag": "DematerializeTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 4
       },
       "tag": "TriggeredTriggerEffect"
     }
   ],
+  "engines": 0,
+  "guns": 0,
   "name": "Pylos Mechanism",
   "overworldDrop": 0,
-  "precursorTech": 1
+  "precursorTech": 1,
+  "rare": 0,
+  "triggers": 0
 }
 

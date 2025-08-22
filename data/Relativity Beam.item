@@ -2,12 +2,16 @@
   "boon": 1,
   "credits": 6,
   "defenses": 0,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
         "cooldown": 400,
         "damage": 12,
+        "displayName": "",
+        "drawStatsInTooltip": 1,
         "emitterType": "Relativity Beam Trail",
+        "extraText": "",
         "f": 0,
         "halfArc": 60,
         "objectType": "Relativity Beam Bullet",

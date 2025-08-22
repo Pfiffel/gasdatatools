@@ -2,6 +2,7 @@
   "boon": 1,
   "credits": 6,
   "defenses": 0,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
@@ -10,6 +11,7 @@
             "autoAim": 0,
             "damage": 70,
             "delay": 0,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Cosmic Cataclysm",
@@ -20,6 +22,7 @@
               "x": 0,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 285,
             "reticleColor": 14803755,
             "statusEffects": [],
@@ -29,6 +32,9 @@
           },
           "tag": "ShotgunTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 7
       },
       "tag": "TriggeredTriggerEffect"
@@ -40,6 +46,7 @@
             "autoAim": 0,
             "damage": 50,
             "delay": 0,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 0,
             "explosionType": "Cosmic Cataclysm",
@@ -50,6 +57,7 @@
               "x": 0,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 290,
             "reticleColor": 14803755,
             "statusEffects": [],
@@ -59,6 +67,9 @@
           },
           "tag": "ShotgunTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 7
       },
       "tag": "TriggeredTriggerEffect"
@@ -68,7 +79,6 @@
   "guns": 0,
   "name": "Cosmic Cataclysm",
   "overworldDrop": 1,
-  "plusEffects": [],
   "precursorTech": 0,
   "rare": 1,
   "triggers": 1

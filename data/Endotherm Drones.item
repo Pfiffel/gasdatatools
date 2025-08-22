@@ -1,0 +1,38 @@
+{
+  "boon": 1,
+  "credits": 8,
+  "defenses": 1,
+  "dropRequirements": [],
+  "effects": [
+    {
+      "data": {
+        "count": 2,
+        "orbital": {
+          "doProjectileCollision": 1,
+          "dps": 100,
+          "objectType": "Endotherm Drone",
+          "orientation": 0,
+          "radius": 20,
+          "statusEffects": [
+            {
+              "data": {
+                "duration": 500
+              },
+              "tag": "FreezeEffect"
+            }
+          ]
+        },
+        "tooltip": "Freezing"
+      },
+      "tag": "ItemOrbital"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Endotherm Drones",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 0
+}
+

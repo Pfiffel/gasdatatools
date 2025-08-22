@@ -2,12 +2,16 @@
   "boon": 1,
   "credits": 6,
   "defenses": 0,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
         "cooldown": 300,
         "damage": 18,
+        "displayName": "",
+        "drawStatsInTooltip": 1,
         "emitterType": "Fusion Ram Trail",
+        "extraText": "",
         "f": 0,
         "halfArc": 900,
         "objectType": "Fusion Ram Bullet",

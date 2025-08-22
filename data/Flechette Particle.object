@@ -1,0 +1,40 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Flechette Particle",
+  "shapes": [
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16579836,
+      "height": 0,
+      "mirror": 1,
+      "name": "Glyph",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -31,
+          "y": 0
+        },
+        {
+          "x": -17,
+          "y": 6
+        },
+        {
+          "x": 17,
+          "y": 6
+        },
+        {
+          "x": 31,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

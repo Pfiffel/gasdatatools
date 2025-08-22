@@ -435,21 +435,17 @@
         },
         {
           "data": {
-            "autoAim": 0,
-            "damage": 100,
-            "delay": 0,
-            "drawPictureInTooltip": 1,
-            "drawReticle": 1,
-            "drawTooltip": 1,
-            "explosionType": "Yeti Ice Storm",
-            "facing": 0,
+            "dps": 133,
+            "duration": 4500,
             "halfArc": 1800,
-            "mirror": 0,
-            "offset": {
-              "x": 0,
-              "y": 0
-            },
-            "purgeProjectiles": 0,
+            "particles": [
+              {
+                "cooldown": 10,
+                "maxDistPercent": 100,
+                "minDistPercent": 100,
+                "particleType": "Yeti Ice Storm"
+              }
+            ],
             "range": 300,
             "reticleColor": 11184810,
             "statusEffects": [
@@ -460,176 +456,10 @@
                 "tag": "ChillEffect"
               }
             ],
-            "tag": "Yeti 4 Shotgun",
-            "targetingDelay": 750,
-            "tooltip": "6x Icy Burst"
+            "tag": "Yeti 4 DoTCone",
+            "tooltip": "Freezing Sphere"
           },
-          "tag": "ShotgunTrigger"
-        },
-        {
-          "data": {
-            "autoAim": 0,
-            "damage": 100,
-            "delay": 0,
-            "drawPictureInTooltip": 1,
-            "drawReticle": 0,
-            "drawTooltip": 0,
-            "explosionType": "Yeti Ice Storm",
-            "facing": 0,
-            "halfArc": 1800,
-            "mirror": 0,
-            "offset": {
-              "x": 0,
-              "y": 0
-            },
-            "purgeProjectiles": 0,
-            "range": 300,
-            "reticleColor": 3377308,
-            "statusEffects": [
-              {
-                "data": {
-                  "duration": 4000
-                },
-                "tag": "ChillEffect"
-              }
-            ],
-            "tag": "Yeti 4 Shotgun",
-            "targetingDelay": 1500,
-            "tooltip": "Ice Storm"
-          },
-          "tag": "ShotgunTrigger"
-        },
-        {
-          "data": {
-            "autoAim": 0,
-            "damage": 100,
-            "delay": 0,
-            "drawPictureInTooltip": 1,
-            "drawReticle": 0,
-            "drawTooltip": 0,
-            "explosionType": "Yeti Ice Storm",
-            "facing": 0,
-            "halfArc": 1800,
-            "mirror": 0,
-            "offset": {
-              "x": 0,
-              "y": 0
-            },
-            "purgeProjectiles": 0,
-            "range": 300,
-            "reticleColor": 3377308,
-            "statusEffects": [
-              {
-                "data": {
-                  "duration": 4000
-                },
-                "tag": "ChillEffect"
-              }
-            ],
-            "tag": "Yeti 4 Shotgun",
-            "targetingDelay": 2250,
-            "tooltip": "Ice Storm"
-          },
-          "tag": "ShotgunTrigger"
-        },
-        {
-          "data": {
-            "autoAim": 0,
-            "damage": 100,
-            "delay": 0,
-            "drawPictureInTooltip": 1,
-            "drawReticle": 0,
-            "drawTooltip": 0,
-            "explosionType": "Yeti Ice Storm",
-            "facing": 0,
-            "halfArc": 1800,
-            "mirror": 0,
-            "offset": {
-              "x": 0,
-              "y": 0
-            },
-            "purgeProjectiles": 0,
-            "range": 300,
-            "reticleColor": 3377308,
-            "statusEffects": [
-              {
-                "data": {
-                  "duration": 4000
-                },
-                "tag": "ChillEffect"
-              }
-            ],
-            "tag": "Yeti 4 Shotgun",
-            "targetingDelay": 3000,
-            "tooltip": "Ice Storm"
-          },
-          "tag": "ShotgunTrigger"
-        },
-        {
-          "data": {
-            "autoAim": 0,
-            "damage": 100,
-            "delay": 0,
-            "drawPictureInTooltip": 1,
-            "drawReticle": 0,
-            "drawTooltip": 0,
-            "explosionType": "Yeti Ice Storm",
-            "facing": 0,
-            "halfArc": 1800,
-            "mirror": 0,
-            "offset": {
-              "x": 0,
-              "y": 0
-            },
-            "purgeProjectiles": 0,
-            "range": 300,
-            "reticleColor": 3377308,
-            "statusEffects": [
-              {
-                "data": {
-                  "duration": 4000
-                },
-                "tag": "ChillEffect"
-              }
-            ],
-            "tag": "Yeti 4 Shotgun",
-            "targetingDelay": 3750,
-            "tooltip": "Ice Storm"
-          },
-          "tag": "ShotgunTrigger"
-        },
-        {
-          "data": {
-            "autoAim": 0,
-            "damage": 100,
-            "delay": 0,
-            "drawPictureInTooltip": 1,
-            "drawReticle": 0,
-            "drawTooltip": 0,
-            "explosionType": "Yeti Ice Storm",
-            "facing": 0,
-            "halfArc": 1800,
-            "mirror": 0,
-            "offset": {
-              "x": 0,
-              "y": 0
-            },
-            "purgeProjectiles": 0,
-            "range": 300,
-            "reticleColor": 3377308,
-            "statusEffects": [
-              {
-                "data": {
-                  "duration": 4000
-                },
-                "tag": "ChillEffect"
-              }
-            ],
-            "tag": "Yeti 4 Shotgun",
-            "targetingDelay": 4500,
-            "tooltip": "Ice Storm"
-          },
-          "tag": "ShotgunTrigger"
+          "tag": "DoTConeTrigger"
         }
       ],
       "sound": "",

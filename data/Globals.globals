@@ -211,6 +211,7 @@
   "soundPacks": {
     "armorClanks": "Armor Clanks",
     "hullHits": "Hull Hits",
+    "orbitalHits": "Orbital Hits",
     "playerDeath": "Player Death",
     "priorityTargetAcquired": "Priority Target Acquired",
     "priorityTargetDestroyed": "Priority Target Destroyed",

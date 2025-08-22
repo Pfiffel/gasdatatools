@@ -1,0 +1,52 @@
+{
+  "boon": 1,
+  "credits": 6,
+  "defenses": 0,
+  "dropRequirements": [],
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "dps": 100,
+            "duration": 1000,
+            "endSound": "Enemy_RoyalDragoon_Flamethrower_End",
+            "endVolume": 75,
+            "halfArc": 450,
+            "loopSound": "Enemy_RoyalDragoon_Flamethrower_Loop",
+            "loopVolume": 75,
+            "particles": [
+              {
+                "cooldown": 5,
+                "maxDistPercent": 100,
+                "minDistPercent": 50,
+                "particleType": "Shrapnel Barrage"
+              }
+            ],
+            "range": 250,
+            "reticleColor": 11184810,
+            "startSound": "Enemy_RoyalDragoon_Flamethrower_Start",
+            "startVolume": 75,
+            "statusEffects": [],
+            "tag": "",
+            "tooltip": "Flechette Stream"
+          },
+          "tag": "DoTConeTrigger"
+        },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
+        "when": 6
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "engines": 1,
+  "guns": 0,
+  "name": "Shrapnel Barrage",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 0
+}
+

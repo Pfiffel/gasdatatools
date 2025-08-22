@@ -1,0 +1,10 @@
+{
+  "name": "Orbital Hits",
+  "sounds": [
+    "Enemy_BasicHit_01",
+    "Enemy_BasicHit_02",
+    "Enemy_BasicHit_03"
+  ],
+  "volume": 40
+}
+

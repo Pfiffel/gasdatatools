@@ -2,12 +2,16 @@
   "boon": 1,
   "credits": 7,
   "defenses": 0,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
         "cooldown": 250,
         "damage": 15,
+        "displayName": "",
+        "drawStatsInTooltip": 1,
         "emitterType": "Neutron Pellet Gun Trail",
+        "extraText": "",
         "f": 0,
         "halfArc": 300,
         "objectType": "Neutron Pellet Gun Bullet",
@@ -25,7 +29,6 @@
   "guns": 1,
   "name": "Neutron Pellet Gun",
   "overworldDrop": 1,
-  "plusEffects": [],
   "precursorTech": 0,
   "rare": 1,
   "triggers": 0

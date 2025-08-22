@@ -2,6 +2,7 @@
   "boon": 1,
   "credits": 5,
   "defenses": 1,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
@@ -19,6 +20,9 @@
           },
           "tag": "HealOverTimeTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 3
       },
       "tag": "TriggeredTriggerEffect"

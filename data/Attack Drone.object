@@ -1,0 +1,802 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Attack Drone",
+  "shapes": [
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 8201252,
+      "height": 15,
+      "mirror": 1,
+      "name": "Lateral Hoverpods",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -8,
+          "y": 69
+        },
+        {
+          "x": -20,
+          "y": 75
+        },
+        {
+          "x": -27,
+          "y": 87
+        },
+        {
+          "x": -30,
+          "y": 99
+        },
+        {
+          "x": -27,
+          "y": 112
+        },
+        {
+          "x": -20,
+          "y": 123
+        },
+        {
+          "x": -9,
+          "y": 131
+        },
+        {
+          "x": 0,
+          "y": 135
+        },
+        {
+          "x": 14,
+          "y": 135
+        },
+        {
+          "x": 24,
+          "y": 131
+        },
+        {
+          "x": 36,
+          "y": 120
+        },
+        {
+          "x": 41,
+          "y": 107
+        },
+        {
+          "x": 41,
+          "y": 92
+        },
+        {
+          "x": 35,
+          "y": 80
+        },
+        {
+          "x": 24,
+          "y": 70
+        },
+        {
+          "x": 17,
+          "y": 68
+        },
+        {
+          "x": 0,
+          "y": 68
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 8201252,
+      "height": 15,
+      "mirror": 1,
+      "name": "Rear Hoverpod",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -74,
+          "y": 4
+        },
+        {
+          "x": -75,
+          "y": 14
+        },
+        {
+          "x": -81,
+          "y": 26
+        },
+        {
+          "x": -93,
+          "y": 34
+        },
+        {
+          "x": -109,
+          "y": 37
+        },
+        {
+          "x": -122,
+          "y": 33
+        },
+        {
+          "x": -134,
+          "y": 23
+        },
+        {
+          "x": -139,
+          "y": 11
+        },
+        {
+          "x": -140,
+          "y": 2
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 3283996,
+      "height": 18,
+      "mirror": 1,
+      "name": "Fuselage Connector",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -54,
+          "y": 5
+        },
+        {
+          "x": -47,
+          "y": 5
+        },
+        {
+          "x": -44,
+          "y": 17
+        },
+        {
+          "x": -32,
+          "y": 17
+        },
+        {
+          "x": -29,
+          "y": 7
+        },
+        {
+          "x": -19,
+          "y": 7
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 3283996,
+      "height": 18,
+      "mirror": 1,
+      "name": "Forward Probe",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 63,
+          "y": 14
+        },
+        {
+          "x": 78,
+          "y": 14
+        },
+        {
+          "x": 78,
+          "y": 21
+        },
+        {
+          "x": 64,
+          "y": 22
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 3283996,
+      "height": 18,
+      "mirror": 1,
+      "name": "Tail Pod Disc",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -84,
+          "y": 11
+        },
+        {
+          "x": -89,
+          "y": 21
+        },
+        {
+          "x": -101,
+          "y": 27
+        },
+        {
+          "x": -114,
+          "y": 26
+        },
+        {
+          "x": -128,
+          "y": 16
+        },
+        {
+          "x": -131,
+          "y": 7
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 3283996,
+      "height": 18,
+      "mirror": 1,
+      "name": "Lateral Pod Disc",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 11,
+          "y": 78
+        },
+        {
+          "x": 19,
+          "y": 78
+        },
+        {
+          "x": 28,
+          "y": 87
+        },
+        {
+          "x": 31,
+          "y": 97
+        },
+        {
+          "x": 29,
+          "y": 111
+        },
+        {
+          "x": 20,
+          "y": 121
+        },
+        {
+          "x": 8,
+          "y": 124
+        },
+        {
+          "x": -8,
+          "y": 120
+        },
+        {
+          "x": -17,
+          "y": 110
+        },
+        {
+          "x": -19,
+          "y": 95
+        },
+        {
+          "x": -15,
+          "y": 84
+        },
+        {
+          "x": -8,
+          "y": 77
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 8201252,
+      "height": 33,
+      "mirror": 1,
+      "name": "Wing Extension",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -7,
+          "y": 63
+        },
+        {
+          "x": -7,
+          "y": 68
+        },
+        {
+          "x": -2,
+          "y": 69
+        },
+        {
+          "x": -2,
+          "y": 101
+        },
+        {
+          "x": 1,
+          "y": 106
+        },
+        {
+          "x": 5,
+          "y": 109
+        },
+        {
+          "x": 10,
+          "y": 109
+        },
+        {
+          "x": 14,
+          "y": 106
+        },
+        {
+          "x": 16,
+          "y": 102
+        },
+        {
+          "x": 16,
+          "y": 69
+        },
+        {
+          "x": 18,
+          "y": 64
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 8201252,
+      "height": 33,
+      "mirror": 1,
+      "name": "Tail Strut",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -120,
+          "y": 1
+        },
+        {
+          "x": -118,
+          "y": 8
+        },
+        {
+          "x": -113,
+          "y": 12
+        },
+        {
+          "x": -99,
+          "y": 12
+        },
+        {
+          "x": -51,
+          "y": 10
+        },
+        {
+          "x": -51,
+          "y": 2
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 8201252,
+      "height": 37,
+      "mirror": 1,
+      "name": "Wing Spar",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -9,
+          "y": 40
+        },
+        {
+          "x": -8,
+          "y": 61
+        },
+        {
+          "x": 20,
+          "y": 61
+        },
+        {
+          "x": 21,
+          "y": 43
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 8201252,
+      "height": 40,
+      "mirror": 1,
+      "name": "Wing Box",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -23,
+          "y": 21
+        },
+        {
+          "x": -15,
+          "y": 39
+        },
+        {
+          "x": 24,
+          "y": 40
+        },
+        {
+          "x": 32,
+          "y": 23
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 3098696,
+      "height": 47,
+      "mirror": 1,
+      "name": "Wing Box Detail",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -1,
+          "y": 28
+        },
+        {
+          "x": -1,
+          "y": 36
+        },
+        {
+          "x": 9,
+          "y": 36
+        },
+        {
+          "x": 9,
+          "y": 28
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 3098696,
+      "height": 47,
+      "mirror": 1,
+      "name": "Wing Spar Detail",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 0,
+          "y": 52
+        },
+        {
+          "x": 10,
+          "y": 52
+        },
+        {
+          "x": 10,
+          "y": 45
+        },
+        {
+          "x": 0,
+          "y": 45
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 8201252,
+      "height": 52,
+      "mirror": 1,
+      "name": "Main Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -23,
+          "y": 8
+        },
+        {
+          "x": -28,
+          "y": 20
+        },
+        {
+          "x": 35,
+          "y": 19
+        },
+        {
+          "x": 41,
+          "y": 26
+        },
+        {
+          "x": 66,
+          "y": 24
+        },
+        {
+          "x": 65,
+          "y": 12
+        },
+        {
+          "x": 74,
+          "y": 10
+        },
+        {
+          "x": 74,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 3098696,
+      "height": 54,
+      "mirror": 1,
+      "name": "Top Center Detail",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -13,
+          "y": 4
+        },
+        {
+          "x": -9,
+          "y": 11
+        },
+        {
+          "x": 16,
+          "y": 10
+        },
+        {
+          "x": 27,
+          "y": 3
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 3098696,
+      "height": 54,
+      "mirror": 1,
+      "name": "Windshield",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 56,
+          "y": 2
+        },
+        {
+          "x": 56,
+          "y": 10
+        },
+        {
+          "x": 71,
+          "y": 8
+        },
+        {
+          "x": 71,
+          "y": 2
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 3098696,
+      "height": 54,
+      "mirror": 1,
+      "name": "Side Windshield",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 46,
+          "y": 24
+        },
+        {
+          "x": 56,
+          "y": 23
+        },
+        {
+          "x": 56,
+          "y": 17
+        },
+        {
+          "x": 45,
+          "y": 19
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 3098696,
+      "height": 54,
+      "mirror": 1,
+      "name": "Front Center Detail",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 39,
+          "y": 6
+        },
+        {
+          "x": 48,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 3098696,
+      "height": 54,
+      "mirror": 1,
+      "name": "Tail Spar Detail",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -86,
+          "y": 1
+        },
+        {
+          "x": -88,
+          "y": 5
+        },
+        {
+          "x": -101,
+          "y": 6
+        },
+        {
+          "x": -103,
+          "y": 8
+        },
+        {
+          "x": -105,
+          "y": 8
+        },
+        {
+          "x": -108,
+          "y": 8
+        },
+        {
+          "x": -112,
+          "y": 6
+        },
+        {
+          "x": -113,
+          "y": 2
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 3098696,
+      "height": 54,
+      "mirror": 1,
+      "name": "Wing Rotor Detail",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 2,
+          "y": 83
+        },
+        {
+          "x": 6,
+          "y": 79
+        },
+        {
+          "x": 11,
+          "y": 83
+        },
+        {
+          "x": 11,
+          "y": 94
+        },
+        {
+          "x": 13,
+          "y": 99
+        },
+        {
+          "x": 11,
+          "y": 103
+        },
+        {
+          "x": 7,
+          "y": 105
+        },
+        {
+          "x": 2,
+          "y": 103
+        },
+        {
+          "x": 0,
+          "y": 98
+        },
+        {
+          "x": 2,
+          "y": 92
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

@@ -2,14 +2,18 @@
   "boon": 0,
   "credits": 10,
   "defenses": 0,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
         "params": {
           "data": {
             "damage": 25,
+            "particleLines": [],
             "range": 280,
             "reticleColor": 9054102,
+            "shotguns": [],
+            "sound": "",
             "statusEffects": [
               {
                 "data": {
@@ -21,10 +25,14 @@
               }
             ],
             "tag": "",
-            "targets": 1
+            "targets": 1,
+            "volume": 50
           },
           "tag": "ZapTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 5
       },
       "tag": "TriggeredTriggerEffect"
@@ -36,12 +44,6 @@
   "overworldDrop": 0,
   "precursorTech": 1,
   "rare": 0,
-  "requiresBlast": 0,
-  "requiresBomb": 0,
-  "requiresBurning": 0,
-  "requiresFreezeChill": 0,
-  "requiresMissiles": 0,
-  "requiresZap": 0,
   "triggers": 0
 }
 

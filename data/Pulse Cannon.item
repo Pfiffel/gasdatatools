@@ -2,12 +2,16 @@
   "boon": 1,
   "credits": 6,
   "defenses": 0,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
         "cooldown": 250,
         "damage": 5,
+        "displayName": "",
+        "drawStatsInTooltip": 1,
         "emitterType": "Pulse Cannon Trail",
+        "extraText": "",
         "f": 0,
         "halfArc": 1350,
         "objectType": "Pulse Cannon Bullet",

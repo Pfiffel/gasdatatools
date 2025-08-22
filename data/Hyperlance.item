@@ -2,12 +2,16 @@
   "boon": 1,
   "credits": 7,
   "defenses": 0,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
         "cooldown": 400,
         "damage": 22,
+        "displayName": "",
+        "drawStatsInTooltip": 1,
         "emitterType": "Hyperlance Trail",
+        "extraText": "",
         "f": 0,
         "halfArc": 75,
         "objectType": "Hyperlance Bullet",

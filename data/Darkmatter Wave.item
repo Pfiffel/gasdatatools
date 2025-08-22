@@ -2,6 +2,7 @@
   "boon": 1,
   "credits": 8,
   "defenses": 0,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
@@ -10,6 +11,7 @@
             "autoAim": 0,
             "damage": 50,
             "delay": 0,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Darkmatter Wave Burst",
@@ -20,6 +22,7 @@
               "x": 0,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 320,
             "reticleColor": 3355443,
             "statusEffects": [],
@@ -29,6 +32,9 @@
           },
           "tag": "ShotgunTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 5
       },
       "tag": "TriggeredTriggerEffect"
@@ -38,7 +44,6 @@
   "guns": 0,
   "name": "Darkmatter Wave",
   "overworldDrop": 1,
-  "plusEffects": [],
   "precursorTech": 0,
   "rare": 1,
   "triggers": 1

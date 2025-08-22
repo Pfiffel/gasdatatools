@@ -2,6 +2,9 @@
   "boon": 1,
   "credits": 7,
   "defenses": 0,
+  "dropRequirements": [
+    8
+  ],
   "effects": [
     {
       "data": {
@@ -9,6 +12,7 @@
           "data": {
             "armingTime": 700,
             "burstRadius": 150,
+            "count": 1,
             "damage": 100,
             "duration": 7000,
             "emitterType": "Cryominer Mine",
@@ -29,6 +33,9 @@
           },
           "tag": "MineTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 15
       },
       "tag": "TriggeredTriggerEffect"
@@ -40,13 +47,6 @@
   "overworldDrop": 1,
   "precursorTech": 0,
   "rare": 1,
-  "requiresBlast": 0,
-  "requiresBurning": 0,
-  "requiresDematerialize": 0,
-  "requiresFreezeChill": 0,
-  "requiresMissiles": 0,
-  "requiresPickupPackCreate": 1,
-  "requiresZap": 0,
   "triggers": 1
 }
 

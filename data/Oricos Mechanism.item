@@ -2,6 +2,7 @@
   "boon": 0,
   "credits": 10,
   "defenses": 0,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
@@ -29,6 +30,9 @@
           },
           "tag": "ExtraGunTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 14
       },
       "tag": "TriggeredTriggerEffect"
@@ -40,13 +44,6 @@
   "overworldDrop": 0,
   "precursorTech": 1,
   "rare": 0,
-  "requiresBlast": 0,
-  "requiresBurning": 0,
-  "requiresDematerialize": 0,
-  "requiresFreezeChill": 0,
-  "requiresMissiles": 0,
-  "requiresPickupPackCreate": 0,
-  "requiresZap": 0,
   "triggers": 0
 }
 

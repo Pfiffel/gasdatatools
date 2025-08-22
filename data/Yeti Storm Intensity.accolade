@@ -6,21 +6,16 @@
       "data": {
         "bonus": {
           "data": {
-            "damage": 25,
-            "delay": 0,
+            "dps": 33,
+            "duration": 0,
             "halfArc": 0,
-            "offset": {
-              "x": 0,
-              "y": 0
-            },
             "range": 0,
-            "statusEffects": [],
-            "targetingDelay": 0
+            "statusEffects": []
           },
-          "tag": "ShotgunTriggerBonus"
+          "tag": "DoTConeTriggerBonus"
         },
         "showTooltipStats": 1,
-        "tag": "Yeti 4 Shotgun",
+        "tag": "Yeti 4 DoTCone",
         "tooltip": "On Ice Storm:"
       },
       "tag": "TaggedTriggerBonus"

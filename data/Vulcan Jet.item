@@ -1,0 +1,61 @@
+{
+  "boon": 1,
+  "credits": 6,
+  "defenses": 0,
+  "dropRequirements": [],
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "dps": 100,
+            "duration": 4000,
+            "endSound": "Enemy_RoyalDragoon_Flamethrower_End",
+            "endVolume": 130,
+            "halfArc": 50,
+            "loopSound": "Enemy_RoyalDragoon_Flamethrower_Loop",
+            "loopVolume": 130,
+            "particles": [
+              {
+                "cooldown": 5,
+                "maxDistPercent": 100,
+                "minDistPercent": 50,
+                "particleType": "Draco Blast"
+              }
+            ],
+            "range": 400,
+            "reticleColor": 15619114,
+            "startSound": "Enemy_RoyalDragoon_Flamethrower_Start",
+            "startVolume": 130,
+            "statusEffects": [
+              {
+                "data": {
+                  "dps": 50,
+                  "duration": 2000,
+                  "reducedDurationOnBoss": 0
+                },
+                "tag": "BurningEffect"
+              }
+            ],
+            "tag": "",
+            "tooltip": "High-Pressure Flamethrower"
+          },
+          "tag": "DoTConeTrigger"
+        },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Vulcan Jet",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 1
+}
+

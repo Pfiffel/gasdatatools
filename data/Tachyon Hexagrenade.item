@@ -2,6 +2,7 @@
   "boon": 1,
   "credits": 5,
   "defenses": 0,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
@@ -10,6 +11,7 @@
             "autoAim": 0,
             "damage": 35,
             "delay": 300,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Tachyon Hexagrenade",
@@ -20,6 +22,7 @@
               "x": 180,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 80,
             "reticleColor": 9276956,
             "statusEffects": [],
@@ -29,6 +32,9 @@
           },
           "tag": "ShotgunTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 6
       },
       "tag": "TriggeredTriggerEffect"
@@ -40,6 +46,7 @@
             "autoAim": 0,
             "damage": 35,
             "delay": 300,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 0,
             "explosionType": "Tachyon Hexagrenade",
@@ -50,6 +57,7 @@
               "x": 180,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 80,
             "reticleColor": 9276956,
             "statusEffects": [],
@@ -59,6 +67,9 @@
           },
           "tag": "ShotgunTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 6
       },
       "tag": "TriggeredTriggerEffect"
@@ -70,6 +81,7 @@
             "autoAim": 0,
             "damage": 35,
             "delay": 300,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 0,
             "explosionType": "Tachyon Hexagrenade",
@@ -80,6 +92,7 @@
               "x": 180,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 80,
             "reticleColor": 9276956,
             "statusEffects": [],
@@ -89,6 +102,9 @@
           },
           "tag": "ShotgunTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 6
       },
       "tag": "TriggeredTriggerEffect"
@@ -113,6 +129,9 @@
           },
           "tag": "SlugTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 6
       },
       "tag": "TriggeredTriggerEffect"
@@ -137,6 +156,9 @@
           },
           "tag": "SlugTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 6
       },
       "tag": "TriggeredTriggerEffect"
@@ -161,6 +183,9 @@
           },
           "tag": "SlugTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 6
       },
       "tag": "TriggeredTriggerEffect"

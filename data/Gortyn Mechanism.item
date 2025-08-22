@@ -1,5 +1,8 @@
 {
+  "boon": 0,
   "credits": 10,
+  "defenses": 0,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
@@ -9,19 +12,29 @@
             "duration": 6000,
             "emitterType": "",
             "glyphCount": 16,
+            "glyphOrientation": 0,
             "glyphRadius": 80,
             "glyphType": "Gortyn Glyph",
-            "statType": 3
+            "maxStacks": 0,
+            "statType": 3,
+            "tag": ""
           },
           "tag": "StatBoostTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 8
       },
       "tag": "TriggeredTriggerEffect"
     }
   ],
+  "engines": 0,
+  "guns": 0,
   "name": "Gortyn Mechanism",
   "overworldDrop": 0,
-  "precursorTech": 1
+  "precursorTech": 1,
+  "rare": 0,
+  "triggers": 0
 }
 

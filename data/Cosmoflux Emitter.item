@@ -2,12 +2,16 @@
   "boon": 1,
   "credits": 8,
   "defenses": 0,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
         "cooldown": 255,
         "damage": 15,
+        "displayName": "",
+        "drawStatsInTooltip": 1,
         "emitterType": "Cosmoflux Emitter Trail",
+        "extraText": "",
         "f": 0,
         "halfArc": 1800,
         "objectType": "Cosmoflux Emitter Bullet",

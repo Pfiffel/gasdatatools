@@ -2,6 +2,7 @@
   "boon": 0,
   "credits": 10,
   "defenses": 0,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
@@ -12,7 +13,9 @@
               "cooldown": 400,
               "damage": 10,
               "displayName": "Cythera Mechanism",
+              "drawStatsInTooltip": 1,
               "emitterType": "Mustang Guns",
+              "extraText": "",
               "f": 0,
               "halfArc": 1800,
               "objectType": "Mustang Bullet",
@@ -27,6 +30,9 @@
           },
           "tag": "ExtraGunTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 1
       },
       "tag": "TriggeredTriggerEffect"

@@ -2,6 +2,7 @@
   "boon": 1,
   "credits": 6,
   "defenses": 1,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
@@ -18,6 +19,9 @@
           },
           "tag": "HealTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 8
       },
       "tag": "TriggeredTriggerEffect"
@@ -27,7 +31,6 @@
   "guns": 0,
   "name": "Repair Pod",
   "overworldDrop": 1,
-  "plusEffects": [],
   "precursorTech": 0,
   "rare": 1,
   "triggers": 0

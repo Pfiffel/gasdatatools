@@ -2,6 +2,7 @@
   "boon": 1,
   "credits": 5,
   "defenses": 1,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
@@ -17,6 +18,9 @@
           },
           "tag": "ShieldRefillTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 8
       },
       "tag": "TriggeredTriggerEffect"

@@ -2,6 +2,7 @@
   "boon": 1,
   "credits": 7,
   "defenses": 0,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
@@ -25,6 +26,7 @@
   "name": "Legion Capacitor",
   "overworldDrop": 0,
   "precursorTech": 0,
+  "rare": 0,
   "triggers": 1
 }
 

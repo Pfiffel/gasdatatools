@@ -1,5 +1,8 @@
 {
+  "boon": 0,
   "credits": 10,
+  "defenses": 0,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
@@ -9,12 +12,18 @@
             "duration": 5000,
             "emitterType": "",
             "glyphCount": 6,
+            "glyphOrientation": 0,
             "glyphRadius": 80,
             "glyphType": "Falkonera Glyph",
-            "statType": 10
+            "maxStacks": 0,
+            "statType": 10,
+            "tag": ""
           },
           "tag": "StatBoostTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 4
       },
       "tag": "TriggeredTriggerEffect"
@@ -27,12 +36,18 @@
             "duration": 5000,
             "emitterType": "",
             "glyphCount": 0,
+            "glyphOrientation": 0,
             "glyphRadius": 0,
             "glyphType": "",
-            "statType": 8
+            "maxStacks": 0,
+            "statType": 8,
+            "tag": ""
           },
           "tag": "StatBoostTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 4
       },
       "tag": "TriggeredTriggerEffect"
@@ -45,19 +60,29 @@
             "duration": 5000,
             "emitterType": "",
             "glyphCount": 0,
+            "glyphOrientation": 0,
             "glyphRadius": 0,
             "glyphType": "",
-            "statType": 5
+            "maxStacks": 0,
+            "statType": 5,
+            "tag": ""
           },
           "tag": "StatBoostTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 4
       },
       "tag": "TriggeredTriggerEffect"
     }
   ],
+  "engines": 0,
+  "guns": 0,
   "name": "Falkonera Mechanism",
   "overworldDrop": 0,
-  "precursorTech": 1
+  "precursorTech": 1,
+  "rare": 0,
+  "triggers": 0
 }
 

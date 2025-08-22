@@ -2,6 +2,7 @@
   "boon": 0,
   "credits": 10,
   "defenses": 0,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
@@ -9,6 +10,7 @@
           "data": {
             "armingTime": 800,
             "burstRadius": 280,
+            "count": 1,
             "damage": 200,
             "duration": 5000,
             "emitterType": "Odessos Mine",
@@ -22,6 +24,9 @@
           },
           "tag": "MineTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 3
       },
       "tag": "TriggeredTriggerEffect"

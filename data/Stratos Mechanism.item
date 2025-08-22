@@ -2,6 +2,7 @@
   "boon": 0,
   "credits": 10,
   "defenses": 0,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
@@ -18,6 +19,9 @@
           },
           "tag": "HealTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 4
       },
       "tag": "TriggeredTriggerEffect"
@@ -30,6 +34,7 @@
             "duration": 10000,
             "emitterType": "",
             "glyphCount": 2,
+            "glyphOrientation": 0,
             "glyphRadius": 50,
             "glyphType": "Heal Rate Indicator Small",
             "maxStacks": 0,
@@ -38,6 +43,9 @@
           },
           "tag": "StatBoostTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 4
       },
       "tag": "TriggeredTriggerEffect"

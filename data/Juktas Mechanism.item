@@ -2,6 +2,7 @@
   "boon": 0,
   "credits": 10,
   "defenses": 0,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
@@ -12,7 +13,9 @@
               "cooldown": 750,
               "damage": 25,
               "displayName": "Juktas Mechanism",
+              "drawStatsInTooltip": 1,
               "emitterType": "Juktas Bullet Trail",
+              "extraText": "",
               "f": 0,
               "halfArc": 600,
               "objectType": "Juktas Bullet",
@@ -27,6 +30,9 @@
           },
           "tag": "ExtraGunTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 8
       },
       "tag": "TriggeredTriggerEffect"

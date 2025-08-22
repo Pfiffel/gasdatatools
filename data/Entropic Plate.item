@@ -2,6 +2,7 @@
   "boon": 1,
   "credits": 5,
   "defenses": 1,
+  "dropRequirements": [],
   "effects": [
     {
       "data": {
@@ -18,14 +19,6 @@
   "overworldDrop": 1,
   "precursorTech": 0,
   "rare": 0,
-  "requiresBlast": 0,
-  "requiresBurning": 0,
-  "requiresDematerialize": 0,
-  "requiresFreezeChill": 0,
-  "requiresMissiles": 0,
-  "requiresPeriodic": 0,
-  "requiresPickupPackCreate": 0,
-  "requiresZap": 0,
   "triggers": 0
 }
 
