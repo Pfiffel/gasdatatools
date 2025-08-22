@@ -95,6 +95,8 @@ const STAT_TYPES = {
 	"40": ["DOT_DAMAGE", "Damage Over Time", false],
 	"41": ["DURATION", "Effect Duration", false],
 	"42": ["ARMOR", "Armor", true],
+	"43": ["ORBITAL_COUNT_PLUS", "Drone Count", true],
+	"44": ["ORBITAL_SPEED", "Drone Speed", false],
 };
 const ACTIVE_WHILE_NAMES = {
 	"0": ["ALWAYS", "always"],
@@ -447,6 +449,21 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, iPortrait = 0, bDescr
 				dps += o.damage * cooldownMult;
 			}
 		}
+		else if (mainTag == "ItemOrbital") {
+			s += data.count + " " + data.tooltip + " Drones:<br/>";
+			if (data.orbital.doProjectileCollision == 1) s += "Absorbs enemy projectiles<br/>";
+			s += printKeyAndData("Radius", data.orbital.radius);
+			if (data.orbital.dps != 0) s += printKeyAndData("Contact Damage:", data.orbital.dps, "", " per second");
+			for (var effects in data.orbital.statusEffects) {
+				var effect = data.orbital.statusEffects[effects];
+				let o = ShowStatusEffect(effect);
+				s += o.s;
+				//dps += o.damage * cooldownMult;
+			}
+		}
+		else if (mainTag == "ItemHull") {
+			s += "Additional Hull Layer: Strength <b>" + data.hp + "</b><br/>";
+		}
 		else if (mainTag == "TaggedTriggerBonus") {
 			if (data.tooltip == "") continue;
 			s += data.tooltip + "<br/>";
@@ -619,6 +636,18 @@ function GetTriggeredEffectString(tag, data, delayArray) {
 		damage += data.damage;
 		hashAoE = newHashAoE;
 	}
+	else if (tag == "DoTConeTrigger") {
+		var newHashAoE = data.tooltip + data.damage + data.dps + data.range + data.halfArc;
+		if (hashAoE != newHashAoE) {
+			if (data.tooltip != "") s += data.tooltip + "<br/>";
+			s += printKeyAndData("Duration", ToTime(data.duration));
+			s += printKeyAndData("Range", data.range, "", AddReticle(data.reticleColor));
+			if (data.dps > 0) s += printKeyAndData("DPS", data.dps);
+			s += printKeyAndData("Arc", (data.halfArc * 0.2) + "°");
+			s += AddEffectsText(data);
+		}
+		hashAoE = newHashAoE;
+	}
 	else if (tag == "CannonTrigger") {
 		var newHashAoE = data.count + data.damage + data.range + data.speed;
 		if (hashAoE != newHashAoE) {
@@ -759,6 +788,13 @@ function GetBonusEffectString(tag, data) {
 		if (data.targetingDelay != 0) s += printKeyAndDataBonus("Targeting Delay", BonusPrefixToTime(data.targetingDelay));
 		s += AddEffectsText(data);
 	}
+		if (tag == "DoTConeTriggerBonus") {
+		if (data.duration != 0) s += printKeyAndDataBonus("Duration", BonusPrefixToTime(data.duration));
+		if (data.dps != 0) s += printKeyAndDataBonus("DPS", BonusPrefix(data.dps));
+		if (data.range != 0) s += printKeyAndDataBonus("Range", BonusPrefix(data.range));
+		if (data.halfArc != 0) s += printKeyAndDataBonus("Arc", BonusPrefix(data.halfArc * 0.2) + "°");
+		s += AddEffectsText(data);
+	}
 	if (tag == "MineTriggerBonus") {
 		// TODO duration, armingTime
 		if (data.damage != 0) s += printKeyAndDataBonus("Blast Damage", BonusPrefix(data.damage));
@@ -859,16 +895,26 @@ function printKeyAndDataBonus(key, data, cssClass = "") {
 function AddReticle(color) {
 	return colorWrap(" &#9711;", numberToHex(color));
 }
+const DROP_REQUIREMENTS = {
+	"0": "Blast",
+	"1": "Missiles",
+	"2": "Burning",
+	"3": "Freeze or Chilled",
+	"4": "DoT Or Burn",
+	"5": "Zap",
+	"6": "Timed Effect",
+	"7": "Dematerialize",
+	"8": "Pickup pack creation",
+	"9": "Drones",
+}
 function GetDropRequirements(item) {
 	let s = "";
-	if (item.requiresBlast != undefined && item.requiresBlast == 1) s += "Requires Blast";
-	if (item.requiresBurning != undefined && item.requiresBurning == 1) s += "Requires Burning";
-	if (item.requiresDematerialize != undefined && item.requiresDematerialize == 1) s += "Requires Dematerialize";
-	if (item.requiresFreezeChill != undefined && item.requiresFreezeChill == 1) s += "Requires Freeze or Chilled";
-	if (item.requiresMissiles != undefined && item.requiresMissiles == 1) s += "Requires Missiles";
-	if (item.requiresPickupPackCreate != undefined && item.requiresPickupPackCreate == 1) s += "Requires Pickup pack creation";
-	if (item.requiresZap != undefined && item.requiresZap == 1) s += "Requires Zap";
-	if (item.requiresPeriodic != undefined && item.requiresPeriodic == 1) s += "Requires Timed Effect";
+	if (item.dropRequirements != undefined)
+		for (let i = 0; i < item.dropRequirements.length; i++) {
+			let req = DROP_REQUIREMENTS[item.dropRequirements[i]];
+			if (req == undefined) console.log("unknown req " + item.dropRequirements[i] + " on " + item.name);
+			s += "Requires " + req;
+		}
 	return s;
 }
 // Loading Stuff
@@ -987,7 +1033,7 @@ function getBullet(type) {
 	return null;
 }
 function getObject(type, bPrev = false) {
-	if(type == "") return null;
+	if (type == "") return null;
 	var data = bPrev ? gasDataPrev["object"] : gasData["object"];
 	for (let i = 0; i < data.length; i++) {
 		var object = data[i];
@@ -1066,7 +1112,7 @@ function GetLane(type) {
 const globalSkip = false;
 const globalSkipSearch = ["Cactus", "Dune", "Desert", "Saguaro"];
 function SkipCheck(entity) {
-	if(globalSkip)
+	if (globalSkip)
 		for (let i = 0; i < globalSkipSearch.length; i++) {
 			var toSkip = globalSkipSearch[i];
 			if (entity.name.includes(toSkip)) return true;
@@ -1120,7 +1166,7 @@ function getObjectResolution(object, weapons, shields, radius, scale) {
 			var turret = weapons[i].objectType;
 			var objectAttach = getObject(turret);
 			if (objectAttach != null) {
-				try{
+				try {
 					var offset = [0, 0, 0];
 					var attach = weapons[i].attachmentPoint;
 					// TODO offset[0] which is facing
@@ -1130,7 +1176,7 @@ function getObjectResolution(object, weapons, shields, radius, scale) {
 					//var yRotated = offset[1] * Math.sin(angle) + offset[2] * Math.cos(angle);
 					max = this.getMaxFromShapes(objectAttach, offset[1], offset[2], max);
 				}
-				catch(e){
+				catch (e) {
 					console.log(object.name + ": " + turret);
 					console.error(e);
 				}

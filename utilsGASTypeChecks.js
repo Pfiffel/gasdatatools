@@ -181,6 +181,8 @@ function IsDuration(effects, name) {
 	return false;
 }
 function IsDoT(params) {
+	if (IsTag(params, "DoTConeTrigger") && params.data.dps != 0) return true;
+	if (IsTag(params, "ItemOrbital") && params.data.orbital.dps != 0) return true;
 	if (!Array.isArray(params) && IsDoTParams(params))
 		return true;
 	for (var p in params) {
