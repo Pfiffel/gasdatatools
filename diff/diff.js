@@ -273,6 +273,13 @@ function IsNewButDefaultValue(entityPrev, entity, key) {
 		else if (key == "ccw" && entity[key] == 0) return true;
 		else if (key == "persist" && entity[key] == 0) return true;
 		else if (key == "maxDistanceFromMaster" && entity[key] == 0) return true;
+		else if (key == "purgeProjectiles" && entity[key] == 0) return true;
+		else if (key == "boon" && entity[key] == 0) return true;
+		else if (key == "defenses" && entity[key] == 0) return true;
+		else if (key == "engines" && entity[key] == 0) return true;
+		else if (key == "guns" && entity[key] == 0) return true;
+		else if (key == "triggers" && entity[key] == 0) return true;
+		else if (key == "count" && entity[key] == 1) return true;
 	return false;
 }
 function MakeChangeEntry(header, key, prev, curr, container) {
