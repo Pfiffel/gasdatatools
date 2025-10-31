@@ -1,0 +1,67 @@
+{
+  "boon": 1,
+  "credits": 7,
+  "defenses": 0,
+  "dropRequirements": [
+    9
+  ],
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "orientation": 0,
+            "triggers": [
+              {
+                "data": {
+                  "count": 10,
+                  "damage": 250,
+                  "emitterType": "Maelstrom Cannons Trail",
+                  "launchSoundPack": "Maelstrom Cannons Launch",
+                  "objectType": "Maelstrom Cannons Shell",
+                  "radius": 5,
+                  "range": 300,
+                  "shotguns": [],
+                  "speed": 400,
+                  "statusEffects": [],
+                  "tag": "",
+                  "timeGap": 400
+                },
+                "tag": "CannonTrigger"
+              },
+              {
+                "data": {
+                  "amount": 20,
+                  "duration": 4000,
+                  "emitterType": "",
+                  "glyphCount": 0,
+                  "glyphOrientation": 0,
+                  "glyphRadius": 0,
+                  "glyphType": "",
+                  "maxStacks": 0,
+                  "statType": 44,
+                  "tag": ""
+                },
+                "tag": "StatBoostTrigger"
+              }
+            ]
+          },
+          "tag": "OrbitalTriggerTrigger"
+        },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Maelstrom Cannons",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 1
+}
+

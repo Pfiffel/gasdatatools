@@ -1,10 +1,11 @@
 {
   "name": "Orbital Hits",
   "sounds": [
-    "Enemy_BasicHit_01",
-    "Enemy_BasicHit_02",
-    "Enemy_BasicHit_03"
+    "Player_OrbitalHit_01",
+    "Player_OrbitalHit_02",
+    "Player_OrbitalHit_03",
+    "Player_OrbitalHit_04"
   ],
-  "volume": 40
+  "volume": 50
 }
 

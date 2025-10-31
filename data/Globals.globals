@@ -49,7 +49,8 @@
     "Quagmire2"
   ],
   "enabledPlanets": [
-    "Quagmire"
+    "Quagmire",
+    "Quagmire2"
   ],
   "glossary": [
     {
@@ -376,6 +377,7 @@
     "abilityHighlightColor": 3531257,
     "abilityTitleColor": 4364026,
     "accoladeColor": 13083388,
+    "defaultReticleColor": 11184810,
     "elderAIHighlightColor": 14526976,
     "priorityTargetColor": 16742144,
     "statsPanelBackgroundColor": 3355443,

@@ -1,0 +1,16 @@
+{
+  "displayName": "Timed Effect Fire Rate",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": -30,
+        "statType": 39
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "maxCount": 3,
+  "name": "Timed Effect RoF"
+}
+

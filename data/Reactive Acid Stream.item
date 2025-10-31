@@ -10,10 +10,10 @@
           "data": {
             "dps": 60,
             "duration": 1500,
-            "endSound": "Enemy_RoyalDragoon_Flamethrower_End",
+            "endSound": "Item_Effect_Acid_Cone_End",
             "endVolume": 50,
             "halfArc": 1800,
-            "loopSound": "Enemy_RoyalDragoon_Flamethrower_Loop",
+            "loopSound": "Item_Effect_Acid_Cone_Loop",
             "loopVolume": 50,
             "particles": [
               {
@@ -25,7 +25,7 @@
             ],
             "range": 300,
             "reticleColor": 5955150,
-            "startSound": "Enemy_RoyalDragoon_Flamethrower_Start",
+            "startSound": "Item_Effect_Acid_Cone_Start",
             "startVolume": 50,
             "statusEffects": [],
             "tag": "",

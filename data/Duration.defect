@@ -1,16 +1,16 @@
 {
-  "displayName": "Increased Hull Size",
+  "displayName": "Reduced Effect Duration",
   "effects": [
     {
       "data": {
         "activeWhile": 0,
-        "amount": 15,
-        "statType": 10
+        "amount": -15,
+        "statType": 41
       },
       "tag": "ItemStat"
     }
   ],
   "maxCount": 6,
-  "name": "Hull Size"
+  "name": "Duration"
 }
 

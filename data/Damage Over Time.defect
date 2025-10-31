@@ -1,0 +1,16 @@
+{
+  "displayName": "Reduced Damage Over Time",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": -30,
+        "statType": 40
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "maxCount": 3,
+  "name": "Damage Over Time"
+}
+

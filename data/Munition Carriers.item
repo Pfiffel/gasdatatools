@@ -1,0 +1,66 @@
+{
+  "boon": 1,
+  "credits": 7,
+  "defenses": 0,
+  "dropRequirements": [
+    9
+  ],
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "orientation": 0,
+            "triggers": [
+              {
+                "data": {
+                  "angleOffset": 0,
+                  "armingTime": 750,
+                  "creationSound": "",
+                  "creationVolume": 50,
+                  "emitterType": "Damage Mine",
+                  "expiryExplosion": "Damage Mine Expiry",
+                  "healing": 0,
+                  "mineCount": 1,
+                  "objectType": "Damage Glyph",
+                  "pickupExplosion": "Damage Mine Pickup",
+                  "powers": [
+                    {
+                      "data": {
+                        "amount": 15,
+                        "caption": "",
+                        "duration": 10000,
+                        "emitterType": "Damage Mine",
+                        "statType": 0
+                      },
+                      "tag": "StatPower"
+                    }
+                  ],
+                  "radius": 40,
+                  "ringRadius": 0,
+                  "tag": "",
+                  "triggers": []
+                },
+                "tag": "PickupPackTrigger"
+              }
+            ]
+          },
+          "tag": "OrbitalTriggerTrigger"
+        },
+        "sound": "UI_Misc_01",
+        "soundPack": "",
+        "volume": 100,
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Munition Carriers",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 1
+}
+

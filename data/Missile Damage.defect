@@ -1,0 +1,16 @@
+{
+  "displayName": "Reduced Missile Damage",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": -30,
+        "statType": 23
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "maxCount": 3,
+  "name": "Missile Damage"
+}
+

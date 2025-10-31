@@ -1,0 +1,8 @@
+{
+  "name": "Maelstrom Cannons Launch",
+  "sounds": [
+    "explosion2"
+  ],
+  "volume": 200
+}
+

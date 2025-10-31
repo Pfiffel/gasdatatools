@@ -1,0 +1,44 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 2673789
+    },
+    {
+      "frac": 900,
+      "value": 2673789
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 500,
+  "minLifetime": 200,
+  "name": "Proxy Shields Slug Trail",
+  "objectType": "Small Hex",
+  "positionTweenType": "LINEAR",
+  "scalePoints": [
+    {
+      "frac": 25,
+      "value": 200
+    },
+    {
+      "frac": 500,
+      "value": 300
+    },
+    {
+      "frac": 900,
+      "value": 200
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 16776958,
+  "startScale": 10,
+  "stayLow": 1
+}
+

@@ -1,0 +1,141 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Retaliator Darts Missile",
+  "shapes": [
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 8175914,
+      "height": 98,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -20,
+          "y": 2
+        },
+        {
+          "x": -29,
+          "y": 9
+        },
+        {
+          "x": -37,
+          "y": 10
+        },
+        {
+          "x": -57,
+          "y": 8
+        },
+        {
+          "x": -81,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 8175914,
+      "height": 98,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -36,
+          "y": 14
+        },
+        {
+          "x": -31,
+          "y": 9
+        },
+        {
+          "x": -18,
+          "y": 9
+        },
+        {
+          "x": -23,
+          "y": 20
+        },
+        {
+          "x": -35,
+          "y": 24
+        },
+        {
+          "x": -49,
+          "y": 17
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 3890976,
+      "height": 99,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 48,
+          "y": 0
+        },
+        {
+          "x": 24,
+          "y": 10
+        },
+        {
+          "x": -32,
+          "y": 9
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 8175914,
+      "height": 100,
+      "mirror": 1,
+      "name": "Main",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 24,
+          "y": 0
+        },
+        {
+          "x": 6,
+          "y": 5
+        },
+        {
+          "x": -5,
+          "y": 5
+        },
+        {
+          "x": -15,
+          "y": 3
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

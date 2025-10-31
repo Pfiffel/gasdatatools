@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 40,
+      "maxDistPercent": 100,
+      "minDistPercent": 90,
+      "particleType": "Triwave Bursters Burst",
+      "uniformAngles": 0
+    },
+    {
+      "angularDensity": 35,
+      "maxDistPercent": 80,
+      "minDistPercent": 30,
+      "particleType": "Triwave Bursters Burst",
+      "uniformAngles": 0
+    }
+  ],
+  "name": "Triwave Bursters Burst",
+  "sound": "explosion3",
+  "volume": 100
+}
+

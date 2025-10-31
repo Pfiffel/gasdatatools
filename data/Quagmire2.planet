@@ -129,7 +129,7 @@
       "localFauna": [
         {
           "count": 50,
-          "name": "Bogweed"
+          "name": "Common Dunespike"
         }
       ],
       "mapGridDesignator": "Planet Orion-Q154-Beta-5",
@@ -142,7 +142,7 @@
       "localFauna": [
         {
           "count": 75,
-          "name": "Bogweed"
+          "name": "Common Dunespike"
         }
       ],
       "mapGridDesignator": "Sector QX-17",
@@ -155,7 +155,7 @@
       "localFauna": [
         {
           "count": 75,
-          "name": "Bogweed Archer"
+          "name": "Azure Dunespike"
         }
       ],
       "mapGridDesignator": "Sector PH-91",
@@ -173,7 +173,7 @@
       "localFauna": [
         {
           "count": 75,
-          "name": "Bogweed Mephitic"
+          "name": "Snagroot Dunespike"
         }
       ],
       "mapGridDesignator": "Sector KZ-83",
@@ -191,7 +191,7 @@
       "localFauna": [
         {
           "count": 75,
-          "name": "Bogweed Burrower"
+          "name": "Veilpiercer Dunespike"
         }
       ],
       "mapGridDesignator": "Sector VN-39",
@@ -209,7 +209,7 @@
       "localFauna": [
         {
           "count": 75,
-          "name": "Bogweed Ambusher"
+          "name": "Thornripper Dunespike"
         }
       ],
       "mapGridDesignator": "Sector RD-12",
@@ -228,7 +228,7 @@
       "localFauna": [
         {
           "count": 75,
-          "name": "Bogweed Noxiant"
+          "name": "Snarethorn Dunespike"
         }
       ],
       "mapGridDesignator": "Sector XB-50",
@@ -247,7 +247,7 @@
       "localFauna": [
         {
           "count": 75,
-          "name": "Bogweed Acidic"
+          "name": "Withering Dunespike"
         }
       ],
       "mapGridDesignator": "Sector LP-77",
@@ -267,7 +267,7 @@
       "localFauna": [
         {
           "count": 75,
-          "name": "Bogweed Necrophant"
+          "name": "Blackadder Dunespike"
         }
       ],
       "mapGridDesignator": "Sector AV-10",
@@ -286,6 +286,6 @@
       "sectorName": "The Black Cesspit"
     }
   ],
-  "name": "Quagmire"
+  "name": "Quagmire2"
 }
 

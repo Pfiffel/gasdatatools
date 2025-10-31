@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 15,
+      "maxDistPercent": 100,
+      "minDistPercent": 30,
+      "particleType": "Arc Surgelets Zap",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Arc Surgelets Zap",
+  "sound": "",
+  "volume": 100
+}
+

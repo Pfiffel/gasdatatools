@@ -4,13 +4,13 @@
     {
       "data": {
         "activeWhile": 0,
-        "amount": -15,
+        "amount": -12,
         "statType": 17
       },
       "tag": "ItemStat"
     }
   ],
-  "maxCount": 4,
+  "maxCount": 5,
   "name": "Scoot Rate"
 }
 

@@ -1,0 +1,44 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 16645629
+    },
+    {
+      "frac": 900,
+      "value": 2673789
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 600,
+  "minLifetime": 350,
+  "name": "Proxy Shields Line",
+  "objectType": "Small Spike",
+  "positionTweenType": "LINEAR",
+  "scalePoints": [
+    {
+      "frac": 25,
+      "value": 300
+    },
+    {
+      "frac": 500,
+      "value": 500
+    },
+    {
+      "frac": 900,
+      "value": 300
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 16776958,
+  "startScale": 10,
+  "stayLow": 1
+}
+

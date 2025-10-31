@@ -10,11 +10,11 @@
           "data": {
             "dps": 100,
             "duration": 1000,
-            "endSound": "Enemy_RoyalDragoon_Flamethrower_End",
+            "endSound": "Item_Effect_Barrage_Cone_End",
             "endVolume": 75,
             "halfArc": 450,
-            "loopSound": "Enemy_RoyalDragoon_Flamethrower_Loop",
-            "loopVolume": 75,
+            "loopSound": "Item_Effect_Barrage_Cone_Loop",
+            "loopVolume": 35,
             "particles": [
               {
                 "cooldown": 5,
@@ -25,7 +25,7 @@
             ],
             "range": 250,
             "reticleColor": 11184810,
-            "startSound": "Enemy_RoyalDragoon_Flamethrower_Start",
+            "startSound": "Item_Effect_Barrage_Cone_Start",
             "startVolume": 75,
             "statusEffects": [],
             "tag": "",

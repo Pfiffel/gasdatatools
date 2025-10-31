@@ -1,0 +1,57 @@
+{
+  "boon": 1,
+  "credits": 7,
+  "defenses": 0,
+  "dropRequirements": [
+    9
+  ],
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "cooldown": 8000,
+        "params": [
+          {
+            "data": {
+              "orientation": 1,
+              "triggers": [
+                {
+                  "data": {
+                    "count": 3,
+                    "damage": 100,
+                    "emitterType": "Swarmlet Wave Trail",
+                    "objectType": "Swarmlet Wave Missile",
+                    "range": 350,
+                    "reticleColor": 11864840,
+                    "sound": "Player_Mako_Sharklet_Launch",
+                    "soundPack": "",
+                    "speed": 300,
+                    "statusEffects": [],
+                    "tag": "",
+                    "timeGap": 400,
+                    "tweenType": "CUBICIN",
+                    "volume": 50
+                  },
+                  "tag": "SharkletTrigger"
+                }
+              ]
+            },
+            "tag": "OrbitalTriggerTrigger"
+          }
+        ],
+        "percentChance": 100,
+        "reticleColor": 11184810,
+        "targetingRange": 0
+      },
+      "tag": "PeriodicTriggerEffect"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Swarmlet Wave",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 1
+}
+

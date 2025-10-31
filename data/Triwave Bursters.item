@@ -1,0 +1,113 @@
+{
+  "boon": 1,
+  "credits": 7,
+  "defenses": 0,
+  "dropRequirements": [
+    9
+  ],
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "orientation": 1,
+            "triggers": [
+              {
+                "data": {
+                  "autoAim": 0,
+                  "damage": 250,
+                  "delay": 0,
+                  "drawPictureInTooltip": 1,
+                  "drawReticle": 1,
+                  "drawTooltip": 1,
+                  "explosionType": "Triwave Bursters Burst",
+                  "facing": 0,
+                  "halfArc": 1800,
+                  "mirror": 0,
+                  "offset": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "purgeProjectiles": 0,
+                  "range": 100,
+                  "reticleColor": 2669772,
+                  "statusEffects": [],
+                  "tag": "",
+                  "targetingDelay": 500,
+                  "tooltip": "Triple Explosive Burst"
+                },
+                "tag": "ShotgunTrigger"
+              },
+              {
+                "data": {
+                  "autoAim": 0,
+                  "damage": 250,
+                  "delay": 0,
+                  "drawPictureInTooltip": 0,
+                  "drawReticle": 1,
+                  "drawTooltip": 0,
+                  "explosionType": "Triwave Bursters Burst",
+                  "facing": 0,
+                  "halfArc": 1800,
+                  "mirror": 0,
+                  "offset": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "purgeProjectiles": 0,
+                  "range": 100,
+                  "reticleColor": 2669772,
+                  "statusEffects": [],
+                  "tag": "",
+                  "targetingDelay": 1000,
+                  "tooltip": ""
+                },
+                "tag": "ShotgunTrigger"
+              },
+              {
+                "data": {
+                  "autoAim": 0,
+                  "damage": 250,
+                  "delay": 0,
+                  "drawPictureInTooltip": 0,
+                  "drawReticle": 1,
+                  "drawTooltip": 0,
+                  "explosionType": "Triwave Bursters Burst",
+                  "facing": 0,
+                  "halfArc": 1800,
+                  "mirror": 0,
+                  "offset": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "purgeProjectiles": 0,
+                  "range": 100,
+                  "reticleColor": 2669772,
+                  "statusEffects": [],
+                  "tag": "",
+                  "targetingDelay": 1500,
+                  "tooltip": ""
+                },
+                "tag": "ShotgunTrigger"
+              }
+            ]
+          },
+          "tag": "OrbitalTriggerTrigger"
+        },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Triwave Bursters",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 1
+}
+

@@ -10,11 +10,11 @@
           "data": {
             "dps": 0,
             "duration": 2000,
-            "endSound": "Enemy_RoyalDragoon_Flamethrower_End",
-            "endVolume": 130,
+            "endSound": "Item_Effect_Frost_Cone_End",
+            "endVolume": 80,
             "halfArc": 300,
-            "loopSound": "Enemy_RoyalDragoon_Flamethrower_Loop",
-            "loopVolume": 130,
+            "loopSound": "Item_Effect_Frost_Cone_Loop",
+            "loopVolume": 80,
             "particles": [
               {
                 "cooldown": 10,
@@ -25,8 +25,8 @@
             ],
             "range": 300,
             "reticleColor": 5367008,
-            "startSound": "Enemy_RoyalDragoon_Flamethrower_Start",
-            "startVolume": 130,
+            "startSound": "Item_Effect_Frost_Cone_Start",
+            "startVolume": 100,
             "statusEffects": [
               {
                 "data": {

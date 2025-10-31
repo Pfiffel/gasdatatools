@@ -1,0 +1,60 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Proxy Shields Slug",
+  "shapes": [
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 2673789,
+      "height": 10,
+      "mirror": 1,
+      "name": "Glyph",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -55,
+          "y": 0
+        },
+        {
+          "x": -40,
+          "y": 8
+        },
+        {
+          "x": -21,
+          "y": 11
+        },
+        {
+          "x": -8,
+          "y": 21
+        },
+        {
+          "x": 0,
+          "y": 24
+        },
+        {
+          "x": 8,
+          "y": 21
+        },
+        {
+          "x": 21,
+          "y": 11
+        },
+        {
+          "x": 40,
+          "y": 8
+        },
+        {
+          "x": 55,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

@@ -1,0 +1,83 @@
+{
+  "boon": 1,
+  "credits": 5,
+  "defenses": 0,
+  "dropRequirements": [
+    9
+  ],
+  "effects": [
+    {
+      "data": {
+        "params": {
+          "data": {
+            "orientation": 1,
+            "triggers": [
+              {
+                "data": {
+                  "damage": 100,
+                  "particleLines": [
+                    {
+                      "arcOffset": 0,
+                      "halfArc": 100,
+                      "maxDist": 20,
+                      "minDist": 10,
+                      "particleType": "Arc Surgelets Zap",
+                      "spacing": 20
+                    }
+                  ],
+                  "range": 250,
+                  "reticleColor": 11610316,
+                  "shotguns": [
+                    {
+                      "autoAim": 0,
+                      "damage": 0,
+                      "delay": 0,
+                      "drawPictureInTooltip": 0,
+                      "drawReticle": 0,
+                      "drawTooltip": 0,
+                      "explosionType": "Arc Surgelets Zap",
+                      "facing": 0,
+                      "halfArc": 1800,
+                      "mirror": 0,
+                      "offset": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "purgeProjectiles": 0,
+                      "range": 55,
+                      "reticleColor": 11184810,
+                      "statusEffects": [],
+                      "tag": "",
+                      "targetingDelay": 0,
+                      "tooltip": ""
+                    }
+                  ],
+                  "sound": "",
+                  "statusEffects": [],
+                  "tag": "",
+                  "targets": 1,
+                  "volume": 50
+                },
+                "tag": "ZapTrigger"
+              }
+            ]
+          },
+          "tag": "OrbitalTriggerTrigger"
+        },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
+        "when": 7
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "engines": 0,
+  "guns": 0,
+  "name": "Arc Surgelets",
+  "overworldDrop": 1,
+  "precursorTech": 0,
+  "rare": 1,
+  "triggers": 1
+}
+
