@@ -121,6 +121,12 @@ function IsZap(params) {
 function IsPeriodic(params) {
 	return IsTag(params, "PeriodicTriggerEffect");
 }
+function IsDrone(params) {
+	return IsTag(params, "ItemOrbital");
+}
+function IsDroneTrigger(params) {
+	return IsTag(params, "OrbitalTriggerTrigger");
+}
 function IsFire(params) {
 	if (!Array.isArray(params) && IsFireParams(params))
 		return true;

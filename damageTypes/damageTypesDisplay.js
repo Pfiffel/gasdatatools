@@ -18,11 +18,13 @@ function parseData() {
 		tankIndex[player.name] = i;
 	}
 	var h1List = document.createElement("h1");
-	h1List.textContent = "Timed Effects and Damage Types";
+	h1List.textContent = "Synergies";
 	header.appendChild(h1List);
 	RefreshLists();
 }
 function MakeList() {
+	tableOutput.appendChild(MakeTextDiv("<h2>Drones"));
+	tableOutput.appendChild(DronesTable());
 	tableOutput.appendChild(MakeTextDiv("<h2>Timed Effect and Duration Enhancers"));
 	tableOutput.appendChild(TimedEffectBoostersTable());
 	tableOutput.appendChild(MakeTextDiv("<h2>Timed Effect and Duration Sources"));
@@ -35,6 +37,29 @@ function MakeList() {
 	tableOutput.appendChild(ElementalBoostersTable());
 	tableOutput.appendChild(MakeTextDiv("<h2>Elemental Initiators"));
 	tableOutput.appendChild(ElementalTable());
+}
+function DronesTable() {
+	var tbl = document.createElement('table');
+	let th = tbl.insertRow();
+	makeHeaderCell("", th);
+	//makeHeaderCell("Drones", th);
+	makeHeaderCell(STAT_TYPES[STATS_DRONES.ORBITAL_COUNT_PLUS][1], th);
+	//makeHeaderCell(STAT_TYPES[STATS_DRONES.ORBITAL_SPEED][1], th);
+	makeHeaderCell("Drones & Drone Triggers", th);
+	
+	
+	let tr5 = tbl.insertRow();
+	makeHeaderCell("Items", tr5);
+	//let cell = makeCell("", tr5);
+	//cell.appendChild(MakeSymbioteItemList(gasData.item, STATS_DRONES.ORBITAL_COUNT_PLUS));
+	for (var stat in STATS_DRONES) {
+		let i = STATS_DRONES[stat];
+		let cell = makeCell("", tr5);
+		cell.appendChild(MakeSymbioteItemListBoosters(gasData.item, i));
+	}
+	let cell = makeCell("", tr5);
+	cell.appendChild(MakeSymbioteItemList(gasData.item, STATS_DRONES.ORBITAL_COUNT_PLUS));
+	return tbl;
 }
 function TimedEffectBoostersTable() {
 	var tbl = document.createElement('table');
@@ -448,7 +473,9 @@ function CheckParams(params, stat, name = "") {
 		(IsFire(params) && stat == STATS_ELEMENTAL.DAMAGE_VS_BURNING) ||
 		(IsFrost(params) && stat == STATS_ELEMENTAL.DAMAGE_VS_FROZEN) ||
 		(IsPeriodic(params) && stat == STATS_TIMED.TIMED_EFFECT_FIRE_RATE) ||
-		(IsDuration(params, name) && stat == STATS_TIMED.DURATION)
+		(IsDuration(params, name) && stat == STATS_TIMED.DURATION) ||
+		(IsDrone(params, name) && stat == STATS_DRONES.ORBITAL_COUNT_PLUS) ||
+		(IsDroneTrigger(params, name) && stat == STATS_DRONES.ORBITAL_COUNT_PLUS)
 	) {
 		return true;
 	}

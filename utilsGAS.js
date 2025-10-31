@@ -42,6 +42,7 @@ const STATS_BOOSTERS = {
 	39: [39],
 	40: [40],
 	41: [41],
+	43: [43],
 }
 const STATS_ELEMENTAL = {
 	DAMAGE_VS_BURNING: 15,
@@ -50,6 +51,10 @@ const STATS_ELEMENTAL = {
 const STATS_TIMED = {
 	TIMED_EFFECT_FIRE_RATE: 39,
 	DURATION: 41,
+}
+const STATS_DRONES = {
+	ORBITAL_COUNT_PLUS: 43,
+	//ORBITAL_SPEED: 44,
 }
 const STAT_TYPES = {
 	"0": ["DAMAGE", "Gun Damage", false],
@@ -769,6 +774,17 @@ function GetTriggeredEffectString(tag, data, delayArray) {
 		}
 		damage += data.damage * data.count;
 	}
+	else if (tag == "OrbitalTriggerTrigger") {
+		//s += printKeyAndData("Orientation", data.orientation);
+		s += "<b>For each drone:</b>" + "<br/>";
+		for (var t in data.triggers) {
+			var trigger = data.triggers[t];
+			let o = GetTriggeredEffectString(trigger.tag, trigger.data, delayArray);
+			s += o.s;
+			damage += o.damage;
+		}
+	}
+	
 	var o = {};
 	o.s = s;
 	o.damage = damage;
