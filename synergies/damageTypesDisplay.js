@@ -43,23 +43,22 @@ function DronesTable() {
 	var tbl = document.createElement('table');
 	let th = tbl.insertRow();
 	makeHeaderCell("", th);
-	//makeHeaderCell("Drones", th);
+	makeHeaderCell("Drones", th);
 	makeHeaderCell(STAT_TYPES[STATS_DRONES.ORBITAL_COUNT_PLUS][1], th);
 	makeHeaderCell(STAT_TYPES[STATS_DRONES.ORBITAL_SPEED][1], th);
-	makeHeaderCell("Drones & Drone Triggers", th);
-	
+	makeHeaderCell("Drone Triggers", th);
 	
 	let tr5 = tbl.insertRow();
 	makeHeaderCell("Items", tr5);
-	//let cell = makeCell("", tr5);
-	//cell.appendChild(MakeSymbioteItemList(gasData.item, STATS_DRONES.ORBITAL_COUNT_PLUS));
+	let cell0 = makeCell("", tr5);
+	cell0.appendChild(MakeSymbioteItemList(gasData.item, STATS_DRONES.ORBITAL_COUNT_PLUS));
 	for (var stat in STATS_DRONES) {
 		let i = STATS_DRONES[stat];
 		let cell = makeCell("", tr5);
 		cell.appendChild(MakeSymbioteItemListBoosters(gasData.item, i));
 	}
 	let cell = makeCell("", tr5);
-	cell.appendChild(MakeSymbioteItemList(gasData.item, STATS_DRONES.ORBITAL_COUNT_PLUS));
+	cell.appendChild(MakeSymbioteItemList(gasData.item, STATS_DRONES.ORBITAL_SPEED));
 	return tbl;
 }
 function TimedEffectBoostersTable() {
@@ -476,7 +475,7 @@ function CheckParams(params, stat, name = "") {
 		(IsPeriodic(params) && stat == STATS_TIMED.TIMED_EFFECT_FIRE_RATE) ||
 		(IsDuration(params, name) && stat == STATS_TIMED.DURATION) ||
 		(IsDrone(params, name) && stat == STATS_DRONES.ORBITAL_COUNT_PLUS) ||
-		(IsDroneTrigger(params, name) && stat == STATS_DRONES.ORBITAL_COUNT_PLUS)
+		(IsDroneTrigger(params, name) && stat == STATS_DRONES.ORBITAL_SPEED) // TODO hack for getting triggers in separate list, rethink this CheckParams logic
 	) {
 		return true;
 	}
