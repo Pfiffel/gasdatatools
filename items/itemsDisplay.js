@@ -39,6 +39,7 @@ function parseData() {
 	SetTierColorsFromGlobals();
 	var h1List = document.createElement("h1");
 	h1List.textContent = "Items (" + gasData["item"].length + " total)";
+	header.innerHTML = "";
 	header.appendChild(h1List);
 	RefreshLists();
 }

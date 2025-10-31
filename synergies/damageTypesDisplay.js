@@ -19,6 +19,7 @@ function parseData() {
 	}
 	var h1List = document.createElement("h1");
 	h1List.textContent = "Synergies";
+	header.innerHTML = "";
 	header.appendChild(h1List);
 	RefreshLists();
 }
@@ -44,7 +45,7 @@ function DronesTable() {
 	makeHeaderCell("", th);
 	//makeHeaderCell("Drones", th);
 	makeHeaderCell(STAT_TYPES[STATS_DRONES.ORBITAL_COUNT_PLUS][1], th);
-	//makeHeaderCell(STAT_TYPES[STATS_DRONES.ORBITAL_SPEED][1], th);
+	makeHeaderCell(STAT_TYPES[STATS_DRONES.ORBITAL_SPEED][1], th);
 	makeHeaderCell("Drones & Drone Triggers", th);
 	
 	

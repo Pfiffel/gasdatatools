@@ -43,6 +43,7 @@ const STATS_BOOSTERS = {
 	40: [40],
 	41: [41],
 	43: [43],
+	44: [44],
 }
 const STATS_ELEMENTAL = {
 	DAMAGE_VS_BURNING: 15,
@@ -54,7 +55,7 @@ const STATS_TIMED = {
 }
 const STATS_DRONES = {
 	ORBITAL_COUNT_PLUS: 43,
-	//ORBITAL_SPEED: 44,
+	ORBITAL_SPEED: 44,
 }
 const STAT_TYPES = {
 	"0": ["DAMAGE", "Gun Damage", false],

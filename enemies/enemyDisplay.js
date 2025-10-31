@@ -38,6 +38,7 @@ function parseData() {
 	}
 	var h1List = document.createElement("h1");
 	h1List.textContent = "Enemy List" + " (" + totalAmount + " total)";
+	header.innerHTML = "";
 	header.appendChild(h1List);
 	RefreshLists();
 }
