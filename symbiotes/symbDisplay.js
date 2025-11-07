@@ -17,6 +17,22 @@ var showOnlyDefault = makeInputCheckbox("Only Show Default Symbiotes", RefreshLi
 
 var defaultSymbiotes;
 
+var filterHack = [
+	"Bonemagus",
+	"Weevil",
+	"Pearl",
+	"Skul",
+	"Zkorlax",
+	"Kalibur",
+	"Flutterby",
+	"Firmament",
+	"Terminus",
+	"Hammerjack",
+	"Fabricatrix",
+	"Hamadryad",
+	"Metallus"
+];
+
 function parseData() {
 	defaultSymbiotes = GetGlobals().defaultSymbiotes;
 	SetTierColorsFromGlobals();
@@ -67,6 +83,7 @@ function RefreshLists() {
 	tableOutput.appendChild(showUsage(ACTIVE_WHILE_NAMES));
 	tableOutput.appendChild(showUsage(TRIGGERED_TRIGGER_EFFECTS));
 	//tableOutput.appendChild(FullSymbioteTable());
+	//tableOutput.appendChild(FullSymbioteTableFiltered());
 }
 function GetSymbAmount(t) {
 	var amount = 0;
@@ -81,6 +98,7 @@ function parseTierList(t) {
 	var div = document.createElement('div');
 	for (var i = 0; i < gasData["symbiote"].length; i++) {
 		var symb = gasData["symbiote"][i];
+		if (!filterHack.includes(symb.name)) continue;
 		if (symb.tier != t) continue;
 		if (showOnlyDefault.checked && !IsStarter(symb)) continue;
 		var cont = document.createElement('div');
@@ -111,6 +129,19 @@ function FullSymbioteTable() {
 	}
 	return tbl;
 }
+function FullSymbioteTableFiltered() {
+	var tbl = document.createElement('table');
+	let th = tbl.insertRow();
+	makeHeaderCell("Effects", th);
+	for (const symbF of filterHack) {
+		var symb = getSymbiote(symbF);
+		let tr = tbl.insertRow();
+		var string = MakeStatsTable(symb, symb.tier, true, false, false, false, -1, true);
+		var cell = makeCell(string, tr);
+	}
+	return tbl;
+}
+
 function IsStarter(symb) {
 	for (let i in defaultSymbiotes) {
 		if (defaultSymbiotes[i] == symb.name) return true;

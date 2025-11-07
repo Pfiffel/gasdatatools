@@ -355,22 +355,29 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, iPortrait = 0, bDescr
 		if (mainTag == "ItemStat" || mainTag == "ItemShield") {
 			if (activeWhile != undefined && activeWhile != 0) {
 				if (prevCondition != undefined && prevCondition == activeWhile) prevRepeat = true; else prevRepeat = false;
-				if (!prevRepeat) try { s += "While " + classWrap(ACTIVE_WHILE_NAMES[activeWhile][1], "cKeyValue") + ":<br/>"; }
+				if (!prevRepeat)
+					try {
+						s += "While " + classWrap(ACTIVE_WHILE_NAMES[activeWhile][1], "cKeyValue") + ":<br/>";
+						if (ACTIVE_WHILE_NAMES[activeWhile][10] == undefined) ACTIVE_WHILE_NAMES[activeWhile][10] = 0;
+						ACTIVE_WHILE_NAMES[activeWhile][10]++;
+						if (ACTIVE_WHILE_NAMES[activeWhile][11] == undefined) ACTIVE_WHILE_NAMES[activeWhile][11] = {};
+						ACTIVE_WHILE_NAMES[activeWhile][11][mainData.name] = 1;
+					}
 					catch (e) { console.log("while " + activeWhile + " not found"); }
 				prevCondition = activeWhile;
-				if (ACTIVE_WHILE_NAMES[activeWhile][10] == undefined) ACTIVE_WHILE_NAMES[activeWhile][10] = 0;
-				ACTIVE_WHILE_NAMES[activeWhile][10]++;
-				if (ACTIVE_WHILE_NAMES[activeWhile][11] == undefined) ACTIVE_WHILE_NAMES[activeWhile][11] = {};
-				ACTIVE_WHILE_NAMES[activeWhile][11][mainData.name] = 1;
 			}
 			if (mainTag == "ItemStat") {
 				var amount = data.amount;
 				var statType = data.statType;
-				s += classWrap(amountToString(amount, GetStat(statType, 2)), "cKeyValue") + GetStat(statType, 1) + "<br/>";
-				if (STAT_TYPES[statType][10] == undefined) STAT_TYPES[statType][10] = 0;
-				STAT_TYPES[statType][10]++;
-				if (STAT_TYPES[statType][11] == undefined) STAT_TYPES[statType][11] = {};
-				STAT_TYPES[statType][11][mainData.name] = 1;
+				try {
+					s += classWrap(amountToString(amount, GetStat(statType, 2)), "cKeyValue") + GetStat(statType, 1) + "<br/>";
+					if (STAT_TYPES[statType][10] == undefined) STAT_TYPES[statType][10] = 0;
+					STAT_TYPES[statType][10]++;
+					if (STAT_TYPES[statType][11] == undefined) STAT_TYPES[statType][11] = {};
+					STAT_TYPES[statType][11][mainData.name] = 1;
+				}
+				// TODO redundant check in GetStat?
+				catch (e) { console.log("Stat " + statType + " not found"); }
 			}
 			else if (mainTag == "ItemShield") {
 				var hex = numberToHex(data.shield.color);
@@ -381,14 +388,16 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, iPortrait = 0, bDescr
 		}
 		else if (mainTag == "TriggeredTriggerEffect" || mainTag == "TriggeredHealMineBurst") {
 			if (prevCondition != undefined && prevCondition == data.when) prevRepeat = true; else prevRepeat = false;
-			if (!prevRepeat) try { s += classWrap(TRIGGERED_TRIGGER_EFFECTS[data.when][1], "cKeyValue") + ":<br/>"; }
+			if (!prevRepeat)
+				try {
+					s += classWrap(TRIGGERED_TRIGGER_EFFECTS[data.when][1], "cKeyValue") + ":<br/>";
+					if (TRIGGERED_TRIGGER_EFFECTS[data.when][10] == undefined) TRIGGERED_TRIGGER_EFFECTS[data.when][10] = 0;
+					TRIGGERED_TRIGGER_EFFECTS[data.when][10]++;
+					if (TRIGGERED_TRIGGER_EFFECTS[data.when][11] == undefined) TRIGGERED_TRIGGER_EFFECTS[data.when][11] = {};
+					TRIGGERED_TRIGGER_EFFECTS[data.when][11][mainData.name] = 1;
+				}
 				catch (e) { console.log("when " + data.when + " not found"); }
 			prevCondition = data.when;
-
-			if (TRIGGERED_TRIGGER_EFFECTS[data.when][10] == undefined) TRIGGERED_TRIGGER_EFFECTS[data.when][10] = 0;
-			TRIGGERED_TRIGGER_EFFECTS[data.when][10]++;
-			if (TRIGGERED_TRIGGER_EFFECTS[data.when][11] == undefined) TRIGGERED_TRIGGER_EFFECTS[data.when][11] = {};
-			TRIGGERED_TRIGGER_EFFECTS[data.when][11][mainData.name] = 1;
 
 			if (mainTag == "TriggeredTriggerEffect") {
 				let o = GetTriggeredEffectString(data.params.tag, data.params.data, delayArray);
@@ -785,7 +794,7 @@ function GetTriggeredEffectString(tag, data, delayArray) {
 			damage += o.damage;
 		}
 	}
-	
+
 	var o = {};
 	o.s = s;
 	o.damage = damage;
@@ -805,7 +814,7 @@ function GetBonusEffectString(tag, data) {
 		if (data.targetingDelay != 0) s += printKeyAndDataBonus("Targeting Delay", BonusPrefixToTime(data.targetingDelay));
 		s += AddEffectsText(data);
 	}
-		if (tag == "DoTConeTriggerBonus") {
+	if (tag == "DoTConeTriggerBonus") {
 		if (data.duration != 0) s += printKeyAndDataBonus("Duration", BonusPrefixToTime(data.duration));
 		if (data.dps != 0) s += printKeyAndDataBonus("DPS", BonusPrefix(data.dps));
 		if (data.range != 0) s += printKeyAndDataBonus("Range", BonusPrefix(data.range));
@@ -1065,6 +1074,13 @@ function getItem(type) {
 		if (type == item.name) return item;
 	}
 	console.log(type + " Item not found");
+}
+function getSymbiote(type) {
+	for (let i = 0; i < gasData["symbiote"].length; i++) {
+		var item = gasData["symbiote"][i];
+		if (type == item.name) return item;
+	}
+	console.log(type + " Symbiote not found");
 }
 function getAddon(type) {
 	for (let i = 0; i < gasData["addon"].length; i++) {
