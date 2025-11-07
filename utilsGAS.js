@@ -552,6 +552,12 @@ function MakePowerText(data) {
 			else if (power == "EnergyDamagePower") {
 				s += "Recharge <b>" + -powerData.energyDamage + "</b> energy" + "<br/>";
 			}
+			else if (power == "RepairOverTimePower") {
+				s += "Repair " + classWrap(powerData.repairAmount, "heal") + " hull over <b>" + ToTime(powerData.duration) + "</b><br/>";
+			}
+			else {
+				console.log("power not caught: " + power);
+			}
 		}
 	return s;
 }
@@ -682,8 +688,17 @@ function GetTriggeredEffectString(tag, data, delayArray) {
 		s += "Reset cooldown on <b>trigger " + (data.triggerIndex + 1) + "</b>" + "<br/>";
 	}
 	else if (tag == "HealOverTimeTrigger") {
-		s += printKeyAndData("Heal Amount", data.amount + (data.asPercentage == 1 ? "%" : ""), data.applyToMana == 1 ? "energy" : "heal");
-		s += printKeyAndData("Duration", ToTime(data.duration));
+		if (data.applyToMana == 1) {
+			s += "Recharge " +
+				classWrap(data.amount + (data.asPercentage == 1 ? "%" : "") +
+				" energy", "energy");
+		}
+		else {
+			s += "Repair " +
+				classWrap(data.amount + (data.asPercentage == 1 ? "%" : "") +
+				" hull", "heal");
+		}
+		s += " over <b>" + ToTime(data.duration) + "</b><br/>";
 	}
 	else if (tag == "ProjectilePurgeTrigger") {
 		s += "Destroy enemy projectiles within radius of <b>" + data.radius + "</b>" + "<br/>";
