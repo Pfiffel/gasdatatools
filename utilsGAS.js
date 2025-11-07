@@ -147,6 +147,7 @@ const TRIGGERED_TRIGGER_EFFECTS = {
 	"13": ["ON_SHOOT", "On shot hit"],
 	"14": ["ON_PICKUP_PACK_PICKUP", "When taking a pickup pack"],
 	"15": ["ON_PICKUP_PACK_CREATE", "When creating a pickup pack"],
+	"16": ["ON_KILL_CREDIT", "When destroying an enemy"],
 };
 const PLAYER_POLICIES = {
 	"0": ["IGNORE", "Ignore"],
@@ -526,7 +527,7 @@ function MakePickupPackText(data, delayArray) {
 	var s = "";
 	s += "Create <b>" + data.mineCount + "</b> pickup pack" + (data.mineCount != 1 ? "s" : "") + "<br/>";
 	if (data.healing > 0) s += printKeyAndData("Repair Amount", data.healing, "heal");
-	s += printKeyAndData("Duration", ToTime(data.duration));
+	//s += printKeyAndData("Duration", ToTime(data.duration));
 	s += MakePowerText(data);
 	if (data.triggers != undefined) for (let i = 0; i < data.triggers.length; i++) {
 		let tData = data.triggers[i].data;
