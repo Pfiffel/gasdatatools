@@ -659,7 +659,7 @@ function GetTriggeredEffectString(tag, data, delayArray) {
 		hashAoE = newHashAoE;
 	}
 	else if (tag == "DoTConeTrigger") {
-		var newHashAoE = data.tooltip + data.damage + data.dps + data.range + data.halfArc;
+		var newHashAoE = data.dps + data.duration + data.range + data.halfArc;
 		if (hashAoE != newHashAoE) {
 			if (data.tooltip != "") s += data.tooltip + "<br/>";
 			s += printKeyAndData("Duration", ToTime(data.duration));
