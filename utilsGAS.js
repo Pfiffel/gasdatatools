@@ -469,7 +469,7 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, iPortrait = 0, bDescr
 			s += data.count + " " + data.tooltip + " Drones:<br/>";
 			if (data.orbital.doProjectileCollision == 1) s += "Absorbs enemy projectiles<br/>";
 			s += printKeyAndData("Radius", data.orbital.radius);
-			if (data.orbital.dps != 0) s += printKeyAndData("Contact Damage:", data.orbital.dps, "", " per second");
+			if (data.orbital.dps != 0) s += printKeyAndData("Contact Damage", data.orbital.dps, "", " per second");
 			for (var effects in data.orbital.statusEffects) {
 				var effect = data.orbital.statusEffects[effects];
 				let o = ShowStatusEffect(effect);
