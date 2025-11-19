@@ -144,6 +144,7 @@ function MakeList() {
 		if (entityType != "symbiote") continue;
 		var soundRoots = soundList[entityType];
 		for (let soundRoot in soundRoots) {
+			if (!filterHack.includes(soundRoot)) continue;
 			if (soundRoot.includes("Dagger")) continue;
 			if (soundRoot.includes("Murder Hornet")) continue;
 			if (soundRoot.includes("Soundtesttank")) continue;
@@ -174,6 +175,11 @@ function CheckGeneric(type, object) {
 		// TODO check if heal mines/pickup packs could use custom sounds
 		//  mainTag == "TriggeredHealMineBurst"
 		if (mainTag == "TriggeredTriggerEffect") {
+			// TODO handle data.sound and data.soundPack which are a more recent addition iirc?
+			if(data.sound != undefined && data.sound !== "")
+				soundList[type][object.name]["Generic Trigger Sound"] = data.sound;
+			if(data.soundPack != undefined && data.soundPack.length != 0)
+				soundList[type][object.name]["Generic Trigger Sound"] = SoundPackToString(data.soundPack);
 			CheckTriggeredEffect(type, object.name, data.params.tag, data.params.data);
 		}
 		else if (mainTag == "PlayerGunStats") {
@@ -219,13 +225,23 @@ function CheckTriggeredEffect(origin, name, tag, data) {
 		//soundList[origin][name]["Shotgun Trigger"] = wD.triggerSound;
 		soundList[origin][name][GetBlastOrBombString(data) + " Explosion"] = getExplosionSound(data.explosionType);
 	}
+	else if (tag == "OrbitalTriggerTrigger") {
+		for (const trigger of data.triggers) {
+			CheckTriggeredEffect(origin, name, trigger.tag, trigger.data);
+		}
+	}
+	else if (tag == "DoTConeTrigger") {
+		soundList[origin][name]["DoTCone Start"] = data.startSound;
+		soundList[origin][name]["DoTCone Loop"] = data.loopSound;
+		soundList[origin][name]["DoTCone End"] = data.endSound;
+	}
 	else if (tag == "SlugTrigger") {
 		if(data.sound !== "") soundList[origin][name]["Bomb Launch"] = data.sound;
 	}
 	else if (tag == "CooldownResetTrigger") {
 	}
 	else if (tag == "HealTrigger") {
-		soundList[origin][name][data.applyToMana == 1 ? "Recharge Instant NO HOOK" : "Repair Instant NO HOOK"] = "";
+		//soundList[origin][name][data.applyToMana == 1 ? "Recharge Instant NO HOOK" : "Repair Instant NO HOOK"] = "";
 	}
 	else if (tag == "HealOverTimeTrigger") {
 		//soundList[origin][name][data.applyToMana == 1 ? "Recharge Over Time" : "Repair Over Time"] = "";
@@ -235,7 +251,8 @@ function CheckTriggeredEffect(origin, name, tag, data) {
 		soundList[origin][name]["ProjectilePurge"] = getExplosionSound(data.explosionType);
 	}
 	else if (tag == "PickupPackTrigger") {
-		if(data.creationSound !== "") soundList[origin][name]["Pickup Create"] = data.creationSound;
+		if(data.creationSound !== "") 
+			soundList[origin][name]["Pickup Create"] = data.creationSound;
 		soundList[origin][name]["Pickup Pickup"] = getExplosionSound(data.pickupExplosion);
 		soundList[origin][name]["Pickup Expire"] = getExplosionSound(data.expiryExplosion);
 	}
@@ -243,10 +260,10 @@ function CheckTriggeredEffect(origin, name, tag, data) {
 		soundList[origin][name]["Mine Explosion"] = getExplosionSound(data.explosionType);
 	}
 	else if (tag == "AreaHealTrigger") {
-		soundList[origin][name]["AreaHeal"] = getExplosionSound(data.explosionType);
+		soundList[origin][name]["AreaHeal Explosion"] = getExplosionSound(data.explosionType);
 	}
 	else if (tag == "ShieldRefillTrigger") {
-		soundList[origin][name]["ShieldRefill NO HOOK"] = "";
+		//soundList[origin][name]["ShieldRefill NO HOOK"] = "";
 	}
 	else if (tag == "StatBoostTrigger") {
 		AddEmitterSoundList(origin, name, "", "StatBoost", data.emitterType, true);
@@ -266,8 +283,20 @@ function CheckTriggeredEffect(origin, name, tag, data) {
 	else if (tag == "SharkletTrigger") {
 		soundList[origin][name]["Missile Launch"] = data.sound != "" ? data.sound : SoundPackToString(data.soundPack);
 	}
+	else if (tag == "CannonTrigger") {
+		soundList[origin][name]["Cannon Launch"] = data.sound;
+	}
+	else if (tag == "ZapTrigger") {
+		soundList[origin][name]["Zap Sound"] = data.sound;
+	}
+	else if (tag == "ParticleLineTrigger") {
+	}
 	else if (data.sound != undefined) {
 		soundList[origin][name][tag + " Sound"] = data.sound;
+		console.log("sound not explicitly handled for: " + tag);
+	}
+	else {
+		console.log("sound not handled for: " + tag);
 	}
 }
 function SoundPackToString(name) {
@@ -277,7 +306,11 @@ function SoundPackToString(name) {
 function CheckWeapon(monster, weapon, compound, index) {
 	var wD = compound ? weapon.data : weapon.params.data;
 	var tag = compound ? weapon.tag : weapon.params.tag;
-	if (wD.gunBulletType != undefined) CheckBullet(monster.data, wD, "gunBulletType");
+	if (wD.gunBulletTypes != undefined) 
+	for (let j = 0; j < wD.gunBulletTypes.length; j++) {
+		CheckBullet(monster.data, wD.gunBulletTypes, j);
+	}
+	//if (wD.gunBulletTypes != undefined) CheckBullet(monster.data, wD, "gunBulletType");
 	if (wD.monsterNames != undefined && wD.monsterNames.length != 0)
 		for (var m in wD.monsterNames) {
 			let minion = wD.monsterNames[m]

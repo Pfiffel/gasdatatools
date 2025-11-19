@@ -17,22 +17,6 @@ var showOnlyDefault = makeInputCheckbox("Only Show Default Symbiotes", RefreshLi
 
 var defaultSymbiotes;
 
-var filterHack = [
-	"Bonemagus",
-	"Weevil",
-	"Pearl",
-	"Skul",
-	"Zkorlax",
-	"Kalibur",
-	"Flutterby",
-	"Firmament",
-	"Terminus",
-	"Hammerjack",
-	"Fabricatrix",
-	"Hamadryad",
-	"Metallus"
-];
-
 function parseData() {
 	defaultSymbiotes = GetGlobals().defaultSymbiotes;
 	SetTierColorsFromGlobals();
@@ -83,7 +67,7 @@ function RefreshLists() {
 	tableOutput.appendChild(showUsage(ACTIVE_WHILE_NAMES));
 	tableOutput.appendChild(showUsage(TRIGGERED_TRIGGER_EFFECTS));
 	//tableOutput.appendChild(FullSymbioteTable());
-	//tableOutput.appendChild(FullSymbioteTableFiltered());
+	tableOutput.appendChild(FullSymbioteTableFiltered());
 }
 function GetSymbAmount(t) {
 	var amount = 0;

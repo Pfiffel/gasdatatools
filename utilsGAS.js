@@ -8,6 +8,23 @@ const MODULE_CREDITS = [0, 5, 10, 25, 50, 100, 250, 500, 1000];
 const MAX_LEVEL = 20;
 const SHIELD_STRENGTH_PER_RADIUS = 20;
 const MANA_PER_SECOND = 2.5;
+
+const filterHack = [
+	"Bonemagus",
+	"Weevil",
+	"Pearl",
+	"Skul",
+	"Zkorlax",
+	"Kalibur",
+	"Flutterby",
+	"Firmament",
+	"Terminus",
+	"Hammerjack",
+	"Fabricatrix",
+	"Hamadryad",
+	"Metallus"
+];
+
 // [ui name, type name, item flag key]
 const SLOT_TYPES = {
 	"0": ["Gun Upgrades", "Guns", "guns"],
