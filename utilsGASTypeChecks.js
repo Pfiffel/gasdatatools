@@ -61,7 +61,7 @@ function PowerListHasStatBoost(data) {
 	}
 	return false;
 }
-function IsBlast(params) {
+function IsBlast(params, name = "") {
 	if (IsShotgun(params, true) || IsShotgun(params, false))
 		return true;
 	return false;
@@ -76,9 +76,20 @@ function IsBomb(params) {
 function IsShotgun(params, bHasNoOffset) {
 	if (!Array.isArray(params) && IsAoETag(params, "MineTrigger", !bHasNoOffset)) return true;
 	if (!Array.isArray(params) && IsAoETag(params, "ShotgunTrigger", bHasNoOffset)) return true;
+	if (!Array.isArray(params) && IsNestedShotgun(params, "ShotgunTrigger", bHasNoOffset)) return true;
 	for (var p in params) {
 		if (IsAoETag(params[p], "MineTrigger", !bHasNoOffset)) return true;
 		if (IsAoETag(params[p], "ShotgunTrigger", bHasNoOffset)) return true;
+		if (IsNestedShotgun(params[p], "ShotgunTrigger", bHasNoOffset)) return true;
+	}
+	return false;
+}
+function IsNestedShotgun(params, tag, bHasNoOffset) {
+	if (params.tag == "OrbitalTriggerTrigger") {
+		for (var p in params.data.triggers) {
+			let nParams = params.data.triggers[p];
+			if (IsAoETag(nParams, tag, bHasNoOffset)) return true;
+		}
 	}
 	return false;
 }

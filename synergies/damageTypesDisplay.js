@@ -47,7 +47,7 @@ function DronesTable() {
 	makeHeaderCell(STAT_TYPES[STATS_DRONES.ORBITAL_COUNT_PLUS][1], th);
 	makeHeaderCell(STAT_TYPES[STATS_DRONES.ORBITAL_SPEED][1], th);
 	makeHeaderCell("Drone Triggers", th);
-	
+
 	let tr1 = tbl.insertRow();
 	makeHeaderCell("Items", tr1);
 	let cell10 = makeCell("", tr1);
@@ -59,7 +59,7 @@ function DronesTable() {
 	}
 	let cell11 = makeCell("", tr1);
 	cell11.appendChild(MakeSymbioteItemList(gasData.item, STATS_DRONES.ORBITAL_SPEED));
-		let tr2 = tbl.insertRow();
+	let tr2 = tbl.insertRow();
 	makeHeaderCell("Symbiotes", tr2);
 	let cell20 = makeCell("", tr2);
 	cell20.appendChild(MakeSymbioteItemList(gasData.symbiote, STATS_DRONES.ORBITAL_COUNT_PLUS));
@@ -476,7 +476,7 @@ function MakeSymbioteItemList(type, stat) {
 }
 function CheckParams(params, stat, name = "") {
 	if (
-		(IsBlast(params) && stat == STATS.BLAST_DAMAGE) ||
+		(IsBlast(params, name) && stat == STATS.BLAST_DAMAGE) ||
 		(IsBomb(params) && stat == STATS.BOMB_DAMAGE) ||
 		(IsMissile(params) && stat == STATS.MISSILE_DAMAGE) ||
 		(IsZap(params) && stat == STATS.ZAP_DAMAGE) ||
@@ -499,7 +499,7 @@ function DataHasEffect(effect, stat, name = "") {
 	}
 	for (let p = 0; p < effect.length; p++) {
 		var params = effect[p].data.params;
-		if (params == undefined) return false;
+		if (params == undefined) continue;
 		if (CheckParams(params, stat, name))
 			return true;
 	}
