@@ -1,0 +1,146 @@
+{
+  "name": "Pearl",
+  "portrait": "Pearl",
+  "quoteLists": [
+    {
+      "tag": "Equip",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "How wonderful to see you!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Spawn",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Hello dearie!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Welcome back, dear!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "So nice to see you!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Max Level",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "How nice!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Add Boss Kill",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I'm so proud of you dearie!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Oh, how wonderful!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "So lovely!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Quest Boss Victory",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I knew you could, dear!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Close Call",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Well now that was a close call!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Low Level Death",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Gracious me!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Discover Beacon",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "What an adorable beacon!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Activate Beacon",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Isn't that just lovely?",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Until we meet again dear!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire With Medal",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Until we meet again dear!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire With Accolade",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Until we meet again dear!",
+          "volume": 50
+        }
+      ]
+    }
+  ]
+}

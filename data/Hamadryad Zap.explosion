@@ -1,0 +1,15 @@
+{
+  "layers": [
+    {
+      "angularDensity": 15,
+      "maxDistPercent": 100,
+      "minDistPercent": 30,
+      "particleType": "Hamadryad Zap",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Hamadryad Zap",
+  "sound": "",
+  "volume": 100
+}
+

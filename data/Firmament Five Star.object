@@ -1,0 +1,48 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Firmament Five Star",
+  "shapes": [
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16777215,
+      "height": 16,
+      "mirror": 1,
+      "name": "Upper Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 51,
+          "y": 0
+        },
+        {
+          "x": 15,
+          "y": 11
+        },
+        {
+          "x": 15,
+          "y": 48
+        },
+        {
+          "x": -6,
+          "y": 18
+        },
+        {
+          "x": -41,
+          "y": 29
+        },
+        {
+          "x": -19,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

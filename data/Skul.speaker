@@ -1,0 +1,146 @@
+{
+  "name": "Skul",
+  "portrait": "Skul",
+  "quoteLists": [
+    {
+      "tag": "Equip",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Skul shall feast upon your essence!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Spawn",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Skul has come to feed.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Skul shall not be denied his repast.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Skul will feed.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Max Level",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "You have achieved much. Skul approves.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Add Boss Kill",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Skul feasts!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Skul feeds!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Skul gorges!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Quest Boss Victory",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Skul shows no mercy!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Close Call",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Skul is disappointed with your performance.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Low Level Death",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Skul disapproves.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Discover Beacon",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Acquire that beacon! Skul commands you!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Activate Beacon",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Skul shall feast upon the beacon!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Skul moves to ravage another world!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire With Medal",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Skul moves to ravage another world!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire With Accolade",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Skul moves to ravage another world!",
+          "volume": 50
+        }
+      ]
+    }
+  ]
+}

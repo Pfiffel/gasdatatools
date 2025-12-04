@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 50,
+      "maxDistPercent": 100,
+      "minDistPercent": 90,
+      "particleType": "Pearl Burst",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 20,
+      "maxDistPercent": 80,
+      "minDistPercent": 30,
+      "particleType": "Pearl Burst",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Pearl Heal",
+  "sound": "Symbiote_Effect_Pearl_Explode",
+  "volume": 125
+}
+

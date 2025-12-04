@@ -1,0 +1,146 @@
+{
+  "name": "Bonemagus",
+  "portrait": "Bonemagus",
+  "quoteLists": [
+    {
+      "tag": "Equip",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Can you feel the power of death?",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Spawn",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Back to tempt fate a bit more?",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "The death magick, it needs you.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Let me show you the power of death.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Max Level",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Yes, let the power flow through you!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Add Boss Kill",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Yes, yes, the power courses through me!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I can feel the power of death!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Death magick, flow through my soul!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Quest Boss Victory",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Power overwhelming!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Close Call",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "So close to death. So very close.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Low Level Death",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Ah yes...death. Yes!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Discover Beacon",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "What is that bright light shining there?",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Activate Beacon",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "This beacon, it channels the power!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "No! Do not leave me to my fate!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire With Medal",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "No! Do not leave me to my fate!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire With Accolade",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "No! Do not leave me to my fate!",
+          "volume": 50
+        }
+      ]
+    }
+  ]
+}

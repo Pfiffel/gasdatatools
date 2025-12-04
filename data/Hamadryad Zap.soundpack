@@ -1,0 +1,10 @@
+{
+  "name": "Hamadryad Zap",
+  "sounds": [
+    "Symbiote_Effect_Hamadryad_Zap_01",
+    "Symbiote_Effect_Hamadryad_Zap_02",
+    "Symbiote_Effect_Hamadryad_Zap_03"
+  ],
+  "volume": 50
+}
+

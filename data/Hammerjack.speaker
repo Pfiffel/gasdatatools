@@ -1,0 +1,146 @@
+{
+  "name": "Hammerjack",
+  "portrait": "Hammerjack",
+  "quoteLists": [
+    {
+      "tag": "Equip",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I've seen it all in this outfit, and lemme tell ya, it ain't pretty.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Spawn",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Yep, they're sending us back up the line.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Welcome back to the show. Living the dream!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "This man's army'll grind you down, then throw you out.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Max Level",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Finally, some good news.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Add Boss Kill",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Scratch one!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Target down!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Objective attained!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Quest Boss Victory",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Does this mean we get to go home?",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Close Call",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "It's just a matter of time.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Low Level Death",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "That one had your name on it.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Discover Beacon",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "That beacon's our safest bet right now.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Activate Beacon",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "All right, let's hunker down here.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Congratulations, short-timer!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire With Medal",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Congratulations, short-timer!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire With Accolade",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Congratulations, short-timer!",
+          "volume": 50
+        }
+      ]
+    }
+  ]
+}

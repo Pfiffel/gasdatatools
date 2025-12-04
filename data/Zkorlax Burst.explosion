@@ -1,0 +1,29 @@
+{
+  "layers": [
+    {
+      "angularDensity": 150,
+      "maxDistPercent": 100,
+      "minDistPercent": 100,
+      "particleType": "Zkorlax Burst Outer",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 150,
+      "maxDistPercent": 95,
+      "minDistPercent": 95,
+      "particleType": "Zkorlax Burst Inner",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 500,
+      "maxDistPercent": 95,
+      "minDistPercent": 30,
+      "particleType": "Zkorlax Burst Inner",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Zkorlax Burst",
+  "sound": "Symbiote_Effect_Zkorlax_Explode",
+  "volume": 100
+}
+

@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "angularDensity": 40,
+      "maxDistPercent": 100,
+      "minDistPercent": 90,
+      "particleType": "Skul Burst Outer",
+      "uniformAngles": 1
+    },
+    {
+      "angularDensity": 40,
+      "maxDistPercent": 90,
+      "minDistPercent": 70,
+      "particleType": "Skul Burst Inner",
+      "uniformAngles": 1
+    }
+  ],
+  "name": "Skul Burst",
+  "sound": "Symbiote_Effect_Skul_Explode",
+  "volume": 125
+}
+

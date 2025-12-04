@@ -1,0 +1,463 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Weevil Missile",
+  "shapes": [
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 15392438,
+      "height": 50,
+      "mirror": 1,
+      "name": "Legs",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 40,
+          "y": 18
+        },
+        {
+          "x": 41,
+          "y": 29
+        },
+        {
+          "x": 46,
+          "y": 37
+        },
+        {
+          "x": 34,
+          "y": 32
+        },
+        {
+          "x": 28,
+          "y": 25
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 15392438,
+      "height": 50,
+      "mirror": 1,
+      "name": "Legs",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 24,
+          "y": 24
+        },
+        {
+          "x": 25,
+          "y": 31
+        },
+        {
+          "x": 30,
+          "y": 40
+        },
+        {
+          "x": 18,
+          "y": 35
+        },
+        {
+          "x": 9,
+          "y": 25
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 15392438,
+      "height": 50,
+      "mirror": 1,
+      "name": "Legs",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 4,
+          "y": 18
+        },
+        {
+          "x": 6,
+          "y": 25
+        },
+        {
+          "x": 10,
+          "y": 34
+        },
+        {
+          "x": -1,
+          "y": 29
+        },
+        {
+          "x": -7,
+          "y": 21
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 8736068,
+      "height": 60,
+      "mirror": 1,
+      "name": "Body",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 41,
+          "y": 18
+        },
+        {
+          "x": 32,
+          "y": 23
+        },
+        {
+          "x": 29,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 8736068,
+      "height": 60,
+      "mirror": 1,
+      "name": "Stripe",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 29,
+          "y": 6
+        },
+        {
+          "x": 32,
+          "y": 23
+        },
+        {
+          "x": 18,
+          "y": 24
+        },
+        {
+          "x": 14,
+          "y": 7
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 8736068,
+      "height": 60,
+      "mirror": 1,
+      "name": "Stripe",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 14,
+          "y": 7
+        },
+        {
+          "x": 18,
+          "y": 24
+        },
+        {
+          "x": 4,
+          "y": 23
+        },
+        {
+          "x": 1,
+          "y": 7
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 8736068,
+      "height": 60,
+      "mirror": 1,
+      "name": "Stripe",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 1,
+          "y": 7
+        },
+        {
+          "x": 4,
+          "y": 23
+        },
+        {
+          "x": -10,
+          "y": 17
+        },
+        {
+          "x": -13,
+          "y": 6
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 8736068,
+      "height": 60,
+      "mirror": 1,
+      "name": "Stripe",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -13,
+          "y": 6
+        },
+        {
+          "x": -10,
+          "y": 17
+        },
+        {
+          "x": -21,
+          "y": 13
+        },
+        {
+          "x": -26,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 8736068,
+      "height": 60,
+      "mirror": 1,
+      "name": "Stripe",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -26,
+          "y": 4
+        },
+        {
+          "x": -21,
+          "y": 13
+        },
+        {
+          "x": -36,
+          "y": 12
+        },
+        {
+          "x": -40,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 8736068,
+      "height": 60,
+      "mirror": 1,
+      "name": "Stripe",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -40,
+          "y": 4
+        },
+        {
+          "x": -36,
+          "y": 12
+        },
+        {
+          "x": -46,
+          "y": 13
+        },
+        {
+          "x": -52,
+          "y": 4
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 8736068,
+      "height": 60,
+      "mirror": 1,
+      "name": "Stripe",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -52,
+          "y": 4
+        },
+        {
+          "x": -46,
+          "y": 13
+        },
+        {
+          "x": -57,
+          "y": 13
+        },
+        {
+          "x": -62,
+          "y": 3
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 8736068,
+      "height": 60,
+      "mirror": 1,
+      "name": "Stripe",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -62,
+          "y": 3
+        },
+        {
+          "x": -57,
+          "y": 13
+        },
+        {
+          "x": -65,
+          "y": 9
+        },
+        {
+          "x": -70,
+          "y": 2
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 15392438,
+      "height": 62,
+      "mirror": 1,
+      "name": "Head",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 68,
+          "y": 0
+        },
+        {
+          "x": 56,
+          "y": 14
+        },
+        {
+          "x": 52,
+          "y": 17
+        },
+        {
+          "x": 36,
+          "y": 15
+        },
+        {
+          "x": 32,
+          "y": 7
+        }
+      ],
+      "useBoneMirror": 1
+    },
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 1,
+      "collider": 0,
+      "color": 2565667,
+      "height": 63,
+      "mirror": 1,
+      "name": "Eyes",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 47,
+          "y": 12
+        },
+        {
+          "x": 52,
+          "y": 17
+        },
+        {
+          "x": 47,
+          "y": 21
+        },
+        {
+          "x": 40,
+          "y": 21
+        },
+        {
+          "x": 36,
+          "y": 15
+        },
+        {
+          "x": 41,
+          "y": 12
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

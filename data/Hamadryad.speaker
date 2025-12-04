@@ -1,0 +1,146 @@
+{
+  "name": "Hamadryad",
+  "portrait": "Hamadryad",
+  "quoteLists": [
+    {
+      "tag": "Equip",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Bow before the empress of snakes!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Spawn",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Step forward and make your supplication.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "We shall hear your entreaties.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Do not try our patience!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Max Level",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "We are pleased with your progress. You may continue to serve us.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Add Boss Kill",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Struck down by the serpent!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Slain by cobra venom!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "The cobra strikes!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Quest Boss Victory",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The cobra empress reigns supreme!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Close Call",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Do not fail me!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Low Level Death",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "This antidote will revive you.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Discover Beacon",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Fetch us those baubles.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Activate Beacon",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "You have served the serpent throne well.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Begone from my sight!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire With Medal",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Begone from my sight!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire With Accolade",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Begone from my sight!",
+          "volume": 50
+        }
+      ]
+    }
+  ]
+}

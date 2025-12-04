@@ -1,0 +1,25 @@
+{
+  "description": "Kalibur commands his troops.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 45,
+        "statType": 0
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": -20,
+        "statType": 5
+      },
+      "tag": "ItemStat"
+    }
+  ],
+  "enemies": [],
+  "name": "Kalibur",
+  "tier": 1
+}
+

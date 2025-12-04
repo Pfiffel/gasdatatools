@@ -1,0 +1,40 @@
+{
+  "colorPoints": [
+    {
+      "frac": 200,
+      "value": 14996918
+    },
+    {
+      "frac": 900,
+      "value": 14996918
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 0,
+  "maxLifetime": 700,
+  "minLifetime": 400,
+  "name": "Firmament Inner",
+  "objectType": "Firmament Five Star",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 50,
+      "value": 150
+    },
+    {
+      "frac": 500,
+      "value": 300
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 3427659,
+  "startScale": 10,
+  "stayLow": 1
+}
+

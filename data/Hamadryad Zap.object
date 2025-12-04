@@ -1,0 +1,74 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Hamadryad Zap",
+  "shapes": [
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [
+        {
+          "pos": {
+            "f": 1800,
+            "p": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ],
+      "closed": 0,
+      "collider": 0,
+      "color": 16777215,
+      "height": 0,
+      "mirror": 0,
+      "name": "Zap",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": 24,
+          "y": 0
+        },
+        {
+          "x": 41,
+          "y": 0
+        },
+        {
+          "x": 24,
+          "y": 7
+        },
+        {
+          "x": 8,
+          "y": 0
+        },
+        {
+          "x": -8,
+          "y": 7
+        },
+        {
+          "x": -24,
+          "y": 0
+        },
+        {
+          "x": -41,
+          "y": 0
+        },
+        {
+          "x": -24,
+          "y": -7
+        },
+        {
+          "x": -8,
+          "y": 0
+        },
+        {
+          "x": 8,
+          "y": -7
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

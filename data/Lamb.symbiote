@@ -3,6 +3,7 @@
   "effects": [
     {
       "data": {
+        "maxPerSecond": 0,
         "params": {
           "data": {
             "amount": 20,
@@ -18,12 +19,16 @@
           },
           "tag": "StatBoostTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 4
       },
       "tag": "TriggeredTriggerEffect"
     },
     {
       "data": {
+        "maxPerSecond": 0,
         "params": {
           "data": {
             "amount": 20,
@@ -39,12 +44,16 @@
           },
           "tag": "StatBoostTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 4
       },
       "tag": "TriggeredTriggerEffect"
     },
     {
       "data": {
+        "maxPerSecond": 0,
         "params": {
           "data": {
             "amount": 0,
@@ -72,10 +81,14 @@
               }
             ],
             "radius": 400,
+            "reticleColor": 16250349,
             "tag": ""
           },
           "tag": "AreaHealTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 4
       },
       "tag": "TriggeredTriggerEffect"

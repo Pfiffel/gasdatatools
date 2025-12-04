@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 800,
+      "value": 14010778
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 400,
+  "minLifetime": 300,
+  "name": "Zkorlax Burst Inner",
+  "objectType": "Small Spike",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 50,
+      "value": 600
+    },
+    {
+      "frac": 800,
+      "value": 600
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 7825213,
+  "startScale": 10,
+  "stayLow": 1
+}
+

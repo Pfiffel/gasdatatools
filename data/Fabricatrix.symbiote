@@ -1,0 +1,61 @@
+{
+  "description": "Fabricatrix tinkers incessantly.",
+  "effects": [
+    {
+      "data": {
+        "maxPerSecond": 0,
+        "params": {
+          "data": {
+            "glyphCount": 2,
+            "glyphDuration": 500,
+            "glyphRadius": 50,
+            "glyphType": "Shield Glyph",
+            "refillPercentage": 15,
+            "shieldIndex": -1,
+            "tag": ""
+          },
+          "tag": "ShieldRefillTrigger"
+        },
+        "sound": "Symbiote_Effect_Fabricatrix_ShieldRefill",
+        "soundPack": "",
+        "volume": 100,
+        "when": 15
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "maxPerSecond": 0,
+        "params": {
+          "data": {
+            "angleOffset": 0,
+            "armingTime": 750,
+            "creationSound": "Symbiote_Effect_Fabricatrix_PickupCreate",
+            "creationVolume": 100,
+            "emitterType": "Heal Mine",
+            "expiryExplosion": "Heal Mine Expiry",
+            "healing": 200,
+            "mineCount": 1,
+            "objectType": "Heal Mine",
+            "pickupExplosion": "Heal Mine Pickup",
+            "powers": [],
+            "radius": 50,
+            "ringRadius": 0,
+            "tag": "",
+            "triggers": []
+          },
+          "tag": "PickupPackTrigger"
+        },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Fabricatrix",
+  "tier": 1
+}
+

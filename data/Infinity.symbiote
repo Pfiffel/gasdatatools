@@ -3,22 +3,11 @@
   "effects": [
     {
       "data": {
-        "params": {
-          "data": {
-            "applyToMana": 1,
-            "asPercentage": 0,
-            "glyphCount": 3,
-            "glyphDuration": 500,
-            "glyphRadius": 35,
-            "glyphType": "Recharge Indicator",
-            "healAmount": 5,
-            "tag": ""
-          },
-          "tag": "HealTrigger"
-        },
-        "when": 15
+        "activeWhile": 0,
+        "amount": 40,
+        "statType": 41
       },
-      "tag": "TriggeredTriggerEffect"
+      "tag": "ItemStat"
     }
   ],
   "enemies": [],

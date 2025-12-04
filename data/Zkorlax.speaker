@@ -1,0 +1,146 @@
+{
+  "name": "Zkorlax",
+  "portrait": "Zkorlax",
+  "quoteLists": [
+    {
+      "tag": "Equip",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Curious creatures, these humans.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Spawn",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "United, we shall explore new worlds.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Let us discover new worlds.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Togther, we explore.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Max Level",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "A promotion well-earned!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Add Boss Kill",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Intriguing. Are all humans this valorant?",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Most interesting. What bravery!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Fascinating. A marvelous display of fortitude.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Quest Boss Victory",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Captivating. Humans never cease to surprise me.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Close Call",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "You humans are a resilient species.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Low Level Death",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Casualties must be expected.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Discover Beacon",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "We must investigate that beacon.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Activate Beacon",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "A most insightful discovery.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I seek new worlds.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire With Medal",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I seek new worlds.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire With Accolade",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I seek new worlds.",
+          "volume": 50
+        }
+      ]
+    }
+  ]
+}

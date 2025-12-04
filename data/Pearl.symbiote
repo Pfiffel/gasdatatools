@@ -1,0 +1,63 @@
+{
+  "description": "Pearl wants only the best for you.",
+  "effects": [
+    {
+      "data": {
+        "maxPerSecond": 0,
+        "params": {
+          "data": {
+            "amount": 200,
+            "applyToMana": 0,
+            "duration": 5000,
+            "emitterType": "Rainsplatter HoT",
+            "glyphCount": 2,
+            "glyphRadius": 50,
+            "glyphType": "Heal Indicator Small",
+            "noStack": 0,
+            "tag": ""
+          },
+          "tag": "HealOverTimeTrigger"
+        },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
+        "when": 3
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "maxPerSecond": 0,
+        "params": {
+          "data": {
+            "amount": 0,
+            "explosionType": "Pearl Heal",
+            "powers": [
+              {
+                "data": {
+                  "duration": 5000,
+                  "emitterType": "Rainsplatter HoT",
+                  "repairAmount": 300
+                },
+                "tag": "RepairOverTimePower"
+              }
+            ],
+            "radius": 375,
+            "reticleColor": 3465743,
+            "tag": ""
+          },
+          "tag": "AreaHealTrigger"
+        },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
+        "when": 3
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Pearl",
+  "tier": 4
+}
+

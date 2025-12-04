@@ -1,0 +1,146 @@
+{
+  "name": "Kalibur",
+  "portrait": "Kalibur",
+  "quoteLists": [
+    {
+      "tag": "Equip",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Get into line, soldier!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Spawn",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Move out, you miserable grunt!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Get your lazy carcass into line!",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Fall in on the double, soldier!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Max Level",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Your lack of incompetence surprises me.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Add Boss Kill",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Victory through superior firepower.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Victory by utter annihilation.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "What else matters, but victory?",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Quest Boss Victory",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Victory, my glorious victory!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Close Call",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Don't be a casualty!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Low Level Death",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "You disgust me!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Discover Beacon",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "That beacon is the target. Move!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Activate Beacon",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "My forces, my victory, my beacon.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "You're discharged, soldier. Good work.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire With Medal",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "You're discharged, soldier. Good work.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire With Accolade",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "You're discharged, soldier. Good work.",
+          "volume": 50
+        }
+      ]
+    }
+  ]
+}

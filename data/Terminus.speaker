@@ -1,0 +1,146 @@
+{
+  "name": "Terminus",
+  "portrait": "Terminus",
+  "quoteLists": [
+    {
+      "tag": "Equip",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Assign new target parameters.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Spawn",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Mission recommencing.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Pursuit rejoined.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Tracking systems online.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Max Level",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Companion system power levels at maximum.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Add Boss Kill",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Target terminated. Status: destroyed.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Subject terminated. Status: extinguished.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Objective terminated. Status: eliminated.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Quest Boss Victory",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Ultimate target directive achieved.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Close Call",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Companion system compromised.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Low Level Death",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Restarting companion system from base parameters.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Discover Beacon",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Targeting beacon in sight.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Activate Beacon",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Targeting beacon activated.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Companion system departed. Status: lonely.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire With Medal",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Companion system departed. Status: lonely.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire With Accolade",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Companion system departed. Status: lonely.",
+          "volume": 50
+        }
+      ]
+    }
+  ]
+}

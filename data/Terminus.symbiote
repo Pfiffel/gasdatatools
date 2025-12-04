@@ -1,0 +1,69 @@
+{
+  "description": "Terminus pursues his target without pity, remorse or fear.",
+  "effects": [
+    {
+      "data": {
+        "maxPerSecond": 0,
+        "params": {
+          "data": {
+            "damage": 300,
+            "particleLines": [
+              {
+                "arcOffset": 0,
+                "halfArc": 0,
+                "maxDist": 10,
+                "minDist": 10,
+                "particleType": "Terminus Zap",
+                "spacing": 25
+              }
+            ],
+            "range": 340,
+            "reticleColor": 14823481,
+            "shotguns": [
+              {
+                "aimAtProjectiles": 0,
+                "autoAim": 0,
+                "damage": 0,
+                "delay": 0,
+                "drawPictureInTooltip": 0,
+                "drawReticle": 0,
+                "drawTooltip": 0,
+                "explosionType": "Terminus Zap",
+                "facing": 0,
+                "halfArc": 1800,
+                "mirror": 0,
+                "offset": {
+                  "x": 0,
+                  "y": 0
+                },
+                "purgeProjectiles": 0,
+                "range": 50,
+                "reticleColor": 11184810,
+                "statusEffects": [],
+                "tag": "",
+                "targetingDelay": 0,
+                "tooltip": ""
+              }
+            ],
+            "sound": "",
+            "soundPack": "Terminus Zap",
+            "statusEffects": [],
+            "tag": "",
+            "targets": 1,
+            "volume": 100
+          },
+          "tag": "ZapTrigger"
+        },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
+        "when": 16
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Terminus",
+  "tier": 3
+}
+

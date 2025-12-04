@@ -1,0 +1,36 @@
+{
+  "colorPoints": [
+    {
+      "frac": 250,
+      "value": 11119017
+    },
+    {
+      "frac": 750,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 1000,
+  "minLifetime": 250,
+  "name": "Skul Burst Outer",
+  "objectType": "Wrack",
+  "positionTweenType": "EXPOOUT",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 500
+    },
+    {
+      "frac": 900,
+      "value": 500
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 727324,
+  "startScale": 10,
+  "stayLow": 1
+}
+

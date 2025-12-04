@@ -1,0 +1,81 @@
+{
+  "description": "Hamadryad rules from the serpent throne.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "cooldown": 1000,
+        "params": [
+          {
+            "data": {
+              "damage": 20,
+              "particleLines": [
+                {
+                  "arcOffset": 0,
+                  "halfArc": 100,
+                  "maxDist": 30,
+                  "minDist": 10,
+                  "particleType": "Hamadryad Zap",
+                  "spacing": 15
+                }
+              ],
+              "range": 300,
+              "reticleColor": 13107039,
+              "shotguns": [
+                {
+                  "aimAtProjectiles": 0,
+                  "autoAim": 0,
+                  "damage": 0,
+                  "delay": 0,
+                  "drawPictureInTooltip": 0,
+                  "drawReticle": 0,
+                  "drawTooltip": 0,
+                  "explosionType": "Hamadryad Zap",
+                  "facing": 0,
+                  "halfArc": 1800,
+                  "mirror": 0,
+                  "offset": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "purgeProjectiles": 0,
+                  "range": 50,
+                  "reticleColor": 11184810,
+                  "statusEffects": [],
+                  "tag": "",
+                  "targetingDelay": 0,
+                  "tooltip": ""
+                }
+              ],
+              "sound": "",
+              "soundPack": "Hamadryad Zap",
+              "statusEffects": [
+                {
+                  "data": {
+                    "dps": 30,
+                    "duration": 3000,
+                    "reducedDurationOnBoss": 0
+                  },
+                  "tag": "DoTEffect"
+                }
+              ],
+              "tag": "",
+              "targets": 1,
+              "volume": 50
+            },
+            "tag": "ZapTrigger"
+          }
+        ],
+        "percentChance": 100,
+        "projectileTargetingRange": 0,
+        "reticleColor": 13107039,
+        "targetingRange": 0
+      },
+      "tag": "PeriodicTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Hamadryad",
+  "tier": 2
+}
+

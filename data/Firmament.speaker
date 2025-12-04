@@ -1,0 +1,146 @@
+{
+  "name": "Firmament",
+  "portrait": "Firmament",
+  "quoteLists": [
+    {
+      "tag": "Equip",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Beneath the firmament you shall stand.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Spawn",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Under the firmament, you shall be protected.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "The skies shall shield you.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I extend you my protection.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Max Level",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "You have prospered beneath the heavenly arch.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Add Boss Kill",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Who can stand against the sweep of the heavens?",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "Under the firmament all are humbled.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "The sky has passed its judgement.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Quest Boss Victory",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "None can compare to the great arc of the sky.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Close Call",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The very sky protects you!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Low Level Death",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Be reborn beneath the heavenly curve.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Discover Beacon",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "By the sky's great arc, we must have that beacon!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Activate Beacon",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Another pillar of the firmament!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The firmament is eternal!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire With Medal",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The firmament is eternal!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire With Accolade",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "The firmament is eternal!",
+          "volume": 50
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "description": "Bonemagus meddles in necromancy and death magick.",
+  "effects": [
+    {
+      "data": {
+        "maxPerSecond": 0,
+        "params": {
+          "data": {
+            "applyToMana": 1,
+            "asPercentage": 0,
+            "glyphCount": 2,
+            "glyphDuration": 500,
+            "glyphRadius": 35,
+            "glyphType": "Recharge Indicator",
+            "healAmount": 5,
+            "tag": ""
+          },
+          "tag": "HealTrigger"
+        },
+        "sound": "",
+        "soundPack": "Bonemagus Refill",
+        "volume": 100,
+        "when": 16
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Bonemagus",
+  "tier": 2
+}
+

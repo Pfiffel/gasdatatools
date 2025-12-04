@@ -1,0 +1,23 @@
+{
+  "description": "Metallus serves loyally.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 40,
+        "statType": 42
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "hp": 150
+      },
+      "tag": "ItemHull"
+    }
+  ],
+  "enemies": [],
+  "name": "Metallus",
+  "tier": 4
+}
+

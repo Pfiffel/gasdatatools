@@ -1,0 +1,89 @@
+{
+  "description": "Hammerjack wants to get home in one piece.",
+  "effects": [
+    {
+      "data": {
+        "maxPerSecond": 0,
+        "params": {
+          "data": {
+            "dps": 120,
+            "drawTooltip": 1,
+            "duration": 3000,
+            "endSound": "Item_Effect_Barrage_Cone_End",
+            "endVolume": 75,
+            "facing": 300,
+            "halfArc": 60,
+            "loopSound": "Item_Effect_Barrage_Cone_Loop",
+            "loopVolume": 35,
+            "mirror": 1,
+            "particles": [
+              {
+                "cooldown": 6,
+                "maxDistPercent": 100,
+                "minDistPercent": 50,
+                "particleType": "Hammerjack DoTCone"
+              }
+            ],
+            "range": 280,
+            "reticleColor": 6400969,
+            "startSound": "Item_Effect_Barrage_Cone_Start",
+            "startVolume": 75,
+            "statusEffects": [],
+            "tag": "",
+            "tooltip": "Triple Shrapnel Stream"
+          },
+          "tag": "DoTConeTrigger"
+        },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    },
+    {
+      "data": {
+        "maxPerSecond": 0,
+        "params": {
+          "data": {
+            "dps": 120,
+            "drawTooltip": 0,
+            "duration": 3000,
+            "endSound": "Item_Effect_Barrage_Cone_End",
+            "endVolume": 75,
+            "facing": 0,
+            "halfArc": 60,
+            "loopSound": "Item_Effect_Barrage_Cone_Loop",
+            "loopVolume": 35,
+            "mirror": 0,
+            "particles": [
+              {
+                "cooldown": 6,
+                "maxDistPercent": 100,
+                "minDistPercent": 50,
+                "particleType": "Hammerjack DoTCone"
+              }
+            ],
+            "range": 280,
+            "reticleColor": 6400969,
+            "startSound": "Item_Effect_Barrage_Cone_Start",
+            "startVolume": 75,
+            "statusEffects": [],
+            "tag": "",
+            "tooltip": ""
+          },
+          "tag": "DoTConeTrigger"
+        },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Hammerjack",
+  "tier": 1
+}
+

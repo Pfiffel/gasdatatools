@@ -1,0 +1,64 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Terminus Crosshair",
+  "shapes": [
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16711423,
+      "height": 60,
+      "mirror": 1,
+      "name": "Bar",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -27,
+          "y": 4
+        },
+        {
+          "x": 1,
+          "y": 6
+        },
+        {
+          "x": -1,
+          "y": 22
+        },
+        {
+          "x": -6,
+          "y": 36
+        },
+        {
+          "x": -14,
+          "y": 48
+        },
+        {
+          "x": 0,
+          "y": 40
+        },
+        {
+          "x": 9,
+          "y": 24
+        },
+        {
+          "x": 11,
+          "y": 7
+        },
+        {
+          "x": 18,
+          "y": 6
+        },
+        {
+          "x": 24,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+

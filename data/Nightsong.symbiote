@@ -3,19 +3,24 @@
   "effects": [
     {
       "data": {
+        "activeWhile": 0,
         "cooldown": 7500,
         "params": [
           {
             "data": {
               "amount": 150,
               "explosionType": "Nightsong Heal",
+              "powers": [],
               "radius": 300,
+              "reticleColor": 3465743,
               "tag": ""
             },
             "tag": "AreaHealTrigger"
           }
         ],
         "percentChance": 100,
+        "projectileTargetingRange": 0,
+        "reticleColor": 11184810,
         "targetingRange": 0
       },
       "tag": "PeriodicTriggerEffect"

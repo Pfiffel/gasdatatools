@@ -1,0 +1,10 @@
+{
+  "name": "Bonemagus Refill",
+  "sounds": [
+    "Symbiote_Effect_Bonemagus_EnergyRefill_01",
+    "Symbiote_Effect_Bonemagus_EnergyRefill_02",
+    "Symbiote_Effect_Bonemagus_EnergyRefill_03"
+  ],
+  "volume": 50
+}
+

@@ -1,0 +1,10 @@
+{
+  "name": "Weevil Launch",
+  "sounds": [
+    "Symbiote_Effect_Weevil_Launch_01",
+    "Symbiote_Effect_Weevil_Launch_02",
+    "Symbiote_Effect_Weevil_Launch_03"
+  ],
+  "volume": 125
+}
+

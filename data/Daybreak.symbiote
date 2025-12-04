@@ -3,8 +3,10 @@
   "effects": [
     {
       "data": {
+        "maxPerSecond": 0,
         "params": {
           "data": {
+            "aimAtProjectiles": 0,
             "autoAim": 0,
             "damage": 0,
             "delay": 0,
@@ -21,7 +23,7 @@
             },
             "purgeProjectiles": 1,
             "range": 350,
-            "reticleColor": 11184810,
+            "reticleColor": 16632362,
             "statusEffects": [
               {
                 "data": {
@@ -36,6 +38,9 @@
           },
           "tag": "ShotgunTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 8
       },
       "tag": "TriggeredTriggerEffect"

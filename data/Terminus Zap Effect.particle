@@ -1,0 +1,40 @@
+{
+  "colorPoints": [
+    {
+      "frac": 900,
+      "value": 14823481
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "facing": 1,
+  "maxLifetime": 1000,
+  "minLifetime": 1000,
+  "name": "Terminus Zap Effect",
+  "objectType": "Terminus Crosshair",
+  "positionTweenType": "ELASTICOUT",
+  "scalePoints": [
+    {
+      "frac": 100,
+      "value": 500
+    },
+    {
+      "frac": 500,
+      "value": 700
+    },
+    {
+      "frac": 900,
+      "value": 700
+    },
+    {
+      "frac": 1000,
+      "value": 0
+    }
+  ],
+  "startColor": 14823481,
+  "startScale": 10,
+  "stayLow": 1
+}
+

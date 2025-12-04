@@ -3,19 +3,23 @@
   "effects": [
     {
       "data": {
+        "maxPerSecond": 0,
         "params": {
           "data": {
             "glyphCount": 6,
             "glyphDuration": 700,
             "glyphRadius": 55,
             "glyphType": "Axeraider Unstoppable Glyph",
-            "refillPercentage": 10,
+            "refillPercentage": 30,
             "shieldIndex": -1,
             "tag": ""
           },
           "tag": "ShieldRefillTrigger"
         },
-        "when": 15
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
+        "when": 3
       },
       "tag": "TriggeredTriggerEffect"
     }

@@ -1,0 +1,63 @@
+{
+  "description": "Skul feeds on life energy.",
+  "effects": [
+    {
+      "data": {
+        "maxPerSecond": 0,
+        "params": {
+          "data": {
+            "aimAtProjectiles": 0,
+            "autoAim": 0,
+            "damage": 0,
+            "delay": 0,
+            "drawPictureInTooltip": 1,
+            "drawReticle": 1,
+            "drawTooltip": 1,
+            "explosionType": "Skul Burst",
+            "facing": 0,
+            "halfArc": 1800,
+            "mirror": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "purgeProjectiles": 0,
+            "range": 290,
+            "reticleColor": 727324,
+            "statusEffects": [
+              {
+                "data": {
+                  "dps": 100,
+                  "duration": 10000,
+                  "reducedDurationOnBoss": 0
+                },
+                "tag": "DoTEffect"
+              },
+              {
+                "data": {
+                  "appliesToMana": 0,
+                  "healing": 100,
+                  "overDuration": 10000
+                },
+                "tag": "VampEffect"
+              }
+            ],
+            "tag": "",
+            "targetingDelay": 0,
+            "tooltip": "Vampiric Burst"
+          },
+          "tag": "ShotgunTrigger"
+        },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
+        "when": 4
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Skul",
+  "tier": 5
+}
+

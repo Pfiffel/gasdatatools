@@ -3,6 +3,7 @@
   "effects": [
     {
       "data": {
+        "maxPerSecond": 0,
         "params": {
           "data": {
             "amount": 0,
@@ -17,10 +18,14 @@
               }
             ],
             "radius": 400,
+            "reticleColor": 4504058,
             "tag": ""
           },
           "tag": "AreaHealTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 2
       },
       "tag": "TriggeredTriggerEffect"

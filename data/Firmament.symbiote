@@ -1,0 +1,56 @@
+{
+  "description": "Firmament upholds the very sky itself.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "cooldown": 500,
+        "params": [
+          {
+            "data": {
+              "aimAtProjectiles": 1,
+              "autoAim": 1,
+              "damage": 0,
+              "delay": 0,
+              "drawPictureInTooltip": 1,
+              "drawReticle": 0,
+              "drawTooltip": 1,
+              "explosionType": "Firmament Burst",
+              "facing": 0,
+              "halfArc": 225,
+              "mirror": 0,
+              "offset": {
+                "x": 0,
+                "y": 0
+              },
+              "purgeProjectiles": 1,
+              "range": 350,
+              "reticleColor": 12530441,
+              "statusEffects": [
+                {
+                  "data": {
+                    "duration": 1000
+                  },
+                  "tag": "DisarmEffect"
+                }
+              ],
+              "tag": "",
+              "targetingDelay": 0,
+              "tooltip": ""
+            },
+            "tag": "ShotgunTrigger"
+          }
+        ],
+        "percentChance": 35,
+        "projectileTargetingRange": 350,
+        "reticleColor": 13151097,
+        "targetingRange": 0
+      },
+      "tag": "PeriodicTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Firmament",
+  "tier": 5
+}
+

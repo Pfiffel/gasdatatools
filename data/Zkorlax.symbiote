@@ -1,0 +1,69 @@
+{
+  "description": "Zkorlax leads his fleet on a mission of discovery.",
+  "effects": [
+    {
+      "data": {
+        "count": 2,
+        "orbital": {
+          "doProjectileCollision": 1,
+          "dps": 50,
+          "objectType": "Zkorlax Drone",
+          "orientation": 1,
+          "radius": 25,
+          "statusEffects": []
+        },
+        "tooltip": "Attack"
+      },
+      "tag": "ItemOrbital"
+    },
+    {
+      "data": {
+        "maxPerSecond": 0,
+        "params": {
+          "data": {
+            "orientation": 1,
+            "triggers": [
+              {
+                "data": {
+                  "aimAtProjectiles": 0,
+                  "autoAim": 0,
+                  "damage": 220,
+                  "delay": 0,
+                  "drawPictureInTooltip": 1,
+                  "drawReticle": 1,
+                  "drawTooltip": 1,
+                  "explosionType": "Zkorlax Burst",
+                  "facing": 0,
+                  "halfArc": 150,
+                  "mirror": 0,
+                  "offset": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "purgeProjectiles": 0,
+                  "range": 380,
+                  "reticleColor": 2669772,
+                  "statusEffects": [],
+                  "tag": "",
+                  "targetingDelay": 0,
+                  "tooltip": ""
+                },
+                "tag": "ShotgunTrigger"
+              }
+            ]
+          },
+          "tag": "OrbitalTriggerTrigger"
+        },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
+        "when": 8
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Zkorlax",
+  "tier": 2
+}
+

@@ -1,0 +1,36 @@
+{
+  "description": "Flutterby cavorts in the meadows with butterflies.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 25,
+        "statType": 17
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "maxPerSecond": 0,
+        "params": {
+          "data": {
+            "duration": 300,
+            "emitterType": "",
+            "percentChance": 100,
+            "tag": ""
+          },
+          "tag": "DematerializeTrigger"
+        },
+        "sound": "Symbiote_Effect_Flutterby_Demat",
+        "soundPack": "",
+        "volume": 30,
+        "when": 6
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Flutterby",
+  "tier": 6
+}
+

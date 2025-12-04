@@ -1,0 +1,55 @@
+{
+  "description": "Weevil worms his way into your heart. Literally.",
+  "effects": [
+    {
+      "data": {
+        "activeWhile": 0,
+        "amount": 40,
+        "statType": 23
+      },
+      "tag": "ItemStat"
+    },
+    {
+      "data": {
+        "maxPerSecond": 0,
+        "params": {
+          "data": {
+            "count": 3,
+            "damage": 30,
+            "emitterType": "",
+            "objectType": "Weevil Missile",
+            "range": 300,
+            "reticleColor": 8736068,
+            "sound": "",
+            "soundPack": "Weevil Launch",
+            "speed": 350,
+            "statusEffects": [
+              {
+                "data": {
+                  "dps": 10,
+                  "duration": 4000,
+                  "reducedDurationOnBoss": 0
+                },
+                "tag": "DoTEffect"
+              }
+            ],
+            "tag": "",
+            "timeGap": 100,
+            "tweenType": "QUINTIN",
+            "volume": 30
+          },
+          "tag": "SharkletTrigger"
+        },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
+        "when": 1
+      },
+      "tag": "TriggeredTriggerEffect"
+    }
+  ],
+  "enemies": [],
+  "name": "Weevil",
+  "tier": 3
+}
+

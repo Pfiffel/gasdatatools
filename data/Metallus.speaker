@@ -1,0 +1,146 @@
+{
+  "name": "Metallus",
+  "portrait": "Metallus",
+  "quoteLists": [
+    {
+      "tag": "Equip",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I have been created to serve.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Spawn",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "What is your bidding?",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "How can I be of assistance?",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "What may I do for you?",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Max Level",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I have achieved my potential. Employ me.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Add Boss Kill",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I have done my best.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "I exist only to serve.",
+          "volume": 50
+        },
+        {
+          "sound": "",
+          "text": "It is my privilege to assist you.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Quest Boss Victory",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "It is my honor to contribute to your victory.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Close Call",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "My protection, it was just enough.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Low Level Death",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Curse my metal body, I was not fast enough!",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Discover Beacon",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Allow me to assist with that beacon.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Activate Beacon",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "Rest in safety at this beacon.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I depart to serve another.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire With Medal",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I depart to serve another.",
+          "volume": 50
+        }
+      ]
+    },
+    {
+      "tag": "Retire With Accolade",
+      "quotes": [
+        {
+          "sound": "",
+          "text": "I depart to serve another.",
+          "volume": 50
+        }
+      ]
+    }
+  ]
+}

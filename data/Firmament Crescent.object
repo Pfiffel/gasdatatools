@@ -1,0 +1,52 @@
+{
+  "attachmentPoints": [],
+  "bonePivots": [],
+  "floppiness": 0,
+  "name": "Firmament Crescent",
+  "shapes": [
+    {
+      "addProceduralTexturing": 0,
+      "bone": "",
+      "clones": [],
+      "closed": 0,
+      "collider": 0,
+      "color": 16777215,
+      "height": 0,
+      "mirror": 1,
+      "name": "Hull",
+      "noDraw": 0,
+      "points": [
+        {
+          "x": -2,
+          "y": 8
+        },
+        {
+          "x": -5,
+          "y": 28
+        },
+        {
+          "x": -16,
+          "y": 48
+        },
+        {
+          "x": -2,
+          "y": 40
+        },
+        {
+          "x": 8,
+          "y": 29
+        },
+        {
+          "x": 14,
+          "y": 14
+        },
+        {
+          "x": 16,
+          "y": 0
+        }
+      ],
+      "useBoneMirror": 1
+    }
+  ]
+}
+
