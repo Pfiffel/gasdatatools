@@ -48,17 +48,28 @@ function DronesTable() {
 	makeHeaderCell(STAT_TYPES[STATS_DRONES.ORBITAL_SPEED][1], th);
 	makeHeaderCell("Drone Triggers", th);
 	
-	let tr5 = tbl.insertRow();
-	makeHeaderCell("Items", tr5);
-	let cell0 = makeCell("", tr5);
-	cell0.appendChild(MakeSymbioteItemList(gasData.item, STATS_DRONES.ORBITAL_COUNT_PLUS));
+	let tr1 = tbl.insertRow();
+	makeHeaderCell("Items", tr1);
+	let cell10 = makeCell("", tr1);
+	cell10.appendChild(MakeSymbioteItemList(gasData.item, STATS_DRONES.ORBITAL_COUNT_PLUS));
 	for (var stat in STATS_DRONES) {
 		let i = STATS_DRONES[stat];
-		let cell = makeCell("", tr5);
+		let cell = makeCell("", tr1);
 		cell.appendChild(MakeSymbioteItemListBoosters(gasData.item, i));
 	}
-	let cell = makeCell("", tr5);
-	cell.appendChild(MakeSymbioteItemList(gasData.item, STATS_DRONES.ORBITAL_SPEED));
+	let cell11 = makeCell("", tr1);
+	cell11.appendChild(MakeSymbioteItemList(gasData.item, STATS_DRONES.ORBITAL_SPEED));
+		let tr2 = tbl.insertRow();
+	makeHeaderCell("Symbiotes", tr2);
+	let cell20 = makeCell("", tr2);
+	cell20.appendChild(MakeSymbioteItemList(gasData.symbiote, STATS_DRONES.ORBITAL_COUNT_PLUS));
+	for (var stat in STATS_DRONES) {
+		let i = STATS_DRONES[stat];
+		let cell = makeCell("", tr2);
+		cell.appendChild(MakeSymbioteItemListBoosters(gasData.symbiote, i));
+	}
+	let cell21 = makeCell("", tr2);
+	cell21.appendChild(MakeSymbioteItemList(gasData.symbiote, STATS_DRONES.ORBITAL_SPEED));
 	return tbl;
 }
 function TimedEffectBoostersTable() {

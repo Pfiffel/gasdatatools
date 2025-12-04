@@ -280,6 +280,10 @@ function IsNewButDefaultValue(entityPrev, entity, key) {
 		else if (key == "guns" && entity[key] == 0) return true;
 		else if (key == "triggers" && entity[key] == 0) return true;
 		else if (key == "count" && entity[key] == 1) return true;
+		else if (key == "maxPerSecond" && entity[key] == 0) return true;
+		else if (key == "aimAtProjectiles" && entity[key] == 0) return true;
+		else if (key == "activeWhile" && entity[key] == 0) return true;
+		else if (key == "projectileTargetingRange" && entity[key] == 0) return true;
 	return false;
 }
 function MakeChangeEntry(header, key, prev, curr, container) {

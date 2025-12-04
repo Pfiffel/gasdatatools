@@ -144,7 +144,7 @@ function MakeList() {
 		if (entityType != "symbiote") continue;
 		var soundRoots = soundList[entityType];
 		for (let soundRoot in soundRoots) {
-			if (!filterHack.includes(soundRoot)) continue;
+			if (filterHack.length !== 0 && !filterHack.includes(soundRoot)) continue;
 			if (soundRoot.includes("Dagger")) continue;
 			if (soundRoot.includes("Murder Hornet")) continue;
 			if (soundRoot.includes("Soundtesttank")) continue;

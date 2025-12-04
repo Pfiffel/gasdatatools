@@ -9,21 +9,7 @@ const MAX_LEVEL = 20;
 const SHIELD_STRENGTH_PER_RADIUS = 20;
 const MANA_PER_SECOND = 2.5;
 
-const filterHack = [
-	"Bonemagus",
-	"Weevil",
-	"Pearl",
-	"Skul",
-	"Zkorlax",
-	"Kalibur",
-	"Flutterby",
-	"Firmament",
-	"Terminus",
-	"Hammerjack",
-	"Fabricatrix",
-	"Hamadryad",
-	"Metallus"
-];
+const filterHack = [];
 
 // [ui name, type name, item flag key]
 const SLOT_TYPES = {
@@ -758,7 +744,7 @@ function GetTriggeredEffectString(tag, data, delayArray) {
 	}
 	else if (tag == "AreaHealTrigger") {
 		if (data.amount > 0) s += printKeyAndData("Repair Amount", data.amount, "heal");
-		s += printKeyAndData("Effect Burst: Radius", data.radius);
+		s += printKeyAndData("Effect Burst - Radius", data.radius, "", AddReticle(data.reticleColor));
 		s += MakePowerText(data);
 	}
 	else if (tag == "ShieldRefillTrigger") {
@@ -808,7 +794,7 @@ function GetTriggeredEffectString(tag, data, delayArray) {
 	else if (tag == "SharkletTrigger") {
 		s += printKeyAndData("Missile Count", data.count);
 		s += printKeyAndData("Damage", data.damage);
-		s += printKeyAndData("Range", data.range);
+		s += printKeyAndData("Range", data.range, "", AddReticle(data.reticleColor));
 		for (var effects in data.statusEffects) {
 			var effect = data.statusEffects[effects];
 			let o = ShowStatusEffect(effect);

@@ -67,7 +67,7 @@ function RefreshLists() {
 	tableOutput.appendChild(showUsage(ACTIVE_WHILE_NAMES));
 	tableOutput.appendChild(showUsage(TRIGGERED_TRIGGER_EFFECTS));
 	//tableOutput.appendChild(FullSymbioteTable());
-	tableOutput.appendChild(FullSymbioteTableFiltered());
+	//tableOutput.appendChild(FullSymbioteTableFiltered());
 }
 function GetSymbAmount(t) {
 	var amount = 0;
@@ -82,7 +82,7 @@ function parseTierList(t) {
 	var div = document.createElement('div');
 	for (var i = 0; i < gasData["symbiote"].length; i++) {
 		var symb = gasData["symbiote"][i];
-		if (!filterHack.includes(symb.name)) continue;
+		if (filterHack.length !== 0 && !filterHack.includes(symb.name)) continue;
 		if (symb.tier != t) continue;
 		if (showOnlyDefault.checked && !IsStarter(symb)) continue;
 		var cont = document.createElement('div');
