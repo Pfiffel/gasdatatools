@@ -1,5 +1,5 @@
 var tableOutput = document.getElementById("tableOutput");
-var datatypes = ["animation", "champion", "decor", "map", "lair", "monster", "gunbullet", "object", "symbiote", "item", "particle", "region", "explosion", "soundpack", "emitter"]; // for utilGAS to load files, calls parseData once completed
+var datatypes = ["animation", "champion", "decor", "map", "lair", "monster", "gunbullet", "object", "symbiote", "item", "particle", "region", "explosion", "soundpack", "emitter", "planet"]; // for utilGAS to load files, calls parseData once completed
 loadGasData();
 
 var header = document.getElementById("header");
@@ -11,15 +11,72 @@ soundList["item"] = {};
 soundList["champion"] = {};
 soundList["monster"] = {};
 soundList["gunbullet"] = {};
+var spawnRadius = {};
 
 function RefreshLists() {
 	tableOutput.innerHTML = "";
-	tableOutput.appendChild(MakeList());
+	//tableOutput.appendChild(MakeList());
+	tableOutput.appendChild(MakeSpawnRadiusList());
 }
 function parseData() {
 	RefreshLists();
 }
 var aAllObjects = {};
+function MakeSpawnRadiusList() {
+	let tbl = document.createElement('table');
+	let th = tbl.insertRow();
+	makeHeaderCell("Planet", th);
+	makeHeaderCell("Zone", th);
+	makeHeaderCell("Boss", th);
+	makeHeaderCell("Orbit Radius", th);
+	makeHeaderCell("Minion Radius", th);
+	makeHeaderCell("Total Radius", th);
+	for (let i = 0; i < gasData["planet"].length; i++) {
+		var planet = gasData["planet"][i];
+		for (var m in planet.monsterFields) {
+			let mF = planet.monsterFields[m];
+			for (var b in mF.miniBosses) {
+				let mB = mF.miniBosses[b];
+
+				let monster = getMonster(mB);
+
+				let radius = 0;
+				let radiusM = 0;
+				//console.log(monster.data.weapons);
+				for (var w in monster.data.weapons) {
+					let weapon = monster.data.weapons[w];
+					if (weapon.params.tag == "MinionParams" && weapon.params.data.movement.tag == "OrbitMovement") {
+						radius = Math.max(radius, weapon.params.data.movement.data.radius);
+						for (var mm in weapon.params.data.monsterNames) {
+							radiusM = getMonster(weapon.params.data.monsterNames[mm]).data.collisionRadius;
+						}
+					}
+					if (weapon.params.tag == "MinionBarrageParams") {
+						for (var s in weapon.params.data.salvoes) {
+							salvo = weapon.params.data.salvoes[s];
+							radius = Math.max(radius, salvo.radius);
+							if (salvo.movement.tag == "OrbitMovement") {
+								console.log(salvo.movement.data.radius)
+								radius = Math.max(radius, salvo.movement.data.radius);
+								radiusM = getMonster(salvo.monsterName).data.collisionRadius;
+							}
+						}
+					}
+
+				}
+				let tr = tbl.insertRow();
+				makeCell(planet.name, tr);
+				makeCell(mF.monsterFieldTag, tr);
+				makeCell(mB, tr);
+				makeCell(radius, tr);
+				makeCell(radiusM, tr);
+				makeCell(radius + radiusM, tr);
+			}
+		}
+	}
+	return tbl;
+}
+
 function MakeList() {
 	var divList = document.createElement("div");
 
@@ -176,9 +233,9 @@ function CheckGeneric(type, object) {
 		//  mainTag == "TriggeredHealMineBurst"
 		if (mainTag == "TriggeredTriggerEffect") {
 			// TODO handle data.sound and data.soundPack which are a more recent addition iirc?
-			if(data.sound != undefined && data.sound !== "")
+			if (data.sound != undefined && data.sound !== "")
 				soundList[type][object.name]["Generic Trigger Sound"] = data.sound;
-			if(data.soundPack != undefined && data.soundPack.length != 0)
+			if (data.soundPack != undefined && data.soundPack.length != 0)
 				soundList[type][object.name]["Generic Trigger Sound"] = SoundPackToString(data.soundPack);
 			CheckTriggeredEffect(type, object.name, data.params.tag, data.params.data);
 		}
@@ -203,13 +260,13 @@ function CheckGeneric(type, object) {
 			}
 		}
 		else if (mainTag == "ItemStat" || mainTag == "ItemShield") {
-			if(data.activeWhile != 0)
+			if (data.activeWhile != 0)
 				soundList[type][object.name]["ConditionSwap NO HOOK"] = "";
 			else
 				soundList[type][object.name]["ALWAYS ON, NO SOUND NEEDED"] = "";
 		}
 		else if (mainTag == "Lifesaver") {
-				soundList[type][object.name]["Lifesaver NO HOOK"] = "";
+			soundList[type][object.name]["Lifesaver NO HOOK"] = "";
 		}
 	}
 }
@@ -236,7 +293,7 @@ function CheckTriggeredEffect(origin, name, tag, data) {
 		soundList[origin][name]["DoTCone End"] = data.endSound;
 	}
 	else if (tag == "SlugTrigger") {
-		if(data.sound !== "") soundList[origin][name]["Bomb Launch"] = data.sound;
+		if (data.sound !== "") soundList[origin][name]["Bomb Launch"] = data.sound;
 	}
 	else if (tag == "CooldownResetTrigger") {
 	}
@@ -251,7 +308,7 @@ function CheckTriggeredEffect(origin, name, tag, data) {
 		soundList[origin][name]["ProjectilePurge"] = getExplosionSound(data.explosionType);
 	}
 	else if (tag == "PickupPackTrigger") {
-		if(data.creationSound !== "") 
+		if (data.creationSound !== "")
 			soundList[origin][name]["Pickup Create"] = data.creationSound;
 		soundList[origin][name]["Pickup Pickup"] = getExplosionSound(data.pickupExplosion);
 		soundList[origin][name]["Pickup Expire"] = getExplosionSound(data.expiryExplosion);
@@ -306,10 +363,10 @@ function SoundPackToString(name) {
 function CheckWeapon(monster, weapon, compound, index) {
 	var wD = compound ? weapon.data : weapon.params.data;
 	var tag = compound ? weapon.tag : weapon.params.tag;
-	if (wD.gunBulletTypes != undefined) 
-	for (let j = 0; j < wD.gunBulletTypes.length; j++) {
-		CheckBullet(monster.data, wD.gunBulletTypes, j);
-	}
+	if (wD.gunBulletTypes != undefined)
+		for (let j = 0; j < wD.gunBulletTypes.length; j++) {
+			CheckBullet(monster.data, wD.gunBulletTypes, j);
+		}
 	//if (wD.gunBulletTypes != undefined) CheckBullet(monster.data, wD, "gunBulletType");
 	if (wD.monsterNames != undefined && wD.monsterNames.length != 0)
 		for (var m in wD.monsterNames) {
@@ -359,8 +416,7 @@ function AddEmitterSoundList(entityType, entity, add, prefix, emitterType, force
 		soundList[entityType][entity][add + prefix + " Loop"] = emitter.loopSound;
 		soundList[entityType][entity][add + prefix + " End"] = emitter.endSound;
 	}
-	else if(force)
-	{
+	else if (force) {
 		soundList[entityType][entity][add + prefix + " Start"] = "";
 		soundList[entityType][entity][add + prefix + " Loop"] = "";
 		soundList[entityType][entity][add + prefix + " End"] = "";
