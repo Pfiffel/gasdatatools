@@ -1161,8 +1161,8 @@ function GetLane(type) {
 		if (type == lane.name) return lane;
 	}
 }
-const globalSkip = false;
-const globalSkipSearch = ["Cactus", "Dune", "Desert", "Saguaro"];
+const globalSkip = true;
+const globalSkipSearch = ["Cactus", "Dune", "Duneclaw", "Desert", "Saguaro"];
 function SkipCheck(entity) {
 	if (globalSkip)
 		for (let i = 0; i < globalSkipSearch.length; i++) {
