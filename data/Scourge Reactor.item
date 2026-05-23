@@ -6,8 +6,10 @@
   "effects": [
     {
       "data": {
+        "maxPerSecond": 0,
         "params": {
           "data": {
+            "aimAtProjectiles": 0,
             "autoAim": 0,
             "damage": 140,
             "delay": 0,
@@ -23,7 +25,7 @@
               "y": 0
             },
             "purgeProjectiles": 0,
-            "range": 130,
+            "range": 180,
             "reticleColor": 16757248,
             "statusEffects": [],
             "tag": "",

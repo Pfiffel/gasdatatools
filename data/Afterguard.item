@@ -10,10 +10,10 @@
         "shield": {
           "color": 14530869,
           "displayName": "",
-          "left": 1350,
+          "left": 900,
           "level": 0,
           "maxStrength": 300,
-          "right": -1350
+          "right": -900
         }
       },
       "tag": "ItemShield"

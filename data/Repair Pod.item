@@ -6,6 +6,7 @@
   "effects": [
     {
       "data": {
+        "maxPerSecond": 0,
         "params": {
           "data": {
             "applyToMana": 0,
@@ -22,7 +23,7 @@
         "sound": "",
         "soundPack": "",
         "volume": 50,
-        "when": 8
+        "when": 9
       },
       "tag": "TriggeredTriggerEffect"
     }

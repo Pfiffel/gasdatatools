@@ -3,11 +3,14 @@
   "effects": [
     {
       "data": {
+        "maxPerSecond": 0,
         "params": {
           "data": {
+            "aimAtProjectiles": 0,
             "autoAim": 0,
-            "damage": 75,
+            "damage": 150,
             "delay": 0,
+            "drawPictureInTooltip": 1,
             "drawReticle": 1,
             "drawTooltip": 1,
             "explosionType": "Blood Imp",
@@ -18,6 +21,7 @@
               "x": 0,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 350,
             "reticleColor": 11534336,
             "statusEffects": [],
@@ -27,17 +31,23 @@
           },
           "tag": "ShotgunTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 4
       },
       "tag": "TriggeredTriggerEffect"
     },
     {
       "data": {
+        "maxPerSecond": 0,
         "params": {
           "data": {
+            "aimAtProjectiles": 0,
             "autoAim": 0,
-            "damage": 75,
+            "damage": 150,
             "delay": 1000,
+            "drawPictureInTooltip": 1,
             "drawReticle": 0,
             "drawTooltip": 0,
             "explosionType": "Blood Imp",
@@ -48,6 +58,7 @@
               "x": 0,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 350,
             "reticleColor": 12534291,
             "statusEffects": [],
@@ -57,17 +68,23 @@
           },
           "tag": "ShotgunTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 4
       },
       "tag": "TriggeredTriggerEffect"
     },
     {
       "data": {
+        "maxPerSecond": 0,
         "params": {
           "data": {
+            "aimAtProjectiles": 0,
             "autoAim": 0,
-            "damage": 75,
+            "damage": 150,
             "delay": 2000,
+            "drawPictureInTooltip": 1,
             "drawReticle": 0,
             "drawTooltip": 0,
             "explosionType": "Blood Imp",
@@ -78,6 +95,7 @@
               "x": 0,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 350,
             "reticleColor": 12534291,
             "statusEffects": [],
@@ -87,17 +105,23 @@
           },
           "tag": "ShotgunTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 4
       },
       "tag": "TriggeredTriggerEffect"
     },
     {
       "data": {
+        "maxPerSecond": 0,
         "params": {
           "data": {
+            "aimAtProjectiles": 0,
             "autoAim": 0,
-            "damage": 75,
+            "damage": 150,
             "delay": 3000,
+            "drawPictureInTooltip": 1,
             "drawReticle": 0,
             "drawTooltip": 0,
             "explosionType": "Blood Imp",
@@ -108,6 +132,7 @@
               "x": 0,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 350,
             "reticleColor": 12534291,
             "statusEffects": [],
@@ -117,17 +142,23 @@
           },
           "tag": "ShotgunTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 4
       },
       "tag": "TriggeredTriggerEffect"
     },
     {
       "data": {
+        "maxPerSecond": 0,
         "params": {
           "data": {
+            "aimAtProjectiles": 0,
             "autoAim": 0,
-            "damage": 75,
+            "damage": 150,
             "delay": 4000,
+            "drawPictureInTooltip": 1,
             "drawReticle": 0,
             "drawTooltip": 0,
             "explosionType": "Blood Imp",
@@ -138,6 +169,7 @@
               "x": 0,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 350,
             "reticleColor": 12534291,
             "statusEffects": [],
@@ -147,17 +179,23 @@
           },
           "tag": "ShotgunTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 4
       },
       "tag": "TriggeredTriggerEffect"
     },
     {
       "data": {
+        "maxPerSecond": 0,
         "params": {
           "data": {
+            "aimAtProjectiles": 0,
             "autoAim": 0,
-            "damage": 75,
+            "damage": 150,
             "delay": 5000,
+            "drawPictureInTooltip": 1,
             "drawReticle": 0,
             "drawTooltip": 0,
             "explosionType": "Blood Imp",
@@ -168,6 +206,7 @@
               "x": 0,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 350,
             "reticleColor": 12534291,
             "statusEffects": [],
@@ -177,17 +216,23 @@
           },
           "tag": "ShotgunTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 4
       },
       "tag": "TriggeredTriggerEffect"
     },
     {
       "data": {
+        "maxPerSecond": 0,
         "params": {
           "data": {
+            "aimAtProjectiles": 0,
             "autoAim": 0,
-            "damage": 75,
+            "damage": 150,
             "delay": 6000,
+            "drawPictureInTooltip": 1,
             "drawReticle": 0,
             "drawTooltip": 0,
             "explosionType": "Blood Imp",
@@ -198,6 +243,7 @@
               "x": 0,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 350,
             "reticleColor": 12534291,
             "statusEffects": [],
@@ -207,17 +253,23 @@
           },
           "tag": "ShotgunTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 4
       },
       "tag": "TriggeredTriggerEffect"
     },
     {
       "data": {
+        "maxPerSecond": 0,
         "params": {
           "data": {
+            "aimAtProjectiles": 0,
             "autoAim": 0,
-            "damage": 75,
+            "damage": 150,
             "delay": 7000,
+            "drawPictureInTooltip": 1,
             "drawReticle": 0,
             "drawTooltip": 0,
             "explosionType": "Blood Imp",
@@ -228,6 +280,7 @@
               "x": 0,
               "y": 0
             },
+            "purgeProjectiles": 0,
             "range": 350,
             "reticleColor": 12534291,
             "statusEffects": [],
@@ -237,6 +290,9 @@
           },
           "tag": "ShotgunTrigger"
         },
+        "sound": "",
+        "soundPack": "",
+        "volume": 50,
         "when": 4
       },
       "tag": "TriggeredTriggerEffect"

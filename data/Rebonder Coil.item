@@ -6,18 +6,20 @@
   "effects": [
     {
       "data": {
+        "maxPerSecond": 0,
         "params": {
           "data": {
+            "amount": 50,
             "applyToMana": 0,
-            "asPercentage": 0,
-            "glyphCount": 2,
-            "glyphDuration": 500,
-            "glyphRadius": 50,
+            "duration": 2000,
+            "emitterType": "Rainsplatter HoT",
+            "glyphCount": 0,
+            "glyphRadius": 0,
             "glyphType": "Heal Indicator",
-            "healAmount": 25,
+            "noStack": 0,
             "tag": ""
           },
-          "tag": "HealTrigger"
+          "tag": "HealOverTimeTrigger"
         },
         "sound": "",
         "soundPack": "",
