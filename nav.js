@@ -1,4 +1,4 @@
-const BUILD = 84;
+const BUILD = 85;
 const pages = { "glossary": true, "enemies": true, "players": true, "symbiotes": true, "items": true, "synergies": true, "maps": true, "diff": true };
 const here = getCurrentPage();
 const nav = document.getElementById("nav");

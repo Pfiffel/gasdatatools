@@ -43,6 +43,13 @@
     "Rime",
     "Storm Crow"
   ],
+  "elderAiTierColors": [
+    16777215,
+    11184810,
+    1161311,
+    12676336,
+    16777079
+  ],
   "enabledOverworldMaps": [
     "Quagmire3",
     "Quagmire4",
@@ -357,6 +364,36 @@
     {
       "definition": "Increases damage dealt by zaps. Can be additive or multiplicative.",
       "term": "Zap Damage"
+    }
+  ],
+  "symbioteColors": [
+    {
+      "color": 694930,
+      "tier": 0
+    },
+    {
+      "color": 16742263,
+      "tier": 1
+    },
+    {
+      "color": 1161311,
+      "tier": 2
+    },
+    {
+      "color": 12673781,
+      "tier": 3
+    },
+    {
+      "color": 16777079,
+      "tier": 4
+    },
+    {
+      "color": 16099401,
+      "tier": 5
+    },
+    {
+      "color": 11184810,
+      "tier": 6
     }
   ],
   "tieredItemLimits": [
