@@ -183,20 +183,59 @@ function MakeAddonList(tier) {
 	}
 	return div;
 }
-function FullAddonTable() {
+/* function FullAddonTable() {
 	var tbl = document.createElement('table');
 	let th = tbl.insertRow();
 	makeHeaderCell("Addon", th);
 	makeHeaderCell("Effects", th);
-	//for (let t = 1; t < TIERS + 1; t++) {
-	for (var i = 0; i < gasData["addon"].length; i++) {
-		var item = gasData["addon"][i];
-		if (item.rarity != 1) continue;
-		let tr = tbl.insertRow();
-		var string = MakeStatsTable(item, item.tier, true, false, false, false, -1, true);
-		makeCell(item.name, tr);
-		makeCell(string, tr);
-	}
+	//for (let t = 0; t < TIERS; t++) {
+		for (var i = 0; i < gasData["addon"].length; i++) {
+			var item = gasData["addon"][i];
+			if (item.rarity != 3) continue;
+			let tr = tbl.insertRow();
+			var string = MakeStatsTable(item, item.tier, true, false, false, false, -1, true, false, true);
+			makeCell(item.name, tr);
+			makeCell(string, tr);
+		}
 	//}
+	return tbl;
+} */
+function FullAddonTable() {
+	var tbl = document.createElement('table');
+	let th = tbl.insertRow();
+	const ADDON_TIERS = 6;
+	const tierStrings = {};
+	for (let t = 0; t < ADDON_TIERS; t++) {
+		tierStrings[t] = [];
+		for (let i = 0; i < gasData["addon"].length; i++) {
+			var item = gasData["addon"][i];
+			if (item.rarity != t) continue;
+			var string = MakeStatsTable(item, item.tier, true, false, false, false, -1, true, false, true);
+			tierStrings[t].push(string);
+		}
+	}
+	for (let t = 0; t < ADDON_TIERS; t++) {
+		makeHeaderCell(`Tier ${t + 1}`, th);
+		console.log(t, tierStrings[t].length)
+	}
+	let done = false;
+	let i = 0;
+	while (!done) {
+		let tr = tbl.insertRow();
+		let found = 0;
+		for (let t = 0; t < ADDON_TIERS; t++) {
+			const string = tierStrings[t][i];
+			if (string != undefined) {
+				makeCell(string, tr);
+				found++;
+			}
+			else
+			{
+				makeCell("", tr);
+			}
+		}
+		if(found == 0) done = true;
+		i++;
+	}
 	return tbl;
 }

@@ -19,7 +19,7 @@ const SLOT_TYPES = {
 	"3": ["Engine Upgrades", "Engines", "engines"],
 	"4": ["Precursor Tech", "Precursor Tech", "precursorTech"],
 	"5": ["Equipment", "Equipment", ""]
-}
+};
 const ADDON_TIER_NAMES = {
 	"0": "Common",
 	"1": "Uncommon",
@@ -27,14 +27,14 @@ const ADDON_TIER_NAMES = {
 	"3": "Epic",
 	"4": "Legendary",
 	"5": "Mythic",
-}
+};
 const STATS = {
 	BLAST_DAMAGE: 21,
 	//BOMB_DAMAGE: 22,
 	MISSILE_DAMAGE: 23,
 	ZAP_DAMAGE: 32,
 	DOT_DAMAGE: 40,
-}
+};
 const STATS_BOOSTERS = {
 	21: [21, 27],
 	22: [22, 28],
@@ -47,19 +47,19 @@ const STATS_BOOSTERS = {
 	41: [41],
 	43: [43],
 	44: [44],
-}
+};
 const STATS_ELEMENTAL = {
 	DAMAGE_VS_BURNING: 15,
 	DAMAGE_VS_FROZEN: 20,
-}
+};
 const STATS_TIMED = {
 	TIMED_EFFECT_FIRE_RATE: 39,
 	DURATION: 41,
-}
+};
 const STATS_DRONES = {
 	ORBITAL_COUNT_PLUS: 43,
 	ORBITAL_SPEED: 44,
-}
+};
 const STAT_TYPES = {
 	"0": ["DAMAGE", "Gun Damage", false],
 	"1": ["HEAL_RATE", "Repair Rate", false],
@@ -199,7 +199,7 @@ const MEDAL_GLORY_COSTS = {
 	38: 88,
 	39: 89,
 	40: 90,
-}
+};
 // Helpers
 function GetArcShield(data) {
 	var arc = -(data.left - data.right) / 10;
@@ -247,7 +247,7 @@ const ITEM_SORTING_INDEX =
 	"Catalyst": 17,
 	"Extender": 18,
 	"Armor": 19,
-}
+};
 function GetItemSortingIndexByName(item) {
 	for (let category in ITEM_SORTING_INDEX) {
 		if (item.name.includes(category))
@@ -292,7 +292,7 @@ function SlotTypeToText(data) {
 	return s;
 }
 // TODO make bSymbiote and bAccolade an enum or sth
-function MakeStatsTable(mainData, tier, bSymbiote = false, iPortrait = 0, bDescription = true, bSpeaker = false, idxTrigger = -1, bJustGimmeStatStringHack = false, bAccoladeOrigin = false) {
+function MakeStatsTable(mainData, tier, bSymbiote = false, iPortrait = 0, bDescription = true, bSpeaker = false, idxTrigger = -1, bJustGimmeStatStringHack = false, bAccoladeOrigin = false, bStatsStringWithName = false) {
 	if (mainData == undefined) { var div = document.createElement('div'); div.textContent = "something went seriously wrong"; return div; }
 	if (tier == 0) tier = mainData.tier;
 	if (mainData.credits != undefined) tier = mainData.credits;
@@ -341,14 +341,14 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, iPortrait = 0, bDescr
 	let dps = 0;
 
 	// wrapping it in ="" because google sheets will be confused by leading pluses
-	let justGimmeStatString = "=\"";
+	let justGimmeStatString = bStatsStringWithName ? "=\"" + name + "<br>" : "=\"";
 	if (mainData.effects == undefined && idxTrigger != -1) // is trigger
 	{
 		var tempTriggers = mainData.params;
 		// repackage trigger format to symb/item format
 		mainData.effects = [];
 		for (var triggerParams in tempTriggers) {
-			mainData.effects.push({ "data": { "params": tempTriggers[triggerParams], "when": TRIGGER_TO_WHEN[idxTrigger] }, "tag": "TriggeredTriggerEffect" })
+			mainData.effects.push({ "data": { "params": tempTriggers[triggerParams], "when": TRIGGER_TO_WHEN[idxTrigger] }, "tag": "TriggeredTriggerEffect" });
 		}
 	}
 	for (var effect in mainData.effects) {
@@ -418,7 +418,7 @@ function MakeStatsTable(mainData, tier, bSymbiote = false, iPortrait = 0, bDescr
 			if (data.maxProcsPerSecond != undefined && data.maxProcsPerSecond != 0) {
 				s += "Maximum " + data.maxProcsPerSecond + " applications per second<br/>";
 				let spsToCap = data.maxProcsPerSecond / (data.percentChance / 100);
-				if (spsToCap != data.maxProcsPerSecond) s += "(" + spsToCap + " shots per second to cap)"
+				if (spsToCap != data.maxProcsPerSecond) s += "(" + spsToCap + " shots per second to cap)";
 			}
 		}
 		else if (mainTag == "GunCharger") {
@@ -694,12 +694,12 @@ function GetTriggeredEffectString(tag, data, delayArray) {
 		if (data.applyToMana == 1) {
 			s += "Recharge " +
 				classWrap(data.amount + (data.asPercentage == 1 ? "%" : "") +
-				" energy", "energy");
+					" energy", "energy");
 		}
 		else {
 			s += "Repair " +
 				classWrap(data.amount + (data.asPercentage == 1 ? "%" : "") +
-				" hull", "heal");
+					" hull", "heal");
 		}
 		s += " over <b>" + ToTime(data.duration) + "</b><br/>";
 	}
@@ -951,7 +951,7 @@ const DROP_REQUIREMENTS = {
 	"7": "Dematerialize",
 	"8": "Pickup pack creation",
 	"9": "Drones",
-}
+};
 function GetDropRequirements(item) {
 	let s = "";
 	if (item.dropRequirements != undefined)
@@ -1449,7 +1449,7 @@ function IsMiniBossSpawnInNoobZone(point, fields) {
 	for (let i = 0; i < fields.length; i++) {
 		var monsterField = fields[i];
 		if (FieldIsNoobZone(monsterField) && IsPointInsidePoly(point, monsterField.poly))
-			inside = true
+			inside = true;
 	}
 	return inside;
 }
